@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+
+/*1. Essential, basic container*/
+body,html{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  /*min-height: 100vh;*/
+  width: 100vw;
+  overflow: hidden;
+  -webkit-overflow-scrolling:touch;
+  border: 1px solid white;
+
+}
+
+#wrapper{
+  width:100vw;
+  height:100vh;
+  flex-direction: row;
+}
+
+#container-main{
+  height:100%;
+  display : flex;
+
+
+}
+
+/*Flex behavious for main container*/
+.column{
+  flex-flow: column;
+}
+
+.project-view{
+  flex-flow: line;
+  flex-wrap: wrap;
+  overflow-y:scroll;
+  -webkit-overflow-scrolling:touch;
+}
+
+#container-side{
+  height:100%;
+  display : flex;
+  flex-flow: column;
+  background-color: #0000ff;
+  /*padding:2rem;*/
+}
+#container-titre{
+  position:absolute;
+  display:none;
+  /*width:30%;*/
+  padding:2rem;
+  z-index:1;
+}
+#container-project{
+  height:100%;
+  background-color: white;
+  border:1px solid black;
+}
+#container-timeline{
+  height:20%;
+  border:1px solid black;
+  overflow-x:scroll;
+  -webkit-overflow-scrolling:touch;
+}
+#project-title{
+  float:left;
+}
+
+/*--A ranger     Timeline*/
+#timeline-scrollable::-webkit-scrollbar {
+    display: none;
+}
+
+/* Containers for Timeline only*/
+#timeline-scrollable{
+  position:absolute;
+  bottom:0;
+  left:0;
+  height: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /*background:rgba(255, 0, 0, 0.5);*/
+  display : flex;
+  flex-flow: line;
+  flex-wrap: nowrap;
+}
+
+.timeline-cell{
+width: 8.333vw;
+border: 0.5px solid rgba(0, 0, 0, 1);
+height:100%;
+}
+/*-----*/
+
+.content{
+  padding:2rem;
+}
+.hidden{
+  visibility:hidden;
+  display:none;
+}
+
+/*2. Text - Size*/
+h1{
+  font-weight: 100;
+  font-size:3rem;
+}
+h2{
+  font-weight: 100;
+  font-size:2rem;
+}
+
+h4,span,p{
+  font-size:1rem;
+  line-height:1.4rem;
+}
+#container-side h1, #container-side h2, #container-side h3,  #container-side h4, #container-side h5, #container-side p, #container-side span{
+  color:white;
+}
+#container-main h1, #container-main h2,#container-main h3,#container-main h4,#container-main h5,#container-main p,#container-main span{
+  color:black;
+}
+#container-side a, #container-side .action{
+  color:black;
+}
+#container-main a, #container-main .action{
+  color:#0000ff;
+}
+
+/*Text - Placement/Borders*/
+/*similaire à content*/
+.text-normal{
+  padding:1rem;
+}
+
+.bottom{
+  /*position: absolute;
+  bottom: 0;*/
+  /*display: table-cell;*/
+  vertical-align: bottom;
+}
+.flex-middle{
+  flex:1 1 auto;
+  overflow-y:scroll;
+}
+.flex{
+  flex:0 0 auto;
+}
+
+/*3. Links, Interaction, UI*/
+a{
+  color:white;
+}
+
+a:hover{
+  text-decoration:none;
+}
+
+#container-titre .action{
+  color:#0000ff;
+  float: right;
+}
+
+/*UI Elments*/
+.UIButton{
+  width:1rem;
+  height:1rem;
+}
+.UIButton_2x{
+  width:2rem;
+  height:2rem;
+}
+
+.abs-left{
+  position:absolute;
+  top:0;
+  left:0;
+  padding: 1rem;
+
+}
+.abs-right{
+  position:absolute;
+  top:0;
+  right:0;
+  padding: 1rem;
+}
+
+/*Specials - Project page*/
+
+.fit {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+}
+.fit-w{
+  width: 100%;
+  height:auto;
+}
+
+.fit img,.fit-w img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+.fit-2{
+  height:50%;
+}
+
+/*not used | change the way the column works*/
+.project-preview{
+
+}
