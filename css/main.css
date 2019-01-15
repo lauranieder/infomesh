@@ -21,11 +21,21 @@ body,html{
 #container-main{
   height:100%;
   display : flex;
-
-
 }
 
-/*Flex behavious for main container*/
+#container-project{
+  display : flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  padding:2em;
+  justify-content: space-between;
+}
+
+#project-content{
+  
+}
+
+/*Flex behaviours for main container*/
 .column{
   flex-flow: column;
 }
@@ -36,13 +46,26 @@ body,html{
   overflow-y:scroll;
   -webkit-overflow-scrolling:touch;
 }
+.about-view{
+  flex-flow: line;
+  flex-wrap: nowrap;
+  overflow-y:scroll;
+  -webkit-overflow-scrolling:touch;
+}
+
+.flexgrow-1{
+  /*flex-grow: 1;*/
+
+}
+
+.flexgrow-2{
+  /*flex-grow: 2;*/
+}
 
 #container-side{
   height:100%;
   display : flex;
   flex-flow: column;
-  background-color: #0000ff;
-  /*padding:2rem;*/
 }
 #container-titre{
   position:absolute;
@@ -62,7 +85,7 @@ body,html{
   overflow-x:scroll;
   -webkit-overflow-scrolling:touch;
 }
-#project-title{
+#side-project-title{
   float:left;
 }
 
@@ -100,7 +123,7 @@ height:100%;
   display:none;
 }
 
-/*2. Text - Size*/
+/*2. Text - Size/Styling*/
 h1{
   font-weight: 100;
   font-size:3rem;
@@ -114,19 +137,62 @@ h4,span,p{
   font-size:1rem;
   line-height:1.4rem;
 }
-#container-side h1, #container-side h2, #container-side h3,  #container-side h4, #container-side h5, #container-side p, #container-side span{
+
+.style-blue{
+  background-color: #0000ff;
+}
+.style-normal{
+
+}
+.style-blue h1, .style-blue h2, .style-blue h3,  .style-blue h4, .style-blue h5, .style-blue p, .style-blue span{
   color:white;
 }
-#container-main h1, #container-main h2,#container-main h3,#container-main h4,#container-main h5,#container-main p,#container-main span{
+.style-normal h1, .style-normal h2,.style-normal h3,.style-normal h4,.style-normal h5,.style-normal p,.style-normal span{
   color:black;
 }
-#container-side a, #container-side .action{
+.style-blue a, .style-blue .action{
   color:black;
 }
-#container-main a, #container-main .action{
+.style-normal a, .style-normal .action{
   color:#0000ff;
 }
+.style-popup{
+  /*padding:2em;
+  border:1px solid black;*/
+  /*max-width:50%;
+  min-width:33,33%;*/
+  flex-basis: calc(30%);
+  height:auto;
+  float:left;
+  display:flex;
+  align-items:flex-start;
+}
 
+.pop-inside{
+  /*position:absolute;*/
+  max-width:100%;
+  border:1px solid black;
+  background-color:white;
+
+  padding:2em;
+  max-height:70%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling:touch;
+}
+
+.pop-inside::-webkit-scrollbar {
+    display: none;
+}
+
+#project-title div{
+  position:absolute;
+  width:40%;
+  top: 20%;
+}
+
+#project-content div{
+  align-self: flex-end;
+}
 /*Text - Placement/Borders*/
 /*similaire à content*/
 .text-normal{
