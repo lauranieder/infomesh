@@ -25,4 +25,10 @@
 - sequencer à adapter
 - loading des images ? Preloading trop long.
 
+#### internet dictionnary
+- taille du canvas / container-project ne fonctionne pas. Canvas se charge trop grand. 
+
+
+
+
 
