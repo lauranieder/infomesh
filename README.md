@@ -11,5 +11,8 @@
 #### worldwidemap
 - info de scroll en continue --> envoyer l'événement une fois que le scroll est fini
 - chargement de event.json inutile ?
+- ajouter un chargement
+
+
 
 
