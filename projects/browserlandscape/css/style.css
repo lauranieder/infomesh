@@ -1,0 +1,41 @@
+/*Improved styling by Laura to not break the rest of the website*/
+
+#container-project{
+  margin: 0;
+  background-color: black;
+  overflow: hidden;
+}
+.sharp {
+  image-rendering: pixelated;
+}
+.model {
+  position: absolute;
+  z-index: -10;
+  transition: top 1s, height 1s;
+}
+.model:hover {
+  top: 500px;
+}
+.hidden {
+  display: none;
+}
+
+#gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 100px;
+  font-family: 'VT323', monospace;
+  box-sizing: border-box;
+  padding: 50px 50px 50px 50px;
+  text-align: center;
+
+  background-color: black;
+}
+#ground {
+  z-index: -10;
+  position: absolute;
+  width: 10000px;
+  height: 1000px;
+  background-color: white;
+}

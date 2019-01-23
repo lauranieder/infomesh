@@ -1,0 +1,116 @@
+startdate,description,link,titre,yearonly
+1/1/1965,NPL network planning starts,https://en.wikipedia.org/wiki/NPL_network,NPL network,1965
+1/1/1966,Merit Network founded,https://en.wikipedia.org/wiki/Merit_Network,Merit Network,1966
+1/1/1966,ARPANET planning starts,https://en.wikipedia.org/wiki/ARPANET,ARPANET,1966
+1/1/1967,NPL network packet switching pilot experiment,https://en.wikipedia.org/wiki/Packet_switching,packet switching,1967
+1/1/1969,ARPANET carries its first packets,https://en.wikipedia.org/wiki/InterNIC#History,Network Information Center,1969
+1/1/1970,Network Information Center (NIC),https://en.wikipedia.org/wiki/Tymnet,Tymnet,1970
+1/1/1971,Tymnet packet-switched network,https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority,IANA,1971
+1/1/1972,Merit Network's packet-switched network operational,https://en.wikipedia.org/wiki/CYCLADES,CYCLADES,1972
+1/1/1972,Internet Assigned Numbers Authority (IANA) established,https://en.wikipedia.org/wiki/Telenet,Telenet,1972
+1/1/1973,CYCLADES network demonstrated,https://en.wikipedia.org/wiki/X.25,X.25,1973
+1/1/1974,Telenet packet-switched network,https://en.wikipedia.org/wiki/Minitel,Minitel,1974
+1/1/1976,X.25 protocol approved,https://en.wikipedia.org/wiki/Internet_Architecture_Board,Internet Activities Board,1976
+1/1/1978,Minitel introduced,https://en.wikipedia.org/wiki/Usenet,USENET,1978
+1/1/1979,Internet Activities Board (IAB),https://en.wikipedia.org/wiki/UUCP,UUCP,1979
+1/1/1980,USENET news using UUCP,https://en.wikipedia.org/wiki/Ethernet,Ethernet,1980
+1/1/1980,Ethernet standard introduced,https://en.wikipedia.org/wiki/BITNET,BITNET,1980
+1/1/1981,BITNET established,https://en.wikipedia.org/wiki/CSNET,Computer Science Network,1981
+1/1/1981,Computer Science Network (CSNET),https://en.wikipedia.org/wiki/Internet_protocol_suite,TCP/IP,1981
+1/1/1982,TCP/IP protocol suite formalized,https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol,Simple Mail Transfer Protocol,1982
+1/1/1982,Simple Mail Transfer Protocol (SMTP),https://en.wikipedia.org/wiki/Domain_Name_System,Domain Name System,1982
+1/1/1983,Domain Name System (DNS),https://en.wikipedia.org/wiki/MILNET,MILNET,1983
+1/1/1983,MILNET split off from ARPANET,https://en.wikipedia.org/wiki/Domain_names#Domain_name_registration,First .COM domain name registered,1983
+1/1/1985,First .COM domain name registered,https://en.wikipedia.org/wiki/National_Science_Foundation_Network,NSFNET,1985
+1/1/1986,NSFNET with 56 kbit/s links,https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force,Internet Engineering Task Force,1986
+1/1/1986,Internet Engineering Task Force (IETF),https://en.wikipedia.org/wiki/UUNET,UUNET,1986
+1/1/1987,UUNET founded,https://en.wikipedia.org/wiki/OSI_model,OSI Reference Model,1987
+1/1/1988,NSFNET upgraded to 1.5 Mbit/s (T1),https://en.wikipedia.org/wiki/Morris_worm,Morris worm,1988
+1/1/1988,OSI Reference Model released,https://en.wikipedia.org/wiki/Border_Gateway_Protocol,Border Gateway Protocol,1988
+1/1/1988,Morris worm,https://en.wikipedia.org/wiki/PSINet,PSINet,1988
+1/1/1989,Border Gateway Protocol (BGP),https://en.wikipedia.org/wiki/FIX_East,Federal Internet Exchanges,1989
+1/1/1989,PSINet founded,https://en.wikipedia.org/wiki/GOSIP,GOSIP,1989
+1/1/1989,Federal Internet Exchanges (FIXes),https://en.wikipedia.org/wiki/Advanced_Network_and_Services,Advanced Network and Services,1989
+1/1/1990,GOSIP (without TCP/IP),https://en.wikipedia.org/wiki/UUNET#Early_existence,UUNET/Alternet,1990
+1/1/1990,ARPANET decommissioned,https://en.wikipedia.org/wiki/Archie_search_engine,Archie search engine,1990
+1/1/1990,Advanced Network and Services (ANS),https://en.wikipedia.org/wiki/Wide_area_information_server,Wide area information server,1990
+1/1/1990,UUNET/Alternet allows commercial traffic,https://en.wikipedia.org/wiki/Gopher_(protocol),Gopher,1990
+1/1/1990,Archie search engine,https://en.wikipedia.org/wiki/Commercial_Internet_eXchange,Commercial Internet eXchange,1990
+1/1/1991,Wide area information server (WAIS),https://en.wikipedia.org/wiki/ANS_CO%2BRE,ANS CO+RE,1991
+1/1/1991,Gopher,https://en.wikipedia.org/wiki/World_Wide_Web,World Wide Web,1991
+1/1/1991,Commercial Internet eXchange (CIX),https://en.wikipedia.org/wiki/Internet_Society,Internet Society,1991
+1/1/1991,ANS CO+RE allows commercial traffic,https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing,Classless Inter-Domain Routing,1991
+1/1/1991,World Wide Web (WWW),https://en.wikipedia.org/wiki/InterNIC,InterNIC,1991
+1/1/1992,NSFNET upgraded to 45 Mbit/s (T3),https://en.wikipedia.org/wiki/AOL,AOL,1992
+1/1/1992,Internet Society (ISOC) established,https://en.wikipedia.org/wiki/Mosaic_(web_browser),Mosaic web browser,1992
+1/1/1993,Classless Inter-Domain Routing (CIDR),https://en.wikipedia.org/wiki/Web_search_engine,Full text web search engines,1993
+1/1/1993,InterNIC established,https://en.wikipedia.org/wiki/North_American_Network_Operators%27_Group,North American Network Operators' Group,1993
+1/1/1993,AOL added USENET access,https://en.wikipedia.org/wiki/ISP,ISPs,1993
+1/1/1993,Mosaic web browser released,https://en.wikipedia.org/wiki/Network_Access_Point,NAPs,1993
+1/1/1994,Full text web search engines,https://en.wikipedia.org/wiki/VBNS,vBNS+,1994
+1/1/1994,North American Network Operators' Group (NANOG) established,https://en.wikipedia.org/wiki/IPv6,IPv6,1994
+1/1/1995,New Internet architecture with commercial ISPs connected at NAPs,https://en.wikipedia.org/wiki/Internet_Corporation_for_Assigned_Names_and_Numbers,Internet Corporation for Assigned Names and Numbers,1995
+1/1/1995,NSFNET decommissioned,https://en.wikipedia.org/wiki/IEEE_802.11,IEEE 802.11b,1995
+1/1/1995,GOSIP updated to allow TCP/IP,https://en.wikipedia.org/wiki/Internet2,Internet2,1995
+1/1/1995,very high-speed Backbone Network Service (vBNS),https://en.wikipedia.org/wiki/Abilene_Network,Abilene Network,1995
+1/1/1995,IPv6 proposed,https://en.wikipedia.org/wiki/Dot-com_bubble,Dot-com bubble,1995
+1/1/1996,AOL changes pricing model from hourly to monthly,https://en.wikipedia.org/wiki/Top-level_domain#Proposed_domains,New top-level domain names activated,1996
+1/1/1998,Internet Corporation for Assigned Names and Numbers (ICANN),https://en.wikipedia.org/wiki/Code_Red_worm,Code Red I,1998
+1/1/1999,IEEE 802.11b wireless networking,https://en.wikipedia.org/wiki/Code_Red_II,Code Red II,1999
+1/1/1999,Internet2/Abilene Network,https://en.wikipedia.org/wiki/Nimda,Nimda,1999
+1/1/1999,vBNS+ allows broader access,https://en.wikipedia.org/wiki/World_Summit_on_the_Information_Society,UN WSIS phase II,1999
+1/1/2000,Dot-com bubble bursts,https://en.wikipedia.org/wiki/National_LambdaRail,National LambdaRail,2000
+1/1/2001,New top-level domain names activated,https://en.wikipedia.org/wiki/Working_Group_on_Internet_Governance,UN Working Group on Internet Governance (WGIG),2001
+1/1/2001,Code Red I,https://en.wikipedia.org/wiki/Internet_Governance_Forum,First meeting of the Internet Governance Forum,2001
+1/1/2003,UN World Summit on the Information Society (WSIS) phase I,https://en.wikipedia.org/wiki/Top-level_domain#Internationalized_country_code_TLDs,First internationalized country code top-level domains,2003
+1/1/2003,National LambdaRail founded,https://en.wikipedia.org/wiki/Generic_top-level_domain#New_top-level_domains,ICANN begins accepting applications for new generic top-level domain names,2003
+1/1/2004,UN Working Group on Internet Governance (WGIG),https://en.wikipedia.org/wiki/Montevideo_Statement_on_the_Future_of_Internet_Cooperation,Montevideo Statement on the Future of Internet Cooperation,2004
+1/1/2005,UN WSIS phase II,https://en.wikipedia.org/wiki/NetMundial_Initiative,NetMundial international Internet governance proposal,2005
+1/1/2006,First meeting of the Internet Governance Forum,https://en.wikipedia.org/wiki/ICANN,ICANN,2006
+1/1/2010,First internationalized country code top-level domains registered,https://en.wikipedia.org/wiki/IMDb,IMDb,2010
+1/1/2012,ICANN begins accepting applications for new generic top-level domain names,https://en.wikipedia.org/wiki/Amazon.com,Amazon.com,2012
+1/1/2013,Montevideo Statement on the Future of Internet Cooperation,https://en.wikipedia.org/wiki/EBay,eBay,2013
+1/1/2014,NetMundial international Internet governance proposal,https://en.wikipedia.org/wiki/Craigslist,Craigslist,2014
+1/1/2016,ICANN contract with U.S. Dept. of Commerce ends,https://en.wikipedia.org/wiki/Hotmail,Hotmail,2016
+1/1/1989,AOL dial-up service provider,https://en.wikipedia.org/wiki/Yahoo!_Babel_Fish,Babel Fish,1989
+1/1/1990,IMDb Internet movie database,https://en.wikipedia.org/wiki/Google_Search,Google Search,1990
+1/1/1995,Amazon.com online retailer,https://en.wikipedia.org/wiki/Yahoo!_Groups,Yahoo! Clubs (now Yahoo! Groups),1995
+1/1/1995,eBay online auction and shopping,https://en.wikipedia.org/wiki/PayPal,PayPal,1995
+1/1/1995,Craigslist classified advertisements,https://en.wikipedia.org/wiki/Napster,Napster,1995
+1/1/1996,Hotmail free web-based e-mail,https://en.wikipedia.org/wiki/BitTorrent_(software),BitTorrent,1996
+1/1/1997,Babel Fish automatic translation,https://en.wikipedia.org/wiki/Wikipedia,Wikipedia,1997
+1/1/1998,Google Search,https://en.wikipedia.org/wiki/LinkedIn,LinkedIn,1998
+1/1/1998,Yahoo! Clubs (now Yahoo! Groups),https://en.wikipedia.org/wiki/Myspace,Myspace,1998
+1/1/1998,PayPal Internet payment system,https://en.wikipedia.org/wiki/Skype,Skype,1998
+1/1/1999,Napster peer-to-peer file sharing,https://en.wikipedia.org/wiki/ITunes_Store,iTunes Store,1999
+1/1/2001,BitTorrent peer-to-peer file sharing,https://en.wikipedia.org/wiki/4Chan,4Chan,2001
+1/1/2001,Wikipedia,https://en.wikipedia.org/wiki/The_Pirate_Bay,The Pirate Bay,2001
+1/1/2003,LinkedIn business networking,https://en.wikipedia.org/wiki/Torrent_file,torrent file,2003
+1/1/2003,Myspace social networking site,https://en.wikipedia.org/wiki/Facebook,Facebook,2003
+1/1/2003,Skype Internet voice calls,https://en.wikipedia.org/wiki/Podcast,Podcast,2003
+1/1/2003,iTunes Store,https://en.wikipedia.org/wiki/Flickr,Flickr,2003
+1/1/2003,4Chan Anonymous image-based bulletin board,https://en.wikipedia.org/wiki/YouTube,YouTube,2003
+1/1/2003,The Pirate Bay,https://en.wikipedia.org/wiki/Reddit,Reddit,2003
+1/1/2004,Facebook social networking site,https://en.wikipedia.org/wiki/Google_Earth,Google Earth,2004
+1/1/2004,Podcast media file series,https://en.wikipedia.org/wiki/Twitter,Twitter,2004
+1/1/2004,Flickr image hosting,https://en.wikipedia.org/wiki/WikiLeaks,WikiLeaks,2004
+1/1/2005,YouTube video sharing,https://en.wikipedia.org/wiki/Google_Street_View,Google Street View,2005
+1/1/2005,Reddit link voting,https://en.wikipedia.org/wiki/Amazon_Kindle,Kindle,2005
+1/1/2005,Google Earth virtual globe,https://en.wikipedia.org/wiki/E-reader,e-reader,2005
+1/1/2006,Twitter microblogging,https://en.wikipedia.org/wiki/Amazon_Elastic_Compute_Cloud,Amazon Elastic Compute Cloud,2006
+1/1/2007,WikiLeaks anonymous news and information leaks,https://en.wikipedia.org/wiki/Dropbox_(service),Dropbox,2007
+1/1/2007,Google Street View,https://en.wikipedia.org/wiki/Encyclopedia_of_Life,Encyclopedia of Life,2007
+1/1/2007,Kindle,https://en.wikipedia.org/wiki/Spotify,Spotify,2007
+1/1/2008,Amazon Elastic Compute Cloud (EC2),https://en.wikipedia.org/wiki/Digital_rights_management,DRM-based,2008
+1/1/2008,Dropbox cloud-based file hosting,https://en.wikipedia.org/wiki/Bing_(search_engine),Bing,2008
+1/1/2008,Encyclopedia of Life,https://en.wikipedia.org/wiki/Google_Docs,Google Docs,2008
+1/1/2008,Spotify,https://en.wikipedia.org/wiki/Kickstarter,Kickstarter,2008
+1/1/2009,Bing search engine,https://en.wikipedia.org/wiki/Threshold_pledge_system,threshold pledge system,2009
+1/1/2009,Google Docs,https://en.wikipedia.org/wiki/Bitcoin,Bitcoin,2009
+1/1/2009,Kickstarter,https://en.wikipedia.org/wiki/Digital_currency,digital currency,2009
+1/1/2009,Bitcoin,https://en.wikipedia.org/wiki/Instagram,Instagram,2009
+1/1/2010,Instagram,https://en.wikipedia.org/wiki/Photo_sharing,photo sharing,2010
+1/1/2011,Google+,https://en.wikipedia.org/wiki/Social_networking,social networking,2011
+1/1/2011,Snapchat,https://en.wikipedia.org/wiki/Google%2B,Google+,2011
+1/1/2012,Coursera,https://en.wikipedia.org/wiki/Snapchat,Snapchat,2012
+,,https://en.wikipedia.org/wiki/Coursera,Coursera,
