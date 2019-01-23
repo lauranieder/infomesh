@@ -4,8 +4,8 @@
 ### General
 - Ajouter dynamiquement une variable début fin pour la durée de la timeline.
 - Gérer les événements qui sont hors du temps. 
-
-
+- Animation de haut en bas --> panel. Single page ?
+- Drag/drop de la timeline ?
 
 ### Adapt student project
 #### worldwidemap
