@@ -29,8 +29,6 @@
 - taille du canvas / container-project ne fonctionne pas. Canvas se charge trop grand. 
 
 #### 30y_of_hacks.exe
-- où est le projet de nathan ???
-
 
 
 
