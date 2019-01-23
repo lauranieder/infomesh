@@ -15,6 +15,9 @@
 
 #### obsolete objects
 - sequencer à adapter
-- loading des images ? Preloading trop long. 
+- loading des images ? Preloading trop long.
+
+#### browser landscape
+- dans index.js début de code bizarre ?
 
 
