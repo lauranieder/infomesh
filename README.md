@@ -29,6 +29,7 @@
 - taille du canvas / container-project ne fonctionne pas. Canvas se charge trop grand. 
 
 #### 30y_of_hacks.exe
+- gotoblocks() changer pour que ca fonctionne avec le update des dates, pour l'instant prends un id. 
 
 
 
