@@ -20,4 +20,9 @@
 #### browser landscape
 - dans index.js début de code bizarre ?
 
+#### web influencer identity
+- même système que obsolete objects
+- sequencer à adapter
+- loading des images ? Preloading trop long.
+
 
