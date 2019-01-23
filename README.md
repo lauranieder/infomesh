@@ -35,6 +35,11 @@
 - Manque des vidéos
 - Vérifier le chargement des vidéos
 
+#### Internet phenomena 
+- bundlem.js ?????
+
+
+
 
 
 
