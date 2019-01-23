@@ -13,6 +13,8 @@
 - chargement de event.json inutile ?
 - ajouter un chargement
 
-
+#### obsolete objects
+- sequencer à adapter
+- loading des images ? Preloading trop long. 
 
 
