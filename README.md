@@ -45,8 +45,8 @@
 - chargement plus en style pop, remplace toujours celui d'en dessous !
 
 #### when paper talks
-- placement des contenus images dans container-projects
-- scroll du container en fonction de la date
+- ~~placement des contenus images dans container-projects~~
+- ~~scroll du container en fonction de la date~~
 
 
 
