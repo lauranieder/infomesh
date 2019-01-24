@@ -38,6 +38,11 @@
 #### Internet phenomena 
 - bundlem.js ?????
 
+#### online advertising
+- alignement des pubs
+- chargement plus en style pop, remplace toujours celui d'en dessous !
+
+
 
 
 
