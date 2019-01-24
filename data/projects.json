@@ -1,16 +1,62 @@
 [
   {
-    "title": "Test 1",
-    "slug": "lt-1",
-    "className": "myClass",
-    "student": "Lionel Tardy",
-    "text": "asf asfasf"
+    "student": "Luca Sassoli De Bianchi",
+    "title": "WorldWideMap",
+    "slug": "worldwideweb",
+    "text": "The timeline presents web access worldwide and other data"
   },
   {
-    "title": "Test 2",
-    "slug": "lt-2",
-    "className": "",
-    "student": "Lionel Tardy",
-    "text": "fr34f asf asfasf scs"
+    "student": "Iyo Bisseck, Anouk Zibault",
+    "title": "Obsolete objects",
+    "slug": "obsoletobjects",
+    "text": "An exploration of the Many objects that have disappeared replaced by the web."
+  },
+  {
+    "student": "Sebastien Matos, Guillaume Simmen",
+    "title": "Browser Landscape",
+    "slug": "browserlandscape",
+    "text": "This timeline shows the evolution of the aesthetics of web browsers, reinterpreting the different elements and assembling them as a city."
+  },
+  {
+    "student": "Bastien Mouthon, Kevin Breithaup",
+    "title": "Web influencer Identity",
+    "slug": "webinfluenceridentity",
+    "text": "This timeline shows the visual identity evolution of the main tech companies on the web through their logo."
+  },
+  {
+    "student": "Alfatih Al Zouabi",
+    "title": "Internet Phenomena",
+    "slug": "internetphenomena",
+    "text": "This timeline gathers different viral events on the web by proposing a graphical exploration passing among others by the buzzs, the memes and the spamms."
+  },
+  {
+    "student": "Ma�lle Chenaux",
+    "title": "Internet Dictionnary",
+    "slug": "internetdictionnary",
+    "text": "Starting with the first word invented, the \"web\" itself, this timeline shows the evolution of the vocabulary related to the web presented graphically."
+  },
+  {
+    "student": "Nathan Vogel",
+    "title": "30y_of_hacks.exe",
+    "slug": "30y_of_hacks",
+    "text": "This timeline explore 30 years of hacking on the web and highlights the evolution of the impact of these hacks."
+  },
+  {
+    "student": "Tamara Virag",
+    "title": "Emojis",
+    "slug": "emojis",
+    "text": "The first smiley was invented in 1982. The timelne shows the evolution of the aesthetics of emojis and our ways of communicating with them."
+  },
+  {
+    "student": "Jonathan Boulenaz",
+    "title": "Online Advertising",
+    "slug": "onlineadvertising",
+    "text": "This timeline shows the evolution of the aesthetics of advertisements on the web, starting with banners, popups, through personalized add."
+  },
+  {
+    "student": "Diane Becheras",
+    "title": "When Paper Talks",
+    "slug": "whenpapertalks",
+    "text": "Like a mood board or a journalistic inquiry, this timeline is an overview of how the web is seen and talked about in the printed press."
   }
 ]
