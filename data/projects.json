@@ -1,15 +1,15 @@
 [
   {
-    "student": "Luca Sassoli De Bianchi",
-    "title": "WorldWideMap",
-    "slug": "worldwidemap",
-    "text": "The timeline presents web access worldwide and other data"
-  },
-  {
     "student": "Sebastien Matos, Guillaume Simmen",
     "title": "Browser Landscape",
     "slug": "browserlandscape",
     "text": "This timeline shows the evolution of the aesthetics of web browsers, reinterpreting the different elements and assembling them as a city."
+  },
+  {
+    "student": "Luca Sassoli De Bianchi",
+    "title": "WorldWideMap",
+    "slug": "worldwidemap",
+    "text": "The timeline presents web access worldwide and other data"
   },
   {
     "student": "Maëlle Chenaux",

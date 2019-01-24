@@ -15,7 +15,7 @@
 <body>
   <header id="navigation">
     <h1 id="project-title">{PROJECT TITLE}</h1>
-    <nav>
+    <nav class="d-none">
       <a href="#" id="button-toggle-informations">&lt;less information&gt;</a>
       <a href="#" id="button-up">up</a>
       <a href="#" id="button-down">down</a>
@@ -28,13 +28,16 @@
         <div id="project-credits"></div>
       </div>
       <div class="content flex-bottom font-large">
-        <a href="#" id="button-open-project" class="selected">/Projects</a>
-        <a href="timeline.html">/Timelines</a>
-        <a href="#" id="button-open-about">/About</a>
+        <a href="#" id="button-open-projects">/Projects</a>
+        <a href="#" id="button-open-about" class="selected">/About</a>
       </div>
     </div>
-    <div id="container-about" class="container reduced">About</div>
-    <div id="container-main" class="container main"></div>
+    <div id="container-about" class="container main">About</div>
+    <div id="container-projects" class="container reduced">
+      <a href="#" class="button-open-project" data-id="0">Project 1</a>
+      <a href="#" class="button-open-project" data-id="1">Project 2</a>
+    </div>
+    <div id="container-main" class="container reduced"></div>
   </div>
 </body>
 </html>

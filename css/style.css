@@ -38,6 +38,7 @@ iframe,
 nav,
 nav a,
 #container-side,
+#container-projects,
 #container-main,
 #container-about {
   transition: all 250ms ease-out;
