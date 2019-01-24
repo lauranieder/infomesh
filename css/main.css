@@ -113,13 +113,16 @@ body,html{
 #container-project{
   height:90%;
   background-color: white;
-  /*border:1px solid black;*/
+  width: 100%;
+  position: relative;
 }
 #container-timeline{
   height:10%;
-  /*border:1px solid black;*/
+  width: 100%;
   overflow-x:scroll;
   -webkit-overflow-scrolling:touch;
+  box-sizing: border-box;
+  position: relative;
 }
 #side-project-title{
   float:left;
@@ -317,4 +320,25 @@ a:hover{
 /*not used | change the way the column works*/
 .project-preview{
 
+}
+
+
+/* a supprimer*/
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
+.kol-1, .kol-2, .kol-3, .kol-4, .kol-5, .kol-6, .kol-7, .kol-8, .kol-9, .kol-10, .kol-11, .kol-12,
+.kol8-1, .kol8-2, .kol8-3, .kol8-4, .kol8-5, .kol8-6, .kol8-7, .kol8-8, .textwidget, .col-t-1, .col-t-6
+{
+	box-sizing: border-box;
+  float: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	padding: 0em;
+	position: relative;
+  min-height: 1px;
+}
+
+.col-12, .kol12 {
+  width: 100%;
 }

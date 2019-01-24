@@ -1,0 +1,30 @@
+.empty {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+}
+
+.arrow-btn {
+    border-radius: 50%;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: -webkit-transform .15s ease-in-out;
+    transition: -webkit-transform .15s ease-in-out;
+    transition: transform .15s ease-in-out;
+    transition: transform .15s ease-in-out, -webkit-transform .15s ease-in-out;
+}
+
+.arrow-btn.clicked {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.arrow {
+    display: block;
+    height: 50%;
+    width: 50%;
+    -webkit-transform: translate(35%, 35%);
+    transform: translate(35%, 35%);
+    box-shadow: inset -2px -2px 0px 0px black;
+}

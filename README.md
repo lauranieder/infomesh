@@ -6,6 +6,8 @@
 - Gérer les événements qui sont hors du temps. 
 - Animation de haut en bas --> panel. Single page ?
 - Drag/drop de la timeline ?
+- Apparition du menu about sur la même page
+- Lien dans la barre d'addresse --> infomes.ch/about  ou infomes.ch/worldwideweb
 
 ### Adapt student project
 #### worldwidemap
@@ -37,6 +39,15 @@
 
 #### Internet phenomena 
 - bundlem.js ?????
+
+#### online advertising
+- alignement des pubs
+- chargement plus en style pop, remplace toujours celui d'en dessous !
+
+#### when paper talks
+- ~~placement des contenus images dans container-projects~~
+- ~~scroll du container en fonction de la date~~
+
 
 
 

@@ -1,0 +1,33 @@
+#canvas{
+  width:100%;
+  height:100%;
+}
+
+img {
+  display: inline;
+  max-height: 50vh;
+  position: absolute;
+
+}
+
+.container {
+  background-color: red;
+  height: 100vh;
+  width: 3000vw;
+}
+
+
+.fitimg{
+  width:100%;
+  height:100%;
+  position:absolute;
+  left:0px;
+  top:0px;
+}
+
+
+.fitimg img{
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
