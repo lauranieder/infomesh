@@ -2,20 +2,33 @@
   {
     "student": "Luca Sassoli De Bianchi",
     "title": "WorldWideMap",
-    "slug": "worldwideweb",
+    "slug": "worldwidemap",
     "text": "The timeline presents web access worldwide and other data"
-  },
-  {
-    "student": "Iyo Bisseck, Anouk Zibault",
-    "title": "Obsolete objects",
-    "slug": "obsoletobjects",
-    "text": "An exploration of the Many objects that have disappeared replaced by the web."
   },
   {
     "student": "Sebastien Matos, Guillaume Simmen",
     "title": "Browser Landscape",
     "slug": "browserlandscape",
     "text": "This timeline shows the evolution of the aesthetics of web browsers, reinterpreting the different elements and assembling them as a city."
+  },
+  {
+    "student": "Maëlle Chenaux",
+    "title": "Internet Dictionnary",
+    "slug": "internetdictionnary",
+    "text": "Starting with the first word invented, the \"web\" itself, this timeline shows the evolution of the vocabulary related to the web presented graphically."
+  },
+  {
+    "student": "Iyo Bisseck, Anouk Zibault",
+    "title": "Obsolete objects",
+    "slug": "obsoleteobjects",
+    "text": "An exploration of the Many objects that have disappeared replaced by the web."
+  },
+
+  {
+    "student": "Iyo Bisseck, Anouk Zibault",
+    "title": "Obsolete objects",
+    "slug": "obsoletobjects",
+    "text": "An exploration of the Many objects that have disappeared replaced by the web."
   },
   {
     "student": "Bastien Mouthon, Kevin Breithaup",
@@ -28,12 +41,6 @@
     "title": "Internet Phenomena",
     "slug": "internetphenomena",
     "text": "This timeline gathers different viral events on the web by proposing a graphical exploration passing among others by the buzzs, the memes and the spamms."
-  },
-  {
-    "student": "Ma�lle Chenaux",
-    "title": "Internet Dictionnary",
-    "slug": "internetdictionnary",
-    "text": "Starting with the first word invented, the \"web\" itself, this timeline shows the evolution of the vocabulary related to the web presented graphically."
   },
   {
     "student": "Nathan Vogel",

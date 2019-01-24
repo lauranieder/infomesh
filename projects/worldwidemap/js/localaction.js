@@ -48,7 +48,8 @@ $(document).ready(() => {
     // let dotDate = moment(e.detail.date);
     // console.log(dotDate.format("DD/MM/YYYY"));
     // $("#container-main").html(dotDate.format("DD/MM/YYYY"));
-    sendMessage(JSON.stringify({ year: year }));
+    //sendMessage(JSON.stringify({ year: year }));
+    timeline_change(year);
   });
 
   document.addEventListener("timeline-loadDotContent", e => {
@@ -61,6 +62,6 @@ $(document).ready(() => {
     // let dot = $(".timeDot[idToLoad='" + dotID + "']");
     // dot.attr("startdate");
     // console.log("Loaded date : " + dot.attr("startdate"));
-    sendMessage(JSON.stringify({ id: dotID }));
+    //sendMessage(JSON.stringify({ id: dotID }));
   });
 });

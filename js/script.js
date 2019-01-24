@@ -2,7 +2,7 @@ var projectsData;
 var currentProjectID = 0;
 var siteTitle = document.title;
 var timelinePosition = 0;
-var ignoreURLS = false;
+var ignoreURLS = true;
 
 function toggleInformation() {
   $('#container-side').toggleClass('reduced');
@@ -104,6 +104,7 @@ $(document).ready(function() {
   });
 
   $(window).on('message', function(e) {
+    console.log(e.originalEvent.data);
     switch (e.originalEvent.data.message) {
       case 'setScollPosition':
         timelinePosition = e.originalEvent.data.position;
