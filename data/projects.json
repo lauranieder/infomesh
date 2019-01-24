@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Test 1",
+    "slug": "lt-1",
+    "className": "myClass",
+    "student": "Lionel Tardy",
+    "text": "asf asfasf"
+  },
+  {
+    "title": "Test 2",
+    "slug": "lt-2",
+    "className": "",
+    "student": "Lionel Tardy",
+    "text": "fr34f asf asfasf scs"
+  }
+]
