@@ -11,9 +11,13 @@ function toggleInformation() {
 }
 
 function init() {
+  console.log("[script.js] init()  ");
   $.getJSON('data/projects.json', function(data) {
     projectsData = data;
+    loadProjectsPreview();
   });
+
+
 }
 
 function gotoProject(index, direction) {
@@ -28,7 +32,7 @@ function loadProject(index, direction) {
 
   $('#project-title').text(projectsData[index].title);
   $('#project-text').text(projectsData[index].text);
-  $('#project-credits').text(projectsData[index].student);
+  $('#project-credits').text("<Project>"+projectsData[index].student);
 
   $('.current-iframe').addClass('previous-iframe').removeClass('current-iframe');
 
@@ -45,7 +49,27 @@ function loadProject(index, direction) {
   }, 500);
 }
 
+function loadProjectsPreview(){
+  console.log(projectsData);
+  let i = 0;
+  projectsData.forEach(function(project) {
+    console.log(project);
+    let imagelink = "/img/projects/"+project.slug+".png";
+    var div = $('<div class="half">');
+    var a = $('<a href="#" class="button-open-project" data-id="'+i+'">');
+    var innerdiv = $('<div class="fit">');
+    var img = $('<img src="'+ imagelink +'">');
+    innerdiv.append(img);
+    a.append(innerdiv);
+    div.append(a);
+    $('#container-projects').append(div);
+
+    i++;
+  });
+}
+
 $(document).ready(function() {
+  console.log("Hello script.js");
   $('#button-toggle-informations').on('click', function(e) {
     e.preventDefault();
 
@@ -62,6 +86,10 @@ $(document).ready(function() {
 
     $('#container-about').addClass('main').removeClass('reduced');
     $('#container-main, #container-projects').addClass('reduced').removeClass('main');
+
+    $('#project-title').text(siteTitle);
+    $('#project-text').text("");
+    $('#project-credits').text("");
   });
 
   $('#button-open-projects').on('click', function(e) {
@@ -74,6 +102,10 @@ $(document).ready(function() {
 
     $('#container-projects').addClass('main').removeClass('reduced');
     $('#container-about, #container-main').addClass('reduced').removeClass('main');
+
+    $('#project-title').text(siteTitle);
+    $('#project-text').text("");
+    $('#project-credits').text("");
   });
 
   $('#button-up').on('click', function(e) {

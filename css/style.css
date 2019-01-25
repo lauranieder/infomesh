@@ -23,7 +23,7 @@ a {
 }
 
 a.selected {
-  color: pink;
+  color: white;
 }
 
 .d-none {
@@ -63,6 +63,7 @@ nav a,
 
 #container-side .content {
   width: 25vw; /* calc(25vw - padding) */
+  padding:1rem;
 }
 
 #container-main {
@@ -70,7 +71,26 @@ nav a,
 }
 
 #container-about {
-  background-color: green;
+  overflow-y:scroll;
+  justify-content: center;
+}
+
+#container-about .content {
+  width: 25vw;
+  /*border: solid 1px red;*/
+  padding:1rem;
+}
+
+#navigation{
+  width: 25vw;
+  /*border: solid 1px red;*/
+  padding:1rem;
+}
+
+
+#container-projects {
+  flex-wrap: wrap;
+  overflow-x: scroll;
 }
 
 .side {
@@ -106,8 +126,9 @@ nav a,
 
 /*2. Text - Size/Styling*/
 h1 {
-  font-size: 1rem;
-  line-height: 1.4rem;
+  font-size: 3rem;
+  font-weight: 100;
+  /*line-height: 1.4rem;*/
 }
 
 .font-large {
@@ -121,6 +142,11 @@ h1 {
 
 .background-blue h1 {
   color: white;
+}
+
+.flex-top{
+  flex: 0 0 auto;
+  height:10rem;
 }
 
 .flex-middle {
@@ -163,4 +189,45 @@ iframe {
 
 .appear-down {
   transform: translateY(-100%);
+}
+
+/*3. Image */
+.fit {
+	/*position: absolute;*/
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+}
+.fit-w{
+  width: 100%;
+  height:auto;
+}
+.fit img,.fit-w img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+/*4. Percent*/
+.full{
+  width:100%;
+  clear:both;
+}
+.half-w{
+  width:50%;
+  float:left;
+}
+.half-h{
+  height:50%;
+  float:left;
+}
+.half{
+  width:50%;
+  height:50%;
+}
+
+.third-w{
+  width:33.33%;
+  float:left;
 }

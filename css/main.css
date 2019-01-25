@@ -19,7 +19,6 @@ body,html{
 .containers{
   height:100%;
   display:flex;
-
 }
 #container-side{
   flex-flow: column;
@@ -28,7 +27,6 @@ body,html{
 }
 #container-main{
   flex-flow: column;
-  /*overflow-y:scroll;*/
 }
 #container-about{
   flex-flow: row;
