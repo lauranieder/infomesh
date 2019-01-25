@@ -147,10 +147,10 @@ $(document).ready(function() {
   $(window).on('message', function(e) {
     console.log(e.originalEvent.data);
     switch (e.originalEvent.data.message) {
-      case 'setScollPosition':
+      case 'setScrollPosition':
         timelinePosition = e.originalEvent.data.position;
         break;
-      case 'getScollPosition':
+      case 'getScrollPosition':
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'receiveScrollPosition', position: timelinePosition}, '*')
         break;
     }
