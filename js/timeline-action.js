@@ -10,7 +10,6 @@ $(document).ready(function(){
       }
     });
 
-    console.log('Event', normalized, searchdate);
     document.dispatchEvent(event);
   }
 

@@ -2,6 +2,7 @@ var projectsData;
 var currentProjectID = 0;
 var siteTitle = document.title;
 var timelinePosition = 0;
+var isPopupReduced = false;
 var ignoreURLS = true;
 
 function toggleInformation() {
@@ -11,13 +12,10 @@ function toggleInformation() {
 }
 
 function init() {
-  console.log("[script.js] init()  ");
   $.getJSON('data/projects.json', function(data) {
     projectsData = data;
     loadProjectsPreview();
   });
-
-
 }
 
 function gotoProject(index, direction) {
@@ -50,10 +48,8 @@ function loadProject(index, direction) {
 }
 
 function loadProjectsPreview(){
-  console.log(projectsData);
   let i = 0;
   projectsData.forEach(function(project) {
-    console.log(project);
     let imagelink = "/img/projects/"+project.slug+".png";
     var div = $('<div class="half">');
     var a = $('<a href="#" class="button-open-project" data-id="'+i+'">');
@@ -69,7 +65,6 @@ function loadProjectsPreview(){
 }
 
 $(document).ready(function() {
-  console.log("Hello script.js");
   $('#button-toggle-informations').on('click', function(e) {
     e.preventDefault();
 
@@ -145,8 +140,13 @@ $(document).ready(function() {
   });
 
   $(window).on('message', function(e) {
-    console.log(e.originalEvent.data);
     switch (e.originalEvent.data.message) {
+      case 'isPopReduced':
+        isPopupReduced = e.originalEvent.data.status;
+        break;
+      case 'getPopupStatus':
+        $('.current-iframe').get(0).contentWindow.postMessage({message: 'receivePopupStatus', status: isPopupReduced}, '*')
+        break;
       case 'setScrollPosition':
         timelinePosition = e.originalEvent.data.position;
         break;

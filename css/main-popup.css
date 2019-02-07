@@ -1,0 +1,57 @@
+.timeline-cell {
+  box-sizing: border-box;
+}
+
+.event-marker {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  border: 1px solid black;
+  opacity: .5;
+}
+
+.event-marker.no-duration {
+  background-color: gray;
+}
+
+.event-marker.has-duration {
+  background-color: gray;
+}
+
+.event-marker.active {
+  background-color: red;
+}
+
+#popup {
+  position:fixed;
+  bottom: calc(10vh + 50px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 720px;
+  min-height: 10px;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 100000;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#popup.opened {
+  pointer-events: all;
+  opacity: 1;
+}
+
+#popup.reduced {
+  max-height: 10px;
+  background-color: gray;
+}
+
+#button-toggle-popup {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: blue;
+}
