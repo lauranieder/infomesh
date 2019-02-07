@@ -41,7 +41,7 @@ nav a,
 #container-projects,
 #container-main,
 #container-about {
-  transition: all 250ms ease-out;
+  transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 /*-----------------1st level--------------------*/
@@ -71,14 +71,19 @@ nav a,
 }
 
 #container-about {
-  overflow-y:scroll;
+  overflow: hidden;
   justify-content: center;
+}
+
+#container-about.reduced {
+  overflow-y: hidden;
 }
 
 #container-about .content {
   width: 25vw;
+  min-width: 25vw;
   /*border: solid 1px red;*/
-  padding:1rem;
+  padding: 1rem;
 }
 
 #navigation{
@@ -244,4 +249,10 @@ iframe {
 .third-w{
   width:33.33%;
   float:left;
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+  #container-about .content {
+    width: 50%;
+  }
 }
