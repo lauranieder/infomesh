@@ -39,7 +39,6 @@ function computeEvents() {
     var startTime = startDate.diff(rootStartDate, 'seconds');
     var endTime = endDate.diff(rootStartDate, 'seconds');
 
-    //var startPosition = (startDate.year() - 1989) * 8.33;
     var startPosition = startTime * timelineWidth / totalTime;
     var endPosition = endTime * timelineWidth / totalTime;
 
@@ -56,7 +55,7 @@ $(document).ready(function() {
   createPopup();
 
   var lastPopupIndex;
-  var eventPadding = 12;
+  var eventPadding = 30;
 
   $(window).resize(computeEvents());
 
@@ -66,7 +65,6 @@ $(document).ready(function() {
     $.each(events, function(index, item) {
       var startDate = moment(item.start, 'YYYY/MM/DD')
 
-      //startDate.subtract(eventPadding, 'days');
 
       if (item.end) {
         var endDate = moment(item.end, 'YYYY/MM/DD');
@@ -74,7 +72,8 @@ $(document).ready(function() {
         var endDate = moment(startDate).add(12, 'd');
       }
 
-      //endDate = endDate.add(eventPadding, 'days');
+      startDate.subtract(eventPadding, 'days');
+      endDate = endDate.add(eventPadding, 'days');
 
       if (e.detail.date.unix() >= startDate.unix() && e.detail.date.unix() <= endDate.unix()) {
         currentPopupIndex = index;
