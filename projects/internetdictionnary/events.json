@@ -5,9 +5,14 @@
     "content": "some <strong>html</strong>"
   },
   {
-    "start": "1993/02/01",
-    "end": "1993/04/15",
-    "title": "Evénement 1",
+    "start": "1993/01/01",
+    "end": "1993/06/30",
+    "title": "Evénement 2",
     "content": "some <strong>html</strong>"
-  }
-]
+  },
+  {
+    "start": "2018/01/01",
+    "end": "2018/12/31",
+    "title": "Evénement 2",
+    "content": "some <strong>html</strong>"
+  }]
