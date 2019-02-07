@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
 
+/*Scrollbars*/
+.flex-middle::-webkit-scrollbar {
+  display: none;
+}
+
+.flex-middle {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /*1. Essential, basic container*/
 * {
   box-sizing: border-box;
@@ -95,7 +105,7 @@ nav a,
 
 #container-projects {
   flex-wrap: wrap;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 .side {

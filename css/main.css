@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
 
+/*Scrollbars*/
+#container-timeline::-webkit-scrollbar,
+.pop-inside::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: none;
+}
+
+#container-timeline,
+.pop-inside {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+}
+
 /*1. Essential, basic container*/
 body,html{
   font-family: 'Roboto', sans-serif;
@@ -113,7 +127,7 @@ body,html{
   width: 100%;
   position: relative;
 }
-#container-timeline{
+#container-timeline {
   height:10%;
   width: 100%;
   overflow-x:scroll;
@@ -122,13 +136,21 @@ body,html{
   position: relative;
   background-color: white;
 }
-#side-project-title{
-  float:left;
+
+#container-timeline:before {
+  content: "";
+  display: block;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  width: 1px;
+  height: 10%;
+  z-index: 1000;
+  border-left: 1px solid red;
 }
 
-/*--A ranger     Timeline*/
-#timeline-scrollable::-webkit-scrollbar {
-    display: none;
+#side-project-title{
+  float:left;
 }
 
 /* Containers for Timeline only*/
@@ -137,12 +159,13 @@ body,html{
   bottom:0;
   left:0;
   height: 100%;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow:hidden;
   /*background:rgba(255, 0, 0, 0.5);*/
   display : flex;
   flex-flow: line;
   flex-wrap: nowrap;
+  padding-left: 50%;
+  padding-right: 50%;
 }
 
 .timeline-cell{
@@ -216,10 +239,6 @@ h4,span,p{
   max-height:70%;
   overflow-y: scroll;
   -webkit-overflow-scrolling:touch;
-}
-
-.pop-inside::-webkit-scrollbar {
-    display: none;
 }
 
 #project-title div{

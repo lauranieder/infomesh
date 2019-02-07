@@ -1,19 +1,23 @@
 /*NEW ONE*/
 $(document).ready(function(){
-  console.log("loaded");
-
   //$("#timeline-scrollable" ).draggable({ axis: "x" });
 
+  function dispatchTimelineEvent(normalized, searchdate) {
+    var event = new CustomEvent("timeline-scroll", {
+      detail: {
+        normal: normalized,
+        date: searchdate
+      }
+    });
+
+    console.log('Event', normalized, searchdate);
+    document.dispatchEvent(event);
+  }
+
   $("#container-timeline").scroll(function(event) {
-
       let scroll = $("#container-timeline").scrollLeft();
-      let maxScroll = $("#timeline-scrollable").width();
-      let normalized = map_range(scroll, 0,maxScroll, 0,1);
-
-      //seulement ppour l'instant
-      let contwidth = $("#container-timeline").width();
-
-      let rightscroll = Math.round(maxScroll-contwidth);
+      let maxScroll = $("#timeline-scrollable").width() - $('.timeline-cell').width();
+      let normalized = map_range(scroll, 0, maxScroll, 0, 1);
 
       let startdate = moment("01/01/1989", "D/M/YYYY");
       var enddatetest = moment("01/01/2019", "D/M/YYYY");
@@ -22,16 +26,12 @@ $(document).ready(function(){
       let searchdate = moment("01/01/1989", "D/M/YYYY");
       searchdate = moment(searchdate).add(secondsToFind, "seconds");
 
-      var event = new CustomEvent("timeline-scroll", {
-        detail: {
-          normal: normalized,
-          date: searchdate
-        }
-      });
-      document.dispatchEvent(event);
-
+      dispatchTimelineEvent(normalized, searchdate);
   });
 
+  setTimeout(function() {
+    dispatchTimelineEvent(0, moment("01/01/1989", "D/M/YYYY"));
+  }, 1000);
 
   function map_range(value, low1, high1, low2, high2) {
     return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
