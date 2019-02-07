@@ -37,6 +37,7 @@
   opacity: 0;
   pointer-events: none;
   transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  padding:1rem;
 }
 
 #popup.opened {
@@ -46,7 +47,12 @@
 
 #popup.reduced {
   max-height: 10px;
-  background-color: gray;
+  /*background-color: gray;*/
+}
+
+#popup.reduced #popup-content{
+  display:none;
+  /*background-color: gray;*/
 }
 
 #button-toggle-popup {
