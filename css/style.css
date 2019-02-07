@@ -83,6 +83,9 @@ nav a,
 #container-about {
   overflow: hidden;
   justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
 }
 
 #container-about.reduced {
@@ -260,9 +263,71 @@ iframe {
   width:33.33%;
   float:left;
 }
+.reduced #timeline-cursor{
+  display:none;
+}
+.reduced #timeline-barre{
+  display:none;
+}
+#timeline-cursor{
+  position:fixed;
+  background-color: black;
+  left: 62.5vw;
+  width:2px;
+  height:10vh;
+  bottom:0;
+  z-index:10;
+}
+#timeline-barre{
+  position:fixed;
+  background-color: black;
+  left: 25vw;
+  width:75vw;
+  height:1px;
+  bottom:10vh;
+  z-index:10;
+}
 
 @media (min-width: 992px) and (max-width: 1200px){
   #container-about .content {
     width: 50%;
+    min-width:50%;
+  }
+}
+
+@media only screen
+  and (max-width: 992px)
+  /*and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)*/ {
+    #container-about .content {
+      width: 100%;
+      min-width:100%;
+
+    }
+    #container-about{
+      overflow-y:scroll;
+    }
+    #navigation{
+      width:100%;
+      position:fixed;
+      height:10vh;
+    }
+
+    .side {
+      width: 100%;
+      position:fixed;
+      height:10vh;
+    }
+
+    .main {
+      width: 100%;
+    }
+    .content{
+      font-size: 3rem;
+
+    }
+    h1 {
+      font-size: 3rem;
+    }
   }
 }
