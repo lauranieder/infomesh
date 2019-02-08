@@ -18,12 +18,6 @@
     "text": "Starting with the first word invented, the \"web\" itself, this timeline shows the evolution of the vocabulary related to the web presented graphically."
   },
   {
-    "student": "Iyo Bisseck, Anouk Zibault",
-    "title": "Obsolete objects",
-    "slug": "obsoleteobjects",
-    "text": "An exploration of the Many objects that have disappeared replaced by the web."
-  },
-  {
     "student": "Bastien Mouthon, Kevin Breithaup",
     "title": "Web influencer Identity",
     "slug": "webinfluenceridentity",
@@ -40,23 +34,5 @@
     "title": "30y_of_hacks.exe",
     "slug": "30y_of_hacks",
     "text": "This timeline explore 30 years of hacking on the web and highlights the evolution of the impact of these hacks."
-  },
-  {
-    "student": "Tamara Virag",
-    "title": "Emojis",
-    "slug": "emojis",
-    "text": "The first smiley was invented in 1982. The timelne shows the evolution of the aesthetics of emojis and our ways of communicating with them."
-  },
-  {
-    "student": "Jonathan Boulenaz",
-    "title": "Online Advertising",
-    "slug": "onlineadvertising",
-    "text": "This timeline shows the evolution of the aesthetics of advertisements on the web, starting with banners, popups, through personalized add."
-  },
-  {
-    "student": "Diane Becheras",
-    "title": "When Paper Talks",
-    "slug": "whenpapertalks",
-    "text": "Like a mood board or a journalistic inquiry, this timeline is an overview of how the web is seen and talked about in the printed press."
   }
 ]

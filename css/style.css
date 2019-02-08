@@ -30,6 +30,7 @@ body {
 
 a {
   color: black;
+
 }
 
 a.selected {
@@ -109,6 +110,7 @@ nav a,
 #container-projects {
   flex-wrap: wrap;
   overflow-x: hidden;
+  background-color: white;
 }
 
 .side {
@@ -148,12 +150,7 @@ nav a,
 }
 
 /*2. Text - Size/Styling*/
-h1 {
-  font-size: 3rem;
-  font-weight: 100;
-  /*line-height: 1.4rem;*/
-}
-
+h1,
 .font-large {
   font-size: 3rem;
   font-weight: 100;
@@ -216,30 +213,30 @@ iframe {
 
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+  supported by Chrome and Opera */
 }
 
 /*3. Image */
 .fit {
-	/*position: absolute;*/
-	width: 100%;
-	height: 100%;
-	left: 0px;
-	top: 0px;
+  /*position: absolute;*/
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
 }
 .fit-w{
   width: 100%;
   height:auto;
 }
 .fit img,.fit-w img {
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 /*4. Percent*/
@@ -256,10 +253,26 @@ iframe {
   float:left;
 }
 .half{
+  /*width:25vw;*/
   width:50%;
-  height:50%;
+  float:left;
 }
-.third-w{
+
+#container-projects a {
+  display: flex;
+  /*align-items: center;*/
+  padding:1rem;
+  text-decoration: none;
+  width: 100%;
+  height:16.6666667%;
+}
+
+#container-projects a:hover {
+  background-color: blue;
+  color:white;
+}
+
+.third-w {
   width:33.33%;
   float:left;
 }
@@ -295,39 +308,46 @@ iframe {
   }
 }
 
-@media only screen
-  and (max-width: 992px)
-  /*and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait)*/ {
-    #container-about .content {
-      width: 100%;
-      min-width:100%;
+@media only screen and (max-width: 992px) {
+  #container-side,
+  #container-projects,
+  #container-main,
+  #container-about {
+    transition: none;
+  }
 
-    }
-    #container-about{
-      overflow-y:scroll;
-    }
-    #navigation{
-      width:100%;
-      position:fixed;
-      height:10vh;
-    }
+  #container-about .content {
+    width: 100%;
+    min-width:100%;
+  }
 
-    .side {
-      width: 100%;
-      position:fixed;
-      height:10vh;
-    }
+  #container-about {
+    overflow-y:scroll;
+  }
 
-    .main {
-      width: 100%;
-    }
-    .content{
-      font-size: 3rem;
+  #navigation {
+    width:100%;
+    position:fixed;
+    height:10vh;
+  }
 
-    }
-    h1 {
-      font-size: 3rem;
-    }
+  .side {
+    width: 100%;
+    position:fixed;
+    height:10vh;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .content{
+    font-size: 3rem;
+
+  }
+
+  h1,
+  .font-large {
+    font-size: 3rem;
   }
 }

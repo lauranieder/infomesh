@@ -11,6 +11,9 @@
   <!--script-->
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <script>
+  var currentPagetName = "<? echo str_replace('/', '', $_SERVER['REQUEST_URI']); ?>";
+  </script>
 </head>
 <body>
   <header id="navigation">
@@ -30,7 +33,6 @@
         <div id="project-credits"></div>
       </div>
       <div class="content flex-bottom font-large">
-        <div id="scroll-debug" class="d-none">0</div>
         <a href="#" id="button-open-projects">/Projects</a>
         <a href="#" id="button-open-about" class="selected">/About</a>
       </div>
@@ -41,7 +43,6 @@
         </p>
       </div>
       <div class="content">
-
         <div class="full">
           <div class="fit-w half-w">
             <img src="../img/ecal-snx.png" alt="écal swissnex">
@@ -58,7 +59,6 @@
           <h4>&lt;Students&gt;</h4>
           <p>Al Zouabi Alfatih, Becheras Diane, Bisseck Iyo, Boulenaz Jonathan, Breithaupt Kevin, Chenaux Maëlle, Matos Sébastien, Mouthon Bastien, Palauqui Mathieu, Sassoli De Bianchi Luca, Simmen Guillaume, Virág Tamara, Vogel Nathan, Zibaut Anouk</p></br>
         </div>
-
         <div class="full">
           <div class="fit-w third-w">
             <img src="../img/internet-archive-logo-transparent.png" alt="écal swissnex">
@@ -70,13 +70,7 @@
       </div>
     </div>
     <div id="container-projects" class="container d-flex reduced">
-      <!--<div class="half">
-        <a href="#" class="button-open-project" data-id="0">
-            <div class="fit">
-              <img src="img/projects/worldwidemap.png">
-            </div>
-        </a>
-      </div>-->
+      <div class="project-list"></div>
     </div>
     <div id="container-main" class="container reduced"><div id="timeline-cursor"><div id="timeline-barre"></div></div>
   </div>
