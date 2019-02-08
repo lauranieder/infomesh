@@ -63,11 +63,14 @@ function loadProjectsPreview(){
 
   projectsData.forEach(function(project) {
     var imagelink = "/img/projects/"+project.slug+".png";
-    var div = $('<div class="half">');
+    var div = $('<div class="projectnav">');
     var a = $('<a href="#" class="button-open-project" data-id="'+i+'">');
-    var innerdiv = $('<div class="fit">');
-    var img = $('<img src="'+ imagelink +'">');
-    innerdiv.append(img);
+    //var innerdiv = $('<div class="fit">');
+    var innerdiv = $('<div class="half"><h1>'+project.slug+'</h1></div>');
+    //var innerdiv = $('<div class="half"><h1>'+project.slug+'</h1></div><div class="half"><p>'+project.text+'</p></div>');
+    //var img = $('<img src="'+ imagelink +'">');
+
+    //innerdiv.append(img);
     a.append(innerdiv);
     div.append(a);
     $('#container-projects').append(div);

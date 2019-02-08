@@ -4,23 +4,23 @@
 
 .event-marker {
   position: absolute;
-  top: 0px;
-  height: 100%;
+  top: 35%;
+  height: 30%;
   border: 1px solid black;
-  opacity: .5;
+  /*opacity: .5;*/
   transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .event-marker.no-duration {
-  background-color: gray;
+  background-color: black;
 }
 
 .event-marker.has-duration {
-  background-color: gray;
+  background-color: black;
 }
 
 .event-marker.active {
-  background-color: red;
+  background-color: blue;
 }
 
 #popup {

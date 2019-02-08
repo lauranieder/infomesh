@@ -30,6 +30,7 @@ body {
 
 a {
   color: black;
+
 }
 
 a.selected {
@@ -109,6 +110,7 @@ nav a,
 #container-projects {
   flex-wrap: wrap;
   overflow-x: hidden;
+  background-color: white;
 }
 
 .side {
@@ -256,8 +258,27 @@ iframe {
   float:left;
 }
 .half{
+  /*width:25vw;*/
   width:50%;
-  height:50%;
+  float:left;
+}
+.projectnav{
+  width:100%;
+  height:16.6666667%;
+  padding:1rem;
+  /*text-decoration: none;*/
+}
+.projectnav:hover{
+  background-color: blue;
+}
+.projectnav h1{
+  /*float:left;*/
+}
+.projectnav:hover h1, .projectnav:hover p{
+  color:white;
+}
+.projectnav a{
+  text-decoration: none;
 }
 .third-w{
   width:33.33%;
