@@ -144,34 +144,10 @@ THE SOFTWARE.
     ;
 
     function reInit() {
+      var svgWidth = windowWidth = $(window).width();
+      var svgHeight = windowHeight = $(window).height() / 100 * 90;
 
-      //var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-      var windowWidth = document.getElementById("container-project").width;
-      var windowHeight = document.getElementById("container-project").height;
-      //var windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-      console.log(windowWidth +"   "+windowHeight);
-
-      var svgWidth = windowWidth;
-      var svgHeight = windowHeight;
-
-      if (settings.width.toString().indexOf('%') > 0 || settings.height.toString().indexOf('%') > 0) {
-
-        svgWidth = Math.round(element.offsetWidth / 100 * parseInt(settings.width));
-        svgHeight = Math.round(svgWidth / 100 * parseInt(settings.height));
-
-      } else {
-
-        svgWidth = parseInt(settings.width);
-        svgHeight = parseInt(settings.height);
-
-      }
-
-      if (windowWidth <= svgWidth)
-        svgWidth = windowWidth;
-
-      if (windowHeight <= svgHeight)
-        svgHeight = windowHeight;
-
+      console.log(svgWidth, svgHeight);
       //---
 
       center2D = {
@@ -203,7 +179,7 @@ THE SOFTWARE.
 
       svg.setAttribute('id', 'svgDoc');
       svg.setAttribute('width', svgWidth);
-      svg.setAttribute('height', 802);
+      svg.setAttribute('height', svgHeight);
 
 
 
@@ -260,7 +236,7 @@ THE SOFTWARE.
       if (typeof entryObj.label != 'undefined') {
 
         entry.element = document.createElementNS(svgNS, 'text');
-        entry.element.setAttribute('class', entryObj.year);
+        entry.element.setAttribute('class', 'year_' + entryObj.year);
         entry.element.setAttribute('x', 0);
         entry.element.setAttribute('y', 0);
         entry.element.setAttribute('fill', settings.fontColor);
@@ -425,27 +401,23 @@ THE SOFTWARE.
     //---
 
     function showTooltip(entry) {
+      var position = entry.element.getBoundingClientRect();
 
       if (entry.tooltip) {
-
-        tooltip.setAttribute('x', 50);
-        tooltip.setAttribute('y', 680);
-
-        tooltip.textContent = settings.tooltipFontToUpperCase ? entry.tooltipLabel.toUpperCase() : entry.tooltipLabel;
-
-        tooltip.setAttribute('opacity', 1.0);
-
+        var html = '<h1 style="font-size:' + $(entry.element).css('font-size') + '">' + $(entry.element).text() + '<h1><p>' + (settings.tooltipFontToUpperCase ? entry.tooltipLabel.toUpperCase() : entry.tooltipLabel) + '</p>';
+        $('#info-popup').css({
+          opacity: 1,
+          left: position.x,
+          top: position.y
+        }).html(html);
       }
-
-    }
-    ;
+    };
 
     function hideTooltip(entry) {
-
-      tooltip.setAttribute('opacity', 0.0);
-
-    }
-    ;
+      $('#info-popup').css({
+        opacity: 0
+      });
+    };
 
     //---
 
@@ -506,19 +478,7 @@ THE SOFTWARE.
 
         var opacity;
 
-        if (mouseReact) {
-
-          opacity = (radius - entry.vectorPosition.z) / diameter;
-
-          if (opacity < settings.opacityOut) {
-
-            opacity = settings.opacityOut;
-
-          }
-
-        } else {
-
-          opacity = parseFloat(entry.element.getAttribute('opacity'));
+          opacity = .5; //parseFloat(entry.element.getAttribute('opacity'));
 
           if (entry.mouseOver) {
 
@@ -530,9 +490,9 @@ THE SOFTWARE.
 
           }
 
-        }
 
-        entry.element.setAttribute('opacity', opacity);
+
+        //entry.element.setAttribute('opacity', opacity);
 
       }
 

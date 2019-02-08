@@ -1,0 +1,19 @@
+#info-popup {
+  position: absolute;
+  border: 1px solid red;
+  transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  padding: 0px;
+  pointer-events: none;
+}
+
+#info-popup h1 {
+  color: red;
+  font-family: "Oswald, Arial, sans-serif";
+  font-weight: "normal";
+  font-style: "normal";
+  font-stretch: "expanded";
+}
+
+#info-popup p {
+  padding: 0px 15px;
+}
