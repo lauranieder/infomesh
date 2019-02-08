@@ -3,7 +3,7 @@ var currentProjectID = 0;
 var siteTitle = document.title;
 var timelinePosition = 0;
 var isPopupReduced = false;
-var ignoreURLS = false;
+var ignoreURLS = true;
 
 function getProjectIdFromName(name) {
   var projectID = false;
