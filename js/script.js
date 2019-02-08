@@ -5,8 +5,9 @@ var timelinePosition = 0;
 var isPopupReduced = false;
 var ignoreURLS = false; //put back to false !!!
 
+
 function getProjectIdFromName(name) {
-  var projectID = false;
+  var projectID = -1;
 
   $.each(projectsData, function(index, item) {
     if (item.slug == name) projectID = index;
@@ -32,7 +33,7 @@ function init() {
       $('#button-open-about').trigger('click');
     } else {
       var currentProjectID = getProjectIdFromName(currentPagetName);
-      if (currentProjectID) gotoProject(currentProjectID, 'up');
+      if (currentProjectID != -1) gotoProject(currentProjectID, 'up');
     }
   });
 }
@@ -72,22 +73,9 @@ function loadProject(index, direction) {
 }
 
 function loadProjectsPreview(){
-  let i = 0;
-  projectsData.forEach(function(project) {
-    var imagelink = "/img/projects/"+project.slug+".png";
-    var div = $('<div class="projectnav">');
-    var a = $('<a href="#" class="button-open-project" data-id="'+i+'">');
-    //var innerdiv = $('<div class="fit">');
-    var innerdiv = $('<div class="half"><h1>'+project.title+'</h1></div>');
-    //var innerdiv = $('<div class="half"><h1>'+project.slug+'</h1></div><div class="half"><p>'+project.text+'</p></div>');
-    //var img = $('<img src="'+ imagelink +'">');
-
-    //innerdiv.append(img);
-    a.append(innerdiv);
-    div.append(a);
-    $('#container-projects').append(div);
-
-    i++;
+  $.each(projectsData, function(index, project) {
+    var link = $('<a href="#" class="font-large button-open-project" data-id="'+index+'">'+project.slug+'</a>');
+    $('#container-projects').append(link);
   });
 }
 
@@ -113,7 +101,7 @@ $(document).ready(function() {
     $('#project-text').text("");
     $('#project-credits').text("");
 
-    history.pushState({}, siteTitle , '/about');
+    if (!ignoreURLS) history.pushState({}, siteTitle , '/about');
   });
 
   $('#button-open-projects').on('click', function(e) {
@@ -131,7 +119,7 @@ $(document).ready(function() {
     $('#project-text').text("");
     $('#project-credits').text("");
 
-    history.pushState({}, siteTitle , '/index');
+    if (!ignoreURLS) history.pushState({}, siteTitle , '/index');
   });
 
   $('#button-up').on('click', function(e) {
