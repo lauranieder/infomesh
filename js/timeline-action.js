@@ -15,11 +15,11 @@ $(document).ready(function(){
 
   $("#container-timeline").scroll(function(event) {
       let scroll = $("#container-timeline").scrollLeft();
-      let maxScroll = $("#timeline-scrollable").width() - $('.timeline-cell').width();
+      let maxScroll = $("#timeline-scrollable").width();
       let normalized = map_range(scroll, 0, maxScroll, 0, 1);
 
       let startdate = moment("01/01/1989", "D/M/YYYY");
-      var enddatetest = moment("01/01/2019", "D/M/YYYY");
+      var enddatetest = moment("31/12/2019", "D/M/YYYY");
       var diffSeconds = enddatetest.diff(startdate, "seconds");
       let secondsToFind = map_range(normalized, 0, 1, 0, diffSeconds);
       let searchdate = moment("01/01/1989", "D/M/YYYY");
