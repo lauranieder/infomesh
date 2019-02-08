@@ -11,6 +11,9 @@
   <!--script-->
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <script>
+  var currentPagetName = '<? echo str_replace('/', '', $_SERVER['REQUEST_URI']); ?>';
+  </script>
 </head>
 <body>
   <header id="navigation">
@@ -30,7 +33,6 @@
         <div id="project-credits"></div>
       </div>
       <div class="content flex-bottom font-large">
-        <div id="scroll-debug" class="d-none">0</div>
         <a href="#" id="button-open-projects">/Projects</a>
         <a href="#" id="button-open-about" class="selected">/About</a>
       </div>

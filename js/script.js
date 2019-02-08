@@ -3,15 +3,16 @@ var currentProjectID = 0;
 var siteTitle = document.title;
 var timelinePosition = 0;
 var isPopupReduced = false;
-var ignoreURLS = true;
-var ignoreScrollEvents = false;
+var ignoreURLS = false;
 
-function avoidScrollError() {
-  ignoreScrollEvents = true;
+function getProjectIdFromName(name) {
+  var projectID = false;
 
-  setTimeout(function() {
-    ignoreScrollEvents = false;
-  }, 750);
+  $.each(projectsData, function(index, item) {
+    if (item.slug == name) projectID = index;
+  });
+
+  return projectID;
 }
 
 function toggleInformation() {
@@ -24,10 +25,24 @@ function init() {
   $.getJSON('data/projects.json', function(data) {
     projectsData = data;
     loadProjectsPreview();
+
+    if (currentPagetName == 'index') {
+      $('#button-open-projects').trigger('click');
+    } else if (currentPagetName == 'about') {
+      $('#button-open-about').trigger('click');
+    } else {
+      var currentProjectID = getProjectIdFromName(currentPagetName);
+      if (currentProjectID) gotoProject(currentProjectID, 'up');
+    }
   });
 }
 
 function gotoProject(index, direction) {
+  $('#navigation nav').removeClass('d-none');
+
+  $('#container-main').addClass('main').removeClass('reduced');
+  $('#container-about, #container-projects').addClass('reduced').removeClass('main');
+
   if (!direction) direction = 'none';
 
   if (!ignoreURLS) history.pushState({index: index, direction: direction}, siteTitle + ' - ' + projectsData[index].title, projectsData[index].slug);
@@ -36,8 +51,6 @@ function gotoProject(index, direction) {
 
 function loadProject(index, direction) {
   currentProjectID = index;
-
-  avoidScrollError();
 
   $('#project-title').text(projectsData[index].title);
   $('#project-text').text(projectsData[index].text);
@@ -59,10 +72,9 @@ function loadProject(index, direction) {
 }
 
 function loadProjectsPreview(){
-  var i = 0;
-
+  let i = 0;
   projectsData.forEach(function(project) {
-    var imagelink = "/img/projects/"+project.slug+".png";
+    let imagelink = "/img/projects/"+project.slug+".png";
     var div = $('<div class="half">');
     var a = $('<a href="#" class="button-open-project" data-id="'+i+'">');
     var innerdiv = $('<div class="fit">');
@@ -86,8 +98,6 @@ $(document).ready(function() {
   $('#button-open-about').on('click', function(e) {
     e.preventDefault();
 
-    avoidScrollError();
-
     $('.selected').removeClass('selected');
     $(this).addClass('selected');
 
@@ -99,12 +109,12 @@ $(document).ready(function() {
     $('#project-title').text(siteTitle);
     $('#project-text').text("");
     $('#project-credits').text("");
+
+    history.pushState({}, siteTitle , '/about');
   });
 
   $('#button-open-projects').on('click', function(e) {
     e.preventDefault();
-
-    avoidScrollError();
 
     $('.selected').removeClass('selected');
     $(this).addClass('selected');
@@ -117,10 +127,13 @@ $(document).ready(function() {
     $('#project-title').text(siteTitle);
     $('#project-text').text("");
     $('#project-credits').text("");
+
+    history.pushState({}, siteTitle , '/index');
   });
 
   $('#button-up').on('click', function(e) {
     e.preventDefault();
+
 
     var prevProject = currentProjectID - 1;
     if (prevProject < 0) prevProject = projectsData.length - 1;
@@ -140,11 +153,6 @@ $(document).ready(function() {
   $('body').on('click', '.button-open-project', function(e) {
     e.preventDefault();
 
-    $('#navigation nav').removeClass('d-none');
-
-    $('#container-main').addClass('main').removeClass('reduced');
-    $('#container-about, #container-projects').addClass('reduced').removeClass('main');
-
     gotoProject($(this).data('id'), 'up');
   });
 
@@ -163,9 +171,7 @@ $(document).ready(function() {
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'receivePopupStatus', status: isPopupReduced}, '*')
         break;
       case 'setScrollPosition':
-        if (ignoreScrollEvents) return;
         timelinePosition = e.originalEvent.data.position;
-        $('#scroll-debug').text(timelinePosition);
         break;
       case 'getScrollPosition':
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'receiveScrollPosition', position: timelinePosition}, '*')
