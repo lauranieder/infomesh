@@ -64,6 +64,7 @@ function wikifetching(wiki, index){
 }
 
 $(document).ready(function() {
+  console.log("[event.js]");
   loadEvents();
   createPopup();
 
