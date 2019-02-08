@@ -3,6 +3,7 @@ var _py = 1989;
 
 $(document).ready(function(){
   document.addEventListener("timeline-scroll", function(e) {
+    console.log("[action.js] timeline scroll");
     let normal = moment(e.detail.normal);
     let dotDate = moment(e.detail.date);
 
