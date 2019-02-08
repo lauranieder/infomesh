@@ -1,7 +1,7 @@
 $(document).ready(function() {
   Sequencer.init({
     frameCount: 360,
-    folder: 'sequencer',
+    folder: 'sequence',
     baseName: 'bastienanime_',
     ext: 'jpg'
   });
