@@ -1,0 +1,19 @@
+[
+  {
+    "start": "01/01/1989",
+    "end": "01/01/1990",
+    "title": "WWW",
+    "content": "Mark Twain sometimes wrote science fiction? In one of them, he imagined the “telelectroscope,” a device that used telephone wires to create a world-wide communication network.",
+    "url": "https://en.wikipedia.org/wiki/WWW"
+  },
+  {
+    "start": "01/10/1990",
+    "title": "Internaut",
+    "content": "The more someone knows about the Internet, its history and politics, the more likely the term internaut fits them."
+  },
+  {
+    "start": "01/01/1992",
+    "title": "HTML",
+    "content": "A markup language that is used to create documents on the World Wide Web incorporating text, graphics, sound, video, and hyperlinks."
+  }
+]

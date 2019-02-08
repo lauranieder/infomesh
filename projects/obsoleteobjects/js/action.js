@@ -1,11 +1,14 @@
 $(document).ready(function(){
-  let nbfile = 359;
   init();
-  var seq;
+  var sequencer;
 
-  function init(){
-    seq = Sequencer.init({from:1, to: nbfile, folder:"anoukiyo", baseName:"final", ext:"png", direction:"-x"});
-
+  function init() {
+    seq = Sequencer.init({
+      folder: 'anoukiyo',
+      baseName: 'final',
+      ext: 'png',
+      direction:"-x"}
+    );
   }
 
   document.addEventListener("timeline-scroll", function(e) {
@@ -25,7 +28,7 @@ $(document).ready(function(){
 
 
    document.addEventListener("timeline-loadDotContent", function(e) {
-     let dotID = e.detail.id;
+     var dotID = e.detail.id;
 
 
      console.log("[student-action.js] -----callback timeline-loadDotContent "+ dotID );
@@ -34,7 +37,7 @@ $(document).ready(function(){
 
 
 
-     let dot = $(".timeDot[idToLoad='" + dotID + "']");
+     var dot = $(".timeDot[idToLoad='" + dotID + "']");
      dot.attr("startdate");
      console.log("Loaded date : "+dot.attr("startdate"));
      //$('#container-main').html(dotDate.format("DD/MM/YYYY"));

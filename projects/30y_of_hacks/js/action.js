@@ -1,5 +1,7 @@
 /* globals moment */
-
+var popupCallback = function(id) {
+  console.log(id, events[id]);
+}
 // addEventListener support for IE8
 function bindEvent(element, eventName, eventHandler) {
   if (element.addEventListener) {
@@ -29,7 +31,7 @@ var sendMessage = function(msg) {
 
 // Listen to message from child window
 bindEvent(window, "message", e => {
-  console.log(e.data);
+  /*console.log(e.data);
   var data = JSON.parse(e.data);
   console.log(data.id);
   console.log("Hey");
@@ -38,7 +40,7 @@ bindEvent(window, "message", e => {
   dot.click();
   window.goToDot(dot);
   console.log(dot);
-  // console.log(goToDot);
+  // console.log(goToDot);*/
 });
 
 $(document).ready(() => {

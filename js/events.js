@@ -5,6 +5,7 @@ var totalTime = rootEndDate.diff(rootStartDate, 'seconds');
 var timelineWidth;
 var noDurationEventSize = 30;
 var eventPadding = 30;
+var popupCallback;
 
 function createPopup() {
   var popupContainer = $('<div id="popup-container"></div>');
@@ -93,6 +94,14 @@ $(document).ready(function() {
 
     if (lastPopupIndex != currentPopupIndex) {
       lastPopupIndex = currentPopupIndex;
+
+      if (popupCallback) {
+        $('.event-marker').removeClass('active');
+        $('#marker-' + currentPopupIndex).addClass('active');
+
+        popupCallback(currentPopupIndex);
+        return;
+      }
 
       if (currentPopupIndex == -1) {
         $('.event-marker').removeClass('active');
