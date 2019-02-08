@@ -4,6 +4,15 @@ var siteTitle = document.title;
 var timelinePosition = 0;
 var isPopupReduced = false;
 var ignoreURLS = true;
+var ignoreScrollEvents = false;
+
+function avoidScrollError() {
+  ignoreScrollEvents = true;
+
+  setTimeout(function() {
+    ignoreScrollEvents = false;
+  }, 750);
+}
 
 function toggleInformation() {
   $('#container-side').toggleClass('reduced');
@@ -28,6 +37,8 @@ function gotoProject(index, direction) {
 function loadProject(index, direction) {
   currentProjectID = index;
 
+  avoidScrollError();
+
   $('#project-title').text(projectsData[index].title);
   $('#project-text').text(projectsData[index].text);
   $('#project-credits').text("<Project>"+projectsData[index].student);
@@ -48,9 +59,10 @@ function loadProject(index, direction) {
 }
 
 function loadProjectsPreview(){
-  let i = 0;
+  var i = 0;
+
   projectsData.forEach(function(project) {
-    let imagelink = "/img/projects/"+project.slug+".png";
+    var imagelink = "/img/projects/"+project.slug+".png";
     var div = $('<div class="half">');
     var a = $('<a href="#" class="button-open-project" data-id="'+i+'">');
     var innerdiv = $('<div class="fit">');
@@ -74,6 +86,8 @@ $(document).ready(function() {
   $('#button-open-about').on('click', function(e) {
     e.preventDefault();
 
+    avoidScrollError();
+
     $('.selected').removeClass('selected');
     $(this).addClass('selected');
 
@@ -90,6 +104,8 @@ $(document).ready(function() {
   $('#button-open-projects').on('click', function(e) {
     e.preventDefault();
 
+    avoidScrollError();
+
     $('.selected').removeClass('selected');
     $(this).addClass('selected');
 
@@ -105,7 +121,6 @@ $(document).ready(function() {
 
   $('#button-up').on('click', function(e) {
     e.preventDefault();
-
 
     var prevProject = currentProjectID - 1;
     if (prevProject < 0) prevProject = projectsData.length - 1;
@@ -148,7 +163,9 @@ $(document).ready(function() {
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'receivePopupStatus', status: isPopupReduced}, '*')
         break;
       case 'setScrollPosition':
+        if (ignoreScrollEvents) return;
         timelinePosition = e.originalEvent.data.position;
+        $('#scroll-debug').text(timelinePosition);
         break;
       case 'getScrollPosition':
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'receiveScrollPosition', position: timelinePosition}, '*')
