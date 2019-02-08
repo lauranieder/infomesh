@@ -100,7 +100,7 @@ $(document).ready(function() {
     $('#project-text').text("");
     $('#project-credits').text("");
 
-    history.pushState({}, siteTitle , '/about');
+    if (!ignoreURLS) history.pushState({}, siteTitle , '/about');
   });
 
   $('#button-open-projects').on('click', function(e) {
@@ -118,7 +118,7 @@ $(document).ready(function() {
     $('#project-text').text("");
     $('#project-credits').text("");
 
-    history.pushState({}, siteTitle , '/index');
+    if (!ignoreURLS) history.pushState({}, siteTitle , '/index');
   });
 
   $('#button-up').on('click', function(e) {
