@@ -22,7 +22,7 @@ var container;
 var currentBlock = 0;
 
 function initDom() {
-  container = document.getElementById("container");
+  container = document.getElementById("container-textblocs");
 
   prepareDataset();
   for (let i = 0; i < dataset.length; i++) {
