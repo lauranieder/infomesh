@@ -58,7 +58,7 @@ function computeEvents() {
 }
 
 function wikifetching(wiki, index){
-  $.getJSON(url, function(data){
+  $.getJSON(wiki, function(data){
     events[index].content = data.extract_html;
   });
 }
