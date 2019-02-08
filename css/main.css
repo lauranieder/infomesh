@@ -63,7 +63,7 @@ body,html{
 }
 
 /* Containers for Timeline only*/
-#timeline-scrollable{
+#timeline-scrollable {
   position:absolute;
   bottom:0;
   left:0;
@@ -77,23 +77,20 @@ body,html{
   padding-right: 50%;
 }
 
-.timeline-cell
-{
-  texte-size:1rem;
-	text-align:center;
+.timeline-cell {
+  texte-size: 1rem;
+	text-align: center;
 	width: 8.333vw;
-	border-right: 1px solid rgba(0, 0, 0, 1);
-
-	height:80%;
-	margin:auto;
-}
-.timeline-cell:first-child{
-  border-left: 1px solid rgba(0, 0, 0, 1);
+	border-left: 1px solid rgba(255, 0, 0, 1);
+	height: 80%;
+	margin: auto;
 }
 
+.timeline-cell:last-child {
+  border-right: 1px solid rgba(0, 0, 0, 1);
+}
 
-
-.hidden{
+.hidden {
   visibility:hidden;
   display:none;
 }

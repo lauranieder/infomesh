@@ -8,5 +8,5 @@
     "start": "01/01/1990",
     "title": "Scroll",
     "content": "Examples of horizontal and vertical scrollbars around a text box A scrollbar is an interaction technique or widget in which continuous text, pictures, or any other content can be scrolled in a predetermined direction (up, down, left, or right) on a computer display, window, or viewport so that all of the content can be viewed, even if only a fraction of the content can be seen on a device's screen at one time. It offers a solution to the problem of navigation to a known o unknown location within a two-dimensional information space. It was also known as a handle in the very first GUIs. They are present in a wide range of electronic devices including computers, graphing calculators, mobile phones, and portable media players. The user interacts with the scrollbar elements using some method of direct action, the scrollbar translates that action into scrolling commands, and the user receives feedback through a visual updating of both the scrollbar elements and the scrolled content.",
-    "wikifetch":"www.wikipedia.ch"
+    "wikifetch":"https://en.wikipedia.org/api/rest_v1/page/summary/scrollbar"
   }]

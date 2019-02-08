@@ -3,6 +3,8 @@ var rootStartDate = moment('01/01/1989', 'DD/MM/YYYY');
 var rootEndDate = moment('31/12/2019', 'DD/MM/YYYY');
 var totalTime = rootEndDate.diff(rootStartDate, 'seconds');
 var timelineWidth;
+var noDurationEventSize = 30;
+var eventPadding = 30;
 
 function createPopup() {
   var popupContainer = $('<div id="popup-container"></div>');
@@ -32,11 +34,9 @@ function computeEvents() {
       endDate = moment(item.end, 'DD/MM/YYYY');
       className = 'has-duration';
     } else {
-      endDate = moment(startDate).add(12, 'd');
+      endDate = moment(startDate).add(noDurationEventSize, 'd');
       className = 'no-duration';
     }
-
-
 
     var startTime = startDate.diff(rootStartDate, 'seconds');
     var endTime = endDate.diff(rootStartDate, 'seconds');
@@ -48,22 +48,16 @@ function computeEvents() {
 
     var block = $('<div id="marker-' + index + '" class="event-marker ' + className + '" style="left:calc(50vw + '+startPosition+'vw);width:'+width+'vw;"></div>');
 
-    $('#timeline-scrollable').append(block);
+    $('#timeline-scrollable').prepend(block);
 
     if (item.wikifetch) {
-      wikifetching(item.wikifetch,index);
-      console.log(item.wikifetch);
+      wikifetching(item.wikifetch, index);
     }
   });
 }
 
 function wikifetching(wiki, index){
-  var url = 'https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=wikitext&page=Timeline_of_Facebook&section=1';
-  var url = 'https://en.wikipedia.org/api/rest_v1/page/summary/scrollbar';
-  //$.getJSON( url+'&callback=?',function(data){
-  $.getJSON( url,function(data){
-    console.log(data);
-    console.log(data.extract_html);
+  $.getJSON(url, function(data){
     events[index].content = data.extract_html;
   });
 }
@@ -73,7 +67,6 @@ $(document).ready(function() {
   createPopup();
 
   var lastPopupIndex;
-  var eventPadding = 30;
 
   $(window).resize(computeEvents());
 
@@ -87,7 +80,7 @@ $(document).ready(function() {
       if (item.end) {
         var endDate = moment(item.end, 'DD/MM/YYYY');
       } else {
-        var endDate = moment(startDate).add(12, 'd');
+        var endDate = moment(startDate).add(noDurationEventSize, 'd');
       }
 
       startDate.subtract(eventPadding, 'days');
