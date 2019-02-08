@@ -1,19 +1,942 @@
 [
   {
     "start": "01/01/1989",
-    "end": "01/01/1990",
-    "title": "WWW",
-    "content": "Mark Twain sometimes wrote science fiction? In one of them, he imagined the “telelectroscope,” a device that used telephone wires to create a world-wide communication network.",
-    "url": "https://en.wikipedia.org/wiki/WWW"
+    "title": "Mondo 2000",
+    "content": "Jude Milhon (aka St Jude) and R. U. Sirius launch Mondo 2000, a major '90s tech-lifestyle magazine, in Berkeley, California."
   },
   {
-    "start": "01/10/1990",
-    "title": "Internaut",
-    "content": "The more someone knows about the Internet, its history and politics, the more likely the term internaut fits them."
+    "start": "01/01/1989",
+    "title": "The Cuckoo's Egg",
+    "content": "The Cuckoo's Egg by Clifford Stoll is published."
+  },
+  {
+    "start": "01/01/1989",
+    "title": "The first ransomware",
+    "content": "The detection of AIDS (Trojan horse) is the first instance of a ransomware detection."
+  },
+  {
+    "start": "01/01/1990",
+    "title": "Operation Sundevil",
+    "content": "Operation Sundevil introduced.  After a prolonged sting investigation, Secret Service agents swoop down on organizers and prominent members of BBSs in 14 U.S. cities including the Legion of Doom, conducting early-morning raids and arrests. The arrests involve and are aimed at cracking down on credit-card theft and telephone and wire fraud. The result is a breakdown in the hacking community, with members informing on each other in exchange for immunity. The offices of Steve Jackson Games are also raided, and the role-playing sourcebook GURPS Cyberpunk is confiscated, possibly because the government fears it is a \"handbook for computer crime\". Legal battles arise that prompt the formation of the Electronic Frontier Foundation, including the trial of Knight Lightning."
+  },
+  {
+    "start": "01/01/1990",
+    "title": "Computer Misuse Act",
+    "content": "The Computer Misuse Act 1990 is passed in the United Kingdom, criminalising any unauthorised access to computer systems."
   },
   {
     "start": "01/01/1992",
-    "title": "HTML",
-    "content": "A markup language that is used to create documents on the World Wide Web incorporating text, graphics, sound, video, and hyperlinks."
+    "title": "Sneakers",
+    "content": "Release of the movie Sneakers, in which security experts are blackmailed into stealing a universal decoder for encryption systems."
+  },
+  {
+    "start": "01/01/1992",
+    "title": "First ISP",
+    "content": "One of the first ISPs MindVox opens to the public."
+  },
+  {
+    "start": "01/01/1992",
+    "title": "First polymorphic code",
+    "content": "Bulgarian virus writer Dark Avenger wrote 1260, the first known use of polymorphic code, used to circumvent the type of pattern recognition used by antivirus software, and nowadays also intrusion detection systems."
+  },
+  {
+    "start": "01/01/1993",
+    "title": "DEF CON",
+    "content": "The first DEF CON hacking conference takes place in Las Vegas. The conference is meant to be a one-time party to say good-bye to BBSs (now replaced by the Web), but the gathering was so popular it became an annual event."
+  },
+  {
+    "start": "01/01/1993",
+    "title": "Usenet",
+    "content": "AOL gives its users access to Usenet, precipitating Eternal September."
+  },
+  {
+    "start": "01/01/1994",
+    "title": "Hackers go on the WWW",
+    "content": "Hackers adapt to emergence of the World Wide Web quickly, moving all their how-to information and hacking programs from the old BBSs to new hacker web sites."
+  },
+  {
+    "start": "01/01/1994",
+    "title": "AOHell",
+    "content": "AOHell is released, a freeware application that allows a burgeoning community of unskilled script kiddies to wreak havoc on America Online. For days, hundreds of thousands of AOL users find their mailboxes flooded with multi-megabyte email bombs and their chat rooms disrupted with spam messages."
+  },
+  {
+    "start": "01/01/1994",
+    "title": "Citibank",
+    "content": "Summer: Russian crackers siphon $10 million from Citibank and transfer the money to bank accounts around the world. Vladimir Levin, the 30-year-old ringleader, uses his work laptop after hours to transfer the funds to accounts in Finland and Israel. Levin stands trial in the United States and is sentenced to three years in prison. Authorities recover all but $400,000 of the stolen money."
+  },
+  {
+    "start": "01/01/1995",
+    "title": "The Net + Hackers",
+    "content": "The movies The Net and Hackers are released."
+  },
+  {
+    "start": "22/02/1995",
+    "title": "FBI raids Phone Masters",
+    "content": "February 22: The FBI raids the \"Phone Masters\"."
+  },
+  {
+    "start": "01/01/1996",
+    "title": "CIA website",
+    "content": "Hackers alter Web sites of the United States Department of Justice (August), the CIA (October), and the U.S. Air Force (December)."
+  },
+  {
+    "start": "01/01/1996",
+    "title": "",
+    "content": "The U.S. General Accounting Office reports that hackers attempted to break into Defense Department computer files some 250,000 times in 1995 alone. About 65 percent of the attempts were successful, according to the report."
+  },
+  {
+    "start": "01/01/1996",
+    "title": "The rise of MP3 sharing",
+    "content": "The MP3 format gains popularity in the hacker world. Many hackers begin setting up sharing sites via FTP, Hotline, IRC and Usenet."
+  },
+  {
+    "start": "01/01/1996",
+    "title": "Cryptovirology",
+    "content": "Cryptovirology is born with the invention of the cryptoviral extortion protocol that would later form the basis of modern ransomware."
+  },
+  {
+    "start": "01/01/1997",
+    "title": "US Air Force pwned ",
+    "content": "A 15-year-old Croatian youth penetrates computers at a U.S. Air Force base in Guam."
+  },
+  {
+    "start": "01/01/1997",
+    "title": "Recording Industry Association",
+    "content": "In response to the popularity of sharing MP3 music files online, the Recording Industry Association of America begins cracking down on file sharing."
+  },
+  {
+    "start": "01/12/1997",
+    "title": "Information Security",
+    "content": "December: Information Security publishes first issue."
+  },
+  {
+    "start": "01/01/1998",
+    "title": "Yahoo! A logic bomb",
+    "content": "January: Yahoo! notifies Internet users that anyone visiting its site in the past month might have downloaded a logic bomb and worm planted by hackers claiming a \"logic bomb\" will go off if computer hacker Kevin Mitnick is not released from prison."
+  },
+  {
+    "start": "01/02/1998",
+    "title": "DNSSEC",
+    "content": "February: The Internet Software Consortium proposes the use of DNSSEC (domain-name system security extensions) to secure DNS servers."
+  },
+  {
+    "start": "01/06/1998",
+    "title": "3/4 of organizations hacked",
+    "content": "June: Information Security publishes its first annual Industry Survey, finding that nearly three-quarters of organizations suffered a security incident in the previous year."
+  },
+  {
+    "start": "01/09/1998",
+    "title": "Electronic Disturbance Theater",
+    "content": "September: Electronic Disturbance Theater, an online political performance-art group,  attacks the websites of The Pentagon, Mexican president Ernesto Zedillo, and the Frankfurt Stock Exchange, calling it conceptual art and claiming it to be a protest against the suppression of the Zapatista Army of National Liberation in southern Mexico. EDT uses the FloodNet software to bombard its opponents with access requests."
+  },
+  {
+    "start": "01/01/1999",
+    "title": "Security goes mainstream",
+    "content": "Software security goes mainstream In the wake of Microsoft's Windows 98 release, 1999 becomes a banner year for security (and hacking). Hundreds of advisories and patches are released in response to newfound (and widely publicized) bugs in Windows and other commercial software products. A host of security software vendors release anti-hacking products for use on home computers."
+  },
+  {
+    "start": "01/01/1999",
+    "title": "$1.46 billion initiative",
+    "content": "U.S. President Bill Clinton announces a $1.46 billion initiative to improve government computer security. The plan would establish a network of intrusion detection monitors for certain federal agencies and encourage the private sector to do the same."
+  },
+  {
+    "start": "07/01/1999",
+    "title": "Legion of the Underground",
+    "content": "January 7: The \"Legion of the Underground\" (LoU) declares \"war\" against the governments of Iraq and the People's Republic of China. An international coalition of hackers (including Cult of the Dead Cow, 2600's staff, Phrack's staff, L0pht, and the Chaos Computer Club) issued a joint statement ([4]) condemning the LoU's declaration of war.  The LoU responded by withdrawing its declaration."
+  },
+  {
+    "start": "01/03/1999",
+    "title": "The Melissa worm",
+    "content": "March: The Melissa worm is released and quickly becomes the most costly malware outbreak to date."
+  },
+  {
+    "start": "17/11/1999",
+    "title": "Derailing trains",
+    "content": "November 17: A hacker interviewed by Hilly Rose during the radio show Coast to Coast AM (then hosted by Art Bell) exposes a plot by al-Qaeda to derail Amtrak trains. This results in all trains being forcibly stopped over Y2K as a safety measure."
+  },
+  {
+    "start": "01/05/2000",
+    "title": "ILOVEYOU",
+    "content": "May: The ILOVEYOU worm, also known as VBS/Loveletter and Love Bug worm, is a computer worm written in VBScript.  It infected millions of computers worldwide within a few hours of its release.  It is considered to be one of the most damaging worms ever. It originated in the Philippines; made by an AMA Computer College student for his thesis."
+  },
+  {
+    "start": "01/09/2000",
+    "title": "First teenager in jail",
+    "content": "September: Computer hacker Jonathan James became the first juvenile to serve jail time for hacking."
+  },
+  {
+    "start": "01/01/2001",
+    "title": "First DoS attacks",
+    "content": "Microsoft becomes the prominent victim of a new type of hack that attacks the domain name server. In these denial-of-service attacks, the DNS paths that take users to Microsoft's websites are corrupted."
+  },
+  {
+    "start": "01/01/2001",
+    "title": "Code Red worm",
+    "content": "The National Cyber Security Alliance (NCSA) is established in response to the September 11 attacks on the World Trade Center."
+  },
+  {
+    "start": "01/04/2001",
+    "title": "Tricky FBI",
+    "content": "April: FBI agents trick two Russian crackers into coming to the U.S. and revealing how they were hacking U.S. banks."
+  },
+  {
+    "start": "01/07/2001",
+    "title": "First DMCA incrimination",
+    "content": "July: Russian programmer Dmitry Sklyarov is arrested at the annual Def Con hacker convention. He was the first person criminally charged with violating the Digital Millennium Copyright Act (DMCA)."
+  },
+  {
+    "start": "01/08/2001",
+    "title": "",
+    "content": "August: Code Red worm, infects tens of thousands of machines."
+  },
+  {
+    "start": "01/01/2002",
+    "title": "National Cyber Security Alliance",
+    "content": "January: Bill Gates decrees that Microsoft will secure its products and services, and kicks off a massive internal training and quality control campaign."
+  },
+  {
+    "start": "01/05/2002",
+    "title": "",
+    "content": "May: Klez.H, a variant of the worm discovered in November 2001, becomes the biggest malware outbreak in terms of machines infected, but causes little monetary damage."
+  },
+  {
+    "start": "01/06/2002",
+    "title": "",
+    "content": "June: The Bush administration files a bill to create the Department of Homeland Security, which, among other things, will be responsible for protecting the nation's critical IT infrastructure."
+  },
+  {
+    "start": "01/08/2002",
+    "title": "",
+    "content": "August: Researcher Chris Paget publishes a paper describing \"shatter attacks\", detailing how Windows' unauthenticated messaging system can be used to take over a machine. The paper raises questions about how securable Windows could ever be. It is however largely derided as irrelevant as the vulnerabilities it described are caused by vulnerable applications (placing windows on the desktop with inappropriate privileges) rather than an inherent flaw within the Operating System."
+  },
+  {
+    "start": "01/10/2002",
+    "title": "",
+    "content": "October: The International Information Systems Security Certification Consortium - (ISC)² - confers its 10,000th CISSP certification."
+  },
+  {
+    "start": "01/01/2003",
+    "title": "Anonymous",
+    "content": "The hacktivist group Anonymous was formed."
+  },
+  {
+    "start": "01/03/2003",
+    "title": "Authorized encryption",
+    "content": "March: Cult of the Dead Cow and Hacktivismo are given permission by the United States Department of Commerce to export software utilizing strong encryption."
+  },
+  {
+    "start": "01/01/2004",
+    "title": "AOL",
+    "content": "In 2003, Jason Smathers, an AOL employee, was convicted of stealing America Online's 92 million screen names and selling them to a known spammer. Smathers pled guilty to conspiracy charges in 2005. Smathers pled guilty to violations of the US <a href=\"/wiki/CAN-SPAM_Act_of_2003\" title=\"CAN-SPAM Act of 2003\">CAN-SPAM Act of 2003</a>. He was sentenced in August 2005 to 15 months in prison; the sentencing judge also recommended Smathers be forced to pay $84,000 in restitution, triple the $28,000 that he sold the addresses for."
+  },
+  {
+    "start": "01/03/2004",
+    "title": "",
+    "content": "March: NZ Government (National Party) website defaced by hacktivist group BlackMask"
+  },
+  {
+    "start": "01/07/2004",
+    "title": "",
+    "content": "July: North Korea claims to have trained 500 hackers who successfully crack South Korean, Japanese, and their allies' computer systems."
+  },
+  {
+    "start": "01/10/2004",
+    "title": "",
+    "content": "October: National Cyber Security Awareness Month was launched by the National Cyber Security Alliance and U.S. Department of Homeland Security."
+  },
+  {
+    "start": "31/12/2004",
+    "title": "CardSystems Solutions Inc.(MasterCard, Visa, Discover Financial Services and American Express)",
+    "content": "CardSystems Solutions Inc.(MasterCard, Visa, Discover Financial Services and American Express) was hacked."
+  },
+  {
+    "start": "31/12/2004",
+    "title": "Citigroup",
+    "content": "Citigroup was lost / stolen media."
+  },
+  {
+    "start": "31/12/2004",
+    "title": "Bank of America",
+    "content": "Bank of America was lost / stolen media."
+  },
+  {
+    "start": "02/04/2005",
+    "title": "",
+    "content": "April 2: Rafael Núñez (aka RaFa), a notorious member of the hacking group World of Hell, is arrested following his arrival at Miami International Airport for breaking into the Defense Information Systems Agency computer system on June 2001."
+  },
+  {
+    "start": "13/09/2005",
+    "title": "",
+    "content": "September 13: Cameron Lacroix is sentenced to 11 months for gaining access to T-Mobile's network and exploiting Paris Hilton's Sidekick."
+  },
+  {
+    "start": "03/11/2005",
+    "title": "",
+    "content": "November 3: Jeanson James Ancheta, whom prosecutors say was a member of the \"Botmaster Underground\", a group of script kiddies mostly noted for their excessive use of bot attacks and propagating vast amounts of spam, was taken into custody after being lured to FBI offices in Los Angeles."
+  },
+  {
+    "start": "01/01/2006",
+    "title": "AOL",
+    "content": "AOL was accidentally published."
+  },
+  {
+    "start": "01/01/2006",
+    "title": "T-Mobile, Deutsche Telecom",
+    "content": "T-Mobile, Deutsche Telecom was lost / stolen media."
+  },
+  {
+    "start": "01/01/2006",
+    "title": "",
+    "content": "January: One of the few worms to take after the old form of malware, destruction of data rather than the accumulation of zombie networks to launch attacks from, is discovered. It had various names, including Kama Sutra (used by most media reports), Black Worm, Mywife, Blackmal, Nyxem version D, Kapser, KillAV, Grew and CME-24. The worm would spread through e-mail client address books, and would search for documents and fill them with garbage, instead of deleting them to confuse the user. It would also hit a web page counter when it took control, allowing the programmer who created it as well as the world to track the progress of the worm. It would replace documents with random garbage on the third of every month. It was hyped by the media but actually affected relatively few computers, and was not a real threat for most users."
+  },
+  {
+    "start": "01/05/2006",
+    "title": "",
+    "content": "May: Jeanson James Ancheta receives a 57-month prison sentence, and is ordered to pay damages amounting to $15,000.00 to the Naval Air Warfare Center in China Lake and the Defense Information Systems Agency, for damage done due to DDoS attacks and hacking.  Ancheta also had to forfeit his gains to the government, which include $60,000 in cash, a BMW, and computer equipment."
+  },
+  {
+    "start": "01/05/2006",
+    "title": "",
+    "content": "May: The largest defacement in Web History as of that time is performed by the Turkish hacker iSKORPiTX who successfully hacked 21,549 websites in one shot."
+  },
+  {
+    "start": "01/07/2006",
+    "title": "",
+    "content": "July: Robert Moore and Edwin Pena featured on America's Most Wanted with Kevin Mitnick presenting their case commit the first VoIP crime ever seen in the USA. Robert Moore served 2 years in federal prison with a $152,000.00 restitution while Edwin Pena was sentenced to 10 years and a $1 million restitution."
+  },
+  {
+    "start": "01/09/2006",
+    "title": "",
+    "content": "September: Viodentia releases FairUse4WM tool which would remove DRM information off Windows Media Audio (WMA) files downloaded from music services such as Yahoo! Unlimited, Napster, Rhapsody Music and Urge."
+  },
+  {
+    "start": "01/01/2007",
+    "title": "Monster.com",
+    "content": "Monster.com was hacked."
+  },
+  {
+    "start": "01/01/2007",
+    "title": "UK Revenue & Customs",
+    "content": "UK Revenue & Customs was lost / stolen media."
+  },
+  {
+    "start": "17/05/2007",
+    "title": "",
+    "content": "May 17: Estonia recovers from massive denial-of-service attack"
+  },
+  {
+    "start": "13/06/2007",
+    "title": "",
+    "content": "June 13: FBI Operation Bot Roast finds over 1 million botnet victims"
+  },
+  {
+    "start": "21/06/2007",
+    "title": "",
+    "content": "June 21: A spear phishing incident at the Office of the Secretary of Defense steals sensitive U.S. defense information, leading to significant changes in identity and message-source verification at OSD."
+  },
+  {
+    "start": "11/08/2007",
+    "title": "",
+    "content": "August 11: United Nations website hacked by Turkish Hacker Kerem125."
+  },
+  {
+    "start": "01/01/2008",
+    "title": "Data Processors International\n(MasterCard, Visa, Discover Financial Services and American Express)",
+    "content": "Data Processors International\n(MasterCard, Visa, Discover Financial Services and American Express) was hacked."
+  },
+  {
+    "start": "01/01/2008",
+    "title": "Norwegian Tax Administration",
+    "content": "Norwegian Tax Administration was accidentally published."
+  },
+  {
+    "start": "01/01/2008",
+    "title": "Stanford University",
+    "content": "Stanford University was lost / stolen computer."
+  },
+  {
+    "start": "01/01/2008",
+    "title": "Starbucks",
+    "content": "Starbucks was lost / stolen computer."
+  },
+  {
+    "start": "01/01/2008",
+    "title": "UK Ministry of Defence",
+    "content": "UK Ministry of Defence was lost / stolen media."
+  },
+  {
+    "start": "17/01/2008",
+    "title": "",
+    "content": "January 17: Project Chanology; Anonymous attacks Scientology website servers around the world. Private documents are stolen from Scientology computers and distributed over the Internet."
+  },
+  {
+    "start": "07/03/2008",
+    "title": "",
+    "content": "March 7: Around 20 Chinese hackers claim to have gained access to the world's most sensitive sites, including The Pentagon. They operated from an apartment on a Chinese Island."
+  },
+  {
+    "start": "14/03/2008",
+    "title": "",
+    "content": "March 14: Trend Micro website successfully hacked by Turkish hacker Janizary (aka Utku)."
+  },
+  {
+    "start": "31/12/2008",
+    "title": "National Archives and Records Administration (U.S. military veterans' records)",
+    "content": "National Archives and Records Administration (U.S. military veterans' records) was lost / stolen media."
+  },
+  {
+    "start": "04/04/2009",
+    "title": "",
+    "content": "April 4: Conficker worm infiltrated millions of PCs worldwide including many government-level top-security computer networks."
+  },
+  {
+    "start": "01/01/2010",
+    "title": "Gawker",
+    "content": "Gawker was hacked."
+  },
+  {
+    "start": "01/01/2010",
+    "title": "JP Morgan Chase",
+    "content": "JP Morgan Chase was lost / stolen media."
+  },
+  {
+    "start": "01/01/2010",
+    "title": "U.S. Army\n(classified Iraq War documents)",
+    "content": "U.S. Army\n(classified Iraq War documents) was inside job."
+  },
+  {
+    "start": "01/01/2010",
+    "title": "U.S. government (United States diplomatic cables leak)",
+    "content": "The United States diplomatic cables leak, widely known as Cablegate, began on Sunday, 28 November 2010 when WikiLeaks—a non-profit organization that publishes submissions from anonymous whistleblowers—began releasing classified cables that had been sent to the U.S. State Department by 274 of its consulates, embassies, and diplomatic missions around the world."
+  },
+  {
+    "start": "12/01/2010",
+    "title": "",
+    "content": "January 12: Operation Aurora Google publicly reveals that it has been on the receiving end of a \"highly sophisticated and targeted attack on our corporate infrastructure originating from China that resulted in the theft of intellectual property from Google\""
+  },
+  {
+    "start": "01/06/2010",
+    "title": "",
+    "content": "June: Stuxnet The Stuxnet worm is found by VirusBlokAda. Stuxnet was unusual in that while it spread via Windows computers, its payload targeted just one specific model and type of SCADA systems. It slowly became clear that it was a cyber attack on Iran's nuclear facilities - with most experts believing that Israel was behind it - perhaps with US help."
+  },
+  {
+    "start": "03/12/2010",
+    "title": "",
+    "content": "December 3: The first Malware Conference, MALCON took place in India. Founded by Rajshekhar Murthy, malware coders are invited to showcase their skills at this annual event supported by the Government of India. An advanced malware for Symbian OS is released by hacker A0drul3z."
+  },
+  {
+    "start": "01/01/2011",
+    "title": "",
+    "content": "The hacker group Lulz Security is formed."
+  },
+  {
+    "start": "01/01/2011",
+    "title": "",
+    "content": "Computer hacker sl1nk releases information of his penetration in the servers of the Department of Defense (DoD), Pentagon, NASA, NSA, US Military, Department of the Navy, Space and Naval Warfare System Command and other UK/US government websites."
+  },
+  {
+    "start": "01/01/2011",
+    "title": "China Software Developer Network",
+    "content": "China Software Developer Network was hacked."
+  },
+  {
+    "start": "01/01/2011",
+    "title": "Chinese gaming websites (three: Duowan, 7K7K, 178.com)",
+    "content": "Chinese gaming websites (three: Duowan, 7K7K, 178.com) was hacked."
+  },
+  {
+    "start": "01/01/2011",
+    "title": "Citigroup",
+    "content": "Citigroup was hacked."
+  },
+  {
+    "start": "01/01/2011",
+    "title": "Health Net — IBM",
+    "content": "Health Net — IBM was lost / stolen media."
+  },
+  {
+    "start": "01/01/2011",
+    "title": "Sega",
+    "content": "Sega was hacked."
+  },
+  {
+    "start": "01/01/2011",
+    "title": "Sony Online Entertainment",
+    "content": "Sony Online Entertainment was hacked."
+  },
+  {
+    "start": "01/01/2011",
+    "title": "Sony Pictures",
+    "content": "Sony Pictures was hacked."
+  },
+  {
+    "start": "01/01/2011",
+    "title": "Sony PlayStation Network",
+    "content": "Sony PlayStation Network was hacked."
+  },
+  {
+    "start": "01/01/2011",
+    "title": "Steam",
+    "content": "Steam was hacked."
+  },
+  {
+    "start": "01/01/2011",
+    "title": "Washington Post",
+    "content": "Washington Post was hacked."
+  },
+  {
+    "start": "09/04/2011",
+    "title": "",
+    "content": "April 9: Bank of America website got hacked by a Turkish hacker named JeOPaRDY. An estimated 85,000 credit card numbers and accounts were reported to have been stolen due to the hack. Bank officials say no personal customer bank information is available on that web-page. Investigations are being conducted by the FBI to trace down the incriminated hacker."
+  },
+  {
+    "start": "17/04/2011",
+    "title": "",
+    "content": "April 17: An \"external intrusion\" sends the PlayStation Network offline, and compromises personally identifying information (possibly including credit card details) of its 77 million accounts, in what is claimed to be one of the five largest data breaches ever."
+  },
+  {
+    "start": "01/09/2011",
+    "title": "",
+    "content": "September: Bangladeshi hacker TiGER-M@TE made a world record in defacement history by hacking 700,000 websites in a single shot."
+  },
+  {
+    "start": "16/10/2011",
+    "title": "",
+    "content": "October 16: The YouTube channel of Sesame Street was hacked, streaming pornographic content for about 22 minutes."
+  },
+  {
+    "start": "01/11/2011",
+    "title": "",
+    "content": "November 1: The main phone and Internet networks of the Palestinian territories sustained a hacker attack from multiple locations worldwide."
+  },
+  {
+    "start": "07/11/2011",
+    "title": "",
+    "content": "November 7: The forums for Valve's Steam service were hacked. Redirects for a hacking website, Fkn0wned, appeared on the Steam users' forums, offering \"hacking tutorials and tools, porn, free giveaways and much more.\""
+  },
+  {
+    "start": "14/12/2011",
+    "title": "",
+    "content": "December 14: Five members of the Norwegian hacker group Noria was arrested, allegedly suspected for hacking into the email account of the militant extremist Anders Behring Breivik (who perpetrated the 2011 attacks in the country)."
+  },
+  {
+    "start": "01/01/2012",
+    "title": "",
+    "content": "A Saudi hacker, 0XOMAR, published over 400,000 credit cards online, and threatened Israel to release 1 million credit cards in the future. In response to that incident, an Israeli hacker published over 200 Saudi's credit cards online."
+  },
+  {
+    "start": "01/01/2012",
+    "title": "Apple, Inc./BlueToad",
+    "content": "Apple, Inc./BlueToad was accidentally published."
+  },
+  {
+    "start": "01/01/2012",
+    "title": "Blizzard Entertainment",
+    "content": "Blizzard Entertainment was hacked."
+  },
+  {
+    "start": "01/01/2012",
+    "title": "Greek government",
+    "content": "Greek government was hacked."
+  },
+  {
+    "start": "01/01/2012",
+    "title": "Iranian banks (three: Saderat, Eghtesad Novin, and Saman)",
+    "content": "Iranian banks (three: Saderat, Eghtesad Novin, and Saman) was hacked."
+  },
+  {
+    "start": "01/01/2012",
+    "title": "LinkedIn, eHarmony, Last.fm",
+    "content": "LinkedIn, eHarmony, Last.fm was accidentally published."
+  },
+  {
+    "start": "01/01/2012",
+    "title": "Massive American business hack\nincluding 7-Eleven and Nasdaq",
+    "content": "Massive American business hack\nincluding 7-Eleven and Nasdaq was hacked."
+  },
+  {
+    "start": "01/01/2012",
+    "title": "Rambler.ru",
+    "content": "Rambler.ru was hacked."
+  },
+  {
+    "start": "01/01/2012",
+    "title": "South Carolina Government",
+    "content": "South Carolina Government was inside job."
+  },
+  {
+    "start": "01/01/2012",
+    "title": "Syrian government (Syria Files)",
+    "content": "Syrian government (Syria Files) was hacked."
+  },
+  {
+    "start": "01/01/2012",
+    "title": "Zappos",
+    "content": "Zappos was hacked."
+  },
+  {
+    "start": "07/01/2012",
+    "title": "",
+    "content": "January 7: \"Team Appunity\", a group of Norwegian hackers, got arrested for breaking into and publishing the user database of Norway's largest prostitution website."
+  },
+  {
+    "start": "03/02/2012",
+    "title": "",
+    "content": "February 3: Marriott was hacked by a New Age ideologist, Attila Nemeth who was resisting against the New World Order where he said that corporations are allegedly controlling the world. As a response Marriott reported him to the United States Secret Service."
+  },
+  {
+    "start": "08/02/2012",
+    "title": "",
+    "content": "February 8: Foxconn is hacked by a hacker group, \"Swagg Security\", releasing a massive amount of data including email and server logins, and even more alarming - bank account credentials of large companies like Apple and Microsoft. Swagg Security stages the attack just as a Foxconn protest ignites against terrible working conditions in southern China."
+  },
+  {
+    "start": "24/05/2012",
+    "title": "",
+    "content": "May 24: WHMCS is hacked by UGNazi, they claim that the reason for this is because of the illegal sites that are using their software."
+  },
+  {
+    "start": "31/05/2012",
+    "title": "",
+    "content": "May 31: MyBB is hacked by newly founded hacker group, UGNazi, the website was defaced for about a day, they claim their reasoning for this was because they were upset that the forum board Hackforums.net uses their software."
+  },
+  {
+    "start": "05/06/2012",
+    "title": "",
+    "content": "June 5: The social networking website LinkedIn has been hacked and the passwords for nearly 6.5 million user accounts are stolen by cybercriminals. As a result, a United States grand jury indicted Nikulin and three unnamed co-conspirators on charges of aggravated identity theft and computer intrusion."
+  },
+  {
+    "start": "15/08/2012",
+    "title": "",
+    "content": "August 15: The most valuable company in the world Saudi Aramco is crippled by a cyber warfare attack for months by malware called Shamoon. Considered the biggest hack in history in terms of cost and destructiveness . Carried out by an Iranian attacker group called Cutting Sword of Justice. Iranian hackers retaliated against Stuxnet by releasing Shamoon. The malware destroyed over 35,000 Saudi Aramco computers, affecting business operations for months."
+  },
+  {
+    "start": "17/12/2012",
+    "title": "",
+    "content": "December 17: Computer hacker sl1nk announced that he has hacked a total of 9 countries' SCADA systems. The proof includes 6 countries: France, Norway, Russia, Spain, Sweden and the United States."
+  },
+  {
+    "start": "31/12/2012",
+    "title": "Adobe Systems",
+    "content": "Adobe Systems was hacked."
+  },
+  {
+    "start": "31/12/2012",
+    "title": "Apple",
+    "content": "Apple was hacked."
+  },
+  {
+    "start": "31/12/2012",
+    "title": "Drupal",
+    "content": "Drupal was hacked."
+  },
+  {
+    "start": "31/12/2012",
+    "title": "Dun & Bradstreet",
+    "content": "Dun & Bradstreet was hacked."
+  },
+  {
+    "start": "31/12/2012",
+    "title": "Evernote",
+    "content": "Evernote was hacked."
+  },
+  {
+    "start": "31/12/2012",
+    "title": "Facebook",
+    "content": "Facebook was accidentally published."
+  },
+  {
+    "start": "31/12/2012",
+    "title": "Nintendo",
+    "content": "Nintendo was hacked."
+  },
+  {
+    "start": "31/12/2012",
+    "title": "SnapChat",
+    "content": "SnapChat was hacked."
+  },
+  {
+    "start": "31/12/2012",
+    "title": "Tumblr",
+    "content": "Tumblr was hacked."
+  },
+  {
+    "start": "31/12/2012",
+    "title": "Vodafone",
+    "content": "Vodafone was inside job."
+  },
+  {
+    "start": "31/12/2012",
+    "title": "Washington State court system",
+    "content": "Washington State court system was hacked."
+  },
+  {
+    "start": "31/12/2012",
+    "title": "Yahoo",
+    "content": "Yahoo was hacked."
+  },
+  {
+    "start": "01/01/2013",
+    "title": "",
+    "content": "The social networking website Tumblr is attacked by hackers. Consequently, 65,469,298 unique emails and passwords were leaked from Tumblr. The data breach's legitimacy is confirmed by computer security researcher Troy Hunt."
+  },
+  {
+    "start": "01/01/2014",
+    "title": "AOL",
+    "content": "AOL was hacked."
+  },
+  {
+    "start": "01/01/2014",
+    "title": "eBay",
+    "content": "eBay was hacked."
+  },
+  {
+    "start": "01/01/2014",
+    "title": "Gmail",
+    "content": "Gmail was hacked."
+  },
+  {
+    "start": "01/01/2014",
+    "title": "Home Depot",
+    "content": "Home Depot was hacked."
+  },
+  {
+    "start": "01/01/2014",
+    "title": "JP Morgan Chase",
+    "content": "JP Morgan Chase was hacked."
+  },
+  {
+    "start": "01/01/2014",
+    "title": "Sony Pictures",
+    "content": "On November 24, 2014, a hacker group which identified itself by the name \"Guardians of Peace\" (GOP) leaked a release of confidential data from the film studio Sony Pictures. The data included personal information about Sony Pictures employees and their families, e-mails between employees, information about executive salaries at the company, copies of then-unreleased Sony films, and other information."
+  },
+  {
+    "start": "01/01/2014",
+    "title": "Target Corporation",
+    "content": "Target Corporation was hacked."
+  },
+  {
+    "start": "01/01/2014",
+    "title": "Uber",
+    "content": "Uber was poor security."
+  },
+  {
+    "start": "01/01/2014",
+    "title": "Yahoo",
+    "content": "Yahoo was hacked."
+  },
+  {
+    "start": "07/02/2014",
+    "title": "",
+    "content": "February 7: The bitcoin exchange Mt.Gox filed for bankruptcy after $460 million was apparently stolen by hackers due to \"weaknesses in [their] system\" and another $27.4 million went missing from its bank accounts."
+  },
+  {
+    "start": "01/10/2014",
+    "title": "",
+    "content": "October: The White House computer system was hacked.  It was said that the FBI, the Secret Service, and other U.S. intelligence agencies categorized the attacks \"among the most sophisticated attacks ever launched against U.S. government systems.\""
+  },
+  {
+    "start": "24/11/2014",
+    "title": "",
+    "content": "November 24: In response to the release of the film The Interview, the servers of Sony Pictures are hacked by a hacker group calling itself \"Guardian of Peace\"."
+  },
+  {
+    "start": "28/11/2014",
+    "title": "",
+    "content": "November 28: The website of the Philippine telecommunications company Globe Telecom was hacked in response to the poor internet service they are distributing."
+  },
+  {
+    "start": "01/01/2015",
+    "title": "Anthem Inc.",
+    "content": "Anthem Inc. was hacked."
+  },
+  {
+    "start": "01/01/2015",
+    "title": "Ashley Madison",
+    "content": "Ashley Madison was hacked."
+  },
+  {
+    "start": "01/01/2015",
+    "title": "Internal Revenue Service",
+    "content": "Internal Revenue Service was hacked."
+  },
+  {
+    "start": "01/01/2015",
+    "title": "Slack",
+    "content": "Slack was poor security."
+  },
+  {
+    "start": "01/01/2015",
+    "title": "UCLA Medical Center, Santa Monica",
+    "content": "UCLA Medical Center, Santa Monica was hacked."
+  },
+  {
+    "start": "01/01/2015",
+    "title": "VTech",
+    "content": "VTech was hacked."
+  },
+  {
+    "start": "01/01/2015",
+    "title": "Walmart",
+    "content": "Walmart was hacked."
+  },
+  {
+    "start": "01/01/2015",
+    "title": "Xat.com",
+    "content": "Xat.com was social engineering."
+  },
+  {
+    "start": "01/06/2015",
+    "title": "",
+    "content": "June:  the records of 21.5 million people, including social security numbers, dates of birth, addresses, fingerprints, and security-clearance-related information, are stolen from the United States Office of Personnel Management.  Most of the victims are employees of the United States government and unsuccessful applicants to it. The Wall Street Journal and the Washington Post report that government sources believe the hacker is the government of China."
+  },
+  {
+    "start": "01/07/2015",
+    "title": "",
+    "content": "July: The servers of extramaritial affairs website Ashley Madison were breached."
+  },
+  {
+    "start": "01/01/2016",
+    "title": "Philippines Commission on Elections",
+    "content": "Philippines Commission on Elections was hacked."
+  },
+  {
+    "start": "01/01/2016",
+    "title": "Democratic National Committee",
+    "content": "Democratic National Committee was hacked."
+  },
+  {
+    "start": "01/01/2016",
+    "title": "Friend Finder Networks",
+    "content": "Friend Finder Networks was poor security / hacked."
+  },
+  {
+    "start": "01/01/2016",
+    "title": "Taobao",
+    "content": "Taobao was hacked."
+  },
+  {
+    "start": "01/01/2016",
+    "title": "Verizon Communications",
+    "content": "Verizon Communications was hacked."
+  },
+  {
+    "start": "01/01/2016",
+    "title": "Weebly",
+    "content": "Weebly was hacked."
+  },
+  {
+    "start": "01/02/2016",
+    "title": "",
+    "content": "February: The 2016 Bangladesh Bank heist attempted to take US$951 million from Bangladesh Bank, and succeeded in getting $101 million - although some of this was later recovered."
+  },
+  {
+    "start": "22/07/2016",
+    "title": "",
+    "content": "July 22: WikiLeaks published the documents from the 2016 Democratic National Committee email leak."
+  },
+  {
+    "start": "29/07/2016",
+    "title": "",
+    "content": "July 29: a group suspected coming from China launched hacker attacks on the website of Vietnam Airlines."
+  },
+  {
+    "start": "01/09/2016",
+    "title": "",
+    "content": "September: Hacker Ardit Ferizi is sentenced to 20 years in prison after being arrested for hacking U.S. servers and passing the leaked information to members of ISIL terrorist group back in 2015."
+  },
+  {
+    "start": "01/10/2016",
+    "title": "",
+    "content": "October: The 2016 Dyn cyberattack is being conducted with a botnet consisting of IOTs infected with Mirai by the hacktivist groups SpainSquad, Anonymous, and New World Hackers, reportedly in retaliation for Ecuador's rescinding Internet access to WikiLeaks founder Julian Assange at their embassy in London, where he has been granted asylum."
+  },
+  {
+    "start": "31/12/2016",
+    "title": "Taringa!",
+    "content": "Taringa! was hacked."
+  },
+  {
+    "start": "31/12/2016",
+    "title": "Uber",
+    "content": "Uber was hacked."
+  },
+  {
+    "start": "01/01/2017",
+    "title": "Equifax",
+    "content": "On September 7, 2017, Equifax announced a cybercrime identity theft event potentially impacting approximately 145.5 million U.S. consumers. Information on an estimated range of under 400,000 up to 44 million British residents as well as 8,000 Canadian residents were also compromised. An additional 11,670 Canadians were affected as well, later revealed by Equifax. VentureBeat called the exposure of data on 140+ million customers \"one of the biggest data breaches in history.\""
+  },
+  {
+    "start": "01/02/2017",
+    "title": "",
+    "content": "February: The Cloudbleed bug was discovered by Google Project Zero team."
+  },
+  {
+    "start": "01/04/2017",
+    "title": "",
+    "content": "April: A hacker group calling itself \"The Dark Overlord\" posted unreleased episodes of Orange Is the New Black TV series online after they failed to extort online entertainment company Netflix."
+  },
+  {
+    "start": "01/05/2017",
+    "title": "",
+    "content": "May: WannaCry ransomware attack started on Friday, 12 May 2017, and has been described as unprecedented in scale, infecting more than 230,000 computers in over 150 countries."
+  },
+  {
+    "start": "01/05/2017",
+    "title": "",
+    "content": "May: 25,000 digital photos and ID scans relating to patients of the Grozio Chirurgija cosmetic surgery clinic in Lithuania were obtained and published without consent by an unknown group demanding ransoms. Thousands of clients from more than 60 countries were affected. The breach turned attention to weaknesses in Lithuania's information security."
+  },
+  {
+    "start": "01/06/2017",
+    "title": "",
+    "content": "June: 2017 Petya cyberattack."
+  },
+  {
+    "start": "01/09/2017",
+    "title": "",
+    "content": "September 2017: Deloitte breach."
+  },
+  {
+    "start": "01/01/2018",
+    "title": "",
+    "content": "June: Lazy FP State Restore, a speculative execution exploit affecting Intel Core CPUs, is announced by Intel."
+  },
+  {
+    "start": "01/01/2018",
+    "title": "Facebook",
+    "content": "Facebook was poor security."
+  },
+  {
+    "start": "01/01/2018",
+    "title": "Ticketfly (subsidiary of Eventbrite)",
+    "content": "Ticketfly (subsidiary of Eventbrite) was hacked."
+  },
+  {
+    "start": "01/01/2018",
+    "title": "MyHeritage",
+    "content": "MyHeritage was unknown."
+  },
+  {
+    "start": "01/01/2018",
+    "title": "Google Plus",
+    "content": "Google Plus was poor security."
+  },
+  {
+    "start": "01/01/2018",
+    "title": "Under Armour",
+    "content": "Under Armour was hacked."
+  },
+  {
+    "start": "01/01/2018",
+    "title": "SingHealth",
+    "content": "SingHealth was hacked."
+  },
+  {
+    "start": "01/01/2018",
+    "title": "British Airways",
+    "content": "British Airways was hacked."
+  },
+  {
+    "start": "01/05/2018",
+    "title": "",
+    "content": "May: A speculative execution exploit named Speculative Store Bypass (sometimes referred to as \"Variant 4\") is disclosed by researchers."
   }
 ]

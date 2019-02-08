@@ -1,7 +1,9 @@
 /* globals moment */
 var popupCallback = function(id) {
   console.log(id, events[id]);
-}
+  if (id >= 0) sendMessage(JSON.stringify({ id: id }));
+};
+
 // addEventListener support for IE8
 function bindEvent(element, eventName, eventHandler) {
   if (element.addEventListener) {
