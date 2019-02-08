@@ -6,7 +6,7 @@ var isPopupReduced = false;
 var ignoreURLS = true;
 
 function getProjectIdFromName(name) {
-  var projectID = false;
+  var projectID = -1;
 
   $.each(projectsData, function(index, item) {
     if (item.slug == name) projectID = index;
@@ -32,7 +32,7 @@ function init() {
       $('#button-open-about').trigger('click');
     } else {
       var currentProjectID = getProjectIdFromName(currentPagetName);
-      if (currentProjectID) gotoProject(currentProjectID, 'up');
+      if (currentProjectID != -1) gotoProject(currentProjectID, 'up');
     }
   });
 }
