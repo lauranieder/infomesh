@@ -94,3 +94,17 @@ body,html{
   visibility:hidden;
   display:none;
 }
+
+#button-timeline-left{
+  position: fixed;
+  z-index:1000;
+  background-color: white;
+}
+
+#button-timeline-right{
+  right:0;
+  position: fixed;
+  z-index:1000;
+  background-color: white;
+
+}

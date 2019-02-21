@@ -1,19 +1,38 @@
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');*/
+/*@import url('https://fonts.googleapis.com/css?family=Oswald');*/
+
 #info-popup {
   position: absolute;
-  border: 1px solid red;
+  box-sizing: border-box;
+  border: 1px solid black;
   transition: opacity 500ms cubic-bezier(0.23, 1, 0.32, 1);
   padding: 0px;
+  padding: 1rem;
   pointer-events: none;
+  background-color:white;
 }
 
-#info-popup h1 {
+/*#info-popup h1 {
   color: red;
-  font-family: "Oswald, Arial, sans-serif";
+
   font-weight: "normal";
   font-style: "normal";
   font-stretch: "expanded";
+}*/
+
+#info-popup h1 {
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  /*font-family: 'Roboto', sans-serif;*/
+  /*font-weight: "normal";
+  font-style: "normal";
+  font-stretch: "expanded";*/
+  margin-bottom: 1rem;
 }
 
 #info-popup p {
-  padding: 0px 15px;
+  /*padding: 0px 15px;*/
+  color: black;
+  text-decoration: none;
 }

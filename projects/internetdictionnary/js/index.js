@@ -21,7 +21,7 @@ $(document).ready(function() {
       fov: 150,
       speed: 0.2,
 
-      fontFamily: "Oswald, Arial, sans-serif",
+      fontFamily: "Arial, Helvetica, sans-serif",
       fontSize: "18",
       fontColor: "#000",
       fontWeight: "normal",

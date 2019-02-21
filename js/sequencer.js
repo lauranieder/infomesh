@@ -35,10 +35,10 @@ var Sequencer = {
     image.onload = function() {
       self.imageLoaded++;
 
-        console.log(self.imageLoaded, self.options.frameCount);
+        //console.log(self.imageLoaded, self.options.frameCount);
       if (self.imageLoaded == self.options.frameCount) {
         var date = new Date();
-        console.log('Low res loaded in ' + (date.getTime() - self.loadStart.getTime()));
+        //console.log('Low res loaded in ' + (date.getTime() - self.loadStart.getTime()));
       }
     };
 

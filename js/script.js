@@ -141,6 +141,15 @@ $(document).ready(function() {
     gotoProject(nextProject, 'up');
   });
 
+  $('#button-timeline-left').on('click', function(e) {
+    //e.preventDefault();
+    console.log("go left");
+  });
+  $('#button-timeline-right').on('click', function(e) {
+    //e.preventDefault();
+    console.log("go right");
+  });
+
   $('body').on('click', '.button-open-project', function(e) {
     e.preventDefault();
 

@@ -23,6 +23,24 @@
   background-color: blue;
 }
 
+#popup-title{
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+.reduced #popup-title{
+  font-size: 1rem;
+  font-weight: 300;
+  /*float:right;*/
+
+}
+
+.reduced #popup-date{
+  float:left;
+  margin-right: 1rem;
+}
+
 #popup {
   position:fixed;
   bottom: calc(10vh + 50px);

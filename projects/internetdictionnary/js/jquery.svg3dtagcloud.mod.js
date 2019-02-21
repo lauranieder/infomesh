@@ -402,13 +402,20 @@ THE SOFTWARE.
 
     function showTooltip(entry) {
       var position = entry.element.getBoundingClientRect();
+      var rem1 = convertRemToPixels(1);
+      var positionX = position.x-rem1-1; //1 parce que la bordure width fait 1pixel + padding 1rem.
+      var positionY = position.y-rem1;
 
       if (entry.tooltip) {
-        var html = '<h1 style="font-size:' + $(entry.element).css('font-size') + '">' + $(entry.element).text() + '<h1><p>' + (settings.tooltipFontToUpperCase ? entry.tooltipLabel.toUpperCase() : entry.tooltipLabel) + '</p>';
+        var html = '<h1 style="font-size:' + $(entry.element).css('font-size') + '">' + $(entry.element).text() + '</h1><p>' + (settings.tooltipFontToUpperCase ? entry.tooltipLabel.toUpperCase() : entry.tooltipLabel) + '</p>';
+        var size = parseInt($(entry.element).css('font-size'));
+        if(size > 60){ //Pas très joli, mais il y a un décalage de quelques pixels sur les grande tailles ?
+          var positionY = positionY+4;
+        }
         $('#info-popup').css({
           opacity: 1,
-          left: position.x,
-          top: position.y
+          left: positionX,
+          top: positionY
         }).html(html);
       }
     };
@@ -418,6 +425,10 @@ THE SOFTWARE.
         opacity: 0
       });
     };
+
+    function convertRemToPixels(rem) {
+      return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
+  }
 
     //---
 

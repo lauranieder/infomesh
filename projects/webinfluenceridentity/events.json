@@ -1,12 +1,119 @@
 [
   {
-    "start": "01/01/1989",
-    "title": "NeXT",
-    "content": "In 1989, <a href='https://en.wikipedia.org/wiki/NeXT' target='_blank'>NeXT</a> moved the scrollbar back to the left side of the window. The thumb was proportionally sized with arrows together at the bottom of the bar. Actions auto repeated, and the alt-key would move content by window. The thumb could be dragged, and using the alt-key while dragging would slow its movement."
+    "timeline": "",
+    "title": "Apple is founded.",
+    "start": "01/04/1976",
+    "end": "",
+    "content": "",
+    "wikifetch": "History_of_Apple_Inc.",
+    "readmore": "https://en.wikipedia.org/wiki/History_of_Apple_Inc.",
+    "context": "",
+    "contentsource": "",
+    "company": "",
+    "": ""
   },
   {
-    "start": "01/01/1990",
-    "title": "Scroll",
-    "content": "Examples of horizontal and vertical scrollbars around a text box A scrollbar is an interaction technique or widget in which continuous text, pictures, or any other content can be scrolled in a predetermined direction (up, down, left, or right) on a computer display, window, or viewport so that all of the content can be viewed, even if only a fraction of the content can be seen on a device's screen at one time. It offers a solution to the problem of navigation to a known o unknown location within a two-dimensional information space. It was also known as a handle in the very first GUIs. They are present in a wide range of electronic devices including computers, graphing calculators, mobile phones, and portable media players. The user interacts with the scrollbar elements using some method of direct action, the scrollbar translates that action into scrolling commands, and the user receives feedback through a visual updating of both the scrollbar elements and the scrolled content.",
-    "wikifetch":"https://en.wikipedia.org/api/rest_v1/page/summary/scrollbar"
-  }]
+    "timeline": "",
+    "title": "Amazon is founded.",
+    "start": "05/06/1994",
+    "end": "",
+    "content": "Amazon.com is founded by <a href=\"https://en.wikipedia.org/wiki/Jeff_Bezos\">Jeff Bezos</a>",
+    "wikifetch": "Amazon_(company)",
+    "readmore": "https://en.wikipedia.org/wiki/Amazon_(company)",
+    "context": "",
+    "contentsource": "",
+    "company": "amazon",
+    "": ""
+  },
+  {
+    "timeline": "",
+    "title": "Google was first known as \"BackRub\", a search algorithm.",
+    "start": "01/01/1996",
+    "end": "",
+    "content": "",
+    "wikifetch": "History_of_Google",
+    "readmore": "https://en.wikipedia.org/wiki/Google",
+    "context": "",
+    "contentsource": "wikipédia",
+    "company": "google",
+    "": ""
+  },
+  {
+    "timeline": "",
+    "title": "Google was first known as \"BackRub\", a search algorithm.",
+    "start": "31/12/1996",
+    "end": "",
+    "content": "<p>Google began in January 1996 as a research project by Larry Page and Sergey Brin when they were both PhD students at Stanford University in Stanford, California.</p> <p>While conventional search engines ranked results by counting how many times the search terms appeared on the page, the two theorized about a better system that analyzed the relationships among websites. They called this new technology <a href=\"https://en.wikipedia.org/wiki/PageRank\">PageRank</a>; it determined a website's relevance by the number of pages, and the importance of those pages that linked back to the original site.</p> <p>Page and Brin originally nicknamed their new search engine \"BackRub\", because the system checked backlinks to estimate the importance of a site. Eventually, they changed the name to Google; the name of the search engine originated from a misspelling of the word <a href=\"https://en.wikipedia.org/wiki/Googol\">\"googol\"</a>, the number 1 followed by 100 zeros, which was picked to signify that the search engine was intended to provide large quantities of information. Originally, Google ran under Stanford University's website, with the domains google.stanford.edu and z.stanford.edu.</p>",
+    "wikifetch": "",
+    "readmore": "",
+    "context": "",
+    "contentsource": "",
+    "company": "google",
+    "": ""
+  },
+  {
+    "timeline": "",
+    "title": "NeXT is bought by Apple.",
+    "start": "07/02/1997",
+    "end": "",
+    "content": "Apple Computer announced an intention to acquire NeXT on December 20, 1996. Apple paid $429 million in cash, which went to the initial investors and 1.5 million Apple shares, which went to Steve Jobs. The deal was finalized on February 7, 1997, bringing Jobs back to Apple as a consultant, who was later appointed as interim CEO.",
+    "wikifetch": "NeXT#1996–97:_purchase_by_Apple",
+    "readmore": "https://en.wikipedia.org/wiki/NeXT#1996%E2%80%9397:_purchase_by_Apple",
+    "context": "",
+    "contentsource": "",
+    "company": "",
+    "": ""
+  },
+  {
+    "timeline": "",
+    "title": "Larry Page and Sergey Brin created Google Search Engine",
+    "start": "15/09/1997",
+    "end": "",
+    "content": "",
+    "wikifetch": "",
+    "readmore": "",
+    "context": "",
+    "contentsource": "",
+    "company": "google",
+    "": ""
+  },
+  {
+    "timeline": "",
+    "title": "Bursting of the dot-com bubble",
+    "start": "10/03/2000",
+    "end": "",
+    "content": "The <a href=\"https://en.wikipedia.org/wiki/NASDAQ_Composite\">Nasdaq Composite</a> <a href=\"https://en.wikipedia.org/wiki/Stock_market_index\">stock market index</a>, which included many Internet-based companies, peaked in value on March 10, 2000, before crashing. The burst of the bubble, known as the <strong>dot-com crash</strong>, lasted from March 11, 2000, to October 9, 2002. During the crash, many online shopping companies, such as Pets.com, Webvan, and Boo.com, as well as communication companies, such as Worldcom, NorthPoint Communications and Global Crossing failed and shut down.Others, such as Cisco, whose stock declined by 86%, and Qualcomm, lost a large portion of their market capitalization but survived, and some companies, such as eBay and Amazon.com, declined in value but recovered quickly.",
+    "wikifetch": "Dot-com_bubble#Bursting_of_the_bubble",
+    "readmore": "https://en.wikipedia.org/wiki/Dot-com_bubble#Bursting_of_the_bubble",
+    "context": "",
+    "contentsource": "wikipédia",
+    "company": "general",
+    "": "On March 10, 2000, the NASDAQ Composite stock market index peaked at 5,048.62"
+  },
+  {
+    "timeline": "",
+    "title": "Google.org is founded.",
+    "start": "01/10/2005",
+    "end": "",
+    "content": "",
+    "wikifetch": "Google.org",
+    "readmore": "",
+    "context": "",
+    "contentsource": "",
+    "company": "google",
+    "": ""
+  },
+  {
+    "timeline": "",
+    "title": "Google became the main subsidiary of the holding company Alphabet Inc.",
+    "start": "02/10/2015",
+    "end": "",
+    "content": "",
+    "wikifetch": "Alphabet_Inc.",
+    "readmore": "",
+    "context": "",
+    "contentsource": "",
+    "company": "google",
+    "": ""
+  }
+]

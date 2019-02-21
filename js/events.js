@@ -15,6 +15,7 @@ function createPopup() {
 }
 
 function loadEvents() {
+  //wikitest();
   jQuery.getJSON('./events.json', function(data) {
     events = data;
 
@@ -54,13 +55,75 @@ function computeEvents() {
     if (item.wikifetch) {
       wikifetching(item.wikifetch, index);
     }
+    //TODO : regex to improve, replace link with target blank
+    if(item.content){
+      var temp = item.content;
+      //console.log(temp);
+      var temp = temp.replace("<a", "<a target='_blank' ");
+      //console.log(temp);
+      item.content = temp;
+    }
   });
 }
 
 function wikifetching(wiki, index){
-  $.getJSON(wiki, function(data){
+  //console.log("wikifetch");
+  wikitoload = "https://en.wikipedia.org/api/rest_v1/page/summary/"+wiki;
+  //console.log(wikitoload);
+  $.getJSON(wikitoload, function(data){
     events[index].content = data.extract_html;
+    //console.log(data);
+    //console.log(data.extract_html);
   });
+}
+
+function wikitest(){
+  var url = 'https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=wikitext&page=Timeline_of_Facebook&section=1';
+  // $.getJSON(url, function(data){
+  //   console.log(data);
+  // });
+  //postData = function() {
+     $.ajax({
+       headers: {
+        'Access-Control-Allow-Origin': 'https://en.wikipedia.org'
+    },
+     });
+     var settings = {
+       "async": true,
+       "crossDomain": true,
+       "url": "https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=wikitext&page=Timeline_of_Facebook&section=1",
+       "method": "GET",
+
+     }
+     $.ajax(settings).done(function (response) {
+       console.log(response);
+     });
+  // }
+
+}
+
+function wikifetchingnew(wiki,index){
+  // postData = function() {
+ //   $.ajax({
+ //      url : 'more_com.php' // La ressource ciblée
+ //   });
+ //   var settings = {
+ //     "async": true,
+ //     "crossDomain": true,
+ //     "url": "http://10.0.10.18:8000/api/v1/documents/bac85005-5c6d-43b4-9d6a-6f6a89e20d52/status",
+ //     "method": "GET",
+ //     "headers": {
+ //       "Content-Type": "application/x-www-form-urlencoded",
+ //       "cache-control": "no-cache",
+ //       "Postman-Token": "d6d93159-3e42-49ec-b06d-4bb884844dcf"
+ //     }
+ //   }
+ //   $.ajax(settings).done(function (response) {
+ //     console.log(response);
+ //   });
+ // }
+
+
 }
 
 $(document).ready(function() {
@@ -76,7 +139,9 @@ $(document).ready(function() {
     var currentPopupIndex = -1;
 
     $.each(events, function(index, item) {
-      var startDate = moment(item.start, 'DD/MM/YYYY')
+      var startDate = moment(item.start, 'DD/MM/YYYY');
+
+
 
 
       if (item.end) {
@@ -113,6 +178,9 @@ $(document).ready(function() {
         $('#popup').addClass('opened');
         $('#popup-title').text(events[currentPopupIndex].title);
         $('#popup-content').html(events[currentPopupIndex].content);
+        $('#popup-date').html(moment(events[currentPopupIndex].start, 'DD/MM/YYYY').format('MMMM Do, YYYY'));
+
+
       }
     }
   });

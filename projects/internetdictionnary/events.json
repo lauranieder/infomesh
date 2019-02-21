@@ -1,18 +1,10 @@
 [
   {
-    "start": "01/01/1989",
-    "end": "01/01/1990",
-    "title": "WWW",
-    "content": "Mark Twain sometimes wrote science fiction? In one of them, he imagined the “telelectroscope,” a device that used telephone wires to create a world-wide communication network.",
-    "url": "https://en.wikipedia.org/wiki/WWW"
-  },
-  {
-    "start": "01/10/1990",
-    "title": "Internaut",
-    "content": "The more someone knows about the Internet, its history and politics, the more likely the term internaut fits them."
-  },
-  {
-    "start": "01/01/1992",
-    "title": "HTML",
-    "content": "A markup language that is used to create documents on the World Wide Web incorporating text, graphics, sound, video, and hyperlinks."
+    "timeline": "",
+    "start": "13/03/1989",
+    "end": "",
+    "title": "Information Mesh",
+    "content": "Many of the discussions of the future at CERN and the LHC era end with the question - \"Yes, but how will we ever keep track of such a large project?\". In March 1989, <a href=\"https://en.wikipedia.org/wiki/Tim_Berners-Lee\">Tim Berners-Lee</a> submitted a proposal for an information management system to his boss, Mike Sendall. ‘Vague, but exciting’, were the words that Sendall wrote on the proposal. He then encouraged him to begin implementing his system. He considered several names, including Information Mesh, The Information Mine or Mine of Information, but settled on World Wide Web.",
+    "wikifetch": "",
+    "readmore": "https://www.w3.org/History/1989/proposal.html"
   }]
