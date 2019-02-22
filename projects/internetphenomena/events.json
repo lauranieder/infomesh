@@ -1,82 +1,22 @@
 [
   {
-    "timeline": "internetdictionnary",
-    "title": "The first \"webcam\" is launched, aimed at a coffee pot. ",
-    "start": "01/01/1991",
-    "end": "",
-    "content": "",
-    "wikifetch": "Trojan_Room_coffee_pot",
-    "readmore": "",
-    "contentsource": ""
+    "start": "01/01/1995",
+    "end": "01/12/1995",
+    "title": "Beanie Baby",
+    "content": "In tandem with the launch of the Ty Website, all Beanie Baby hangtags had the Ty Website URL and a call to action printed underneath the poems and birthdays that commanded audiences to visit the company Web site with text that read: Visit our web page!!! As a result, hordes of consumers were visiting the Ty Web site by the thousands to gain information about Beanie Babies which was completely unprecedented at that time. Ty is the first business to leverage their Web site to connect and engage with consumers of their products. This effort evolved into the world's first Internet sensation.",
+    "url": "https://en.wikipedia.org/wiki/Beanie_Babies"
   },
   {
-    "timeline": "",
-    "title": "The first image is uploaded to the WWW",
-    "start": "18/07/1992",
-    "end": "",
-    "content": "The first image on the world wide web was a promotional image for the parody girl-pop group, \"Les Horribles Cernettes,\" which was comprised of women working at the LHC at CERN. Tim Berners-Lee had the image handy when he wanted to test the first photo uploading system for the WWW.",
-    "wikifetch": "Les_Horribles_Cernettes",
-    "readmore": "https://web.archive.org/web/20121115110701im_/http://www.viceland.com/viceblog/15968853firstphoto_finished_full.jpg",
-    "contentsource": ""
+    "start": "01/01/1997",
+    "end": "01/12/1997",
+    "title": "Bill Gates Email Beta Test",
+    "url": "https://knowyourmeme.com/memes/bill-gatesmicrosoft-chain-letter-e-mails",
+    "content": "An email chain-letter that first appeared in 1997 and was still circulating as recently as 2007. The message claims that America Online and Microsoft are conducting a beta test and for each person you forward the email to, you will receive a payment from Bill Gates of more than $200. Realistic contact information for a lawyer appears in the message."
   },
   {
-    "timeline": "",
-    "title": "Section 230 of the Communications Decency Act enacted. Protects websites from liability for third party content enacted.",
-    "start": "01/02/1996",
-    "end": "",
-    "content": "",
-    "wikifetch": "",
-    "readmore": "",
-    "contentsource": "Data provided the EFF."
-  },
-  {
-    "timeline": "",
-    "title": "Free speech on the internet is protected",
-    "start": "01/06/1997",
-    "end": "",
-    "content": "EFF legal case : ACLU v. Reno. Recognized that free speech on the Internet merits the highest standards of Constitutional protection",
-    "wikifetch": "",
-    "readmore": "",
-    "contentsource": "Data provided the EFF."
-  },
-  {
-    "timeline": "",
-    "title": "Digital Millennium Copyright Act is passed.",
-    "start": "01/01/1998",
-    "end": "1998-12-30T23:00:00.000Z",
-    "content": "Bars circumvention of software code embedded in software-enabled devices that prevents copying. DMCA has become a serious threat that jeopardizes fair use, impedes competition and innovation, and chills free expression and scientific research. EFF has fought hard against the DMCA circumvention provisions in the courts, Congress and other forums, and has fought equally hard to make sure the DMCA safe harbors shelter innovation and creativity.\n",
-    "wikifetch": "",
-    "readmore": "https://www.eff.org/issues/dmca",
-    "contentsource": "Data provided the EFF."
-  },
-  {
-    "timeline": "internetdictionary",
-    "title": "Blogs First Appear",
-    "start": "01/01/1998",
-    "end": "",
-    "content": "",
-    "wikifetch": "History_of_blogging",
-    "readmore": "",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "EFF legal case : A&M Records v. Napter/MGM Studios v. Grokster",
-    "start": "01/01/2001",
-    "end": "",
-    "content": "Landmark intellectual property case that established peer-to-peer file sharing services could held liable for contributory and vicarious infringement of copyright when users shared music downloads.\nJohn Doe Anonymity cases  (John Doe v. 2 Themart) -- EFF represented plaintiffs. Established that  individuals have a First Amendment right to speak anonymously on the Internet .\n",
-    "wikifetch": "",
-    "readmore": "",
-    "contentsource": "Data provided the EFF."
-  },
-  {
-    "timeline": "",
-    "title": "EFF helps killing SOPA/PIPA",
-    "start": "01/01/2012",
-    "end": "",
-    "content": "A series of bills promoted by Hollywood in the US Congress that would have a created a \"blacklist\" of censored websites. These bills were defeated by an enormous online campaign started by EFF and a handful of other organizations, which culminated in the Internet Blackout on the January 18, 2012.\n",
-    "wikifetch": "Protests_against_SOPA_and_PIPA",
-    "readmore": "",
-    "contentsource": "Data provided the EFF."
-  }
-]
+    "start": "01/01/2002",
+    "end": "01/12/2002",
+    "title": "Every time you masturbate... God kills a kitten",
+    "urls": "https://en.wikipedia.org/wiki/Every_time_you_masturbate..._God_kills_a_kitten",
+    "content": "Every time you masturbate… God kills a kitten is the caption of an image created by Chris Darden of the website Fark.com in 2002 that quickly became an internet meme. The image features a kitten being chased by two Domo characters (the animated mascot of Japanese television station NHK), and has the tagline Please, think of the kittens."
+  }]
