@@ -1,0 +1,62 @@
+[
+    {
+      "timeline": "",
+      "title": "Tim Berners-Lee builds tools",
+      "start": "31/12/1990",
+      "end": "",
+      "content": "By Christmas 1990, Berners-Lee had built all the tools necessary for a working Web: the <a href=\"https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol\">HyperText Transfer Protocol</a> (HTTP) 0.9, the <a href=\"https://en.wikipedia.org/wiki/HTML\">HyperText Markup</a> Language (HTML), the first <a href=\"https://en.wikipedia.org/wiki/Web_browser\">Web browser</a> (named WorldWideWeb, which was also a Web editor), the first HTTP server software (later known as CERN httpd), the first web server (http://info.cern.ch), and the first Web pages that described the project itself. The browser could access Usenet newsgroups and FTP files as well. However, it could run only on the NeXT; Nicola Pellow therefore created a simple text browser, called the Line Mode Browser, that could run on almost any computer. To encourage use within CERN, Bernd Pollermann put the CERN telephone directory on the web—previously users had to log onto the mainframe in order to look up phone numbers.",
+      "wikifetch": "",
+      "readmore": "",
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "The web is publicly announced. ",
+      "start": "06/08/1991",
+      "end": "",
+      "content": "The Web was publicly announced (via a posting to the Usenet newsgroup alt.hypertext) on August 6, 1991.",
+      "wikifetch": "",
+      "readmore": "https://groups.google.com/forum/#!msg/alt.hypertext/eCTkkOoWTAY/pwyBmDUpCAAJ",
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "50 websites are online. ",
+      "start": "01/01/1993",
+      "end": "",
+      "content": "",
+      "wikifetch": "",
+      "readmore": "",
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "The World Wide Web becomes public domain, waiving fees to participate.",
+      "start": "30/04/1993",
+      "end": "",
+      "content": "“CERN’s intention in this is to further compatibility, common practices, and standards in networking and computer supported collaboration. This does not constitute a precedent to be applied to any other CERN copyright software.<br>CERN relinquishes all intellectual property rights to this code, both source and binary form and permission is granted for anyone to use, duplicate, modify and redistribute it.</br>CERN provides absolutely NO WARRANTY OF ANY KIND with respect to this software. The entire risk as to the quality and performance of this software is with the user.”",
+      "wikifetch": "",
+      "readmore": "At the start of 1993, 50 websites were on the web. Within months after the release of software on the public domain, there were 500. ",
+      "contentsource": "http://cds.cern.ch/record/1164399"
+    },
+    {
+      "timeline": "",
+      "title": "The World Wide Web reaches 623 websites",
+      "start": "31/12/1993",
+      "end": "",
+      "content": "By the end of 1993, there were 623 websites, according to a study by MIT Researcher Matthew Gray",
+      "wikifetch": "",
+      "readmore": "https://stuff.mit.edu/people/mkgray/net/web-growth-summary.html",
+      "contentsource": "wikipédia, Matthew Gray of the Massachusetts Institute of Technology"
+    },
+    {
+      "timeline": "",
+      "title": "The World Wide Web reaches 2,738 websites",
+      "start": "01/06/1994",
+      "end": "",
+      "content": "By mid-1994 there were 2,738 websites, according to Gray's statistics; by the end of the year, more than 10,000.",
+      "wikifetch": "",
+      "readmore": "https://stuff.mit.edu/people/mkgray/net/web-growth-summary.html",
+      "contentsource": "wikipédia, Matthew Gray of the Massachusetts Institute of Technology"
+    }
+  ]

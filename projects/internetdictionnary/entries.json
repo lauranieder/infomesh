@@ -734,13 +734,6 @@
 		"url": "https://en.wikipedia.org/wiki/vlog"
 	},
 	{
-		"label": "Selfie",
-		"year": 2002,
-		"tooltip": "An image of oneself taken by oneself using a digital camera especially for posting on social networks.",
-		"target": "_blank",
-		"url": "https://en.wikipedia.org/wiki/selfie"
-	},
-	{
 		"label": "darknet",
 		"year": 2002,
 		"tooltip": "The term gained public acceptance following publication of \"The Darknet and the Future of Content Distribution\", a 2002 by employees of Microsoft.",

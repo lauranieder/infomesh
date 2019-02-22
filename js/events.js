@@ -29,6 +29,7 @@ function computeEvents() {
   $('.event-marker').remove();
 
   $.each(events, function(index, item) {
+    console.log(item.title);
     var startDate = moment(item.start, 'DD/MM/YYYY');
     var endDate, className;
 
