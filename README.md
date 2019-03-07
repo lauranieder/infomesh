@@ -15,6 +15,7 @@
 - ~~Centrer le curseur quand le panel est fermé~~
 - Couleurs quand fond noir/fond blanc
 - Up/down remplacer par des flèches
+- Less information Resize timeline pas au bon endroit!
 
 ### Adapt student project
 #### worldwidemap
