@@ -12,7 +12,8 @@
 
 ### Interface/css
 - Ajout des flèches de navigation
-- Centrer le curseur quand le panel est fermé
+- ~~Centrer le curseur quand le panel est fermé~~
+- Couleurs quand fond noir/fond blanc
 
 ### Adapt student project
 #### worldwidemap
@@ -29,15 +30,17 @@
 
 #### web influencer identity
 - même système que obsolete objects
-- sequencer à adapter
+- ~~sequencer à adapter~~
 - loading des images ? Preloading trop long.
+- ajuster les logos aux années
+- meilleures transitions entre les logos
 
 #### internet dictionnary
 - taille du canvas / container-project ne fonctionne pas. Canvas se charge trop grand. 
 
 #### 30y_of_hacks.exe
 - gotoblocks() changer pour que ca fonctionne avec le update des dates, pour l'instant prends un id.
-- les evenements ne sont pas tous aligner avec les points dans la timeline, certains ne s'ouvrent pas. 
+- les evenements ne sont pas tous aligné avec les points dans la timeline, certains ne s'ouvrent pas. Checker les timestamps
 
 #### Emojis
 - Manque des vidéos
