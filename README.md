@@ -10,6 +10,10 @@
 - ~~Apparition du menu about sur la même page~~
 - Lien dans la barre d'addresse --> infomes.ch/about  ou infomes.ch/worldwideweb
 
+### Interface/css
+- Ajout des flèches de navigation
+- Centrer le curseur quand le panel est fermé
+
 ### Adapt student project
 #### worldwidemap
 - info de scroll en continue --> envoyer l'événement une fois que le scroll est fini
