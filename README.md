@@ -37,6 +37,7 @@
 
 #### 30y_of_hacks.exe
 - gotoblocks() changer pour que ca fonctionne avec le update des dates, pour l'instant prends un id.
+- les evenements ne sont pas tous aligner avec les points dans la timeline, certains ne s'ouvrent pas. 
 
 #### Emojis
 - Manque des vidéos
