@@ -20,6 +20,7 @@ function toggleInformation() {
   $('#container-side').toggleClass('reduced');
   $('#navigation').toggleClass('alone');
   $('#container-main').toggleClass('extended main');
+  //$('#cursor-timelime').toggleClass('extended main');
 }
 
 function init() {
@@ -142,12 +143,10 @@ $(document).ready(function() {
   });
 
   $('#button-timeline-left').on('click', function(e) {
-    //e.preventDefault();
-    console.log("go left");
+    $('.current-iframe').get(0).contentWindow.postMessage({message: 'goleft'}, '*');
   });
   $('#button-timeline-right').on('click', function(e) {
-    //e.preventDefault();
-    console.log("go right");
+    $('.current-iframe').get(0).contentWindow.postMessage({message: 'goright'}, '*');
   });
 
   $('body').on('click', '.button-open-project', function(e) {
@@ -161,6 +160,8 @@ $(document).ready(function() {
 
     loadProject(data.originalEvent.state.index, data.originalEvent.state.direction);
   });
+
+
 
   $(window).on('message', function(e) {
     switch (e.originalEvent.data.message) {
