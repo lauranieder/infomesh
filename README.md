@@ -10,6 +10,13 @@
 - ~~Apparition du menu about sur la même page~~
 - Lien dans la barre d'addresse --> infomes.ch/about  ou infomes.ch/worldwideweb
 
+### Interface/css
+- Ajout des flèches de navigation
+- ~~Centrer le curseur quand le panel est fermé~~
+- Couleurs quand fond noir/fond blanc
+- Up/down remplacer par des flèches
+- Less information Resize timeline pas au bon endroit!
+
 ### Adapt student project
 #### worldwidemap
 - info de scroll en continue --> envoyer l'événement une fois que le scroll est fini
@@ -25,14 +32,17 @@
 
 #### web influencer identity
 - même système que obsolete objects
-- sequencer à adapter
+- ~~sequencer à adapter~~
 - loading des images ? Preloading trop long.
+- ajuster les logos aux années
+- meilleures transitions entre les logos
 
 #### internet dictionnary
 - taille du canvas / container-project ne fonctionne pas. Canvas se charge trop grand. 
 
 #### 30y_of_hacks.exe
 - gotoblocks() changer pour que ca fonctionne avec le update des dates, pour l'instant prends un id.
+- les evenements ne sont pas tous aligné avec les points dans la timeline, certains ne s'ouvrent pas. Checker les timestamps
 
 #### Emojis
 - Manque des vidéos
