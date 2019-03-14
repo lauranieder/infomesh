@@ -316,7 +316,15 @@ iframe {
   position:absolute;
   color:black;
   width:4rem;
+  height:4rem;
+  padding:1rem;
 }
+
+.button-timeline img{
+  width : 100%;
+  height:100%;
+}
+
 #button-timeline-left{
   /*position: fixed;
   z-index:1000;

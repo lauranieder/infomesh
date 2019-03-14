@@ -77,8 +77,8 @@
     <div id="container-main" class="container reduced">
       <div id="timeline-cursor">
         <div id="timeline-barre">
-          <div id="button-timeline-left" class="button-timeline">left</div>
-          <div id="button-timeline-right" class="button-timeline">right</div>
+          <div id="button-timeline-left" class="button-timeline"><img src="css/UI/UIArrow-previous.png" alt="previous"/></div>
+          <div id="button-timeline-right" class="button-timeline"><img src="css/UI/UIArrow-next.png" alt="next"/></div>
         </div>
     </div>
   </div>
