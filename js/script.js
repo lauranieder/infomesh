@@ -18,7 +18,13 @@ function getProjectIdFromName(name) {
 
 function toggleInformation() {
   $('#container-side').toggleClass('reduced');
-  $('#navigation').toggleClass('alone');
+  //
+
+  var style = projectsData[currentProjectID].style;
+  $('#navigation').toggleClass(style); //alone
+  //$('nav').toggleClass(style); //alone
+  console.log("style "+style);
+
   $('#container-main').toggleClass('extended main');
   //$('#cursor-timelime').toggleClass('extended main');
 }
@@ -56,7 +62,8 @@ function loadProject(index, direction) {
 
   $('#project-title').text(projectsData[index].title);
   $('#project-text').text(projectsData[index].text);
-  $('#project-credits').text("<Project>"+projectsData[index].student);
+  //$('#project-credits').html()
+  $('#project-credits').html("&lt;Project by&gt;</br>"+projectsData[index].student);
 
   $('.current-iframe').addClass('previous-iframe').removeClass('current-iframe');
 
