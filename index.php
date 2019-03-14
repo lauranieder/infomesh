@@ -25,9 +25,12 @@
       <a href="#" id="button-up">up</a>
       <a href="#" id="button-down">down</a>
     </nav>
+    <nav-mobile>
+      <a href="#" id="button-menu" class="open">&lt;open menu&gt;</a>
+    </nav-mobile>
   </header>
   <div id=wrapper>
-    <div id="container-side" class="container d-flex side background-blue">
+    <div id="container-side" class="container d-flex side mobile-reduced background-blue">
       <div class="content flex-top">
       </div>
       <div class="content flex-middle">
