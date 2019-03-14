@@ -37,8 +37,9 @@
 
 #### internet dictionnary
 - ~~taille du canvas / container-project ne fonctionne pas. Canvas se charge trop grand.~~
-- version mobile, on ne comprends pas qu'on peut cliquer sur les mots, alors il faut mettre un tooltip.
-- mots trop petits en petite taille, changer la taille minimium pour la lecture. 
+- version mobile, on ne comprends pas qu'on peut cliquer sur les mots, alors il faut mettre un tooltip. Ajouter un truc d'accueil.
+- mots trop petits en petite taille, changer la taille minimium pour la lecture.
+- animation des mots sur mobile.
 
 #### 30y_of_hacks.exe
 - gotoblocks() changer pour que ca fonctionne avec le update des dates, pour l'instant prends un id.
