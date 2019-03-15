@@ -18,6 +18,7 @@
 - Less information Resize timeline pas au bon endroit!
 - taille max des flèches de la timeline trop petites 
 - mettre seulement 6 événements en largeur sur la timeline en version mobile. 
+- Landing page
 
 ### Adapt student project
 #### worldwidemap
