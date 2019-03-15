@@ -1,10 +1,10 @@
 /* exported pixiReady paperReady dataReady */
 
-var isPaperReady = false;
-function paperReady() {
-  isPaperReady = true;
-  testReady();
-}
+// var isPaperReady = false;
+// function paperReady() {
+//   isPaperReady = true;
+//   testReady();
+// }
 
 var isDataReady = false;
 function dataReady() {
@@ -19,7 +19,7 @@ function pixiReady() {
 }
 
 function testReady() {
-  if (isPaperReady && isDataReady && isPixiReady) {
+  if (isDataReady && isPixiReady) {
     initPixi();
     initDom();
   }

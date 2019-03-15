@@ -11,13 +11,13 @@ var OPTIONS = {
   displacementFile: "assets/textures/displacement_map.png",
   displacementScaleX: 300,
   displacementScaleY: 300,
-  bloomEnabled: true,
+  bloomEnabled: false,
   bloomBlur: 6,
   bloomQuality: 5,
   bloomResolution: undefined,
   asciiEnabled: true,
-  asciiScale: 12,
-  transparentPixiCanvas: true
+  asciiScale: 15,
+  transparentPixiCanvas: false
 };
 
 // var gui = new dat.gui.GUI();
