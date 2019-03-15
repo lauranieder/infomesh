@@ -21,13 +21,13 @@ body,html{
 }
 
 #container-project{
-  height:90%;
+  height:calc(100% - 6rem);
   /*background-color: white;*/
   width: 100%;
   position: relative;
 }
 #container-timeline {
-  height:10vh;
+  height:6rem;
   width: 100%;
   overflow-x:scroll;
   -webkit-overflow-scrolling:touch;
@@ -82,7 +82,7 @@ body,html{
 	text-align: center;
 	width: 8.333vw;
 	border-left: 1px solid rgba(0, 0, 0, 1);
-	height: 80%;
+	height: 4rem;
 	margin: auto;
 }
 

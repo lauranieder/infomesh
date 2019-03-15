@@ -321,7 +321,7 @@ iframe {
   background-color: black;
   left: 62.5vw;
   width:2px;
-  height:10vh;
+  height:6rem; /*10vh*/
   bottom:0;
   z-index:10;
 }
@@ -331,7 +331,7 @@ iframe {
   left: 25vw;
   width:75vw;
   height:1px;
-  bottom:10vh;
+  bottom:6rem; /*10vh*/
   z-index:10;
   /*left: 0px;
   width:100%;*/
@@ -346,8 +346,8 @@ iframe {
 .button-timeline{
   position:absolute;
   color:black;
-  width:4rem;
-  height:4rem;
+  width:6rem;
+  height:6rem;
   padding:1rem;
 }
 
