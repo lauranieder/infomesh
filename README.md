@@ -8,16 +8,16 @@
 - ~~Drag/drop de la timeline ?~~
 - enlever drag drop sur mobile
 - ~~Apparition du menu about sur la même page~~
-- Lien dans la barre d'addresse --> infomes.ch/about  ou infomes.ch/worldwideweb
+- ~~Lien dans la barre d'addresse --> infomes.ch/about  ou infomes.ch/worldwideweb~~
 
 ### Interface/css
-- Ajout des flèches de navigation
+- ~~Ajout des flèches de navigation~~ Amélioration du jump d'évent en event
 - ~~Centrer le curseur quand le panel est fermé~~
-- Couleurs quand fond noir/fond blanc
+- ~~Couleurs quand fond noir/fond blanc~~ (sur mobile pas bon)
 - Up/down remplacer par des flèches
 - Less information Resize timeline pas au bon endroit!
 - taille max des flèches de la timeline trop petites 
-- mettre seulement 6 événements en largeur sur la timeline en version mobile. 
+- ~~mettre seulement 6 événements en largeur sur la timeline en version mobile.~~ 
 - Landing page
 
 ### Adapt student project
