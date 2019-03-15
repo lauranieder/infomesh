@@ -51,8 +51,16 @@ nav a,
 #container-side,
 #container-projects,
 #container-main,
-#container-about {
+#container-about,
+#timeline-cursor,
+#timeline-barre,
+#navigation {
   transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+nav-mobile{
+  display:none;
+  visibility: hidden;
 }
 
 /*-----------------1st level--------------------*/
@@ -75,6 +83,12 @@ nav a,
 #container-side .content {
   width: 25vw; /* calc(25vw - padding) */
   padding:1rem;
+  z-index:11;
+}
+
+#container-side .content div{
+  padding-bottom: 1rem;
+
 }
 
 #container-main {
@@ -136,13 +150,33 @@ nav a,
   z-index: 1000;
 }
 
-#navigation.alone {
+#navigation.background-blue {
+  color: white;
+}
+
+#navigation.background-blue nav > a {
+  color: #000000;
+}
+
+#navigation.background-black {
+  color: white;
+}
+
+#navigation.background-black nav > a {
+  color: #0000ff;
+}
+
+#navigation.background-white {
   color: black;
 }
 
-#navigation.alone a {
+#navigation.background-white nav > a{
   color: #0000ff;
 }
+
+/*nav.background-white > a{
+  color: #0000ff;
+}*/
 
 .timeline-cell{
   text-align: center;
@@ -156,11 +190,11 @@ h1,
   font-weight: 100;
 }
 
-.background-blue {
+#container-side.background-blue, #container-about.background-blue {
   background-color: #0000ff;
 }
 
-.background-blue h1 {
+#container-side.background-blue h1 , #container-about.background-blue h1{
   color: white;
 }
 
@@ -299,6 +333,41 @@ iframe {
   height:1px;
   bottom:10vh;
   z-index:10;
+  /*left: 0px;
+  width:100%;*/
+}
+.extended #timeline-barre{
+  left: 0px;
+  width:100%;
+}
+.extended #timeline-cursor{
+  left: 50vw;
+}
+.button-timeline{
+  position:absolute;
+  color:black;
+  width:4rem;
+  height:4rem;
+  padding:1rem;
+}
+
+.button-timeline img{
+  width : 100%;
+  height:100%;
+}
+
+#button-timeline-left{
+  /*position: fixed;
+  z-index:1000;
+  background-color: white;*/
+}
+#button-timeline-right{
+  /*right:0;
+  position: fixed;
+  z-index:1000;
+  background-color: white;*/
+  right:0;
+  text-align:right;
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
@@ -309,11 +378,37 @@ iframe {
 }
 
 @media only screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 32px;
+    background-color: blue;
+  }
+
+  .d-flex{
+    display:inline;
+  }
+
   #container-side,
   #container-projects,
   #container-main,
   #container-about {
     transition: none;
+  }
+
+
+
+  #wrapper {
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    /*display: flex;
+    flex-direction: column;*/
+    /*background-color: yellow;*/
+  }
+
+  #container-side .content{
+    width:100%;
+    /*padding:2rem;*/
   }
 
   #container-about .content {
@@ -323,31 +418,89 @@ iframe {
 
   #container-about {
     overflow-y:scroll;
+    /*background-color: red;*/
+  }
+
+  #container-projects{
+    /*background-color: green;*/
+    background-color: white;
   }
 
   #navigation {
     width:100%;
     position:fixed;
     height:10vh;
+    /*padding:2rem;*/
+  }
+
+  nav-mobile{
+    display:inline;
+    visibility: visible;
+  }
+
+  nav-mobile #button-menu{
+    position:fixed;
+    right:0;
+    top:0;
   }
 
   .side {
     width: 100%;
-    position:fixed;
-    height:10vh;
+    position:absolute;
+    /*position:fixed;*/
+    height:100%;
+    z-index:500;
   }
+
+
 
   .main {
     width: 100%;
+    height: 100%;
+  }
+  #container-projects.main,
+  #container-about.main {
+    position:absolute;
+    height: calc(100% - 157px);
+    top:157px;
   }
 
   .content{
-    font-size: 3rem;
+    /*font-size: 3rem;*/
 
   }
 
+  .reduced {
+    display:none;
+    visibility: hidden;
+  }
+
+  #container-side.reduced{
+    display:inline;
+    visibility: visible;
+  }
+
+  .mobile-reduced {
+    display:none;
+    visibility: hidden;
+  }
+
+/*  .side .reduced {
+    display:flex;
+    visibility: visible;
+      height:10vh;
+  }*/
+
   h1,
   .font-large {
-    font-size: 3rem;
+    /*font-size: 6rem;*/
+  }
+
+  #timeline-barre,.extended #timeline-barre{
+    left: 0px;
+    width:100%;
+  }
+  #timeline-cursor,.extended #timeline-cursor{
+    left: 50vw;
   }
 }

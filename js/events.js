@@ -29,7 +29,7 @@ function computeEvents() {
   $('.event-marker').remove();
 
   $.each(events, function(index, item) {
-    console.log(item.title);
+    //console.log(item.title);
     var startDate = moment(item.start, 'DD/MM/YYYY');
     var endDate, className;
 
@@ -97,7 +97,7 @@ function wikitest(){
 
      }
      $.ajax(settings).done(function (response) {
-       console.log(response);
+       //console.log(response);
      });
   // }
 
@@ -120,7 +120,7 @@ function wikifetchingnew(wiki,index){
  //     }
  //   }
  //   $.ajax(settings).done(function (response) {
- //     console.log(response);
+ //     //console.log(response);
  //   });
  // }
 
@@ -128,7 +128,7 @@ function wikifetchingnew(wiki,index){
 }
 
 $(document).ready(function() {
-  console.log("[event.js]");
+  //console.log("[event.js]");
   loadEvents();
   createPopup();
 

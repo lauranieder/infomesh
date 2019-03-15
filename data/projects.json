@@ -1,38 +1,44 @@
 [
-  {
-    "student": "Sebastien Matos, Guillaume Simmen",
-    "title": "Browser Landscape",
-    "slug": "browserlandscape",
-    "text": "This timeline shows the evolution of the aesthetics of web browsers, reinterpreting the different elements and assembling them as a city."
-  },
-  {
-    "student": "Luca Sassoli De Bianchi",
-    "title": "WorldWideMap",
-    "slug": "worldwidemap",
-    "text": "The timeline presents web access worldwide and other data"
-  },
-  {
-    "student": "Maëlle Chenaux",
-    "title": "Internet Dictionnary",
-    "slug": "internetdictionnary",
-    "text": "Starting with the first word invented, the \"web\" itself, this timeline shows the evolution of the vocabulary related to the web presented graphically."
-  },
-  {
-    "student": "Bastien Mouthon, Kevin Breithaup",
-    "title": "Web influencer Identity",
-    "slug": "webinfluenceridentity",
-    "text": "This timeline shows the visual identity evolution of the main tech companies on the web through their logo."
-  },
-  {
-    "student": "Alfatih Al Zouabi",
-    "title": "Internet Phenomena",
-    "slug": "internetphenomena",
-    "text": "This timeline gathers different viral events on the web by proposing a graphical exploration passing among others by the buzzs, the memes and the spamms."
-  },
-  {
-    "student": "Nathan Vogel",
-    "title": "30y_of_hacks.exe",
-    "slug": "30y_of_hacks",
-    "text": "This timeline explore 30 years of hacking on the web and highlights the evolution of the impact of these hacks."
-  }
-]
+    {
+      "student": "Sebastien Matos, Guillaume Simmen",
+      "title": "Browser Landscape",
+      "slug": "browserlandscape",
+      "text": "This timeline shows the evolution of the aesthetics of web browsers, reinterpreting the different elements and assembling them as a city. ",
+      "style": "background-black"
+    },
+    {
+      "student": "Luca Sassoli De Bianchi",
+      "title": "WorldWideMap",
+      "slug": "worldwidemap",
+      "text": "The timeline presents web access worldwide and other data",
+      "style": "background-blue"
+    },
+    {
+      "student": "Maëlle Chenaux",
+      "title": "Internet Dictionnary",
+      "slug": "internetdictionnary",
+      "text": "Starting with the first word invented, the \"web\" itself, this timeline shows the evolution of the vocabulary related to the web presented graphically.",
+      "style": "background-white"
+    },
+    {
+      "student": "Bastien Mouthon, Kevin Breithaup",
+      "title": "Web influencer Identity",
+      "slug": "webinfluenceridentity",
+      "text": "This timeline shows the visual identity evolution of the main tech companies on the web through their logo.",
+      "style": "background-white"
+    },
+    {
+      "student": "Alfatih Al Zouabi",
+      "title": "Internet Phenomena",
+      "slug": "internetphenomena",
+      "text": "This timeline gathers different viral events on the web by proposing a graphical exploration passing among others by the buzzs, the memes and the spamms.\r",
+      "style": "background-black"
+    },
+    {
+      "student": "Nathan Vogel",
+      "title": "30y_of_hacks.exe",
+      "slug": "30y_of_hacks",
+      "text": "This timeline explore 30 years of hacking on the web and highlights the evolution of the impact of these hacks.",
+      "style": "background-black"
+    }
+  ]

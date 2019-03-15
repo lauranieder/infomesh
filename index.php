@@ -11,7 +11,7 @@
   <!--script-->
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
-  
+
   <script>
   var currentPagetName = "<? echo str_replace('/', '', $_SERVER['REQUEST_URI']); ?>";
 
@@ -25,9 +25,12 @@
       <a href="#" id="button-up">up</a>
       <a href="#" id="button-down">down</a>
     </nav>
+    <nav-mobile>
+      <a href="#" id="button-menu" class="open">&lt;open menu&gt;</a>
+    </nav-mobile>
   </header>
   <div id=wrapper>
-    <div id="container-side" class="container d-flex side background-blue">
+    <div id="container-side" class="container d-flex side mobile-reduced background-blue">
       <div class="content flex-top">
       </div>
       <div class="content flex-middle">
@@ -74,7 +77,13 @@
     <div id="container-projects" class="container d-flex reduced">
       <div class="project-list"></div>
     </div>
-    <div id="container-main" class="container reduced"><div id="timeline-cursor"><div id="timeline-barre"></div></div>
+    <div id="container-main" class="container reduced">
+      <div id="timeline-cursor">
+        <div id="timeline-barre">
+          <div id="button-timeline-left" class="button-timeline"><img src="css/UI/UIArrow-previous.png" alt="previous"/></div>
+          <div id="button-timeline-right" class="button-timeline"><img src="css/UI/UIArrow-next.png" alt="next"/></div>
+        </div>
+    </div>
   </div>
 </body>
 </html>

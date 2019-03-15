@@ -80,3 +80,11 @@
   right: 0px;
   color: blue;
 }
+
+@media only screen and (max-width: 992px) {
+  #popup {
+    font-size:32px;
+    max-width: calc(100% - 64px);
+  }
+
+}
