@@ -25,7 +25,7 @@ let app = new PIXI.Application({
 });
 app.renderer.view.style.position = "absolute";
 app.renderer.view.style.display = "block";
-app.renderer.autoResize = true;
+app.renderer.autoDensity = true;
 app.renderer.resize(window.innerWidth, window.innerHeight);
 // Add the canvas that Pixi automatically created for you to the HTML document
 var containerProject = document.getElementById("container-project");

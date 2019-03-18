@@ -8,7 +8,7 @@
   /* height: 100%; */
   width: 100%;
   background-color: black;
-  font-family: sans-serif;
+  font-family: "IBM Plex Mono", "Hack", monospace;
   color: white;
 }
 
@@ -62,7 +62,7 @@ body > div.dg.ac {
 .block-wrapper {
   /* width: 42vh; */
   min-width: 45vw;
-  /* max-width: 90%; */
+  max-width: 700px;
   /* height: 60%; */
   min-height: 240px;
   /* max-height: 75vh; */
@@ -72,6 +72,16 @@ body > div.dg.ac {
   transition: transform 0.6s;
   /* transform: translateY(100px); */
 }
+
+@media (max-width: 768px) {
+  .block-wrapper {
+    min-width: 92vw;
+  }
+  #container-textblocs {
+    left: 4vw;
+  }
+}
+
 /* .currentHistoryWrapper {
   transition: transform 2s;
 } */
@@ -79,7 +89,8 @@ body > div.dg.ac {
 .block {
   display: flex;
   width: 100%;
-  max-height: 75vh;
+  /* timeline bar height = 96px */
+  max-height: calc(100vh - 260px);
 
   border: 0.5px blue solid;
   background-color: #00000000;
@@ -113,7 +124,7 @@ body > div.dg.ac {
 }
 
 .block-title {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   /* text-transform: uppercase; */
   margin-bottom: 18px;
@@ -121,7 +132,7 @@ body > div.dg.ac {
 
 .block-description {
   line-height: 1.7;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   overflow-y: auto;
   padding-right: 12px;

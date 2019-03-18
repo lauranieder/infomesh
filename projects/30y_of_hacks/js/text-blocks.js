@@ -49,8 +49,11 @@ function createBlock(data) {
   eventBlock.className = "block";
   eventBlockWrapper.appendChild(eventBlock);
 
-  eventBlock.style.width =
-    map_range(data.descriptionText.length, 200, 800, 50, 100, true) + "%";
+  if (window.innerWidth < 768) {
+    eventBlock.style.width = "auto";
+  } else
+    eventBlock.style.width =
+      map_range(data.descriptionText.length, 200, 400, 70, 100, true) + "%";
 
   var title = document.createElement("div");
   title.className = "block-title";
