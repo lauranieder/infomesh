@@ -156,3 +156,12 @@ a {
   /* width: 0px; */
   background: #444; /* make scrollbar transparent */
 }
+
+#text-year {
+  color: black;
+  font-weight: bold;
+  font-size: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}

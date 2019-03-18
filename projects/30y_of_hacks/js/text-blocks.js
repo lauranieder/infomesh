@@ -57,7 +57,7 @@ function createBlock(data) {
 
   var title = document.createElement("div");
   title.className = "block-title";
-  title.textContent = data.year + ", " + data.name;
+  title.textContent = data.name;
   eventBlock.appendChild(title);
   var description = document.createElement("div");
   description.className = "block-description";
@@ -108,8 +108,14 @@ function goToBlock(newIndex, isTimelineEvent) {
   }
   updateNewBlocks();
   updateContainer();
+  updateYear();
   window.onNewVisual_renderer(dataset[currentBlock]);
   window.onNewVisual_anim(dataset[currentBlock]);
+}
+
+var yearBlock = document.getElementById("text-year");
+function updateYear() {
+  yearBlock.textContent = dataset[currentBlock].year;
 }
 
 function updateContainer() {

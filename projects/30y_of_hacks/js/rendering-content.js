@@ -11,21 +11,21 @@ function setupGraphics() {
   background.endFill();
   app.stage.addChild(background);
 
-  p = new PIXI.Graphics();
-  p.beginFill(0xfff42f);
-  p.lineStyle(12, 0x0000ff, 1);
-  p.drawCircle(30, 30, 60);
-  p.endFill();
+  // p = new PIXI.Graphics();
+  // p.beginFill(0xfff42f);
+  // p.lineStyle(12, 0x0000ff, 1);
+  // p.drawCircle(30, 30, 60);
+  // p.endFill();
   p2 = new PIXI.Graphics();
   p2.beginFill(0x1ff42f);
   p2.lineStyle(12, 0xf000ff, 1);
   p2.drawCircle(30, 30, 60);
   p2.endFill();
   // p = new PIXI.Sprite(resources["img1.png"]);
-  // p = new PIXI.Sprite.fromImage("assets/textures/img0.png");
-  // p.anchor.set(0.5);
-  // p.scale.x = 2;
-  // p.scale.y = 2;
+  p = new PIXI.Sprite.fromImage("assets/textures/img0-10.png");
+  p.anchor.set(0.5);
+  p.scale.x = 2;
+  p.scale.y = 2;
 
   app.stage.addChild(p);
   app.stage.addChild(p2);

@@ -29,8 +29,8 @@ app.renderer.autoDensity = true;
 app.renderer.resize(window.innerWidth, window.innerHeight);
 // Add the canvas that Pixi automatically created for you to the HTML document
 var containerProject = document.getElementById("container-project");
-var textblocs = document.getElementById("container-textblocs");
-containerProject.insertBefore(app.view, textblocs);
+var textYear = document.getElementById("text-year");
+containerProject.insertBefore(app.view, textYear);
 app.stage.updateLayersOrder = function() {
   app.stage.children.sort((a, b) => {
     a.zIndex = a.zIndex || 0;
