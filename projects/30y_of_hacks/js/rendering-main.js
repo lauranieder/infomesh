@@ -1,6 +1,6 @@
 /* exported onNewVisual_renderer initPixi setupGraphics setupFilters */
 /* exported resources */
-/* globals pixiReady */
+/* globals pixiReady setupFilters setupGraphics */
 
 // PixiJS checks
 let type = "WebGL";
@@ -15,22 +15,20 @@ let resources = PIXI.Loader.shared.resources;
 
 // Create a Pixi Application
 let ratio = window.devicePixelRatio;
+var VH, VW;
 let app = new PIXI.Application({
-  width: window.innerWidth,
-  height: window.innerHeight,
   antialias: true, // default: false
   transparent: OPTIONS.transparentPixiCanvas,
-  autoResize: true,
+  autoDensity: true,
   resolution: ratio // default: 1
 });
 app.renderer.view.style.position = "absolute";
 app.renderer.view.style.display = "block";
-app.renderer.autoDensity = true;
-app.renderer.resize(window.innerWidth, window.innerHeight);
 // Add the canvas that Pixi automatically created for you to the HTML document
 var containerProject = document.getElementById("container-project");
 var textYear = document.getElementById("text-year");
 containerProject.insertBefore(app.view, textYear);
+onResizeWindow();
 app.stage.updateLayersOrder = function() {
   app.stage.children.sort((a, b) => {
     a.zIndex = a.zIndex || 0;
@@ -39,10 +37,8 @@ app.stage.updateLayersOrder = function() {
   });
 };
 
-for (var i = 0; i < 1; i++) {
-  PIXI.Loader.shared.add([
-    { name: "img" + i, url: "assets/textures/img" + i + ".png" }
-  ]);
+for (var i = 0; i < TYPES.length; i++) {
+  PIXI.Loader.shared.add(TYPES[i], "assets/textures/img-" + TYPES[i] + ".png");
 }
 
 PIXI.Loader.shared
@@ -75,23 +71,15 @@ function debounce(func, wait, immediate) {
 
 function onResizeWindow() {
   const canvas = app.renderer.view;
-  const w = containerProject.clientWidth;
-  const h = containerProject.clientHeight;
-  canvas.style.width = w + "px";
-  canvas.style.height = h + "px";
-  canvas.width = w;
-  canvas.height = h;
-  app.renderer.resize(w, h);
+  VW = containerProject.clientWidth;
+  VH = containerProject.clientHeight;
+  canvas.style.width = VW + "px";
+  canvas.style.height = VH + "px";
+  canvas.width = VW;
+  canvas.height = VH;
+  app.renderer.resize(VW, VH);
   var event = new CustomEvent("canvasResize", {
-    detail: { width: w, height: h }
+    detail: { width: VW, height: VH }
   });
   canvas.dispatchEvent(event);
 }
-
-function onNewVisual_renderer(datapoint) {
-  console.log(datapoint);
-}
-
-window.onNewVisual_anim = function() {
-  console.log("new anim");
-};

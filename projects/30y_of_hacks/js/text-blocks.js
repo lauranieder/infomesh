@@ -49,6 +49,7 @@ function createBlock(data) {
   eventBlock.className = "block";
   eventBlockWrapper.appendChild(eventBlock);
 
+  // TODO recall on resize
   if (window.innerWidth < 768) {
     eventBlock.style.width = "auto";
   } else
@@ -93,6 +94,7 @@ function indexToId(index) {
 }
 
 function goToBlock(newIndex, isTimelineEvent) {
+  var forward = newIndex > currentBlock;
   if (newIndex >= dataset.length) {
     newIndex = 0;
   }
@@ -109,8 +111,12 @@ function goToBlock(newIndex, isTimelineEvent) {
   updateNewBlocks();
   updateContainer();
   updateYear();
-  window.onNewVisual_renderer(dataset[currentBlock]);
-  window.onNewVisual_anim(dataset[currentBlock]);
+
+  window.dispatchEvent(
+    new CustomEvent("blockchange", {
+      detail: { data: dataset[currentBlock], forward: forward }
+    })
+  );
 }
 
 var yearBlock = document.getElementById("text-year");

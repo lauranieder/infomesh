@@ -1,4 +1,4 @@
-/* exported OPTIONS COLORS */
+/* exported OPTIONS COLORS TYPES */
 
 /***************************************
  * PREFERENCES
@@ -12,7 +12,7 @@ var OPTIONS = {
   displacementScaleX: 300,
   displacementScaleY: 300,
   asciiEnabled: true,
-  asciiScale: 15,
+  asciiScale: 16,
   transparentPixiCanvas: false,
   bloomEnabled: false,
   bloomBlur: 6,
@@ -38,3 +38,21 @@ var COLORS = {
   law: [[["black", 0.5], ["blue", 0.8], ["blue", 0.9], ["black", 1]]],
   meeting: [[["teal", 0.5], ["navy", 0.8], ["black", 1]]]
 };
+
+var TYPES = [
+  "media",
+  "newAttackType",
+  "incident",
+  "law",
+  "foundation",
+  "moneyTheft",
+  "other",
+  "virus",
+  "defacement",
+  "infiltration",
+  "breach",
+  "dataTheft",
+  "hack",
+  "ransomware",
+  "destructive"
+];

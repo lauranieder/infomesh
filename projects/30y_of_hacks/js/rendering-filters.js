@@ -27,6 +27,9 @@ function setupFilters() {
   f1.add(filter_ascii, "enabled");
   f1.add(filter_ascii, "size", 1, 40);
   f1.open();
+  // f2 is declared in preferences
+  // eslint-disable-next-line no-undef
+  f2.add(filter_displacement, "enabled");
 
   // Bloom filter
   // filter_bloom = new PIXI.filters.BloomFilter(

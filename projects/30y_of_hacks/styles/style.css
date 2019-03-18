@@ -92,7 +92,7 @@ body > div.dg.ac {
   /* timeline bar height = 96px */
   max-height: calc(100vh - 260px);
 
-  border: 0.5px blue solid;
+  /* border: 0.5px blue solid; */
   background-color: #00000000;
 
   padding-top: 60px;
@@ -113,18 +113,18 @@ body > div.dg.ac {
 
 .ancientHistory {
   opacity: 0;
-  border: 0.5px blue solid;
+  /* border: 0.5px blue solid; */
   pointer-events: none;
   transform: translateX(-50vw);
 }
 
 .futureHistory {
-  border: 0.5px blue solid;
+  /* border: 0.5px blue solid; */
   transform: scale(0.8);
 }
 
 .block-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   /* text-transform: uppercase; */
   margin-bottom: 18px;
@@ -132,7 +132,7 @@ body > div.dg.ac {
 
 .block-description {
   line-height: 1.7;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   overflow-y: auto;
   padding-right: 12px;
@@ -158,10 +158,12 @@ a {
 }
 
 #text-year {
+  font-family: "Silkscreen", "IBM Plex Mono", monospace;
+  /* font-family: "DS-Digtial", "IBM Plex Mono", monospace; */
   color: black;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 128px;
   position: absolute;
-  top: 0px;
+  bottom: 0px;
   left: 0px;
 }
