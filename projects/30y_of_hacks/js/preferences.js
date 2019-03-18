@@ -11,22 +11,22 @@ var OPTIONS = {
   displacementFile: "assets/textures/displacement_map.png",
   displacementScaleX: 300,
   displacementScaleY: 300,
+  asciiEnabled: true,
+  asciiScale: 15,
+  transparentPixiCanvas: false,
   bloomEnabled: false,
   bloomBlur: 6,
   bloomQuality: 5,
-  bloomResolution: undefined,
-  asciiEnabled: true,
-  asciiScale: 15,
-  transparentPixiCanvas: false
+  bloomResolution: undefined
 };
 
-// var gui = new dat.gui.GUI();
-// gui.close();
-//
-// var f2 = gui.addFolder("DisplacementFilter");
-// f2.add(OPTIONS, "displacementSpeedX", 0.1, 10);
-// f2.add(OPTIONS, "displacementSpeedY", 0.1, 10);
-// f2.open();
+var gui = new dat.gui.GUI();
+gui.close();
+
+var f2 = gui.addFolder("DisplacementFilter");
+f2.add(OPTIONS, "displacementSpeedX", 0.1, 10);
+f2.add(OPTIONS, "displacementSpeedY", 0.1, 10);
+f2.open();
 
 var COLORS = {
   incident: [[["white", 0.05], ["blue", 0.8], ["black", 1]]],

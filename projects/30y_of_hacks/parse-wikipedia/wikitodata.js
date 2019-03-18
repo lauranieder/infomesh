@@ -17,6 +17,9 @@ for (var i = 0; i < document.body.children.length; i++) {
     case "UL":
       analyseUL(child);
       break;
+    case "P":
+      analyseP(child);
+      break;
   }
   // console.log(child);
   // if (i > 5) break;
@@ -29,6 +32,14 @@ var dlAnchorElem = document.getElementById("downloadAnchorElem");
 dlAnchorElem.setAttribute("href", dataStr);
 dlAnchorElem.setAttribute("download", "scene.json");
 // dlAnchorElem.click();
+
+function removeCitations(e) {
+  var citations = e.getElementsByTagName("sup");
+  for (var i = 0; i < citations.length; i++) {
+    e.removeChild(citations[i]);
+    i--;
+  }
+}
 
 function analyseH3(e) {
   year = parseInt(e.children[0].textContent);
@@ -44,12 +55,24 @@ function analyseUL(e) {
   }
 }
 
+function analyseP(e) {
+  removeCitations(e);
+
+  var newData = {
+    name: "",
+    description: e.innerHTML,
+    descriptionText: e.textContent,
+    source: "",
+    year: null,
+    timestamp: null,
+    type: "incident",
+    visualValue: 0
+  };
+  data.push(newData);
+}
+
 function analyseLI(e) {
-  var citations = e.getElementsByTagName("sup");
-  for (var i = 0; i < citations.length; i++) {
-    e.removeChild(citations[i]);
-    i--;
-  }
+  removeCitations(e);
   // console.log(e);
   // console.log(Date.parse(e.textContent));
   var timestamp = findDate(e.textContent);
