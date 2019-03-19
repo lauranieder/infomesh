@@ -34,22 +34,16 @@ var sendMessage = function(msg) {
 
 $(document).ready(() => {
   // Add iframe
-  var mainContainer = document.getElementById("container-project");
+  var mainContainer = document.getElementById("container-main");
   mainContainer.style.overflowY = "hidden";
   mainContainer.appendChild(iframe);
 
-  //continuous scrolling vs une fois qu'on a fini de scroller*/
   document.addEventListener("timeline-scroll", e => {
     // console.log("[student-action.js] -----callback timeline-scroll");
     // let normal = moment(e.detail.normal);
-    let normal = e.detail.normal;
-    let date = e.detail.date;
-    let year = date.year();
     // let dotDate = moment(e.detail.date);
     // console.log(dotDate.format("DD/MM/YYYY"));
     // $("#container-main").html(dotDate.format("DD/MM/YYYY"));
-    //sendMessage(JSON.stringify({ year: year }));
-    timeline_change(year);
   });
 
   document.addEventListener("timeline-loadDotContent", e => {
@@ -62,6 +56,6 @@ $(document).ready(() => {
     // let dot = $(".timeDot[idToLoad='" + dotID + "']");
     // dot.attr("startdate");
     // console.log("Loaded date : " + dot.attr("startdate"));
-    //sendMessage(JSON.stringify({ id: dotID }));
+    sendMessage(JSON.stringify({ id: dotID }));
   });
 });

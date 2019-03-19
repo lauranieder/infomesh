@@ -1,0 +1,130 @@
+body {
+  font-family: Arial;
+  margin: 0px;
+  border: none;
+  padding: 0px;
+  transition: 0.5s;
+  background-color: blue;
+  font-size: 80%;
+}
+
+#world {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+svg {
+  width: 100vw;
+  height: 100vh;
+}
+#controls {
+  position: absolute;
+  z-index: 10;
+  left: calc(100vw - 200px - 5vh);
+  top: 5vh;
+  width: 200px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#list {
+  border-width: thin;
+  background-color: white;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+}
+
+#color_t {
+  margin-top: 20px;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+
+  width: 200px;
+}
+#title {
+  padding-left: 5px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom-style: solid;
+}
+.option {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  transition: 0.3s;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.option:hover {
+  background-color: rgb(200, 200, 200);
+}
+.option.active {
+  background-color: black;
+  color: white;
+}
+
+.year {
+  visibility: hidden;
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100%;
+  color: rgba(0, 0, 255, 0.1);
+  z-index: -20;
+  transition: 1s;
+}
+
+input {
+  position: fixed;
+  padding: 5px;
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  left: 600px;
+  top: 60px;
+  width: 100px;
+  visibility: hidden;
+}
+#reset {
+  cursor: pointer;
+  position: fixed;
+  padding: 5px;
+  border-style: solid;
+  border-color: black;
+  background-color: white;
+  left: 600px;
+  top: 10px;
+  visibility: hidden;
+}
+#reset:hover {
+  background-color: rgb(255, 218, 218);
+}
+
+#reset:active {
+  background-color: red;
+}
+.fade {
+  color: rgba(0, 0, 255, 0);
+}
+
+.wait {
+  transition: 0s;
+  cursor: progress;
+}
