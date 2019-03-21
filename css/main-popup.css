@@ -42,8 +42,9 @@
 }
 
 #popup {
+  box-sizing: border-box;
   position:fixed;
-  bottom: calc(10vh + 50px);
+  bottom: 7rem; /*calc(10vh + 50px);*/
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
@@ -74,6 +75,23 @@
   /*background-color: gray;*/
 }
 
+#popup #button-toggle-popup img{
+  width:2rem;
+  height:auto;
+  padding:1rem;
+}
+
+#popup #button-toggle-popup {
+  position:fixed;
+}
+
+
+#popup.reduced #button-toggle-popup img{
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Safari */
+  transform: rotate(180deg);
+}
+
 #button-toggle-popup {
   position: absolute;
   top: 0px;
@@ -83,8 +101,17 @@
 
 @media only screen and (max-width: 992px) {
   #popup {
-    font-size:32px;
-    max-width: calc(100% - 64px);
+    font-size:40px; /*32*/
+    line-height:1.4;
+    width: calc(100% - 2rem);
+    max-width: calc(100% - 2rem);
+    max-height: calc(100% - 14rem);
+    overflow-y: scroll;
+  }
+
+  #popup.reduced {
+    max-height: 4rem;
+    /*overflow-y: none;*/
   }
 
 }

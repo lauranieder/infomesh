@@ -21,9 +21,9 @@
   <header id="navigation">
     <h1 id="project-title">Information mesh</h1>
     <nav class="d-none">
-      <a href="#" id="button-toggle-informations">&lt;less information&gt;</a>
-      <a href="#" id="button-up">up</a>
-      <a href="#" id="button-down">down</a>
+      <a href="#" id="button-toggle-informations"><img src="css/UI/UIArrow-leftb.svg" alt="less information"/></a>
+      <a href="#" id="button-up"><img src="css/UI/UIArrow-up.png" alt="up"/></a>
+      <a href="#" id="button-down"><img src="css/UI/UIArrow-down.png" alt="down"/></a>
     </nav>
     <nav-mobile>
       <a href="#" id="button-menu" class="open">&lt;open menu&gt;</a>

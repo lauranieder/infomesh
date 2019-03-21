@@ -6,6 +6,24 @@ var timelineWidth;
 var noDurationEventSize = 30;
 var eventPadding = 30;
 var popupCallback;
+var cellwidth = 8.333;
+
+function mobileCheck(x) {
+  if (x.matches) { // If media query matches
+    //document.body.style.backgroundColor = "yellow";
+    console.log("mobile");
+    cellwidth = 16.666;
+  } else {
+    //document.body.style.backgroundColor = "pink";
+    console.log("desktop");
+    cellwidth = 8.333;
+  }
+}
+
+var x = window.matchMedia("(max-width: 992px)");
+//@media only screen and (max-width: 992px)
+mobileCheck(x) // Call listener function at run time
+x.addListener(mobileCheck) // Attach listener function on state changes
 
 function createPopup() {
   var popupContainer = $('<div id="popup-container"></div>');
@@ -24,8 +42,11 @@ function loadEvents() {
 }
 
 function computeEvents() {
-  timelineWidth = 8.33 * 31;
-
+  timelineWidth = cellwidth * 31;
+  /*if($('.timeline-cell').width() != null){
+    var cellwidth = $('.timeline-cell').css("width");
+    console.log("cellwidth  "+cellwidth);
+  }*/
   $('.event-marker').remove();
 
   $.each(events, function(index, item) {

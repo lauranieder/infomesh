@@ -35,8 +35,8 @@ body,html{
   position: relative;
   background-color: white;
 }
-
-#container-timeline:before {
+/*TO REMOVE : better to have it out of the wrapper so it stays between projects*/
+/*#container-timeline:before {
   content: "";
   display: block;
   position: fixed;
@@ -46,7 +46,7 @@ body,html{
   height: 10%;
   z-index: 1000;
   border-left: 1px solid black;
-}
+}*/
 
 /*Scrollbars*/
 #container-timeline::-webkit-scrollbar,
@@ -93,4 +93,20 @@ body,html{
 .hidden {
   visibility:hidden;
   display:none;
+}
+
+@media only screen and (max-width: 992px) {
+  html,
+  body {
+    font-size: 32px;
+    background-color: blue;
+  }
+  .timeline-cell {
+    texte-size: 1rem;
+  	text-align: center;
+  	width: 16.666vw;
+  	border-left: 1px solid rgba(0, 0, 0, 1);
+  	height: 4rem;
+  	margin: auto;
+  }
 }

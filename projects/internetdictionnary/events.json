@@ -10,6 +10,26 @@
       "context": "This document was an attempt to persuade CERN management that a global hypertext system was in CERN's interests. Note that the only name I had for it at this time was \"Mesh\" -- I decided on \"World Wide Web\" when writing the code in 1990."
     },
     {
+      "timeline": "",
+      "title": "World wide communication",
+      "start": "01/01/1989",
+      "end": "",
+      "content": "“From the ‘London Times’ of 1904,” by Mark Twain (1898): Did you know that when he wasn’t writing about irascible orphans and jumping frogs, Mark Twain sometimes wrote science fiction? In one of them, he imagined the “telelectroscope,” a device that used telephone wires to create a world-wide communication network that allowed users to get a peek at what people were doing at any given moment in any place on earth (if today’s social media landscape is any indication, they were probably taking tintypes of what they ate for breakfast). The story even features a murder suspect who is cleared of the crime when he’s able to locate the supposed victim alive and well via a livestream from a webcam filming a festival in China. Okay, not in those exact words. But essentially, what I’m saying is, Mark Twain invented the internet.",
+      "wikifetch": "",
+      "readmore": "",
+      "context": ""
+    },
+    {
+      "timeline": "",
+      "title": "First website online",
+      "start": "06/08/1991",
+      "end": "",
+      "content": "The Internet’s first website went online on Aug. 6, 1991. Berners-Lee and his fellow CERN team members launched http://info.cern.ch with a landing page that only contained 153 words. It defined the World Wide Web (“W3”) as “a wide-area hypermedia information retrieval initiative aiming to give universal access to a large universe of documents” and contained 25 links to basic additional information about the pioneering initiative.",
+      "wikifetch": "",
+      "readmore": "",
+      "context": ""
+    },
+    {
       "timeline": "internetphenomena",
       "title": "The first webcam is launched, aimed at a coffee pot. ",
       "start": "01/01/1991",
@@ -30,12 +50,132 @@
       "context": ""
     },
     {
+      "timeline": "",
+      "title": "Concept of Memes ",
+      "start": "01/01/1993",
+      "end": "",
+      "content": "The word meme was coined by Richard Dawkins in his 1976 book The Selfish Gene as an attempt to explain the way cultural information spreads; The concept of the Internet meme was first proposed by Mike Godwin in the June 1993 issue of Wired.",
+      "wikifetch": "",
+      "readmore": "",
+      "context": ""
+    },
+    {
+      "timeline": "",
+      "title": "Early AOL phishing",
+      "start": "31/12/1995",
+      "end": "",
+      "content": "AOHell, released in early 1995, was a program designed to hack AOL users by allowing the attacker to pose as an AOL staff member, and send an instant message to a potential victim, asking him to reveal his password. The symbol <>< was replaced for any wording that referred to stolen credit cards, accounts, or illegal activity. Since the symbol looked like a fish, and due to the popularity of phreaking it was adapted as 'Phishing'. ",
+      "wikifetch": "",
+      "readmore": "",
+      "context": ""
+    },
+    {
       "timeline": "internetphenomena",
       "title": "Blogs First Appear",
       "start": "01/01/1998",
       "end": "",
       "content": "",
       "wikifetch": "History_of_blogging",
+      "readmore": "",
+      "context": ""
+    },
+    {
+      "timeline": "",
+      "title": "Web 2.0",
+      "start": "01/01/1999",
+      "end": "",
+      "content": "The term was invented by Darcy DiNucci in 1999 and popularized several years later by Tim O'Reilly and Dale Dougherty at the O'Reilly Media Web 2.0 Conference in late 2004.",
+      "wikifetch": "",
+      "readmore": "",
+      "context": ""
+    },
+    {
+      "timeline": "",
+      "title": "Front-facing camera",
+      "start": "01/01/2003",
+      "end": "",
+      "content": "Several mobile phones released in 2003 to western markets introduced front-facing cameras, including the NEC e606, NEC e616, Sony Ericsson Z1010 and Motorola A835. The front-facing camera was originally intended for video-conferencing",
+      "wikifetch": "",
+      "readmore": "",
+      "context": ""
+    },
+    {
+      "timeline": "",
+      "title": "First Youtube video",
+      "start": "23/04/2005",
+      "end": "",
+      "content": "The first ever YouTube video was ‘Me at the Zoo’. It featured Jawed Karim – a founder of San Diego Zoo. The video was uploaded on 23rd April, 2005.",
+      "wikifetch": "",
+      "readmore": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+      "context": ""
+    },
+    {
+      "timeline": "",
+      "title": "First tweet",
+      "start": "21/03/2006",
+      "end": "",
+      "content": "Jack Dorsey – Twitter founder twitted the first tweet on 21st March, 2006. The tweet he sent was ‘just setting up my twttr’.",
+      "wikifetch": "",
+      "readmore": "",
+      "context": ""
+    },
+    {
+      "timeline": "",
+      "title": "Emoji incorporated into Unicode",
+      "start": "01/01/2010",
+      "end": "",
+      "content": "In 1999 Shigetaka Kurita created the first widely-used set of emoji. From 2010 onwards, some emoji character sets have been incorporated into Unicode, a standard system for indexing characters, which has allowed them to be used outside Japan and to be standardized across different operating systems.",
+      "wikifetch": "",
+      "readmore": "",
+      "context": ""
+    },
+    {
+      "timeline": "",
+      "title": "GIF was voted \"Word of the Year\"",
+      "start": "01/012012",
+      "end": "",
+      "content": " The press's lexicographers voted it their word of the year, saying that GIFs have evolved into \"a tool with serious applications including research and journalism\"",
+      "wikifetch": "",
+      "readmore": "",
+      "context": ""
+    },
+    {
+      "timeline": "",
+      "title": "Google Web pages index",
+      "start": "01/01/2014",
+      "end": "",
+      "content": "By 2014, Google had indexed over 130,000,000,000,000 (130 trillion) web pages.",
+      "wikifetch": "",
+      "readmore": "",
+      "context": ""
+    },
+    {
+      "timeline": "",
+      "title": "Website",
+      "start": "01/01/2017",
+      "end": "",
+      "content": "As of January of 2017, there were 1,805,260,010 websites, up from 906,616,188 in January 2016.",
+      "wikifetch": "",
+      "readmore": "",
+      "context": ""
+    },
+    {
+      "timeline": "",
+      "title": "Mobile internet usage",
+      "start": "01/01/2018",
+      "end": "",
+      "content": "More people access the internet on a mobile device than they do on a desktop computer. In 2018, the mobile internet usage was 48.2%.",
+      "wikifetch": "",
+      "readmore": "",
+      "context": ""
+    },
+    {
+      "timeline": "",
+      "title": "Internet users",
+      "start": "01/01/2019",
+      "end": "",
+      "content": "As of January 1, 2019, there were 4,100,667,287 internet users spanning the globe. This is compared to the 3.42 billion users recorded at the end of 2016.",
+      "wikifetch": "",
       "readmore": "",
       "context": ""
     }
