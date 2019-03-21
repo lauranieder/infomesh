@@ -1,45 +1,59 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-  <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.5/dat.gui.js"></script>
-  <script src="//unpkg.com/cartogram-chart@1"></script>
-  <script src="//unpkg.com/d3-scale-chromatic"></script>
-  <script type="text/javascript" src="../../js/timeline-action.js"></script>
-  <script type="text/javascript" src="../../js/moment-2.22.2.js"></script>
-  <script type="text/javascript" src="../../js/events.js"></script>
-  <script type="text/javascript" src="/js/communication.js"></script>
-  <!-- <script src="./js/lib/papaparse.js"></script> -->
-
+  <meta charset="utf-8">
+  <title>Information mesh</title>
+  <meta name="description" content="Information mesh">
+  <meta name="author" content="SitePoint">
+  <!--styles-->
   <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="../../css/reset.css">
   <link rel="stylesheet" href="../../css/main.css">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="../../css/main-popup.css">
+  <!--script-->
+  <script src="./js/lib/chroma.min.js"></script>
+  <script src="https://unpkg.com/flubber@0.3.0"></script>
+  <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../../js/timeline-action.js"></script>
+  <script type="text/javascript" src="../../js/moment-2.22.2.js"></script>
 
+  <script type="text/javascript" src="./js/action.js"></script>
+  <script type="text/javascript" src="../../js/communication.js"></script>
+  <script type="text/javascript" src="../../js/events.js"></script>
 </head>
-
 <body>
-  <section id="worldwidemap" class="timeline-containers">
-    <div id="container-project" class="style-blue">
-      <div id="reset">calculate</div>
-      <div id="controls">
-        <div id="list">
-          <div id="title">Size by:</div>
-          <div id="data1" class="option active">Absolute Internet User</div>
-          <div id="data2" class="option">% Internet User</div>
-          <div id="data3" class="option">Population</div>
+  <section id="webinfluenceridentity" class="timeline-containers">
+    <div id="container-project">
+      <div id="shadow"></div>
+
+      <div id="info">
+        <div id="description">Percentage of the population having acces to the internet</div>
+        <div id="change_data">change data</div>
+        <div id="legend">
+          <div id="leg1"></div>
+          <div id="leg2"></div>
+          <div id="leg3"></div>
+          <div id="leg4"></div>
+          <div id="leg5"></div>
+          <div id="leg6"></div>
+          <div id="leg7"></div>
+          <div id="leg8"></div>
+          <div id="leg9"></div>
+          <div id="leg10"></div>
         </div>
-
-        <div id="color_t" class="option">show quality of internet infrastructure </div>
       </div>
-      <input type="text" name="year" value="XXXX">
-      <div id="world"></div>
 
-      <div class="year"><div>XXXX</div></div>
+      <div id="world"></div>
+      <div id="next_svg_holder"></div>
+
+      <div id="tooltip">
+        <div class="country">ma country</div>
+        <div class="data">9876543 people</div>
+      </div>
     </div>
-    <div id="container-timeline" class="col-12">
+
+    <div id="container-timeline">
       <div id="timeline-scrollable">
         <div class=timeline-cell>1989</div>
         <div class=timeline-cell>1990</div>
@@ -75,9 +89,9 @@
       </div>
     </div>
   </section>
-  <script src="./js/localaction.js"></script>
-  <script src="./data/iso_names.js"></script>
-  <script src="./data/name_data1.js"></script>
-  <script src="./js/app.js"></script>
 </body>
+
+<script src="./js/svg_tween.js"></script>
+
+
 </html>

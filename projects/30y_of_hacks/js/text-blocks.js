@@ -49,12 +49,16 @@ function createBlock(data) {
   eventBlock.className = "block";
   eventBlockWrapper.appendChild(eventBlock);
 
-  eventBlock.style.width =
-    map_range(data.descriptionText.length, 200, 800, 50, 100, true) + "%";
+  // TODO recall on resize
+  if (window.innerWidth < 768) {
+    eventBlock.style.width = "auto";
+  } else
+    eventBlock.style.width =
+      map_range(data.descriptionText.length, 200, 400, 70, 100, true) + "%";
 
   var title = document.createElement("div");
   title.className = "block-title";
-  title.textContent = data.year + ", " + data.name;
+  title.textContent = data.name;
   eventBlock.appendChild(title);
   var description = document.createElement("div");
   description.className = "block-description";
@@ -90,6 +94,7 @@ function indexToId(index) {
 }
 
 function goToBlock(newIndex, isTimelineEvent) {
+  var forward = newIndex > currentBlock;
   if (newIndex >= dataset.length) {
     newIndex = 0;
   }
@@ -105,8 +110,18 @@ function goToBlock(newIndex, isTimelineEvent) {
   }
   updateNewBlocks();
   updateContainer();
-  window.onNewVisual_renderer(dataset[currentBlock]);
-  window.onNewVisual_anim(dataset[currentBlock]);
+  updateYear();
+
+  window.dispatchEvent(
+    new CustomEvent("blockchange", {
+      detail: { data: dataset[currentBlock], forward: forward }
+    })
+  );
+}
+
+var yearBlock = document.getElementById("text-year");
+function updateYear() {
+  yearBlock.textContent = dataset[currentBlock].year;
 }
 
 function updateContainer() {

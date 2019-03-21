@@ -15,12 +15,10 @@ var sendMessage = function(msg) {
 
 // Listen to messages from parent window
 bindEvent(window, "message", e => {
-  console.log("Received event:", e.data);
+  //console.log("Received event:", e.data);
   var data = JSON.parse(e.data);
-  //var year = moment(data.date).year();
   // if (typeof data.id === "number") {
-  timeline_change(parseInt(data.year));
-  //timeline_change(parseInt(data.id));
+  timeline_change(parseInt(data.id));
   // }
 });
 

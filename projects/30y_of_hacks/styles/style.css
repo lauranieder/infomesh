@@ -8,7 +8,7 @@
   /* height: 100%; */
   width: 100%;
   background-color: black;
-  font-family: sans-serif;
+  font-family: "IBM Plex Mono", "Hack", monospace;
   color: white;
 }
 
@@ -62,7 +62,7 @@ body > div.dg.ac {
 .block-wrapper {
   /* width: 42vh; */
   min-width: 45vw;
-  /* max-width: 90%; */
+  max-width: 700px;
   /* height: 60%; */
   min-height: 240px;
   /* max-height: 75vh; */
@@ -72,6 +72,16 @@ body > div.dg.ac {
   transition: transform 0.6s;
   /* transform: translateY(100px); */
 }
+
+@media (max-width: 768px) {
+  .block-wrapper {
+    min-width: 92vw;
+  }
+  #container-textblocs {
+    left: 4vw;
+  }
+}
+
 /* .currentHistoryWrapper {
   transition: transform 2s;
 } */
@@ -79,9 +89,10 @@ body > div.dg.ac {
 .block {
   display: flex;
   width: 100%;
-  max-height: 75vh;
+  /* timeline bar height = 96px */
+  max-height: calc(100vh - 260px);
 
-  border: 0.5px blue solid;
+  /* border: 0.5px blue solid; */
   background-color: #00000000;
 
   padding-top: 60px;
@@ -102,18 +113,18 @@ body > div.dg.ac {
 
 .ancientHistory {
   opacity: 0;
-  border: 0.5px blue solid;
+  /* border: 0.5px blue solid; */
   pointer-events: none;
   transform: translateX(-50vw);
 }
 
 .futureHistory {
-  border: 0.5px blue solid;
+  /* border: 0.5px blue solid; */
   transform: scale(0.8);
 }
 
 .block-title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   /* text-transform: uppercase; */
   margin-bottom: 18px;
@@ -121,7 +132,7 @@ body > div.dg.ac {
 
 .block-description {
   line-height: 1.7;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   overflow-y: auto;
   padding-right: 12px;
@@ -144,4 +155,15 @@ a {
 ::-webkit-scrollbar-thumb {
   /* width: 0px; */
   background: #444; /* make scrollbar transparent */
+}
+
+#text-year {
+  font-family: "Silkscreen", "IBM Plex Mono", monospace;
+  /* font-family: "DS-Digtial", "IBM Plex Mono", monospace; */
+  color: black;
+  font-weight: bold;
+  font-size: 128px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }

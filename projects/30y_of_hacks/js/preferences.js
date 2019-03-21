@@ -1,4 +1,4 @@
-/* exported OPTIONS COLORS */
+/* exported OPTIONS COLORS TYPES */
 
 /***************************************
  * PREFERENCES
@@ -11,22 +11,22 @@ var OPTIONS = {
   displacementFile: "assets/textures/displacement_map.png",
   displacementScaleX: 300,
   displacementScaleY: 300,
-  bloomEnabled: true,
+  asciiEnabled: true,
+  asciiScale: 16,
+  transparentPixiCanvas: false,
+  bloomEnabled: false,
   bloomBlur: 6,
   bloomQuality: 5,
-  bloomResolution: undefined,
-  asciiEnabled: true,
-  asciiScale: 12,
-  transparentPixiCanvas: true
+  bloomResolution: undefined
 };
 
-// var gui = new dat.gui.GUI();
-// gui.close();
-//
-// var f2 = gui.addFolder("DisplacementFilter");
-// f2.add(OPTIONS, "displacementSpeedX", 0.1, 10);
-// f2.add(OPTIONS, "displacementSpeedY", 0.1, 10);
-// f2.open();
+var gui = new dat.gui.GUI();
+gui.close();
+
+var f2 = gui.addFolder("DisplacementFilter");
+f2.add(OPTIONS, "displacementSpeedX", 0.1, 10);
+f2.add(OPTIONS, "displacementSpeedY", 0.1, 10);
+f2.open();
 
 var COLORS = {
   incident: [[["white", 0.05], ["blue", 0.8], ["black", 1]]],
@@ -38,3 +38,21 @@ var COLORS = {
   law: [[["black", 0.5], ["blue", 0.8], ["blue", 0.9], ["black", 1]]],
   meeting: [[["teal", 0.5], ["navy", 0.8], ["black", 1]]]
 };
+
+var TYPES = [
+  "media",
+  "newAttackType",
+  "incident",
+  "law",
+  "foundation",
+  "moneyTheft",
+  "other",
+  "virus",
+  "defacement",
+  "infiltration",
+  "breach",
+  "dataTheft",
+  "hack",
+  "ransomware",
+  "destructive"
+];
