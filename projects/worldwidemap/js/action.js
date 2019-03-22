@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  document.addEventListener("timeline-scroll", function(e) {
+    var dotDate = moment(e.detail.date);
+    var scrollYear = dotDate.year();
+    timeline_change(scrollYear);
+  });
   $(document).on("click", ".less", function() {
     $("#container-side").hide();
     $("#container-titre").show();

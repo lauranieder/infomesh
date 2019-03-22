@@ -15,7 +15,72 @@ body {
   font-size: 80%;
 }
 
-#world {
+#info {
+  top: calc(2.5vw + 30px + 20px);
+  position: absolute;
+  left: 2.5vw;
+  width: 95vw;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+}
+#lines_wrapper {
+  width: 400px;
+}
+#line_1 {
+  font-family: Arial;
+  width: 400px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#legend {
+  z-index: 10;
+  font-family: Arial;
+  height: 30px;
+  position: absolute;
+  left: 2.5vw;
+  top: 2.5vw;
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.37);
+}
+#info_description {
+  width: 300px;
+  color: white;
+  padding: 5px;
+  text-align: right;
+}
+#info_change_data {
+  width: 50px;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  cursor: pointer;
+  padding: 11px;
+  box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+  transition: 0.5s;
+}
+#info_change_data:hover {
+  box-shadow: 2px 2px 25px rgba(255, 255, 255, 0.74);
+}
+.lSquare {
+  width: 10vw;
+  height: 10px;
+  padding: 10px;
+  border-left-style: solid;
+  font-size: 80%;
+}
+#leg1 {
+  color: black;
+}
+#leg10 {
+  color: white;
+}
+#info #world {
   width: 100vw;
   height: 100vh;
   font-family: Arial;
@@ -66,69 +131,6 @@ path.selected {
   left: -20px;
   box-shadow: -4px 0px 49px black;
 }
-#controls {
-  position: absolute;
-  z-index: 10;
-  left: calc(100vw - 200px - 5vh);
-  top: 5vh;
-  width: 200px;
-  display: flex;
-
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-#list {
-  border-width: thin;
-  background-color: white;
-  border-color: black;
-  border-style: solid;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 200px;
-}
-
-#color_t {
-  margin-top: 20px;
-  border-color: black;
-  border-style: solid;
-  border-width: thin;
-
-  width: 200px;
-}
-#title {
-  padding-left: 5px;
-  font-weight: bold;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  border-bottom-style: solid;
-}
-.option {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  transition: 0.3s;
-  background-color: white;
-  color: black;
-  cursor: pointer;
-}
-.option:hover {
-  background-color: rgb(200, 200, 200);
-}
-.option.active {
-  background-color: black;
-  color: white;
-}
-.fade {
-  color: rgba(0, 0, 255, 0);
-}
-
-.wait {
-  transition: 0s;
-  cursor: progress;
-}
-
 .invisible {
   /* visibility: hidden; */
 }
