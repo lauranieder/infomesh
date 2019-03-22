@@ -24,6 +24,9 @@ main_svg_holder.load(
   }
 );
 
+$("#info_change_data").click(function() {
+  changeData();
+});
 document.addEventListener(
   "keypress",
   function(e) {
@@ -101,13 +104,13 @@ var last_t_change;
 function timeline_change(year) {
   if (last_t_change) clearTimeout(last_t_change);
   last_t_change = setTimeout(function() {
-    console.log(year);
     if (year == 1989) year = 1990;
     if (year > 2016) year = 2016;
     if (year !== last_timeline_request) {
       last_timeline_request = year;
       current_year = year;
     }
+    console.log(year);
     updateMapWithNewYear();
   }, 500);
 }
@@ -115,6 +118,22 @@ function timeline_change(year) {
 function setupMap() {
   addHoverEvents();
   resizeMap();
+}
+
+function changeData() {
+  if (dataType == "access_population_") {
+    dataType = "access_";
+    $("#info_description").html(
+      "Percentage of the population having acces to the internet"
+    );
+  } else {
+    dataType = "access_population_";
+    $("#info_description").html(
+      "Total number of people having acces to the internet"
+    );
+  }
+  console.log("bing");
+  updateMapWithNewYear();
 }
 
 function addHoverEvents() {
@@ -168,6 +187,25 @@ function remapColors(svg) {
     $(this).attr("fill", new_color.hex());
   });
 }
+function create_legend() {
+  $("#legend")
+    .children("div")
+    .each(function(index) {
+      $(this).css(
+        "background-color",
+        chroma("blue")
+          .set("hsl.l", 1 - index / 11)
+          .hex()
+      );
+      $(this).css(
+        "color",
+        chroma("blue")
+          .set("hsl.l", index / 11)
+          .hex()
+      );
+    });
+}
+create_legend();
 
 function resizeMap() {
   W = window.innerWidth;
@@ -175,7 +213,7 @@ function resizeMap() {
   var svg = $("svg.cartogram");
 
   var svgMarginLeft = 150;
-  var svgMarginTop = 70;
+  var svgMarginTop = 100;
 
   var scale = (W / 2000) * 1.9;
   var padding_left = svgMarginLeft * scale;
