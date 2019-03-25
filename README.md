@@ -21,6 +21,8 @@
 - Landing page
 - Popup ne s'highlight pas tjr en bleu
 - Design de la barre de navigation timeline pas beau avec les fade, améliorer les transitions css. 
+- Titre dépasse du div à certaines Taille
+- Timeline bug à certaines tailles
 
 ### Adapt student project
 #### worldwidemap
