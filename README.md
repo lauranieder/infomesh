@@ -14,14 +14,14 @@
 - ~~Ajout des flèches de navigation~~ Amélioration du jump d'évent en event
 - ~~Centrer le curseur quand le panel est fermé~~
 - ~~Couleurs quand fond noir/fond blanc~~ (sur mobile pas bon)
-- Up/down remplacer par des flèches
+- ~~Up/down remplacer par des flèches~~
 - Less information Resize timeline pas au bon endroit!
 - taille max des flèches de la timeline trop petites 
 - ~~mettre seulement 6 événements en largeur sur la timeline en version mobile.~~ 
 - Landing page
 - Popup ne s'highlight pas tjr en bleu
 - Design de la barre de navigation timeline pas beau avec les fade, améliorer les transitions css. 
-- Titre dépasse du div à certaines Taille
+- ~~Titre dépasse du div à certaines Taille~~(just put a breakword)
 - Timeline bug à certaines tailles
 
 ### Adapt student project
