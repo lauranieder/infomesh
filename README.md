@@ -19,6 +19,8 @@
 - taille max des flèches de la timeline trop petites 
 - ~~mettre seulement 6 événements en largeur sur la timeline en version mobile.~~ 
 - Landing page
+- Popup ne s'highlight pas tjr en bleu
+- Design de la barre de navigation timeline pas beau avec les fade, améliorer les transitions css. 
 
 ### Adapt student project
 #### worldwidemap
