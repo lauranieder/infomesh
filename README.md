@@ -26,7 +26,7 @@
 
 ### Adapt student project
 #### worldwidemap
-- 
+- data dans la timeline s'affichent pas
 
 #### browser landscape
 - 
