@@ -23,6 +23,7 @@
 - Design de la barre de navigation timeline pas beau avec les fade, améliorer les transitions css. 
 - ~~Titre dépasse du div à certaines Taille~~(just put a breakword)
 - Timeline bug à certaines tailles
+- Popup : hauteur max sinon scroll
 
 ### Adapt student project
 #### worldwidemap
