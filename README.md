@@ -22,17 +22,14 @@
 
 ### Adapt student project
 #### worldwidemap
-- info de scroll en continue --> envoyer l'événement une fois que le scroll est fini
-- chargement de event.json inutile ?
-- ajouter un chargement
+- 
 
 #### browser landscape
-- dans index.js début de code bizarre ?
+- 
 
 #### web influencer identity
 - même système que obsolete objects
-- ~~sequencer à adapter~~
-- loading des images ? Preloading trop long.
+- loading des images ? Preloading trop long. Image qui saute avant de s'afficher.
 - ajuster les logos aux années
 - meilleures transitions entre les logos
 
@@ -43,11 +40,10 @@
 - animation des mots sur mobile.
 
 #### 30y_of_hacks.exe
-- gotoblocks() changer pour que ca fonctionne avec le update des dates, pour l'instant prends un id.
 - les evenements ne sont pas tous aligné avec les points dans la timeline, certains ne s'ouvrent pas. Checker les timestamps
 
 #### Internet phenomena 
-- bundlem.js ?????
+- cadrage vertical/horizontal répétition grille
 
 
 
