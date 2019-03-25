@@ -71,9 +71,8 @@ function loadProject(index, direction) {
   currentProjectID = index;
 
   $('#project-title').text(projectsData[index].title);
-  $('#project-text').text(projectsData[index].text);
-  //$('#project-credits').html()
-  $('#project-credits').html("&lt;Project by&gt;</br>"+projectsData[index].student);
+  $('#project-text p:first').text(projectsData[index].text);
+  $('#project-credits p:first').html("&lt;Project by&gt;</br>"+projectsData[index].student);
 
   $('.current-iframe').addClass('previous-iframe').removeClass('current-iframe');
 
@@ -116,8 +115,8 @@ $(document).ready(function() {
     $('#container-main, #container-projects').addClass('reduced').removeClass('main');
 
     $('#project-title').text(siteTitle);
-    $('#project-text').text("");
-    $('#project-credits').text("");
+    $('#project-text p:first').text("");
+    $('#project-credits p:first').text("");
 
     //only for mobile
     $('#container-side').addClass('mobile-reduced');
@@ -139,16 +138,14 @@ $(document).ready(function() {
     $('#container-side').addClass('mobile-reduced');
 
     $('#project-title').text(siteTitle);
-    $('#project-text').text("");
-    $('#project-credits').text("");
+    $('#project-text p:first').text("");
+    $('#project-credits p:first').text("");
 
     if (!ignoreURLS) history.pushState({}, siteTitle , '/index');
   });
 
   $('#button-up').on('click', function(e) {
     e.preventDefault();
-
-
     var prevProject = currentProjectID - 1;
     if (prevProject < 0) prevProject = projectsData.length - 1;
 
@@ -157,7 +154,6 @@ $(document).ready(function() {
 
   $('#button-down').on('click', function(e) {
     e.preventDefault();
-
     var nextProject = currentProjectID + 1;
     if (nextProject == projectsData.length) nextProject = 0;
 
@@ -175,7 +171,6 @@ $(document).ready(function() {
   $('#button-menu').on('click', function(e) {
     e.preventDefault();
     toggleMenu();
-
   });
 
   $('body').on('click', '.button-open-project', function(e) {

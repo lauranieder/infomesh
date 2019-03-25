@@ -16,7 +16,7 @@ $(document).ready(function() {
       //$('#container-timeline').animate({scrollLeft: left+space}, 400);
       //console.log(getClosestDot(true));
       var scrolltarget = getClosestDot(true);
-      console.log("scrolltarget " +scrolltarget);
+      //console.log("scrolltarget " +scrolltarget);
       $('#container-timeline').animate({scrollLeft: scrolltarget}, scrollDist(scrolltarget,left));
     }
 
@@ -29,7 +29,7 @@ $(document).ready(function() {
       //use distance instead of time
         //console.log(getClosestDot(false));
         var scrolltarget = getClosestDot(false);
-        console.log("scrolltarget "+scrolltarget);
+        //console.log("scrolltarget "+scrolltarget);
         if(scrolltarget != null){
 
 
@@ -80,22 +80,22 @@ $(document).ready(function() {
       if (Math.abs(ref - pos) < Math.abs(ref - pos2) && dist > 2) {
         if(next == true){
           if(pos > ref){
-          console.log("NEEEXT");
+          //console.log("NEEEXT");
             num = i;
           }
         }else{
-          console.log("LEEEFT");
-          console.log("dist  "+dist);
+          //console.log("LEEEFT");
+          //console.log("dist  "+dist);
           if(pos < ref){
-            console.log("nono");
+            //console.log("nono");
             num = i;
           }
         }
       }
     }
-    console.log("num  "+num);
+    //console.log("num  "+num);
     if(num != -1){
-      console.log("array[num].position  "+ array[num].position);
+      //console.log("array[num].position  "+ array[num].position);
       return array[num].position;
     }else{
       return null

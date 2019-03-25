@@ -25,13 +25,26 @@
 
 #popup-title{
   font-size: 2rem;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 1rem;
+}
+
+#popup-date{
+  font-size: 2rem;
+  font-weight: 100;
+  /*margin-bottom: 1rem;*/
+}
+
+.citation-needed-content{
+ color:black; !important
+ border:none; !important
+
 }
 
 .reduced #popup-title{
   font-size: 1rem;
   font-weight: 300;
+  margin-bottom: 0;
   /*float:right;*/
 
 }
@@ -39,14 +52,15 @@
 .reduced #popup-date{
   float:left;
   margin-right: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 #popup {
   box-sizing: border-box;
   position:fixed;
-  bottom: 7rem; /*calc(10vh + 50px);*/
-  left: 50%;
-  transform: translateX(-50%);
+  /*bottom: 7rem;*/ /*calc(10vh + 50px);*/
+
   width: 90%;
   max-width: 720px;
   min-height: 10px;
@@ -58,6 +72,10 @@
   pointer-events: none;
   transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
   padding:1rem;
+  line-height:1.4;
+  left: 50%;
+  top: calc(50% - 3rem);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 #popup.opened {
@@ -66,7 +84,10 @@
 }
 
 #popup.reduced {
-  max-height: 10px;
+  /*max-height: 10px;*/
+  transform: translateX(-50%) translateY(-100%);
+  top: calc(100% - 7rem);;
+
   /*background-color: gray;*/
 }
 
@@ -76,17 +97,28 @@
 }
 
 #popup #button-toggle-popup img{
+
+}
+
+#popup #button-toggle-popup {
+  position:fixed;
   width:2rem;
   height:auto;
   padding:1rem;
 }
 
-#popup #button-toggle-popup {
-  position:fixed;
+#popup #button-toggle-popup .svgline{
+  stroke-width:2px;
+}
+
+#popup #button-toggle-popup:hover .svgline{
+  stroke:blue;
 }
 
 
-#popup.reduced #button-toggle-popup img{
+
+
+#popup.reduced #button-toggle-popup{
   -ms-transform: rotate(180deg); /* IE 9 */
   -webkit-transform: rotate(180deg); /* Safari */
   transform: rotate(180deg);
