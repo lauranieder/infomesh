@@ -5,6 +5,7 @@
   <title>Information mesh</title>
   <meta name="description" content="Information mesh">
   <meta name="author" content="SitePoint">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
   <!--styles-->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">

@@ -12,6 +12,7 @@ var eventPadding = 30;
 var popupCallback;
 var cellwidth = 8.333;
 function isMobileF(x){
+  console.log("[event.js] mobile checker");
   console.log("isMobile = "+x);
   if (x) { // If media query matches
     //document.body.style.backgroundColor = "yellow";
@@ -206,6 +207,7 @@ $(document).ready(function() {
   //console.log("[event.js]");
   loadEvents();
   createPopup();
+  window.parent.postMessage({message: 'getResponsive'}, '*');
 
   var lastPopupIndex;
   $(window).resize(function(){

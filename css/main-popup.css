@@ -133,7 +133,7 @@
 
 /*@media only screen and (max-width: 992px) {*/
   .mobile #popup {
-    font-size:40px; /*32*/
+    font-size:15px; /*32*/
     line-height:1.4;
     width: calc(100% - 2rem);
     max-width: calc(100% - 2rem);
@@ -144,6 +144,10 @@
   .mobile #popup.reduced {
     max-height: 4rem;
     /*overflow-y: none;*/
+  }
+
+  .mobile h1, .mobile .font-large{
+    font-size: 2rem;
   }
 
 /*}*/
