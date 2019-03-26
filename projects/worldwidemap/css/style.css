@@ -73,6 +73,7 @@ body {
   padding: 10px;
   border-left-style: solid;
   font-size: 80%;
+  text-align: center;
 }
 #leg1 {
   color: black;
@@ -113,9 +114,9 @@ body {
 }
 #tooltip .data {
 }
-/* path {
-  transition-property: color;
-} */
+path {
+  transition: fill 0.8s;
+}
 path.selected {
   fill: rgb(255, 161, 161);
   /* stroke: rgb(255, 80, 80);
@@ -133,4 +134,38 @@ path.selected {
 }
 .invisible {
   /* visibility: hidden; */
+}
+
+@media only screen and (max-width: 993px) {
+  #legend {
+    top: 17vh;
+    height: 60px;
+  }
+  .lSquare {
+    font-size: 120%;
+    height: 20px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
+  #info {
+    top: calc(17vh + 80px);
+    font-size: 200%;
+  }
+  #lines_wrapper {
+    width: 100%;
+  }
+  #line_1 {
+    width: 100%;
+  }
+  #info_description {
+    width: 90%;
+    text-align: left;
+  }
+  #info_change_data {
+    position: relative;
+    top: 50vh;
+    width: 10%;
+    height: 60px;
+    padding: 20px 26px 0px 20px;
+  }
 }
