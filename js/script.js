@@ -13,7 +13,7 @@ var isPopupReduced = false;
 var ignoreURLS = false; //put back to false !!!
 var isMobile = false;
 
-function mobileCheck(x) {
+function mobileCheck(iphone) {
   if (x.matches) { // If media query matches
     console.log("mobile");
     isMobile = true;
@@ -27,9 +27,12 @@ function mobileCheck(x) {
     //$('.current-iframe').get(0).contentWindow.postMessage({message: 'responsive'}, '*');
   }
 }
-var x = window.matchMedia("(max-width: 600px)");
-mobileCheck(x) // Call listener function at run time
-x.addListener(mobileCheck) // Attach listener function on state changes
+var iphone = window.matchMedia("(max-width: 600px)");
+mobileCheck(iphone) // Call listener function at run time
+iphone.addListener(mobileCheck) // Attach listener function on state changes
+
+var tablet-up = window.matchMedia("(max-width: 800px) and (min-width: 601px)");
+//var tablet-landscape = window.matchMedia("(max-width: 800px) and (min-width: 601px)");
 
 function getProjectIdFromName(name) {
   var projectID = -1;
