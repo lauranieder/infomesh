@@ -1,4 +1,6 @@
-/*POPUP*/
+/*POPUP
+events
+timelineWidthmobile check.*/
 
 var events = [];
 var rootStartDate = moment('01/01/1989', 'DD/MM/YYYY');
@@ -9,23 +11,26 @@ var noDurationEventSize = 30;
 var eventPadding = 30;
 var popupCallback;
 var cellwidth = 8.333;
-
-function mobileCheck(x) {
-  if (x.matches) { // If media query matches
+function isMobileF(x){
+  console.log("isMobile = "+x);
+  if (x) { // If media query matches
     //document.body.style.backgroundColor = "yellow";
-    console.log("mobile");
+    //console.log("mobile");
     cellwidth = 16.666;
+    //$('.timeline-containers').addClass("mobile");
+    $('body').addClass("mobile");
+    $('html').addClass("mobile");
   } else {
     //document.body.style.backgroundColor = "pink";
-    console.log("desktop");
+    //console.log("desktop");
     cellwidth = 8.333;
+    $('body').removeClass("mobile");
+    $('html').removeClass("mobile");
+    //$('.timeline-containers').removeClass("mobile");
   }
-}
 
-var x = window.matchMedia("(max-width: 992px)");
-//@media only screen and (max-width: 992px)
-mobileCheck(x) // Call listener function at run time
-x.addListener(mobileCheck) // Attach listener function on state changes
+  computeEvents();
+}
 
 function createPopup() {
   var popupContainer = $('<div id="popup-container"></div>');
@@ -38,7 +43,6 @@ function loadEvents() {
   //wikitest();
   jQuery.getJSON('./events.json', function(data) {
     events = data;
-
     computeEvents();
   });
 }
@@ -50,16 +54,16 @@ function parseDate(date){
   var month = dateS.match(/[0-9]{1,2}\/[0-9]{2,4}/g);
   var year = dateS.match(/[0-9]{2,4}/g);
   if(full){
-    console.log("regular date " + date);
+    //console.log("regular date " + date);
     return date;
   }else if(month){
-    console.log("month date " + date);
+    //console.log("month date " + date);
     return "01/"+date;
   }else if(year){
-    console.log("year date " + date);
+    //console.log("year date " + date);
     return "01/01/"+date;
   }else{
-    console.log("CHECK DATA");
+    //console.log("CHECK DATA");
     //alert("CHECK DATA in "+date);
     return "01/01/1989";
   }
@@ -73,16 +77,16 @@ function formatDate(date){
   var month = dateS.match(/[0-9]{1,2}\/[0-9]{2,4}/g);
   var year = dateS.match(/[0-9]{2,4}/g);
   if(full){
-    console.log("regular date " + date);
+    //console.log("regular date " + date);
     return moment(date, 'DD/MM/YYYY').format('MMMM Do, YYYY');
   }else if(month){
-    console.log("month date " + date);
+    //console.log("month date " + date);
     return moment("01/"+date , 'DD/MM/YYYY').format('MMMM YYYY');
   }else if(year){
-    console.log("year date " + date);
+    //console.log("year date " + date);
     return moment("01/01/"+date, 'DD/MM/YYYY').format('YYYY');
   }else{
-    console.log("CHECK DATA");
+    //console.log("CHECK DATA");
     //alert("CHECK DATA in "+date);
     return moment("01/01/1989", 'DD/MM/YYYY').format('MMMM Do, YYYY');
   }
@@ -90,10 +94,11 @@ function formatDate(date){
 }
 
 function computeEvents() {
+  //getResponsive message
   timelineWidth = cellwidth * 31;
   /*if($('.timeline-cell').width() != null){
     var cellwidth = $('.timeline-cell').css("width");
-    console.log("cellwidth  "+cellwidth);
+    //console.log("cellwidth  "+cellwidth);
   }*/
   $('.event-marker').remove();
 
@@ -126,16 +131,12 @@ function computeEvents() {
 
     if(item.readmore != null){
       item.content += "<a target='_blank' href='"+item.readmore+"'>Read more</a>";
-
     }
     //TODO : regex to improve, replace link with target blank
     if(item.content){
       var temp = item.content;
       var temp = temp.replace("<a", "<a target='_blank' ");
       item.content = temp;
-
-      ///<\/?span[^>]*>/g
-      //\<(.?span)\>
     }
   });
 }
@@ -147,7 +148,6 @@ function wikifetching(wiki, index){
 
     //Remove the stupid citation-needed-content span from wiki
     content = content.replace(/<\/?span[^>]*>/g, '');
-    // /<\/?span[^>]*>/g
     content += "<a target='_blank' href='https://en.wikipedia.org/wiki/"+wiki+"'>Read full article on Wikipédia</a>";
     events[index].content = content;
   });
@@ -156,7 +156,7 @@ function wikifetching(wiki, index){
 function wikitest(){
   var url = 'https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=wikitext&page=Timeline_of_Facebook&section=1';
   // $.getJSON(url, function(data){
-  //   console.log(data);
+  //   //console.log(data);
   // });
   //postData = function() {
      $.ajax({
@@ -208,8 +208,12 @@ $(document).ready(function() {
   createPopup();
 
   var lastPopupIndex;
+  $(window).resize(function(){
+    console.log("resized");
+    //computeEvents();
+    window.parent.postMessage({message: 'getResponsive'}, '*');
+  });
 
-  $(window).resize(computeEvents());
 
   $(document).on('timeline-scroll', function(e) {
     var currentPopupIndex = -1;
@@ -253,7 +257,7 @@ $(document).ready(function() {
         $('#popup-content').html(events[currentPopupIndex].content);
 
         //$('#popup-date').html(moment(events[currentPopupIndex].start, 'DD/MM/YYYY').format('MMMM Do, YYYY'));
-        console.log(events[currentPopupIndex].title);
+        //console.log(events[currentPopupIndex].title);
         $('#popup-date').html(formatDate(events[currentPopupIndex].start));
 
 

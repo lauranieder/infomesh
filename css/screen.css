@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+/*POUR IFRAME
+/*1. Essential, basic container*/
+body,html{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background-color: white;
+}
+
+/* Résolution exacte */
+@media (-webkit-device-pixel-ratio: 1) {
+  p {
+    color: red;
+  }
+}
+
+/* Résolution minimale */
+@media (-webkit-min-device-pixel-ratio: 1.1) {
+  p {
+    /*font-size: 1.5em;*/
+    border:1px solid red;
+  }
+}
+
+/* Résolution maximale */
+@media (-webkit-max-device-pixel-ratio: 3) {
+  p {
+      background: yellow;
+  }
+}
+
+/*tablet-landscape*/
+@media screen and (max-width: 1200px){
+  body,html{
+    background-color: red;
+  }
+}
+/*tablet-up*/
+@media screen and (max-width: 800px){
+  body,html{
+    background-color: green;
+  }
+}
+/*phone*/
+@media screen and (max-width: 600px){
+  body,html{
+    background-color: blue;
+  }
+}

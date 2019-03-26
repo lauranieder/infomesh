@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
 
 /*Scrollbars*/
+
+#smartphone{
+  display:none;
+  visibility: hidden;
+}
+
 .flex-middle::-webkit-scrollbar {
   display: none;
 }
@@ -423,14 +429,22 @@ iframe {
 
 }
 
-@media (min-width: 992px) and (max-width: 1200px){
+@media (min-width: 601px) and (max-width: 1200px){
   #container-about .content {
     width: 50%;
     min-width:50%;
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 600px) {
+
+  #smartphone{
+    display:inline-block;
+    visibility: visible;
+    position:absolute;
+    z-index:6000;
+  }
+
   html,
   body {
     font-size: 32px;

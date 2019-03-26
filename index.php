@@ -18,6 +18,7 @@
   </script>
 </head>
 <body>
+  <div id="smartphone">mobile</div>
   <header id="navigation">
     <h1 id="project-title">Information mesh</h1>
     <nav class="d-none">

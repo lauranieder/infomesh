@@ -131,8 +131,8 @@
   color: blue;
 }
 
-@media only screen and (max-width: 992px) {
-  #popup {
+/*@media only screen and (max-width: 992px) {*/
+  .mobile #popup {
     font-size:40px; /*32*/
     line-height:1.4;
     width: calc(100% - 2rem);
@@ -141,9 +141,9 @@
     overflow-y: scroll;
   }
 
-  #popup.reduced {
+  .mobile #popup.reduced {
     max-height: 4rem;
     /*overflow-y: none;*/
   }
 
-}
+/*}*/

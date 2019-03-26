@@ -110,18 +110,19 @@ p{
     box-shadow: -4px 0px 49px black;
 }
 
-@media only screen and (max-width: 992px) {
-  html,
-  body {
+/*@media only screen and (max-width: 992px) {*/
+  html.mobile,
+  body.mobile {
     font-size: 32px;
     background-color: blue;
   }
-  .timeline-cell {
-    texte-size: 1rem;
+
+  .mobile .timeline-cell {
+    text-size: 1rem;
   	text-align: center;
   	width: 16.666vw;
   	border-left: 1px solid rgba(0, 0, 0, 1);
   	height: 4rem;
   	margin: auto;
   }
-}
+/*}*/

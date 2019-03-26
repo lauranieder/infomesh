@@ -27,15 +27,23 @@ $(document).ready(function() {
       //$('#container-timeline').scrollLeft(left-space);
       //$('#container-timeline').animate({scrollLeft: left-space}, 400);
       //use distance instead of time
-        //console.log(getClosestDot(false));
-        var scrolltarget = getClosestDot(false);
-        //console.log("scrolltarget "+scrolltarget);
-        if(scrolltarget != null){
+      //console.log(getClosestDot(false));
+      var scrolltarget = getClosestDot(false);
+      //console.log("scrolltarget "+scrolltarget);
+      if(scrolltarget != null){
 
 
-          $('#container-timeline').animate({scrollLeft: scrolltarget}, scrollDist(scrolltarget,left));
-        }
+        $('#container-timeline').animate({scrollLeft: scrolltarget}, scrollDist(scrolltarget,left));
+      }
     }
+
+    if (e.originalEvent.data.message == 'isMobile') {
+      //$('#container-timeline').scrollLeft(e.originalEvent.data.position);
+      console.log("isMobile ");
+      isMobileF(e.originalEvent.data.status);
+    }
+
+
   });
 
   $('#container-timeline').on('scroll', function() {
