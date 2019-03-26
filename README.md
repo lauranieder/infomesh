@@ -9,6 +9,7 @@
 - enlever drag drop sur mobile
 - ~~Apparition du menu about sur la même page~~
 - ~~Lien dans la barre d'addresse --> infomes.ch/about  ou infomes.ch/worldwideweb~~
+- Check SSL certificate (google block access from ipad chrome)
 
 ### Interface/css
 - ~~Ajout des flèches de navigation~~ Amélioration du jump d'évent en event
