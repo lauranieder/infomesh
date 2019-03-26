@@ -14,24 +14,19 @@ var ignoreURLS = false; //put back to false !!!
 var isMobile = false;
 
 function mobileCheck(iphone) {
-  if (x.matches) { // If media query matches
+  if (iphone.matches) { // If media query matches
     console.log("mobile");
     isMobile = true;
-    //cellwidth = 16.666;
-    //$('.current-iframe').get(0).contentWindow.postMessage({message: 'responsive'}, '*');
   } else {
-    //document.body.style.backgroundColor = "pink";
     console.log("desktop");
     isMobile = false;
-    //cellwidth = 8.333;
-    //$('.current-iframe').get(0).contentWindow.postMessage({message: 'responsive'}, '*');
   }
 }
 var iphone = window.matchMedia("(max-width: 600px)");
 mobileCheck(iphone) // Call listener function at run time
 iphone.addListener(mobileCheck) // Attach listener function on state changes
 
-var tablet-up = window.matchMedia("(max-width: 800px) and (min-width: 601px)");
+//var tablet-up = window.matchMedia("(max-width: 800px) and (min-width: 601px)");
 //var tablet-landscape = window.matchMedia("(max-width: 800px) and (min-width: 601px)");
 
 function getProjectIdFromName(name) {
