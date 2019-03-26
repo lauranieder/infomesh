@@ -134,7 +134,6 @@ function deactivateCountrySelection(path) {
 
 function autoShowCountries() {
   total_countries = $("svg.cartogram").children("path").length;
-  console.log(total_countries);
   id_timer_autoshow = setInterval(
     function() {
       if (last_selected_country)
@@ -337,6 +336,7 @@ function parseDataFormat() {
 }
 
 function select_all_country_paths(path, add) {
+  if (!path) return;
   var country = path.attr("name");
   $("svg.cartogram")
     .children("path")
