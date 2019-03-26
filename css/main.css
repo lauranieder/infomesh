@@ -12,6 +12,10 @@ body,html{
   -webkit-overflow-scrolling:touch;
 }
 
+p{
+  line-height:1.4;
+}
+
 .timeline-containers{
   box-sizing: border-box;
   /*flex-grow: 1;*/
@@ -35,8 +39,8 @@ body,html{
   position: relative;
   background-color: white;
 }
-
-#container-timeline:before {
+/*TO REMOVE : better to have it out of the wrapper so it stays between projects*/
+/*#container-timeline:before {
   content: "";
   display: block;
   position: fixed;
@@ -46,7 +50,7 @@ body,html{
   height: 10%;
   z-index: 1000;
   border-left: 1px solid black;
-}
+}*/
 
 /*Scrollbars*/
 #container-timeline::-webkit-scrollbar,
@@ -94,3 +98,31 @@ body,html{
   visibility:hidden;
   display:none;
 }
+
+/*to remove*/
+#shadow {
+    z-index: 10;
+    width: 20px;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    box-shadow: -4px 0px 49px black;
+}
+
+/*@media only screen and (max-width: 992px) {*/
+  html.mobile,
+  body.mobile {
+    font-size: 32px;
+    background-color: blue;
+  }
+
+  .mobile .timeline-cell {
+    text-size: 1rem;
+  	text-align: center;
+  	width: 16.666vw;
+  	border-left: 1px solid rgba(0, 0, 0, 1);
+  	height: 4rem;
+  	margin: auto;
+  }
+/*}*/

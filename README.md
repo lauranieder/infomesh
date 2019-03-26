@@ -9,30 +9,33 @@
 - enlever drag drop sur mobile
 - ~~Apparition du menu about sur la même page~~
 - ~~Lien dans la barre d'addresse --> infomes.ch/about  ou infomes.ch/worldwideweb~~
+- Check SSL certificate (google block access from ipad chrome)
 
 ### Interface/css
 - ~~Ajout des flèches de navigation~~ Amélioration du jump d'évent en event
 - ~~Centrer le curseur quand le panel est fermé~~
 - ~~Couleurs quand fond noir/fond blanc~~ (sur mobile pas bon)
-- Up/down remplacer par des flèches
+- ~~Up/down remplacer par des flèches~~
 - Less information Resize timeline pas au bon endroit!
 - taille max des flèches de la timeline trop petites 
 - ~~mettre seulement 6 événements en largeur sur la timeline en version mobile.~~ 
 - Landing page
+- Popup ne s'highlight pas tjr en bleu
+- Design de la barre de navigation timeline pas beau avec les fade, améliorer les transitions css. 
+- ~~Titre dépasse du div à certaines Taille~~(just put a breakword)
+- Timeline bug à certaines tailles
+- Popup : hauteur max sinon scroll
 
 ### Adapt student project
 #### worldwidemap
-- info de scroll en continue --> envoyer l'événement une fois que le scroll est fini
-- chargement de event.json inutile ?
-- ajouter un chargement
+- data dans la timeline s'affichent pas
 
 #### browser landscape
-- dans index.js début de code bizarre ?
+- 
 
 #### web influencer identity
 - même système que obsolete objects
-- ~~sequencer à adapter~~
-- loading des images ? Preloading trop long.
+- loading des images ? Preloading trop long. Image qui saute avant de s'afficher.
 - ajuster les logos aux années
 - meilleures transitions entre les logos
 
@@ -43,11 +46,10 @@
 - animation des mots sur mobile.
 
 #### 30y_of_hacks.exe
-- gotoblocks() changer pour que ca fonctionne avec le update des dates, pour l'instant prends un id.
 - les evenements ne sont pas tous aligné avec les points dans la timeline, certains ne s'ouvrent pas. Checker les timestamps
 
 #### Internet phenomena 
-- bundlem.js ?????
+- cadrage vertical/horizontal répétition grille
 
 
 
