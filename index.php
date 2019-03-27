@@ -21,9 +21,9 @@
   <header id="navigation">
     <h1 id="project-title">Information mesh</h1>
     <nav class="d-none">
-      <?php echo file_get_contents("css/UI/UIArrowLeftNav.svg"); ?>
       <?php echo file_get_contents("css/UI/UIArrowUp.svg"); ?>
       <?php echo file_get_contents("css/UI/UIArrowDown.svg"); ?>
+      <?php echo file_get_contents("css/UI/UIArrowLeftNav.svg"); ?>
     </nav>
     <nav-mobile>
       <a href="#" id="button-menu" class="open">&lt;open menu&gt;</a>

@@ -2,8 +2,6 @@
 main script
 - iframe
 
-
-
 */
 var projectsData;
 var currentProjectID = 0;
@@ -27,7 +25,7 @@ function mobileCheck(x) {
     //$('.current-iframe').get(0).contentWindow.postMessage({message: 'responsive'}, '*');
   }
 }
-var x = window.matchMedia("(max-width: 600px)");
+var x = window.matchMedia("(max-width: 800px)");
 mobileCheck(x); // Call listener function at run time
 x.addListener(mobileCheck); // Attach listener function on state changes
 
@@ -77,10 +75,12 @@ function gotoProject(index, direction) {
   loadProject(index, direction);
 }
 
+/*OPEN A PROJECT*/
 function loadProject(index, direction) {
   currentProjectID = index;
 
   $('#project-title').text(projectsData[index].title);
+  $('#project-title').attr("slug",projectsData[index].slug);
   $('#project-text p:first').text(projectsData[index].text);
   $('#project-credits p:first').html("&lt;Project by&gt;</br>"+projectsData[index].student);
 
@@ -113,7 +113,6 @@ $(document).ready(function() {
 
   $('#button-toggle-informations').on('click', function(e) {
     e.preventDefault();
-
     toggleInformation();
   });
 

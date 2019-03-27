@@ -12,8 +12,8 @@ var eventPadding = 30;
 var popupCallback;
 var cellwidth = 8.333;
 function isMobileF(x){
-  console.log("[event.js] mobile checker");
-  console.log("isMobile = "+x);
+  //console.log("[event.js] mobile checker");
+  //console.log("isMobile = "+x);
   if (x) { // If media query matches
     //document.body.style.backgroundColor = "yellow";
     //console.log("mobile");
@@ -211,7 +211,7 @@ $(document).ready(function() {
 
   var lastPopupIndex;
   $(window).resize(function(){
-    console.log("resized");
+    //console.log("resized");
     //computeEvents();
     window.parent.postMessage({message: 'getResponsive'}, '*');
   });
@@ -268,8 +268,8 @@ $(document).ready(function() {
   });
 
   $('body').on('click', '#button-toggle-popup', function() {
+    console.log("clicked on button toggle popup");
     $('#popup').toggleClass('reduced');
-
     window.parent.postMessage({message: 'isPopReduced', status: $('#popup').hasClass('reduced')}, '*');
   });
 });

@@ -39,7 +39,7 @@ $(document).ready(function() {
 
     if (e.originalEvent.data.message == 'isMobile') {
       //$('#container-timeline').scrollLeft(e.originalEvent.data.position);
-      console.log("isMobile ");
+      //console.log("isMobile ");
       isMobileF(e.originalEvent.data.status);
     }
 
