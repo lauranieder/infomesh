@@ -26,10 +26,13 @@
 - Timeline bug à certaines tailles
 - Popup : hauteur max sinon scroll
 - ~~Améliorer le menu de navigation~~(selected sur projects devrais disparaître quand on ouvre un projet)
-- Popup en bas dans la version mobile
+- ~~Popup en bas dans la version mobile~~
 - Regex pour url readmore
 - <Project by> scaling
 - popup reduce doesn't work on iphone/ipad
+- changement de la couleur des titres buggée
+- doit pas recharger l'iframe si c'est le premier
+- timeline déja la quand on ouvre le projet mais elle devrait slider avec
 
 ### Adapt student project
 #### worldwidemap
