@@ -1,19 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
 
 /*Scrollbars*/
-
+/*to remove*/
 #smartphone{
   display:none;
   visibility: hidden;
-}
-
-.flex-middle::-webkit-scrollbar {
-  display: none;
-}
-
-.flex-middle {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 /*1. Essential, basic container*/
@@ -40,20 +31,28 @@ p{
 
 a {
   color: black;
-
 }
 
 a.selected {
   color: white;
 }
 
-.d-none {
-  display: none !important;
+/*2. Text - Size/Styling*/
+h1,
+.font-large {
+  font-size: 3rem;
+  font-weight: 100;
+  /*important for nathan's title, check if it doesn't break the rest of the design*/
+  -ms-word-break: break-all;
+  word-break: break-all;
+  /* Non standard for webkit */
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
-.d-flex {
-  display: flex !important;
-}
 
 iframe,
 nav,
@@ -67,9 +66,7 @@ nav a,
 #navigation {
   transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
 }
-
-
-
+/*Navigation*/
 nav-mobile{
   display:none;
   visibility: hidden;
@@ -79,111 +76,14 @@ nav svg{
   width:2rem;
   stroke:black;
   stroke-width:4px;
-  /*color: blue;*/
-  /*fill: currentColor;
-  stroke:currentColor;*/
-  /*padding:1rem;*/
-}
-
-.st2{
-  fill:blue;
-}
-
-/*-----------------1st level--------------------*/
-#wrapper {
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.container {
-  height: 100%;
-}
-/*shadow*/
-#container-side {
-  flex-flow: column;
-  overflow: hidden;
-  /*-webkit-box-shadow: 4px 0px 49px black;
-   -moz-box-shadow: 4px 0px 49px black;
-   box-shadow:  4px 0px 10px -2px rgba(0, 0, 0, 0.5);
-   box-shadow: 4px 0px 49px rgba(0, 0, 1, 0.5);*/
-
-
-}
-
-#container-side .content {
-  width: 25vw; /* calc(25vw - padding) */
-  padding:1rem;
-  z-index:11;
-}
-
-#container-side .content div{
-  padding-bottom: 1rem;
-
-}
-
-#container-main {
-  position: relative;
-  -webkit-box-shadow:4px 0px 49px rgba(0, 0, 1, 0.5);
-  -moz-box-shadow:4px 0px 49px rgba(0, 0, 1, 0.5);
-  box-shadow: 4px 0px 49px rgba(0, 0, 1, 0.5);
-}
-
-#container-about {
-  overflow: hidden;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  -webkit-box-shadow:4px 0px 49px rgba(0, 0, 1, 0.5);
-  -moz-box-shadow:4px 0px 49px rgba(0, 0, 1, 0.5);
-  box-shadow: 4px 0px 49px rgba(0, 0, 1, 0.5);
-
-}
-
-#container-about.reduced {
-  overflow-y: hidden;
-}
-
-#container-about .content {
-  width: 25vw;
-  min-width: 25vw;
-  /*border: solid 1px red;*/
-  padding: 1rem;
 }
 
 #navigation{
   width: 25vw;
-  /*border: solid 1px red;*/
   padding:1rem;
 }
 
-
-#container-projects {
-  flex-wrap: wrap;
-  overflow-x: hidden;
-  background-color: white;
-  -webkit-box-shadow:4px 0px 49px rgba(0, 0, 1, 0.5);
-  -moz-box-shadow:4px 0px 49px rgba(0, 0, 1, 0.5);
-  box-shadow: 4px 0px 49px rgba(0, 0, 1, 0.5);
-}
-
-.side {
-  width: 25%;
-}
-
-.main {
-  width: 75%;
-}
-
-.reduced {
-  width: 0px;
-}
-
-.extended {
-  width: 100%;
-}
-
+/*to check*/
 #navigation {
   position: fixed;
   top: 1px;
@@ -215,32 +115,58 @@ nav svg{
   color: #0000ff;
 }
 
-/*nav.background-white > a{
-  color: #0000ff;
-}*/
-
-.timeline-cell{
-  text-align: center;
-  vertical-align: middle;
+/*-----------------1st level--------------------*/
+#wrapper {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
-/*2. Text - Size/Styling*/
-h1,
-.font-large {
-  font-size: 3rem;
-  font-weight: 100;
-  /*important for nathan's title, check if it doesn't break the rest of the design*/
-  -ms-word-break: break-all;
-  word-break: break-all;
-  /* Non standard for webkit */
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
-
+.container {
+  height: 100%;
+  position: relative;
 }
 
+#container-main,
+#container-about,
+#container-projects{
+  -webkit-box-shadow:4px 0px 49px rgba(0, 0, 1, 0.5);
+  -moz-box-shadow:4px 0px 49px rgba(0, 0, 1, 0.5);
+  box-shadow: 4px 0px 49px rgba(0, 0, 1, 0.5);
+}
+
+#container-projects a {
+  display: flex;
+  padding:1rem;
+  text-decoration: none;
+  width: 100%;
+  height:16.6666667%;
+}
+
+#container-projects a:hover {
+  background-color: blue;
+  color:white;
+}
+
+/*shadow*/
+#container-side {
+  flex-flow: column;
+  overflow: hidden;
+}
+
+#container-side .content {
+  width: 25vw;
+  min-width: 25vw;
+  padding:1rem;
+  /*z-index:11;*/
+}
+
+#container-side .content div{
+  padding-bottom: 1rem;
+}
+
+/*to check*/
 #container-side.background-blue, #container-about.background-blue {
   background-color: #0000ff;
 }
@@ -249,27 +175,104 @@ h1,
   color: white;
 }
 
-.flex-top{
-  flex: 0 0 auto;
+
+#container-about {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#container-about.reduced {
+  overflow-y: hidden;
+}
+
+#container-about .content {
+  width: 25vw;
+  min-width: 25vw;
+  padding: 1rem;
+}
+
+#container-projects {
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+.side {
+  width: 25%;
+}
+
+.main {
+  width: 75%;
+}
+
+.reduced {
+  width: 0px;
+}
+
+.extended {
+  width: 100%;
+}
+
+/*-----------------2nd level--------------------*/
+/*Not the real title container, the one in container-side*/
+#container-title {
   height:10rem;
 }
 
-.flex-middle {
+#container-credit {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   padding-top: 50px;
-  flex: 1 1 auto;
   overflow-y:scroll;
 }
 
+#container-menu a{
+  display: block;
+  padding:1rem;
+  height:16.6666667vh;
+  background-color: blue;
+  text-decoration: none;
+  color:white;
+}
+#container-menu a:hover{
+  padding:1rem;
+  height:16.6666667vh;
+  background-color: white;
+  color:black;
+}
+
+#container-menu.content{
+  padding:0; !important /* déja un padding dans les a */
+}
+
+#container-menu a.selected {
+  color :black;
+  background-color: white;
+}
+/* FLEX RULES*/
+.d-none {
+  display: none !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.flex-top{
+  flex: 0 0 auto;
+}
+.flex-middle {
+  flex: 1 1 auto;
+}
 .flex-middle::-webkit-scrollbar {
   display: none;
 }
 
 .flex-bottom {
   flex: 0 0 auto;
-}
-
-.flex-bottom a {
-  display: block;
 }
 
 iframe {
@@ -343,24 +346,13 @@ iframe {
   float:left;
 }
 
-#container-projects a {
-  display: flex;
-  /*align-items: center;*/
-  padding:1rem;
-  text-decoration: none;
-  width: 100%;
-  height:16.6666667%;
-}
-
-#container-projects a:hover {
-  background-color: blue;
-  color:white;
-}
-
 .third-w {
   width:33.33%;
   float:left;
 }
+
+/*TIMELINES ARTEFACTS*/
+
 .reduced #timeline-cursor{
   display:none;
 }
@@ -381,11 +373,8 @@ iframe {
   left: 25vw;
   width:75vw;
   height:6rem;
-  /*bottom:6rem;*/ /*10vh*/
   z-index:10;
   border-top:1px solid black;
-  /*left: 0px;
-  width:100%;*/
 }
 .extended #timeline-barre{
   left: 0px;
@@ -400,25 +389,13 @@ iframe {
   width:6rem;
   height:6rem;
   padding:1rem;
-
 }
 
-.button-timeline img{
-  width : 100%;
-  height:100%;
-}
 /*to improve*/
 #button-timeline-left{
-  /*position: fixed;
-  z-index:1000;
-  background-color: white;*/
   background-image: linear-gradient(90deg, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 90%);
 }
 #button-timeline-right{
-  /*right:0;
-  position: fixed;
-  z-index:1000;
-  background-color: white;*/
   right:0;
   text-align:right;
   background-image: linear-gradient(90deg, rgba(255,255,255,0) 10%,  rgba(255,255,255,1) 30%);
@@ -426,25 +403,34 @@ iframe {
 
 .button-timeline:hover .svgline{
   stroke:blue;
-
 }
 
-/*@media (min-width: 601px) and (max-width: 1200px){
+@media (max-width: 1200px){
   #container-about .content {
     width: 50%;
     min-width:50%;
   }
-}*/
+  h1, .font-large{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 800px){
+  #container-about .content {
+    width: 100%;
+    min-width:100%;
+  }
+}
 
 @media only screen and (max-width: 600px) {
-
+  /*to remove*/
   #smartphone{
     display:inline-block;
     visibility: visible;
     position:absolute;
     z-index:6000;
   }
-
+  /*all the rest to improve*/
   html,
   body {
     font-size: 15px;
@@ -459,6 +445,12 @@ iframe {
     display:inline;
   }
 
+  #wrapper {
+    width: 100%;
+    height: 100%;
+    position:fixed;
+  }
+
   #container-side,
   #container-projects,
   #container-main,
@@ -466,18 +458,8 @@ iframe {
     transition: none;
   }
 
-  #wrapper {
-    width: 100%;
-    height: 100%;
-    position:fixed;
-    /*display: flex;
-    flex-direction: column;*/
-    /*background-color: yellow;*/
-  }
-
   #container-side .content{
     width:100%;
-    /*padding:2rem;*/
   }
 
   #container-about .content {
@@ -487,11 +469,9 @@ iframe {
 
   #container-about {
     overflow-y:scroll;
-    /*background-color: red;*/
   }
 
   #container-projects{
-    /*background-color: green;*/
     background-color: white;
   }
 
@@ -499,7 +479,6 @@ iframe {
     width:100%;
     position:fixed;
     height:6rem;
-    /*padding:2rem;*/
   }
 
   nav-mobile{
@@ -516,7 +495,6 @@ iframe {
   .side {
     width: 100%;
     position:absolute;
-    /*position:fixed;*/
     height:100%;
     z-index:500;
   }
@@ -531,12 +509,6 @@ iframe {
     height: calc(100% - 6rem);
     top:6rem;
   }
-
-  .content{
-    /*font-size: 3rem;*/
-
-  }
-
   .reduced {
     display:none;
     visibility: hidden;
@@ -552,7 +524,6 @@ iframe {
     visibility: hidden;
   }
 
-
   #timeline-barre,.extended #timeline-barre{
     left: 0px;
     width:100%;
@@ -560,4 +531,5 @@ iframe {
   #timeline-cursor,.extended #timeline-cursor{
     left: 50vw;
   }
+
 }

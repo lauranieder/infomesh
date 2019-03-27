@@ -96,10 +96,6 @@
   /*background-color: gray;*/
 }
 
-#popup #button-toggle-popup img{
-
-}
-
 #popup #button-toggle-popup {
   position:fixed;
   width:2rem;
@@ -137,17 +133,32 @@
     line-height:1.4;
     width: calc(100% - 2rem);
     max-width: calc(100% - 2rem);
-    max-height: calc(100% - 14rem);
+    /*max-height: calc(100% - 14rem);*/
+
     overflow-y: scroll;
+    transform: translateX(-50%) translateY(-100%);
+    top: calc(100% - 7rem);
+    max-height:calc(100% - 14rem);
   }
 
   .mobile #popup.reduced {
-    max-height: 4rem;
+    /*max-height: 4rem;*/
     /*overflow-y: none;*/
   }
 
   .mobile h1, .mobile .font-large{
     font-size: 2rem;
+  }
+
+  .mobile #popup #button-toggle-popup {
+    position:fixed;
+    width:2rem;
+    height:auto;
+    padding:1rem;
+  }
+
+  .mobile #popup-date, .mobile .reduced #popup-title{
+    padding-right:3rem;
   }
 
 /*}*/

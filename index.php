@@ -12,25 +12,18 @@
   <!--script-->
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
-
   <script>
   var currentPagetName = "<? echo str_replace('/', '', $_SERVER['REQUEST_URI']); ?>";
-
   </script>
 </head>
 <body>
-  <div id="smartphone">mobile</div>
+  <!--<div id="smartphone">mobile</div>-->
   <header id="navigation">
     <h1 id="project-title">Information mesh</h1>
     <nav class="d-none">
-      <!--<a href="#" id="button-toggle-informations"><img src="css/UI/UIArrow-leftb.svg" alt="less information"/></a>-->
-      <!--<a href="#" id="button-up"><img src="css/UI/UIArrow-up.png" alt="up"/></a>
-      <a href="#" id="button-down"><img src="css/UI/UIArrow-down.png" alt="down"/></a>-->
       <?php echo file_get_contents("css/UI/UIArrowLeftNav.svg"); ?>
       <?php echo file_get_contents("css/UI/UIArrowUp.svg"); ?>
       <?php echo file_get_contents("css/UI/UIArrowDown.svg"); ?>
-
-
     </nav>
     <nav-mobile>
       <a href="#" id="button-menu" class="open">&lt;open menu&gt;</a>
@@ -38,15 +31,15 @@
   </header>
   <div id=wrapper>
     <div id="container-side" class="container d-flex side mobile-reduced background-blue">
-      <div class="content flex-top">
+      <div id="container-title" class="content flex-top">
       </div>
-      <div class="content flex-middle">
+      <div id="container-credit" class="content flex-middle">
         <div id="project-text"><p></p></div>
         <div id="project-credits"><p></p></div>
       </div>
-      <div class="content flex-bottom font-large">
-        <a href="#" id="button-open-projects">/Projects</a>
-        <a href="#" id="button-open-about" class="selected">/About</a>
+      <div id="container-menu" class="content flex-bottom font-large">
+        <a href="#" id="button-open-projects">Projects</a>
+        <a href="#" id="button-open-about" class="selected">About</a>
       </div>
     </div>
     <div id="container-about" class="container d-flex main background-blue">
@@ -87,13 +80,8 @@
     <div id="container-main" class="container reduced">
       <div id="timeline-cursor">
         <div id="timeline-barre">
-          <!--<div id="button-timeline-left" class="button-timeline"><img src="css/UI/UIArrow-previous.png" alt="previous"/></div>
-          <div id="button-timeline-right" class="button-timeline"><img src="css/UI/UIArrow-next.png" alt="next"/></div>-->
-
           <?php echo file_get_contents("css/UI/UIArrowLeft.svg"); ?>
           <?php echo file_get_contents("css/UI/UIArrowRight.svg"); ?>
-
-
         </div>
     </div>
   </div>
