@@ -25,9 +25,11 @@
 - ~~Titre dépasse du div à certaines Taille~~(just put a breakword)
 - Timeline bug à certaines tailles
 - Popup : hauteur max sinon scroll
-- Améliorer le menu de navigation
+- ~~Améliorer le menu de navigation~~(selected sur projects devrais disparaître quand on ouvre un projet)
 - Popup en bas dans la version mobile
 - Regex pour url readmore
+- <Project by> scaling
+- popup reduce doesn't work on iphone/ipad
 
 ### Adapt student project
 #### worldwidemap
