@@ -12,7 +12,7 @@
 - Check SSL certificate (google block access from ipad chrome)
 
 ### Interface/css
-- ~~Ajout des flèches de navigation~~ Amélioration du jump d'évent en event
+- ~~Ajout des flèches de navigation~~ Amélioration du jump d'évent en event. Clic sur l'événements et mouvement dynamique
 - ~~Centrer le curseur quand le panel est fermé~~
 - ~~Couleurs quand fond noir/fond blanc~~ (sur mobile pas bon)
 - ~~Up/down remplacer par des flèches~~
@@ -25,6 +25,11 @@
 - ~~Titre dépasse du div à certaines Taille~~(just put a breakword)
 - Timeline bug à certaines tailles
 - Popup : hauteur max sinon scroll
+- ~~Améliorer le menu de navigation~~(selected sur projects devrais disparaître quand on ouvre un projet)
+- Popup en bas dans la version mobile
+- Regex pour url readmore
+- <Project by> scaling
+- popup reduce doesn't work on iphone/ipad
 
 ### Adapt student project
 #### worldwidemap
@@ -50,6 +55,7 @@
 
 #### Internet phenomena 
 - cadrage vertical/horizontal répétition grille
+- vérifier la liste des popup
 
 
 
