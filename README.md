@@ -53,6 +53,7 @@
 
 #### Internet phenomena 
 - cadrage vertical/horizontal répétition grille
+- vérifier la liste des popup
 
 
 
