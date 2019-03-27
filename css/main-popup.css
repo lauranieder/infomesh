@@ -64,10 +64,12 @@
   width: 90%;
   max-width: 720px;
   min-height: 10px;
+  max-height:calc(100% - 8rem);
   background-color: white;
   border: 1px solid black;
   z-index: 100000;
   overflow: hidden;
+  overflow-y: scroll;
   opacity: 0;
   pointer-events: none;
   transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
