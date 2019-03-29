@@ -43,6 +43,17 @@ $(document).ready(function() {
       isMobileF(e.originalEvent.data.status);
     }
 
+    if (e.originalEvent.data.message == 'hideTimeline') {
+      console.log("hide");
+      $('#container-timeline').addClass('hidden');
+    }
+
+    if (e.originalEvent.data.message == 'showTimeline') {
+      console.log("show");
+      $('#container-timeline').removeClass('hidden');
+
+    }
+
 
   });
 

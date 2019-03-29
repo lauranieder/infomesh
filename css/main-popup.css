@@ -106,7 +106,7 @@
 }
 
 #popup #button-toggle-popup .svgline{
-  stroke-width:2px;
+  stroke-width:4px;
 }
 
 #popup #button-toggle-popup:hover .svgline{

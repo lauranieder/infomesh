@@ -33,6 +33,7 @@ p{
 #container-timeline {
   height:6rem;
   width: 100%;
+  min-width: 100vw !important;
   overflow-x:scroll;
   -webkit-overflow-scrolling:touch;
   box-sizing: border-box;
@@ -85,6 +86,7 @@ p{
   texte-size: 1rem;
 	text-align: center;
 	width: 8.333vw;
+  min-width: 8.333vw;
 	border-left: 1px solid rgba(0, 0, 0, 1);
 	height: 4rem;
 	margin: auto;

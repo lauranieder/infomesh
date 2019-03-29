@@ -31,8 +31,8 @@
   </header>
   <div id=wrapper>
     <div id="container-side" class="container d-flex side mobile-reduced background-blue">
-      <div id="container-title" class="content flex-top">
-      </div>
+      <h1 id="container-title" class="content flex-top font-large">
+      </h1>
       <div id="container-credit" class="content flex-middle">
         <div id="project-text"><p></p></div>
         <div id="project-credits"><p></p></div>
@@ -79,11 +79,11 @@
     </div>
     <div id="container-main" class="container reduced">
       <div id="timeline-cursor">
-        <div id="timeline-barre">
-          <?php echo file_get_contents("css/UI/UIArrowLeft.svg"); ?>
-          <?php echo file_get_contents("css/UI/UIArrowRight.svg"); ?>
-        </div>
+      </div>
+      <div id="timeline-barre">
+        <?php echo file_get_contents("css/UI/UIArrowLeft.svg"); ?>
+        <?php echo file_get_contents("css/UI/UIArrowRight.svg"); ?>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>

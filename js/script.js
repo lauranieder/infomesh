@@ -80,23 +80,39 @@ function loadProject(index, direction) {
   currentProjectID = index;
 
   $('#project-title').text(projectsData[index].title);
+  $('#container-title').text(projectsData[index].title);
   $('#project-title').attr("slug",projectsData[index].slug);
   $('#project-text p:first').text(projectsData[index].text);
   $('#project-credits p:first').html("&lt;Project by&gt;</br>"+projectsData[index].student);
 
   $('.current-iframe').addClass('previous-iframe').removeClass('current-iframe');
 
+
+
   var iframe = $('<iframe class="current-iframe appear-' + direction + '" src="/projects/' + projectsData[index].slug + '">');
   $('#container-main').append(iframe);
+  $('#timeline-barre').css('transition','all 100ms cubic-bezier(0.23, 1, 0.32, 1)');
+  $('#timeline-barre').css('background-color','rgba(255,255,255,1)');
+
 
   setTimeout(function() {
     $('.previous-iframe').addClass('move-' + direction);
     $('.current-iframe').removeClass('appear-' + direction);
-  }, 100);
+    $('.previous-iframe').get(0).contentWindow.postMessage({message: 'hideTimeline'}, '*');
+    $('.current-iframe').get(0).contentWindow.postMessage({message: 'hideTimeline'}, '*');
+
+
+    //$('#timeline-barre').css('background-color','white');
+  }, 100); //100
 
   setTimeout(function() {
+    $('.previous-iframe').get(0).contentWindow.postMessage({message: 'showTimeline'}, '*');
+    $('.current-iframe').get(0).contentWindow.postMessage({message: 'showTimeline'}, '*');
     $('.previous-iframe').remove();
-  }, 500);
+    $('#timeline-barre').css('transition','all 500ms cubic-bezier(0.23, 1, 0.32, 1)');
+    $('#timeline-barre').css('background-color','rgba(255,255,255,0)');
+
+  }, 3000); //500
 }
 
 function loadProjectsPreview(){
@@ -128,6 +144,7 @@ $(document).ready(function() {
     $('#container-main, #container-projects').addClass('reduced').removeClass('main');
 
     $('#project-title').text(siteTitle);
+    $('#container-title').text(siteTitle);
     $('#project-text p:first').text("");
     $('#project-credits p:first').text("");
 
@@ -151,6 +168,7 @@ $(document).ready(function() {
     $('#container-side').addClass('mobile-reduced');
 
     $('#project-title').text(siteTitle);
+    $('#container-title').text(siteTitle);
     $('#project-text p:first').text("");
     $('#project-credits p:first').text("");
 
