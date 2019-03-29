@@ -306,6 +306,7 @@ function parseDataFormat() {
           window._minimum_val = parseFloat(val);
         //Give attribute value
         val = val + "%";
+        if (val == "NaN%") val = "";
         $(this).attr("value", val);
       }
       if (dataType == "access_population_") {
@@ -325,14 +326,23 @@ function parseDataFormat() {
           window._minimum_val = parseFloat(val);
         //Give attribute value
         val = val + "m";
+        if (val == "NaNm") val = "";
         $(this).attr("value", val);
       }
     });
   var suffix = "m";
   if (dataType == "access_") suffix = "%";
 
-  $("#leg1").html(window._minimum_val + suffix);
-  $("#leg11").html(window._maximum_val + suffix);
+  if (isNaN(window._minimum_val)) window._minimum_val = "";
+  else {
+    window._minimum_val += suffix;
+  }
+  if (isNaN(window._maximum_val)) window._maximum_val = "";
+  else {
+    window._maximum_val += suffix;
+  }
+  $("#leg1").html(window._minimum_val);
+  $("#leg11").html(window._maximum_val);
 }
 
 function select_all_country_paths(path, add) {
