@@ -1,6 +1,6 @@
 [
   {
-    "start": "01/01/1989",
+    "start": "31/08/1989",
     "title": "Mondo 2000",
     "contentText": "Jude Milhon (aka St Jude) and R. U. Sirius launch Mondo 2000, a major '90s tech-lifestyle magazine, in Berkeley, California.",
     "visualValue": 0,
@@ -9,11 +9,11 @@
     "year": 1989,
     "content": "<a href=\"https://en.wikipedia.org/wiki/Jude_Milhon\" title=\"Jude Milhon\">Jude Milhon</a> (aka St Jude) and <a href=\"https://en.wikipedia.org/wiki/R._U._Sirius\" title=\"R. U. Sirius\">R. U. Sirius</a> launch <a href=\"https://en.wikipedia.org/wiki/Mondo_2000\" title=\"Mondo 2000\">Mondo 2000</a>, a major '90s tech-lifestyle magazine, in <a href=\"https://en.wikipedia.org/wiki/Berkeley,_California\" title=\"Berkeley, California\">Berkeley, California</a>.",
     "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
-    "readmore": "",
-    "timestamp": 599616000000
+    "readmore": "https://en.wikipedia.org/wiki/Mondo_2000",
+    "timestamp": 620604000000
   },
   {
-    "start": "01/01/1989",
+    "start": "30/11/1989",
     "title": "The first ransomware",
     "contentText": "The detection of AIDS (Trojan horse) is the first instance of a ransomware detection.",
     "visualValue": 0,
@@ -22,11 +22,11 @@
     "year": 1989,
     "content": "The detection of <a href=\"https://en.wikipedia.org/wiki/AIDS_(Trojan_horse)\" title=\"AIDS (Trojan horse)\">AIDS (Trojan horse)</a> is the first instance of a ransomware detection.",
     "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
-    "readmore": "",
-    "timestamp": 599616000000
+    "readmore": "https://en.wikipedia.org/wiki/AIDS_(Trojan_horse)",
+    "timestamp": 628470000000
   },
   {
-    "start": "01/01/1990",
+    "start": "08/05/1990",
     "title": "Operation Sundevil",
     "contentText": "Operation Sundevil introduced.  After a prolonged sting investigation, Secret Service agents swoop down on organizers and prominent members of BBSs in 14 U.S. cities including the Legion of Doom, conducting early-morning raids and arrests. The arrests involve and are aimed at cracking down on credit-card theft and telephone and wire fraud. The result is a breakdown in the hacking community, with members informing on each other in exchange for immunity. The offices of Steve Jackson Games are also raided, and the role-playing sourcebook GURPS Cyberpunk is confiscated, possibly because the government fears it is a \"handbook for computer crime\". Legal battles arise that prompt the formation of the Electronic Frontier Foundation, including the trial of Knight Lightning.",
     "visualValue": 0,
@@ -36,10 +36,10 @@
     "content": "<a href=\"https://en.wikipedia.org/wiki/Operation_Sundevil\" title=\"Operation Sundevil\">Operation Sundevil</a> introduced.  After a prolonged sting investigation, Secret Service agents swoop down on organizers and prominent members of BBSs in 14 U.S. cities including the <a href=\"https://en.wikipedia.org/wiki/Legion_of_Doom_(hacking)\" title=\"Legion of Doom (hacking)\">Legion of Doom</a>, conducting early-morning raids and arrests. The arrests involve and are aimed at cracking down on credit-card theft and telephone and wire fraud. The result is a breakdown in the hacking community, with members informing on each other in exchange for immunity. The offices of <a href=\"https://en.wikipedia.org/wiki/Steve_Jackson_Games\" title=\"Steve Jackson Games\">Steve Jackson Games</a> are also raided, and the <a href=\"https://en.wikipedia.org/wiki/Role-playing_game\" title=\"Role-playing game\">role-playing</a> sourcebook <a href=\"https://en.wikipedia.org/wiki/GURPS_Cyberpunk\" title=\"GURPS Cyberpunk\">GURPS Cyberpunk</a> is confiscated, possibly because the government fears it is a \"handbook for computer crime\". Legal battles arise that prompt the formation of the <a href=\"https://en.wikipedia.org/wiki/Electronic_Frontier_Foundation\" title=\"Electronic Frontier Foundation\">Electronic Frontier Foundation</a>, including the trial of <a href=\"https://en.wikipedia.org/wiki/Craig_Neidorf\" title=\"Craig Neidorf\">Knight Lightning</a>.",
     "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
     "readmore": "https://en.wikipedia.org/wiki/Operation_Sundevil",
-    "timestamp": 631152000000
+    "timestamp": 642204000000
   },
   {
-    "start": "01/01/1990",
+    "start": "28/06/1990",
     "title": "Computer Misuse Act",
     "contentText": "The Computer Misuse Act 1990 is passed in the United Kingdom, criminalising any unauthorised access to computer systems.",
     "visualValue": 0,
@@ -49,7 +49,7 @@
     "content": "The <a href=\"https://en.wikipedia.org/wiki/Computer_Misuse_Act_1990\" title=\"Computer Misuse Act 1990\">Computer Misuse Act 1990</a> is passed in the United Kingdom, criminalising any unauthorised access to computer systems.",
     "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
     "readmore": "",
-    "timestamp": 631152000000
+    "timestamp": 646610400000
   },
   {
     "start": "01/01/1992",

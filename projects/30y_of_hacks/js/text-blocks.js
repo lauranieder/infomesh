@@ -83,6 +83,16 @@ function createBlock(data) {
   legend.className = "vertical-center";
   stats.appendChild(legend);
 
+  if (data.readmore) {
+    var readmore = document.createElement("div");
+    var readmoreLink = document.createElement("a");
+    readmoreLink.href = data.readmore;
+    readmoreLink.textContent = "Read more";
+    readmoreLink.target = "_blank";
+    readmore.appendChild(readmoreLink);
+    eventBlock.appendChild(readmore);
+  }
+
   // Now that we have added all the content, we can calculate the height
   // of the div to determine an offset.
   if (data.index !== 0) {
