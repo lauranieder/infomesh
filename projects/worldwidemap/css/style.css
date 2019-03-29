@@ -174,3 +174,7 @@ body.mobile #info_change_data {
   height: 7px;
   /* padding: 20px 26px 0px 20px; */
 }
+body.extended #legend {
+  left: 33vw;
+  width: 65vw;
+}
