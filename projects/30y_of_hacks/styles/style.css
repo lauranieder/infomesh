@@ -73,14 +73,14 @@ body > div.dg.ac {
   /* transform: translateY(100px); */
 }
 
-@media (max-width: 768px) {
-  .block-wrapper {
-    min-width: 92vw;
-  }
-  #container-textblocs {
-    left: 4vw;
-  }
+/* @media (max-width: 768px) { */
+body.mobile .block-wrapper {
+  min-width: 92vw;
 }
+body.mobile #container-textblocs {
+  left: 4vw;
+}
+/* } */
 
 /* .currentHistoryWrapper {
   transition: transform 2s;
