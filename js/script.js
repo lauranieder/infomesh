@@ -42,6 +42,11 @@ function toggleInformation() {
   var style = projectsData[currentProjectID].style;
   $('#navigation').toggleClass(style); //alone
   $('#container-main').toggleClass('extended main');
+  if($('#container-main').hasClass('extended')){
+    $('.current-iframe').get(0).contentWindow.postMessage({message: 'isExtended', status: true}, '*');
+  }else{
+    $('.current-iframe').get(0).contentWindow.postMessage({message: 'isExtended', status: false}, '*');
+  }
 }
 
 function toggleMenu(){

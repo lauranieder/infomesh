@@ -43,8 +43,14 @@ $(document).ready(function() {
       isMobileF(e.originalEvent.data.status);
     }
 
+    if (e.originalEvent.data.message == 'isExtended') {
+      //$('#container-timeline').scrollLeft(e.originalEvent.data.position);
+      console.log("isExtended "+ e.originalEvent.data.status);
+      isExtendedF(e.originalEvent.data.status);
+    }
+
     if (e.originalEvent.data.message == 'hideTimeline') {
-      console.log("hide");
+
       $('#container-timeline').addClass('hidden');
     }
 

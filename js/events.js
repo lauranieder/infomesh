@@ -29,8 +29,17 @@ function isMobileF(x){
     $('html').removeClass("mobile");
     //$('.timeline-containers').removeClass("mobile");
   }
-
   computeEvents();
+}
+function isExtendedF(status){
+  if (status) { // If side panel is hidden
+    $('body').addClass("extended");
+    $('html').addClass("extended");
+  } else {  //If side panel is shown
+    $('body').removeClass("extended");
+    $('html').removeClass("extended");
+  }
+  //computeEvents(); ???
 }
 
 function createPopup() {
