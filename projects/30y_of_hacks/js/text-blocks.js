@@ -3,7 +3,7 @@
 
 var dataset = [];
 
-$.getJSON("data/events.json", json => {
+$.getJSON("./events.json", json => {
   // Remove hidden elements.
   for (var i = json.length - 1; i >= 0; i--) {
     if (json[i].hidden) {
@@ -54,28 +54,62 @@ function createBlock(data) {
     eventBlock.style.width = "auto";
   } else
     eventBlock.style.width =
-      map_range(data.descriptionText.length, 200, 400, 70, 100, true) + "%";
+      map_range(data.contentText.length, 200, 400, 70, 100, true) + "%";
 
   var title = document.createElement("div");
   title.className = "block-title";
-  title.textContent = data.name;
+  title.textContent = data.title;
   eventBlock.appendChild(title);
   var description = document.createElement("div");
   description.className = "block-description";
-  if (data.visualValue) {
-    description.innerHTML = `${data.description}
-    <br/><br/>
-    ${data.visualValue.toLocaleString()}${data.visualValueSuffix}`;
-  } else {
-    description.innerHTML = data.description;
-  }
+  description.innerHTML = data.content;
   eventBlock.appendChild(description);
+
+  var stats = document.createElement("div");
+  stats.className = "block-stats";
+  eventBlock.appendChild(stats);
+  var icon = document.createElement("img");
+  icon.src = `assets/imgs/img-${data.type}-icon.png`;
+  icon.className = "vertical-center";
+  stats.appendChild(icon);
+  var legend = document.createElement("span");
+  var legendStr = getTypeName(data.type);
+  if (data.visualValue) {
+    legendStr += `: ${data.visualValue.toLocaleString(
+      "en-US"
+    )} ${data.visualValueSuffix.trim()}`;
+  }
+  legend.textContent = legendStr;
+  legend.className = "vertical-center";
+  stats.appendChild(legend);
 
   // Now that we have added all the content, we can calculate the height
   // of the div to determine an offset.
   if (data.index !== 0) {
     setRandomY(eventBlockWrapper);
   }
+}
+
+var typeNames = {
+  media: "New media",
+  newAttackType: "New attack type",
+  incident: "Security incident",
+  law: "Legislation event",
+  foundation: "Foundation",
+  moneyTheft: "Money theft",
+  other: "Other",
+  virus: "Virus",
+  defacement: "Defacement",
+  infiltration: "Infiltration",
+  breach: "Data breach",
+  dataTheft: "Data theft",
+  hack: "Hack",
+  ransomware: "Ransomware",
+  destructive: "Destructive hack"
+};
+
+function getTypeName(type) {
+  return typeNames[type];
 }
 
 function setRandomY(element) {

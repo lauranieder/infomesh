@@ -2,941 +2,1743 @@
   {
     "start": "01/01/1989",
     "title": "Mondo 2000",
-    "content": "Jude Milhon (aka St Jude) and R. U. Sirius launch Mondo 2000, a major '90s tech-lifestyle magazine, in Berkeley, California."
-  },
-  {
-    "start": "01/01/1989",
-    "title": "The Cuckoo's Egg",
-    "content": "The Cuckoo's Egg by Clifford Stoll is published."
+    "contentText": "Jude Milhon (aka St Jude) and R. U. Sirius launch Mondo 2000, a major '90s tech-lifestyle magazine, in Berkeley, California.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "media",
+    "year": 1989,
+    "content": "<a href=\"https://en.wikipedia.org/wiki/Jude_Milhon\" title=\"Jude Milhon\">Jude Milhon</a> (aka St Jude) and <a href=\"https://en.wikipedia.org/wiki/R._U._Sirius\" title=\"R. U. Sirius\">R. U. Sirius</a> launch <a href=\"https://en.wikipedia.org/wiki/Mondo_2000\" title=\"Mondo 2000\">Mondo 2000</a>, a major '90s tech-lifestyle magazine, in <a href=\"https://en.wikipedia.org/wiki/Berkeley,_California\" title=\"Berkeley, California\">Berkeley, California</a>.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 599616000000
   },
   {
     "start": "01/01/1989",
     "title": "The first ransomware",
-    "content": "The detection of AIDS (Trojan horse) is the first instance of a ransomware detection."
+    "contentText": "The detection of AIDS (Trojan horse) is the first instance of a ransomware detection.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "newAttackType",
+    "year": 1989,
+    "content": "The detection of <a href=\"https://en.wikipedia.org/wiki/AIDS_(Trojan_horse)\" title=\"AIDS (Trojan horse)\">AIDS (Trojan horse)</a> is the first instance of a ransomware detection.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 599616000000
   },
   {
     "start": "01/01/1990",
     "title": "Operation Sundevil",
-    "content": "Operation Sundevil introduced.  After a prolonged sting investigation, Secret Service agents swoop down on organizers and prominent members of BBSs in 14 U.S. cities including the Legion of Doom, conducting early-morning raids and arrests. The arrests involve and are aimed at cracking down on credit-card theft and telephone and wire fraud. The result is a breakdown in the hacking community, with members informing on each other in exchange for immunity. The offices of Steve Jackson Games are also raided, and the role-playing sourcebook GURPS Cyberpunk is confiscated, possibly because the government fears it is a \"handbook for computer crime\". Legal battles arise that prompt the formation of the Electronic Frontier Foundation, including the trial of Knight Lightning."
+    "contentText": "Operation Sundevil introduced.  After a prolonged sting investigation, Secret Service agents swoop down on organizers and prominent members of BBSs in 14 U.S. cities including the Legion of Doom, conducting early-morning raids and arrests. The arrests involve and are aimed at cracking down on credit-card theft and telephone and wire fraud. The result is a breakdown in the hacking community, with members informing on each other in exchange for immunity. The offices of Steve Jackson Games are also raided, and the role-playing sourcebook GURPS Cyberpunk is confiscated, possibly because the government fears it is a \"handbook for computer crime\". Legal battles arise that prompt the formation of the Electronic Frontier Foundation, including the trial of Knight Lightning.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "incident",
+    "year": 1990,
+    "content": "<a href=\"https://en.wikipedia.org/wiki/Operation_Sundevil\" title=\"Operation Sundevil\">Operation Sundevil</a> introduced.  After a prolonged sting investigation, Secret Service agents swoop down on organizers and prominent members of BBSs in 14 U.S. cities including the <a href=\"https://en.wikipedia.org/wiki/Legion_of_Doom_(hacking)\" title=\"Legion of Doom (hacking)\">Legion of Doom</a>, conducting early-morning raids and arrests. The arrests involve and are aimed at cracking down on credit-card theft and telephone and wire fraud. The result is a breakdown in the hacking community, with members informing on each other in exchange for immunity. The offices of <a href=\"https://en.wikipedia.org/wiki/Steve_Jackson_Games\" title=\"Steve Jackson Games\">Steve Jackson Games</a> are also raided, and the <a href=\"https://en.wikipedia.org/wiki/Role-playing_game\" title=\"Role-playing game\">role-playing</a> sourcebook <a href=\"https://en.wikipedia.org/wiki/GURPS_Cyberpunk\" title=\"GURPS Cyberpunk\">GURPS Cyberpunk</a> is confiscated, possibly because the government fears it is a \"handbook for computer crime\". Legal battles arise that prompt the formation of the <a href=\"https://en.wikipedia.org/wiki/Electronic_Frontier_Foundation\" title=\"Electronic Frontier Foundation\">Electronic Frontier Foundation</a>, including the trial of <a href=\"https://en.wikipedia.org/wiki/Craig_Neidorf\" title=\"Craig Neidorf\">Knight Lightning</a>.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "https://en.wikipedia.org/wiki/Operation_Sundevil",
+    "timestamp": 631152000000
   },
   {
     "start": "01/01/1990",
     "title": "Computer Misuse Act",
-    "content": "The Computer Misuse Act 1990 is passed in the United Kingdom, criminalising any unauthorised access to computer systems."
+    "contentText": "The Computer Misuse Act 1990 is passed in the United Kingdom, criminalising any unauthorised access to computer systems.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "law",
+    "year": 1990,
+    "content": "The <a href=\"https://en.wikipedia.org/wiki/Computer_Misuse_Act_1990\" title=\"Computer Misuse Act 1990\">Computer Misuse Act 1990</a> is passed in the United Kingdom, criminalising any unauthorised access to computer systems.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 631152000000
   },
   {
     "start": "01/01/1992",
     "title": "Sneakers",
-    "content": "Release of the movie Sneakers, in which security experts are blackmailed into stealing a universal decoder for encryption systems."
-  },
-  {
-    "start": "01/01/1992",
-    "title": "First ISP",
-    "content": "One of the first ISPs MindVox opens to the public."
+    "contentText": "Release of the movie Sneakers, in which security experts are blackmailed into stealing a universal decoder for encryption systems.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "media",
+    "year": 1992,
+    "content": "Release of the movie <i><a href=\"https://en.wikipedia.org/wiki/Sneakers_(1992_film)\" title=\"Sneakers (1992 film)\">Sneakers</a></i>, in which security experts are blackmailed into stealing a universal decoder for <a href=\"https://en.wikipedia.org/wiki/Encryption\" title=\"Encryption\">encryption</a> <a href=\"https://en.wikipedia.org/wiki/System\" title=\"System\">systems</a>.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 694224000000
   },
   {
     "start": "01/01/1992",
     "title": "First polymorphic code",
-    "content": "Bulgarian virus writer Dark Avenger wrote 1260, the first known use of polymorphic code, used to circumvent the type of pattern recognition used by antivirus software, and nowadays also intrusion detection systems."
+    "contentText": "Bulgarian virus writer Dark Avenger wrote 1260, the first known use of polymorphic code, used to circumvent the type of pattern recognition used by antivirus software, and nowadays also intrusion detection systems.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "newAttackType",
+    "year": 1992,
+    "content": "Bulgarian virus writer <a href=\"https://en.wikipedia.org/wiki/Dark_Avenger\" title=\"Dark Avenger\">Dark Avenger</a> wrote <a href=\"https://en.wikipedia.org/wiki/1260_(computer_virus)\" title=\"1260 (computer virus)\">1260</a>, the first known use of <a href=\"https://en.wikipedia.org/wiki/Polymorphic_code\" title=\"Polymorphic code\">polymorphic code</a>, used to circumvent the type of pattern recognition used by <a href=\"https://en.wikipedia.org/wiki/Antivirus_software\" title=\"Antivirus software\">antivirus software</a>, and nowadays also <a href=\"https://en.wikipedia.org/wiki/Intrusion_detection_system\" title=\"Intrusion detection system\">intrusion detection systems</a>.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 694224000000
   },
   {
-    "start": "01/01/1993",
+    "start": "09/06/1993",
     "title": "DEF CON",
-    "content": "The first DEF CON hacking conference takes place in Las Vegas. The conference is meant to be a one-time party to say good-bye to BBSs (now replaced by the Web), but the gathering was so popular it became an annual event."
+    "contentText": "The first DEF CON hacking conference takes place in Las Vegas. The conference is meant to be a one-time party to say good-bye to BBSs (now replaced by the Web), but the gathering was so popular it became an annual event.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "foundation",
+    "year": 1993,
+    "content": "The first <a href=\"https://en.wikipedia.org/wiki/DEF_CON\" title=\"DEF CON\">DEF CON</a> hacking conference takes place in <a href=\"https://en.wikipedia.org/wiki/Las_Vegas,_Nevada\" class=\"mw-redirect\" title=\"Las Vegas, Nevada\">Las Vegas</a>. The conference is meant to be a one-time party to say good-bye to BBSs (now replaced by the Web), but the gathering was so popular it became an annual event.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 739620705000
   },
   {
-    "start": "01/01/1993",
-    "title": "Usenet",
-    "content": "AOL gives its users access to Usenet, precipitating Eternal September."
+    "start": "09/08/1993",
+    "title": "Citibank",
+    "contentText": "Summer: Russian crackers siphon $10 million from Citibank and transfer the money to bank accounts around the world. Vladimir Levin, the 30-year-old ringleader, uses his work laptop after hours to transfer the funds to accounts in Finland and Israel. Levin stands trial in the United States and is sentenced to three years in prison. Authorities recover all but $400,000 of the stolen money.",
+    "visualValue": 10000000,
+    "visualValueSuffix": "$ stolen",
+    "type": "moneyTheft",
+    "year": 1994,
+    "content": "Summer: Russian <a href=\"https://en.wikipedia.org/wiki/Hacker_(computer_security)\" class=\"mw-redirect\" title=\"Hacker (computer security)\">crackers</a> siphon $10 million from Citibank and transfer the money to bank accounts around the world. <a href=\"https://en.wikipedia.org/wiki/Vladimir_Levin\" title=\"Vladimir Levin\">Vladimir Levin</a>, the 30-year-old <a href=\"https://en.wiktionary.org/wiki/ringleader\" class=\"extiw\" title=\"wikt:ringleader\">ringleader</a>, uses his work laptop after hours to transfer the funds to accounts in Finland and <a href=\"https://en.wikipedia.org/wiki/Israel\" title=\"Israel\">Israel</a>. Levin stands trial in the United States and is sentenced to three years in prison. Authorities recover all but $400,000 of the stolen money.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 744891105000
   },
   {
     "start": "01/01/1994",
     "title": "Hackers go on the WWW",
-    "content": "Hackers adapt to emergence of the World Wide Web quickly, moving all their how-to information and hacking programs from the old BBSs to new hacker web sites."
+    "contentText": "Hackers adapt to emergence of the World Wide Web quickly, moving all their how-to information and hacking programs from the old BBSs to new hacker web sites.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "other",
+    "year": 1994,
+    "content": "Hackers adapt to emergence of the <a href=\"https://en.wikipedia.org/wiki/World_Wide_Web\" title=\"World Wide Web\">World Wide Web</a> quickly, moving all their how-to information and hacking programs from the old BBSs to new hacker <a href=\"https://en.wikipedia.org/wiki/Web_site\" class=\"mw-redirect\" title=\"Web site\">web sites</a>.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 757382400000
   },
   {
     "start": "01/01/1994",
     "title": "AOHell",
-    "content": "AOHell is released, a freeware application that allows a burgeoning community of unskilled script kiddies to wreak havoc on America Online. For days, hundreds of thousands of AOL users find their mailboxes flooded with multi-megabyte email bombs and their chat rooms disrupted with spam messages."
-  },
-  {
-    "start": "01/01/1994",
-    "title": "Citibank",
-    "content": "Summer: Russian crackers siphon $10 million from Citibank and transfer the money to bank accounts around the world. Vladimir Levin, the 30-year-old ringleader, uses his work laptop after hours to transfer the funds to accounts in Finland and Israel. Levin stands trial in the United States and is sentenced to three years in prison. Authorities recover all but $400,000 of the stolen money."
+    "contentText": "AOHell is released, a freeware application that allows a burgeoning community of unskilled script kiddies to wreak havoc on America Online. For days, hundreds of thousands of AOL users find their mailboxes flooded with multi-megabyte email bombs and their chat rooms disrupted with spam messages.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "virus",
+    "year": 1994,
+    "content": "<a href=\"https://en.wikipedia.org/wiki/AOHell\" title=\"AOHell\">AOHell</a> is released, a <a href=\"https://en.wikipedia.org/wiki/Freeware\" title=\"Freeware\">freeware</a> <a href=\"https://en.wikipedia.org/wiki/Application_software\" title=\"Application software\">application</a> that allows a burgeoning community of unskilled <a href=\"https://en.wikipedia.org/wiki/Script_kiddie\" title=\"Script kiddie\">script kiddies</a> to wreak havoc on <a href=\"https://en.wikipedia.org/wiki/America_Online\" class=\"mw-redirect\" title=\"America Online\">America Online</a>. For days, hundreds of thousands of AOL users find their mailboxes flooded with multi-megabyte <a href=\"https://en.wikipedia.org/wiki/Email_bomb\" title=\"Email bomb\">email bombs</a> and their chat rooms disrupted with <a href=\"https://en.wikipedia.org/wiki/Spamming\" title=\"Spamming\">spam</a> messages.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 757382400000
   },
   {
     "start": "01/01/1995",
     "title": "The Net + Hackers",
-    "content": "The movies The Net and Hackers are released."
+    "contentText": "The movies The Net and Hackers are released.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "media",
+    "year": 1995,
+    "content": "The movies <i><a href=\"https://en.wikipedia.org/wiki/The_Net_(1995_film)\" title=\"The Net (1995 film)\">The Net</a></i> and <i><a href=\"https://en.wikipedia.org/wiki/Hackers_(movie)\" class=\"mw-redirect\" title=\"Hackers (movie)\">Hackers</a></i> are released.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 788918400000
   },
   {
     "start": "22/02/1995",
     "title": "FBI raids Phone Masters",
-    "content": "February 22: The FBI raids the \"Phone Masters\"."
+    "contentText": "February 22: The FBI raids the \"Phone Masters\".",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "law",
+    "year": 1995,
+    "content": "February 22: The <a href=\"https://en.wikipedia.org/wiki/FBI\" class=\"mw-redirect\" title=\"FBI\">FBI</a> raids the \"Phone Masters\".",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 793440000000
   },
   {
     "start": "01/01/1996",
     "title": "CIA website",
-    "content": "Hackers alter Web sites of the United States Department of Justice (August), the CIA (October), and the U.S. Air Force (December)."
+    "contentText": "Hackers alter Web sites of the United States Department of Justice (August), the CIA (October), and the U.S. Air Force (December).",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "defacement",
+    "year": 1996,
+    "content": "Hackers alter Web sites of the <a href=\"https://en.wikipedia.org/wiki/United_States_Department_of_Justice\" title=\"United States Department of Justice\">United States Department of Justice</a> (August), the <a href=\"https://en.wikipedia.org/wiki/CIA\" class=\"mw-redirect\" title=\"CIA\">CIA</a> (October), and the <a href=\"https://en.wikipedia.org/wiki/U.S._Air_Force\" class=\"mw-redirect\" title=\"U.S. Air Force\">U.S. Air Force</a> (December).",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 820454400000
   },
   {
     "start": "01/01/1996",
-    "title": "",
-    "content": "The U.S. General Accounting Office reports that hackers attempted to break into Defense Department computer files some 250,000 times in 1995 alone. About 65 percent of the attempts were successful, according to the report."
+    "title": "250000 attempts",
+    "contentText": "The U.S. General Accounting Office reports that hackers attempted to break into Defense Department computer files some 250,000 times in 1995 alone. About 65 percent of the attempts were successful, according to the report.",
+    "visualValue": 162500,
+    "visualValueSuffix": "intrusions",
+    "type": "infiltration",
+    "year": 1996,
+    "content": "The U.S. General Accounting Office reports that hackers attempted to break into Defense Department computer files some 250,000 times in 1995 alone. About 65 percent of the attempts were successful, according to the report.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 820454400000
   },
   {
     "start": "01/01/1996",
     "title": "The rise of MP3 sharing",
-    "content": "The MP3 format gains popularity in the hacker world. Many hackers begin setting up sharing sites via FTP, Hotline, IRC and Usenet."
+    "contentText": "The MP3 format gains popularity in the hacker world. Many hackers begin setting up sharing sites via FTP, Hotline, IRC and Usenet.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "other",
+    "year": 1996,
+    "content": "The MP3 format gains popularity in the hacker world. Many hackers begin setting up sharing sites via <a href=\"https://en.wikipedia.org/wiki/FTP\" class=\"mw-redirect\" title=\"FTP\">FTP</a>, <a href=\"https://en.wikipedia.org/wiki/Hotline_Communications\" title=\"Hotline Communications\">Hotline</a>, <a href=\"https://en.wikipedia.org/wiki/IRC\" class=\"mw-redirect\" title=\"IRC\">IRC</a> and <a href=\"https://en.wikipedia.org/wiki/Usenet\" title=\"Usenet\">Usenet</a>.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 820454400000
   },
   {
     "start": "01/01/1996",
     "title": "Cryptovirology",
-    "content": "Cryptovirology is born with the invention of the cryptoviral extortion protocol that would later form the basis of modern ransomware."
+    "contentText": "Cryptovirology is born with the invention of the cryptoviral extortion protocol that would later form the basis of modern ransomware.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "other",
+    "year": 1996,
+    "content": "<a href=\"https://en.wikipedia.org/wiki/Cryptovirology\" title=\"Cryptovirology\">Cryptovirology</a> is born with the invention of the cryptoviral extortion protocol that would later form the basis of modern <a href=\"https://en.wikipedia.org/wiki/Ransomware\" title=\"Ransomware\">ransomware</a>.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 820454400000
   },
   {
     "start": "01/01/1997",
     "title": "US Air Force pwned ",
-    "content": "A 15-year-old Croatian youth penetrates computers at a U.S. Air Force base in Guam."
+    "contentText": "A 15-year-old Croatian youth penetrates computers at a U.S. Air Force base in Guam.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "infiltration",
+    "year": 1997,
+    "content": "A 15-year-old <a href=\"https://en.wikipedia.org/wiki/Croatia\" title=\"Croatia\">Croatian</a> youth penetrates computers at a U.S. Air Force base in <a href=\"https://en.wikipedia.org/wiki/Guam\" title=\"Guam\">Guam</a>.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 852076800000
   },
   {
     "start": "01/01/1997",
     "title": "Recording Industry Association",
-    "content": "In response to the popularity of sharing MP3 music files online, the Recording Industry Association of America begins cracking down on file sharing."
+    "contentText": "In response to the popularity of sharing MP3 music files online, the Recording Industry Association of America begins cracking down on file sharing.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "law",
+    "year": 1997,
+    "content": "In response to the popularity of sharing MP3 music files online, the Recording Industry Association of America begins cracking down on file sharing.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 852076800000
   },
   {
     "start": "01/12/1997",
     "title": "Information Security",
-    "content": "December: Information Security publishes first issue."
+    "contentText": "December: Information Security publishes first issue.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "media",
+    "year": 1997,
+    "content": "December: <a href=\"https://en.wikipedia.org/w/index.php?title=Information_Security_(magazine)&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"Information Security (magazine) (page does not exist)\">Information Security</a> publishes first issue.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 880963200000
   },
   {
     "start": "01/01/1998",
-    "title": "Yahoo! A logic bomb",
-    "content": "January: Yahoo! notifies Internet users that anyone visiting its site in the past month might have downloaded a logic bomb and worm planted by hackers claiming a \"logic bomb\" will go off if computer hacker Kevin Mitnick is not released from prison."
-  },
-  {
-    "start": "01/02/1998",
-    "title": "DNSSEC",
-    "content": "February: The Internet Software Consortium proposes the use of DNSSEC (domain-name system security extensions) to secure DNS servers."
+    "title": "A logic bomb from Yahoo!",
+    "contentText": "January: Yahoo! notifies Internet users that anyone visiting its site in the past month might have downloaded a logic bomb and worm planted by hackers claiming a \"logic bomb\" will go off if computer hacker Kevin Mitnick is not released from prison.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "virus",
+    "year": 1998,
+    "content": "January: <a href=\"https://en.wikipedia.org/wiki/Yahoo!\" title=\"Yahoo!\">Yahoo!</a> notifies Internet users that anyone visiting its site in the past month might have downloaded a <a href=\"https://en.wikipedia.org/wiki/Logic_bomb\" title=\"Logic bomb\">logic bomb</a> and <a href=\"https://en.wikipedia.org/wiki/Worm\" title=\"Worm\">worm</a> planted by hackers claiming a \"logic bomb\" will go off if computer hacker <a href=\"https://en.wikipedia.org/wiki/Kevin_Mitnick\" title=\"Kevin Mitnick\">Kevin Mitnick</a> is not released from prison.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 883641600000
   },
   {
     "start": "01/06/1998",
     "title": "3/4 of organizations hacked",
-    "content": "June: Information Security publishes its first annual Industry Survey, finding that nearly three-quarters of organizations suffered a security incident in the previous year."
+    "contentText": "June: Information Security publishes its first annual Industry Survey, finding that nearly three-quarters of organizations suffered a security incident in the previous year.",
+    "visualValue": 0.75,
+    "visualValueSuffix": "%",
+    "type": "other",
+    "year": 1998,
+    "content": "June: Information Security publishes its first annual Industry Survey, finding that nearly three-quarters of organizations suffered a security incident in the previous year.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 896684400000
   },
   {
     "start": "01/09/1998",
-    "title": "Electronic Disturbance Theater",
-    "content": "September: Electronic Disturbance Theater, an online political performance-art group,  attacks the websites of The Pentagon, Mexican president Ernesto Zedillo, and the Frankfurt Stock Exchange, calling it conceptual art and claiming it to be a protest against the suppression of the Zapatista Army of National Liberation in southern Mexico. EDT uses the FloodNet software to bombard its opponents with access requests."
+    "title": "Art or hack?",
+    "contentText": "September: Electronic Disturbance Theater, an online political performance-art group,  attacks the websites of The Pentagon, Mexican president Ernesto Zedillo, and the Frankfurt Stock Exchange, calling it conceptual art and claiming it to be a protest against the suppression of the Zapatista Army of National Liberation in southern Mexico. EDT uses the FloodNet software to bombard its opponents with access requests.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "incident",
+    "year": 1998,
+    "content": "September: <a href=\"https://en.wikipedia.org/wiki/Electronic_Disturbance_Theater\" title=\"Electronic Disturbance Theater\">Electronic Disturbance Theater</a>, an online political performance-<a href=\"https://en.wikipedia.org/wiki/Art_group\" title=\"Art group\">art group</a>,  attacks the websites of <a href=\"https://en.wikipedia.org/wiki/The_Pentagon\" title=\"The Pentagon\">The Pentagon</a>, Mexican president <a href=\"https://en.wikipedia.org/wiki/Ernesto_Zedillo\" title=\"Ernesto Zedillo\">Ernesto Zedillo</a>, and the <a href=\"https://en.wikipedia.org/wiki/Frankfurt_Stock_Exchange\" title=\"Frankfurt Stock Exchange\">Frankfurt Stock Exchange</a>, calling it <a href=\"https://en.wikipedia.org/wiki/Conceptual_art\" title=\"Conceptual art\">conceptual art</a> and claiming it to be a protest against the suppression of the <a href=\"https://en.wikipedia.org/wiki/Zapatista_Army_of_National_Liberation\" title=\"Zapatista Army of National Liberation\">Zapatista Army of National Liberation</a> in southern Mexico. EDT uses the FloodNet software to bombard its opponents with access requests.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 904633200000
   },
   {
     "start": "01/01/1999",
     "title": "Security goes mainstream",
-    "content": "Software security goes mainstream In the wake of Microsoft's Windows 98 release, 1999 becomes a banner year for security (and hacking). Hundreds of advisories and patches are released in response to newfound (and widely publicized) bugs in Windows and other commercial software products. A host of security software vendors release anti-hacking products for use on home computers."
+    "contentText": "Software security goes mainstream In the wake of Microsoft's Windows 98 release, 1999 becomes a banner year for security (and hacking). Hundreds of advisories and patches are released in response to newfound (and widely publicized) bugs in Windows and other commercial software products. A host of security software vendors release anti-hacking products for use on home computers.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "other",
+    "year": 1999,
+    "content": "<a href=\"https://en.wikipedia.org/wiki/Software_security\" class=\"mw-redirect\" title=\"Software security\">Software security</a> goes mainstream In the wake of Microsoft's <a href=\"https://en.wikipedia.org/wiki/Windows_98\" title=\"Windows 98\">Windows 98</a> release, 1999 becomes a banner year for security (and hacking). Hundreds of advisories and patches are released in response to newfound (and widely publicized) <a href=\"https://en.wikipedia.org/wiki/Computer_bug\" class=\"mw-redirect\" title=\"Computer bug\">bugs</a> in Windows and other commercial software products. A host of security software vendors release anti-hacking products for use on home computers.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 915148800000
   },
   {
     "start": "01/01/1999",
     "title": "$1.46 billion initiative",
-    "content": "U.S. President Bill Clinton announces a $1.46 billion initiative to improve government computer security. The plan would establish a network of intrusion detection monitors for certain federal agencies and encourage the private sector to do the same."
+    "contentText": "U.S. President Bill Clinton announces a $1.46 billion initiative to improve government computer security. The plan would establish a network of intrusion detection monitors for certain federal agencies and encourage the private sector to do the same.",
+    "visualValue": 1460000000,
+    "visualValueSuffix": "$ invested",
+    "type": "law",
+    "year": 1999,
+    "content": "U.S. President <a href=\"https://en.wikipedia.org/wiki/Bill_Clinton\" title=\"Bill Clinton\">Bill Clinton</a> announces a $1.46 billion initiative to improve government <a href=\"https://en.wikipedia.org/wiki/Computer_security\" title=\"Computer security\">computer security</a>. The plan would establish a network of intrusion detection monitors for certain federal agencies and encourage the private sector to do the same.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 915148800000
   },
   {
     "start": "07/01/1999",
     "title": "Legion of the Underground",
-    "content": "January 7: The \"Legion of the Underground\" (LoU) declares \"war\" against the governments of Iraq and the People's Republic of China. An international coalition of hackers (including Cult of the Dead Cow, 2600's staff, Phrack's staff, L0pht, and the Chaos Computer Club) issued a joint statement ([4]) condemning the LoU's declaration of war.  The LoU responded by withdrawing its declaration."
+    "contentText": "January 7: The \"Legion of the Underground\" (LoU) declares \"war\" against the governments of Iraq and the People's Republic of China. An international coalition of hackers (including Cult of the Dead Cow, 2600's staff, Phrack's staff, L0pht, and the Chaos Computer Club) issued a joint statement ([4]) condemning the LoU's declaration of war.  The LoU responded by withdrawing its declaration.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "other",
+    "year": 1999,
+    "content": "January 7: The \"Legion of the Underground\" (LoU) declares \"war\" against the governments of Iraq and the People's Republic of China. An international coalition of hackers (including <a href=\"https://en.wikipedia.org/wiki/Cult_of_the_Dead_Cow\" title=\"Cult of the Dead Cow\">Cult of the Dead Cow</a>, <i>2600</i><span class=\"nowrap\" style=\"padding-left:0.1em;\">'</span>s staff, <i><a href=\"https://en.wikipedia.org/wiki/Phrack\" title=\"Phrack\">Phrack</a></i><span class=\"nowrap\" style=\"padding-left:0.1em;\">'</span>s staff, <a href=\"https://en.wikipedia.org/wiki/L0pht\" title=\"L0pht\">L0pht</a>, and the <a href=\"https://en.wikipedia.org/wiki/Chaos_Computer_Club\" title=\"Chaos Computer Club\">Chaos Computer Club</a>) issued a joint statement (<a rel=\"nofollow\" class=\"external autonumber\" href=\"http://www.cultdeadcow.com/news/statement19990107.html\">[4]</a>) condemning the LoU's declaration of war.  The LoU responded by withdrawing its declaration.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 915696000000
   },
   {
     "start": "01/03/1999",
     "title": "The Melissa worm",
-    "content": "March: The Melissa worm is released and quickly becomes the most costly malware outbreak to date."
+    "contentText": "March: The Melissa worm is released and quickly becomes the most costly malware outbreak to date.",
+    "visualValue": 385000000,
+    "visualValueSuffix": "$: estimated cost of the damages",
+    "type": "newAttackType",
+    "year": 1999,
+    "content": "March: The <a href=\"https://en.wikipedia.org/wiki/Melissa_worm\" class=\"mw-redirect\" title=\"Melissa worm\">Melissa worm</a> is released and quickly becomes the most costly malware outbreak to date.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 920275200000
   },
   {
     "start": "17/11/1999",
     "title": "Derailing trains",
-    "content": "November 17: A hacker interviewed by Hilly Rose during the radio show Coast to Coast AM (then hosted by Art Bell) exposes a plot by al-Qaeda to derail Amtrak trains. This results in all trains being forcibly stopped over Y2K as a safety measure."
+    "contentText": "November 17: A hacker interviewed by Hilly Rose during the radio show Coast to Coast AM (then hosted by Art Bell) exposes a plot by al-Qaeda to derail Amtrak trains. This results in all trains being forcibly stopped over Y2K as a safety measure.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "incident",
+    "year": 1999,
+    "content": "November 17: A hacker interviewed by <a href=\"https://en.wikipedia.org/wiki/Hilly_Rose\" title=\"Hilly Rose\">Hilly Rose</a> during the radio show <i><a href=\"https://en.wikipedia.org/wiki/Coast_to_Coast_AM\" title=\"Coast to Coast AM\">Coast to Coast AM</a></i> (then hosted by <a href=\"https://en.wikipedia.org/wiki/Art_Bell\" title=\"Art Bell\">Art Bell</a>) exposes a plot by al-Qaeda to derail <a href=\"https://en.wikipedia.org/wiki/Amtrak\" title=\"Amtrak\">Amtrak</a> trains. This results in all trains being forcibly stopped over <a href=\"https://en.wikipedia.org/wiki/Year_2000_problem\" title=\"Year 2000 problem\">Y2K</a> as a safety measure.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 942825600000
   },
   {
     "start": "01/05/2000",
     "title": "ILOVEYOU",
-    "content": "May: The ILOVEYOU worm, also known as VBS/Loveletter and Love Bug worm, is a computer worm written in VBScript.  It infected millions of computers worldwide within a few hours of its release.  It is considered to be one of the most damaging worms ever. It originated in the Philippines; made by an AMA Computer College student for his thesis."
+    "contentText": "May: The ILOVEYOU worm, also known as VBS/Loveletter and Love Bug worm, is a computer worm written in VBScript.  It infected millions of computers worldwide within a few hours of its release.  It is considered to be one of the most damaging worms ever. It originated in the Philippines; made by an AMA Computer College student for his thesis. 10% of computers connected to the internet were infected.",
+    "visualValue": 5000000000,
+    "visualValueSuffix": "$ of damages",
+    "type": "virus",
+    "year": 2000,
+    "content": "May: The <a href=\"https://en.wikipedia.org/wiki/ILOVEYOU\" title=\"ILOVEYOU\">ILOVEYOU</a> worm, also known as VBS/Loveletter and Love Bug worm, is a computer worm written in VBScript.  It infected millions of computers worldwide within a few hours of its release.  It is considered to be one of the most damaging worms ever. It originated in the Philippines; made by an AMA Computer College student for his thesis.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 957164400000
   },
   {
     "start": "01/09/2000",
-    "title": "First teenager in jail",
-    "content": "September: Computer hacker Jonathan James became the first juvenile to serve jail time for hacking."
+    "title": "The first in jail",
+    "contentText": "September: Computer hacker Jonathan James became the first juvenile to serve jail time for hacking.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "law",
+    "year": 2000,
+    "content": "September: Computer hacker <a href=\"https://en.wikipedia.org/wiki/Jonathan_James\" title=\"Jonathan James\">Jonathan James</a> became the first juvenile to serve jail time for hacking.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 967791600000
   },
   {
     "start": "01/01/2001",
     "title": "First DoS attacks",
-    "content": "Microsoft becomes the prominent victim of a new type of hack that attacks the domain name server. In these denial-of-service attacks, the DNS paths that take users to Microsoft's websites are corrupted."
+    "contentText": "Microsoft becomes the prominent victim of a new type of hack that attacks the domain name server. In these denial-of-service attacks, the DNS paths that take users to Microsoft's websites are corrupted.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "newAttackType",
+    "year": 2001,
+    "content": "Microsoft becomes the prominent victim of a new type of hack that attacks the <a href=\"https://en.wikipedia.org/wiki/Domain_name_server\" class=\"mw-redirect\" title=\"Domain name server\">domain name server</a>. In these <a href=\"https://en.wikipedia.org/wiki/Denial-of-service_attack\" title=\"Denial-of-service attack\">denial-of-service attacks</a>, the DNS paths that take users to Microsoft's websites are corrupted.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 978307200000
   },
   {
     "start": "01/01/2001",
-    "title": "Code Red worm",
-    "content": "The National Cyber Security Alliance (NCSA) is established in response to the September 11 attacks on the World Trade Center."
+    "title": "National Cyber Security Alliance",
+    "contentText": "The National Cyber Security Alliance (NCSA) is established in response to the September 11 attacks on the World Trade Center.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "foundation",
+    "year": 2001,
+    "content": "The National Cyber Security Alliance (NCSA) is established in response to the September 11 attacks on the World Trade Center.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 978307200000
   },
   {
     "start": "01/04/2001",
     "title": "Tricky FBI",
-    "content": "April: FBI agents trick two Russian crackers into coming to the U.S. and revealing how they were hacking U.S. banks."
+    "contentText": "April: FBI agents trick two Russian crackers into coming to the U.S. and revealing how they were hacking U.S. banks.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "law",
+    "year": 2001,
+    "content": "April: FBI agents trick two Russian <a href=\"https://en.wikipedia.org/wiki/Hacker_(computer_security)\" class=\"mw-redirect\" title=\"Hacker (computer security)\">crackers</a> into coming to the U.S. and revealing how they were hacking U.S. banks.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 986112000000
   },
   {
     "start": "01/07/2001",
     "title": "First DMCA incrimination",
-    "content": "July: Russian programmer Dmitry Sklyarov is arrested at the annual Def Con hacker convention. He was the first person criminally charged with violating the Digital Millennium Copyright Act (DMCA)."
+    "contentText": "July: Russian programmer Dmitry Sklyarov is arrested at the annual Def Con hacker convention. He was the first person criminally charged with violating the Digital Millennium Copyright Act (DMCA).",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "law",
+    "year": 2001,
+    "content": "July: Russian programmer <a href=\"https://en.wikipedia.org/wiki/Dmitry_Sklyarov\" class=\"mw-redirect\" title=\"Dmitry Sklyarov\">Dmitry Sklyarov</a> is arrested at the annual <a href=\"https://en.wikipedia.org/wiki/DEF_CON\" title=\"DEF CON\">Def Con hacker convention</a>. He was the first person criminally charged with violating the <a href=\"https://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act\" title=\"Digital Millennium Copyright Act\">Digital Millennium Copyright Act</a> (DMCA).",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 993970800000
   },
   {
     "start": "01/08/2001",
-    "title": "",
-    "content": "August: Code Red worm, infects tens of thousands of machines."
-  },
-  {
-    "start": "01/01/2002",
-    "title": "National Cyber Security Alliance",
-    "content": "January: Bill Gates decrees that Microsoft will secure its products and services, and kicks off a massive internal training and quality control campaign."
-  },
-  {
-    "start": "01/05/2002",
-    "title": "",
-    "content": "May: Klez.H, a variant of the worm discovered in November 2001, becomes the biggest malware outbreak in terms of machines infected, but causes little monetary damage."
-  },
-  {
-    "start": "01/06/2002",
-    "title": "",
-    "content": "June: The Bush administration files a bill to create the Department of Homeland Security, which, among other things, will be responsible for protecting the nation's critical IT infrastructure."
-  },
-  {
-    "start": "01/08/2002",
-    "title": "",
-    "content": "August: Researcher Chris Paget publishes a paper describing \"shatter attacks\", detailing how Windows' unauthenticated messaging system can be used to take over a machine. The paper raises questions about how securable Windows could ever be. It is however largely derided as irrelevant as the vulnerabilities it described are caused by vulnerable applications (placing windows on the desktop with inappropriate privileges) rather than an inherent flaw within the Operating System."
-  },
-  {
-    "start": "01/10/2002",
-    "title": "",
-    "content": "October: The International Information Systems Security Certification Consortium - (ISC)² - confers its 10,000th CISSP certification."
+    "title": "Code Red worm",
+    "contentText": "August: Code Red worm, infects tens of thousands of machines.",
+    "visualValue": 359000,
+    "visualValueSuffix": "infected hosts",
+    "type": "virus",
+    "year": 2001,
+    "content": "August: <a href=\"https://en.wikipedia.org/wiki/Code_Red_worm\" class=\"mw-redirect\" title=\"Code Red worm\">Code Red worm</a>, infects tens of thousands of machines.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "https://en.wikipedia.org/wiki/Code_Red_(computer_worm)",
+    "timestamp": 996649200000
   },
   {
     "start": "01/01/2003",
     "title": "Anonymous",
-    "content": "The hacktivist group Anonymous was formed."
-  },
-  {
-    "start": "01/03/2003",
-    "title": "Authorized encryption",
-    "content": "March: Cult of the Dead Cow and Hacktivismo are given permission by the United States Department of Commerce to export software utilizing strong encryption."
-  },
-  {
-    "start": "01/01/2004",
-    "title": "AOL",
-    "content": "In 2003, Jason Smathers, an AOL employee, was convicted of stealing America Online's 92 million screen names and selling them to a known spammer. Smathers pled guilty to conspiracy charges in 2005. Smathers pled guilty to violations of the US <a href=\"/wiki/CAN-SPAM_Act_of_2003\" title=\"CAN-SPAM Act of 2003\">CAN-SPAM Act of 2003</a>. He was sentenced in August 2005 to 15 months in prison; the sentencing judge also recommended Smathers be forced to pay $84,000 in restitution, triple the $28,000 that he sold the addresses for."
-  },
-  {
-    "start": "01/03/2004",
-    "title": "",
-    "content": "March: NZ Government (National Party) website defaced by hacktivist group BlackMask"
+    "contentText": "The hacktivist group Anonymous was formed.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "foundation",
+    "year": 2003,
+    "content": "The hacktivist group <a href=\"https://en.wikipedia.org/wiki/Anonymous_(group)\" title=\"Anonymous (group)\">Anonymous</a> was formed.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1041379200000
   },
   {
     "start": "01/07/2004",
-    "title": "",
-    "content": "July: North Korea claims to have trained 500 hackers who successfully crack South Korean, Japanese, and their allies' computer systems."
-  },
-  {
-    "start": "01/10/2004",
-    "title": "",
-    "content": "October: National Cyber Security Awareness Month was launched by the National Cyber Security Alliance and U.S. Department of Homeland Security."
+    "title": "North Korean hackers",
+    "contentText": "July: North Korea claims to have trained 500 hackers who successfully crack South Korean, Japanese, and their allies' computer systems.",
+    "visualValue": 500,
+    "visualValueSuffix": "hackers",
+    "type": "foundation",
+    "year": 2004,
+    "content": "July: North Korea claims to have trained 500 hackers who successfully crack South Korean, Japanese, and their allies' computer systems.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1088665200000
   },
   {
     "start": "31/12/2004",
     "title": "CardSystems Solutions Inc.(MasterCard, Visa, Discover Financial Services and American Express)",
-    "content": "CardSystems Solutions Inc.(MasterCard, Visa, Discover Financial Services and American Express) was hacked."
+    "contentText": "CardSystems Solutions Inc.(MasterCard, Visa, Discover Financial Services and American Express) was hacked.",
+    "visualValue": 40000000,
+    "visualValueSuffix": "credit cards exposed",
+    "type": "breach",
+    "year": 2005,
+    "content": "CardSystems Solutions Inc.(MasterCard, Visa, Discover Financial Services and American Express) was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1104516000000
   },
   {
     "start": "31/12/2004",
     "title": "Citigroup",
-    "content": "Citigroup was lost / stolen media."
+    "contentText": "In one of the largest breaches of data security to date, CitiFinancial, the consumer finance subsidiary of Citigroup, announced yesterday that a box of computer tapes containing information on 3.9 million customers was lost by United Parcel Service last month, while in transit to a credit reporting agency. [...] \n\nThe tapes contained names, addresses, Social Security numbers, account numbers, payment histories and other details on small personal loans [...].",
+    "visualValue": 3900000,
+    "visualValueSuffix": "records were lost",
+    "type": "breach",
+    "year": 2005,
+    "content": "In one of the largest breaches of data security to date, CitiFinancial, the consumer finance subsidiary of Citigroup, announced yesterday that a box of computer tapes containing information on 3.9 million customers was lost by United Parcel Service last month, while in transit to a credit reporting agency. [...] \n\nThe tapes contained names, addresses, Social Security numbers, account numbers, payment histories and other details on small personal loans [...].",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "https://www.nytimes.com/2005/06/07/business/personal-data-for-39-million-lost-in-transit.html",
+    "timestamp": 1104516000000
   },
   {
     "start": "31/12/2004",
     "title": "Bank of America",
-    "content": "Bank of America was lost / stolen media."
-  },
-  {
-    "start": "02/04/2005",
-    "title": "",
-    "content": "April 2: Rafael Núñez (aka RaFa), a notorious member of the hacking group World of Hell, is arrested following his arrival at Miami International Airport for breaking into the Defense Information Systems Agency computer system on June 2001."
-  },
-  {
-    "start": "13/09/2005",
-    "title": "",
-    "content": "September 13: Cameron Lacroix is sentenced to 11 months for gaining access to T-Mobile's network and exploiting Paris Hilton's Sidekick."
-  },
-  {
-    "start": "03/11/2005",
-    "title": "",
-    "content": "November 3: Jeanson James Ancheta, whom prosecutors say was a member of the \"Botmaster Underground\", a group of script kiddies mostly noted for their excessive use of bot attacks and propagating vast amounts of spam, was taken into custody after being lured to FBI offices in Los Angeles."
+    "contentText": "Bank of America Corp. has lost computer data tapes containing personal information on up to 1.2 million federal employees, including some members of the U.S. Senate.\n\nThe lost data includes Social Security numbers and account information that could make customers of a federal government charge card program vulnerable to identity theft. ",
+    "visualValue": 1200000,
+    "visualValueSuffix": " records were stolen.",
+    "type": "breach",
+    "year": 2005,
+    "content": "Bank of America Corp. has lost computer data tapes containing personal information on up to 1.2 million federal employees, including some members of the U.S. Senate.\n\nThe lost data includes Social Security numbers and account information that could make customers of a federal government charge card program vulnerable to identity theft. ",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "http://www.nbcnews.com/id/7032779/ns/technology_and_science-security/t/bank-america-loses-customer-data/#.WHPYpVMrJUQ",
+    "timestamp": 1104516000000
   },
   {
     "start": "01/01/2006",
-    "title": "AOL",
-    "content": "AOL was accidentally published."
-  },
-  {
-    "start": "01/01/2006",
-    "title": "T-Mobile, Deutsche Telecom",
-    "content": "T-Mobile, Deutsche Telecom was lost / stolen media."
-  },
-  {
-    "start": "01/01/2006",
-    "title": "",
-    "content": "January: One of the few worms to take after the old form of malware, destruction of data rather than the accumulation of zombie networks to launch attacks from, is discovered. It had various names, including Kama Sutra (used by most media reports), Black Worm, Mywife, Blackmal, Nyxem version D, Kapser, KillAV, Grew and CME-24. The worm would spread through e-mail client address books, and would search for documents and fill them with garbage, instead of deleting them to confuse the user. It would also hit a web page counter when it took control, allowing the programmer who created it as well as the world to track the progress of the worm. It would replace documents with random garbage on the third of every month. It was hyped by the media but actually affected relatively few computers, and was not a real threat for most users."
+    "title": "AOL Proudly Releases Massive Amounts of Private Data",
+    "contentText": "AOL records were accidentally published. The data includes all searches from those users for a three month period this year, as well as whether they clicked on a result, what that result was and where it appeared on the result page. It’s a 439 MB compressed download, expanded to just over 2 gigs.",
+    "visualValue": 20000000,
+    "visualValueSuffix": " records were accidentally published",
+    "type": "breach",
+    "year": 2006,
+    "content": "AOL records were accidentally published. The data includes all searches from those users for a three month period this year, as well as whether they clicked on a result, what that result was and where it appeared on the result page. It’s a 439 MB compressed download, expanded to just over 2 gigs.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1136073600000
   },
   {
     "start": "01/05/2006",
-    "title": "",
-    "content": "May: Jeanson James Ancheta receives a 57-month prison sentence, and is ordered to pay damages amounting to $15,000.00 to the Naval Air Warfare Center in China Lake and the Defense Information Systems Agency, for damage done due to DDoS attacks and hacking.  Ancheta also had to forfeit his gains to the government, which include $60,000 in cash, a BMW, and computer equipment."
-  },
-  {
-    "start": "01/05/2006",
-    "title": "",
-    "content": "May: The largest defacement in Web History as of that time is performed by the Turkish hacker iSKORPiTX who successfully hacked 21,549 websites in one shot."
-  },
-  {
-    "start": "01/07/2006",
-    "title": "",
-    "content": "July: Robert Moore and Edwin Pena featured on America's Most Wanted with Kevin Mitnick presenting their case commit the first VoIP crime ever seen in the USA. Robert Moore served 2 years in federal prison with a $152,000.00 restitution while Edwin Pena was sentenced to 10 years and a $1 million restitution."
-  },
-  {
-    "start": "01/09/2006",
-    "title": "",
-    "content": "September: Viodentia releases FairUse4WM tool which would remove DRM information off Windows Media Audio (WMA) files downloaded from music services such as Yahoo! Unlimited, Napster, Rhapsody Music and Urge."
+    "title": "The largest defacement in Web History",
+    "contentText": "May: The largest defacement in Web History as of that time is performed by the Turkish hacker iSKORPiTX who successfully hacked 21,549 websites in one shot.",
+    "visualValue": 21549,
+    "visualValueSuffix": "website defaced",
+    "type": "defacement",
+    "year": 2006,
+    "content": "May: The largest defacement in Web History as of that time is performed by the <a href=\"https://en.wikipedia.org/wiki/Turkey\" title=\"Turkey\">Turkish</a> hacker iSKORPiTX who successfully hacked 21,549 websites in one shot.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1146466800000
   },
   {
     "start": "01/01/2007",
     "title": "Monster.com",
-    "content": "Monster.com was hacked."
+    "contentText": "US job website Monster.com has suffered an online attack with the personal data of hundreds of thousands of users stolen, says a security firm.\n\nThis remote server held over 1.6 million entries with personal information belonging to several hundred thousands of candidates, mainly based in the US, who had posted their resumes to the Monster.com website,\" reported Symantec.",
+    "visualValue": 1600000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2007,
+    "content": "US job website Monster.com has suffered an online attack with the personal data of hundreds of thousands of users stolen, says a security firm.\n\nThis remote server held over 1.6 million entries with personal information belonging to several hundred thousands of candidates, mainly based in the US, who had posted their resumes to the Monster.com website,\" reported Symantec.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "http://news.bbc.co.uk/2/hi/6956349.stm",
+    "timestamp": 1167631200000
   },
   {
     "start": "01/01/2007",
     "title": "UK Revenue & Customs",
-    "content": "UK Revenue & Customs was lost / stolen media."
+    "contentText": "HM Revenue and Customs (HMRC) has lost computer disks containing confidential details of 25 million child benefit recipients.\nThe organisation says it does not believe the records - names, addresses, dates of birth and bank accounts - have fallen into the wrong hands. This is not the first time it has lost sensitive information.",
+    "visualValue": 25000000,
+    "visualValueSuffix": " records were stolen.",
+    "type": "breach",
+    "year": 2007,
+    "content": "HM Revenue and Customs (HMRC) has lost computer disks containing confidential details of 25 million child benefit recipients.\nThe organisation says it does not believe the records - names, addresses, dates of birth and bank accounts - have fallen into the wrong hands. This is not the first time it has lost sensitive information.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "http://news.bbc.co.uk/2/hi/uk_news/7103911.stm",
+    "timestamp": 1195639905000
   },
   {
     "start": "17/05/2007",
-    "title": "",
-    "content": "May 17: Estonia recovers from massive denial-of-service attack"
-  },
-  {
-    "start": "13/06/2007",
-    "title": "",
-    "content": "June 13: FBI Operation Bot Roast finds over 1 million botnet victims"
-  },
-  {
-    "start": "21/06/2007",
-    "title": "",
-    "content": "June 21: A spear phishing incident at the Office of the Secretary of Defense steals sensitive U.S. defense information, leading to significant changes in identity and message-source verification at OSD."
-  },
-  {
-    "start": "11/08/2007",
-    "title": "",
-    "content": "August 11: United Nations website hacked by Turkish Hacker Kerem125."
+    "title": "Massive DDoS on Estonia",
+    "contentText": "May 17: Estonia recovers from massive denial-of-service attack",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "incident",
+    "year": 2007,
+    "content": "May 17: <a href=\"https://en.wikipedia.org/wiki/Estonia\" title=\"Estonia\">Estonia</a> recovers from massive denial-of-service attack",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1179385200000
   },
   {
     "start": "01/01/2008",
-    "title": "Data Processors International\n(MasterCard, Visa, Discover Financial Services and American Express)",
-    "content": "Data Processors International\n(MasterCard, Visa, Discover Financial Services and American Express) was hacked."
+    "title": "All the credit cards",
+    "contentText": "Data Processors Internationa (MasterCard, Visa, Discover Financial Services and American Express) was hacked.",
+    "visualValue": 8000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2008,
+    "content": "Data Processors Internationa (MasterCard, Visa, Discover Financial Services and American Express) was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1199188800000
   },
   {
     "start": "01/01/2008",
     "title": "Norwegian Tax Administration",
-    "content": "Norwegian Tax Administration was accidentally published."
+    "contentText": "Norwegian Tax Administration was accidentally published.",
+    "visualValue": 3950000,
+    "visualValueSuffix": " records were accidentally published",
+    "type": "breach",
+    "year": 2008,
+    "content": "Norwegian Tax Administration was accidentally published.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1199188800000
   },
   {
     "start": "01/01/2008",
     "title": "Stanford University",
-    "content": "Stanford University was lost / stolen computer."
+    "contentText": "A data breach resulting from a stolen laptop has leaked sensitive information including Social Security Numbers of approximately 72,000 former and current Standford University employees.",
+    "visualValue": 72000,
+    "visualValueSuffix": " records were lost because of a lost or stolen computer.",
+    "type": "breach",
+    "year": 2008,
+    "content": "A data breach resulting from a stolen laptop has leaked sensitive information including Social Security Numbers of approximately 72,000 former and current Standford University employees.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1199188800000
   },
   {
     "start": "01/01/2008",
     "title": "Starbucks",
-    "content": "Starbucks was lost / stolen computer."
+    "contentText": "Starbucks had a lost / stolen computer.",
+    "visualValue": 97000,
+    "visualValueSuffix": " records were lost because of a lost or stolen computer.",
+    "type": "breach",
+    "year": 2008,
+    "content": "Starbucks had a lost / stolen computer.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1199188800000
   },
   {
     "start": "01/01/2008",
     "title": "UK Ministry of Defence",
-    "content": "UK Ministry of Defence was lost / stolen media."
-  },
-  {
-    "start": "17/01/2008",
-    "title": "",
-    "content": "January 17: Project Chanology; Anonymous attacks Scientology website servers around the world. Private documents are stolen from Scientology computers and distributed over the Internet."
+    "contentText": "UK Ministry of Defence had a data breach.",
+    "visualValue": 1700000,
+    "visualValueSuffix": " records were stolen.",
+    "type": "breach",
+    "year": 2008,
+    "content": "UK Ministry of Defence had a data breach.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1199188800000
   },
   {
     "start": "07/03/2008",
-    "title": "",
-    "content": "March 7: Around 20 Chinese hackers claim to have gained access to the world's most sensitive sites, including The Pentagon. They operated from an apartment on a Chinese Island."
-  },
-  {
-    "start": "14/03/2008",
-    "title": "",
-    "content": "March 14: Trend Micro website successfully hacked by Turkish hacker Janizary (aka Utku)."
+    "title": "Chinese hackers vs. The Pentagon",
+    "contentText": "March 7: Around 20 Chinese hackers claim to have gained access to the world's most sensitive sites, including The Pentagon. They operated from an apartment on a Chinese Island.",
+    "visualValue": 20,
+    "visualValueSuffix": "hackers",
+    "type": "incident",
+    "year": 2008,
+    "content": "March 7: Around 20 Chinese hackers claim to have gained access to the world's most sensitive sites, including <a href=\"https://en.wikipedia.org/wiki/The_Pentagon\" title=\"The Pentagon\">The Pentagon</a>. They operated from an apartment on a Chinese Island.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1204876800000
   },
   {
     "start": "31/12/2008",
     "title": "National Archives and Records Administration (U.S. military veterans' records)",
-    "content": "National Archives and Records Administration (U.S. military veterans' records) was lost / stolen media."
+    "contentText": "National Archives and Records Administration (U.S. military veterans' records) had a data breach.",
+    "visualValue": 76000000,
+    "visualValueSuffix": " records were stolen.",
+    "type": "breach",
+    "year": 2009,
+    "content": "National Archives and Records Administration (U.S. military veterans' records) had a data breach.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1230746400000
   },
   {
     "start": "04/04/2009",
-    "title": "",
-    "content": "April 4: Conficker worm infiltrated millions of PCs worldwide including many government-level top-security computer networks."
+    "title": "Conficker",
+    "contentText": "April 4: Conficker worm infiltrated millions of PCs worldwide including many government-level top-security computer networks.",
+    "visualValue": 3500000,
+    "visualValueSuffix": "infected hosts",
+    "type": "incident",
+    "year": 2009,
+    "content": "April 4: <a href=\"https://en.wikipedia.org/wiki/Conficker\" title=\"Conficker\">Conficker</a> worm infiltrated millions of PCs worldwide including many government-level top-security computer networks.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "https://en.wikipedia.org/wiki/Conficker",
+    "timestamp": 1238828400000
   },
   {
     "start": "01/01/2010",
     "title": "Gawker",
-    "content": "Gawker was hacked."
+    "contentText": "Gawker was hacked.",
+    "visualValue": 1500000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2010,
+    "content": "Gawker was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1262304000000
   },
   {
     "start": "01/01/2010",
     "title": "JP Morgan Chase",
-    "content": "JP Morgan Chase was lost / stolen media."
+    "contentText": "JP Morgan Chase had a data breach.",
+    "visualValue": 2600000,
+    "visualValueSuffix": " records were stolen.",
+    "type": "breach",
+    "year": 2010,
+    "content": "JP Morgan Chase had a data breach.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1262304000000
   },
   {
     "start": "01/01/2010",
-    "title": "U.S. Army\n(classified Iraq War documents)",
-    "content": "U.S. Army\n(classified Iraq War documents) was inside job."
+    "title": "Classified Iraq War documents",
+    "contentText": "Classified Iraq War documents from the U.S. Army were leaker by an inside job.",
+    "visualValue": 392000,
+    "visualValueSuffix": " records were leaked by an inside job.",
+    "type": "breach",
+    "year": 2010,
+    "content": "Classified Iraq War documents from the U.S. Army were leaker by an inside job.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1262304000000
   },
   {
     "start": "01/01/2010",
     "title": "U.S. government (United States diplomatic cables leak)",
-    "content": "The United States diplomatic cables leak, widely known as Cablegate, began on Sunday, 28 November 2010 when WikiLeaks—a non-profit organization that publishes submissions from anonymous whistleblowers—began releasing classified cables that had been sent to the U.S. State Department by 274 of its consulates, embassies, and diplomatic missions around the world."
-  },
-  {
-    "start": "12/01/2010",
-    "title": "",
-    "content": "January 12: Operation Aurora Google publicly reveals that it has been on the receiving end of a \"highly sophisticated and targeted attack on our corporate infrastructure originating from China that resulted in the theft of intellectual property from Google\""
+    "contentText": "The United States diplomatic cables leak, widely known as Cablegate, began on Sunday, 28 November 2010 when WikiLeaks—a non-profit organization that publishes submissions from anonymous whistleblowers—began releasing classified cables that had been sent to the U.S. State Department by 274 of its consulates, embassies, and diplomatic missions around the world.",
+    "visualValue": 260000,
+    "visualValueSuffix": " records were leaked by an inside job.",
+    "type": "breach",
+    "year": 2010,
+    "content": "The United States diplomatic cables leak, widely known as Cablegate, began on Sunday, 28 November 2010 when WikiLeaks—a non-profit organization that publishes submissions from anonymous whistleblowers—began releasing classified cables that had been sent to the U.S. State Department by 274 of its consulates, embassies, and diplomatic missions around the world.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1262304000000
   },
   {
     "start": "01/06/2010",
-    "title": "",
-    "content": "June: Stuxnet The Stuxnet worm is found by VirusBlokAda. Stuxnet was unusual in that while it spread via Windows computers, its payload targeted just one specific model and type of SCADA systems. It slowly became clear that it was a cyber attack on Iran's nuclear facilities - with most experts believing that Israel was behind it - perhaps with US help."
-  },
-  {
-    "start": "03/12/2010",
-    "title": "",
-    "content": "December 3: The first Malware Conference, MALCON took place in India. Founded by Rajshekhar Murthy, malware coders are invited to showcase their skills at this annual event supported by the Government of India. An advanced malware for Symbian OS is released by hacker A0drul3z."
+    "title": "Stuxnet vs. Iran",
+    "contentText": "June: Stuxnet The Stuxnet worm is found by VirusBlokAda. Stuxnet was unusual in that while it spread via Windows computers, its payload targeted just one specific model and type of SCADA systems. It slowly became clear that it was a cyber attack on Iran's nuclear facilities - with most experts believing that Israel was behind it - perhaps with US help.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "incident",
+    "year": 2010,
+    "content": "June: <a href=\"https://en.wikipedia.org/wiki/Stuxnet\" title=\"Stuxnet\">Stuxnet</a> The Stuxnet worm is found by VirusBlokAda. Stuxnet was unusual in that while it spread via Windows computers, its payload targeted just one specific model and type of <a href=\"https://en.wikipedia.org/wiki/SCADA\" title=\"SCADA\">SCADA</a> systems. It slowly became clear that it was a cyber attack on Iran's nuclear facilities - with most experts believing that Israel was behind it - perhaps with US help.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1275375600000
   },
   {
     "start": "01/01/2011",
-    "title": "",
-    "content": "The hacker group Lulz Security is formed."
-  },
-  {
-    "start": "01/01/2011",
-    "title": "",
-    "content": "Computer hacker sl1nk releases information of his penetration in the servers of the Department of Defense (DoD), Pentagon, NASA, NSA, US Military, Department of the Navy, Space and Naval Warfare System Command and other UK/US government websites."
+    "title": "Birth of Lulz Security",
+    "contentText": "The hacker group Lulz Security is formed.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "foundation",
+    "year": 2011,
+    "content": "The hacker group <a href=\"https://en.wikipedia.org/wiki/Lulz_Security\" class=\"mw-redirect\" title=\"Lulz Security\">Lulz Security</a> is formed.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1293840000000
   },
   {
     "start": "01/01/2011",
     "title": "China Software Developer Network",
-    "content": "China Software Developer Network was hacked."
+    "contentText": "China Software Developer Network was hacked.",
+    "visualValue": 6000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2011,
+    "content": "China Software Developer Network was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1293861600000
   },
   {
     "start": "01/01/2011",
     "title": "Chinese gaming websites (three: Duowan, 7K7K, 178.com)",
-    "content": "Chinese gaming websites (three: Duowan, 7K7K, 178.com) was hacked."
+    "contentText": "Chinese gaming websites (three: Duowan, 7K7K, 178.com) was hacked.",
+    "visualValue": 10000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2011,
+    "content": "Chinese gaming websites (three: Duowan, 7K7K, 178.com) was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1293861600000
   },
   {
     "start": "01/01/2011",
     "title": "Citigroup",
-    "content": "Citigroup was hacked."
+    "contentText": "Citigroup was hacked.",
+    "visualValue": 360083,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2011,
+    "content": "Citigroup was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1293861600000
   },
   {
     "start": "01/01/2011",
     "title": "Health Net — IBM",
-    "content": "Health Net — IBM was lost / stolen media."
+    "contentText": "Health Net — IBM had a data breach.",
+    "visualValue": 1900000,
+    "visualValueSuffix": " records were stolen.",
+    "type": "breach",
+    "year": 2011,
+    "content": "Health Net — IBM had a data breach.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1293861600000
   },
   {
     "start": "01/01/2011",
     "title": "Sega",
-    "content": "Sega was hacked."
+    "contentText": "Sega was hacked.",
+    "visualValue": 1290755,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2011,
+    "content": "Sega was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1293861600000
   },
   {
-    "start": "01/01/2011",
-    "title": "Sony Online Entertainment",
-    "content": "Sony Online Entertainment was hacked."
-  },
-  {
-    "start": "01/01/2011",
-    "title": "Sony Pictures",
-    "content": "Sony Pictures was hacked."
-  },
-  {
-    "start": "01/01/2011",
-    "title": "Sony PlayStation Network",
-    "content": "Sony PlayStation Network was hacked."
+    "start": "24/11/2011",
+    "title": "Sony",
+    "contentText": "On November 24, 2014, a hacker group which identified itself by the name \"Guardians of Peace\" (GOP) leaked a release of confidential data from the film studio Sony Pictures. The data included personal information about Sony Pictures employees and their families, e-mails between employees, information about executive salaries at the company, copies of then-unreleased Sony films, and other information. The perpetrators then employed a variant of the Shamoon wiper malware to erase Sony's computer infrastructure.",
+    "visualValue": 100000000,
+    "visualValueSuffix": "MegaBytes of data leaked",
+    "type": "dataTheft",
+    "year": 2011,
+    "content": "On November 24, 2014, a <a href=\"/wiki/Hacker_(computer_security)\" class=\"mw-redirect\" title=\"Hacker (computer security)\">hacker</a> group which identified itself by the name \"Guardians of Peace\" (GOP) <a href=\"/wiki/Internet_leak\" title=\"Internet leak\">leaked</a> a release of confidential data from the <a href=\"/wiki/Film_studio\" title=\"Film studio\">film studio</a> <a href=\"/wiki/Sony_Pictures\" title=\"Sony Pictures\">Sony Pictures</a>. The data included personal information about Sony Pictures employees and their families, e-mails between employees, information about executive salaries at the company, copies of then-unreleased Sony films, and other information. The perpetrators then employed a variant of the <a href=\"/wiki/Shamoon\" title=\"Shamoon\">Shamoon</a> <a href=\"/wiki/Wiper_(malware)\" title=\"Wiper (malware)\">wiper</a> malware to erase Sony's computer infrastructure.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "https://en.wikipedia.org/wiki/Sony_Pictures_hack",
+    "timestamp": 1322116977000
   },
   {
     "start": "01/01/2011",
     "title": "Steam",
-    "content": "Steam was hacked."
+    "contentText": "Steam was hacked.",
+    "visualValue": 35000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2011,
+    "content": "Steam was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1293861600000
   },
   {
     "start": "01/01/2011",
     "title": "Washington Post",
-    "content": "Washington Post was hacked."
+    "contentText": "Washington Post was hacked.",
+    "visualValue": 1270000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2011,
+    "content": "Washington Post was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1293861600000
   },
   {
     "start": "09/04/2011",
-    "title": "",
-    "content": "April 9: Bank of America website got hacked by a Turkish hacker named JeOPaRDY. An estimated 85,000 credit card numbers and accounts were reported to have been stolen due to the hack. Bank officials say no personal customer bank information is available on that web-page. Investigations are being conducted by the FBI to trace down the incriminated hacker."
+    "title": "Stolen credit cards ",
+    "contentText": "April 9: Bank of America website got hacked by a Turkish hacker named JeOPaRDY. An estimated 85,000 credit card numbers and accounts were reported to have been stolen due to the hack. Bank officials say no personal customer bank information is available on that web-page. Investigations are being conducted by the FBI to trace down the incriminated hacker.",
+    "visualValue": 85000,
+    "visualValueSuffix": "credit card numbers",
+    "type": "dataTheft",
+    "year": 2011,
+    "content": "April 9: <a href=\"https://en.wikipedia.org/wiki/Bank_of_America\" title=\"Bank of America\">Bank of America</a> website got hacked by a Turkish hacker named JeOPaRDY. An estimated 85,000 credit card numbers and accounts were reported to have been stolen due to the hack. Bank officials say no personal customer bank information is available on that web-page. Investigations are being conducted by the FBI to trace down the incriminated hacker.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1302332400000
   },
   {
     "start": "17/04/2011",
-    "title": "",
-    "content": "April 17: An \"external intrusion\" sends the PlayStation Network offline, and compromises personally identifying information (possibly including credit card details) of its 77 million accounts, in what is claimed to be one of the five largest data breaches ever."
+    "title": "PSNetwork: One of the 5 largest hack",
+    "contentText": "April 17: An \"external intrusion\" sends the PlayStation Network offline, and compromises personally identifying information (possibly including credit card details) of its 77 million accounts, in what is claimed to be one of the five largest data breaches ever.",
+    "visualValue": 77000000,
+    "visualValueSuffix": "accounts compromised",
+    "type": "hack",
+    "year": 2011,
+    "content": "April 17: An \"<a href=\"https://en.wikipedia.org/wiki/PlayStation_Network_outage\" class=\"mw-redirect\" title=\"PlayStation Network outage\">external intrusion</a>\" sends the <a href=\"https://en.wikipedia.org/wiki/PlayStation_Network\" title=\"PlayStation Network\">PlayStation Network</a> offline, and compromises personally identifying information (possibly including credit card details) of its 77 million accounts, in what is claimed to be one of the five largest <a href=\"https://en.wikipedia.org/wiki/Data_breach\" title=\"Data breach\">data breaches</a> ever.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1303023600000
   },
   {
     "start": "01/09/2011",
-    "title": "",
-    "content": "September: Bangladeshi hacker TiGER-M@TE made a world record in defacement history by hacking 700,000 websites in a single shot."
-  },
-  {
-    "start": "16/10/2011",
-    "title": "",
-    "content": "October 16: The YouTube channel of Sesame Street was hacked, streaming pornographic content for about 22 minutes."
-  },
-  {
-    "start": "01/11/2011",
-    "title": "",
-    "content": "November 1: The main phone and Internet networks of the Palestinian territories sustained a hacker attack from multiple locations worldwide."
-  },
-  {
-    "start": "07/11/2011",
-    "title": "",
-    "content": "November 7: The forums for Valve's Steam service were hacked. Redirects for a hacking website, Fkn0wned, appeared on the Steam users' forums, offering \"hacking tutorials and tools, porn, free giveaways and much more.\""
-  },
-  {
-    "start": "14/12/2011",
-    "title": "",
-    "content": "December 14: Five members of the Norwegian hacker group Noria was arrested, allegedly suspected for hacking into the email account of the militant extremist Anders Behring Breivik (who perpetrated the 2011 attacks in the country)."
+    "title": "New defacement world record",
+    "contentText": "September: Bangladeshi hacker TiGER-M@TE made a world record in defacement history by hacking 700,000 websites in a single shot.",
+    "visualValue": 700000,
+    "visualValueSuffix": "website defaced",
+    "type": "defacement",
+    "year": 2011,
+    "content": "September: Bangladeshi hacker TiGER-M@TE made a world record in defacement history by hacking 700,000 websites in a single shot.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1314860400000
   },
   {
     "start": "01/01/2012",
-    "title": "",
-    "content": "A Saudi hacker, 0XOMAR, published over 400,000 credit cards online, and threatened Israel to release 1 million credit cards in the future. In response to that incident, an Israeli hacker published over 200 Saudi's credit cards online."
+    "title": "1'400'000 vs. 200?",
+    "contentText": "A Saudi hacker, 0XOMAR, published over 400,000 credit cards online, and threatened Israel to release 1 million credit cards in the future. In response to that incident, an Israeli hacker published over 200 Saudi's credit cards online.",
+    "visualValue": 1400200,
+    "visualValueSuffix": "credit card numbers",
+    "type": "incident",
+    "year": 2012,
+    "content": "A <a href=\"https://en.wikipedia.org/wiki/Saudi_Arabia\" title=\"Saudi Arabia\">Saudi</a> hacker, 0XOMAR, published over 400,000 credit cards online, and threatened <a href=\"https://en.wikipedia.org/wiki/Israel\" title=\"Israel\">Israel</a> to release 1 million credit cards in the future. In response to that incident, an Israeli hacker published over 200 Saudi's credit cards online.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1325376000000
   },
   {
     "start": "01/01/2012",
     "title": "Apple, Inc./BlueToad",
-    "content": "Apple, Inc./BlueToad was accidentally published."
+    "contentText": "Apple, Inc./BlueToad was accidentally published.",
+    "visualValue": 12367232,
+    "visualValueSuffix": " records were accidentally published",
+    "type": "breach",
+    "year": 2012,
+    "content": "Apple, Inc./BlueToad was accidentally published.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1325419200000
   },
   {
     "start": "01/01/2012",
     "title": "Blizzard Entertainment",
-    "content": "Blizzard Entertainment was hacked."
+    "contentText": "Blizzard Entertainment was hacked.",
+    "visualValue": 14000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2012,
+    "content": "Blizzard Entertainment was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1325419200000
   },
   {
     "start": "01/01/2012",
     "title": "Greek government",
-    "content": "Greek government was hacked."
+    "contentText": "Greek government was hacked.",
+    "visualValue": 9000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2012,
+    "content": "Greek government was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1325419200000
   },
   {
     "start": "01/01/2012",
     "title": "Iranian banks (three: Saderat, Eghtesad Novin, and Saman)",
-    "content": "Iranian banks (three: Saderat, Eghtesad Novin, and Saman) was hacked."
+    "contentText": "Iranian banks (three: Saderat, Eghtesad Novin, and Saman) was hacked.",
+    "visualValue": 3000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2012,
+    "content": "Iranian banks (three: Saderat, Eghtesad Novin, and Saman) was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1325419200000
   },
   {
     "start": "01/01/2012",
-    "title": "LinkedIn, eHarmony, Last.fm",
-    "content": "LinkedIn, eHarmony, Last.fm was accidentally published."
-  },
-  {
-    "start": "01/01/2012",
-    "title": "Massive American business hack\nincluding 7-Eleven and Nasdaq",
-    "content": "Massive American business hack\nincluding 7-Eleven and Nasdaq was hacked."
+    "title": "Massive American businesses hacked",
+    "contentText": "Massive American business were hacked,\nincluding 7-Eleven and Nasdaq.",
+    "visualValue": 160000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2012,
+    "content": "Massive American business were hacked,\nincluding 7-Eleven and Nasdaq.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1325419200000
   },
   {
     "start": "01/01/2012",
     "title": "Rambler.ru",
-    "content": "Rambler.ru was hacked."
+    "contentText": "Rambler.ru was hacked.",
+    "visualValue": 98167935,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2012,
+    "content": "Rambler.ru was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1325419200000
   },
   {
     "start": "01/01/2012",
     "title": "South Carolina Government",
-    "content": "South Carolina Government was inside job."
+    "contentText": "South Carolina Government was inside job.",
+    "visualValue": 6400000,
+    "visualValueSuffix": " records were leaked by an inside job.",
+    "type": "breach",
+    "year": 2012,
+    "content": "South Carolina Government was inside job.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1325419200000
   },
   {
     "start": "01/01/2012",
     "title": "Syrian government (Syria Files)",
-    "content": "Syrian government (Syria Files) was hacked."
+    "contentText": "Syrian government (Syria Files) was hacked.",
+    "visualValue": 2434899,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2012,
+    "content": "Syrian government (Syria Files) was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1325419200000
   },
   {
     "start": "01/01/2012",
     "title": "Zappos",
-    "content": "Zappos was hacked."
-  },
-  {
-    "start": "07/01/2012",
-    "title": "",
-    "content": "January 7: \"Team Appunity\", a group of Norwegian hackers, got arrested for breaking into and publishing the user database of Norway's largest prostitution website."
-  },
-  {
-    "start": "03/02/2012",
-    "title": "",
-    "content": "February 3: Marriott was hacked by a New Age ideologist, Attila Nemeth who was resisting against the New World Order where he said that corporations are allegedly controlling the world. As a response Marriott reported him to the United States Secret Service."
-  },
-  {
-    "start": "08/02/2012",
-    "title": "",
-    "content": "February 8: Foxconn is hacked by a hacker group, \"Swagg Security\", releasing a massive amount of data including email and server logins, and even more alarming - bank account credentials of large companies like Apple and Microsoft. Swagg Security stages the attack just as a Foxconn protest ignites against terrible working conditions in southern China."
-  },
-  {
-    "start": "24/05/2012",
-    "title": "",
-    "content": "May 24: WHMCS is hacked by UGNazi, they claim that the reason for this is because of the illegal sites that are using their software."
-  },
-  {
-    "start": "31/05/2012",
-    "title": "",
-    "content": "May 31: MyBB is hacked by newly founded hacker group, UGNazi, the website was defaced for about a day, they claim their reasoning for this was because they were upset that the forum board Hackforums.net uses their software."
+    "contentText": "Zappos was hacked.",
+    "visualValue": 24000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2012,
+    "content": "Zappos was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1325419200000
   },
   {
     "start": "05/06/2012",
-    "title": "",
-    "content": "June 5: The social networking website LinkedIn has been hacked and the passwords for nearly 6.5 million user accounts are stolen by cybercriminals. As a result, a United States grand jury indicted Nikulin and three unnamed co-conspirators on charges of aggravated identity theft and computer intrusion."
+    "title": "LinkedIn hacked",
+    "contentText": "June 5: The social networking website LinkedIn has been hacked and the passwords for nearly 6.5 million user accounts are stolen by cybercriminals. As a result, a United States grand jury indicted Nikulin and three unnamed co-conspirators on charges of aggravated identity theft and computer intrusion.",
+    "visualValue": 6500000,
+    "visualValueSuffix": "accounts compromised",
+    "type": "dataTheft",
+    "year": 2012,
+    "content": "June 5: The social networking website <a href=\"https://en.wikipedia.org/wiki/LinkedIn\" title=\"LinkedIn\">LinkedIn</a> has been <a href=\"https://en.wikipedia.org/wiki/2012_LinkedIn_hack\" title=\"2012 LinkedIn hack\">hacked</a> and the passwords for nearly 6.5 million user accounts are stolen by cybercriminals. As a result, a United States grand jury indicted Nikulin and three unnamed co-conspirators on charges of aggravated identity theft and computer intrusion.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1338879600000
   },
   {
     "start": "15/08/2012",
-    "title": "",
-    "content": "August 15: The most valuable company in the world Saudi Aramco is crippled by a cyber warfare attack for months by malware called Shamoon. Considered the biggest hack in history in terms of cost and destructiveness . Carried out by an Iranian attacker group called Cutting Sword of Justice. Iranian hackers retaliated against Stuxnet by releasing Shamoon. The malware destroyed over 35,000 Saudi Aramco computers, affecting business operations for months."
-  },
-  {
-    "start": "17/12/2012",
-    "title": "",
-    "content": "December 17: Computer hacker sl1nk announced that he has hacked a total of 9 countries' SCADA systems. The proof includes 6 countries: France, Norway, Russia, Spain, Sweden and the United States."
+    "title": "Shamoon's retaliation",
+    "contentText": "August 15: The most valuable company in the world Saudi Aramco is crippled by a cyber warfare attack for months by malware called Shamoon. Considered the biggest hack in history in terms of cost and destructiveness . Carried out by an Iranian attacker group called Cutting Sword of Justice. Iranian hackers retaliated against Stuxnet by releasing Shamoon. The malware destroyed over 35,000 Saudi Aramco computers, affecting business operations for months.",
+    "visualValue": 35000,
+    "visualValueSuffix": "infected hosts",
+    "type": "incident",
+    "year": 2012,
+    "content": "August 15: The most valuable company in the world <a href=\"https://en.wikipedia.org/wiki/Saudi_Aramco\" title=\"Saudi Aramco\">Saudi Aramco</a> is crippled by a cyber warfare attack for months by malware called <a href=\"https://en.wikipedia.org/wiki/Shamoon\" title=\"Shamoon\">Shamoon</a>. Considered the biggest hack in history in terms of cost and destructiveness . Carried out by an Iranian attacker group called Cutting Sword of Justice. Iranian hackers retaliated against Stuxnet by releasing Shamoon. The malware destroyed over 35,000 <a href=\"https://en.wikipedia.org/wiki/Saudi\" class=\"mw-redirect\" title=\"Saudi\">Saudi</a> Aramco computers, affecting business operations for months.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1345014000000
   },
   {
     "start": "31/12/2012",
     "title": "Adobe Systems",
-    "content": "Adobe Systems was hacked."
+    "contentText": "Adobe Systems was hacked.",
+    "visualValue": 152000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2013,
+    "content": "Adobe Systems was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1356976800000
   },
   {
     "start": "31/12/2012",
     "title": "Apple",
-    "content": "Apple was hacked."
+    "contentText": "Apple was hacked.",
+    "visualValue": 275000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2013,
+    "content": "Apple was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1356976800000
   },
   {
     "start": "31/12/2012",
     "title": "Drupal",
-    "content": "Drupal was hacked."
+    "contentText": "Drupal was hacked.",
+    "visualValue": 1000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2013,
+    "content": "Drupal was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1356976800000
   },
   {
     "start": "31/12/2012",
     "title": "Dun & Bradstreet",
-    "content": "Dun & Bradstreet was hacked."
+    "contentText": "Dun & Bradstreet was hacked.",
+    "visualValue": 1000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2013,
+    "content": "Dun & Bradstreet was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1356976800000
   },
   {
     "start": "31/12/2012",
     "title": "Evernote",
-    "content": "Evernote was hacked."
+    "contentText": "Evernote was hacked.",
+    "visualValue": 50000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2013,
+    "content": "Evernote was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1356976800000
   },
   {
     "start": "31/12/2012",
     "title": "Facebook",
-    "content": "Facebook was accidentally published."
+    "contentText": "Facebook was accidentally published.",
+    "visualValue": 6000000,
+    "visualValueSuffix": " records were accidentally published",
+    "type": "breach",
+    "year": 2013,
+    "content": "Facebook was accidentally published.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1356976800000
   },
   {
     "start": "31/12/2012",
     "title": "Nintendo",
-    "content": "Nintendo was hacked."
+    "contentText": "Nintendo was hacked.",
+    "visualValue": 240000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2013,
+    "content": "Nintendo was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1356976800000
   },
   {
     "start": "31/12/2012",
     "title": "SnapChat",
-    "content": "SnapChat was hacked."
+    "contentText": "SnapChat was hacked.",
+    "visualValue": 4700000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2013,
+    "content": "SnapChat was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1356976800000
   },
   {
     "start": "31/12/2012",
     "title": "Tumblr",
-    "content": "Tumblr was hacked."
+    "contentText": "Tumblr was hacked.",
+    "visualValue": 65469298,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2013,
+    "content": "Tumblr was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1356976800000
   },
   {
     "start": "31/12/2012",
     "title": "Vodafone",
-    "content": "Vodafone was inside job."
+    "contentText": "Vodafone was inside job.",
+    "visualValue": 2000000,
+    "visualValueSuffix": " records were leaked by an inside job.",
+    "type": "breach",
+    "year": 2013,
+    "content": "Vodafone was inside job.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1356976800000
   },
   {
     "start": "31/12/2012",
     "title": "Washington State court system",
-    "content": "Washington State court system was hacked."
+    "contentText": "Washington State court system was hacked.",
+    "visualValue": 160000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2013,
+    "content": "Washington State court system was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1356976800000
   },
   {
     "start": "31/12/2012",
     "title": "Yahoo",
-    "content": "Yahoo was hacked."
+    "contentText": "Yahoo was hacked.",
+    "visualValue": 3000000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2013,
+    "content": "Yahoo was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1356976800000
   },
   {
     "start": "01/01/2013",
-    "title": "",
-    "content": "The social networking website Tumblr is attacked by hackers. Consequently, 65,469,298 unique emails and passwords were leaked from Tumblr. The data breach's legitimacy is confirmed by computer security researcher Troy Hunt."
+    "title": "A whole bunch of Tumblr accounts",
+    "contentText": "The social networking website Tumblr is attacked by hackers. Consequently, 65,469,298 unique emails and passwords were leaked from Tumblr. The data breach's legitimacy is confirmed by computer security researcher Troy Hunt.",
+    "visualValue": 65469298,
+    "visualValueSuffix": "passwords",
+    "type": "breach",
+    "year": 2013,
+    "content": "The social networking website <a href=\"https://en.wikipedia.org/wiki/Tumblr\" title=\"Tumblr\">Tumblr</a> is attacked by hackers. Consequently, 65,469,298 unique emails and passwords were leaked from Tumblr. The data breach's legitimacy is confirmed by computer security researcher <a href=\"https://en.wikipedia.org/wiki/Troy_Hunt\" title=\"Troy Hunt\">Troy Hunt</a>.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1356998400000
   },
   {
     "start": "01/01/2014",
     "title": "AOL",
-    "content": "AOL was hacked."
+    "contentText": "AOL was hacked.",
+    "visualValue": 2400000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2014,
+    "content": "AOL was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1388534400000
   },
   {
     "start": "01/01/2014",
     "title": "eBay",
-    "content": "eBay was hacked."
+    "contentText": "eBay was hacked.",
+    "visualValue": 145000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2014,
+    "content": "eBay was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1388534400000
   },
   {
     "start": "01/01/2014",
     "title": "Gmail",
-    "content": "Gmail was hacked."
+    "contentText": "Gmail was hacked.",
+    "visualValue": 5000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2014,
+    "content": "Gmail was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1388534400000
   },
   {
     "start": "01/01/2014",
     "title": "Home Depot",
-    "content": "Home Depot was hacked."
+    "contentText": "Home Depot was hacked.",
+    "visualValue": 56000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2014,
+    "content": "Home Depot was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1388534400000
   },
   {
     "start": "01/01/2014",
     "title": "JP Morgan Chase",
-    "content": "JP Morgan Chase was hacked."
+    "contentText": "JP Morgan Chase was hacked.",
+    "visualValue": 76000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2014,
+    "content": "JP Morgan Chase was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1388534400000
   },
   {
     "start": "01/01/2014",
     "title": "Sony Pictures",
-    "content": "On November 24, 2014, a hacker group which identified itself by the name \"Guardians of Peace\" (GOP) leaked a release of confidential data from the film studio Sony Pictures. The data included personal information about Sony Pictures employees and their families, e-mails between employees, information about executive salaries at the company, copies of then-unreleased Sony films, and other information."
+    "contentText": "On November 24, 2014, a hacker group which identified itself by the name \"Guardians of Peace\" (GOP) leaked a release of confidential data from the film studio Sony Pictures. The data included personal information about Sony Pictures employees and their families, e-mails between employees, information about executive salaries at the company, copies of then-unreleased Sony films, and other information.",
+    "visualValue": 100000000,
+    "visualValueSuffix": " MegaBytes of records were hacked.",
+    "type": "breach",
+    "year": 2014,
+    "content": "On November 24, 2014, a hacker group which identified itself by the name \"Guardians of Peace\" (GOP) leaked a release of confidential data from the film studio Sony Pictures. The data included personal information about Sony Pictures employees and their families, e-mails between employees, information about executive salaries at the company, copies of then-unreleased Sony films, and other information.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1388534400000
   },
   {
     "start": "01/01/2014",
     "title": "Target Corporation",
-    "content": "Target Corporation was hacked."
+    "contentText": "Target Corporation was hacked.",
+    "visualValue": 70000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2014,
+    "content": "Target Corporation was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1388534400000
   },
   {
     "start": "01/01/2014",
     "title": "Uber",
-    "content": "Uber was poor security."
+    "contentText": "Uber was poor security.",
+    "visualValue": 50000,
+    "visualValueSuffix": " records were lost due to poor security.",
+    "type": "breach",
+    "year": 2014,
+    "content": "Uber was poor security.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1388534400000
   },
   {
     "start": "01/01/2014",
     "title": "Yahoo",
-    "content": "Yahoo was hacked."
+    "contentText": "Yahoo was hacked.",
+    "visualValue": 500000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2014,
+    "content": "Yahoo was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1388534400000
   },
   {
     "start": "07/02/2014",
-    "title": "",
-    "content": "February 7: The bitcoin exchange Mt.Gox filed for bankruptcy after $460 million was apparently stolen by hackers due to \"weaknesses in [their] system\" and another $27.4 million went missing from its bank accounts."
-  },
-  {
-    "start": "01/10/2014",
-    "title": "",
-    "content": "October: The White House computer system was hacked.  It was said that the FBI, the Secret Service, and other U.S. intelligence agencies categorized the attacks \"among the most sophisticated attacks ever launched against U.S. government systems.\""
-  },
-  {
-    "start": "24/11/2014",
-    "title": "",
-    "content": "November 24: In response to the release of the film The Interview, the servers of Sony Pictures are hacked by a hacker group calling itself \"Guardian of Peace\"."
-  },
-  {
-    "start": "28/11/2014",
-    "title": "",
-    "content": "November 28: The website of the Philippine telecommunications company Globe Telecom was hacked in response to the poor internet service they are distributing."
+    "title": "Mt.Gox",
+    "contentText": "February 7: The bitcoin exchange Mt.Gox filed for bankruptcy after $460 million was apparently stolen by hackers due to \"weaknesses in [their] system\" and another $27.4 million went missing from its bank accounts.",
+    "visualValue": 460000000,
+    "visualValueSuffix": "$ stolen",
+    "type": "moneyTheft",
+    "year": 2014,
+    "content": "February 7: The <a href=\"https://en.wikipedia.org/wiki/Bitcoin\" title=\"Bitcoin\">bitcoin</a> exchange <a href=\"https://en.wikipedia.org/wiki/Mt.Gox\" class=\"mw-redirect\" title=\"Mt.Gox\">Mt.Gox</a> filed for bankruptcy after $460<span class=\"nowrap\">&nbsp;</span>million was apparently stolen by hackers due to \"weaknesses in [their] system\" and another $27.4<span class=\"nowrap\">&nbsp;</span>million went missing from its bank accounts.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1391760000000
   },
   {
     "start": "01/01/2015",
     "title": "Anthem Inc.",
-    "content": "Anthem Inc. was hacked."
+    "contentText": "Anthem Inc. was hacked.",
+    "visualValue": 80000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2015,
+    "content": "Anthem Inc. was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1420092000000
   },
   {
     "start": "01/01/2015",
     "title": "Ashley Madison",
-    "content": "Ashley Madison was hacked."
+    "contentText": "Ashley Madison was hacked.",
+    "visualValue": 32000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2015,
+    "content": "Ashley Madison was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1420092000000
   },
   {
     "start": "01/01/2015",
     "title": "Internal Revenue Service",
-    "content": "Internal Revenue Service was hacked."
+    "contentText": "Internal Revenue Service was hacked.",
+    "visualValue": 720000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2015,
+    "content": "Internal Revenue Service was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1420092000000
   },
   {
     "start": "01/01/2015",
     "title": "Slack",
-    "content": "Slack was poor security."
+    "contentText": "Slack was poor security.",
+    "visualValue": 500000,
+    "visualValueSuffix": " records were lost due to poor security.",
+    "type": "breach",
+    "year": 2015,
+    "content": "Slack was poor security.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1420092000000
   },
   {
     "start": "01/01/2015",
     "title": "UCLA Medical Center, Santa Monica",
-    "content": "UCLA Medical Center, Santa Monica was hacked."
+    "contentText": "UCLA Medical Center, Santa Monica was hacked.",
+    "visualValue": 4500000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2015,
+    "content": "UCLA Medical Center, Santa Monica was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1420092000000
   },
   {
     "start": "01/01/2015",
     "title": "VTech",
-    "content": "VTech was hacked."
+    "contentText": "VTech was hacked.",
+    "visualValue": 5000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2015,
+    "content": "VTech was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1420092000000
   },
   {
     "start": "01/01/2015",
     "title": "Walmart",
-    "content": "Walmart was hacked."
+    "contentText": "Walmart was hacked.",
+    "visualValue": 1300000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2015,
+    "content": "Walmart was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1420092000000
   },
   {
     "start": "01/01/2015",
     "title": "Xat.com",
-    "content": "Xat.com was social engineering."
+    "contentText": "Xat.com was social engineering.",
+    "visualValue": 6054459,
+    "visualValueSuffix": " records were stolen by social engineering.",
+    "type": "breach",
+    "year": 2015,
+    "content": "Xat.com was social engineering.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1420092000000
   },
   {
     "start": "01/06/2015",
-    "title": "",
-    "content": "June:  the records of 21.5 million people, including social security numbers, dates of birth, addresses, fingerprints, and security-clearance-related information, are stolen from the United States Office of Personnel Management.  Most of the victims are employees of the United States government and unsuccessful applicants to it. The Wall Street Journal and the Washington Post report that government sources believe the hacker is the government of China."
+    "title": "21 millions fingerprints",
+    "contentText": "June:  the records of 21.5 million people, including social security numbers, dates of birth, addresses, fingerprints, and security-clearance-related information, are stolen from the United States Office of Personnel Management.  Most of the victims are employees of the United States government and unsuccessful applicants to it. The Wall Street Journal and the Washington Post report that government sources believe the hacker is the government of China.",
+    "visualValue": 21500000,
+    "visualValueSuffix": "people",
+    "type": "dataTheft",
+    "year": 2015,
+    "content": "June:  the records of 21.5 million people, including social security numbers, dates of birth, addresses, fingerprints, and security-clearance-related information, are <a href=\"https://en.wikipedia.org/wiki/Office_of_Personnel_Management_data_breach\" title=\"Office of Personnel Management data breach\">stolen from the United States Office of Personnel Management</a>.  Most of the victims are employees of the United States government and unsuccessful applicants to it. The <i><a href=\"https://en.wikipedia.org/wiki/Wall_Street_Journal\" class=\"mw-redirect\" title=\"Wall Street Journal\">Wall Street Journal</a></i> and the <i><a href=\"https://en.wikipedia.org/wiki/Washington_Post\" class=\"mw-redirect\" title=\"Washington Post\">Washington Post</a></i> report that government sources believe the hacker is the government of China.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1433142000000
   },
   {
     "start": "01/07/2015",
-    "title": "",
-    "content": "July: The servers of extramaritial affairs website Ashley Madison were breached."
+    "title": "Ashley Madison: men talking with bots",
+    "contentText": "July: The servers of extramaritial affairs website Ashley Madison were breached.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "incident",
+    "year": 2015,
+    "content": "July: The servers of extramaritial affairs website <a href=\"https://en.wikipedia.org/wiki/Ashley_Madison_data_breach\" title=\"Ashley Madison data breach\">Ashley Madison</a> were <a href=\"https://en.wikipedia.org/wiki/Ashley_Madison_data_breach\" title=\"Ashley Madison data breach\">breached</a>.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1435734000000
   },
   {
     "start": "01/01/2016",
     "title": "Philippines Commission on Elections",
-    "content": "Philippines Commission on Elections was hacked."
+    "contentText": "Philippines Commission on Elections was hacked.",
+    "visualValue": 55000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2016,
+    "content": "Philippines Commission on Elections was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1451649600000
   },
   {
     "start": "01/01/2016",
     "title": "Democratic National Committee",
-    "content": "Democratic National Committee was hacked."
+    "contentText": "Democratic National Committee was hacked.",
+    "visualValue": 19252,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2016,
+    "content": "Democratic National Committee was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1451649600000
   },
   {
     "start": "01/01/2016",
     "title": "Friend Finder Networks",
-    "content": "Friend Finder Networks was poor security / hacked."
+    "contentText": "Friend Finder Networks was poor security / hacked.",
+    "visualValue": 412214295,
+    "visualValueSuffix": " records were hacked due to poor security.",
+    "type": "breach",
+    "year": 2016,
+    "content": "Friend Finder Networks was poor security / hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1451649600000
   },
   {
     "start": "01/01/2016",
     "title": "Taobao",
-    "content": "Taobao was hacked."
+    "contentText": "Taobao was hacked.",
+    "visualValue": 20000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2016,
+    "content": "Taobao was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1451649600000
   },
   {
     "start": "01/01/2016",
     "title": "Verizon Communications",
-    "content": "Verizon Communications was hacked."
+    "contentText": "Verizon Communications was hacked.",
+    "visualValue": 1500000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2016,
+    "content": "Verizon Communications was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1451649600000
   },
   {
     "start": "01/01/2016",
     "title": "Weebly",
-    "content": "Weebly was hacked."
+    "contentText": "Weebly was hacked.",
+    "visualValue": 43430316,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2016,
+    "content": "Weebly was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1451649600000
   },
   {
     "start": "01/02/2016",
-    "title": "",
-    "content": "February: The 2016 Bangladesh Bank heist attempted to take US$951 million from Bangladesh Bank, and succeeded in getting $101 million - although some of this was later recovered."
+    "title": "Bangladesh Bank",
+    "contentText": "February: The 2016 Bangladesh Bank heist attempted to take US$951 million from Bangladesh Bank, and succeeded in getting $101 million - although some of this was later recovered.",
+    "visualValue": 101000000,
+    "visualValueSuffix": "$ stolen",
+    "type": "moneyTheft",
+    "year": 2016,
+    "content": "February: The <a href=\"https://en.wikipedia.org/wiki/Bangladesh_Bank_heist\" class=\"mw-redirect\" title=\"Bangladesh Bank heist\">2016 Bangladesh Bank heist</a> attempted to take US$951 million from <a href=\"https://en.wikipedia.org/wiki/Bangladesh_Bank\" title=\"Bangladesh Bank\">Bangladesh Bank</a>, and succeeded in getting $101 million - although some of this was later recovered.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1454313600000
   },
   {
     "start": "22/07/2016",
-    "title": "",
-    "content": "July 22: WikiLeaks published the documents from the 2016 Democratic National Committee email leak."
-  },
-  {
-    "start": "29/07/2016",
-    "title": "",
-    "content": "July 29: a group suspected coming from China launched hacker attacks on the website of Vietnam Airlines."
-  },
-  {
-    "start": "01/09/2016",
-    "title": "",
-    "content": "September: Hacker Ardit Ferizi is sentenced to 20 years in prison after being arrested for hacking U.S. servers and passing the leaked information to members of ISIL terrorist group back in 2015."
-  },
-  {
-    "start": "01/10/2016",
-    "title": "",
-    "content": "October: The 2016 Dyn cyberattack is being conducted with a botnet consisting of IOTs infected with Mirai by the hacktivist groups SpainSquad, Anonymous, and New World Hackers, reportedly in retaliation for Ecuador's rescinding Internet access to WikiLeaks founder Julian Assange at their embassy in London, where he has been granted asylum."
+    "title": "The DNC is on WikiLeaks",
+    "contentText": "July 22: WikiLeaks published the documents from the 2016 Democratic National Committee email leak.",
+    "visualValue": 0,
+    "visualValueSuffix": "",
+    "type": "breach",
+    "year": 2016,
+    "content": "July 22: <a href=\"https://en.wikipedia.org/wiki/WikiLeaks\" title=\"WikiLeaks\">WikiLeaks</a> published the documents from the <a href=\"https://en.wikipedia.org/wiki/2016_Democratic_National_Committee_email_leak\" title=\"2016 Democratic National Committee email leak\">2016 Democratic National Committee email leak</a>.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1469170800000
   },
   {
     "start": "31/12/2016",
     "title": "Taringa!",
-    "content": "Taringa! was hacked."
+    "contentText": "Taringa! was hacked.",
+    "visualValue": 28722877,
+    "visualValueSuffix": "user passwords",
+    "type": "breach",
+    "year": 2017,
+    "content": "Taringa! was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1483207200000
   },
   {
     "start": "31/12/2016",
     "title": "Uber",
-    "content": "Uber was hacked."
+    "contentText": "Uber was hacked.",
+    "visualValue": 57000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2017,
+    "content": "Uber was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1483207200000
   },
   {
     "start": "01/01/2017",
     "title": "Equifax",
-    "content": "On September 7, 2017, Equifax announced a cybercrime identity theft event potentially impacting approximately 145.5 million U.S. consumers. Information on an estimated range of under 400,000 up to 44 million British residents as well as 8,000 Canadian residents were also compromised. An additional 11,670 Canadians were affected as well, later revealed by Equifax. VentureBeat called the exposure of data on 140+ million customers \"one of the biggest data breaches in history.\""
-  },
-  {
-    "start": "01/02/2017",
-    "title": "",
-    "content": "February: The Cloudbleed bug was discovered by Google Project Zero team."
-  },
-  {
-    "start": "01/04/2017",
-    "title": "",
-    "content": "April: A hacker group calling itself \"The Dark Overlord\" posted unreleased episodes of Orange Is the New Black TV series online after they failed to extort online entertainment company Netflix."
-  },
-  {
-    "start": "01/05/2017",
-    "title": "",
-    "content": "May: WannaCry ransomware attack started on Friday, 12 May 2017, and has been described as unprecedented in scale, infecting more than 230,000 computers in over 150 countries."
+    "contentText": "On September 7, 2017, Equifax announced a cybercrime identity theft event potentially impacting approximately 145.5 million U.S. consumers. Information on an estimated range of under 400,000 up to 44 million British residents as well as 8,000 Canadian residents were also compromised. An additional 11,670 Canadians were affected as well, later revealed by Equifax. VentureBeat called the exposure of data on 140+ million customers \"one of the biggest data breaches in history.\"",
+    "visualValue": 143000000,
+    "visualValueSuffix": " records were lost due to poor security.",
+    "type": "breach",
+    "year": 2017,
+    "content": "On September 7, 2017, Equifax announced a cybercrime identity theft event potentially impacting approximately 145.5 million U.S. consumers. Information on an estimated range of under 400,000 up to 44 million British residents as well as 8,000 Canadian residents were also compromised. An additional 11,670 Canadians were affected as well, later revealed by Equifax. VentureBeat called the exposure of data on 140+ million customers \"one of the biggest data breaches in history.\"",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1483228800000
   },
   {
     "start": "01/05/2017",
-    "title": "",
-    "content": "May: 25,000 digital photos and ID scans relating to patients of the Grozio Chirurgija cosmetic surgery clinic in Lithuania were obtained and published without consent by an unknown group demanding ransoms. Thousands of clients from more than 60 countries were affected. The breach turned attention to weaknesses in Lithuania's information security."
+    "title": "WannaCry",
+    "contentText": "May: WannaCry ransomware attack started on Friday, 12 May 2017, and has been described as unprecedented in scale, infecting more than 230,000 computers in over 150 countries.",
+    "visualValue": 230000,
+    "visualValueSuffix": "infected hosts",
+    "type": "ransomware",
+    "year": 2017,
+    "content": "May: <a href=\"https://en.wikipedia.org/wiki/WannaCry_ransomware_attack\" title=\"WannaCry ransomware attack\">WannaCry ransomware attack</a> started on Friday, 12 May 2017, and has been described as unprecedented in scale, infecting more than 230,000 computers in over 150 countries.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1493622000000
   },
   {
-    "start": "01/06/2017",
-    "title": "",
-    "content": "June: 2017 Petya cyberattack."
+    "start": "27/06/2017",
+    "title": "Petya",
+    "contentText": "A series of powerful cyberattacks using the Petya malware began on 27 June 2017 that swamped websites of Ukrainian organizations, including banks, ministries, newspapers and electricity firms. Similar infections were reported in France, Germany, Italy, Poland, Russia, United Kingdom, the United States and Australia. ESET estimated on 28 June 2017 that 80% of all infections were in Ukraine, with Germany second hardest hit with about 9%. On 28 June 2017, the Ukrainian government stated that the attack was halted. On 30 June 2017, the Associated Press reported experts agreed that Petya was masquerading as ransomware, while it was actually designed to cause maximum damage, with Ukraine being the main target.",
+    "visualValue": 10000000000,
+    "visualValueSuffix": "$ of estimated damages",
+    "type": "destructive",
+    "year": 2017,
+    "content": "A series of powerful <a href=\\\"/wiki/Cyberattack\\\" title=\\\"Cyberattack\\\">cyberattacks</a> using the <a href=\\\"/wiki/Petya_(malware)\\\" title=\\\"Petya (malware)\\\">Petya</a> malware began on 27 June 2017 that swamped websites of <a href=\\\"/wiki/Ukraine\\\" title=\\\"Ukraine\\\">Ukrainian</a> organizations, including banks, ministries, newspapers and electricity firms. Similar infections were reported in <a href=\\\"/wiki/France\\\" title=\\\"France\\\">France</a>, <a href=\\\"/wiki/Germany\\\" title=\\\"Germany\\\">Germany</a>, <a href=\\\"/wiki/Italy\\\" title=\\\"Italy\\\">Italy</a>, <a href=\\\"/wiki/Poland\\\" title=\\\"Poland\\\">Poland</a>, <a href=\\\"/wiki/Russia\\\" title=\\\"Russia\\\">Russia</a>, <a href=\\\"/wiki/United_Kingdom\\\" title=\\\"United Kingdom\\\">United Kingdom</a>, the <a href=\\\"/wiki/United_States\\\" title=\\\"United States\\\">United States</a> and <a href=\\\"/wiki/Australia\\\" title=\\\"Australia\\\">Australia</a>. <a href=\\\"/wiki/ESET\\\" title=\\\"ESET\\\">ESET</a> estimated on 28 June 2017 that 80% of all infections were in Ukraine, with Germany second hardest hit with about 9%. On 28 June 2017, the <a href=\\\"/wiki/Cabinet_of_Ministers_of_Ukraine\\\" class=\\\"mw-redirect\\\" title=\\\"Cabinet of Ministers of Ukraine\\\">Ukrainian government</a> stated that the attack was halted. On 30 June 2017, the <a href=\\\"/wiki/Associated_Press\\\" title=\\\"Associated Press\\\">Associated Press</a> reported experts agreed that Petya was masquerading as <a href=\\\"/wiki/Ransomware\\\" title=\\\"Ransomware\\\">ransomware</a>, while it was actually designed to cause maximum damage, with Ukraine being the main target.",
+    "source": "https://en.wikipedia.org/wiki/2017_cyberattacks_on_Ukraine",
+    "readmore": "https://en.wikipedia.org/wiki/2017_cyberattacks_on_Ukraine",
+    "timestamp": 1498558305000
   },
   {
     "start": "01/09/2017",
-    "title": "",
-    "content": "September 2017: Deloitte breach."
-  },
-  {
-    "start": "01/01/2018",
-    "title": "",
-    "content": "June: Lazy FP State Restore, a speculative execution exploit affecting Intel Core CPUs, is announced by Intel."
+    "title": "Deloitte breach",
+    "contentText": "September 2017: The Guardian reported that Deloitte suffered a cyberattack that breached the confidentiality of its clients and 244,000 staff, allowing the attackers to access \"usernames, passwords, IP addresses, architectural diagrams for businesses and health information\". Reportedly, Deloitte had stored the affected data in Microsoft's Azure cloud hosting service, without two-step verification. The attackers were thought to possibly have had access from as early as October 2016.",
+    "visualValue": 244000,
+    "visualValueSuffix": "people affected",
+    "type": "incident",
+    "year": 2017,
+    "content": "September 2017: <a href=\"https://en.wikipedia.org/wiki/Deloitte#2016-2017_security_breach\" title=\"Deloitte\">Deloitte breach</a>.",
+    "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
+    "readmore": "",
+    "timestamp": 1504249200000
   },
   {
     "start": "01/01/2018",
     "title": "Facebook",
-    "content": "Facebook was poor security."
+    "contentText": "Facebook was hacked.",
+    "visualValue": 50000000,
+    "visualValueSuffix": " records were lost due to poor security.",
+    "type": "breach",
+    "year": 2018,
+    "content": "Facebook was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1514764800000
   },
   {
     "start": "01/01/2018",
     "title": "Ticketfly (subsidiary of Eventbrite)",
-    "content": "Ticketfly (subsidiary of Eventbrite) was hacked."
+    "contentText": "Ticketfly (subsidiary of Eventbrite) was hacked.",
+    "visualValue": 26151608,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2018,
+    "content": "Ticketfly (subsidiary of Eventbrite) was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1514764800000
   },
   {
     "start": "01/01/2018",
     "title": "MyHeritage",
-    "content": "MyHeritage was unknown."
+    "contentText": "MyHeritage had a security incident.",
+    "visualValue": 92283889,
+    "visualValueSuffix": " records were lost due to an unkown cause.",
+    "type": "breach",
+    "year": 2018,
+    "content": "MyHeritage had a security incident.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1514764800000
   },
   {
     "start": "01/01/2018",
     "title": "Google Plus",
-    "content": "Google Plus was poor security."
+    "contentText": "Google Plus lost some data.",
+    "visualValue": 500000,
+    "visualValueSuffix": " records were lost due to poor security.",
+    "type": "breach",
+    "year": 2018,
+    "content": "Google Plus lost some data.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1514764800000
   },
   {
     "start": "01/01/2018",
     "title": "Under Armour",
-    "content": "Under Armour was hacked."
-  },
-  {
-    "start": "01/01/2018",
-    "title": "SingHealth",
-    "content": "SingHealth was hacked."
+    "contentText": "Under Armour was hacked.",
+    "visualValue": 150000000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2018,
+    "content": "Under Armour was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1514764800000
   },
   {
     "start": "01/01/2018",
     "title": "British Airways",
-    "content": "British Airways was hacked."
-  },
-  {
-    "start": "01/05/2018",
-    "title": "",
-    "content": "May: A speculative execution exploit named Speculative Store Bypass (sometimes referred to as \"Variant 4\") is disclosed by researchers."
+    "contentText": "British Airways was hacked.",
+    "visualValue": 380000,
+    "visualValueSuffix": " records were hacked.",
+    "type": "breach",
+    "year": 2018,
+    "content": "British Airways was hacked.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "",
+    "timestamp": 1514764800000
   }
 ]
