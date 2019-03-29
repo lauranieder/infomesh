@@ -24,7 +24,7 @@
 - Design de la barre de navigation timeline pas beau avec les fade, améliorer les transitions css. 
 - ~~Titre dépasse du div à certaines Taille~~(just put a breakword)
 - Timeline bug à certaines tailles
-- Popup : hauteur max sinon scroll
+- Popup : hauteur max sinon scroll / regler pour ipad max width / remettre au centre sur mobile
 - ~~Améliorer le menu de navigation~~(selected sur projects devrais disparaître quand on ouvre un projet)
 - ~~Popup en bas dans la version mobile~~
 - Regex pour url readmore
