@@ -19,4 +19,8 @@ wp-content/plugins/hello.php
 /.infomaniak-maintenance.html
 /.user.ini
 .DS_Store
-.icon 
+.icon
+background.html
+img/motif.jpg
+projects/internetphenomena/bundle_back.js
+projects/internetphenomena/bundle_unminified.js
