@@ -18,4 +18,5 @@ wp-content/plugins/hello.php
 /sitemap.xml.gz
 /.infomaniak-maintenance.html
 /.user.ini
-
+.DS_Store
+.icon
