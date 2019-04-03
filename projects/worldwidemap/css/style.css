@@ -136,36 +136,45 @@ path.selected {
   /* visibility: hidden; */
 }
 
-@media only screen and (max-width: 993px) {
-  #legend {
-    top: 17vh;
-    height: 60px;
-  }
-  .lSquare {
-    font-size: 120%;
-    height: 20px;
-    padding-top: 20px;
-    padding-bottom: 18px;
-  }
-  #info {
-    top: calc(17vh + 80px);
-    font-size: 200%;
-  }
-  #lines_wrapper {
-    width: 100%;
-  }
-  #line_1 {
-    width: 100%;
-  }
-  #info_description {
-    width: 90%;
-    text-align: left;
-  }
-  #info_change_data {
-    position: relative;
-    top: 50vh;
-    width: 10%;
-    height: 60px;
-    padding: 20px 26px 0px 20px;
-  }
+/*///// mobile ////////*/
+
+body.mobile #legend {
+  top: 17vh;
+  height: 30px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.27);
+}
+body.mobile .lSquare {
+  font-size: 67%;
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+body.mobile #info {
+  top: calc(17vh + 51px);
+  font-size: 128%;
+}
+body.mobile #lines_wrapper {
+  width: 100%;
+}
+body.mobile #line_1 {
+  width: 100%;
+}
+body.mobile #info_description {
+  width: 90%;
+  text-align: left;
+}
+body.mobile #info_change_data {
+  position: relative;
+  top: 8px;
+  border-width: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17%;
+  height: 7px;
+  /* padding: 20px 26px 0px 20px; */
+}
+body.extended #legend {
+  left: 33vw;
+  width: 65vw;
 }
