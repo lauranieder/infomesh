@@ -15,6 +15,7 @@
 html,
 body {
   height: 100%;
+  background: blue;
 }
 
 body {
@@ -73,7 +74,56 @@ nav a,
   transition: all 3000ms cubic-bezier(0.23, 1, 0.32, 1);
 }*/
 
+/* SPLASHSCREEN */
 
+.show-splashscreen {
+  cursor: pointer;
+}
+
+.show-splashscreen #navigation {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80vh;
+}
+
+.show-splashscreen #project-title {
+  padding-right: 0rem !important;
+  position: relative;
+  line-height: 1;
+  word-break: normal;
+  display: inline;
+}
+
+.show-splashscreen #project-title.enable-caret:after {
+  content: '';
+  /* position: absolute; */
+  width: 2px;
+  height: 0.85em;
+  transform: translate(0, 15%);
+  background: white;
+  animation: blink-animation 1.5s steps(2, start) infinite;
+  -webkit-animation: blink-animation 1.5s steps(2, start) infinite;
+  display: inline-block;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+.show-splashscreen #container-about {
+  transform: translate(100%, 0);
+}
+
+.show-splashscreen #container-menu {
+  transform: translate(0, 100%);
+}
+
+#container-menu {
+  transition: transform 1s ease-in-out;
+}
 
 /*Navigation*/
 nav-mobile{
@@ -90,13 +140,14 @@ nav svg{
 }
 
 #navigation{
-  width: 25vw;
+  max-width: 25vw;
   padding:1rem;
   padding-bottom: 3rem;
   position: fixed;
   top: 0px;
   left: 0px;
   z-index: 1000;
+  transition: left 0.7s ease-in-out, top 0.7s ease-in-out, transform 0.7s ease-in-out, max-width 0.7s ease-in-out;
 }
 #navigation.background-blue {
   color: white;
@@ -151,6 +202,7 @@ nav svg{
 
 #project-title {
   padding-right: 3rem !important;
+  transition: padding 0.7s ease-in-out;
 }
 
 
