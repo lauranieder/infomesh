@@ -234,7 +234,6 @@
   }
   
   // Select a part of a text node
-  //
   function selectText(textElement, startOffset, endOffset) {
     // Reset window selections
     removeSelections();
@@ -251,16 +250,6 @@
       selection.addRange(range);
     }
     return selection;
-  }
-  
-  function insertNodeAtSelection(selection, node) {
-    const range = deleteSelectionContent(selection).getRangeAt(0);
-    range.insertNode(node);
-    return range;
-  }
-  
-  function insertTextAtSelection(selection, text) {
-    return insertNodeAtSelection(selection, document.createTextNode(text));
   }
   
   function deleteSelectionContent(selection) {
