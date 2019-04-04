@@ -1,0 +1,20 @@
+{
+    "w3": ["Windows 3.0", 3],
+    "w95": ["Windows 95", 3],
+    "w98": ["Windows 98", 3],
+    "xp": ["Windows XP", 3],
+    "xps": ["Windows XP, Luna Silver", 3],
+    "vista": ["Windows Vista", 3],
+    "w7": ["Windows 7", 3],
+    "w8": ["Windows 8", 3],
+    "w10": ["Windows 10", 3],
+    "mac7": ["Mac OS 7", 3],
+    "mac8": ["Mac OS 8", 3],
+    "mac10": ["Mac OS X 1.0", 3],
+    "osx10": ["Mac OS X 10.0", 3],
+    "ns": ["NextStep", 3],
+    "home": ["home", 0],
+    "_btn": ["button", 1],
+    "scroll": ["scrollbar", 1],
+    "ie3": ["Internet Explorer 3.0", 2]
+}
