@@ -4,7 +4,7 @@
 
 #container-project {
     margin: 0;
-    background-color: black;
+    background-color: white;
     overflow: hidden;
 }
 
@@ -46,16 +46,16 @@
     transition: none;
     opacity: 1;
 }
-
+/*to come back after*/
 #ground {
     position: absolute;
     will-change: transform;
-    top: 50vw;
+    top: 25vw;
     left: 0;
     z-index: 0;
     width: 150vw;
     height: 200vh;
-    background: #F5F5F5;
+    background: #0a8b3b; /*#F5F5F5*/
 }
 
 #container-project #models {
@@ -3871,12 +3871,3 @@
 .op50.w10._btn.share {
     background-position-y: -128px
 }
-
-
-
-
-
-
-
-
-
