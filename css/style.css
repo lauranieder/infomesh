@@ -85,6 +85,7 @@ nav a,
   top: 50%;
   transform: translate(-50%, -50%);
   max-width: 80vh;
+  transition: left 0.7s 0.8s ease-in-out, top 0.7s 0.8s ease-in-out, transform 0.7s 0.8s ease-in-out, max-width 0.7s 0.8s ease-in-out;
 }
 
 .show-splashscreen #project-title {
@@ -93,6 +94,10 @@ nav a,
   line-height: 1;
   word-break: normal;
   display: inline;
+}
+
+.show-splashscreen #project-title.title-bold {
+  font-weight: 400;
 }
 
 .show-splashscreen #project-title.enable-caret:after {
@@ -115,14 +120,16 @@ nav a,
 
 .show-splashscreen #container-about {
   transform: translate(100%, 0);
+  transition: all 1s 0.5s ease-in-out;
 }
 
 .show-splashscreen #container-menu {
   transform: translate(0, 100%);
+  transition: transform 1s ease-in-out;
 }
 
 #container-menu {
-  transition: transform 1s ease-in-out;
+  transition: transform 1s 0.4s ease-in-out;
 }
 
 /*Navigation*/

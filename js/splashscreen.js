@@ -98,46 +98,64 @@
     "PewDiePie is still richest YouTuber ever with a net worth of $7 million."
   ]
   
-  let isSplashscreenEnabled = true;
+  let isRunning = false;
   const titleText = 'Information mesh';
   const title = document.querySelector('#project-title');
   const body = document.querySelector('body');
 
   body.addEventListener('click', () => {
-    if (isSplashscreenEnabled) {
-      body.classList.remove('show-splashscreen');
-      
+    if (isSplashscreenEnabled()) {
       // Debouce state changes to prevent event conflicts.
       requestAnimationFrame(() => {
-        isSplashscreenEnabled = false;
+        enableSplashScreen(false);
       }); 
     }
   })
 
   title.addEventListener('click', () => {
-    if (!isSplashscreenEnabled) {
-      body.classList.add('show-splashscreen');
-      runSequence();
-      
+    if (!isSplashscreenEnabled()) {
       // Debouce state changes to prevent event conflicts.
       requestAnimationFrame(() => {
-        isSplashscreenEnabled = true;
+        enableSplashScreen(true);
+        startSequence()
       });
     }
   })
 
-  runSequence();
+  startSequence()
+
+  function isSplashscreenEnabled() {
+    return body.classList.contains('show-splashscreen');
+  }
+
+  function enableSplashScreen(enable) {
+    if (enable) {
+      body.classList.add('show-splashscreen');
+    } else {
+      body.classList.remove('show-splashscreen');
+    }
+  }
+
+  async function startSequence() {
+    await wait(3000);
+    if (!isRunning && isSplashscreenEnabled()) {
+      isRunning = true;
+      runSequence();
+    }
+  } 
 
   async function runSequence() {
-    const text = getRandomFact();
-    await wait(3000);
-    if (isSplashscreenEnabled) {
-      await erase();
-      await write(title, text);
+    const text = isSplashscreenEnabled() ? getRandomFact() : titleText;
+    await erase();
+    await wait(100);
+    highlight(false);
+    await write(title, text);
+    
+    if (isSplashscreenEnabled() || title.innerHTML !== titleText) {
+      await wait(3000);
       runSequence();
-    } else if (title.innerHTML !== titleText) {
-      await erase();
-      await write(title, titleText);
+    } else {
+      isRunning = false;
     }
   }
 
@@ -173,6 +191,14 @@
       title.classList.add('enable-caret');
     } else {
       title.classList.remove('enable-caret');
+    }
+  }
+
+  function highlight(highlight) {
+    if (highlight) {
+      title.classList.add('title-bold');
+    } else {
+      title.classList.remove('title-bold');
     }
   }
 

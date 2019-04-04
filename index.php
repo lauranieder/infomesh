@@ -19,7 +19,7 @@
 <body class="show-splashscreen">
   <!--<div id="smartphone">mobile</div>-->
   <header id="navigation">
-    <h1 id="project-title" class="enable-caret">Information mesh</h1>
+    <h1 id="project-title" class="enable-caret title-bold">Information mesh</h1>
     <nav class="d-none">
       <?php echo file_get_contents("css/UI/UIArrowUp.svg"); ?>
       <?php echo file_get_contents("css/UI/UIArrowDown.svg"); ?>
