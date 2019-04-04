@@ -98,30 +98,46 @@
     "PewDiePie is still richest YouTuber ever with a net worth of $7 million."
   ]
   
-  let enableSequence = true;
+  let isSplashscreenEnabled = true;
+  const titleText = 'Information mesh';
+  const title = document.querySelector('#project-title');
   const body = document.querySelector('body');
+
   body.addEventListener('click', () => {
-    body.classList.remove('show-splashscreen');
-    enableSequence = false;
+    if (isSplashscreenEnabled) {
+      body.classList.remove('show-splashscreen');
+      
+      // Debouce state changes to prevent event conflicts.
+      requestAnimationFrame(() => {
+        isSplashscreenEnabled = false;
+      }); 
+    }
   })
 
-  runSequence()
+  title.addEventListener('click', () => {
+    if (!isSplashscreenEnabled) {
+      body.classList.add('show-splashscreen');
+      runSequence();
+      
+      // Debouce state changes to prevent event conflicts.
+      requestAnimationFrame(() => {
+        isSplashscreenEnabled = true;
+      });
+    }
+  })
+
+  runSequence();
 
   async function runSequence() {
-    const title = document.querySelector('#project-title');
     const text = getRandomFact();
-
     await wait(3000);
-    enableCaret(false);
-    const selection = await select(title);
-    await wait(200);
-    deleteSelectionContent(selection);
-    enableCaret(true);
-    if (enableSequence) {
+    if (isSplashscreenEnabled) {
+      await erase();
       await write(title, text);
       runSequence();
-    } else {
-      await write(title, 'Information mesh');
+    } else if (title.innerHTML !== titleText) {
+      await erase();
+      await write(title, titleText);
     }
   }
 
@@ -144,8 +160,15 @@
     })
   }
 
+  async function erase() {
+    enableCaret(false);
+    const selection = await select(title);
+    await wait(200);
+    deleteSelectionContent(selection);
+    enableCaret(true);
+  }
+
   function enableCaret(enable) {
-    const title = document.querySelector('#project-title');
     if (enable) {
       title.classList.add('enable-caret');
     } else {

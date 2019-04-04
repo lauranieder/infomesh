@@ -203,6 +203,7 @@ nav svg{
 #project-title {
   padding-right: 3rem !important;
   transition: padding 0.7s ease-in-out;
+  cursor: pointer;
 }
 
 
