@@ -91,6 +91,7 @@ nav svg{
 
 #navigation{
   width: 25vw;
+  height: 8rem; /*to check different styles*/
   padding:1rem;
   padding-bottom: 3rem;
   position: fixed;
@@ -461,6 +462,12 @@ iframe {
   }
   h1, .font-large{
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 1200px){
+  h1, .font-large{
+    font-size: 1.5rem;
   }
 }
 
