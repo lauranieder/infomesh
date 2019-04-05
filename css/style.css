@@ -104,7 +104,7 @@ nav a,
 
 .show-splashscreen.enable-splashscreen-titles .click-to-start {
   transform: translate(-50%, -100%);
-  
+
 }
 
 .show-splashscreen {
@@ -185,8 +185,8 @@ nav svg{
 }
 
 #navigation{
-  width: 25vw;
-  height: 8rem; /*to check different styles*/
+  max-width: 25vw;
+  /*height: 8rem;*/ /*to check different styles*/
   padding:1rem;
   padding-bottom: 3rem;
   position: fixed;
