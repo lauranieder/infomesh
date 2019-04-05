@@ -33,6 +33,7 @@
 - changement de la couleur des titres buggée
 - doit pas recharger l'iframe si c'est le premier
 - timeline déja la quand on ouvre le projet mais elle devrait slider avec
+- slider reload pas au bon endroit timelime
 
 ### Adapt student project
 #### worldwidemap
