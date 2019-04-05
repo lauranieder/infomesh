@@ -101,6 +101,7 @@
   let isRunning = false;
   let lastText = false;
   const titleText = 'Information mesh';
+  const subTitle = '30 years of facts about the World Wide Web'
   const title = document.querySelector('#project-title');
   const body = document.querySelector('body');
 
@@ -109,6 +110,7 @@
       // Debouce state changes to prevent event conflicts.
       requestAnimationFrame(() => {
         enableSplashScreen(false);
+        enableSplashScreenTitles(false);
       }); 
     }
   })
@@ -137,10 +139,23 @@
     }
   }
 
+  function enableSplashScreenTitles(enable) {
+    if (enable) {
+      body.classList.add('enable-splashscreen-titles');
+    } else {
+      body.classList.remove('enable-splashscreen-titles');
+    }
+  }
+
   async function startSequence() {
+    highlight(true);
     await wait(3000);
     if (!isRunning && isSplashscreenEnabled()) {
       isRunning = true;
+      await erase();
+      await wait(100);
+      await write(title, subTitle);
+      await wait(3000);
       runSequence();
     }
   } 
@@ -148,8 +163,9 @@
   async function runSequence() {
     const text = isSplashscreenEnabled() ? getRandomFact() : titleText;
     await erase();
-    await wait(100);
     highlight(false);
+    enableSplashScreenTitles(isSplashscreenEnabled());
+    await wait(100);
     await write(title, text);
     
     if (isSplashscreenEnabled() || title.innerHTML !== titleText) {

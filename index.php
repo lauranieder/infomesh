@@ -17,6 +17,12 @@
   </script>
 </head>
 <body class="show-splashscreen">
+  <div class="splashscreen-title">
+    <h5>Infomesh — 30 years of facts about the World Wide Web</h5>
+  </div>
+  <div class="click-to-start">
+    <h5>Click to continue</h5>
+  </div>
   <!--<div id="smartphone">mobile</div>-->
   <header id="navigation">
     <h1 id="project-title" class="enable-caret title-bold">Information mesh</h1>
