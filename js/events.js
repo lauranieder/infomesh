@@ -140,12 +140,12 @@ function computeEvents() {
       wikifetching(item.wikifetch, index);
     }
     /*TO PUT BACK*/
-    console.log(item.readmore);
+    /*console.log(item.readmore);
 
       var containReadmore = item.readmore.match(/id='readmore'/g);
       if(item.readmore != null && item.readmore != "" && !containReadmore){
         item.content += "<a target='_blank' id='readmore' href='"+item.readmore+"'>Read more</a>";
-      }
+      }*/
 
     //TODO : regex to improve, replace link with target blank
     if(item.content){
