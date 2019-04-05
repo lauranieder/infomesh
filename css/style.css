@@ -75,6 +75,20 @@ nav a,
 }*/
 
 /* SPLASHSCREEN */
+
+.splashscreen-main-title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  opacity: 0;
+  padding: 4rem 10vw;
+  transition: opacity 0.5s ease-in-out;
+}
+
 .splashscreen-title,
 .click-to-start {
   position: fixed;
@@ -111,26 +125,22 @@ nav a,
   cursor: pointer;
 }
 
-.show-splashscreen #navigation {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 50vw;
-  transition: left 0.7s 0.8s ease-in-out, top 0.7s 0.8s ease-in-out, transform 0.7s 0.8s ease-in-out, max-width 0.7s 0.8s ease-in-out;
+.show-splashscreen #navigation,
+.show-splashscreen #container-credit,
+.show-splashscreen #container-side {
+  transform: translate(-100%, 0);
+  transition: transform 0.7s 0.8s ease-in-out;
 }
 
-.show-splashscreen #project-title {
-  padding-right: 0rem !important;
-  position: relative;
-  line-height: 1;
-  word-break: normal;
+.show-splashscreen .splashscreen-main-title {
+  opacity: 1;
 }
 
-.show-splashscreen #project-title.title-bold {
+.show-splashscreen .splashscreen-main-title h5.title-bold {
   font-weight: 400;
 }
 
-.show-splashscreen #project-title.enable-caret:after {
+.show-splashscreen .splashscreen-main-title h5.enable-caret:after {
   content: '';
   width: 2px;
   height: 0.85em;

@@ -102,7 +102,8 @@
   let lastText = false;
   const titleText = 'Information mesh';
   const subTitle = '30 years of facts about the World Wide Web'
-  const title = document.querySelector('#project-title');
+  const title = document.querySelector('.splashscreen-main-title h5');
+  const mainTitle = document.querySelector('#project-title');
   const body = document.querySelector('body');
 
   body.addEventListener('click', () => {
@@ -115,7 +116,7 @@
     }
   })
 
-  title.addEventListener('click', () => {
+  mainTitle.addEventListener('click', () => {
     if (!isSplashscreenEnabled()) {
       // Debouce state changes to prevent event conflicts.
       requestAnimationFrame(() => {

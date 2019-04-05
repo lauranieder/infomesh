@@ -20,12 +20,15 @@
   <div class="splashscreen-title">
     <h5>Infomesh — 30 years of facts about the World Wide Web</h5>
   </div>
+  <div class="splashscreen-main-title">
+    <h5 class="enable-caret title-bold">Information mesh</h5>
+  </div>
   <div class="click-to-start">
     <h5>Click to continue</h5>
   </div>
   <!--<div id="smartphone">mobile</div>-->
   <header id="navigation">
-    <h1 id="project-title" class="enable-caret title-bold">Information mesh</h1>
+    <h1 id="project-title">Information mesh</h1>
     <nav class="d-none">
       <?php echo file_get_contents("css/UI/UIArrowUp.svg"); ?>
       <?php echo file_get_contents("css/UI/UIArrowDown.svg"); ?>
