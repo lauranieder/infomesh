@@ -185,8 +185,8 @@ nav svg{
 }
 
 #navigation{
-  max-width: 25vw;
-  /*height: 8rem;*/ /*to check different styles*/
+  width: 25vw;
+  height: 11rem; /*to check different styles*/
   padding:1rem;
   padding-bottom: 3rem;
   position: fixed;
@@ -229,7 +229,8 @@ nav svg{
 }
 #button-toggle-informations{
   left:calc(100% - 3rem);
-  bottom:0rem;
+  /*bottom:0rem;*/
+  top:8rem;
 }
 /*to improve trop moche!*/
 #navigation.background-white #button-toggle-informations,
@@ -243,7 +244,8 @@ nav svg{
   top:1rem;
 }
 #button-down{
-  bottom:3rem;
+  /*bottom:3rem;*/
+  top:6rem;
 }
 
 #project-title {
@@ -360,6 +362,7 @@ nav svg{
 /*-----------------2nd level--------------------*/
 /*Not the real title container, the one in container-side*/
 #container-title {
+  height:11rem;
   padding-right: 4rem  !important; /*one more than the other one*/
   padding-bottom: 5rem !important;
   visibility:hidden;
@@ -553,7 +556,7 @@ iframe {
   stroke:blue;
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1500px){
   #container-about .content {
     width: 50%;
     min-width:50%;
@@ -568,7 +571,7 @@ iframe {
   }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1300px){
   h1, .font-large{
     font-size: 1.5rem;
   }

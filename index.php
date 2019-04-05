@@ -44,7 +44,7 @@
         <div id="project-credits"><p></p></div>
       </div>
       <div id="container-menu" class="content flex-bottom font-large">
-        <a href="#" id="button-open-projects">Projects</a>
+        <a href="#" id="button-open-projects">30 years of</a>
         <a href="#" id="button-open-about" class="selected">About</a>
       </div>
     </div>

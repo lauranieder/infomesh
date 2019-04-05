@@ -128,7 +128,7 @@ function loadProject(index, direction) {
 
 function loadProjectsPreview(){
   $.each(projectsData, function(index, project) {
-    var link = $('<a href="#" class="font-large button-open-project" data-id="'+index+'">'+project.slug+'</a>');
+    var link = $('<a href="#" class="font-large button-open-project" data-id="'+index+'">'+project.title+'</a>');
     $('#container-projects').append(link);
   });
 }
