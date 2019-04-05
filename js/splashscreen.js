@@ -99,6 +99,7 @@
   ]
   
   let isRunning = false;
+  let lastText = false;
   const titleText = 'Information mesh';
   const title = document.querySelector('#project-title');
   const body = document.querySelector('body');
@@ -153,7 +154,14 @@
     
     if (isSplashscreenEnabled() || title.innerHTML !== titleText) {
       await wait(3000);
-      runSequence();
+      lastText = text;
+
+      if (lastText === title.innerHTML) {
+        runSequence();
+      } else {
+        isRunning = false;
+      }
+
     } else {
       isRunning = false;
     }
