@@ -1,86 +1,100 @@
 [
 	{
 		"start": "18/07/1992",
-		"end": "18/09/1992",
+		"_comment-end": "18/09/1992",
 		"title": "The first image is uploaded to the WWW",
 		"content": "The first image on the world wide web was a promotional image for the parody girl-pop group, \"Les Horribles Cernettes,\" which was comprised of women working at the LHC at CERN. Tim Berners-Lee had the image handy when he wanted to test the first photo uploading system for the WWW.",
 		"readmore": "https://en.wikipedia.org/wiki/Les_Horribles_Cernettes"
 	},
 	{
 		"start": "22/11/1993",
-		"end": "22/01/1994",
+		"_comment-end": "22/01/1994",
 		"title": "Trojan Room coffee pot",
 		"content": "The Trojan Room coffee pot was a coffee machine located next to the so-called Trojan Room in the old Computer Laboratory of the University of Cambridge, England, which in 1991 provided the inspiration for the world's first webcam. In 1993, web browsers gained the ability to display images, and it soon became clear that this would be an easier way to make the picture available to users. The camera was connected to the Internet and the live picture became available via HTTP in November of the same year, by computer scientists Daniel Gordon and Martyn Johnson. It therefore became visible worldwide and grew into a popular landmark of the early web.",
 		"readmore": "https://en.wikipedia.org/wiki/Trojan_Room_coffee_pot"
 	},
 	{
 		"start": "01/01/1995",
-		"end": "31/12/1995",
+		"_comment-end": "31/12/1995",
 		"title": "Beanie Baby",
 		"content": "In tandem with the launch of the Ty Website, all Beanie Baby hangtags had the Ty Website readmore and a call to action printed underneath the poems and birthdays that commanded audiences to visit the company Web site with text that read: Visit our web page!!! As a result, hordes of consumers were visiting the Ty Web site by the thousands to gain information about Beanie Babies which was completely unprecedented at that time. Ty is the first business to leverage their Web site to connect and engage with consumers of their products. This effort evolved into the world's first Internet sensation.",
 		"readmore": "https://en.wikipedia.org/wiki/Beanie_Babies"
 	},
 	{
 		"start": "01/01/1996",
-		"end": "31/12/1996",
+		"_comment-end": "31/12/1996",
 		"title": "Dancing baby",
 		"content": "The \"Dancing Baby,\" also called \"Baby Cha-Cha,\" is a 3D-rendered animation of a baby dancing. It quickly became a media phenomenon and one of the first viral videos early in the second half of the 1990s. It originated as a collection of experimental testing data and files, ultimately released in Autumn of 1996 as a product sample source file (sk_baby.max) with the 3D character animation software product \"Character Studio\", used with 3D Studio Max (both products from Kinetix/Autodesk).",
 		"readmore": "https://en.wikipedia.org/wiki/Dancing_baby"
 	},
 	{
 		"start": "18/11/1997",
-		"end": "18/01/1998",
+		"_comment-end": "18/01/1998",
 		"title": "Bill Gates Email Beta Test",
 		"readmore": "https://knowyourmeme.com/memes/bill-gatesmicrosoft-chain-letter-e-mails",
 		"content": "An email chain-letter that first appeared in 1997 and was still circulating as recently as 2007. The message claims that America Online and Microsoft are conducting a beta test and for each person you forward the email to, you will receive a payment from Bill Gates of more than $200. Realistic contact information for a lawyer appears in the message."
 	},
 	{
+		"start": "08/10/1998",
+		"_comment-end": "08/12/1998",
+		"title": "Digital Millennium Copyright Act is passed.",
+		"url": "https://www.eff.org/issues/dmca",
+		"content": "Bars circumvention of software code embedded in software-enabled devices that prevents copying. DMCA has become a serious threat that jeopardizes fair use, impedes competition and innovation, and chills free expression and scientific research. EFF has fought hard against the DMCA circumvention provisions in the courts, Congress and other forums, and has fought equally hard to make sure the DMCA safe harbors shelter innovation and creativity."
+	},
+	{
 		"start": "28/11/2002",
-		"end": "28/01/2003",
+		"_comment-end": "28/01/2003",
 		"title": "Every time you masturbate... God kills a kitten",
-		"readmore": "https://en.wikipedia.org/wiki/Every_time_you_masturbate..._God_kills_a_kitten",
+		"readmores": "https://en.wikipedia.org/wiki/Every_time_you_masturbate..._God_kills_a_kitten",
 		"content": "Every time you masturbate… God kills a kitten is the caption of an image created by Chris Darden of the website Fark.com in 2002 that quickly became an internet meme. The image features a kitten being chased by two Domo characters (the animated mascot of Japanese television station NHK), and has the tagline Please, think of the kittens."
 	},
 	{
 		"start": "26/08/2005",
-		"end": "26/10/2005",
+		"_comment-end": "26/10/2005",
 		"title": "The Million Dollar Homepage",
-		"readmore": "https://en.wikipedia.org/wiki/Every_time_you_masturbate..._God_kills_a_kitten",
+		"readmores": "https://en.wikipedia.org/wiki/Every_time_you_masturbate..._God_kills_a_kitten",
 		"content": "The Million Dollar Homepage is a website conceived in 2005 by Alex Tew, a student from Wiltshire, England, to raise money for his university education. The home page consisted of a million pixels arranged in a 1000 × 1000 pixel grid; the image-based links on it were sold for $1 per pixel in 10 × 10 blocks. The aim of the website was to sell all of the pixels in the image, thus generating a million dollars of income for the creator."
 	},
 	{
 		"start": "10/06/2009",
-		"end": "10/08/2009",
+		"_comment-end": "10/08/2009",
 		"title": "Slender Man",
-		"readmore": "https://en.wikipedia.org/wiki/Every_time_you_masturbate..._God_kills_a_kitten",
+		"readmores": "https://en.wikipedia.org/wiki/Every_time_you_masturbate..._God_kills_a_kitten",
 		"content": "The Slender Man is a fictional supernatural character that originated as a creepypasta Internet meme created by Something Awful forums user Eric Knudsen in 2009. He is depicted as a thin, unnaturally tall humanoid with a featureless head and face and wearing a black suit. Stories of the Slender Man commonly feature him stalking, abducting or traumatizing people, particularly children. Media scholar and folklorist Andrew Peck attributes the success of the Slender Man to its highly collaborative nature. Because the character and its motives are shrouded in mystery, users can easily adapt existing Slender Man tropes and imagery to create new stories."
 	},
 	{
+		"start": "01/12/2010",
+		"_comment-end": "01/02/2011",
+		"title": "QWOP",
+		"urls": "https://en.wikipedia.org/wiki/Every_time_you_masturbate..._God_kills_a_kitten",
+		"content": "QWOP is a 2008 ragdoll-based browser video game created by Bennett Foddy, formerly the bassist of Cut Copy. Players control an athlete named \"Qwop\" using only the Q, W, O, and P keys. A couple of years after the game was released on the internet, the game became an internet meme after its outbreak in December 2010. On July 27, 2011, QWOP was featured at the Museum of Modern Art in New York City and was part of an event called “Arcade” hosted by the video game art and culture company Kill Screen."
+	},
+	{
 		"start": "25/01/2011",
-		"end": "25/03/2011",
+		"_comment-end": "25/03/2011",
 		"title": "Egyptian revolution of 2011",
-		"readmore": "https://en.wikipedia.org/wiki/Egyptian_revolution_of_2011#Online_activism_and_social_media",
+		"readmores": "https://en.wikipedia.org/wiki/Egyptian_revolution_of_2011#Online_activism_and_social_media",
 		"content": "The Egyptian revolution of 2011, also known as the January 25 Revolution. It started on 25 January 2011 and spread across Egypt. The date was set by various youth groups to coincide with the annual Egyptian \"Police holiday\" as a statement against increasing police brutality during the last few years of Mubarak's presidency. It consisted of demonstrations, marches, occupations of plazas, non-violent civil resistance, acts of civil disobedience and strikes. Since 25 January 2011, videos (including those of a badly-beaten Khaled Said, disproving police claims that he had choked to death), tweets and Facebook comments have kept the world abreast of the situation in Egypt. Amir Ali documents the ways in which social media was used by Egyptian activists, Egyptian celebrities and political figures abroad to fan the protests."
 	},
 	{
 		"start": "18/01/2012",
-		"end": "18/03/2012",
+		"_comment-end": "18/03/2012",
 		"title": "EFF helps killing SOPA/PIPA",
-		"readmore": "https://en.wikipedia.org/wiki/Egyptian_revolution_of_2011#Online_activism_and_social_media",
+		"readmores": "https://en.wikipedia.org/wiki/Egyptian_revolution_of_2011#Online_activism_and_social_media",
 		"content": "A series of bills promoted by Hollywood in the US Congress that would have a created a \"blacklist\" of censored websites. These bills were defeated by an enormous online campaign started by EFF and a handful of other organizations, which culminated in the Internet Blackout on the January 18, 2012."
 	},
 	{
 		"start": "15/07/2014",
-		"end": "15/09/2014",
+		"_comment-end": "15/09/2014",
 		"title": "Ice Bucket Challenge",
-		"readmore": "https://en.wikipedia.org/wiki/Ice_Bucket_Challenge",
+		"readmores": "https://en.wikipedia.org/wiki/Ice_Bucket_Challenge",
 		"content": "The Ice Bucket Challenge, sometimes called the ALS Ice Bucket Challenge, is an activity involving the dumping of a bucket of ice and water over a person's head, either by another person or self-administered, to promote awareness of the disease amyotrophic lateral sclerosis and encourage donations to research."
 	},
 	{
 		"start": "16/10/2017",
-		"end": "16/12/2017",
+		"_comment-end": "16/12/2017",
 		"title": "#MeToo movement",
-		"readmore": "https://en.wikipedia.org/wiki/Me_Too_movement",
+		"readmores": "https://en.wikipedia.org/wiki/Me_Too_movement",
 		"content": "The #MeToo movement, with a large variety of local and international alternative names, is a movement against sexual harassment and sexual assault. The movement began to spread virally in October 2017 as a hashtag on social media in an attempt to demonstrate the widespread prevalence of sexual assault and harassment, especially in the workplace. It followed sexual-abuse allegations against Harvey Weinstein. The original purpose of \"Me Too\" as used by Tarana Burke in 2006, was to empower women through empathy, especially young and vulnerable women. In October 2017, Alyssa Milano encouraged using the phrase as a hashtag to help reveal the extent of problems with sexual harassment and assault by showing how many people have experienced these events themselves."
 	}
 ]
