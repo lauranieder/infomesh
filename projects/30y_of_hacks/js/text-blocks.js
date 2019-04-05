@@ -76,9 +76,10 @@ function createBlock(data) {
   var legend = document.createElement("span");
   var legendStr = getTypeName(data.type);
   if (data.visualValue) {
-    legendStr += `: ${data.visualValue.toLocaleString(
-      "en-US"
-    )} ${data.visualValueSuffix.trim()}`;
+    var suffix = data.visualValueSuffix.trim();
+    var num = data.visualValue;
+    if (suffix === "%") num = Math.floor(num * 100);
+    legendStr += `: ${num.toLocaleString("en-US")} ${suffix}`;
   }
   legend.textContent = legendStr;
   legend.className = "vertical-center";

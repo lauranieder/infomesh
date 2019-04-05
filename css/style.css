@@ -185,7 +185,8 @@ nav svg{
 }
 
 #navigation{
-  max-width: 25vw;
+  width: 25vw;
+  height: 8rem; /*to check different styles*/
   padding:1rem;
   padding-bottom: 3rem;
   position: fixed;
@@ -564,6 +565,12 @@ iframe {
   .splashscreen-title,
   .click-to-start {
     font-size: 1em;
+  }
+}
+
+@media (max-width: 1200px){
+  h1, .font-large{
+    font-size: 1.5rem;
   }
 }
 
