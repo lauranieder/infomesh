@@ -80,13 +80,12 @@ function onNewBlock(event) {
     var s = sprites[i];
     // If a deathTime is set and it's over.
     if (s.deathTime > 0 && s.deathTime < now) {
-      console.log("Remove " + i);
       app.stage.removeChild(sprites[i].sprite);
       sprites.splice(i, 1);
       i -= 1;
     } else if (s.deathTime === 0) {
       // Send the old ones to their death;
-      s.deathTime = now + 1000;
+      s.deathTime = now + 2000;
       s.lissajousEnabled = false;
       if (event.detail.forward) {
         s.targetX = -(400 + s.sprite.width);
@@ -111,18 +110,30 @@ function createSprites(event) {
     var l10 = Math.log(data.visualValue) / Math.log(10);
     if (data.visualValue < 1) {
       // = percent data.
+      scale = map_range(data.visualValue, 0, 1, 0.2, 10);
     } else if (data.visualValue < 10) {
-      // = no data yet.
+      // = no data from this order yet.
     } else if (l10 < 7) {
-      scale = map_range(l10, 0, 7, 0.5, 6);
+      scale = map_range(l10, 0, 7, 0.5, 8);
     } else if (l10 >= 7 && l10 < 9) {
-      count = map_range(l10, 7, 9, 2, 10);
+      count = Math.floor(map_range(l10, 7, 9, 2, 10));
+      scale = map_range(l10, 7, 9, 0.5, 3);
     } else if (l10 > 9) {
-      scale = 8;
+      scale = 20;
     }
+  } else {
+    scale = 2;
   }
 
+  // Smaller scale for mobile
+  var isMobile = $(document.body).hasClass("mobile");
+  if (isMobile) {
+    scale /= 2;
+  }
+
+  // Create all the blobs for this new event
   for (var i = 0; i < count; i += 1) {
+    // Create a new sprite.
     var s = new PIXI.Sprite(resources[data.type].texture);
     s.anchor.set(0.5);
     s.x = event.detail.forward ? VW + s.width + 300 : -s.width - 300;
@@ -133,16 +144,15 @@ function createSprites(event) {
       targetScale: scale
     });
 
-    if (!data.visualValue) {
-      sData.lissajousEnabled = true;
-      sData.lissajousA = 1 + Math.random() * 10;
-      sData.lissajousB = sData.lissajousA * Math.ceil(Math.random() * 4);
-      sData.lissajousProgress = Math.random();
-      sData.speedLissajous =
-        (Math.random() * 0.003 + 0.0003) / sData.lissajousA;
-      sData.lockOnTarget = false;
-    }
+    // Setup a random sin/cos lissajous motion path.
+    sData.lissajousEnabled = true;
+    sData.lissajousA = 1 + Math.random() * 10;
+    sData.lissajousB = sData.lissajousA * Math.ceil(Math.random() * 4);
+    sData.lissajousProgress = Math.random();
+    sData.speedLissajous = (Math.random() * 0.003 + 0.0003) / sData.lissajousA;
+    sData.lockOnTarget = false;
 
+    // Add to the app.
     app.stage.addChild(s);
     sprites.push(sData);
   }
