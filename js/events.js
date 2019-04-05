@@ -104,6 +104,7 @@ function formatDate(date){
 }
 
 function computeEvents() {
+  console.log("computeEvents");
   //getResponsive message
   timelineWidth = cellwidth * 31;
   /*if($('.timeline-cell').width() != null){
@@ -132,16 +133,20 @@ function computeEvents() {
     var endPosition = endTime * timelineWidth / totalTime;
     var width = endPosition - startPosition;
     var block = $('<div id="marker-' + index + '" class="event-marker ' + className + '" style="left:calc(50vw + '+startPosition+'vw);width:'+width+'vw;"></div>');
-
+    //console.log(block);
     $('#timeline-scrollable').prepend(block);
 
     if (item.wikifetch) {
       wikifetching(item.wikifetch, index);
     }
-    var containReadmore = item.readmore.match(/id='readmore'/g);
-    if(item.readmore != null && item.readmore != "" &&!containReadmore){
-      item.content += "<a target='_blank' id='readmore' href='"+item.readmore+"'>Read more</a>";
-    }
+    /*TO PUT BACK*/
+    console.log(item.readmore);
+
+      var containReadmore = item.readmore.match(/id='readmore'/g);
+      if(item.readmore != null && item.readmore != "" && !containReadmore){
+        item.content += "<a target='_blank' id='readmore' href='"+item.readmore+"'>Read more</a>";
+      }
+
     //TODO : regex to improve, replace link with target blank
     if(item.content){
       var temp = item.content;

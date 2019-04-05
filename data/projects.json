@@ -1,10 +1,10 @@
 [
     {
-      "student": "Sebastien Matos, Guillaume Simmen",
+      "student": "Sebastien Matos, Guillaume Simmen, Jonathan Boulenaz",
       "title": "Browser Landscape",
       "slug": "browserlandscape",
       "text": "This timeline shows the evolution of the aesthetics of web browsers, reinterpreting the different elements and assembling them as a city. ",
-      "style": "background-black"
+      "style": "background-white"
     },
     {
       "student": "Luca Sassoli De Bianchi",

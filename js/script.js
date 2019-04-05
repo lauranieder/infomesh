@@ -54,6 +54,7 @@ function toggleMenu(){
 }
 
 function init() {
+  console.log("init");
   $.getJSON('data/projects.json', function(data) {
     projectsData = data;
     loadProjectsPreview();
@@ -103,7 +104,10 @@ function loadProject(index, direction) {
   setTimeout(function() {
     $('.previous-iframe').addClass('move-' + direction);
     $('.current-iframe').removeClass('appear-' + direction);
-    $('.previous-iframe').get(0).contentWindow.postMessage({message: 'hideTimeline'}, '*');
+    if($('.previous-iframe').get(0) != null && $('.previous-iframe').get(0) != undefined){
+      $('.previous-iframe').get(0).contentWindow.postMessage({message: 'hideTimeline'}, '*');
+    }
+
     $('.current-iframe').get(0).contentWindow.postMessage({message: 'hideTimeline'}, '*');
 
 
@@ -111,7 +115,9 @@ function loadProject(index, direction) {
   }, 100); //100
 
   setTimeout(function() {
-    $('.previous-iframe').get(0).contentWindow.postMessage({message: 'showTimeline'}, '*');
+    if($('.previous-iframe').get(0) != null && $('.previous-iframe').get(0) != undefined){
+      $('.previous-iframe').get(0).contentWindow.postMessage({message: 'showTimeline'}, '*');
+    }
     $('.current-iframe').get(0).contentWindow.postMessage({message: 'showTimeline'}, '*');
     $('.previous-iframe').remove();
     $('#timeline-barre').css('transition','all 500ms cubic-bezier(0.23, 1, 0.32, 1)');
