@@ -19,6 +19,7 @@ wp-content/plugins/hello.php
 /.infomaniak-maintenance.html
 /.user.ini
 .DS_Store
+*.DS_Store
 .icon
 background.html
 img/motif.jpg
