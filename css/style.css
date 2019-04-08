@@ -136,8 +136,8 @@ nav a,
   opacity: 1;
 }
 
-.show-splashscreen .splashscreen-main-title h5.title-bold {
-  font-weight: 400;
+.splashscreen-main-title h5.title-bold {
+  font-weight: bold;
 }
 
 .show-splashscreen .splashscreen-main-title h5.enable-caret:after {
