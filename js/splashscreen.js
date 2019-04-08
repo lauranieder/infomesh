@@ -149,9 +149,9 @@
   }
 
   async function startSequence() {
-    highlight(true);
-    await wait(3000);
     if (!isRunning && isSplashscreenEnabled()) {
+      highlight(true);
+      await wait(3000);
       isRunning = true;
       await erase();
       await wait(100);
