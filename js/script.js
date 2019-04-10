@@ -40,12 +40,14 @@ function getProjectIdFromName(name) {
 function toggleInformation() {
   $('#container-side').toggleClass('reduced');
   var style = projectsData[currentProjectID].style;
-  $('#navigation').toggleClass(style); //alone
+
   $('#container-main').toggleClass('extended main');
   if($('#container-main').hasClass('extended')){
     $('.current-iframe').get(0).contentWindow.postMessage({message: 'isExtended', status: true}, '*');
+    $('#navigation').addClass(style); //alone
   }else{
     $('.current-iframe').get(0).contentWindow.postMessage({message: 'isExtended', status: false}, '*');
+    $('#navigation').removeClass(style);
   }
 }
 
@@ -186,7 +188,7 @@ $(document).ready(function() {
     if (!ignoreURLS) history.pushState({}, siteTitle , '/index');
   });
 
-  $('#button-up').on('click', function(e) {
+  $('.button-up').on('click', function(e) {
     e.preventDefault();
     var prevProject = currentProjectID - 1;
     if (prevProject < 0) prevProject = projectsData.length - 1;
@@ -194,7 +196,7 @@ $(document).ready(function() {
     gotoProject(prevProject, 'down');
   });
 
-  $('#button-down').on('click', function(e) {
+  $('.button-down').on('click', function(e) {
     e.preventDefault();
     var nextProject = currentProjectID + 1;
     if (nextProject == projectsData.length) nextProject = 0;

@@ -35,7 +35,10 @@
       <?php echo file_get_contents("css/UI/UIArrowLeftNav.svg"); ?>
     </nav>
     <nav-mobile>
-      <a href="#" id="button-menu" class="open">&lt;open menu&gt;</a>
+      <?php echo file_get_contents("css/UI/UIMobileArrowUp.svg"); ?>
+      <?php echo file_get_contents("css/UI/UIMobileArrowDown.svg"); ?>
+      <?php echo file_get_contents("css/UI/UIMobileBurger.svg"); ?>
+      <!--<a href="#" id="button-menu" class="open">&lt;open menu&gt;</a>-->
     </nav-mobile>
   </header>
   <div id=wrapper>

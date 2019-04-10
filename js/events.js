@@ -233,6 +233,7 @@ $(document).ready(function() {
 
   $(document).on('timeline-scroll', function(e) {
     var currentPopupIndex = -1;
+    console.log(e);
 
     $.each(events, function(index, item) {
       var startDate = moment(parseDate(item.start), 'DD/MM/YYYY');

@@ -250,10 +250,10 @@ nav svg{
   transform: rotate(180deg);
 }
 
-#button-up{
+nav .button-up{
   top:1rem;
 }
-#button-down{
+nav .button-down{
   /*bottom:3rem;*/
   top:6rem;
 }
@@ -652,17 +652,34 @@ iframe {
     position:fixed;
     height:6rem;
   }
+  /*container button*/
+  nav{
+    display:none;
+    visibility: hidden;
+  }
 
   nav-mobile{
     display:inline;
     visibility: visible;
+    position:absolute;
+    right:0rem;
+    top:0rem;
+    padding:1rem;
   }
 
-  nav-mobile #button-menu{
+  nav-mobile svg{
+    position:relative;
+    width:2rem;
+    stroke:black;
+    stroke-width:4px;
+  }
+
+
+  /*nav-mobile #button-menu{
     position:fixed;
     right:0;
     top:0;
-  }
+  }*/
 
   .side {
     width: 100%;
