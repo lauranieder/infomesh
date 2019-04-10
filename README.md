@@ -35,6 +35,23 @@
 - timeline déja la quand on ouvre le projet mais elle devrait slider avec
 - slider reload pas au bon endroit timelime
 
+### Mobile
+- Boutons navigations pas actifs
+- Intro splash screen, longueur de texte sur mobile. 
+- Fin de phrase qui freeze
+- Point ou pas point.
+- Source des phrases. 
+- Transitions (supprimer sur mobile)
+
+### Popup sur mobile
+- Recréer la div (supprimer et recréer)
+
+
+
+
+
+  
+
 ### Adapt student project
 #### worldwidemap
 - data dans la timeline s'affichent pas
@@ -47,6 +64,8 @@
 - loading des images ? Preloading trop long. Image qui saute avant de s'afficher.
 - ajuster les logos aux années
 - meilleures transitions entre les logos
+- mobile encore plus petit en basse def
+
 
 #### internet dictionnary
 - ~~taille du canvas / container-project ne fonctionne pas. Canvas se charge trop grand.~~
