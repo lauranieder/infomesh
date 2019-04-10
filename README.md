@@ -47,17 +47,26 @@
 - Recréer la div (supprimer et recréer)
 
 
+###Timeline
+- Evenement début de l'année envoie l'année d'avant !
+- Hightlight pas en bleu
 
-
+### Page-about
 
   
 
 ### Adapt student project
 #### worldwidemap
 - data dans la timeline s'affichent pas
+- enlever le mini tooltip en mobile
+- button pour changer les datas pas à la bonne place
+- dégradé diviser en 2 dans la hauteur
+- petit décalage en dessous
+- zoom de le carte (contain)
 
 #### browser landscape
-- 
+- enlever la ligne d'horizon
+- elements interactifs --> elements animés
 
 #### web influencer identity
 - même système que obsolete objects
@@ -75,6 +84,7 @@
 
 #### 30y_of_hacks.exe
 - les evenements ne sont pas tous aligné avec les points dans la timeline, certains ne s'ouvrent pas. Checker les timestamps
+- marge des popus en mobile
 
 #### Internet phenomena 
 - cadrage vertical/horizontal répétition grille
