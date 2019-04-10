@@ -2,31 +2,16 @@
 30 years of the web website during Summer University at swissnex SF
 
 ### General
-- Ajouter dynamiquement une variable début fin pour la durée de la timeline.
-- Gérer les événements qui sont hors du temps. 
-- ~~Animation de haut en bas --> panel. Single page ?~~
-- ~~Drag/drop de la timeline ?~~
-- enlever drag drop sur mobile
-- ~~Apparition du menu about sur la même page~~
-- ~~Lien dans la barre d'addresse --> infomes.ch/about  ou infomes.ch/worldwideweb~~
+- Lien dans la barre d'addresse à updater avec les nouveaux slug
 - Check SSL certificate (google block access from ipad chrome)
 
 ### Interface/css
-- ~~Ajout des flèches de navigation~~ Amélioration du jump d'évent en event. Clic sur l'événements et mouvement dynamique
-- ~~Centrer le curseur quand le panel est fermé~~
-- ~~Couleurs quand fond noir/fond blanc~~ (sur mobile pas bon)
-- ~~Up/down remplacer par des flèches~~
+- Amélioration du jump d'évent en event. Clic sur l'événements et mouvement dynamique. Fin ne retourne pas au début
 - Less information Resize timeline pas au bon endroit!
 - taille max des flèches de la timeline trop petites 
-- ~~mettre seulement 6 événements en largeur sur la timeline en version mobile.~~ 
-- Landing page
-- Popup ne s'highlight pas tjr en bleu
 - Design de la barre de navigation timeline pas beau avec les fade, améliorer les transitions css. 
-- ~~Titre dépasse du div à certaines Taille~~(just put a breakword)
-- Timeline bug à certaines tailles
 - Popup : hauteur max sinon scroll / regler pour ipad max width / remettre au centre sur mobile
 - ~~Améliorer le menu de navigation~~(selected sur projects devrais disparaître quand on ouvre un projet)
-- ~~Popup en bas dans la version mobile~~
 - Regex pour url readmore
 - <Project by> scaling
 - popup reduce doesn't work on iphone/ipad
@@ -36,20 +21,25 @@
 - slider reload pas au bon endroit timelime
 
 ### Mobile
+- Menu navigation.
 - Boutons navigations pas actifs
 - Intro splash screen, longueur de texte sur mobile. 
 - Fin de phrase qui freeze
 - Point ou pas point.
 - Source des phrases. 
 - Transitions (supprimer sur mobile)
+- Couleurs quand fond noir/fond blanc
 
 ### Popup sur mobile
 - Recréer la div (supprimer et recréer)
 
 
-###Timeline
+### Timeline
 - Evenement début de l'année envoie l'année d'avant !
-- Hightlight pas en bleu
+- Hightlight pas en bleu pour les événements au début
+- Enlever drag drop sur mobile
+- Ajouter dynamiquement une variable début fin pour la durée de la timeline.
+- Gérer les événements qui sont hors du temps. 
 
 ### Page-about
 
@@ -77,7 +67,6 @@
 
 
 #### internet dictionnary
-- ~~taille du canvas / container-project ne fonctionne pas. Canvas se charge trop grand.~~
 - version mobile, on ne comprends pas qu'on peut cliquer sur les mots, alors il faut mettre un tooltip. Ajouter un truc d'accueil.
 - mots trop petits en petite taille, changer la taille minimium pour la lecture.
 - animation des mots sur mobile.
