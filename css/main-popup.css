@@ -64,10 +64,12 @@
   width: 90%;
   max-width: 720px;
   min-height: 10px;
+  max-height:calc(100% - 8rem);
   background-color: white;
   border: 1px solid black;
   z-index: 100000;
   overflow: hidden;
+  overflow-y: scroll;
   opacity: 0;
   pointer-events: none;
   transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -96,10 +98,6 @@
   /*background-color: gray;*/
 }
 
-#popup #button-toggle-popup img{
-
-}
-
 #popup #button-toggle-popup {
   position:fixed;
   width:2rem;
@@ -108,7 +106,7 @@
 }
 
 #popup #button-toggle-popup .svgline{
-  stroke-width:2px;
+  stroke-width:4px;
 }
 
 #popup #button-toggle-popup:hover .svgline{
@@ -133,17 +131,36 @@
 
 /*@media only screen and (max-width: 992px) {*/
   .mobile #popup {
-    font-size:40px; /*32*/
+    font-size:15px; /*32*/
     line-height:1.4;
     width: calc(100% - 2rem);
     max-width: calc(100% - 2rem);
-    max-height: calc(100% - 14rem);
+    /*max-height: calc(100% - 14rem);*/
+
     overflow-y: scroll;
+    transform: translateX(-50%) translateY(-100%);
+    top: calc(100% - 7rem);
+    max-height:calc(100% - 14rem);
   }
 
   .mobile #popup.reduced {
-    max-height: 4rem;
+    /*max-height: 4rem;*/
     /*overflow-y: none;*/
+  }
+
+  .mobile h1, .mobile .font-large{
+    font-size: 2rem;
+  }
+
+  .mobile #popup #button-toggle-popup {
+    position:fixed;
+    width:2rem;
+    height:auto;
+    padding:1rem;
+  }
+
+  .mobile #popup-date, .mobile .reduced #popup-title{
+    padding-right:3rem;
   }
 
 /*}*/

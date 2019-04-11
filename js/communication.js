@@ -39,8 +39,25 @@ $(document).ready(function() {
 
     if (e.originalEvent.data.message == 'isMobile') {
       //$('#container-timeline').scrollLeft(e.originalEvent.data.position);
-      console.log("isMobile ");
+      //console.log("isMobile ");
       isMobileF(e.originalEvent.data.status);
+    }
+
+    if (e.originalEvent.data.message == 'isExtended') {
+      //$('#container-timeline').scrollLeft(e.originalEvent.data.position);
+      console.log("isExtended "+ e.originalEvent.data.status);
+      isExtendedF(e.originalEvent.data.status);
+    }
+
+    if (e.originalEvent.data.message == 'hideTimeline') {
+
+      $('#container-timeline').addClass('hidden');
+    }
+
+    if (e.originalEvent.data.message == 'showTimeline') {
+      console.log("show");
+      $('#container-timeline').removeClass('hidden');
+
     }
 
 

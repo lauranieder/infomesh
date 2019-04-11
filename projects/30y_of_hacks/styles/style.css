@@ -9,6 +9,8 @@
   width: 100%;
   background-color: black;
   font-family: "IBM Plex Mono", "Hack", monospace;
+  font-size: 18px;
+  line-height: 1.7;
   color: white;
 }
 
@@ -73,14 +75,17 @@ body > div.dg.ac {
   /* transform: translateY(100px); */
 }
 
-@media (max-width: 768px) {
-  .block-wrapper {
-    min-width: 92vw;
-  }
-  #container-textblocs {
-    left: 4vw;
-  }
+/* @media (max-width: 768px) { */
+body.mobile .block-wrapper {
+  min-width: 92vw;
 }
+
+body.mobile #container-textblocs {
+  left: 4vw;
+  font-size: 16px;
+}
+
+/* } */
 
 /* .currentHistoryWrapper {
   transition: transform 2s;
@@ -111,6 +116,21 @@ body > div.dg.ac {
   /* transition: border 0.6s; */
 }
 
+.block-stats {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.block-stats img {
+  width: 32px;
+  min-width: 32px;
+}
+
+.block-stats span {
+  padding-left: 12px;
+}
+
 .ancientHistory {
   opacity: 0;
   /* border: 0.5px blue solid; */
@@ -124,15 +144,12 @@ body > div.dg.ac {
 }
 
 .block-title {
-  font-size: 18px;
   font-weight: 700;
   /* text-transform: uppercase; */
   margin-bottom: 18px;
 }
 
 .block-description {
-  line-height: 1.7;
-  font-size: 18px;
   font-weight: 400;
   overflow-y: auto;
   padding-right: 12px;
@@ -140,8 +157,9 @@ body > div.dg.ac {
   transition: opacity 0.6s;
 }
 
-.futureHistory > .block-description {
-  opacity: 0;
+.futureHistory > .block-description,
+.futureHistory > .block-stats {
+  opacity: 0.1;
 }
 
 a {

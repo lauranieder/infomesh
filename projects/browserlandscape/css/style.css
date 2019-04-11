@@ -1,41 +1,3873 @@
-/*Improved styling by Laura to not break the rest of the website*/
-
-#container-project{
-  margin: 0;
-  background-color: black;
-  overflow: hidden;
-}
-.sharp {
-  image-rendering: pixelated;
-}
-.model {
-  position: absolute;
-  z-index: -10;
-  transition: top 1s, height 1s;
-}
-.model:hover {
-  top: 500px;
-}
-.hidden {
-  display: none;
+:root {
+    /*--p: 50;*/
 }
 
-#gradient {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  font-size: 100px;
-  font-family: 'VT323', monospace;
-  box-sizing: border-box;
-  padding: 50px 50px 50px 50px;
-  text-align: center;
-
-  background-color: black;
+#container-project {
+    margin: 0;
+    background-color: white;
+    overflow: hidden;
 }
+
+#container-project #groundTarget {
+    z-index: -1000;
+    position: absolute;
+    visibility: hidden;
+}
+
+#tooltip {
+    opacity: 0;
+    z-index: 200;
+    margin-left: 20px;
+    pointer-events: none;
+    position: absolute;
+    overflow: visible;
+    box-shadow: -1px 0 black;
+    transition: opacity 0.5s 0.3s;
+
+    max-width: 25vw;
+    overflow: visible;
+    font-size: 0.8em;
+    line-height: 1.4em;
+}
+
+#tooltip span {
+    padding: 2px 2px 2px 10px;
+    background: white;
+    white-space: pre-line;
+    display: inline-block;
+}
+
+#tooltip span::first-letter {
+
+    text-transform: capitalize;
+}
+
+#tooltip.show {
+    transition: none;
+    opacity: 1;
+}
+/*to come back after*/
 #ground {
-  z-index: -10;
-  position: absolute;
-  width: 10000px;
-  height: 1000px;
-  background-color: white;
+    position: absolute;
+    will-change: transform;
+    top: 25vw;
+    left: 0;
+    z-index: 0;
+    width: 150vw;
+    height: 200vh;
+    background: #0a8b3b; /*#F5F5F5*/
+}
+
+#container-project #models {
+    display: none;
+}
+
+#container-project .grow_h {
+    height: 0px !important;
+    padding: 0 !important;
+}
+
+#container-project .grow_w {
+    width: 0px !important;
+    padding: 0 !important;
+}
+
+#container-project * {
+    user-select: none;
+    -moz-user-select: none;
+    -ms-interpolation-mode: nearest-neighbor;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+}
+
+#container-project .notransition>* {
+    transition: none !important;
+}
+
+.preventgrow:not(.scroll):not(.thr) {
+    transition: none;
+}
+
+@keyframes loopY {
+    to {
+        background-position-y: 100%
+    }
+}
+
+@keyframes loopX {
+    to {
+        background-position-x: 100%
+    }
+}
+
+/*Commons*/
+
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+}
+
+._btn,
+._btn2,
+.ico,
+.thr,
+.scroll {
+    position: absolute;
+    overflow: hidden;
+    transition: height 0.3s steps(3), padding 0.3s steps(3);
+    transform-origin: center bottom;
+    filter: none;
+    box-sizing: border-box;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    position: absolute;
+
+    user-select: none;
+
+    -moz-user-select: none;
+    -ms-interpolation-mode: nearest-neighbor;
+    -ms-user-select: none;
+    -webkit-user-select: none
+}
+
+.scroll ._trk {
+    position: relative;
+    flex: 1 0 auto;
+    width: 100%;
+    height: 0;
+    flex-direction: column;
+    display: flex;
+}
+
+.scroll .prg {
+    flex: 0.5 0 auto;
+}
+
+.scroll .thb {
+    height: 50%;
+}
+
+
+/*Windows 3.0*/
+
+.w3.scroll {
+    background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2' height='2' viewBox='0 0 2 2' fill='silver'%3E%3Crect width='1' height='1' /%3E%3Crect x='1' y='1' width='1' height='1' /%3E%3C/svg%3E") 100% 0;
+    width: 17px;
+}
+
+.w3.scroll ._trk {
+    margin: -1px 0 -1px 0;
+}
+
+.w3.scroll .thb {
+    position: relative;
+    width: 17px;
+    height: 17px;
+    opacity: 1;
+}
+
+.w3.scroll .thb::after,
+.w3.scroll ._arr {
+    background: silver no-repeat -6px 5px;
+    box-shadow:
+        inset 0 0 0 1px black,
+        inset -2px -2px grey,
+        inset 2px 2px white,
+        inset -3px -3px grey;
+}
+
+.w3.scroll .thb:active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2' height='2' viewBox='0 0 2 2'%3E%3Crect fill='black' x='1' y='1' width='1' height='1' /%3E%3Crect fill='black' x='0' y='0' width='1' height='1' /%3E%3C/svg%3E");
+    background-position: inherit;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='17px' height='17px' viewBox='0 0 17 17'%3E%3Cpath d='M0,0v17h17V0H0z M16,16H1V1h15V16z'/%3E%3C/svg%3E%0A");
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='17px' height='17px' viewBox='0 0 17 17'%3E%3Cpath d='M0,0v17h17V0H0z M16,16H1V1h15V16z'/%3E%3C/svg%3E%0A");
+}
+
+.w3.scroll .thb::after {
+    content: '';
+    left: 0;
+    height: 100%;
+    position: absolute;
+    top: var(--p, 0);
+    width: 100%;
+    z-index: -1
+}
+
+.w3.scroll ._arr {
+    background-image: url("src/w3.png");
+    height: 17px;
+    width: 17px
+}
+
+.w3.scroll ._arr:first-of-type {
+    background-position: 5px 4px
+}
+
+.w3.scroll ._arr:active {
+    background-position: -5px 6px;
+    box-shadow:
+        inset 0 0 0 1px black,
+        inset 2px 2px 0 0 grey
+}
+
+.w3.scroll ._arr:active:first-of-type {
+    background-position: 6px 5px
+}
+
+
+/*Windows 95*/
+
+.w95.scroll ._trk {
+    background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2' height='2' viewBox='0 0 2 2' fill='silver' %3E%3Crect width='1' height='1' /%3E%3Crect x='1' y='1' width='1' height='1' /%3E%3C/svg%3E");
+    position: relative
+}
+
+.w95.scroll .thb {
+    background: silver;
+    width: 16px;
+    min-height: 8px
+}
+
+.w95.scroll .thb,
+.w95.scroll ._arr {
+    box-shadow:
+        inset -1px -1px black,
+        inset 1px 1px silver,
+        inset -2px -2px gray,
+        inset 2px 2px white;
+}
+
+.w95.scroll ._arr {
+    background: silver url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' shape-rendering='optimizeSpeed' x='0px' y='0px' width='16px' height='16px' viewBox='0 0 16 16'%3E%3Cpolygon points='4,7 4,6 11,6 11,7 10,7 10,8 9,8 9,9 8,9 8,10 7,10 7,9 6,9 6,8 5,8 5,7'/%3E%3C/svg%3E");
+    width: 16px;
+    position: relative;
+    height: 16px;
+    z-index: 2
+}
+
+.w95.scroll ._arr:first-of-type {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' shape-rendering='optimizeSpeed' x='0px' y='0px' width='16px' height='16px' viewBox='0 0 16 16'%3E%3Cpolygon points='11,9 11,10 4,10 4,9 5,9 5,8 6,8 6,7 7,7 7,6 8,6 8,7 9,7 9,8 10,8 10,9'/%3E%3C/svg%3E");
+}
+
+.w95.scroll ._arr:active {
+    background-position: 1px 1px;
+    box-shadow: inset 0 0 0 1px gray
+}
+
+/*windows XP*/
+
+.xp.scroll {
+    background: url(src/xp.svg);
+}
+
+.xp.scroll .thb {
+    background:
+        url(src/xp.svg) repeat-x -118px 0,
+        url(src/xp.svg) repeat-x -169px 100%,
+        url(src/xp.svg) repeat-x -220px 50%,
+        url(src/xp.svg) -16px 0;
+    min-height: 7px;
+    width: 17px
+}
+
+.xp.scroll .thb:hover {
+    background-position-x: -135px, -186px, -232px, -33px
+}
+
+.xp.scroll .thb:active {
+    background-position-x: -152px, -203px, -244px, -50px
+}
+
+.xp.scroll ._arr {
+    background: url(src/xp.svg) no-repeat -257px 6px, url(src/xp.svg) -67px 0;
+    height: 17px;
+    width: 17px
+}
+
+.xp.scroll ._arr:first-of-type {
+    background-position-y: -6px, 0
+}
+
+.xp.scroll ._arr:hover {
+    background-position-x: -257px, -84px
+}
+
+.xp.scroll ._arr:active {
+    background-position-x: -257px, -101px
+}
+
+/*Windows XP, Luna Silver theme*/
+
+.xps.scroll {
+    background: url(src/xps.svg);
+}
+
+.xps.scroll .thb {
+    background:
+        url(src/xps.svg) repeat-x -119px 0,
+        url(src/xps.svg) repeat-x -170px 100%,
+        url(src/xps.svg) repeat-x -221px 50%,
+        url(src/xps.svg) -17px 0;
+    width: 17px;
+    min-height: 7px
+}
+
+.xps.scroll .thb:hover {
+    background-position-x: -136px, -187px, -233px, -34px
+}
+
+.xps.scroll .thb:active {
+    background-position-x: -153px, -204px, -245px, -51px
+}
+
+.xps.scroll ._arr {
+    background: url(src/xps.svg) no-repeat -258px 6px, url(src/xps.svg) -68px 0;
+    height: 17px;
+    width: 17px
+}
+
+.xps.scroll ._arr:first-of-type {
+    background-position-y: -6px, 0
+}
+
+.xps.scroll ._arr:hover {
+    background-position-x: -258px, -85px
+}
+
+.xps.scroll ._arr:active {
+    background-position-x: -271px, -102px
+}
+
+/*vista*/
+
+.vista.scroll {
+    background:
+        url(src/vista.svg) no-repeat -252px -6px,
+        url(src/vista.svg) no-repeat -252px calc(100% + 7px),
+        url(src/vista.svg) -48px;
+    padding: 1px 0 1px 0
+}
+
+.vista.scroll ._trk {
+    position: relative;
+    z-index: 1
+}
+
+.vista.scroll .thb {
+    position: relative;
+    background: url(src/vista.svg) repeat-x -65px 0,
+        url(src/vista.svg) repeat-x -81px 100%,
+        url(src/vista.svg) repeat-x -161px 50%,
+        url(src/vista.svg) repeat-y 1px;
+
+    width: 17px;
+    transition: 0.4s background-image
+}
+
+.vista.scroll .thb::after {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 100%;
+    opacity: 0;
+    transition: 0.4s opacity;
+    background: inherit;
+    background-position-x: -97px, -113px, -174px, -15px;
+}
+
+.vista.scroll .thb:hover::after {
+    opacity: 1;
+}
+
+.vista.scroll .thb:active::after {
+    opacity: 1;
+    transition-duration: 0s;
+    background-position-x: -129px, -145px, -187px, -31px;
+}
+
+.vista.scroll ._arr {
+    background: url(src/vista.svg) no-repeat -252px 6px, url(src/vista.svg) no-repeat -203px -1px;
+    opacity: 0;
+    width: 17px;
+    position: relative;
+    transition: 0.4s opacity;
+    height: 16px;
+}
+
+.vista.scroll:hover ._arr,
+.vista.scroll:active ._arr,
+.vista.scroll ._arr:hover::after {
+    opacity: 1;
+}
+
+.vista.scroll ._arr:first-of-type {
+    background-position-y: -7px, -1px;
+}
+
+
+.vista.scroll ._arr::after {
+    background: inherit;
+    background-position-x: -265px, -219px;
+    content: '';
+    height: 16px;
+    opacity: 0;
+    position: absolute;
+    transition: inherit;
+    width: 17px;
+}
+
+.vista.scroll ._arr:active::after {
+    background-position-x: -278px, -235px;
+    opacity: 1;
+    transition-duration: 0s;
+}
+
+/*Windows 10*/
+.w10.scroll {
+    background: #F0F0F0;
+    border-right: 1px solid #F0F0F0;
+    border-left: 1px solid white;
+    box-sizing: border-box;
+    width: 17px;
+}
+
+.w10.scroll .thb {
+    background: #CDCDCD;
+    width: 15px;
+    transition: 1s background
+}
+
+.w10.scroll .thb:hover {
+    background: #A6A6A6;
+    transition-duration: 0.5s
+}
+
+.w10.scroll .thb:active {
+    background: #A6A6A6;
+    box-shadow: inset 15px 0 #606060
+}
+
+.w10.scroll ._arr {
+    background: none;
+    height: 17px;
+    position: relative;
+    transition: 1s background;
+    width: 15px;
+}
+
+.w10.scroll ._arr:hover:active {
+    background: #CDCDCD;
+    box-shadow: inset 15px 0 #606060
+}
+
+.w10.scroll ._arr:hover:not(:active) {
+    background: #CDCDCD;
+    transition-duration: 0.5s
+}
+
+.w10.scroll ._arr::after {
+    background: #606060;
+    content: "";
+    height: 17px;
+    mask: url(src/w10.svg);
+    position: absolute;
+    width: 15px;
+    -webkit-mask: url(src/w10.svg)
+}
+
+.w10.scroll ._arr:first-of-type::after {
+    transform: rotate(180deg)
+}
+
+.w10.scroll ._arr:hover:active::after {
+    background: white
+}
+
+/*NextStep*/
+
+.ns.scroll {
+    background: #AAAAAA;
+    padding: 1px;
+    width: 18px
+}
+
+.ns.scroll ._arr {
+    background: #AAAAAA url(src/ns.png) no-repeat 3px 3px;
+    box-shadow:
+        inset -1px -1px black,
+        inset 1px 1px white,
+        inset -2px -2px #555555;
+    height: 16px;
+    width: 16px
+}
+
+.ns.scroll ._arr:first-of-type {
+    background-position-x: -8px;
+    margin: 1px 0 1px 0
+}
+
+.ns.scroll ._trk {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2' height='2' viewBox='0 0 2 2' fill='%23555555'%3E%3Crect width='1' height='1' /%3E%3Crect x='1' y='1' width='1' height='1' /%3E%3C/svg%3E");
+    order: -1
+}
+
+.ns.scroll ._arr:active {
+    background-color: white;
+    box-shadow:
+        inset -1px -1px #555555,
+        inset 1px 1px white,
+        inset -2px -2px #AAAAAA,
+        inset 0 0 0 8px rgba(255, 255, 255, 0.335)
+}
+
+.ns.scroll .thb {
+    background: #AAAAAA url(src/ns.png) no-repeat -19px 50%;
+    box-shadow:
+        inset -1px -1px black,
+        inset 1px 1px white,
+        inset -2px -2px #555555;
+    min-height: 16px;
+    width: 16px
+}
+
+/*Mac OS 7, pre*/
+
+.mac7.scroll {
+    width: 16px;
+    background: #DDDDDD;
+    position: relative
+}
+
+.mac7.scroll ._trk {
+    background: url("src/mac7b.svg") 0 1px;
+    box-shadow:
+        inset 1px 0 black,
+        inset -1px 0 black;
+}
+
+.mac7.scroll .thb {
+    height: 16px;
+    margin-left: 1px;
+    position: relative;
+    width: 14px;
+}
+
+.mac7.scroll .thb::before,
+.mac7.scroll .thb::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow:
+        inset 0 0 0 1px black;
+}
+
+.mac7.scroll .thb::after {
+    background: #AAAAAA url(src/mac7a.svg) 4px 50%;
+    box-shadow:
+        inset 0 1px #555555,
+        inset -1px -1px #333366,
+        inset 1px 2px #CCCCFF;
+    top: var(--p, 0);
+    z-index: 1
+}
+
+.mac7.scroll ._arr {
+    background: #DDDDDD url(src/mac7a.svg) no-repeat 2px -23px;
+    box-shadow: inset 0 0 0 1px black,
+        inset -2px -2px #777777,
+        inset 2px 2px #FFFFFF;
+    height: 16px;
+    position: relative;
+    width: 16px;
+    z-index: 2
+}
+
+.mac7.scroll ._arr:first-of-type {
+    background-position-y: 3px
+}
+
+.mac7.scroll ._arr:active {
+    background-position-x: -10px
+}
+
+/*Mac OS 9*/
+
+.mac9.scroll ._trk {
+    background: #aaaaaa;
+    order: -1;
+    width: 16px;
+    box-shadow:
+        inset 0 0 0 1px black,
+        inset -2px 0 #CCCCCC,
+        inset 2px 2px #777777,
+        inset -3px 0 #BBBBBB,
+        inset 3px 3px #888888
+}
+
+.mac9.scroll .thb {
+    background: url(src/mac9_.svg) no-repeat -8px 50%,
+        url(src/mac9_.svg) repeat-x -98px -14px,
+        url(src/mac9_.svg) repeat-x -113px 100%,
+        url(src/mac9.svg) -23px;
+
+    box-shadow:
+        0 3px 0 -2px #777777,
+        0 5px 0 -3px #888888;
+    width: 16px;
+
+    min-height: 16px
+}
+
+.mac9.scroll .thb:active {
+    background-position-x: 4px, -128px, -83px, -38px
+}
+
+.mac9.scroll ._arr {
+    background: url(src/mac9_.svg) no-repeat -98px 1px, url(src/mac9_.svg) -53px 0;
+    height: 16px;
+    width: 16px;
+    z-index: 3
+}
+
+.mac9.scroll ._arr:first-of-type {
+    background-position-x: -128px, -53px;
+    margin: -1px 0 -1px 0;
+}
+
+.mac9.scroll ._arr:active {
+    background-position-x: -98px, -68px
+}
+
+
+.mac9.scroll ._arr:active:first-of-type {
+    background-position-x: -128px, -68px
+}
+
+/*Mac OS X 10.0 Cheetah*/
+.mac10.scroll {
+    background: url(src/mac10a.svg) repeat-x -15px 100%, url(src/mac10a.svg) repeat-x -30px 0, url(src/mac10a.svg);
+}
+
+.mac10.scroll ._arr {
+    width: 15px;
+    height: 24px;
+    background: url(src/mac10a.svg) repeat-y -15px 100%;
+}
+
+.mac10.scroll ._arr:first-of-type {
+    background-position: -30px 0;
+}
+
+.mac10.scroll ._arr:active {
+    background-position-x: -45px;
+}
+
+.mac10.scroll ._trk {
+    margin: -9px 0 -9px 0;
+}
+
+.mac10.scroll .thb {
+    height: 34%;
+    width: 15px;
+    border: 0 solid;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-image: url(src/mac10b.png) 10 0;
+    position: relative;
+    background-position: -60px 0;
+}
+
+.mac10.scroll .thb::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(src/mac10a.svg) repeat-y;
+    background-position: inherit;
+}
+
+/*Mac OS X 10.0 Yosemite*/
+.osx10.scroll {
+    width: 16px
+}
+
+.osx10.scroll ._arr {
+    display: none;
+}
+
+.osx10.scroll ._trk {
+    background: rgba(250, 250, 250, 0.75);
+    box-shadow: inset 2px 0 1px -2px rgba(0, 0, 0, 0.28), inset -1px 0 1px -2px black;
+    padding: 2px 0 2px 3px;
+    box-sizing: border-box;
+}
+
+.osx10.scroll .thb {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 22px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
+    width: 11px;
+    opacity: 0;
+    transition: opacity 0.1s 0.25s
+}
+
+.osx10.scroll:hover .thb,
+.osx10.scroll:active .thb {
+    opacity: 1;
+    transition-delay: 0s
+}
+
+
+/*Browsers*/
+
+/*World Wide Web Netscape*/
+.www.ns.ico {
+    width: 58px;
+    height: 48px;
+    background-image: url(src/www_ns_ico.png);
+}
+
+/*Internet explorer 1.0-2.0 Windows 95*/
+.mos3.w95._btn,
+.ie1.w95._btn,
+.ie2.w95._btn {
+    width: 23px;
+    height: 22px;
+    background: silver;
+    position: relative;
+    box-shadow:
+        inset -1px -1px black,
+        inset 1px 1px white,
+        inset -2px -2px gray;
+}
+
+.mos3.w95._btn::after,
+.ie1.w95._btn::after,
+.ie2.w95._btn::after {
+    content: '';
+    background: url(src/ie1_w95_btn.png) no-repeat;
+    background-position: inherit;
+    top: 3px;
+    left: 3px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+}
+
+.mos3.w95._btn:not(.false):hover:active,
+.ie1.w95._btn:not(.false):hover:active,
+.ie2.w95._btn:not(.false):hover:active {
+    box-shadow:
+        inset -1px -1px white,
+        inset 1px 1px black,
+        inset -2px -2px silver,
+        inset 2px 2px gray;
+}
+
+.mos3.w95._btn:not(.false):hover:active::after,
+.ie1.w95._btn:not(.false):hover:active::after,
+.ie2.w95._btn:not(.false):hover:active::after {
+    top: 4px;
+    left: 4px
+}
+
+.ie1.w95._btn.false::after,
+.ie2.w95._btn.false::after {
+    background-position-y: -16px;
+    filter: drop-shadow(1px 1px 0 white);
+}
+
+.ie1.w95._btn.prev {
+    background-position-x: 0
+}
+
+.ie1.w95._btn.next {
+    background-position-x: -16px
+}
+
+.ie1.w95._btn.stop {
+    background-position-x: -32px
+}
+
+.ie1.w95._btn.home {
+    background-position-x: -48px
+}
+
+.ie1.w95._btn.refr {
+    background-position-x: -64px
+}
+
+.ie1.w95._btn.addfav {
+    background-position-x: -80px
+}
+
+.ie1.w95._btn.fav {
+    background-position-x: -96px
+}
+
+.ie1.w95._btn.zin {
+    background-position-x: -112px
+}
+
+.ie1.w95._btn.zout {
+    background-position-x: -128px
+}
+
+.ie1.w95._btn.open {
+    background-position-x: -144px
+}
+
+.ie1.w95._btn.cut {
+    background-position-x: -160px
+}
+
+.ie1.w95._btn.copy {
+    background-position-x: -176px
+}
+
+.ie1.w95._btn.paste {
+    background-position-x: -192px
+}
+
+.ie1.w95.thr {
+    background-origin: padding-box;
+    background: url(src/ie1_w95_thr.png) no-repeat 0 2px;
+    box-shadow:
+        inset -1px -1px white,
+        inset 1px 1px gray,
+        inset -2px -2px #DFDFDF,
+        inset 2px 2px black;
+    box-sizing: border-box;
+    height: 53px;
+    padding-top: 20px;
+    width: 53px;
+}
+
+.ie1.w95.thr.anim {
+    animation: 1.5s loopX steps(17, start) infinite;
+}
+
+/*Internet Explorer 2.0, Windows 95*/
+
+.ie2.w95._btn::after {
+    background-image: url(src/ie2_w95_btn.png)
+}
+
+.ie2.w95._btn.srch {
+    background-position-x: 0
+}
+
+.ie2.w95._btn.prnt {
+    background-position-x: -16px
+}
+
+.ie2.w95._btn.mail {
+    background-position-x: -32px
+}
+
+.ie2.w95._btn.news {
+    background-position-x: -48px
+}
+
+/*Mosaic 3.0 Windows 95*/
+.mos3.w95._btn::after {
+    background-image: url(src/mos3_w95_btn.png)
+}
+
+.mos3.w95._btn.open {
+    background-position-x: 0
+}
+
+.mos3.w95._btn.save {
+    background-position-x: -16px
+}
+
+.mos3.w95._btn.prnt {
+    background-position-x: -32px
+}
+
+.mos3.w95._btn.prev {
+    background-position-x: -48px
+}
+
+.mos3.w95._btn.copy {
+    background-position-x: -64px
+}
+
+.mos3.w95._btn.paste {
+    background-position-x: -80px
+}
+
+.mos3.w95._btn.find {
+    background-position-x: -96px
+}
+
+.mos3.w95._btn.findcache {
+    background-position-x: -112px
+}
+
+.mos3.w95._btn.showmanager {
+    background-position-x: -128px
+}
+
+.mos3.w95._btn.help {
+    background-position-x: -144px
+}
+
+.mos3.w95._btn.prev {
+    background-position-x: -158px
+}
+
+.mos3.w95._btn.next {
+    background-position-x: -174px
+}
+
+.mos3.w95._btn.cache {
+    background-position-x: -191px
+}
+
+.mos3.w95._btn.refr {
+    background-position-x: -207px
+}
+
+.mos3.w95._btn.home {
+    background-position-x: -223px
+}
+
+.mos3.w95._btn.stop {
+    background-position-x: -239px
+}
+
+.mos3.w95._btn.news {
+    background-position-x: -255px
+}
+
+.mos3.w95._btn.mail {
+    background-position-x: -271px
+}
+
+.mos3.w95._btn.addfav {
+    background-position-x: -287px
+}
+
+.mos3.w95._btn.go,
+.mos3.w95._btn.clear {
+    width: 22px;
+    background-position-x: -304px;
+    box-shadow: inset 0 0 0 1px black,
+        inset 2px 2px white,
+        inset -2px -2px gray;
+}
+
+.mos3.w95._btn.go:not(.false):hover:active,
+.mos3.w95._btn.clear:not(.false):hover:active {
+    box-shadow: inset 0 0 0 1px black,
+        inset 2px 2px gray;
+}
+
+.mos3.w95._btn.false::after {
+    background-position-y: -16px
+}
+
+.mos3.w95._btn.clear {
+    background-position-x: -320px
+}
+
+.mos3.w95.thr {
+    background: url(src/mos3_w95_thr.png) no-repeat;
+    box-shadow:
+        inset -1px -1px white,
+        inset 1px 1px gray;
+    height: 64px;
+    width: 64px;
+}
+
+.mos3.w95.thr:active {
+    background-color: #C0C0C0;
+    background-position: 5px 5px;
+    background-size: 1375px 55px;
+}
+
+.mos3.w95.thr.anim:not(:active) {
+    background-position-x: 64px;
+    animation: 1.5s loopX steps(25, start) infinite;
+}
+
+/*Mosaic 1.0, Windows 95*/
+
+.mos1.w3._btn {
+    background: silver;
+    position: relative;
+    box-shadow:
+        inset -1px -1px gray,
+        inset 1px 1px white,
+        inset -2px -2px gray,
+        1px 0 black, 0 1px black, -1px 0 black, 0 -1px black;
+    height: 20px;
+    width: 22px;
+}
+
+.mos1.w3._btn::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    top: 2px;
+    left: 2px;
+    background: url(src/mos1_w3_btn.png) no-repeat 0 0;
+    background-position: inherit;
+}
+
+.mos1.w3._btn:not(.false):hover:active {
+    box-shadow:
+        inset 1px 1px gray,
+        1px 0 black, 0 1px black, -1px 0 black, 0 -1px black
+}
+
+.mos1.w3._btn.false::after {
+    filter: drop-shadow(1px 1px white);
+    background-position-y: -15px;
+}
+
+.mos1.w3._btn:not(.false):hover:active::after {
+    left: 3px;
+    top: 3px
+}
+
+.mos1.w3._btn.open {
+    background-position-x: 0
+}
+
+.mos1.w3._btn.save {
+    background-position-x: -16px
+}
+
+.mos1.w3._btn.prev {
+    background-position-x: -32px
+}
+
+.mos1.w3._btn.next {
+    background-position-x: -48px
+}
+
+.mos1.w3._btn.refr {
+    background-position-x: -64px
+}
+
+.mos1.w3._btn.home {
+    background-position-x: -80px
+}
+
+.mos1.w3._btn.copy {
+    background-position-x: -96px
+}
+
+.mos1.w3._btn.paste {
+    background-position-x: -112px
+}
+
+.mos1.w3._btn.find {
+    background-position-x: -128px
+}
+
+.mos1.w3._btn.prnt {
+    background-position-x: -144px
+}
+
+.mos1.w3._btn.help {
+    background-position-x: -160px
+}
+
+.mos1.w3.thr {
+    background: silver url(src/mos1_w3_thr.png) no-repeat;
+    box-shadow:
+        inset 0 0 0 1px black,
+        inset -2px -2px gray,
+        inset 3px 3px white;
+    height: 66px;
+    width: 66px;
+}
+
+.mos1.w3.thr:active {
+    box-shadow: inset 0 0 0 1px black;
+}
+
+.mos1.w3.thr.anim:active {
+    animation: 2.6s loopX steps(26, start) infinite, 0.05s mos1 steps(1) forwards
+}
+
+@keyframes mos1 {
+    to {
+        box-shadow:
+            inset 0 0 0 1px black,
+            inset -2px -2px gray,
+            inset 3px 3px white;
+    }
+}
+
+.mos1.w3.thr.anim {
+    animation: 2.6s loopX steps(26, start) infinite;
+    background-position-x: 66px
+}
+
+/*Mosaic 1.0, Mac OS 7*/
+
+.mos2.mac7._btn,
+.mos1.mac7._btn {
+    background: url(src/mos1-2_mac7_btn.png) no-repeat;
+    height: 26px;
+    width: 30px;
+}
+
+.mos2.mac7._btn:not(.false):hover:active,
+.mos1.mac7._btn:not(.false):hover:active {
+    background-position-y: -25px
+}
+
+.mos2.mac7._btn.false,
+.mos1.mac7._btn.false {
+    background-position-y: -51px
+}
+
+.mos1.mac7._btn.prev {
+    background-position-x: 0
+}
+
+.mos1.mac7._btn.next {
+    background-position-x: -29px
+}
+
+.mos1.mac7._btn.home {
+    background-position-x: -58px
+}
+
+.mos1.mac7.thr {
+    width: 32px;
+    height: 32px;
+    background: #EEEEEE url(src/mos1_mac7_thr.png) no-repeat;
+}
+
+.mos1.mac7.thr.anim {
+    background-position-x: 32px;
+    animation: 0.2s loopX steps(14, start) infinite;
+}
+
+.mos2.mac7._btn.save {
+    background-position-x: -87px
+}
+
+.mos2.mac7._btn.refr {
+    background-position-x: -116px
+}
+
+/*Internet Explorer 3.0, Windows 95*/
+.ie3.w95.thr {
+    box-shadow:
+        inset -1px 0 gray,
+        inset 1px 1px white,
+        inset -1px -1px gray;
+    height: 42px;
+    position: relative;
+    width: 43px
+}
+
+.ie3.w95.thr::after {
+    background: url(src/ie3_w95_thr.png) no-repeat;
+    content: '';
+    height: 38px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    width: 38px
+}
+
+.ie3.w95.thr.anim::after {
+    animation: 8.4s loopY steps(42, start) infinite;
+    background-position-y: -114px
+}
+
+.ie3.w95._btn {
+    height: 20px;
+    width: 30px;
+    background: url(src/ie3_w95_btn.png) no-repeat;
+    width: 30px;
+}
+
+.ie3.w95._btn:not(.false):hover {
+    background-position-y: -20px
+}
+
+.ie3.w95._btn.false {
+    background-position-y: -40px;
+    filter: drop-shadow(1px 1px 0 white)
+}
+
+.ie3.w95._btn:not(.false):active:hover {
+    margin: -1px 0 0 1px;
+}
+
+.ie3.w95._btn.prev {
+    background-position-x: 0
+}
+
+.ie3.w95._btn.next {
+    background-position-x: -30px
+}
+
+.ie3.w95._btn.stop {
+    background-position-x: -60px
+}
+
+.ie3.w95._btn.refr {
+    background-position-x: -90px
+}
+
+.ie3.w95._btn.home {
+    background-position-x: -120px
+}
+
+.ie3.w95._btn.srch {
+    background-position-x: -150px
+}
+
+.ie3.w95._btn.fav {
+    background-position-x: -180px
+}
+
+.ie3.w95._btn.prnt {
+    background-position-x: -210px
+}
+
+.ie3.w95._btn.zin {
+    background-position-x: -240px
+}
+
+.ie3.w95._btn.pen {
+    background-position-x: -270px
+}
+
+.ie3.w95._btn.setts {
+    background-position-x: -300px
+}
+
+.ie3.w95._btn.mail {
+    background-position-x: -390px
+}
+
+/*Internet Explorer 5.0 Windows 95*/
+
+.ie4.w95.thr,
+.ie5.w95.thr {
+    box-shadow:
+        inset -1px 0 gray,
+        inset 1px 1px white,
+        inset -1px -1px gray;
+    height: 24px;
+    position: relative;
+    width: 40px;
+    background: black;
+}
+
+.ie4.w95.thr::after,
+.ie5.w95.thr::after {
+    content: '';
+    top: 1px;
+    left: 9px;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    background: black url(src/ie4_w95_thr.png) no-repeat;
+}
+
+.ie5.w95.thr::after {
+    background-image: url(src/ie5_w95_thr.png);
+}
+
+.ie5.w95.thr.anim::after {
+    animation: 3s loopY steps(41, start) infinite;
+    background-position-y: 22px
+}
+
+.ie4.w95.thr.anim::after {
+    animation: 3s loopY steps(42, start) infinite;
+    background-position-y: -66px
+}
+
+.ie4.w95._btn {
+    height: 20px;
+    position: relative;
+    width: 30px;
+    background: url(src/ie4_w95_btn.png) no-repeat;
+}
+
+.ie4.w95._btn:not(.false):hover {
+    background-position-y: -20px
+}
+
+.ie4.w95._btn.false {
+    background-position-y: -40px;
+    filter: drop-shadow(1px 1px 0 white)
+}
+
+.ie4.w95._btn:not(.false):active:hover {
+    margin: -1px 0 0 1px
+}
+
+.ie4.w95._btn.prev {
+    background-position-x: 0
+}
+
+.ie4.w95._btn.next {
+    background-position-x: -30px
+}
+
+.ie4.w95._btn.stop {
+    background-position-x: -60px
+}
+
+.ie4.w95._btn.refr {
+    background-position-x: -90px
+}
+
+.ie4.w95._btn.home {
+    background-position-x: -120px
+}
+
+.ie4.w95._btn.srch {
+    background-position-x: -150px
+}
+
+.ie4.w95._btn.fav {
+    background-position-x: -180px
+}
+
+.ie4.w95._btn.prnt {
+    background-position-x: -210px
+}
+
+.ie4.w95._btn.zin {
+    background-position-x: -240px
+}
+
+.ie4.w95._btn.hist {
+    background-position-x: -270px
+}
+
+.ie4.w95._btn.fscr {
+    background-position-x: -300px
+}
+
+.ie4.w95._btn.discus {
+    background-position-x: -330px
+}
+
+.ie4.w95._btn.mail {
+    background-position-x: -360px
+}
+
+.ie4.w95._btn.pen {
+    background-position-x: -390px
+}
+
+.ie4.w95._btn.setts {
+    background-position-x: -420px
+}
+
+.ie4.w95._btn.music {
+    background-position-x: -450px
+}
+
+.ie4.w95._btn.chan {
+    background-position-x: -480px
+}
+
+/*Internet Explorer 5.0 Mac OS 9*/
+
+.ie5.mac9.thr {
+    background: url(src/ie5_mac9_thr.png);
+    width: 40px;
+    height: 40px;
+}
+
+.ie5.mac9.thr.anim {
+    background-position-y: 40px;
+    animation: 1.5s loopY steps(42, end) infinite;
+}
+
+
+.ie5.mac9._btn {
+    background: url(src/ie5_mac9_btn.png) 60px;
+    width: 30px;
+    height: 22px
+}
+
+.ie5.mac9._btn.prev {
+    background-position-y: 0
+}
+
+.ie5.mac9._btn.next {
+    background-position-y: -22px
+}
+
+.ie5.mac9._btn.stop {
+    background-position-y: -44px
+}
+
+.ie5.mac9._btn.refr {
+    background-position-y: -66px
+}
+
+.ie5.mac9._btn.home {
+    background-position-y: 88px
+}
+
+.ie5.mac9._btn.mail {
+    background-position-y: 22px
+}
+
+.ie5.mac9._btn.prnt {
+    background-position-y: 44px
+}
+
+.ie5.mac9._btn.pen {
+    background-position-y: 66px
+}
+
+.ie5.mac9._btn:hover {
+    background-position-x: 0
+}
+
+.ie5.mac9._btn:active {
+    background-position-x: 90px
+}
+
+.ie5.mac9._btn.false {
+    background-position-x: 30px
+}
+
+/*Internet explorer 6.0 Windows XP*/
+.ie6.xp.thr {
+    width: 38px;
+    height: 23px;
+    box-shadow: inset 0 -1px #D9D2BD;
+    background: white;
+    position: relative;
+}
+
+.ie6.xp.thr::after {
+    content: '';
+    background: url(src/ie6_xp_thr.png);
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 22px;
+    height: 22px;
+}
+
+.ie6.xp.thr.anim::after {
+    animation: 2s loopY steps(50, end) infinite;
+    background-position-y: 22px
+}
+
+.ie6.xp._btn {
+    width: 24px;
+    height: 24px;
+    background: url(src/ie6_xp_btn.png) no-repeat;
+    position: absolute;
+}
+
+.ie6.xp._btn:not(.false):hover {
+    background-position-y: -24px;
+}
+
+.ie6.xp._btn:not(.false):hover:active {
+    margin: -1px 0 0 1px;
+}
+
+.ie6.xp._btn.false {
+    background-position-y: -48px
+}
+
+.ie6.xp._btn.prev {
+    background-position-x: 0
+}
+
+.ie6.xp._btn.next {
+    background-position-x: -24px
+}
+
+.ie6.xp._btn.stop {
+    background-position-x: -48px
+}
+
+.ie6.xp._btn.refr {
+    background-position-x: -72px
+}
+
+.ie6.xp._btn.home {
+    background-position-x: -96px
+}
+
+.ie6.xp._btn.srch {
+    background-position-x: -120px
+}
+
+.ie6.xp._btn.fav {
+    background-position-x: -144px
+}
+
+.ie6.xp._btn.prnt {
+    background-position-x: -168px
+}
+
+.ie6.xp._btn.zin {
+    background-position-x: -192px
+}
+
+.ie6.xp._btn.pen {
+    background-position-x: -216px
+}
+
+.ie6.xp._btn.setts {
+    background-position-x: -240px
+}
+
+.ie6.xp._btn.hist {
+    background-position-x: -264px
+}
+
+.ie6.xp._btn.music {
+    background-position-x: -288px
+}
+
+.ie6.xp._btn.mail {
+    background-position-x: -312px
+}
+
+.ie6.xp._btn.fscr {
+    background-position-x: -336px
+}
+
+.ie6.xp._btn.discus {
+    background-position-x: -360px
+}
+
+/*Internet explorer 7.0 Windows XP*/
+
+.ie7.xp._btn {
+    width: 16px;
+    height: 16px;
+    background: url(src/ie7_xp-vista_btn_b.png) no-repeat;
+}
+
+.ie7.xp._btn.b {
+    width: 22px;
+    height: 22px;
+    background: url(src/ie7_xp-vista_btn.png) no-repeat;
+}
+
+.ie7.xp._btn.b.prev {
+    width: 25px;
+    height: 25px;
+    background-position-x: 0
+}
+
+.ie7.xp._btn.b.next {
+    width: 25px;
+    height: 25px;
+    background-position-x: -25px
+}
+
+.ie7.xp._btn:not(.b):hover:active {
+    margin: -1px 0 0 1px;
+}
+
+.ie7.xp._btn.b:not(.false):hover {
+    background-position-y: -25px
+}
+
+.ie7.xp._btn.b:not(.false):hover:active {
+    background-position-y: -50px
+}
+
+.ie7.xp._btn.b.false {
+    background-position-y: -75px
+}
+
+.ie7.xp._btn.addfav {
+    background-position-x: -64px
+}
+
+.ie7.xp._btn.fav {
+    background-position-x: 0
+}
+
+.ie7.xp._btn.fscr {
+    background-position-x: -256px
+}
+
+.ie7.xp._btn.go {
+    background-position-x: -50px
+}
+
+.ie7.xp._btn.home {
+    background-position-x: -144px
+}
+
+.ie7.xp._btn.mail {
+    background-position-x: -304px
+}
+
+.ie7.xp._btn.pen {
+    background-position-x: -96px
+}
+
+.ie7.xp._btn.prnt {
+    background-position-x: -80px
+}
+
+.ie7.xp._btn.refr {
+    background-position-x: -92px
+}
+
+.ie7.xp._btn.setts {
+    background-position-x: -112px
+}
+
+.ie7.xp._btn.stop {
+    background-position-x: -71px
+}
+
+.ie7.xp._btn.zin {
+    background-position-x: -272px
+}
+
+.ie7.xp._btn2 {
+    width: 35px;
+    height: 22px;
+    display: flex;
+    position: relative;
+}
+
+.ie7.xp._btn2.srch * {
+    width: 22px;
+    height: 22px;
+    background: url(src/ie7_xp-vista_btn.png) no-repeat;
+    background-position-x: -113px
+}
+
+.ie7.xp._btn2.srch :last-child {
+    width: 13px;
+    background-position-x: -135px
+}
+
+.ie7.xp._btn2.srch :hover {
+    background-position-y: -25px
+}
+
+.ie7.xp._btn2.srch :last-child:hover {
+    width: 14px;
+    margin-left: -1px;
+    background-position-x: -134px
+}
+
+.ie7.xp._btn2.srch :hover:active {
+    background-position-y: -50px
+}
+
+/*Internet explorer 7.0 Windows vista*/
+
+.ie7.vista._btn {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background: url(src/ie7_xp-vista_btn.png) no-repeat;
+}
+
+.ie7.vista._btn {
+    width: 26px;
+    height: 26px;
+}
+
+.ie7.vista._btn:not(.false)::after {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    content: '';
+    opacity: 0;
+    background: inherit;
+    background-position-y: -25px;
+    transition: opacity 0.5s;
+}
+
+.ie7.vista._btn:hover::after,
+.ie7.vista._btn:hover:active::after {
+    opacity: 1;
+}
+
+.ie7.vista._btn:hover:active::after {
+    transition-duration: 0s;
+    background-position-y: -50px
+}
+
+.ie7.vista._btn.stop {
+    background-position-x: -161px
+}
+
+.ie7.vista._btn.go {
+    background-position-x: -186px
+}
+
+.ie7.vista._btn.srch {
+    background-position-x: -211px
+}
+
+.ie7.vista._btn.refr {
+    background-position-x: -236px
+}
+
+
+/*Internet Explorer 9.0 Windows 8*/
+/*Internet Explorer 10.0 Windows 8*/
+/*Internet Explorer 11.0 Windows 8*/
+
+
+.ie9.w7._btn,
+.ie10.w8._btn,
+.ie11.w8._btn {
+    width: 16px;
+    height: 16px;
+    background: url(src/ie9_w7__btn_a.png) no-repeat;
+}
+
+.ie9.w7._btn.b,
+.ie10.w8._btn.b,
+.ie11.w8._btn.b {
+    background-image: url(src/ie9_w7__btn_b.png);
+    width: 38px;
+    height: 34px;
+}
+
+.ie10.w8._btn,
+.ie11.w8._btn {
+    background-image: url(src/ie10_w8__btn_a.png)
+}
+
+.ie10.w8._btn.b,
+.ie11.w8._btn.b {
+    background-image: url(src/ie10_w8__btn_b.png)
+}
+
+.ie9.w7._btn::after,
+.ie10.w8._btn::after,
+.ie11.w8._btn::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    background-position-y: -16px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.ie9.w7._btn.b::after,
+.ie10.w8._btn.b::after,
+.ie11.w8._btn.b::after {
+    background-position-y: -34px;
+}
+
+.ie9.w7._btn:not(.false):hover::after,
+.ie10.w8._btn:not(.false):hover::after,
+.ie11.w8._btn:not(.false):hover::after {
+    opacity: 1;
+}
+
+.ie9.w7._btn:hover:active::after,
+.ie10.w8._btn:hover:active::after,
+.ie11.w8._btn:hover:active::after {
+    background-position-y: -32px
+}
+
+.ie9.w7._btn.b:not(.false):hover:active::after,
+.ie10.w8._btn.b:not(.false):hover:active::after,
+.ie11.w8._btn.b:not(.false):hover:active::after {
+    background-position-y: -68px;
+}
+
+.ie9.w7._btn.b.false,
+.ie10.w8._btn.b.false,
+.ie11.w8._btn.b.false {
+    background-position-y: -102px;
+}
+
+.ie9.w7._btn.srch,
+.ie10.w8._btn.srch {
+    background-position-x: 0
+}
+
+.ie9.w7._btn.go,
+.ie10.w8._btn.go {
+    background-position-x: -16px
+}
+
+.ie9.w7._btn.stop,
+.ie10.w8._btn.stop {
+    background-position-x: -32px
+}
+
+.ie9.w7._btn.refr,
+.ie10.w8._btn.refr {
+    background-position-x: -48px
+}
+
+.ie9.w7._btn.fav,
+.ie10.w8._btn.fav {
+    width: 17px;
+    background-position-x: -209px
+}
+
+.ie9.w7._btn.prefs,
+.ie10.w8._btn.prefs {
+    background-position-x: -227px
+}
+
+.ie9.w7._btn.home,
+.ie10.w8._btn.home {
+    background-position-x: -192px
+}
+
+.ie9.w7._btn.b.next,
+.ie10.w8._btn.b.next {
+    width: 26px;
+    height: 32px;
+    background-position-x: -39px;
+}
+
+.ie9.w7._btn.b.prev,
+.ie10.w8._btn.b.prev {
+    background-position-x: 0;
+}
+
+.ie11.w8._btn.smile {
+    background-position-x: -243px;
+}
+
+/*Microsoft Edge Windows 10*/
+.me.w10._btn {
+    width: 44px;
+    height: 44px;
+    background: #F0F0F0;
+    transition: 1s background-color
+}
+
+.me.w10._btn:not(.check):not(.c):not(.false):hover {
+    background-color: #DCDCDC;
+    transition-duration: 0.5s
+}
+
+.me.w10._btn:not(.check):not(.c):not(.false):hover:active {
+    box-shadow: inset 44px 0 #C4C4C4
+}
+
+.me.w10._btn::after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    content: '';
+    top: 12px;
+    left: 12px;
+    background: url(src/me_w10__btn.svg) no-repeat;
+    background-size: 20px 340px;
+    background-position: inherit;
+}
+
+
+.me.w10._btn.check.a::after,
+.me.w10._btn.check.b:not(.false):hover::after {
+    filter: invert(30%) sepia(100%) hue-rotate(165deg) saturate(5);
+    box-shadow: 0 42px 0 12px black;
+}
+
+.me.w10._btn.check.b::after {
+    box-shadow: 0 42px 0 12px black;
+    filter: invert(25%) sepia(100%) hue-rotate(165deg) saturate(5);
+}
+
+.me.w10._btn.check.b:not(.false):active:hover::after {
+    filter: invert(35%) sepia(100%) hue-rotate(165deg) saturate(5);
+}
+
+.me.w10._btn.c:not(.false):hover::after,
+.me.w10._btn.c.check::after {
+    filter: invert(30%) sepia(100%) hue-rotate(20deg) saturate(70);
+}
+
+.me.w10._btn.c:not(.false):active:hover::after {
+    filter: invert(30%) sepia(100%) hue-rotate(20deg) saturate(30);
+}
+
+.me.w10._btn.false::after {
+    opacity: 0.5;
+}
+
+.me.w10._btn.c.check::after {
+    box-shadow: none;
+    background-position-y: -320px;
+}
+
+.me.w10._btn.home {
+    background-position-y: 0
+}
+
+.me.w10._btn.next {
+    background-position-y: -20px
+}
+
+.me.w10._btn.prev {
+    background-position-y: -40px
+}
+
+.me.w10._btn.addfav {
+    background-position-y: -60px
+}
+
+.me.w10._btn.refr {
+    background-position-y: -80px
+}
+
+.me.w10._btn.dwl {
+    background-position-y: -100px
+}
+
+.me.w10._btn.share {
+    background-position-y: -120px
+}
+
+.me.w10._btn.more {
+    background-position-y: -140px
+}
+
+.me.w10._btn.hist {
+    background-position-y: -160px
+}
+
+.me.w10._btn.hub {
+    background-position-y: -180px
+}
+
+.me.w10._btn.book {
+    background-position-y: -220px
+}
+
+.me.w10._btn.pen {
+    background-position-y: -240px
+}
+
+.me.w10._btn.stop {
+    background-position-y: -260px
+}
+
+.me.w10._btn.list {
+    background-position-y: -280px
+}
+
+.me.w10._btn.fav {
+    background-position-y: -300px
+}
+
+/*Netscape 1.0 Windows 95*/
+
+.nsc0.w3._btn {
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.nsc0.w3._btn::after {
+    content: '';
+    background: url(src/nsc0-1_w3_btn.png) no-repeat;
+    background-position: inherit;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.nsc0.w3._btn:not(.false):hover:active::after {
+    top: 1px;
+    left: 1px;
+}
+
+.nsc0.w3._btn.false {
+    background-position-y: -20px;
+    filter: drop-shadow(1px 1px 0 white);
+}
+
+.nsc0.w3._btn.prev {
+    background-position-x: 0;
+}
+
+
+.nsc0.w3._btn.home {
+    background-position-x: -20px;
+}
+
+
+.nsc0.w3._btn.next {
+    background-position-x: -40px;
+}
+
+.nsc0.w3._btn.refr {
+    background-position-x: -60px;
+}
+
+.nsc0.w3._btn.img {
+    background-position-x: -80px;
+}
+
+.nsc0.w3._btn.open {
+    background-position-x: -100px;
+}
+
+.nsc0.w3._btn.prnt {
+    background-position-x: -120px;
+}
+
+.nsc0.w3._btn.find {
+    background-position-x: -140px;
+}
+
+.nsc0.w3._btn.stop {
+    background-position-x: -160px;
+}
+
+.nsc0.w3.thr {
+    width: 60px;
+    height: 60px;
+    background: silver url(src/nsc0_w3_thr.png) no-repeat;
+}
+
+.nsc0.w3.thr.anim {
+    background-position-x: 60px;
+    animation: 2s loopX steps(19, start) infinite;
+}
+
+.nsc0.w3.thr.anim:active {
+    animation-play-state: paused;
+}
+
+.nsc1.w3.thr {
+    width: 60px;
+    height: 60px;
+    background: url(src/nsc1_w3_thr.png) no-repeat;
+}
+
+.nsc1.w3.thr.anim {
+    background-position-x: 60px;
+    animation: 3s loopX steps(7, start) alternate infinite;
+}
+
+/*Netscape 0.95 Mac OS 9*/
+.nsc0.mac7.thr {
+    width: 36px;
+    height: 36px;
+    background: silver;
+    box-shadow:
+        inset 1px 1px white,
+        inset -1px -1px black,
+        inset 2px 2px white,
+        inset -2px 0 black;
+    position: relative;
+}
+
+.nsc0.mac7.thr.anim {
+    background-position-x: 30px;
+    animation: 1s loopX steps(7, start) alternate infinite;
+}
+
+.nsc0.mac7.thr::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 30px;
+    height: 30px;
+    background: #CCCCCC url(src/nsc0_mac7_thr.gif) no-repeat;
+    background-position: inherit;
+}
+
+.nsc0.mac7.thr:hover:active {
+    animation-play-state: paused;
+    box-shadow:
+        inset -1px 0 white,
+        inset 1px 1px black,
+        inset 2px 2px white,
+        inset 0 -1px white,
+        inset -2px 0 black
+}
+
+.nsc0.mac7.thr:hover:active::after {
+    top: 4px;
+    left: 4px;
+}
+
+/*Netscape 2.0 Windows 95*/
+.nsc2.w95.thr {
+    background: silver;
+    box-shadow: inset -1px -1px white, inset 1px 1px black;
+    height: 51px;
+    width: 51px;
+}
+
+.nsc2.w95.thr:hover:active {
+    animation-play-state: paused;
+}
+
+.nsc2.w95.thr::after {
+    content: '';
+    top: 1px;
+    left: 1px;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: url(src/nsc2-3_thr.png) no-repeat;
+    background-position: inherit;
+}
+
+.nsc2.w95.thr.anim {
+    animation: 3s loopX steps(20, start) infinite;
+}
+
+.nsc2.w95._btn,
+.nsc3.w95._btn {
+    background: url(src/nsc2-3__btn.png) no-repeat;
+    width: 18px;
+    height: 18px;
+}
+
+.nsc2.w95._btn:not(.false):hover:active,
+.nsc3.w95._btn:not(.false):hover:active {
+    margin: -1px 0 0 1px
+}
+
+.nsc2.w95._btn.false,
+.nsc3.w95._btn.false {
+    filter: drop-shadow(1px 1px white);
+    background-position-y: -18px;
+}
+
+.nsc2.w95._btn.prev {
+    background-position-x: 0
+}
+
+.nsc2.w95._btn.next {
+    background-position-x: -21px
+}
+
+.nsc2.w95._btn.home {
+    background-position-x: -41px
+}
+
+.nsc2.w95._btn.refr {
+    background-position-x: -82px
+}
+
+.nsc2.w95._btn.img {
+    background-position-x: -101px
+}
+
+.nsc2.w95._btn.open {
+    background-position-x: -121px
+}
+
+.nsc2.w95._btn.prnt {
+    background-position-x: -141px
+}
+
+.nsc2.w95._btn.find {
+    background-position-x: -161px
+}
+
+.nsc2.w95._btn.stop {
+    background-position-x: -182px
+}
+
+.nsc3.w95._btn.pen {
+    background-position-x: -61px
+}
+
+
+/*Netscape 4.0 Windows 95*/
+.nsc4.w95.thr {
+    background: silver;
+    box-shadow: inset -1px -1px black, inset 1px 1px white, inset -2px -2px gray;
+    height: 36px;
+    width: 36px;
+}
+
+.nsc4.w95.thr:hover:active {
+    animation-play-state: paused;
+    background-color: gray;
+    box-shadow: inset -1px -1px white, inset 1px 1px black, inset -2px -2px silver;
+}
+
+.nsc4.w95.thr::after {
+    content: '';
+    top: 2px;
+    left: 2px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: url(src/nsc4_thr.png) no-repeat;
+    background-position: inherit;
+}
+
+.nsc4.w95.thr.anim {
+    animation: 3s loopX steps(19, start) infinite;
+}
+
+/*Netscape 6.0 Windows 98*/
+.nsc6.w98.thr {
+    background: url(src/nsc6_w98_thr_b.png) no-repeat;
+    /*box-shadow: inset -1px -1px black, inset 1px 1px white, inset -2px -2px gray;*/
+    height: 34px;
+    width: 34px;
+}
+
+.nsc6.w98.thr:hover:active::after {
+    animation-play-state: paused;
+}
+
+.nsc6.w98.thr::after {
+    content: '';
+    top: 2px;
+    left: 2px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url(src/nsc6_w98_thr.png) no-repeat;
+}
+
+.nsc6.w98.thr.anim::after {
+    background-position-x: 30px;
+    animation: 3s loopX steps(43, end) infinite;
+}
+
+/*Netscape 7.0 Windows 98*/
+.nsc7.xp.thr {
+    background: url(src/nsc7_xp_thr.png) no-repeat;
+    height: 38px;
+    width: 38px;
+}
+
+.nsc7.xp.thr:hover:active {
+    animation-play-state: paused;
+}
+
+.nsc7.xp.thr.anim {
+    animation: 3s loopX steps(44, start) infinite;
+}
+
+/*Safari 1 Mac OS 10.3*/
+
+.sf1.mac10._btn {
+    width: 28px;
+    height: 25px;
+    background: url(src/sf1_mac10_btn.png) no-repeat
+}
+
+.sf1.mac10._btn:hover:active {
+    background-position-y: -25px
+}
+
+.sf1.mac10._btn:not(.bug):not(.book).false {
+    background-position-y: -50px
+}
+
+.sf1.mac10._btn.prev {
+    width: 27px;
+    background-position-x: 0
+}
+
+.sf1.mac10._btn.next {
+    width: 27px;
+    background-position-x: -26px
+}
+
+.sf1.mac10._btn.home {
+    background-position-x: -52px
+}
+
+.sf1.mac10._btn.refr {
+    background-position-x: -79px
+}
+
+.sf1.mac10._btn.stop {
+    background-position-x: -106px
+}
+
+.sf1.mac10._btn.zout {
+    width: 27px;
+    background-position-x: -133px
+}
+
+.sf1.mac10._btn.zin {
+    width: 27px;
+    background-position-x: -159px
+}
+
+.sf1.mac10._btn.addfav {
+    background-position-x: -185px
+}
+
+.sf1.mac10._btn.pen {
+    background-position-x: -212px
+}
+
+.sf1.mac10._btn.bug {
+    background-position-x: -239px
+}
+
+.sf1.mac10._btn.book {
+    background-position-x: -267px;
+    height: 17px;
+    width: 35px
+}
+
+.sf1.mac10._btn.book:hover:active {
+    background-position-y: -19px
+}
+
+.sf1.mac10._btn.book.check {
+    background-position-y: -38px
+}
+
+.sf1.mac10._btn.book.check:hover:active {
+    background-position-y: -57px
+}
+
+/*Safari 3 osx5 */
+.sf3.osx5._btn {
+    background: url(src/sf3-4_osx5_btn.png) no-repeat;
+    height: 23px;
+    width: 28px
+}
+
+.sf3.osx5._btn:not(.false):hover:active {
+    background-position-y: -23px
+}
+
+.sf3.osx5._btn.false.a {
+    background-position-y: -46px
+}
+
+.sf3.osx5._btn.prev {
+    background-position-x: 0;
+    width: 27px
+}
+
+.sf3.osx5._btn.next {
+    background-position-x: -26px;
+    width: 27px
+}
+
+.sf3.osx5._btn.home {
+    background-position-x: -52px
+}
+
+.sf3.osx5._btn.refr {
+    background-position-x: -79px
+}
+
+.sf3.osx5._btn.stop {
+    background-position-x: -106px
+}
+
+.sf3.osx5._btn.zout {
+    background-position-x: -133px;
+    width: 27px
+}
+
+.sf3.osx5._btn.zin {
+    background-position-x: -159px;
+    width: 27px
+}
+
+.sf3.osx5._btn.addfav {
+    background-position-x: -185px;
+    width: 27px
+}
+
+.sf3.osx5._btn.addfav2 {
+    background-position-x: -212px
+}
+
+.sf3.osx5._btn.pen {
+    background-position-x: -239px
+}
+
+.sf3.osx5._btn.bug {
+    background-position-x: -266px
+}
+
+.sf3.osx5._btn.insp {
+    background-position-x: -293px
+}
+
+.sf3.osx5._btn.hist {
+    background-position-x: -320px
+}
+
+.sf3.osx5._btn.dwl {
+    background-position-x: -347px
+}
+
+.sf3.osx5._btn.a.book {
+    background-position-x: -374px
+}
+
+.sf3.osx5._btn.mail {
+    background-position-x: -401px
+}
+
+.sf3.osx5._btn.prnt {
+    background-position-x: -428px
+}
+
+.sf3.osx5._btn.showfav {
+    background-position-x: -455px
+}
+
+.sf3.osx5._btn.addtab {
+    background-position-x: -482px
+}
+
+.sf3.osx5._btn.fav {
+    background-position-x: -509px
+}
+
+.sf3.osx5._btn.b {
+    height: 17px;
+    width: 29px
+}
+
+.sf3.osx5._btn.b.book {
+    background-position-x: -595px
+}
+
+.sf3.osx5._btn.b.book.check {
+    background-position-x: -624px
+}
+
+.sf3.osx5._btn.lockbook {
+    background-position-x: -537px
+}
+
+.sf3.osx5._btn.lockbook.check {
+    background-position-x: -566px
+}
+
+.sf3.osx5._btn.b.fav {
+    background-position-x: -653px
+}
+
+.sf3.osx5._btn.rss {
+    width: 27px;
+    background-position-x: -682px
+}
+
+.sf3.osx5._btn.rss.check {
+    background-position-x: -709px
+}
+
+.sf3.osx5._btn.srch {
+    width: 18px;
+    background-position-x: -736px
+}
+
+.sf3.osx5._btn.b:hover {
+    background-position-y: -46px
+}
+
+/*Safari 4 Mac OS 10.5*/
+
+.sf4.osx5._btn {
+    background: url(src/sf3-4_osx5_btn.png) no-repeat;
+    height: 12px;
+    width: 10px
+}
+
+.sf4.osx5._btn:not(.false):hover:active {
+    background-position-y: -23px
+}
+
+.sf4.osx5._btn.refr {
+    background-position-x: -754px
+}
+
+.sf4.osx5._btn.stop {
+    background-position-x: -764px
+}
+
+/*Safari 6 Mac OS 10.5*/
+
+.sf6.osx8.a._btn {
+    background: url(src/sf6_osx8_btn.png) no-repeat;
+    background-size: 82px 46px;
+    height: 23px;
+    width: 28px;
+    position: relative;
+}
+
+.sf6.osx8._btn.a.false::after {
+    opacity: 0.5;
+}
+
+.sf6.osx8._btn.a:not(.false):hover:active {
+    background-position-y: -23px
+}
+
+.sf6.osx8.b._btn {
+    background: url(src/sf6_osx8_btn.svg) 50% -264px no-repeat;
+    height: 15px;
+    width: 32px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.sf6.osx8.b._btn:hover,
+.sf6.osx8.b._btn.check {
+    filter: invert(100%);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.sf6.osx8.b._btn:hover:active,
+.sf6.osx8.b._btn.check {
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.sf6.osx8.b._btn.check:hover:active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.sf6.osx8.c._btn {
+    background: url(src/sf6_osx8_btn.svg) 50% -241px no-repeat;
+    height: 12px;
+    width: 12px;
+    opacity: 0.54;
+}
+
+.sf6.osx8.c._btn:active:hover {
+    opacity: 1;
+}
+
+.sf6.osx8._btn.a::after {
+    position: absolute;
+    background: url(src/sf6_osx8_btn.svg) 50% 4px no-repeat;
+    top: 1px;
+    height: 19px;
+    width: 100%;
+    content: '';
+}
+
+.sf6.osx8._btn.showfav::after {
+    background-position-y: 4px
+}
+
+.sf6.osx8._btn.a.book::after {
+    background-position-y: -13px
+}
+
+.sf6.osx8._btn.icloud::after {
+    background-position-y: -31px
+}
+
+.sf6.osx8._btn.dwl::after {
+    background-position-y: -49px
+}
+
+.sf6.osx8._btn.mail::after {
+    background-position-y: -67px
+}
+
+.sf6.osx8._btn.hist::after {
+    background-position-y: -84px
+}
+
+.sf6.osx8._btn.home::after {
+    background-position-y: -102px
+}
+
+.sf6.osx8._btn.addtab::after {
+    background-position-y: -120px
+}
+
+.sf6.osx8._btn.a.fav::after {
+    background-position-y: -137px
+}
+
+.sf6.osx8._btn.insp::after {
+    background-position-y: -153px
+}
+
+.sf6.osx8._btn.prev::after {
+    background-position-y: -187px
+}
+
+.sf6.osx8._btn.prev {
+    width: 24px;
+    background-position-x: -28px
+}
+
+.sf6.osx8._btn.next::after {
+    background-position-y: -171px
+}
+
+.sf6.osx8._btn.next {
+    width: 25px;
+    background-position-x: -58px
+}
+
+.sf6.osx8._btn.share::after {
+    background-position-y: -204px
+}
+
+.sf6.osx8._btn.addfav::after {
+    background-position-y: -220px
+}
+
+.sf6.osx8._btn.addfav {
+    width: 30px;
+    background-position-x: -27px
+}
+
+.sf6.osx8._btn.refr {
+    background-position-y: -241px;
+}
+
+.sf6.osx8._btn.stop {
+    background-position-y: -253px;
+}
+
+.sf6.osx8._btn.b.book {
+    background-position-y: -16px;
+}
+
+.sf6.osx8._btn.glass {
+    background-position-y: -266px;
+}
+
+.sf6.osx8._btn.b.fav {
+    background-position-y: -280px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .sf6.osx8._btn.a {
+        background: url(src/sf6_osx8_btn@2x.png) no-repeat;
+        background-size: 83px 46px
+    }
+
+    .sf6.osx8._btn.prev {
+        background-position-x: -27.5px
+    }
+
+    .sf6.osx8._btn.next {
+        background-position-x: -57.5px
+    }
+
+    .sf6.osx8._btn.addfav {
+        background-position-x: -27.5px
+    }
+}
+
+/*Safari 8 Mac OS 10.10*/
+
+.sf8.osx10._btn {
+    width: 38px;
+    height: 23px;
+}
+
+.sf8.osx10._btn:not(.stop):not(.refr)::before {
+    position: absolute;
+    content: '';
+    width: 200%;
+    height: 200%;
+    transform: scale3d(0.5, 0.5, 1);
+    transform-origin: top left;
+    background: linear-gradient(0, #f2f2f2, #f6f6f6);
+    box-shadow: 0 1px rgba(0, 0, 0, 0.055), inset 0 -1px #ADABAD, inset 0 0 0 1px #D0CFD0;
+    border-radius: 9px;
+}
+
+.sf8.osx10._btn:not(.stop):not(.refr):not(.false):hover:active::before {
+    background: linear-gradient(0, #D4D3D4, #E6E6E6);
+    box-shadow: 0 1px rgba(0, 0, 0, 0.055), inset 0 -1px #A5A3A5, inset 0 0 0 1px #D1CFD1, inset 0 2px 1px #F1F1F1;
+}
+
+.sf8.osx10._btn:hover:active::after {
+    opacity: 0.66;
+}
+
+.sf8.osx10._btn::after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(src/sf8_osx10_btn.svg) no-repeat 50%;
+    background-position-y: inherit;
+    opacity: 0.543;
+    content: '';
+}
+
+.sf8.osx10._btn.dash {
+    background-position-y: 3px
+}
+
+.sf8.osx10._btn.hist {
+    background-position-y: -17px
+}
+
+.sf8.osx10._btn.insp {
+    background-position-y: -36px
+}
+
+.sf8.osx10._btn.mail {
+    background-position-y: -55px
+}
+
+.sf8.osx10._btn.setts {
+    background-position-y: -76px
+}
+
+.sf8.osx10._btn.share {
+    background-position-y: -97px
+}
+
+.sf8.osx10._btn.home {
+    background-position-y: -117px
+}
+
+.sf8.osx10._btn.showfav {
+    background-position-y: -136px
+}
+
+.sf8.osx10._btn.showbar {
+    background-position-y: -154px
+}
+
+.sf8.osx10._btn.prev {
+    width: 27px;
+    background-position-y: -172px
+}
+
+.sf8.osx10._btn.next {
+    width: 25px;
+    background-position-y: -190px
+}
+
+.sf8.osx10._btn.autocomp {
+    background-position-y: -208px
+}
+
+.sf8.osx10._btn.prnt {
+    background-position-y: -226px
+}
+
+.sf8.osx10._btn.tabs {
+    background-position-y: -246px
+}
+
+.sf8.osx10._btn.icloud {
+    background-position-y: -264px
+}
+
+.sf8.osx10._btn.fav {
+    background-position-y: -282px
+}
+
+.sf8.osx10._btn.refr {
+    background-position-y: -301px
+}
+
+.sf8.osx10._btn.stop {
+    background-position-y: -319px
+}
+
+.sf8.osx10._btn.zout {
+    width: 26px;
+    border-radius: 9px 0 0 9px;
+    background-position-y: -355px
+}
+
+.sf8.osx10._btn.zin {
+    width: 26px;
+    border-radius: 0 9px 9px 0;
+    background-position-y: -337px
+}
+
+.sf8.osx10._btn.refr:hover::after,
+.sf8.osx10._btn.stop:hover::after {
+    opacity: 0.66
+}
+
+.sf8.osx10._btn.refr:hover:active::after,
+.sf8.osx10._btn.stop:hover:active::after {
+    opacity: 1
+}
+
+.sf8.osx10._btn.refr.false::after {
+    opacity: 0.25 !important
+}
+
+.op1.w3._btn {
+    background: silver;
+    position: relative;
+    box-shadow:
+        inset -1px -1px gray,
+        inset 1px 1px white,
+        inset -2px -2px gray,
+        1px 0 black, 0 1px black, -1px 0 black, 0 -1px black;
+    height: 20px;
+    width: 22px;
+}
+
+.op1.w3._btn::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 2px;
+    background: url(src/op1_w3__btn.png) no-repeat 0 0;
+    background-position: inherit;
+}
+
+.op1.w3._btn:not(.false):hover:active {
+    box-shadow:
+        inset 1px 1px gray,
+        1px 0 black, 0 1px black, -1px 0 black, 0 -1px black
+}
+
+.op1.w3._btn.false::after {
+    filter: drop-shadow(1px 1px white);
+    background-position-y: -16px;
+}
+
+.op1.w3._btn:not(.false):hover:active::after {
+    left: 3px;
+    top: 3px
+}
+
+.op1.w3._btn.save {
+    background-position-x: 0
+}
+
+.op1.w3._btn.prev {
+    background-position-x: -16px
+}
+
+.op1.w3._btn.next {
+    background-position-x: -32px
+}
+
+.op1.w3._btn.home {
+    background-position-x: -48px
+}
+
+.op1.w3._btn.refr {
+    background-position-x: -64px
+}
+
+.op1.w3._btn.copy {
+    background-position-x: -80px
+}
+
+.op1.w3._btn.new {
+    background-position-x: -96px
+}
+
+.op1.w3._btn.open {
+    background-position-x: -112px
+}
+
+.op1.w3._btn.tile {
+    background-position-x: -128px
+}
+
+.op1.w3._btn.panel {
+    background-position-x: -144px
+}
+
+.op1.w3._btn.prnt {
+    background-position-x: -160px
+}
+
+.op1.w3._btn.list {
+    background-position-x: -176px
+}
+
+.op1.w3._btn.phone {
+    background-position-x: -192px
+}
+
+.op2.w95._btn {
+    width: 18px;
+    height: 16px;
+    background: url(src/op2_w95__btn.png) no-repeat;
+}
+
+.op3.w95._btn {
+    width: 18px;
+    height: 15px;
+    background: url(src/op3_w95__btn.png) no-repeat;
+}
+
+.op2.w95._btn:not(.false):hover:active,
+.op3.w95._btn:not(.false):hover:active {
+    margin: -1px 0 0 1px
+}
+
+.op2.w95._btn.false {
+    background-position-y: -16px
+}
+
+.op3.w95._btn.false {
+    background-position-y: -15px
+}
+
+.op2.w95._btn.new,
+.op3.w95._btn.new {
+    background-position-x: 0
+}
+
+.op2.w95._btn.open,
+.op3.w95._btn.open {
+    background-position-x: -18px
+}
+
+.op2.w95._btn.save,
+.op3.w95._btn.save {
+    background-position-x: -36px
+}
+
+.op2.w95._btn.prnt,
+.op3.w95._btn.prnt {
+    background-position-x: -54px
+}
+
+.op2.w95._btn.copy,
+.op3.w95._btn.copy {
+    background-position-x: -72px
+}
+
+.op2.w95._btn.srch,
+.op3.w95._btn.srch {
+    background-position-x: -90px
+}
+
+.op2.w95._btn.prev,
+.op3.w95._btn.prev {
+    background-position-x: -108px
+}
+
+.op2.w95._btn.refr,
+.op3.w95._btn.refr {
+    background-position-x: -126px
+}
+
+.op2.w95._btn.next,
+.op3.w95._btn.next {
+    background-position-x: -144px
+}
+
+.op2.w95._btn.home,
+.op3.w95._btn.home {
+    background-position-x: -162px
+}
+
+.op2.w95._btn.pen,
+.op3.w95._btn.pen {
+    background-position-x: -180px
+}
+
+.op2.w95._btn.list,
+.op3.w95._btn.list {
+    background-position-x: -198px
+}
+
+.op2.w95._btn.tile,
+.op3.w95._btn.tile {
+    background-position-x: -216px
+}
+
+.op2.w95._btn.panel,
+.op3.w95._btn.panel {
+    background-position-x: -234px
+}
+
+/*Opera 3.6*/
+.op3d60.w98._btn {
+    width: 27px;
+    height: 26px;
+    background: url(src/op3d60_w98__btn.png) no-repeat;
+}
+
+.op3d60.w98._btn:not(.false):hover:active {
+    margin: -1px 0 0 1px
+}
+
+.op3d60.w98._btn.false {
+    background-position-y: -26px
+}
+
+.op3d60.w98._btn.new {
+    background-position-x: 0
+}
+
+.op3d60.w98._btn.open {
+    background-position-x: -27px
+}
+
+.op3d60.w98._btn.save {
+    background-position-x: -54px
+}
+
+.op3d60.w98._btn.prnt {
+    background-position-x: -81px
+}
+
+.op3d60.w98._btn.copy {
+    background-position-x: -108px
+}
+
+.op3d60.w98._btn.srch {
+    background-position-x: -135px
+}
+
+.op3d60.w98._btn.prev {
+    background-position-x: -162px
+}
+
+.op3d60.w98._btn.refr {
+    background-position-x: -189px
+}
+
+.op3d60.w98._btn.next {
+    background-position-x: -216px
+}
+
+.op3d60.w98._btn.home {
+    background-position-x: -243px
+}
+
+.op3d60.w98._btn.url {
+    background-position-x: -270px
+}
+
+.op3d60.w98._btn.list {
+    background-position-x: -297px
+}
+
+.op3d60.w98._btn.tile {
+    background-position-x: -324px
+}
+
+.op3d60.w98._btn.panel {
+    background-position-x: -351px
+}
+
+
+/*Opera 4.0, Windows 98*/
+.op4.w98._btn {
+    width: 32px;
+    height: 30px;
+    background: url(src/op4_w98__btn.png) no-repeat;
+}
+
+.op4.w98._btn:not(.false):hover:active {
+    margin: -1px 0 0 1px
+}
+
+.op4.w98._btn.false {
+    background-position-y: -30px
+}
+
+.op4.w98._btn.url {
+    background-position-x: 0
+}
+
+.op4.w98._btn.prev {
+    background-position-x: -32px
+}
+
+.op4.w98._btn.panel {
+    background-position-x: -64px
+}
+
+.op4.w98._btn.home {
+    background-position-x: -96px
+}
+
+.op4.w98._btn.list {
+    background-position-x: -128px
+}
+
+.op4.w98._btn.fav {
+    background-position-x: -160px
+}
+
+.op4.w98._btn.menu {
+    background-position-x: -192px
+}
+
+.op4.w98._btn.new {
+    background-position-x: -224px
+}
+
+.op4.w98._btn.addfav {
+    background-position-x: -256px
+}
+
+.op4.w98._btn.addfolder {
+    background-position-x: -288px
+}
+
+.op4.w98._btn.next {
+    background-position-x: -320px
+}
+
+.op4.w98._btn.prnt {
+    background-position-x: -352px
+}
+
+.op4.w98._btn.refr {
+    background-position-x: -384px
+}
+
+.op4.w98._btn.srch {
+    background-position-x: -416px
+}
+
+.op4.w98._btn.tile {
+    background-position-x: -448px
+}
+
+.op4.w98._btn.fscr {
+    background-position-x: -480px
+}
+
+.op4.w98._btn.save {
+    background-position-x: -512px
+}
+
+.op4.w98._btn.copy {
+    background-position-x: -544px
+}
+
+.op4.w98._btn.open {
+    background-position-x: -576px
+}
+
+.op6.xp._btn {
+    width: 26px;
+    height: 26px;
+    background: url(src/op6_xp__btn.png) no-repeat;
+}
+
+.op6.xp._btn:not(.false):hover:active {
+    margin: -1px 0 0 1px
+}
+
+.op6.xp._btn.false {
+    opacity: 0.5;
+}
+
+.op6.xp._btn.fav {
+    background-position-x: 0
+}
+
+.op6.xp._btn.prev {
+    background-position-x: -26px
+}
+
+.op6.xp._btn.panel {
+    background-position-x: -52px
+}
+
+.op6.xp._btn.srch {
+    background-position-x: -78px
+}
+
+.op6.xp._btn.next {
+    background-position-x: -104px
+}
+
+.op6.xp._btn.fscr {
+    background-position-x: -130px
+}
+
+.op6.xp._btn.home {
+    background-position-x: -156px
+}
+
+.op6.xp._btn.list {
+    background-position-x: -182px
+}
+
+.op6.xp._btn.new {
+    background-position-x: -208px
+}
+
+.op6.xp._btn.open {
+    background-position-x: -234px
+}
+
+.op6.xp._btn.prnt {
+    background-position-x: -260px
+}
+
+.op6.xp._btn.refr {
+    background-position-x: -286px
+}
+
+.op6.xp._btn.save {
+    background-position-x: -312px
+}
+
+.op6.xp._btn.stop {
+    background-position-x: -338px
+}
+
+.op6.xp._btn.tile {
+    background-position-x: -364px
+}
+
+.op7.xp._btn {
+    width: 45px;
+    height: 45px;
+    margin-top: -12px;
+    background: url(src/op7_xp__btn.png) no-repeat;
+}
+
+.op7.xp._btn:not(.false):hover:active {
+    margin: -1px 0 0 1px
+}
+
+.op7.xp._btn.false {
+    opacity: 0.5;
+}
+
+.op7.xp._btn.mail {
+    width: 47px;
+    background-position-x: -605px
+}
+
+.op7.xp._btn.fscr {
+    width: 39px;
+    background-position-x: -71px
+}
+
+.op7.xp._btn.refr {
+    background-position-x: -309px
+}
+
+.op7.xp._btn.new {
+    width: 39px;
+    background-position-x: -110px
+}
+
+.op7.xp._btn.open {
+    width: 47px;
+    background-position-x: -652px
+}
+
+.op7.xp._btn.home {
+    width: 46px;
+    background-position-x: -559px
+}
+
+.op7.xp._btn.stop {
+    width: 41px;
+    background-position-x: -350px
+}
+
+.op7.xp._btn.tile {
+    width: 42px;
+    background-position-x: -473px
+}
+
+.op7.xp._btn.save {
+    width: 44px;
+    background-position-x: -515px
+}
+
+.op7.xp._btn.forw {
+    width: 40px;
+    background-position-x: -149px
+}
+
+.op7.xp._btn.wand {
+    background-position-x: -391px
+}
+
+.op7.xp._btn.next {
+    width: 40px;
+    background-position-x: -189px
+}
+
+.op7.xp._btn.srch {
+    background-position-x: -432px
+}
+
+.op7.xp._btn.panel {
+    width: 33px;
+    background-position-x: 0
+}
+
+.op7.xp._btn.prnt {
+    width: 40px;
+    background-position-x: -229px
+}
+
+.op7.xp._btn.fav {
+    width: 38px;
+    background-position-x: -33px
+}
+
+.op7.xp._btn.prev {
+    width: 40px;
+    background-position-x: -269px
+}
+
+/*Opera 8 Windows xp*/
+.op8.xp._btn {
+    width: 22px;
+    height: 22px;
+    background: url(src/op8_xp__btn.png) no-repeat;
+}
+
+.op8.xp._btn:not(.false):hover:active {
+    margin: -1px 0 0 1px
+}
+
+.op8.xp._btn::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    mix-blend-mode: soft-light;
+    height: 100%;
+    background: yellow;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.op8.xp._btn:not(.false):hover::after {
+    opacity: 1
+}
+
+.op8.xp._btn.false {
+    opacity: 0.5
+}
+
+.op8.xp._btn.bin {
+    width: 16px;
+    height: 16px;
+    background-position-x: 0
+}
+
+.op8.xp._btn.forw {
+    background-position-x: -53px
+}
+
+.op8.xp._btn.glass {
+    background-position-x: -75px
+}
+
+.op8.xp._btn.home {
+    background-position-x: -97px
+}
+
+.op8.xp._btn.addtab {
+    background-position-x: -119px
+}
+
+.op8.xp._btn.next {
+    background-position-x: -141px
+}
+
+.op8.xp._btn.open {
+    background-position-x: -163px
+}
+
+.op8.xp._btn.panel {
+    background-position-x: -185px
+}
+
+.op8.xp._btn.prev {
+    background-position-x: -207px
+}
+
+.op8.xp._btn.prnt {
+    background-position-x: -229px
+}
+
+.op8.xp._btn.refr {
+    background-position-x: -251px
+}
+
+.op8.xp._btn.rew {
+    background-position-x: -273px
+}
+
+.op8.xp._btn.rss {
+    width: 21px;
+    height: 11px;
+    background-position-x: -32px
+}
+
+.op8.xp._btn.save {
+    background-position-x: -295px
+}
+
+.op8.xp._btn.srch2 {
+    width: 16px;
+    height: 16px;
+    background-position-x: -16px
+}
+
+.op8.xp._btn.srch {
+    background-position-x: -317px
+}
+
+.op8.xp._btn.tile {
+    background-position-x: -339px
+}
+
+.op8.xp._btn.stop {
+    background-position-x: -361px
+}
+
+.op8.xp._btn.voice {
+    background-position-x: -383px
+}
+
+.op8.xp._btn.wand {
+    background-position-x: -405px
+}
+
+/*Opera 9.60 Windows Vista*/
+.op9d60.vista._btn {
+    width: 22px;
+    height: 22px;
+    background: url(src/op9d60_vista__btn.png) no-repeat;
+    transition: filter 0.1s;
+}
+
+.op9d60.vista._btn:not(.false):not(.setts):hover:active {
+    margin: -1px 0 0 1px
+}
+
+.op9d60.vista._btn:not(.false):not(.setts):hover {
+    filter: brightness(120%) saturate(50%);
+}
+
+.op9d60.vista._btn.false {
+    opacity: 0.5;
+}
+
+.op9d60.vista._btn.bin {
+    width: 17px;
+    height: 20px;
+    background-position: 0
+}
+
+.op9d60.vista._btn.forw {
+    background-position: -17px
+}
+
+.op9d60.vista._btn.next {
+    background-position: -39px
+}
+
+.op9d60.vista._btn.prev {
+    background-position: -61px
+}
+
+.op9d60.vista._btn.refr {
+    background-position: -83px
+}
+
+.op9d60.vista._btn.rew {
+    background-position: -105px
+}
+
+.op9d60.vista._btn.setts {
+    filter: brightness(80%);
+    height: 21px;
+    background-position: -127px
+}
+
+.op9d60.vista._btn.stop {
+    background-position: -149px
+}
+
+.op9d60.vista._btn.wand {
+    width: 23px;
+    background-position: -171px
+}
+
+
+/*Opera 10 Windows 7*/
+/*Opera 10.50 Windows 7*/
+/*Opera 11 Windows 7*/
+.op10.w7._btn,
+.op10d50.w7._btn,
+.op11.w7._btn {
+    width: 27px;
+    height: 23px;
+    background: url(src/op10_w7__btn.png) no-repeat;
+}
+
+.op10d50.w7._btn {
+    background-image: url(src/op10d50_w7__btn.png)
+}
+
+.op11.w7._btn {
+    background-image: url(src/op11_w7__btn.png)
+}
+
+.op10.w7._btn::after,
+.op10d50.w7._btn::after,
+.op11.w7._btn::after {
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    content: '';
+    opacity: 0;
+    background-position-y: -26px;
+    position: absolute;
+    transition: opacity 0.4s
+}
+
+.op10.w7._btn:not(.false):hover::after,
+.op10d50.w7._btn:not(.false):hover::after,
+.op11.w7._btn:not(.false):hover::after {
+    transition: opacity 0.2s;
+    opacity: 1
+}
+
+.op10.w7._btn:not(.false):hover:active::after,
+.op10d50.w7._btn:not(.false):hover:active::after,
+.op11.w7._btn:not(.false):hover:active::after {
+    transition: none;
+    background-position-y: -52px
+}
+
+.op10.w7._btn.false,
+.op10d50.w7._btn.false,
+.op11d50.w7._btn.false {
+    opacity: 0.5
+}
+
+.op10.w7._btn.home,
+.op10d50.w7._btn.home,
+.op11.w7._btn.home {
+    background-position-x: 0
+}
+
+.op10.w7._btn.prev,
+.op10d50.w7._btn.prev,
+.op11.w7._btn.prev {
+
+    background-position-x: -26px
+}
+
+.op10.w7._btn.next,
+.op10d50.w7._btn.next,
+.op11.w7._btn.next {
+    background-position-x: -52px
+}
+
+.op10.w7._btn.refr,
+.op10d50.w7._btn.refr,
+.op11.w7._btn.refr {
+    background-position-x: -78px
+}
+
+.op10.w7._btn.rew {
+    background-position-x: -104px
+}
+
+.op10.w7._btn.stop,
+.op10d50.w7._btn.stop,
+.op11.w7._btn.stop {
+    background-position-x: -130px
+}
+
+.op10.w7._btn.key {
+    background-position-x: -156px
+}
+
+.op10.w7._btn.forw {
+    background-position-x: -182px
+}
+
+.op10.w7._btn.bin {
+    width: 39px;
+    height: 26px;
+    background-position-x: -209px
+}
+
+.op10.w7._btn.menu {
+    width: 39px;
+    height: 26px;
+    background-position-x: -243px
+}
+
+.op10.w7._btn.addtab {
+    width: 44px;
+    height: 26px;
+    background-position-x: -281px
+}
+
+.op10.w7._btn.srch {
+    width: 16px;
+    height: 15px;
+    background-position-x: -324px
+}
+
+.op10.w7._btn.srch::after {
+    content: none
+}
+
+.op10d50.w7._btn.key,
+.op11.w7._btn.key {
+    background-position-x: -104px
+}
+
+.op10d50.w7._btn.forw,
+.op11.w7._btn.forw {
+    background-position-x: -156px
+}
+
+.op10d50.w7._btn.srch,
+.op11.w7._btn.srch {
+    background-position-x: -183px
+}
+
+.op10d50.w7._btn.bin,
+.op11.w7._btn.bin {
+    width: 20px;
+    background-position-x: -256px
+}
+
+.op10d50.w7._btn.bin.check,
+.op11.w7._btn.bin.check {
+    background-position-x: -275px
+}
+
+.op10d50.w7._btn.addtab,
+.op11.w7._btn.addtab {
+    width: 46px;
+    height: 26px;
+    background-position-x: -210px
+}
+
+/*Opera 12 Windows 7*/
+.op12.w7._btn {
+    width: 33px;
+    height: 21px;
+    background: url(src/op12_w7__btn.png) no-repeat
+}
+
+.op12.w7._btn::after {
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    content: '';
+    opacity: 0;
+    background-position-y: -21px;
+    position: absolute;
+    transition: opacity 0.4s
+}
+
+.op12.w7._btn:not(.false):hover::after {
+    opacity: 1;
+}
+
+.op12.w7._btn:not(.false):hover:active::after {
+    transition: none;
+    background-position-y: -42px;
+}
+
+.op12.w7._btn.false {
+    opacity: 0.5;
+}
+
+.op12.w7._btn.prev {
+    background-position-x: 0
+}
+
+.op12.w7._btn.next {
+    background-position-x: -32px
+}
+
+.op12.w7._btn.refr {
+    background-position-x: -64px
+}
+
+.op12.w7._btn.stop {
+    background-position-x: -96px
+}
+
+.op12.w7._btn.key {
+    background-position-x: -128px
+}
+
+.op12.w7._btn.forw {
+    background-position-x: -160px
+}
+
+.op12.w7._btn.addfav {
+    width: 13px;
+    height: 14px;
+    background-position-x: -193px
+}
+
+.op12.w7._btn.addfav.check {
+    background-position-x: -206px
+}
+
+.op12.w7._btn.srch {
+    width: 12px;
+    height: 12px;
+    background-position-x: -219px
+}
+
+.op12.w7._btn.addtab {
+    width: 13px;
+    height: 13px;
+    background-position-x: -231px
+}
+
+.op12.w7._btn.menu {
+    width: 11px;
+    height: 7px;
+    background-position-x: -244px
+}
+
+/*Opera 15 Windows 8*/
+.op15.w8._btn {
+    width: 19px;
+    height: 19px;
+    background: url(src/op15_w8__btn.svg) no-repeat;
+    opacity: 0.5;
+}
+/*Opera 15 Windows 8*/
+.op15.w8._btn:not(.false):active:hover {
+    opacity: 1;
+}
+
+.op15.w8._btn.false {
+    opacity: 0.25;
+}
+
+.op15.w8._btn.prev {
+    background-position-y: 0
+}
+
+.op15.w8._btn.next {
+    background-position-y: -19px
+}
+
+
+.op15.w8._btn.addtab {
+    opacity: 1;
+    background-position-y: -38px
+}
+
+.op15.w8._btn.refr {
+    background-position-y: -57px
+}
+.op15.w8._btn.fav {
+    background-position-y: -76px
+}
+
+.op15.w8._btn.stop {
+    background-position-y: -95px
+}
+
+.op15.w8._btn.srch {
+    opacity: 1;
+    background-position-y: -114px
+}
+
+/*Opera 50 Windows 10*/
+.op50.w10._btn {
+    width: 16px;
+    height: 16px;
+    background: url(src/op50_w10__btn.svg) no-repeat;
+}
+/*Opera 15 Windows 8*/
+
+.op50.w10._btn.false {
+    opacity: 0.5;
+}
+
+.op50.w10._btn.addtab {
+    opacity: 0.75;
+    background-position-y: 0
+}
+.op50.w10._btn.addtab:hover:active {
+    opacity: 0.5;
+}
+
+.op50.w10._btn.menu {
+    opacity: 0.75;
+    background-position-y: -16px
+}
+
+.op50.w10._btn.menu:hover:active {
+    opacity: 1
+}
+
+.op50.w10._btn.srch {
+    background-position-y: -32px
+}
+
+.op50.w10._btn.fav {
+    background-position-y: -48px
+}
+
+.op50.w10._btn.next {
+    background-position-y: -64px
+}
+
+.op50.w10._btn.prev {
+    background-position-y: -80px
+}
+
+.op50.w10._btn.refr {
+    background-position-y: -96px
+}
+
+.op50.w10._btn.stop {
+    background-position-y: -112px
+}
+.op50.w10._btn.share {
+    background-position-y: -128px
 }

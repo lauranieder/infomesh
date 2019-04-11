@@ -12,7 +12,8 @@ var eventPadding = 30;
 var popupCallback;
 var cellwidth = 8.333;
 function isMobileF(x){
-  console.log("isMobile = "+x);
+  //console.log("[event.js] mobile checker");
+  //console.log("isMobile = "+x);
   if (x) { // If media query matches
     //document.body.style.backgroundColor = "yellow";
     //console.log("mobile");
@@ -28,8 +29,17 @@ function isMobileF(x){
     $('html').removeClass("mobile");
     //$('.timeline-containers').removeClass("mobile");
   }
-
   computeEvents();
+}
+function isExtendedF(status){
+  if (status) { // If side panel is hidden
+    $('body').addClass("extended");
+    $('html').addClass("extended");
+  } else {  //If side panel is shown
+    $('body').removeClass("extended");
+    $('html').removeClass("extended");
+  }
+  //computeEvents(); ???
 }
 
 function createPopup() {
@@ -94,6 +104,7 @@ function formatDate(date){
 }
 
 function computeEvents() {
+  console.log("computeEvents");
   //getResponsive message
   timelineWidth = cellwidth * 31;
   /*if($('.timeline-cell').width() != null){
@@ -122,16 +133,20 @@ function computeEvents() {
     var endPosition = endTime * timelineWidth / totalTime;
     var width = endPosition - startPosition;
     var block = $('<div id="marker-' + index + '" class="event-marker ' + className + '" style="left:calc(50vw + '+startPosition+'vw);width:'+width+'vw;"></div>');
-
+    //console.log(block);
     $('#timeline-scrollable').prepend(block);
 
     if (item.wikifetch) {
       wikifetching(item.wikifetch, index);
     }
+    /*TO PUT BACK*/
+    /*console.log(item.readmore);
 
-    if(item.readmore != null){
-      item.content += "<a target='_blank' href='"+item.readmore+"'>Read more</a>";
-    }
+      var containReadmore = item.readmore.match(/id='readmore'/g);
+      if(item.readmore != null && item.readmore != "" && !containReadmore){
+        item.content += "<a target='_blank' id='readmore' href='"+item.readmore+"'>Read more</a>";
+      }*/
+
     //TODO : regex to improve, replace link with target blank
     if(item.content){
       var temp = item.content;
@@ -206,10 +221,11 @@ $(document).ready(function() {
   //console.log("[event.js]");
   loadEvents();
   createPopup();
+  window.parent.postMessage({message: 'getResponsive'}, '*');
 
   var lastPopupIndex;
   $(window).resize(function(){
-    console.log("resized");
+    //console.log("resized");
     //computeEvents();
     window.parent.postMessage({message: 'getResponsive'}, '*');
   });
@@ -217,6 +233,7 @@ $(document).ready(function() {
 
   $(document).on('timeline-scroll', function(e) {
     var currentPopupIndex = -1;
+    console.log(e);
 
     $.each(events, function(index, item) {
       var startDate = moment(parseDate(item.start), 'DD/MM/YYYY');
@@ -266,8 +283,8 @@ $(document).ready(function() {
   });
 
   $('body').on('click', '#button-toggle-popup', function() {
+    console.log("clicked on button toggle popup");
     $('#popup').toggleClass('reduced');
-
     window.parent.postMessage({message: 'isPopReduced', status: $('#popup').hasClass('reduced')}, '*');
   });
 });

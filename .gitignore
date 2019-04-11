@@ -18,4 +18,12 @@ wp-content/plugins/hello.php
 /sitemap.xml.gz
 /.infomaniak-maintenance.html
 /.user.ini
-
+.DS_Store
+*.DS_Store
+.icon
+background.html
+img/motif.jpg
+projects/internetphenomena/bundle_back.js
+projects/internetphenomena/bundle_unminified.js
+projects/webinfluenceridentity/sequence/highres/
+projects/webinfluenceridentity/sequence/lowres/

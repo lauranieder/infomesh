@@ -131,6 +131,12 @@ THE SOFTWARE.
       }
 
       //---
+      function shuffle(array) {
+        array.sort( () => Math.random() - 0.5);
+      }
+
+      shuffle(settings.entries);
+      // shuffle entries
 
       addEntries();
       reInit();
@@ -189,26 +195,14 @@ THE SOFTWARE.
         bg.setAttribute('height', svgHeight);
 
       }
-
-      //---
-
       setEntryPositions(radius);
-
-    }
-    ;
-
-    //---
+    };
 
     function setEntryPositions(radius) {
-
       for (var i = 0, l = entryHolder.length; i < l; i++) {
-
         setEntryPosition(entryHolder[i], radius);
-
       }
-
-    }
-    ;
+    };
 
     function setEntryPosition(entry, radius) {
 
@@ -246,6 +240,8 @@ THE SOFTWARE.
         entry.element.setAttribute('font-style', settings.fontStyle);
         entry.element.setAttribute('font-stretch', settings.fontStretch);
         entry.element.setAttribute('text-anchor', 'middle');
+        entry.element.setAttribute('class', 'year_' + entryObj.year + ' hidden');
+
         entry.element.textContent = settings.fontToUpperCase ? entryObj.label.toUpperCase() : entryObj.label;
 
       } else if (typeof entryObj.image != 'undefined') {
@@ -307,11 +303,12 @@ THE SOFTWARE.
 
       for (var i = 1, l = settings.entries.length + 1; i < l; i++) {
 
-        var phi = Math.acos(-1 + (2 * i) / l);
+        //var test = Math.random(0,settings.entries.length);
+        var phi = Math.acos(-1 + (2 * i ) / l);
         var theta = Math.sqrt(l * Math.PI) * phi;
 
-        var x = Math.cos(theta) * Math.sin(phi);
-        var y = Math.sin(theta) * Math.sin(phi);
+        var x = Math.cos(theta) * Math.sin(phi) ;
+        var y = Math.sin(theta) * Math.sin(phi) ;
         var z = Math.cos(phi);
 
         var entry = addEntry(i - 1, settings.entries[i - 1], x, y, z);
@@ -532,93 +529,47 @@ THE SOFTWARE.
     })();
 
     function animloop() {
-
       requestAnimFrame(animloop);
-
       render();
-
-    }
-    ;
-
-    //---
+    };
 
     function mouseOverHandler(event) {
-
       mouseReact = false;
 
-      //---
-
       var entry = getEntryByElement(event.target);
-
       highlightEntry(entry);
-
       if (entry.tooltip) {
-
         showTooltip(entry);
-
       }
-
-    }
-    ;
+    };
 
     function mouseOutHandler(event) {
-
       mouseReact = true;
 
-      //---
-
       var entry = getEntryByElement(event.target);
-
       if (entry.tooltip) {
-
         hideTooltip(entry);
-
       }
-
-    }
-    ;
-
-    //---
+    };
 
     function mouseMoveHandler(event) {
-
       mousePos = getMousePos(svg, event);
-
-    }
-    ;
+    };
 
     function getMousePos(svg, event) {
-
       var rect = svg.getBoundingClientRect();
-
       return {
-
         x: event.clientX - rect.left,
         y: event.clientY - rect.top
-
       };
-
-    }
-    ;
-
-    //---
+    };
 
     function resizeHandler(event) {
-
       reInit();
-
-    }
-    ;
-
-    //---
-
+    };
     init();
-
-  }
-  ;
-
+  };
   window.SVG3DTagCloud = SVG3DTagCloud;
-
 }());
 
 if (typeof jQuery !== 'undefined') {

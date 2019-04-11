@@ -13,15 +13,18 @@ var OPTIONS = {
   displacementScaleY: 300,
   asciiEnabled: true,
   asciiScale: 16,
-  transparentPixiCanvas: false,
   bloomEnabled: false,
   bloomBlur: 6,
   bloomQuality: 5,
-  bloomResolution: undefined
+  bloomResolution: undefined,
+  transparentPixiCanvas: false,
+  hideControls: true
 };
 
 var gui = new dat.gui.GUI();
 gui.close();
+// Completely hide dat.gui at will
+if (OPTIONS.hideControls) dat.GUI.toggleHide();
 
 var f2 = gui.addFolder("DisplacementFilter");
 f2.add(OPTIONS, "displacementSpeedX", 0.1, 10);
