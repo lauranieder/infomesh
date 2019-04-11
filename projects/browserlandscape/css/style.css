@@ -13,7 +13,7 @@
     cursor: move;
     cursor: grab;
     margin: 0;
-    background-color: black;
+    background-color: linear-gradient(blue, rgb(0,0,100));
     overflow: hidden;
 }
 
@@ -4771,7 +4771,7 @@
     height: 19px;
     top: 3px;
     left: 6px;
-    
+
     /*background-color: red;*/
     background: inherit;
     background-image: url(""), url(src/ff4_osx7__btn.png);

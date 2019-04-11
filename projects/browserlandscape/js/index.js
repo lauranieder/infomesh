@@ -1,7 +1,7 @@
         let City, Camera, Scene, Renderer, Div, GroundTarget, Ground, AnchorCam,
             $camera,
             $containerProject,
-            Data = 'c4d/datas.json', //json data for position and animation
+            Data = 'data/datas.json', //json data for position and animation
             Elems = {},
             Spawned = {}, //newly added elements
             Year = 1989,
@@ -329,7 +329,7 @@
             if (M.angleX - M.horizAngle > 0.0001) {
 
                 vector.y = -vector.y + (Camera.projectionMatrix.elements[5] * 2 * -Camera.position.y) / Camera.position.z;
-                op = 1 + M.horizAngle - M.angleX;
+                op = 1 + 2* M.horizAngle - M.angleX;
 
 
                 groundOpt = `z-index: 1; opacity: ${op};`;
@@ -339,7 +339,7 @@
 
             Ground.style.cssText =
                 `${groundOpt}transform: translateY(${top}px) scale3d(200, 200, 1);
-                background-color: rgb(${lum},${lum},${lum});`;
+                background-color: rgb(0,0,${lum});`;
         }
 
         function update() {
