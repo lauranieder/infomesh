@@ -40,6 +40,7 @@
 - Enlever drag drop sur mobile
 - Ajouter dynamiquement une variable début fin pour la durée de la timeline.
 - Gérer les événements qui sont hors du temps. 
+- Checker deux fois le reflow
 
 ### Page-about
 
@@ -48,11 +49,12 @@
 ### Adapt student project
 #### worldwidemap
 - data dans la timeline s'affichent pas
-- enlever le mini tooltip en mobile
+- améliore le tooptip en mobile
 - button pour changer les datas pas à la bonne place
 - dégradé diviser en 2 dans la hauteur
 - petit décalage en dessous
 - zoom de le carte (contain)
+- 2018, quand on passe d'une carte à l'autre, même événement que quand on bouge 
 
 #### browser landscape
 - enlever la ligne d'horizon
