@@ -140,7 +140,8 @@ nav a,
   font-weight: bold;
 }
 
-.show-splashscreen .splashscreen-main-title h5.enable-caret:after {
+.show-splashscreen .splashscreen-main-title h5:after {
+  visibility: hidden;
   content: '';
   width: 2px;
   height: 0.85em;
@@ -149,6 +150,10 @@ nav a,
   animation: blink-animation 1.5s steps(2, start) infinite;
   -webkit-animation: blink-animation 1.5s steps(2, start) infinite;
   display: inline-block;
+}
+
+.show-splashscreen .splashscreen-main-title h5.enable-caret:after {
+  visibility: visible;
 }
 
 @keyframes blink-animation {

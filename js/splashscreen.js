@@ -261,8 +261,8 @@
   }
 
   function getRandomFact() {
-    const numericalFacts = facts.filter(it => /\d/.test(it));
-    return numericalFacts[Math.floor(Math.random() * numericalFacts.length)];
+    const fileteredFacts = facts.filter(it => it.length < 100);
+    return fileteredFacts[Math.floor(Math.random() * fileteredFacts.length)];
   }
 
   // Select a part of a text node
