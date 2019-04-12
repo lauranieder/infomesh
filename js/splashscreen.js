@@ -97,7 +97,7 @@
     "Archie is considered the world’s first Internet search engine.",
     "PewDiePie is still richest YouTuber ever with a net worth of $7 million."
   ]
-  
+
   let isRunning = false;
   let lastText = false;
   const titleText = 'Information mesh';
@@ -112,7 +112,7 @@
       requestAnimationFrame(() => {
         enableSplashScreen(false);
         enableSplashScreenTitles(false);
-      }); 
+      });
     }
   })
 
@@ -125,8 +125,15 @@
       });
     }
   })
+  if(!currentPagetName){
+    console.log("startsequence");
+    startSequence();
+  }else{
+    console.log("do not start sequence");
+    enableSplashScreen(false);
+    enableSplashScreenTitles(false);
+  }
 
-  startSequence()
 
   function isSplashscreenEnabled() {
     return body.classList.contains('show-splashscreen');
@@ -159,7 +166,7 @@
       await wait(3000);
       runSequence();
     }
-  } 
+  }
 
   async function runSequence() {
     const text = isSplashscreenEnabled() ? getRandomFact() : titleText;
@@ -168,7 +175,7 @@
     enableSplashScreenTitles(isSplashscreenEnabled());
     await wait(100);
     await write(title, text);
-    
+
     if (isSplashscreenEnabled() || title.innerHTML !== titleText) {
       await wait(3000);
       lastText = text;
@@ -257,12 +264,12 @@
     const numericalFacts = facts.filter(it => /\d/.test(it));
     return numericalFacts[Math.floor(Math.random() * numericalFacts.length)];
   }
-  
+
   // Select a part of a text node
   function selectText(textElement, startOffset, endOffset) {
     // Reset window selections
     removeSelections();
-  
+
     // Create a new range from the offsets
     const anchorNodeInfos = getTextNodeInformations(textElement, startOffset);
     const focusNodeInfos = getTextNodeInformations(textElement, endOffset);
@@ -276,23 +283,23 @@
     }
     return selection;
   }
-  
+
   function deleteSelectionContent(selection) {
     const range = selection.getRangeAt(0);
     range.deleteContents();
     return selection;
   }
-  
+
   function removeSelections() {
     const selection = window.getSelection();
     selection.empty();
   }
-  
+
   function getTextNodeInformations(textElement, offset) {
     let currentOffset = 0;
     let textNodeOffset = 0;
     let textNode = null;
-  
+
     // Traverse childNodes to find #text nodes.
     traverseChidNodes(textElement, child => {
       // Find the right #text node where we can find the correct offset
@@ -311,7 +318,7 @@
       textNodeOffset
     }
   }
-  
+
   function traverseChidNodes(element, callback) {
     for (const child of element.childNodes) {
       callback(child);

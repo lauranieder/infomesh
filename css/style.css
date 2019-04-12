@@ -670,9 +670,15 @@ iframe {
   nav-mobile svg{
     position:relative;
     width:2rem;
-    stroke:black;
+    stroke:white;
     stroke-width:4px;
   }
+
+  nav-mobile #button-closeoverlay{
+    display:none;
+    visibility: hidden;
+  }
+
 
 
   /*nav-mobile #button-menu{

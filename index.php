@@ -16,7 +16,10 @@
   var currentPagetName = "<? echo str_replace('/', '', $_SERVER['REQUEST_URI']); ?>";
   </script>
 </head>
-<body class="show-splashscreen">
+<?
+  $initClass = $_SERVER['REQUEST_URI'] == '/' ? 'show-splashscreen' : '';
+?>
+<body class="<? echo $initClass ?>">
   <div class="splashscreen-title">
     <h5>Infomesh — 30 years of facts about the World Wide Web</h5>
   </div>
@@ -38,6 +41,7 @@
       <?php echo file_get_contents("css/UI/UIMobileArrowUp.svg"); ?>
       <?php echo file_get_contents("css/UI/UIMobileArrowDown.svg"); ?>
       <?php echo file_get_contents("css/UI/UIMobileBurger.svg"); ?>
+      <?php echo file_get_contents("css/UI/UIMobileCross.svg"); ?>
       <!--<a href="#" id="button-menu" class="open">&lt;open menu&gt;</a>-->
     </nav-mobile>
   </header>
