@@ -12,14 +12,26 @@ window.addEventListener('load', _ => {
                     case 'refr':
                         clearTimeout(A.clock);
 
-                        let c1 = 'refr',
-                            c2 = 'stop';
+                        let c1, c2, suff;
 
-                        if (btn.classList.contains('stop')) {
-                            c1 = 'stop', c2 = 'refr';
+                        if (btn.className.includes('stop')) {
+                            suff = A.findSuffix(btn, 'stop');
+                            c1 = 'stop' + suff;
+                            c2 = 'refr' + suff;
+
+                        } else if(btn.className.includes('refr')) {
+
+                            suff = A.findSuffix(btn, 'refr');
+                            c1 = 'refr' + suff;
+                            c2 = 'stop' + suff;
+
+                            A.clock = setTimeout(_ => A.replace(btn, c2, c1), Math.random() * 2e3 + 100); //Math.random() * 2e3 + 100
+
                         } else {
-                            A.clock = setTimeout(_ => A.replace(btn, c2, c1), Math.random() * 2e3 + 100);
+                            
+                            break;
                         }
+
                         A.replace(btn, c1, c2);
                         break;
                     case 'check':
@@ -27,6 +39,13 @@ window.addEventListener('load', _ => {
                         break;
                 }
             }
+        },
+
+        findSuffix(elem, string) {
+            let reg = new RegExp(string + "\\S\\w*", "i"),
+                res = elem.className.match(reg);
+
+            return !res ? '' : res[0].replace(string, '');
         },
 
         replace(dom, cl, cl_) {
@@ -140,24 +159,32 @@ window.addEventListener('load', _ => {
                 A.$thumb(ss[i]);
         },
 
+        _btn2() {},
+
         $thumb() {
 
         }
     }
 
-    window.addEventListener('mousedown', e => {
+    document.addEventListener('mousedown', e => {
 
         let c = e.target,
             p, args;
 
-        while (c.parentElement) {
-            if ((p = c.className).includes('_')) {
+        while (c.parentNode) {
+
+            p = c.className;
+
+            if (typeof p === 'string' && p.includes('_')) {
                 p = '_' + c.className.split('_')[1].split(' ')[0];
+
+                // if(typeof A[p] !== 'undefined')
                 A[p](c, e);
+
                 e.stopPropagation();
                 break;
             }
-            c = c.parentElement;
+            c = c.parentNode;
         }
 
     }, true);
