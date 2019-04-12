@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="320px" viewBox="0 0 24 320">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="320px" viewBox="0 0 24 320" style="enable-background:new 0 0 24 320;" xml:space="preserve">
     <defs>
         <linearGradient id="g" x1="0%" y1="0%" x2="0%" y2="100%" gradientUnits="objectBoundingBox">
             <stop offset="0%" style="stop-color:black;" />
             <stop offset="100%" style="stop-color:#444444;" />
         </linearGradient>
-        <filter id="b" filterRes="80 1172" filterUnits="userSpaceOnUse">
+        <filter id="b" filterRes="80 1172" filterUnits="objectBoundingBox">
             <feGaussianBlur in="SourceAlpha" stdDeviation="0.5" result="a" />
             <feOffset in="a" dx="0" dy="1" result="d" />
             <feFlood flood-color="white" flood-opacity="0.5" result="c" />
