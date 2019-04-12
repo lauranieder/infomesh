@@ -2,6 +2,7 @@
 /* globals dataReady */
 
 var dataset = [];
+var resizing = false;
 
 $.getJSON("./events.json", json => {
   // Remove hidden elements.
@@ -75,9 +76,10 @@ function createBlock(data) {
   var legend = document.createElement("span");
   var legendStr = getTypeName(data.type);
   if (data.visualValue) {
-    legendStr += `: ${data.visualValue.toLocaleString(
-      "en-US"
-    )} ${data.visualValueSuffix.trim()}`;
+    var suffix = data.visualValueSuffix.trim();
+    var num = data.visualValue;
+    if (suffix === "%") num = Math.floor(num * 100);
+    legendStr += `: ${num.toLocaleString("en-US")} ${suffix}`;
   }
   legend.textContent = legendStr;
   legend.className = "vertical-center";
@@ -199,6 +201,21 @@ function updateNewBlocks() {
 }
 
 window.addEventListener("resize", () => {
-  updateNewBlocks();
-  updateContainer();
+  // Don't update if we're in a resizing event from the left infomesh panel.
+  if (!resizing) {
+    updateNewBlocks();
+    updateContainer();
+  }
+});
+
+// Receive the UI resizing events from infomesh, to avoid glitchy UI.
+$(window).on("message", e => {
+  if (e.originalEvent.data.message == "isExtended") {
+    resizing = true;
+    setTimeout(() => {
+      resizing = false;
+      updateNewBlocks();
+      updateContainer();
+    }, 3000); // TODO: update with final transition value.
+  }
 });

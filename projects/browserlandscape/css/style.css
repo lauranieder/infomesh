@@ -13,6 +13,7 @@
     cursor: move;
     cursor: grab;
     margin: 0;
+
     background-color: linear-gradient(blue, rgb(0,0,100));
     overflow: hidden;
 }
