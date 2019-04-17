@@ -29,6 +29,7 @@
 - Source des phrases. 
 - Transitions (supprimer sur mobile)
 - Couleurs quand fond noir/fond blanc
+- Message pour annoncer que la version mobile est réduite ?
 
 ### Popup sur mobile
 - Recréer la div (supprimer et recréer)
@@ -56,9 +57,11 @@
 - zoom de le carte (contain)
 - 2018, quand on passe d'une carte à l'autre, même événement que quand on bouge 
 
-#### browser landscape
-- enlever la ligne d'horizon
+#### web landscape
+- ~~enlever la ligne d'horizon~~
 - elements interactifs --> elements animés
+- m'envoyer la dernière
+- 
 
 #### web influencer identity
 - même système que obsolete objects
