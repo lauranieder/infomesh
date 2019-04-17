@@ -21,7 +21,7 @@
 ?>
 <body class="<? echo $initClass ?>">
   <div class="splashscreen-title">
-    <h5>Infomesh — 30 years of facts about the World Wide Web</h5>
+    <h5>Infomation mesh — 30 years of facts about the World Wide Web</h5>
   </div>
   <div class="splashscreen-main-title">
     <h5 class="enable-caret title-bold">Information mesh</h5>

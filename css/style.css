@@ -113,11 +113,13 @@ nav a,
 }
 
 .show-splashscreen.enable-splashscreen-titles .splashscreen-title {
-  transform: translate(-50%, 100%);
+  transform: translate(-50%,0%);
+  padding:1rem;
 }
 
 .show-splashscreen.enable-splashscreen-titles .click-to-start {
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, 0%);
+  padding:1rem;
 
 }
 
@@ -140,8 +142,7 @@ nav a,
   font-weight: bold;
 }
 
-.show-splashscreen .splashscreen-main-title h5:after {
-  visibility: hidden;
+.show-splashscreen .splashscreen-main-title h5.enable-caret:after {
   content: '';
   width: 2px;
   height: 0.85em;
@@ -150,10 +151,6 @@ nav a,
   animation: blink-animation 1.5s steps(2, start) infinite;
   -webkit-animation: blink-animation 1.5s steps(2, start) infinite;
   display: inline-block;
-}
-
-.show-splashscreen .splashscreen-main-title h5.enable-caret:after {
-  visibility: visible;
 }
 
 @keyframes blink-animation {
@@ -677,6 +674,15 @@ iframe {
     width:2rem;
     stroke:white;
     stroke-width:4px;
+  }
+
+  nav-mobile .nav-full{
+    display:inline;
+    visibility: visible;
+    position:absolute;
+    right:0rem;
+    top:0rem;
+    padding:1rem;
   }
 
   nav-mobile #button-closeoverlay{

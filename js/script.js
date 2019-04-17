@@ -61,7 +61,7 @@ function toggleMenu(){
     if($('#container-main').hasClass('reduced')){ //not project open
       $('#project-title').text(siteTitle);
       $('#container-title').text(siteTitle);
-      $('nav-mobile').addClass('d-none');
+      //$('nav-mobile').addClass('d-none');
     }
     $('#container-side').toggleClass('mobile-reduced');
   }
