@@ -87,7 +87,7 @@ function onNewBlock(event) {
       i -= 1;
     } else if (s.deathTime === 0) {
       // Send the old ones to their death;
-      s.deathTime = now + 2000;
+      s.deathTime = now + 3000;
       s.lissajousEnabled = false;
       if (event.detail.forward) {
         s.targetX = -(400 + s.sprite.width);

@@ -141,19 +141,16 @@ function indexToId(index) {
 
 function goToBlock(newIndex, isTimelineEvent) {
   var forward = newIndex > currentBlock;
-  if (newIndex >= dataset.length) {
-    newIndex = 0;
-  }
-  if (newIndex < 0) {
-    newIndex = dataset.length - 1;
-  }
+  // Loop the timeline
+  if (newIndex >= dataset.length) newIndex = 0;
+  if (newIndex < 0) newIndex = dataset.length - 1;
+
+  // Reset the randomized height
   var lastIndex = currentBlock;
   updateOldBlocks(lastIndex, newIndex);
   currentBlock = newIndex;
 
-  if (!isTimelineEvent) {
-    timelineGoToId(currentBlock);
-  }
+  if (!isTimelineEvent) timelineGoToId(currentBlock);
   updateNewBlocks();
   updateContainer();
   updateYear();
@@ -172,7 +169,9 @@ function updateYear() {
 
 function updateContainer() {
   var e = document.getElementById(indexToId(currentBlock));
-  container.style.transform = "translateX(" + -e.parentNode.offsetLeft + "px)";
+  var leftAlign = -e.parentNode.offsetLeft;
+  var center = leftAlign - e.offsetWidth / 2 + window.innerWidth / 2;
+  container.style.transform = "translateX(" + center + "px)";
 }
 
 function updateOldBlocks(lastIndex) {
@@ -182,14 +181,9 @@ function updateOldBlocks(lastIndex) {
 
 function updateNewBlocks() {
   for (var i = 0; i < container.children.length; i++) {
-    $(container.children[i].firstChild).toggleClass(
-      "ancientHistory",
-      Boolean(i < currentBlock)
-    );
-    $(container.children[i].firstChild).toggleClass(
-      "futureHistory",
-      Boolean(i > currentBlock)
-    );
+    var child = $(container.children[i].firstChild);
+    child.toggleClass("ancientHistory", Boolean(i < currentBlock));
+    child.toggleClass("futureHistory", Boolean(i > currentBlock));
     if (i === currentBlock) {
       container.children[i].style.transform = "translateY(" + 0 + "px)";
     }
@@ -216,12 +210,10 @@ $(window).on("message", function(e) {
       resizing = false;
       updateNewBlocks();
       updateContainer();
-    }, 3000); // TODO: update with final transition value.
+    }, 540);
   }
 });
 
-// The goal is to do : mydomain.co.uk --> Mydomain
-// Function from : https://stackoverflow.com/questions/8253136/how-to-get-domain-name-only-using-javascript
 function getDomainTitle(urlStr) {
   var url = new URL(urlStr);
   var domain = url.hostname;
