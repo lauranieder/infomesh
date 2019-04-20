@@ -89,7 +89,7 @@ function createBlock(data) {
     var readmore = document.createElement("div");
     var readmoreLink = document.createElement("a");
     readmoreLink.href = data.readmore;
-    readmoreLink.textContent = "Read more";
+    readmoreLink.textContent = "Read more on " + getDomainTitle(data.readmore);
     readmoreLink.target = "_blank";
     readmore.appendChild(readmoreLink);
     eventBlock.appendChild(readmore);
@@ -209,13 +209,23 @@ window.addEventListener("resize", () => {
 });
 
 // Receive the UI resizing events from infomesh, to avoid glitchy UI.
-$(window).on("message", e => {
+$(window).on("message", function(e) {
   if (e.originalEvent.data.message == "isExtended") {
     resizing = true;
-    setTimeout(() => {
+    setTimeout(function() {
       resizing = false;
       updateNewBlocks();
       updateContainer();
     }, 3000); // TODO: update with final transition value.
   }
 });
+
+// The goal is to do : mydomain.co.uk --> Mydomain
+// Function from : https://stackoverflow.com/questions/8253136/how-to-get-domain-name-only-using-javascript
+function getDomainTitle(urlStr) {
+  var url = new URL(urlStr);
+  var domain = url.hostname;
+  domain = domain.replace("www.", "").replace(/^en\./, "");
+  console.log(domain);
+  return domain;
+}
