@@ -110,7 +110,7 @@ function createSprites(event) {
     var l10 = Math.log(data.visualValue) / Math.log(10);
     if (data.visualValue < 1) {
       // = percent data.
-      scale = map_range(data.visualValue, 0, 1, 0.2, 10);
+      scale = map_range(data.visualValue, 0, 1, 0.2, 15);
     } else if (data.visualValue < 10) {
       // = no data from this order yet.
     } else if (l10 < 7) {

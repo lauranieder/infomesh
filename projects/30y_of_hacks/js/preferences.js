@@ -49,13 +49,13 @@ var TYPES = [
   "law",
   "foundation",
   "moneyTheft",
-  "other",
+  "loss",
   "virus",
   "defacement",
   "infiltration",
   "breach",
   "dataTheft",
   "hack",
-  "ransomware",
+  "leak",
   "destructive"
 ];

@@ -106,17 +106,17 @@ var typeNames = {
   media: "New media",
   newAttackType: "New attack type",
   incident: "Security incident",
-  law: "Legislation event",
+  law: "Governmental event",
   foundation: "Foundation",
   moneyTheft: "Money theft",
-  other: "Other",
+  loss: "Loss",
   virus: "Virus",
   defacement: "Defacement",
   infiltration: "Infiltration",
   breach: "Data breach",
   dataTheft: "Data theft",
   hack: "Hack",
-  ransomware: "Ransomware",
+  leak: "Data leak",
   destructive: "Destructive hack"
 };
 
