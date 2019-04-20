@@ -86,16 +86,23 @@ function createBlock(data) {
   legend.className = "vertical-center";
   stats.appendChild(legend);
 
+  var readmore = document.createElement("cite");
+  var readmoreLink = document.createElement("a");
+  readmoreLink.target = "_blank";
+  readmoreLink.rel = "noopener noreferrer";
   if (data.readmore) {
-    var readmore = document.createElement("cite");
-    var readmoreLink = document.createElement("a");
     readmoreLink.href = data.readmore;
     readmoreLink.textContent = "Read more on " + getDomainTitle(data.readmore);
-    readmoreLink.target = "_blank";
-    readmoreLink.rel = "noopener noreferrer";
-    readmore.appendChild(readmoreLink);
-    eventBlock.appendChild(readmore);
+  } else {
+    readmoreLink.href = data.source;
+    readmoreLink.textContent =
+      data.source === "https://en.wikipedia.org/wiki/List_of_data_breaches"
+        ? "Source: Data breach list on Wikipedia"
+        : "Source: Event list on Wikipedia";
   }
+  readmore.appendChild(readmoreLink);
+
+  eventBlock.insertBefore(readmore, stats);
 
   // Now that we have added all the content, we can calculate the height
   // of the div to determine an offset.
