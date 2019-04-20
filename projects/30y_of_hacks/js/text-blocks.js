@@ -61,9 +61,10 @@ function createBlock(data) {
   title.className = "block-title";
   title.textContent = data.title;
   eventBlock.appendChild(title);
-  var description = document.createElement("div");
+  var description = document.createElement("bockquote");
+  description.cite = data.readmore;
   description.className = "block-description";
-  description.innerHTML = data.content;
+  description.innerHTML = "“" + data.content + "”";
   eventBlock.appendChild(description);
 
   var stats = document.createElement("div");
@@ -86,11 +87,12 @@ function createBlock(data) {
   stats.appendChild(legend);
 
   if (data.readmore) {
-    var readmore = document.createElement("div");
+    var readmore = document.createElement("cite");
     var readmoreLink = document.createElement("a");
     readmoreLink.href = data.readmore;
     readmoreLink.textContent = "Read more on " + getDomainTitle(data.readmore);
     readmoreLink.target = "_blank";
+    readmoreLink.rel = "noopener noreferrer";
     readmore.appendChild(readmoreLink);
     eventBlock.appendChild(readmore);
   }
