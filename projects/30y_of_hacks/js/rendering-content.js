@@ -154,6 +154,12 @@ function createSprites(event) {
     sData.speedLissajous = (Math.random() * 0.003 + 0.0003) / sData.lissajousA;
     sData.lockOnTarget = false;
 
+    // Setup a rotaion, except for meaningful icons
+    if (data.type !== "law" && data.type !== "moneyTheft") {
+      sData.targetRotation = Math.PI * 2 * Math.random();
+      sData.speedRotation = 0.008 * Math.random();
+    }
+
     // Add to the app.
     app.stage.addChild(s);
     sprites.push(sData);
