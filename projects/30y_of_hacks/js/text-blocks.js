@@ -1,17 +1,17 @@
 /* exported moveToBlockBy initDom */
-/* globals dataReady */
+/* globals dataReady timelineGoToId */
 
 var dataset = [];
 var resizing = false;
 
-$.getJSON("./events.json", json => {
+$.getJSON("./events.json", function(json) {
   // Remove hidden elements.
   for (var i = json.length - 1; i >= 0; i--) {
     if (json[i].hidden) {
       json.splice(i, 1);
     }
   }
-  json.sort((a, b) => {
+  json.sort(function(a, b) {
     return a.timestamp - b.timestamp;
   });
   dataset = json;
@@ -26,7 +26,7 @@ function initDom() {
   container = document.getElementById("container-textblocs");
 
   prepareDataset();
-  for (let i = 0; i < dataset.length; i++) {
+  for (var i = 0; i < dataset.length; i++) {
     createBlock(dataset[i], i);
   }
 
@@ -34,7 +34,7 @@ function initDom() {
 }
 
 function prepareDataset() {
-  for (let i = 0; i < dataset.length; i++) {
+  for (var i = 0; i < dataset.length; i++) {
     dataset[i].index = i;
     dataset[i].id = indexToId(i);
   }
@@ -70,7 +70,7 @@ function createBlock(data) {
   stats.className = "block-stats";
   eventBlock.appendChild(stats);
   var icon = document.createElement("img");
-  icon.src = `assets/imgs/img-${data.type}-icon.png`;
+  icon.src = "assets/imgs/img-" + data.type + "-icon.png";
   icon.className = "vertical-center";
   stats.appendChild(icon);
   var legend = document.createElement("span");
@@ -79,7 +79,7 @@ function createBlock(data) {
     var suffix = data.visualValueSuffix.trim();
     var num = data.visualValue;
     if (suffix === "%") num = Math.floor(num * 100);
-    legendStr += `: ${num.toLocaleString("en-US")} ${suffix}`;
+    legendStr += ": " + num.toLocaleString("en-US") + " " + suffix;
   }
   legend.textContent = legendStr;
   legend.className = "vertical-center";
@@ -200,7 +200,7 @@ function updateNewBlocks() {
   }
 }
 
-window.addEventListener("resize", () => {
+window.addEventListener("resize", function() {
   // Don't update if we're in a resizing event from the left infomesh panel.
   if (!resizing) {
     updateNewBlocks();
@@ -226,6 +226,5 @@ function getDomainTitle(urlStr) {
   var url = new URL(urlStr);
   var domain = url.hostname;
   domain = domain.replace("www.", "").replace(/^en\./, "");
-  console.log(domain);
   return domain;
 }

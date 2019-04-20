@@ -2,12 +2,12 @@
 /* globals resources app */
 
 var filter_displacement, filter_ascii;
-var filter_frameCount = 0;
+// var filter_frameCount = 0;
 
 function setupFilters() {
   // Displacement sprite
   resources.map.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT;
-  const displacementSprite = new PIXI.Sprite(resources.map.texture);
+  var displacementSprite = new PIXI.Sprite(resources.map.texture);
   app.stage.addChild(displacementSprite);
   displacementSprite.scale.set(2);
   // Displacement filter
@@ -40,11 +40,13 @@ function setupFilters() {
   // filter_bloom.global = true;
 
   app.stage.filters = [filter_displacement, filter_ascii];
-  app.ticker.add(delta => filterGameLoop(delta));
+  app.ticker.add(function(delta) {
+    filterGameLoop(delta);
+  });
 }
 
 function filterGameLoop(_delta) {
-  filter_frameCount += 1;
+  // filter_frameCount += 1;
 
   // Displacement
   filter_displacement.maskSprite.transform.position.x +=

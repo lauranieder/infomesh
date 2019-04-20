@@ -1,7 +1,7 @@
 /* exported setupGraphics */
 /* globals resources app */
 
-var g_frameCount = 0;
+// var g_frameCount = 0;
 var background;
 var sprites = [];
 var spriteModel = {
@@ -32,14 +32,16 @@ function setupGraphics() {
   app.stage.addChild(background);
 
   // Event loops
-  app.ticker.add(delta => graphicsGameLoop(delta));
-  app.renderer.view.addEventListener("canvasResize", e => {
+  app.ticker.add(function(delta) {
+    graphicsGameLoop(delta);
+  });
+  app.renderer.view.addEventListener("canvasResize", function(e) {
     background.drawRect(0, 0, e.detail.width, e.detail.height);
   });
 }
 
 function graphicsGameLoop(_delta) {
-  g_frameCount += 1;
+  // g_frameCount += 1;
 
   for (var i = 0; i < sprites.length; i += 1) {
     var s = sprites[i];

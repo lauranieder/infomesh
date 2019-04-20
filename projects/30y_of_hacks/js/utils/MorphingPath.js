@@ -1,6 +1,8 @@
 // Code by sasensi from:
 // https://stackoverflow.com/questions/50825267/paper-js-how-to-morph-one-path-to-another-path
-// Adapter by Nathan Vogel
+// Adapted by Nathan Vogel
+
+/* globals Segment */
 
 /**
  * A path that can be morphed between two other paths.
@@ -70,19 +72,20 @@ function MorphingPath(path1, path2) {
   function createMorphingPath() {
     var paths = [clone1, clone2],
       offsets = [[], []];
+    var i, j;
 
     // store paths segments offsets (except for first and last)
-    for (var i = 0; i < paths.length; i++) {
+    for (i = 0; i < paths.length; i++) {
       var path = paths[i];
       // loop segments
-      for (var j = 1; j < path.segments.length - 1; j++) {
+      for (j = 1; j < path.segments.length - 1; j++) {
         // store offset
         offsets[i].push(path.segments[j].location.offset);
       }
     }
 
     // add missing points
-    for (var i = 0; i < paths.length; i++) {
+    for (i = 0; i < paths.length; i++) {
       // get current path offsets array
       var pathOffsets = offsets[i];
       // get a reference to the other path
@@ -90,7 +93,7 @@ function MorphingPath(path1, path2) {
       var otherPath = i == 0 ? paths[i + 1] : paths[0];
       var ratio = otherPath.length / thisPath.length;
       // loop current path offsets
-      for (var j = 0; j < pathOffsets.length; j++) {
+      for (j = 0; j < pathOffsets.length; j++) {
         // add a corresponding point for that offset in the other path
         otherPath.divideAt(otherPath.getLocationAt(pathOffsets[j] * ratio));
       }
