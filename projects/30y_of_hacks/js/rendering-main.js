@@ -3,7 +3,7 @@
 /* globals pixiReady setupFilters setupGraphics */
 
 // PixiJS checks
-let type = "WebGL";
+var type = "WebGL";
 if (!PIXI.utils.isWebGLSupported()) {
   console.warn("WebGL isn't supported (PIXI)");
   type = "canvas";
@@ -11,12 +11,12 @@ if (!PIXI.utils.isWebGLSupported()) {
 PIXI.utils.sayHello(type);
 
 // PixiJS aliases
-let resources = PIXI.Loader.shared.resources;
+var resources = PIXI.Loader.shared.resources;
 
 // Create a Pixi Application
-let ratio = window.devicePixelRatio;
+var ratio = window.devicePixelRatio;
 var VH, VW;
-let app = new PIXI.Application({
+var app = new PIXI.Application({
   antialias: true, // default: false
   transparent: OPTIONS.transparentPixiCanvas,
   autoDensity: true,
@@ -30,7 +30,7 @@ var textYear = document.getElementById("text-year");
 containerProject.insertBefore(app.view, textYear);
 onResizeWindow();
 app.stage.updateLayersOrder = function() {
-  app.stage.children.sort((a, b) => {
+  app.stage.children.sort(function(a, b) {
     a.zIndex = a.zIndex || 0;
     b.zIndex = b.zIndex || 0;
     return b.zIndex - a.zIndex;
@@ -51,18 +51,23 @@ function initPixi() {
 }
 
 // Resizing code from: https://stackoverflow.com/a/50915858/1017472
-window.addEventListener("resize", debounce(() => onResizeWindow(), 150));
+window.addEventListener(
+  "resize",
+  debounce(function() {
+    return onResizeWindow();
+  }, 150)
+);
 
 // From underscrore.js
 function debounce(func, wait, immediate) {
-  let timeout;
+  var timeout;
   return function() {
-    let args = arguments;
-    let later = () => {
+    var args = arguments;
+    var later = function() {
       timeout = null;
       if (!immediate) func.apply(this, args);
     };
-    let callNow = immediate && !timeout;
+    var callNow = immediate && !timeout;
     clearTimeout(timeout);
     timeout = setTimeout(later, wait);
     if (callNow) func.apply(this, args);
@@ -70,7 +75,7 @@ function debounce(func, wait, immediate) {
 }
 
 function onResizeWindow() {
-  const canvas = app.renderer.view;
+  var canvas = app.renderer.view;
   VW = containerProject.clientWidth;
   VH = containerProject.clientHeight;
   canvas.style.width = VW + "px";

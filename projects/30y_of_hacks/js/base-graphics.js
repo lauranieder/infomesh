@@ -1,5 +1,5 @@
 /* globals project view Path Point */
-/* globals toggleDisplacement moveToBlockBy paperReady */
+/* globals toggleDisplacement moveToBlockBy paperReady goToBlock */
 /* exported onFrame onMouseMove onMouseUp onKeyDown */
 /* eslint no-unused-vars: 0 */
 
@@ -47,7 +47,7 @@ tmp.remove();
 // });
 
 // =========== ANIMATION ==============
-function onFrame(event) {
+function onFrame(_event) {
   for (var i = 0; i < circles.length; i++) {
     var c = circles[i];
     c.shape.position += (c.goal_pos - c.shape.position) * 0.033;
@@ -56,7 +56,7 @@ function onFrame(event) {
 }
 
 // =========== INTERACTION ==============
-function onMouseMove(event) {
+function onMouseMove(_event) {
   // circle.position = event.point;
 }
 

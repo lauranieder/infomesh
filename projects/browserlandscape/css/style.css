@@ -2,23 +2,46 @@
     /*--p: 50;*/
 }
 
+* {
+    -moz-user-select: none;
+    -ms-interpolation-mode: nearest-neighbor;
+    -ms-user-select: none;
+    -webkit-user-select: none
+}
+
 #container-project {
+    cursor: move;
+    cursor: grab;
     margin: 0;
-    background-color: white;
+
+    background-color: linear-gradient(blue, rgb(0,0,100));
     overflow: hidden;
 }
 
-#container-project #groundTarget {
+#container-project.nograb * {
+    cursor: default;
+}
+
+#container-project.grabbing * {
+    /*cursor: move;*/
+    cursor: grabbing !important;
+}
+
+#groundTarget {
     z-index: -1000;
     position: absolute;
     visibility: hidden;
 }
 
-#tooltip {
+#preloadedTex {
+    display: none;
+}
+
+#elTooltip {
     opacity: 0;
+    pointer-events: none;
     z-index: 200;
     margin-left: 20px;
-    pointer-events: none;
     position: absolute;
     overflow: visible;
     box-shadow: -1px 0 black;
@@ -30,61 +53,71 @@
     line-height: 1.4em;
 }
 
-#tooltip span {
-    padding: 2px 2px 2px 10px;
+#elTooltip>span {
+    padding: 2px 10px 2px 10px;
     background: white;
     white-space: pre-line;
     display: inline-block;
 }
 
-#tooltip span::first-letter {
-
+#elTooltip>span::first-letter {
     text-transform: capitalize;
 }
 
-#tooltip.show {
+#elTooltip.show {
     transition: none;
     opacity: 1;
 }
-/*to come back after*/
+
 #ground {
     position: absolute;
-    will-change: transform;
-    top: 25vw;
-    left: 0;
+    top: 0;
+    left: 50vw;
+    transform-origin: top center;
     z-index: 0;
-    width: 150vw;
-    height: 200vh;
-    background: #0a8b3b; /*#F5F5F5*/
+    width: 0.6vw;
+    height: 1vh;
+    transform: translateY(50vh) scale3d(200, 200, 1);
+    background: url(gradient_a.png);
+    background-color: white;
+    background-size: 100% 100%;
 }
 
-#container-project #models {
-    display: none;
+#models {
+    display: none
 }
 
-#container-project .grow_h {
-    height: 0px !important;
+.grow_h {
+    height: 0 !important;
     padding: 0 !important;
 }
 
-#container-project .grow_w {
-    width: 0px !important;
+.grow_w {
+    width: 0 !important;
     padding: 0 !important;
 }
 
-#container-project * {
+/*#container-project * {
     user-select: none;
     -moz-user-select: none;
     -ms-interpolation-mode: nearest-neighbor;
     -ms-user-select: none;
     -webkit-user-select: none;
-}
+}*/
 
-#container-project .notransition>* {
+.notransition>* {
     transition: none !important;
 }
 
-.preventgrow:not(.scroll):not(.thr) {
+/*Safari bug, background image animation not resetting when class change*/
+.notransition>.thr,
+.notransition>.thr::after {
+    background-position: 0 0 !important;
+    animation: none !important;
+}
+
+.preventgrow._btn,
+.preventgrow._ico {
     transition: none;
 }
 
@@ -101,8 +134,6 @@
 }
 
 /*Commons*/
-
-
 .scroll {
     display: flex;
     flex-direction: column;
@@ -114,9 +145,13 @@
 .ico,
 .thr,
 .scroll {
+    backface-visibility: hidden;
+    cursor: default;
+    transition: height 0.3s steps(3), padding 0.3s steps(3);
+    pointer-events: all;
+    -webkit-backface-visibility: hidden;
     position: absolute;
     overflow: hidden;
-    transition: height 0.3s steps(3), padding 0.3s steps(3);
     transform-origin: center bottom;
     filter: none;
     box-sizing: border-box;
@@ -125,30 +160,24 @@
     position: absolute;
 
     user-select: none;
-
-    -moz-user-select: none;
-    -ms-interpolation-mode: nearest-neighbor;
-    -ms-user-select: none;
-    -webkit-user-select: none
 }
 
-.scroll ._trk {
+._trk {
     position: relative;
     flex: 1 0 auto;
     width: 100%;
     height: 0;
     flex-direction: column;
-    display: flex;
+    display: flex
 }
 
-.scroll .prg {
-    flex: 0.5 0 auto;
+.prg {
+    flex: 0.5 0 auto
 }
 
-.scroll .thb {
-    height: 50%;
+.thb {
+    height: 50%
 }
-
 
 /*Windows 3.0*/
 
@@ -157,19 +186,19 @@
     width: 17px;
 }
 
-.w3.scroll ._trk {
+.w3>._trk {
     margin: -1px 0 -1px 0;
 }
 
-.w3.scroll .thb {
+.w3 .thb {
     position: relative;
     width: 17px;
     height: 17px;
     opacity: 1;
 }
 
-.w3.scroll .thb::after,
-.w3.scroll ._arr {
+.w3 .thb::after,
+.w3>._arr {
     background: silver no-repeat -6px 5px;
     box-shadow:
         inset 0 0 0 1px black,
@@ -178,7 +207,7 @@
         inset -3px -3px grey;
 }
 
-.w3.scroll .thb:active::before {
+.w3 .thb:active::before {
     content: '';
     position: absolute;
     top: 0;
@@ -191,7 +220,7 @@
     mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='17px' height='17px' viewBox='0 0 17 17'%3E%3Cpath d='M0,0v17h17V0H0z M16,16H1V1h15V16z'/%3E%3C/svg%3E%0A");
 }
 
-.w3.scroll .thb::after {
+.w3 .thb::after {
     content: '';
     left: 0;
     height: 100%;
@@ -201,43 +230,43 @@
     z-index: -1
 }
 
-.w3.scroll ._arr {
+.w3>._arr {
     background-image: url("src/w3.png");
     height: 17px;
     width: 17px
 }
 
-.w3.scroll ._arr:first-of-type {
+.w3>.top {
     background-position: 5px 4px
 }
 
-.w3.scroll ._arr:active {
+.w3>._arr:active {
     background-position: -5px 6px;
     box-shadow:
         inset 0 0 0 1px black,
         inset 2px 2px 0 0 grey
 }
 
-.w3.scroll ._arr:active:first-of-type {
+.w3>.top:active {
     background-position: 6px 5px
 }
 
 
 /*Windows 95*/
 
-.w95.scroll ._trk {
+.w95>._trk {
     background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2' height='2' viewBox='0 0 2 2' fill='silver' %3E%3Crect width='1' height='1' /%3E%3Crect x='1' y='1' width='1' height='1' /%3E%3C/svg%3E");
     position: relative
 }
 
-.w95.scroll .thb {
+.w95 .thb {
     background: silver;
     width: 16px;
     min-height: 8px
 }
 
-.w95.scroll .thb,
-.w95.scroll ._arr {
+.w95 .thb,
+.w95>._arr {
     box-shadow:
         inset -1px -1px black,
         inset 1px 1px silver,
@@ -245,7 +274,7 @@
         inset 2px 2px white;
 }
 
-.w95.scroll ._arr {
+.w95>._arr {
     background: silver url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' shape-rendering='optimizeSpeed' x='0px' y='0px' width='16px' height='16px' viewBox='0 0 16 16'%3E%3Cpolygon points='4,7 4,6 11,6 11,7 10,7 10,8 9,8 9,9 8,9 8,10 7,10 7,9 6,9 6,8 5,8 5,7'/%3E%3C/svg%3E");
     width: 16px;
     position: relative;
@@ -253,22 +282,21 @@
     z-index: 2
 }
 
-.w95.scroll ._arr:first-of-type {
+.w95>.top {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' shape-rendering='optimizeSpeed' x='0px' y='0px' width='16px' height='16px' viewBox='0 0 16 16'%3E%3Cpolygon points='11,9 11,10 4,10 4,9 5,9 5,8 6,8 6,7 7,7 7,6 8,6 8,7 9,7 9,8 10,8 10,9'/%3E%3C/svg%3E");
 }
 
-.w95.scroll ._arr:active {
+.w95>._arr:active {
     background-position: 1px 1px;
     box-shadow: inset 0 0 0 1px gray
 }
 
 /*windows XP*/
-
 .xp.scroll {
     background: url(src/xp.svg);
 }
 
-.xp.scroll .thb {
+.xp .thb {
     background:
         url(src/xp.svg) repeat-x -118px 0,
         url(src/xp.svg) repeat-x -169px 100%,
@@ -278,29 +306,29 @@
     width: 17px
 }
 
-.xp.scroll .thb:hover {
+.xp .thb:hover {
     background-position-x: -135px, -186px, -232px, -33px
 }
 
-.xp.scroll .thb:active {
+.xp .thb:active {
     background-position-x: -152px, -203px, -244px, -50px
 }
 
-.xp.scroll ._arr {
+.xp>._arr {
     background: url(src/xp.svg) no-repeat -257px 6px, url(src/xp.svg) -67px 0;
     height: 17px;
     width: 17px
 }
 
-.xp.scroll ._arr:first-of-type {
+.xp>.top {
     background-position-y: -6px, 0
 }
 
-.xp.scroll ._arr:hover {
+.xp>._arr:hover {
     background-position-x: -257px, -84px
 }
 
-.xp.scroll ._arr:active {
+.xp>._arr:active {
     background-position-x: -257px, -101px
 }
 
@@ -310,7 +338,7 @@
     background: url(src/xps.svg);
 }
 
-.xps.scroll .thb {
+.xps .thb {
     background:
         url(src/xps.svg) repeat-x -119px 0,
         url(src/xps.svg) repeat-x -170px 100%,
@@ -320,29 +348,29 @@
     min-height: 7px
 }
 
-.xps.scroll .thb:hover {
+.xps .thb:hover {
     background-position-x: -136px, -187px, -233px, -34px
 }
 
-.xps.scroll .thb:active {
+.xps .thb:active {
     background-position-x: -153px, -204px, -245px, -51px
 }
 
-.xps.scroll ._arr {
+.xps>._arr {
     background: url(src/xps.svg) no-repeat -258px 6px, url(src/xps.svg) -68px 0;
     height: 17px;
     width: 17px
 }
 
-.xps.scroll ._arr:first-of-type {
+.xps>.top {
     background-position-y: -6px, 0
 }
 
-.xps.scroll ._arr:hover {
+.xps>._arr:hover {
     background-position-x: -258px, -85px
 }
 
-.xps.scroll ._arr:active {
+.xps>._arr:active {
     background-position-x: -271px, -102px
 }
 
@@ -356,23 +384,21 @@
     padding: 1px 0 1px 0
 }
 
-.vista.scroll ._trk {
+.vista>._trk {
     position: relative;
     z-index: 1
 }
 
-.vista.scroll .thb {
+.vista .thb {
     position: relative;
     background: url(src/vista.svg) repeat-x -65px 0,
         url(src/vista.svg) repeat-x -81px 100%,
         url(src/vista.svg) repeat-x -161px 50%,
         url(src/vista.svg) repeat-y 1px;
-
     width: 17px;
-    transition: 0.4s background-image
 }
 
-.vista.scroll .thb::after {
+.vista .thb::after {
     content: '';
     position: absolute;
     width: 17px;
@@ -383,17 +409,17 @@
     background-position-x: -97px, -113px, -174px, -15px;
 }
 
-.vista.scroll .thb:hover::after {
+.vista .thb:hover::after {
     opacity: 1;
 }
 
-.vista.scroll .thb:active::after {
+.vista .thb:active::after {
     opacity: 1;
     transition-duration: 0s;
     background-position-x: -129px, -145px, -187px, -31px;
 }
 
-.vista.scroll ._arr {
+.vista>._arr {
     background: url(src/vista.svg) no-repeat -252px 6px, url(src/vista.svg) no-repeat -203px -1px;
     opacity: 0;
     width: 17px;
@@ -402,18 +428,17 @@
     height: 16px;
 }
 
-.vista.scroll:hover ._arr,
-.vista.scroll:active ._arr,
-.vista.scroll ._arr:hover::after {
+.vista:hover ._arr,
+.vista:active ._arr,
+.vista>._arr:hover::after {
     opacity: 1;
 }
 
-.vista.scroll ._arr:first-of-type {
+.vista>.top {
     background-position-y: -7px, -1px;
 }
 
-
-.vista.scroll ._arr::after {
+.vista>._arr::after {
     background: inherit;
     background-position-x: -265px, -219px;
     content: '';
@@ -424,7 +449,7 @@
     width: 17px;
 }
 
-.vista.scroll ._arr:active::after {
+.vista>._arr:active::after {
     background-position-x: -278px, -235px;
     opacity: 1;
     transition-duration: 0s;
@@ -439,23 +464,23 @@
     width: 17px;
 }
 
-.w10.scroll .thb {
+.w10 .thb {
     background: #CDCDCD;
     width: 15px;
     transition: 1s background
 }
 
-.w10.scroll .thb:hover {
+.w10 .thb:hover {
     background: #A6A6A6;
     transition-duration: 0.5s
 }
 
-.w10.scroll .thb:active {
+.w10 .thb:active {
     background: #A6A6A6;
     box-shadow: inset 15px 0 #606060
 }
 
-.w10.scroll ._arr {
+.w10>._arr {
     background: none;
     height: 17px;
     position: relative;
@@ -463,17 +488,17 @@
     width: 15px;
 }
 
-.w10.scroll ._arr:hover:active {
+.w10>._arr:hover:active {
     background: #CDCDCD;
     box-shadow: inset 15px 0 #606060
 }
 
-.w10.scroll ._arr:hover:not(:active) {
+.w10>._arr:hover:not(:active) {
     background: #CDCDCD;
     transition-duration: 0.5s
 }
 
-.w10.scroll ._arr::after {
+.w10>._arr::after {
     background: #606060;
     content: "";
     height: 17px;
@@ -483,11 +508,11 @@
     -webkit-mask: url(src/w10.svg)
 }
 
-.w10.scroll ._arr:first-of-type::after {
+.w10>.top::after {
     transform: rotate(180deg)
 }
 
-.w10.scroll ._arr:hover:active::after {
+.w10>._arr:hover:active::after {
     background: white
 }
 
@@ -499,7 +524,7 @@
     width: 18px
 }
 
-.ns.scroll ._arr {
+.ns>._arr {
     background: #AAAAAA url(src/ns.png) no-repeat 3px 3px;
     box-shadow:
         inset -1px -1px black,
@@ -509,17 +534,17 @@
     width: 16px
 }
 
-.ns.scroll ._arr:first-of-type {
+.ns>.top {
     background-position-x: -8px;
     margin: 1px 0 1px 0
 }
 
-.ns.scroll ._trk {
+.ns>._trk {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2' height='2' viewBox='0 0 2 2' fill='%23555555'%3E%3Crect width='1' height='1' /%3E%3Crect x='1' y='1' width='1' height='1' /%3E%3C/svg%3E");
     order: -1
 }
 
-.ns.scroll ._arr:active {
+.ns>._arr:active {
     background-color: white;
     box-shadow:
         inset -1px -1px #555555,
@@ -528,7 +553,7 @@
         inset 0 0 0 8px rgba(255, 255, 255, 0.335)
 }
 
-.ns.scroll .thb {
+.ns .thb {
     background: #AAAAAA url(src/ns.png) no-repeat -19px 50%;
     box-shadow:
         inset -1px -1px black,
@@ -546,22 +571,22 @@
     position: relative
 }
 
-.mac7.scroll ._trk {
+.mac7>._trk {
     background: url("src/mac7b.svg") 0 1px;
     box-shadow:
         inset 1px 0 black,
         inset -1px 0 black;
 }
 
-.mac7.scroll .thb {
+.mac7 .thb {
     height: 16px;
     margin-left: 1px;
     position: relative;
     width: 14px;
 }
 
-.mac7.scroll .thb::before,
-.mac7.scroll .thb::after {
+.mac7 .thb::before,
+.mac7 .thb::after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -573,7 +598,7 @@
         inset 0 0 0 1px black;
 }
 
-.mac7.scroll .thb::after {
+.mac7 .thb::after {
     background: #AAAAAA url(src/mac7a.svg) 4px 50%;
     box-shadow:
         inset 0 1px #555555,
@@ -583,7 +608,7 @@
     z-index: 1
 }
 
-.mac7.scroll ._arr {
+.mac7>._arr {
     background: #DDDDDD url(src/mac7a.svg) no-repeat 2px -23px;
     box-shadow: inset 0 0 0 1px black,
         inset -2px -2px #777777,
@@ -594,17 +619,17 @@
     z-index: 2
 }
 
-.mac7.scroll ._arr:first-of-type {
+.mac7>.top {
     background-position-y: 3px
 }
 
-.mac7.scroll ._arr:active {
+.mac7>._arr:active {
     background-position-x: -10px
 }
 
 /*Mac OS 9*/
 
-.mac9.scroll ._trk {
+.mac9>._trk {
     background: #aaaaaa;
     order: -1;
     width: 16px;
@@ -616,7 +641,7 @@
         inset 3px 3px #888888
 }
 
-.mac9.scroll .thb {
+.mac9 .thb {
     background: url(src/mac9_.svg) no-repeat -8px 50%,
         url(src/mac9_.svg) repeat-x -98px -14px,
         url(src/mac9_.svg) repeat-x -113px 100%,
@@ -630,28 +655,27 @@
     min-height: 16px
 }
 
-.mac9.scroll .thb:active {
+.mac9 .thb:active {
     background-position-x: 4px, -128px, -83px, -38px
 }
 
-.mac9.scroll ._arr {
+.mac9>._arr {
     background: url(src/mac9_.svg) no-repeat -98px 1px, url(src/mac9_.svg) -53px 0;
     height: 16px;
     width: 16px;
     z-index: 3
 }
 
-.mac9.scroll ._arr:first-of-type {
+.mac9>.top {
     background-position-x: -128px, -53px;
     margin: -1px 0 -1px 0;
 }
 
-.mac9.scroll ._arr:active {
+.mac9>._arr:active {
     background-position-x: -98px, -68px
 }
 
-
-.mac9.scroll ._arr:active:first-of-type {
+.mac9>.top:active {
     background-position-x: -128px, -68px
 }
 
@@ -660,25 +684,25 @@
     background: url(src/mac10a.svg) repeat-x -15px 100%, url(src/mac10a.svg) repeat-x -30px 0, url(src/mac10a.svg);
 }
 
-.mac10.scroll ._arr {
+.mac10>._arr {
     width: 15px;
     height: 24px;
     background: url(src/mac10a.svg) repeat-y -15px 100%;
 }
 
-.mac10.scroll ._arr:first-of-type {
+.mac10>.top {
     background-position: -30px 0;
 }
 
-.mac10.scroll ._arr:active {
+.mac10>._arr:active {
     background-position-x: -45px;
 }
 
-.mac10.scroll ._trk {
+.mac10>._trk {
     margin: -9px 0 -9px 0;
 }
 
-.mac10.scroll .thb {
+.mac10 .thb {
     height: 34%;
     width: 15px;
     border: 0 solid;
@@ -689,7 +713,7 @@
     background-position: -60px 0;
 }
 
-.mac10.scroll .thb::after {
+.mac10 .thb::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -703,18 +727,18 @@
     width: 16px
 }
 
-.osx10.scroll ._arr {
+.osx10>._arr {
     display: none;
 }
 
-.osx10.scroll ._trk {
+.osx10>._trk {
     background: rgba(250, 250, 250, 0.75);
     box-shadow: inset 2px 0 1px -2px rgba(0, 0, 0, 0.28), inset -1px 0 1px -2px black;
     padding: 2px 0 2px 3px;
     box-sizing: border-box;
 }
 
-.osx10.scroll .thb {
+.osx10 .thb {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 22px;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
@@ -723,26 +747,25 @@
     transition: opacity 0.1s 0.25s
 }
 
-.osx10.scroll:hover .thb,
-.osx10.scroll:active .thb {
+.osx10:hover .thb,
+.osx10:active .thb {
     opacity: 1;
     transition-delay: 0s
 }
 
-
 /*Browsers*/
 
 /*World Wide Web Netscape*/
-.www.ns.ico {
+.www.ico {
     width: 58px;
     height: 48px;
     background-image: url(src/www_ns_ico.png);
 }
 
 /*Internet explorer 1.0-2.0 Windows 95*/
-.mos3.w95._btn,
-.ie1.w95._btn,
-.ie2.w95._btn {
+._btn.mos3,
+.ie1._btn,
+.ie2._btn {
     width: 23px;
     height: 22px;
     background: silver;
@@ -753,9 +776,9 @@
         inset -2px -2px gray;
 }
 
-.mos3.w95._btn::after,
-.ie1.w95._btn::after,
-.ie2.w95._btn::after {
+._btn.mos3::after,
+.ie1._btn::after,
+.ie2._btn::after {
     content: '';
     background: url(src/ie1_w95_btn.png) no-repeat;
     background-position: inherit;
@@ -766,9 +789,9 @@
     height: 16px;
 }
 
-.mos3.w95._btn:not(.false):hover:active,
-.ie1.w95._btn:not(.false):hover:active,
-.ie2.w95._btn:not(.false):hover:active {
+:not(.false)._btn.mos3:hover:active,
+:not(.false)._btn.ie1:hover:active,
+:not(.false)._btn.ie2:hover:active {
     box-shadow:
         inset -1px -1px white,
         inset 1px 1px black,
@@ -776,72 +799,72 @@
         inset 2px 2px gray;
 }
 
-.mos3.w95._btn:not(.false):hover:active::after,
-.ie1.w95._btn:not(.false):hover:active::after,
-.ie2.w95._btn:not(.false):hover:active::after {
+:not(.false)._btn.mos3:hover:active::after,
+:not(.false)._btn.ie1:hover:active::after,
+:not(.false)._btn.ie2:hover:active::after {
     top: 4px;
     left: 4px
 }
 
-.ie1.w95._btn.false::after,
-.ie2.w95._btn.false::after {
+.ie1.false::after,
+.ie2.false::after {
     background-position-y: -16px;
     filter: drop-shadow(1px 1px 0 white);
 }
 
-.ie1.w95._btn.prev {
+.ie1.prev {
     background-position-x: 0
 }
 
-.ie1.w95._btn.next {
+.ie1.next {
     background-position-x: -16px
 }
 
-.ie1.w95._btn.stop {
+.ie1.stop {
     background-position-x: -32px
 }
 
-.ie1.w95._btn.home {
+.ie1.home {
     background-position-x: -48px
 }
 
-.ie1.w95._btn.refr {
+.ie1.refr {
     background-position-x: -64px
 }
 
-.ie1.w95._btn.addfav {
+.ie1.addfav {
     background-position-x: -80px
 }
 
-.ie1.w95._btn.fav {
+.ie1.fav {
     background-position-x: -96px
 }
 
-.ie1.w95._btn.zin {
+.ie1.zin {
     background-position-x: -112px
 }
 
-.ie1.w95._btn.zout {
+.ie1.zout {
     background-position-x: -128px
 }
 
-.ie1.w95._btn.open {
+.ie1.open {
     background-position-x: -144px
 }
 
-.ie1.w95._btn.cut {
+.ie1.cut {
     background-position-x: -160px
 }
 
-.ie1.w95._btn.copy {
+.ie1.copy {
     background-position-x: -176px
 }
 
-.ie1.w95._btn.paste {
+.ie1.paste {
     background-position-x: -192px
 }
 
-.ie1.w95.thr {
+.ie1.thr {
     background-origin: padding-box;
     background: url(src/ie1_w95_thr.png) no-repeat 0 2px;
     box-shadow:
@@ -855,115 +878,115 @@
     width: 53px;
 }
 
-.ie1.w95.thr.anim {
+.ie1.thr.anim {
     animation: 1.5s loopX steps(17, start) infinite;
 }
 
 /*Internet Explorer 2.0, Windows 95*/
 
-.ie2.w95._btn::after {
+.ie2._btn::after {
     background-image: url(src/ie2_w95_btn.png)
 }
 
-.ie2.w95._btn.srch {
+.ie2._btn.srch {
     background-position-x: 0
 }
 
-.ie2.w95._btn.prnt {
+.ie2._btn.prnt {
     background-position-x: -16px
 }
 
-.ie2.w95._btn.mail {
+.ie2._btn.mail {
     background-position-x: -32px
 }
 
-.ie2.w95._btn.news {
+.ie2._btn.news {
     background-position-x: -48px
 }
 
 /*Mosaic 3.0 Windows 95*/
-.mos3.w95._btn::after {
+._btn.mos3::after {
     background-image: url(src/mos3_w95_btn.png)
 }
 
-.mos3.w95._btn.open {
+.mos3.open {
     background-position-x: 0
 }
 
-.mos3.w95._btn.save {
+.mos3.save {
     background-position-x: -16px
 }
 
-.mos3.w95._btn.prnt {
+.mos3.prnt {
     background-position-x: -32px
 }
 
-.mos3.w95._btn.prev {
+.mos3.prev {
     background-position-x: -48px
 }
 
-.mos3.w95._btn.copy {
+.mos3.copy {
     background-position-x: -64px
 }
 
-.mos3.w95._btn.paste {
+.mos3.paste {
     background-position-x: -80px
 }
 
-.mos3.w95._btn.find {
+.mos3.find {
     background-position-x: -96px
 }
 
-.mos3.w95._btn.findcache {
+.mos3.findcache {
     background-position-x: -112px
 }
 
-.mos3.w95._btn.showmanager {
+.mos3.showmanager {
     background-position-x: -128px
 }
 
-.mos3.w95._btn.help {
+.mos3.help {
     background-position-x: -144px
 }
 
-.mos3.w95._btn.prev {
+.mos3.prev {
     background-position-x: -158px
 }
 
-.mos3.w95._btn.next {
+.mos3.next {
     background-position-x: -174px
 }
 
-.mos3.w95._btn.cache {
+.mos3.cache {
     background-position-x: -191px
 }
 
-.mos3.w95._btn.refr {
+.mos3.refr {
     background-position-x: -207px
 }
 
-.mos3.w95._btn.home {
+.mos3.home {
     background-position-x: -223px
 }
 
-.mos3.w95._btn.stop {
+.mos3.stop {
     background-position-x: -239px
 }
 
-.mos3.w95._btn.news {
+.mos3.news {
     background-position-x: -255px
 }
 
-.mos3.w95._btn.mail {
+.mos3.mail {
     background-position-x: -271px
 }
 
-.mos3.w95._btn.addfav {
+.mos3.list {
     background-position-x: -287px
 }
 
-.mos3.w95._btn.go,
-.mos3.w95._btn.clear {
+.mos3.go,
+.mos3.clear {
     width: 22px;
     background-position-x: -304px;
     box-shadow: inset 0 0 0 1px black,
@@ -971,8 +994,8 @@
         inset -2px -2px gray;
 }
 
-.mos3.w95._btn.go:not(.false):hover:active,
-.mos3.w95._btn.clear:not(.false):hover:active {
+:not(.false).mos3.go:hover:active,
+:not(.false).mos3.clear:hover:active {
     box-shadow: inset 0 0 0 1px black,
         inset 2px 2px gray;
 }
@@ -981,11 +1004,11 @@
     background-position-y: -16px
 }
 
-.mos3.w95._btn.clear {
+.mos3.clear {
     background-position-x: -320px
 }
 
-.mos3.w95.thr {
+.mos3.thr {
     background: url(src/mos3_w95_thr.png) no-repeat;
     box-shadow:
         inset -1px -1px white,
@@ -994,15 +1017,15 @@
     width: 64px;
 }
 
-.mos3.w95.thr:active {
+.mos3.thr:active {
     background-color: #C0C0C0;
     background-position: 5px 5px;
     background-size: 1375px 55px;
 }
 
-.mos3.w95.thr.anim:not(:active) {
+:not(:active).mos3.anim {
     background-position-x: 64px;
-    animation: 1.5s loopX steps(25, start) infinite;
+    animation: 1.4s loopX steps(25, start) infinite;
 }
 
 /*Mosaic 1.0, Windows 95*/
@@ -1015,6 +1038,7 @@
         inset 1px 1px white,
         inset -2px -2px gray,
         1px 0 black, 0 1px black, -1px 0 black, 0 -1px black;
+    margin-top: 1px;
     height: 20px;
     width: 22px;
 }
@@ -1030,63 +1054,63 @@
     background-position: inherit;
 }
 
-.mos1.w3._btn:not(.false):hover:active {
+:not(.false).mos1.w3._btn:hover:active {
     box-shadow:
         inset 1px 1px gray,
         1px 0 black, 0 1px black, -1px 0 black, 0 -1px black
 }
 
-.mos1.w3._btn.false::after {
+.mos1.w3.false::after {
     filter: drop-shadow(1px 1px white);
     background-position-y: -15px;
 }
 
-.mos1.w3._btn:not(.false):hover:active::after {
+:not(.false).mos1.w3._btn:hover:active::after {
     left: 3px;
     top: 3px
 }
 
-.mos1.w3._btn.open {
+.mos1.w3.open {
     background-position-x: 0
 }
 
-.mos1.w3._btn.save {
+.mos1.w3.save {
     background-position-x: -16px
 }
 
-.mos1.w3._btn.prev {
+.mos1.w3.prev {
     background-position-x: -32px
 }
 
-.mos1.w3._btn.next {
+.mos1.w3.next {
     background-position-x: -48px
 }
 
-.mos1.w3._btn.refr {
+.mos1.w3.refr {
     background-position-x: -64px
 }
 
-.mos1.w3._btn.home {
+.mos1.w3.home {
     background-position-x: -80px
 }
 
-.mos1.w3._btn.copy {
+.mos1.w3.copy {
     background-position-x: -96px
 }
 
-.mos1.w3._btn.paste {
+.mos1.w3.paste {
     background-position-x: -112px
 }
 
-.mos1.w3._btn.find {
+.mos1.w3.find {
     background-position-x: -128px
 }
 
-.mos1.w3._btn.prnt {
+.mos1.w3.prnt {
     background-position-x: -144px
 }
 
-.mos1.w3._btn.help {
+.mos1.w3.help {
     background-position-x: -160px
 }
 
@@ -1104,7 +1128,7 @@
     box-shadow: inset 0 0 0 1px black;
 }
 
-.mos1.w3.thr.anim:active {
+.mos1.w3.anim:active {
     animation: 2.6s loopX steps(26, start) infinite, 0.05s mos1 steps(1) forwards
 }
 
@@ -1117,39 +1141,39 @@
     }
 }
 
-.mos1.w3.thr.anim {
+.mos1.w3.anim {
     animation: 2.6s loopX steps(26, start) infinite;
     background-position-x: 66px
 }
 
 /*Mosaic 1.0, Mac OS 7*/
 
-.mos2.mac7._btn,
+.mos2,
 .mos1.mac7._btn {
     background: url(src/mos1-2_mac7_btn.png) no-repeat;
     height: 26px;
     width: 30px;
 }
 
-.mos2.mac7._btn:not(.false):hover:active,
-.mos1.mac7._btn:not(.false):hover:active {
+:not(.false).mos2:hover:active,
+:not(.false).mos1.mac7._btn:hover:active {
     background-position-y: -25px
 }
 
-.mos2.mac7._btn.false,
-.mos1.mac7._btn.false {
+.mos2.false,
+.mos1.mac7.false {
     background-position-y: -51px
 }
 
-.mos1.mac7._btn.prev {
+.mos1.mac7.prev {
     background-position-x: 0
 }
 
-.mos1.mac7._btn.next {
+.mos1.mac7.next {
     background-position-x: -29px
 }
 
-.mos1.mac7._btn.home {
+.mos1.mac7.home {
     background-position-x: -58px
 }
 
@@ -1159,21 +1183,22 @@
     background: #EEEEEE url(src/mos1_mac7_thr.png) no-repeat;
 }
 
-.mos1.mac7.thr.anim {
+.mos1.mac7.anim {
     background-position-x: 32px;
     animation: 0.2s loopX steps(14, start) infinite;
 }
 
-.mos2.mac7._btn.save {
+.mos2.save {
     background-position-x: -87px
 }
 
-.mos2.mac7._btn.refr {
+.mos2.refr {
     background-position-x: -116px
 }
 
 /*Internet Explorer 3.0, Windows 95*/
-.ie3.w95.thr {
+.ie3.thr {
+    background: silver;
     box-shadow:
         inset -1px 0 gray,
         inset 1px 1px white,
@@ -1183,7 +1208,7 @@
     width: 43px
 }
 
-.ie3.w95.thr::after {
+.ie3.thr::after {
     background: url(src/ie3_w95_thr.png) no-repeat;
     content: '';
     height: 38px;
@@ -1193,83 +1218,82 @@
     width: 38px
 }
 
-.ie3.w95.thr.anim::after {
+.ie3.anim::after {
     animation: 8.4s loopY steps(42, start) infinite;
     background-position-y: -114px
 }
 
-.ie3.w95._btn {
+.ie3._btn {
     height: 20px;
     width: 30px;
     background: url(src/ie3_w95_btn.png) no-repeat;
     width: 30px;
 }
 
-.ie3.w95._btn:not(.false):hover {
+:not(.false).ie3._btn:hover {
     background-position-y: -20px
 }
 
-.ie3.w95._btn.false {
+:not(.false).ie3._btn:active:hover {
+    margin: -1px 0 0 1px;
+}
+
+.ie3.false {
     background-position-y: -40px;
     filter: drop-shadow(1px 1px 0 white)
 }
 
-.ie3.w95._btn:not(.false):active:hover {
-    margin: -1px 0 0 1px;
-}
-
-.ie3.w95._btn.prev {
+.ie3.prev {
     background-position-x: 0
 }
 
-.ie3.w95._btn.next {
+.ie3.next {
     background-position-x: -30px
 }
 
-.ie3.w95._btn.stop {
+.ie3.stop {
     background-position-x: -60px
 }
 
-.ie3.w95._btn.refr {
+.ie3.refr {
     background-position-x: -90px
 }
 
-.ie3.w95._btn.home {
+.ie3.home {
     background-position-x: -120px
 }
 
-.ie3.w95._btn.srch {
+.ie3.srch {
     background-position-x: -150px
 }
 
-.ie3.w95._btn.fav {
+.ie3.fav {
     background-position-x: -180px
 }
 
-.ie3.w95._btn.prnt {
+.ie3.prnt {
     background-position-x: -210px
 }
 
-.ie3.w95._btn.zin {
+.ie3.zin {
     background-position-x: -240px
 }
 
-.ie3.w95._btn.pen {
+.ie3.pen {
     background-position-x: -270px
 }
 
-.ie3.w95._btn.setts {
+.ie3.setts {
     background-position-x: -300px
 }
 
-.ie3.w95._btn.mail {
+.ie3.mail {
     background-position-x: -390px
 }
 
 /*Internet Explorer 5.0 Windows 95*/
-
-.ie4.w95.thr,
-.ie5.w95.thr {
+.ie4.thr,
+.ie5.w95 {
     box-shadow:
         inset -1px 0 gray,
         inset 1px 1px white,
@@ -1280,8 +1304,8 @@
     background: black;
 }
 
-.ie4.w95.thr::after,
-.ie5.w95.thr::after {
+.ie4.thr::after,
+.ie5.w95::after {
     content: '';
     top: 1px;
     left: 9px;
@@ -1291,105 +1315,105 @@
     background: black url(src/ie4_w95_thr.png) no-repeat;
 }
 
-.ie5.w95.thr::after {
+.ie5.w95::after {
     background-image: url(src/ie5_w95_thr.png);
 }
 
-.ie5.w95.thr.anim::after {
+.ie5.w95.anim::after {
     animation: 3s loopY steps(41, start) infinite;
     background-position-y: 22px
 }
 
-.ie4.w95.thr.anim::after {
+.ie4.anim::after {
     animation: 3s loopY steps(42, start) infinite;
     background-position-y: -66px
 }
 
-.ie4.w95._btn {
+.ie4._btn {
     height: 20px;
     position: relative;
     width: 30px;
     background: url(src/ie4_w95_btn.png) no-repeat;
 }
 
-.ie4.w95._btn:not(.false):hover {
+.ie4._btn:not(.false):hover {
     background-position-y: -20px
 }
 
-.ie4.w95._btn.false {
+.ie4._btn:not(.false):active:hover {
+    margin: -1px 0 0 1px
+}
+
+.ie4.false {
     background-position-y: -40px;
     filter: drop-shadow(1px 1px 0 white)
 }
 
-.ie4.w95._btn:not(.false):active:hover {
-    margin: -1px 0 0 1px
-}
-
-.ie4.w95._btn.prev {
+.ie4.prev {
     background-position-x: 0
 }
 
-.ie4.w95._btn.next {
+.ie4.next {
     background-position-x: -30px
 }
 
-.ie4.w95._btn.stop {
+.ie4.stop {
     background-position-x: -60px
 }
 
-.ie4.w95._btn.refr {
+.ie4.refr {
     background-position-x: -90px
 }
 
-.ie4.w95._btn.home {
+.ie4.home {
     background-position-x: -120px
 }
 
-.ie4.w95._btn.srch {
+.ie4.srch {
     background-position-x: -150px
 }
 
-.ie4.w95._btn.fav {
+.ie4.fav {
     background-position-x: -180px
 }
 
-.ie4.w95._btn.prnt {
+.ie4.prnt {
     background-position-x: -210px
 }
 
-.ie4.w95._btn.zin {
+.ie4.zin {
     background-position-x: -240px
 }
 
-.ie4.w95._btn.hist {
+.ie4.hist {
     background-position-x: -270px
 }
 
-.ie4.w95._btn.fscr {
+.ie4.fscr {
     background-position-x: -300px
 }
 
-.ie4.w95._btn.discus {
+.ie4.discus {
     background-position-x: -330px
 }
 
-.ie4.w95._btn.mail {
+.ie4.mail {
     background-position-x: -360px
 }
 
-.ie4.w95._btn.pen {
+.ie4.pen {
     background-position-x: -390px
 }
 
-.ie4.w95._btn.setts {
+.ie4.setts {
     background-position-x: -420px
 }
 
-.ie4.w95._btn.music {
+.ie4.music {
     background-position-x: -450px
 }
 
-.ie4.w95._btn.chan {
+.ie4.chan {
     background-position-x: -480px
 }
 
@@ -1401,64 +1425,64 @@
     height: 40px;
 }
 
-.ie5.mac9.thr.anim {
+.ie5.mac9.anim {
     background-position-y: 40px;
     animation: 1.5s loopY steps(42, end) infinite;
 }
 
-
-.ie5.mac9._btn {
+.ie5._btn {
+    margin-top: -2px;
     background: url(src/ie5_mac9_btn.png) 60px;
     width: 30px;
     height: 22px
 }
 
-.ie5.mac9._btn.prev {
-    background-position-y: 0
-}
-
-.ie5.mac9._btn.next {
-    background-position-y: -22px
-}
-
-.ie5.mac9._btn.stop {
-    background-position-y: -44px
-}
-
-.ie5.mac9._btn.refr {
-    background-position-y: -66px
-}
-
-.ie5.mac9._btn.home {
-    background-position-y: 88px
-}
-
-.ie5.mac9._btn.mail {
-    background-position-y: 22px
-}
-
-.ie5.mac9._btn.prnt {
-    background-position-y: 44px
-}
-
-.ie5.mac9._btn.pen {
-    background-position-y: 66px
-}
-
-.ie5.mac9._btn:hover {
+:not(.false).ie5._btn:hover {
     background-position-x: 0
 }
 
-.ie5.mac9._btn:active {
+:not(.false).ie5._btn:hover:active {
     background-position-x: 90px
 }
 
-.ie5.mac9._btn.false {
+.ie5.false {
     background-position-x: 30px
 }
 
+.ie5.prev {
+    background-position-y: 0
+}
+
+.ie5.next {
+    background-position-y: -22px
+}
+
+.ie5.stop {
+    background-position-y: -44px
+}
+
+.ie5.refr {
+    background-position-y: -66px
+}
+
+.ie5.home {
+    background-position-y: 88px
+}
+
+.ie5.mail {
+    background-position-y: 22px
+}
+
+.ie5.prnt {
+    background-position-y: 44px
+}
+
+.ie5.pen {
+    background-position-y: 66px
+}
+
 /*Internet explorer 6.0 Windows XP*/
-.ie6.xp.thr {
+.ie6.thr {
     width: 38px;
     height: 23px;
     box-shadow: inset 0 -1px #D9D2BD;
@@ -1466,7 +1490,7 @@
     position: relative;
 }
 
-.ie6.xp.thr::after {
+.ie6.thr::after {
     content: '';
     background: url(src/ie6_xp_thr.png);
     position: absolute;
@@ -1476,91 +1500,96 @@
     height: 22px;
 }
 
-.ie6.xp.thr.anim::after {
+.ie6.anim::after {
     animation: 2s loopY steps(50, end) infinite;
     background-position-y: 22px
 }
 
-.ie6.xp._btn {
+.ie6._btn {
     width: 24px;
     height: 24px;
     background: url(src/ie6_xp_btn.png) no-repeat;
     position: absolute;
 }
 
-.ie6.xp._btn:not(.false):hover {
+:not(.false).ie6._btn:hover {
     background-position-y: -24px;
 }
 
-.ie6.xp._btn:not(.false):hover:active {
+:not(.false).ie6._btn:hover:active {
     margin: -1px 0 0 1px;
 }
 
-.ie6.xp._btn.false {
+.ie6.false {
     background-position-y: -48px
 }
 
-.ie6.xp._btn.prev {
+.ie6.prev {
     background-position-x: 0
 }
 
-.ie6.xp._btn.next {
+.ie6.next {
     background-position-x: -24px
 }
 
-.ie6.xp._btn.stop {
+.ie6.stop {
     background-position-x: -48px
 }
 
-.ie6.xp._btn.refr {
+.ie6.refr {
     background-position-x: -72px
 }
 
-.ie6.xp._btn.home {
+.ie6.home {
+    margin-top: -2px;
     background-position-x: -96px
 }
 
-.ie6.xp._btn.srch {
+:not(.false).ie6.home:hover:active {
+    margin: -3px 0 0 1px;
+}
+
+.ie6.srch {
     background-position-x: -120px
 }
 
-.ie6.xp._btn.fav {
+.ie6.fav {
     background-position-x: -144px
 }
 
-.ie6.xp._btn.prnt {
+.ie6.prnt {
     background-position-x: -168px
 }
 
-.ie6.xp._btn.zin {
+.ie6.zin {
     background-position-x: -192px
 }
 
-.ie6.xp._btn.pen {
+.ie6.pen {
     background-position-x: -216px
 }
 
-.ie6.xp._btn.setts {
+.ie6.setts {
     background-position-x: -240px
 }
 
-.ie6.xp._btn.hist {
+.ie6.hist {
     background-position-x: -264px
 }
 
-.ie6.xp._btn.music {
+.ie6.music {
     background-position-x: -288px
 }
 
-.ie6.xp._btn.mail {
+.ie6.mail {
     background-position-x: -312px
 }
 
-.ie6.xp._btn.fscr {
+.ie6.fscr {
     background-position-x: -336px
 }
 
-.ie6.xp._btn.discus {
+.ie6.discus {
     background-position-x: -360px
 }
 
@@ -1572,85 +1601,85 @@
     background: url(src/ie7_xp-vista_btn_b.png) no-repeat;
 }
 
-.ie7.xp._btn.b {
+.ie7.xp.b {
     width: 22px;
     height: 22px;
     background: url(src/ie7_xp-vista_btn.png) no-repeat;
 }
 
-.ie7.xp._btn.b.prev {
+.ie7.xp.prev {
     width: 25px;
     height: 25px;
     background-position-x: 0
 }
 
-.ie7.xp._btn.b.next {
+.ie7.xp.next {
     width: 25px;
     height: 25px;
     background-position-x: -25px
 }
 
-.ie7.xp._btn:not(.b):hover:active {
+.ie7.xp:not(.b)._btn:hover:active {
     margin: -1px 0 0 1px;
 }
 
-.ie7.xp._btn.b:not(.false):hover {
+:not(.false).ie7.xp.b:hover {
     background-position-y: -25px
 }
 
-.ie7.xp._btn.b:not(.false):hover:active {
+:not(.false).ie7.xp.b:hover:active {
     background-position-y: -50px
 }
 
-.ie7.xp._btn.b.false {
+.ie7.xp.b.false {
     background-position-y: -75px
 }
 
-.ie7.xp._btn.addfav {
+.ie7.xp.addfav {
     background-position-x: -64px
 }
 
-.ie7.xp._btn.fav {
+.ie7.xp.fav {
     background-position-x: 0
 }
 
-.ie7.xp._btn.fscr {
+.ie7.xp.fscr {
     background-position-x: -256px
 }
 
-.ie7.xp._btn.go {
+.ie7.xp.go {
     background-position-x: -50px
 }
 
-.ie7.xp._btn.home {
+.ie7.xp.home {
     background-position-x: -144px
 }
 
-.ie7.xp._btn.mail {
+.ie7.xp.mail {
     background-position-x: -304px
 }
 
-.ie7.xp._btn.pen {
+.ie7.xp.pen {
     background-position-x: -96px
 }
 
-.ie7.xp._btn.prnt {
+.ie7.xp.prnt {
     background-position-x: -80px
 }
 
-.ie7.xp._btn.refr {
+.ie7.xp.refr {
     background-position-x: -92px
 }
 
-.ie7.xp._btn.setts {
+.ie7.xp.setts {
     background-position-x: -112px
 }
 
-.ie7.xp._btn.stop {
+.ie7.xp.stop {
     background-position-x: -71px
 }
 
-.ie7.xp._btn.zin {
+.ie7.xp.zin {
     background-position-x: -272px
 }
 
@@ -1661,47 +1690,47 @@
     position: relative;
 }
 
-.ie7.xp._btn2.srch * {
+.ie7.xp.srch>.btn {
     width: 22px;
     height: 22px;
     background: url(src/ie7_xp-vista_btn.png) no-repeat;
     background-position-x: -113px
 }
 
-.ie7.xp._btn2.srch :last-child {
+.ie7.xp.srch>.bb {
     width: 13px;
     background-position-x: -135px
 }
 
-.ie7.xp._btn2.srch :hover {
+.ie7.xp.srch>:hover {
     background-position-y: -25px
 }
 
-.ie7.xp._btn2.srch :last-child:hover {
+.ie7.xp.srch>.bb:hover {
     width: 14px;
     margin-left: -1px;
     background-position-x: -134px
 }
 
-.ie7.xp._btn2.srch :hover:active {
+.ie7.xp.srch>:hover:active {
     background-position-y: -50px
 }
 
 /*Internet explorer 7.0 Windows vista*/
 
-.ie7.vista._btn {
+.ie7.vista {
     position: relative;
     width: 16px;
     height: 16px;
     background: url(src/ie7_xp-vista_btn.png) no-repeat;
 }
 
-.ie7.vista._btn {
+.ie7.vista {
     width: 26px;
     height: 26px;
 }
 
-.ie7.vista._btn:not(.false)::after {
+:not(.false).ie7.vista::after {
     position: absolute;
     width: inherit;
     height: inherit;
@@ -1712,67 +1741,63 @@
     transition: opacity 0.5s;
 }
 
-.ie7.vista._btn:hover::after,
-.ie7.vista._btn:hover:active::after {
+.ie7.vista:hover::after,
+.ie7.vista:hover:active::after {
     opacity: 1;
 }
 
-.ie7.vista._btn:hover:active::after {
+.ie7.vista:hover:active::after {
     transition-duration: 0s;
     background-position-y: -50px
 }
 
-.ie7.vista._btn.stop {
+.ie7.vista.stop {
     background-position-x: -161px
 }
 
-.ie7.vista._btn.go {
+.ie7.vista.go {
     background-position-x: -186px
 }
 
-.ie7.vista._btn.srch {
+.ie7.vista.srch {
     background-position-x: -211px
 }
 
-.ie7.vista._btn.refr {
+.ie7.vista.refr {
     background-position-x: -236px
 }
 
-
-/*Internet Explorer 9.0 Windows 8*/
+/*Internet Explorer 9.0 Windows 7*/
 /*Internet Explorer 10.0 Windows 8*/
 /*Internet Explorer 11.0 Windows 8*/
 
-
-.ie9.w7._btn,
-.ie10.w8._btn,
-.ie11.w8._btn {
+.ie9,
+.ie10,
+.ie11 {
     width: 16px;
     height: 16px;
     background: url(src/ie9_w7__btn_a.png) no-repeat;
 }
 
-.ie9.w7._btn.b,
-.ie10.w8._btn.b,
-.ie11.w8._btn.b {
+.ie9.b,
+.ie10.b {
     background-image: url(src/ie9_w7__btn_b.png);
     width: 38px;
     height: 34px;
 }
 
-.ie10.w8._btn,
-.ie11.w8._btn {
+.ie10._btn,
+.ie11._btn {
     background-image: url(src/ie10_w8__btn_a.png)
 }
 
-.ie10.w8._btn.b,
-.ie11.w8._btn.b {
+.ie10.b {
     background-image: url(src/ie10_w8__btn_b.png)
 }
 
-.ie9.w7._btn::after,
-.ie10.w8._btn::after,
-.ie11.w8._btn::after {
+.ie9::after,
+.ie10::after,
+.ie11::after {
     content: '';
     position: absolute;
     width: inherit;
@@ -1783,106 +1808,107 @@
     transition: opacity 0.5s;
 }
 
-.ie9.w7._btn.b::after,
-.ie10.w8._btn.b::after,
-.ie11.w8._btn.b::after {
+.ie9.b::after,
+.ie10.b::after {
     background-position-y: -34px;
 }
 
-.ie9.w7._btn:not(.false):hover::after,
-.ie10.w8._btn:not(.false):hover::after,
-.ie11.w8._btn:not(.false):hover::after {
+:not(.false).ie9:hover::after,
+:not(.false).ie10:hover::after,
+:not(.false).ie11:hover::after {
     opacity: 1;
 }
 
-.ie9.w7._btn:hover:active::after,
-.ie10.w8._btn:hover:active::after,
-.ie11.w8._btn:hover:active::after {
+.ie9:hover:active::after,
+.ie10:hover:active::after,
+.ie11:hover:active::after {
     background-position-y: -32px
 }
 
-.ie9.w7._btn.b:not(.false):hover:active::after,
-.ie10.w8._btn.b:not(.false):hover:active::after,
-.ie11.w8._btn.b:not(.false):hover:active::after {
+:not(.false).ie9.b:hover:active::after,
+:not(.false).ie10.b:hover:active::after {
     background-position-y: -68px;
 }
 
-.ie9.w7._btn.b.false,
-.ie10.w8._btn.b.false,
-.ie11.w8._btn.b.false {
+.ie9.b.false,
+.ie10.b.false {
     background-position-y: -102px;
 }
 
-.ie9.w7._btn.srch,
-.ie10.w8._btn.srch {
+.ie9.srch,
+.ie10.srch {
     background-position-x: 0
 }
 
-.ie9.w7._btn.go,
-.ie10.w8._btn.go {
+.ie9.go,
+.ie10.go {
     background-position-x: -16px
 }
 
-.ie9.w7._btn.stop,
-.ie10.w8._btn.stop {
+.ie9.stop,
+.ie10.stop {
     background-position-x: -32px
 }
 
-.ie9.w7._btn.refr,
-.ie10.w8._btn.refr {
+.ie9.refr,
+.ie10.refr {
     background-position-x: -48px
 }
 
-.ie9.w7._btn.fav,
-.ie10.w8._btn.fav {
+.ie9.fav,
+.ie10.fav {
     width: 17px;
     background-position-x: -209px
 }
 
-.ie9.w7._btn.prefs,
-.ie10.w8._btn.prefs {
+.ie9.setts,
+.ie10.setts {
     background-position-x: -227px
 }
 
-.ie9.w7._btn.home,
-.ie10.w8._btn.home {
+.ie9.home,
+.ie10.home {
     background-position-x: -192px
 }
 
-.ie9.w7._btn.b.next,
-.ie10.w8._btn.b.next {
+.ie9.next,
+.ie10.next {
     width: 26px;
     height: 32px;
     background-position-x: -39px;
 }
 
-.ie9.w7._btn.b.prev,
-.ie10.w8._btn.b.prev {
+.ie9.prev,
+.ie10.prev {
     background-position-x: 0;
 }
 
-.ie11.w8._btn.smile {
+.ie11 {
     background-position-x: -243px;
 }
 
 /*Microsoft Edge Windows 10*/
-.me.w10._btn {
+.me {
     width: 44px;
     height: 44px;
     background: #F0F0F0;
-    transition: 1s background-color
+    transition: 1s background-color, 0.3s height;
 }
 
-.me.w10._btn:not(.check):not(.c):not(.false):hover {
+.me.preventgrow {
+    transition: 1s background-color;
+}
+
+.me:not(.check):not(.c):not(.false):hover {
     background-color: #DCDCDC;
     transition-duration: 0.5s
 }
 
-.me.w10._btn:not(.check):not(.c):not(.false):hover:active {
+.me:not(.check):not(.c):not(.false):hover:active {
     box-shadow: inset 44px 0 #C4C4C4
 }
 
-.me.w10._btn::after {
+.me::after {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -1894,164 +1920,150 @@
     background-position: inherit;
 }
 
-
-.me.w10._btn.check.a::after,
-.me.w10._btn.check.b:not(.false):hover::after {
+.me.a.check::after,
+:not(.false).me.b.check:hover::after {
     filter: invert(30%) sepia(100%) hue-rotate(165deg) saturate(5);
     box-shadow: 0 42px 0 12px black;
 }
 
-.me.w10._btn.check.b::after {
+.me.b.check::after {
     box-shadow: 0 42px 0 12px black;
     filter: invert(25%) sepia(100%) hue-rotate(165deg) saturate(5);
 }
 
-.me.w10._btn.check.b:not(.false):active:hover::after {
+:not(.false).me.b.check:active:hover::after {
     filter: invert(35%) sepia(100%) hue-rotate(165deg) saturate(5);
 }
 
-.me.w10._btn.c:not(.false):hover::after,
-.me.w10._btn.c.check::after {
+:not(.false).me.c:hover::after,
+.me.c.check::after {
     filter: invert(30%) sepia(100%) hue-rotate(20deg) saturate(70);
 }
 
-.me.w10._btn.c:not(.false):active:hover::after {
+:not(.false).me.c:active:hover::after {
     filter: invert(30%) sepia(100%) hue-rotate(20deg) saturate(30);
 }
 
-.me.w10._btn.false::after {
+.me.false::after {
     opacity: 0.5;
 }
 
-.me.w10._btn.c.check::after {
+.me.c.check::after {
     box-shadow: none;
     background-position-y: -320px;
 }
 
-.me.w10._btn.home {
+.me.home {
     background-position-y: 0
 }
 
-.me.w10._btn.next {
+.me.next {
     background-position-y: -20px
 }
 
-.me.w10._btn.prev {
+.me.prev {
     background-position-y: -40px
 }
 
-.me.w10._btn.addfav {
+.me.addfav {
     background-position-y: -60px
 }
 
-.me.w10._btn.refr {
+.me.refr {
     background-position-y: -80px
 }
 
-.me.w10._btn.dwl {
+.me.dwl {
     background-position-y: -100px
 }
 
-.me.w10._btn.share {
+.me.share {
     background-position-y: -120px
 }
 
-.me.w10._btn.more {
+.me.more {
     background-position-y: -140px
 }
 
-.me.w10._btn.hist {
+.me.hist {
     background-position-y: -160px
 }
 
-.me.w10._btn.hub {
+.me.hub {
     background-position-y: -180px
 }
 
-.me.w10._btn.book {
+.me.book {
     background-position-y: -220px
 }
 
-.me.w10._btn.pen {
+.me.pen {
     background-position-y: -240px
 }
 
-.me.w10._btn.stop {
+.me.stop {
     background-position-y: -260px
 }
 
-.me.w10._btn.list {
+.me.list {
     background-position-y: -280px
 }
 
-.me.w10._btn.fav {
+.me.fav {
     background-position-y: -300px
 }
 
 /*Netscape 1.0 Windows 95*/
 
-.nsc0.w3._btn {
+.nsc0._btn {
+    margin-top: -2px;
     width: 20px;
     height: 20px;
-    position: relative;
-}
-
-.nsc0.w3._btn::after {
-    content: '';
     background: url(src/nsc0-1_w3_btn.png) no-repeat;
-    background-position: inherit;
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 20px;
-    height: 20px;
 }
 
-.nsc0.w3._btn:not(.false):hover:active::after {
-    top: 1px;
-    left: 1px;
+:not(.false).nsc0._btn:hover:active {
+    margin: -3px 0 0 1px;
 }
 
-.nsc0.w3._btn.false {
+.nsc0.false {
     background-position-y: -20px;
     filter: drop-shadow(1px 1px 0 white);
 }
 
-.nsc0.w3._btn.prev {
+.nsc0.prev {
     background-position-x: 0;
 }
 
-
-.nsc0.w3._btn.home {
+.nsc0.home {
     background-position-x: -20px;
 }
 
-
-.nsc0.w3._btn.next {
+.nsc0.next {
     background-position-x: -40px;
 }
 
-.nsc0.w3._btn.refr {
+.nsc0.refr {
     background-position-x: -60px;
 }
 
-.nsc0.w3._btn.img {
+.nsc0.img {
     background-position-x: -80px;
 }
 
-.nsc0.w3._btn.open {
+.nsc0.open {
     background-position-x: -100px;
 }
 
-.nsc0.w3._btn.prnt {
+.nsc0.prnt {
     background-position-x: -120px;
 }
 
-.nsc0.w3._btn.find {
+.nsc0.find {
     background-position-x: -140px;
 }
 
-.nsc0.w3._btn.stop {
+.nsc0.stop {
     background-position-x: -160px;
 }
 
@@ -2061,12 +2073,12 @@
     background: silver url(src/nsc0_w3_thr.png) no-repeat;
 }
 
-.nsc0.w3.thr.anim {
+.nsc0.w3.anim {
     background-position-x: 60px;
     animation: 2s loopX steps(19, start) infinite;
 }
 
-.nsc0.w3.thr.anim:active {
+.nsc0.w3.anim:active {
     animation-play-state: paused;
 }
 
@@ -2076,13 +2088,13 @@
     background: url(src/nsc1_w3_thr.png) no-repeat;
 }
 
-.nsc1.w3.thr.anim {
+.nsc1.w3.anim {
     background-position-x: 60px;
     animation: 3s loopX steps(7, start) alternate infinite;
 }
 
 /*Netscape 0.95 Mac OS 9*/
-.nsc0.mac7.thr {
+.nsc0.mac7 {
     width: 36px;
     height: 36px;
     background: silver;
@@ -2094,12 +2106,12 @@
     position: relative;
 }
 
-.nsc0.mac7.thr.anim {
+.nsc0.mac7.anim {
     background-position-x: 30px;
     animation: 1s loopX steps(7, start) alternate infinite;
 }
 
-.nsc0.mac7.thr::after {
+.nsc0.mac7::after {
     content: '';
     position: absolute;
     top: 3px;
@@ -2110,7 +2122,7 @@
     background-position: inherit;
 }
 
-.nsc0.mac7.thr:hover:active {
+.nsc0.mac7:hover:active {
     animation-play-state: paused;
     box-shadow:
         inset -1px 0 white,
@@ -2120,24 +2132,24 @@
         inset -2px 0 black
 }
 
-.nsc0.mac7.thr:hover:active::after {
+.nsc0.mac7:hover:active::after {
     top: 4px;
     left: 4px;
 }
 
 /*Netscape 2.0 Windows 95*/
-.nsc2.w95.thr {
+.nsc2.thr {
     background: silver;
     box-shadow: inset -1px -1px white, inset 1px 1px black;
     height: 51px;
     width: 51px;
 }
 
-.nsc2.w95.thr:hover:active {
+:hover:active.nsc2.thr {
     animation-play-state: paused;
 }
 
-.nsc2.w95.thr::after {
+.nsc2.thr::after {
     content: '';
     top: 1px;
     left: 1px;
@@ -2148,84 +2160,84 @@
     background-position: inherit;
 }
 
-.nsc2.w95.thr.anim {
+.nsc2.anim {
     animation: 3s loopX steps(20, start) infinite;
 }
 
-.nsc2.w95._btn,
-.nsc3.w95._btn {
+.nsc2._btn,
+.nsc3 {
     background: url(src/nsc2-3__btn.png) no-repeat;
     width: 18px;
     height: 18px;
 }
 
-.nsc2.w95._btn:not(.false):hover:active,
-.nsc3.w95._btn:not(.false):hover:active {
+:not(.false):hover:active._btn.nsc2,
+:not(.false):hover:active.nsc3 {
     margin: -1px 0 0 1px
 }
 
-.nsc2.w95._btn.false,
-.nsc3.w95._btn.false {
+.nsc2.false,
+.nsc3.false {
     filter: drop-shadow(1px 1px white);
     background-position-y: -18px;
 }
 
-.nsc2.w95._btn.prev {
+.nsc2.prev {
     background-position-x: 0
 }
 
-.nsc2.w95._btn.next {
+.nsc2.next {
     background-position-x: -21px
 }
 
-.nsc2.w95._btn.home {
+.nsc2.home {
     background-position-x: -41px
 }
 
-.nsc2.w95._btn.refr {
+.nsc2.refr {
     background-position-x: -82px
 }
 
-.nsc2.w95._btn.img {
+.nsc2.img {
     background-position-x: -101px
 }
 
-.nsc2.w95._btn.open {
+.nsc2.open {
     background-position-x: -121px
 }
 
-.nsc2.w95._btn.prnt {
+.nsc2.prnt {
     background-position-x: -141px
 }
 
-.nsc2.w95._btn.find {
+.nsc2.find {
     background-position-x: -161px
 }
 
-.nsc2.w95._btn.stop {
+.nsc2.stop {
     background-position-x: -182px
 }
 
-.nsc3.w95._btn.pen {
+.nsc3 {
     background-position-x: -61px
 }
 
-
-/*Netscape 4.0 Windows 95*/
-.nsc4.w95.thr {
+/*Netscape 4 Windows 95*/
+/*nsc4d5, nsc4d7 windows 98*/
+.thr.nsc4 {
     background: silver;
     box-shadow: inset -1px -1px black, inset 1px 1px white, inset -2px -2px gray;
     height: 36px;
     width: 36px;
 }
 
-.nsc4.w95.thr:hover:active {
+.thr.nsc4:hover:active {
     animation-play-state: paused;
     background-color: gray;
     box-shadow: inset -1px -1px white, inset 1px 1px black, inset -2px -2px silver;
 }
 
-.nsc4.w95.thr::after {
+.thr.nsc4::after {
     content: '';
     top: 2px;
     left: 2px;
@@ -2236,23 +2248,93 @@
     background-position: inherit;
 }
 
-.nsc4.w95.thr.anim {
+.nsc4.anim {
     animation: 3s loopX steps(19, start) infinite;
 }
 
+._btn.nsc4,
+._btn.nsc4d5,
+._btn.nsc4d7 {
+    background: url(src/nsc4__btn.png) no-repeat;
+    width: 23px;
+    height: 21px;
+}
+
+:not(.false)._btn.nsc4:hover,
+:not(.false)._btn.nsc4d5:hover,
+:not(.false)._btn.nsc4d7:hover {
+    background-position-y: -42px
+}
+
+:not(.false)._btn.nsc4:hover:active,
+:not(.false)._btn.nsc4d5:hover:active,
+:not(.false)._btn.nsc4d7:hover:active {
+    background-position-y: -63px
+}
+
+._btn.nsc4.false,
+._btn.nsc4d5.false,
+._btn.nsc4d7.false {
+    background-position-y: -21px
+}
+
+.nsc4.prev {
+    background-position-x: 0
+}
+
+.nsc4.next {
+    background-position-x: -24px
+}
+
+.nsc4.refr {
+    background-position-x: -46px
+}
+
+.nsc4.home {
+    background-position-x: -69px
+}
+
+.nsc4.srch {
+    background-position-x: -92px
+}
+
+.nsc4.guide {
+    background-position-x: -115px
+}
+
+.nsc4.prnt {
+    background-position-x: -184px
+}
+
+.nsc4.lock {
+    background-position-x: -207px
+}
+
+.nsc4.stop {
+    background-position-x: -299px
+}
+
+.nsc4d5.my {
+    background-position-x: -138px
+}
+
+.shop {
+    background-position-x: -275px
+}
+
 /*Netscape 6.0 Windows 98*/
-.nsc6.w98.thr {
+.nsc6.thr {
     background: url(src/nsc6_w98_thr_b.png) no-repeat;
     /*box-shadow: inset -1px -1px black, inset 1px 1px white, inset -2px -2px gray;*/
     height: 34px;
     width: 34px;
 }
 
-.nsc6.w98.thr:hover:active::after {
+.nsc6.thr:hover:active::after {
     animation-play-state: paused;
 }
 
-.nsc6.w98.thr::after {
+.nsc6.thr::after {
     content: '';
     top: 2px;
     left: 2px;
@@ -2262,286 +2344,671 @@
     background: url(src/nsc6_w98_thr.png) no-repeat;
 }
 
-.nsc6.w98.thr.anim::after {
+.nsc6.thr.anim::after {
     background-position-x: 30px;
     animation: 3s loopX steps(43, end) infinite;
 }
 
+._btn.nsc6 {
+    width: 34px;
+    height: 34px;
+    background: url(src/nsc6_w98__btn.png) no-repeat;
+}
+
+._btn2.nsc6 {
+    width: 30px;
+    height: 30px;
+    background: url(src/nsc6_w98__btn.png) 30px 0 no-repeat;
+}
+
+:not(.false)._btn.nsc6:hover,
+:not(.false)._btn2.nsc6>.btn:hover {
+    background-position-y: -34px
+}
+
+:not(.false)._btn.nsc6:hover:active,
+:not(.false)._btn2.nsc6>.btn:hover:active {
+    background-position-y: -68px
+}
+
+.nsc6._btn.false,
+.nsc6._btn2.false {
+    background-position-y: -102px
+}
+
+.prev.nsc6 {
+    background-position-x: 0
+}
+
+.next.nsc6 {
+    background-position-x: -33px
+}
+
+.refr.nsc6 {
+    background-position-x: -66px
+}
+
+.stop.nsc6 {
+    background-position-x: -99px
+}
+
+.home.nsc6 {
+    width: 16px;
+    height: 16px;
+    margin-top: -1px;
+    background-position-x: -163px
+}
+
+.prnt.nsc6>.btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: inherit;
+    background-position-x: -133px
+}
+
+.prnt.nsc6>.bb {
+    top: 22px;
+    left: 19px;
+    width: 11px;
+    height: 8px;
+    background-position-x: -179px
+}
+
 /*Netscape 7.0 Windows 98*/
-.nsc7.xp.thr {
+.thr.nsc7 {
     background: url(src/nsc7_xp_thr.png) no-repeat;
     height: 38px;
     width: 38px;
 }
 
-.nsc7.xp.thr:hover:active {
+.thr.nsc7:hover:active {
     animation-play-state: paused;
 }
 
-.nsc7.xp.thr.anim {
+.anim.nsc7 {
     animation: 3s loopX steps(44, start) infinite;
+}
+
+._btn.nsc7 {
+    width: 29px;
+    height: 29px;
+    background: url(src/nsc7_xp__btn.png) no-repeat;
+}
+
+._btn2.nsc7 {
+    width: 41px;
+    height: 37px;
+    background: url(src/nsc7_xp__btn.png) 41px 0 no-repeat;
+}
+
+.nsc7._btn:not(.false):hover,
+.nsc7._btn2:not(.false)>.btn:hover {
+    background-position-y: -29px
+}
+
+.nsc7._btn:not(.false):hover:active,
+.nsc7._btn2:not(.false)>.btn:hover:active {
+    background-position-y: -58px
+}
+
+.nsc7.false,
+.nsc7.false>.btn {
+    background-position-y: -87px
+}
+
+.home.nsc7 {
+    background-position-x: -32px
+}
+
+.prev.nsc7 {
+    background-position-x: -61px
+}
+
+.next.nsc7 {
+    background-position-x: -90px
+}
+
+.refr.nsc7 {
+    background-position-x: -119px
+}
+
+.stop.nsc7 {
+    background-position-x: -148px
+}
+
+.srch.nsc7 {
+    width: 16px;
+    height: 15px;
+    background-position-x: -217px
+}
+
+.keyword.nsc7 {
+    width: 19px;
+    height: 19px;
+    background-position-x: -13px
+}
+
+.nsc7._btn2>.btn {
+    width: 40px;
+    height: 29px;
+    background: inherit;
+    background-position-x: -177px;
+    position: absolute;
+}
+
+.nsc7.prnt>.bb {
+    width: 13px;
+    height: 11px;
+    top: 26px;
+    left: 28px;
+    background-position-x: 0
+}
+
+/*Netscape 8.0 Windows xp*/
+.nsc8 {
+    background: url(src/nsc8_thr.png) no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+.nsc8:hover:active {
+    animation-play-state: paused;
+}
+
+.nsc8.anim {
+    animation: 3s loopX steps(44, start) infinite;
+}
+
+/*netscape 8.1 vista*/
+
+.nsc8f,
+.nsc8d1f {
+    width: 32px;
+    height: 32px;
+    background: url(src/nsc8f_xp__btn.png) no-repeat;
+}
+
+.nsc8d1f {
+    background-image: url(src/nsc8d1f_vista__btn.png);
+}
+
+.nsc8f:not(.false):hover,
+.nsc8d1f:not(.false):hover {
+    background-position-y: -32px
+}
+
+.nsc8f:not(.false):hover:active,
+.nsc8d1f:not(.false):hover:active {
+    background-position-y: -64px
+}
+
+.nsc8f.false,
+.nsc8d1f.false {
+    background-position-y: -96px
+}
+
+.prev.nsc8f,
+.prev.nsc8d1f {
+    background-position-x: 0
+}
+
+.next.nsc8f,
+.next.nsc8d1f {
+    background-position-x: -32px
+}
+
+.stop.nsc8f,
+.stop.nsc8d1f {
+    background-position-x: -64px
+}
+
+.refr.nsc8f,
+.refr.nsc8d1f {
+    background-position-x: -96px
+}
+
+.home.nsc8f,
+.home.nsc8d1f {
+    background-position-x: -128px
+}
+
+.nopopup.nsc8f {
+    background-position-x: -160px
+}
+
+.pen.nsc8f {
+    background-position-x: -192px
+}
+
+.secu.nsc8f {
+    background-position-x: -224px
+}
+
+.clear.nsc8f {
+    background-position-x: -256px
+}
+
+.nopopup.nsc8d1f {
+    width: 24px;
+    height: 24px;
+    background-position-x: -160px
+}
+
+.pen.nsc8d1f {
+    width: 24px;
+    height: 24px;
+    background-position-x: -183px
+}
+
+.secu.nsc8d1f {
+    width: 24px;
+    height: 24px;
+    background-position-x: -206px
+}
+
+.clear.nsc8d1f {
+    width: 24px;
+    height: 24px;
+    background-position-x: -229px
+}
+
+/*////Winscape skins*/
+/*Netscape 8 Windows xp*/
+/*Netscape 8.10 Windows vista*/
+.nsc8w,
+.nsc8d1w {
+    width: 32px;
+    height: 32px;
+    background: url(src/nsc8d1w_vista__btn.png) no-repeat;
+}
+
+.nsc8w {
+    width: 32px;
+    height: 32px;
+    background-image: url(src/nsc8w_xp__btn.png);
+}
+
+:not(.false).nsc8w:hover,
+:not(.false).nsc8d1w:hover {
+    background-position-y: -32px;
+}
+
+:not(.false).nsc8w:hover:active,
+:not(.false).nsc8d1w:hover:active {
+    margin: -1px 0 0 1px;
+    background-position-y: -64px;
+}
+
+.false.nsc8w,
+.false.nsc8d1w {
+    background-position-y: -96px;
+}
+
+.prev.nsc8w,
+.prev.nsc8d1w {
+    background-position-x: 0
+}
+
+.next.nsc8w,
+.next.nsc8d1w {
+    background-position-x: -32px
+}
+
+.stop.nsc8w,
+.stop.nsc8d1w {
+    background-position-x: -64px
+}
+
+.refr.nsc8w,
+.refr.nsc8d1w {
+    background-position-x: -96px
+}
+
+.home.nsc8w,
+.home.nsc8d1w {
+    background-position-x: -128px
+}
+
+.nopopup.nsc8w,
+.nopopup.nsc8d1w {
+    background-position-x: -160px
+}
+
+.pen.nsc8w,
+.pen.nsc8d1w {
+    background-position-x: -192px
+}
+
+.secu.nsc8w,
+.secu.nsc8d1w {
+    background-position-x: -224px
+}
+
+.clear.nsc8w,
+.clear.nsc8d1w {
+    background-position-x: -256px
+}
+
+/*Netscape 9.0 Windows Vista*/
+.thr.nsc9 {
+    width: 24px;
+    height: 24px;
+    background: url(src/nsc9_vista_thr.png) no-repeat;
+}
+
+.thr.anim.nsc9 {
+    background-position-x: 24px;
+    animation: 2s loopX steps(17, start) infinite;
+}
+
+._btn.nsc9 {
+    width: 24px;
+    height: 24px;
+    background: url(src/nsc9_vista__btn.png) no-repeat;
+}
+
+:not(.false).nsc9._btn:hover {
+    background-position-y: -24px
+}
+
+:not(.false).nsc9._btn:hover:active {
+    background-position-y: -72px
+}
+
+.false.nsc9 {
+    background-position-y: -48px
+}
+
+.prev.nsc9 {
+    background-position-x: 1px
+}
+
+.next.nsc9 {
+    background-position-x: -22px
+}
+
+.stop.nsc9 {
+    background-position-x: -45px
+}
+
+.refr.nsc9 {
+    background-position-x: -69px
+}
+
+.home.nsc9 {
+    background-position-x: -93px
+}
+
+.addtab.nsc9 {
+    background-position-x: -117px
+}
+
+.srch.nsc9 {
+    width: 25px;
+    height: 22px;
+    background-position-x: -141px
 }
 
 /*Safari 1 Mac OS 10.3*/
 
-.sf1.mac10._btn {
+.sf1 {
     width: 28px;
     height: 25px;
     background: url(src/sf1_mac10_btn.png) no-repeat
 }
 
-.sf1.mac10._btn:hover:active {
+.sf1:hover:active {
     background-position-y: -25px
 }
 
-.sf1.mac10._btn:not(.bug):not(.book).false {
+:not(.bug):not(.book).sf1.false {
     background-position-y: -50px
 }
 
-.sf1.mac10._btn.prev {
+.sf1.prev {
     width: 27px;
     background-position-x: 0
 }
 
-.sf1.mac10._btn.next {
+.sf1.next {
     width: 27px;
     background-position-x: -26px
 }
 
-.sf1.mac10._btn.home {
+.sf1.home {
     background-position-x: -52px
 }
 
-.sf1.mac10._btn.refr {
+.sf1.refr {
     background-position-x: -79px
 }
 
-.sf1.mac10._btn.stop {
+.sf1.stop {
     background-position-x: -106px
 }
 
-.sf1.mac10._btn.zout {
+.sf1.zout {
     width: 27px;
     background-position-x: -133px
 }
 
-.sf1.mac10._btn.zin {
+.sf1.zin {
     width: 27px;
     background-position-x: -159px
 }
 
-.sf1.mac10._btn.addfav {
+.sf1.addfav {
     background-position-x: -185px
 }
 
-.sf1.mac10._btn.pen {
+.sf1.pen {
     background-position-x: -212px
 }
 
-.sf1.mac10._btn.bug {
+.sf1.bug {
     background-position-x: -239px
 }
 
-.sf1.mac10._btn.book {
+.sf1.book {
     background-position-x: -267px;
     height: 17px;
     width: 35px
 }
 
-.sf1.mac10._btn.book:hover:active {
+.sf1.book:hover:active {
     background-position-y: -19px
 }
 
-.sf1.mac10._btn.book.check {
+.sf1.book.check {
     background-position-y: -38px
 }
 
-.sf1.mac10._btn.book.check:hover:active {
+.sf1.book.check:hover:active {
     background-position-y: -57px
 }
 
 /*Safari 3 osx5 */
-.sf3.osx5._btn {
+.sf3 {
     background: url(src/sf3-4_osx5_btn.png) no-repeat;
     height: 23px;
     width: 28px
 }
 
-.sf3.osx5._btn:not(.false):hover:active {
+:not(.false).sf3:hover:active {
     background-position-y: -23px
 }
 
-.sf3.osx5._btn.false.a {
+.sf3.false.a {
     background-position-y: -46px
 }
 
-.sf3.osx5._btn.prev {
+.sf3.prev {
     background-position-x: 0;
     width: 27px
 }
 
-.sf3.osx5._btn.next {
+.sf3.next {
     background-position-x: -26px;
     width: 27px
 }
 
-.sf3.osx5._btn.home {
+.sf3.home {
     background-position-x: -52px
 }
 
-.sf3.osx5._btn.refr {
+.sf3.refr {
     background-position-x: -79px
 }
 
-.sf3.osx5._btn.stop {
+.sf3.stop {
     background-position-x: -106px
 }
 
-.sf3.osx5._btn.zout {
+.sf3.zout {
     background-position-x: -133px;
     width: 27px
 }
 
-.sf3.osx5._btn.zin {
+.sf3.zin {
     background-position-x: -159px;
     width: 27px
 }
 
-.sf3.osx5._btn.addfav {
+.sf3.addfav {
     background-position-x: -185px;
     width: 27px
 }
 
-.sf3.osx5._btn.addfav2 {
+.sf3.addfav2 {
     background-position-x: -212px
 }
 
-.sf3.osx5._btn.pen {
+.sf3.pen {
     background-position-x: -239px
 }
 
-.sf3.osx5._btn.bug {
+.sf3.bug {
     background-position-x: -266px
 }
 
-.sf3.osx5._btn.insp {
+.sf3.insp {
     background-position-x: -293px
 }
 
-.sf3.osx5._btn.hist {
+.sf3.hist {
     background-position-x: -320px
 }
 
-.sf3.osx5._btn.dwl {
+.sf3.dwl {
     background-position-x: -347px
 }
 
-.sf3.osx5._btn.a.book {
+.sf3.a.book {
     background-position-x: -374px
 }
 
-.sf3.osx5._btn.mail {
+.sf3.mail {
     background-position-x: -401px
 }
 
-.sf3.osx5._btn.prnt {
+.sf3.prnt {
     background-position-x: -428px
 }
 
-.sf3.osx5._btn.showfav {
+.sf3.showfav {
     background-position-x: -455px
 }
 
-.sf3.osx5._btn.addtab {
+.sf3.addtab {
     background-position-x: -482px
 }
 
-.sf3.osx5._btn.fav {
+.sf3.fav {
     background-position-x: -509px
 }
 
-.sf3.osx5._btn.b {
+.sf3.b {
     height: 17px;
     width: 29px
 }
 
-.sf3.osx5._btn.b.book {
+.sf3.b.book {
     background-position-x: -595px
 }
 
-.sf3.osx5._btn.b.book.check {
+.sf3.b.book.check {
     background-position-x: -624px
 }
 
-.sf3.osx5._btn.lockbook {
+.sf3.lockbook {
     background-position-x: -537px
 }
 
-.sf3.osx5._btn.lockbook.check {
+.sf3.lockbook.check {
     background-position-x: -566px
 }
 
-.sf3.osx5._btn.b.fav {
+.sf3.b.fav {
     background-position-x: -653px
 }
 
-.sf3.osx5._btn.rss {
+.sf3.rss {
     width: 27px;
     background-position-x: -682px
 }
 
-.sf3.osx5._btn.rss.check {
+.sf3.rss.check {
     background-position-x: -709px
 }
 
-.sf3.osx5._btn.srch {
+.sf3.srch {
     width: 18px;
     background-position-x: -736px
 }
 
-.sf3.osx5._btn.b:hover {
+.sf3.b:hover {
     background-position-y: -46px
 }
 
 /*Safari 4 Mac OS 10.5*/
 
-.sf4.osx5._btn {
+.sf4 {
     background: url(src/sf3-4_osx5_btn.png) no-repeat;
     height: 12px;
     width: 10px
 }
 
-.sf4.osx5._btn:not(.false):hover:active {
+:not(.false).sf4:hover:active {
     background-position-y: -23px
 }
 
-.sf4.osx5._btn.refr {
+.sf4.refr {
     background-position-x: -754px
 }
 
-.sf4.osx5._btn.stop {
+.sf4.stop {
     background-position-x: -764px
 }
 
 /*Safari 6 Mac OS 10.5*/
 
-.sf6.osx8.a._btn {
+.sf6.a {
     background: url(src/sf6_osx8_btn.png) no-repeat;
     background-size: 82px 46px;
     height: 23px;
     width: 28px;
-    position: relative;
 }
 
-.sf6.osx8._btn.a.false::after {
+.sf6.a.false::after {
     opacity: 0.5;
 }
 
-.sf6.osx8._btn.a:not(.false):hover:active {
+:not(.false).sf6.a:hover:active {
     background-position-y: -23px
 }
 
-.sf6.osx8.b._btn {
+.sf6.b {
     background: url(src/sf6_osx8_btn.svg) 50% -264px no-repeat;
     height: 15px;
     width: 32px;
@@ -2549,33 +3016,33 @@
     position: relative;
 }
 
-.sf6.osx8.b._btn:hover,
-.sf6.osx8.b._btn.check {
+.sf6.b:hover,
+.sf6.b.check {
     filter: invert(100%);
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.sf6.osx8.b._btn:hover:active,
-.sf6.osx8.b._btn.check {
+.sf6.b:hover:active,
+.sf6.b.check {
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 1px rgba(0, 0, 0, 0.5);
 }
 
-.sf6.osx8.b._btn.check:hover:active {
+.sf6.b.check:hover:active {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-.sf6.osx8.c._btn {
+.sf6.c {
     background: url(src/sf6_osx8_btn.svg) 50% -241px no-repeat;
     height: 12px;
     width: 12px;
     opacity: 0.54;
 }
 
-.sf6.osx8.c._btn:active:hover {
+.sf6.c:active:hover {
     opacity: 1;
 }
 
-.sf6.osx8._btn.a::after {
+.sf6.a::after {
     position: absolute;
     background: url(src/sf6_osx8_btn.svg) 50% 4px no-repeat;
     top: 1px;
@@ -2584,125 +3051,125 @@
     content: '';
 }
 
-.sf6.osx8._btn.showfav::after {
+.sf6.showfav::after {
     background-position-y: 4px
 }
 
-.sf6.osx8._btn.a.book::after {
+.sf6.a.book::after {
     background-position-y: -13px
 }
 
-.sf6.osx8._btn.icloud::after {
+.sf6.icloud::after {
     background-position-y: -31px
 }
 
-.sf6.osx8._btn.dwl::after {
+.sf6.dwl::after {
     background-position-y: -49px
 }
 
-.sf6.osx8._btn.mail::after {
+.sf6.mail::after {
     background-position-y: -67px
 }
 
-.sf6.osx8._btn.hist::after {
+.sf6.hist::after {
     background-position-y: -84px
 }
 
-.sf6.osx8._btn.home::after {
+.sf6.home::after {
     background-position-y: -102px
 }
 
-.sf6.osx8._btn.addtab::after {
+.sf6.addtab::after {
     background-position-y: -120px
 }
 
-.sf6.osx8._btn.a.fav::after {
+.sf6.a.fav::after {
     background-position-y: -137px
 }
 
-.sf6.osx8._btn.insp::after {
+.sf6.insp::after {
     background-position-y: -153px
 }
 
-.sf6.osx8._btn.prev::after {
+.sf6.prev::after {
     background-position-y: -187px
 }
 
-.sf6.osx8._btn.prev {
+.sf6.prev {
     width: 24px;
     background-position-x: -28px
 }
 
-.sf6.osx8._btn.next::after {
+.sf6.next::after {
     background-position-y: -171px
 }
 
-.sf6.osx8._btn.next {
+.sf6.next {
     width: 25px;
     background-position-x: -58px
 }
 
-.sf6.osx8._btn.share::after {
+.sf6.share::after {
     background-position-y: -204px
 }
 
-.sf6.osx8._btn.addfav::after {
+.sf6.addfav::after {
     background-position-y: -220px
 }
 
-.sf6.osx8._btn.addfav {
+.sf6.addfav {
     width: 30px;
     background-position-x: -27px
 }
 
-.sf6.osx8._btn.refr {
+.sf6.refr {
     background-position-y: -241px;
 }
 
-.sf6.osx8._btn.stop {
+.sf6.stop {
     background-position-y: -253px;
 }
 
-.sf6.osx8._btn.b.book {
+.sf6.b.book {
     background-position-y: -16px;
 }
 
-.sf6.osx8._btn.glass {
+.sf6.glass {
     background-position-y: -266px;
 }
 
-.sf6.osx8._btn.b.fav {
+.sf6.b.fav {
     background-position-y: -280px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
-    .sf6.osx8._btn.a {
+    .sf6.a {
         background: url(src/sf6_osx8_btn@2x.png) no-repeat;
         background-size: 83px 46px
     }
 
-    .sf6.osx8._btn.prev {
+    .sf6.prev {
         background-position-x: -27.5px
     }
 
-    .sf6.osx8._btn.next {
+    .sf6.next {
         background-position-x: -57.5px
     }
 
-    .sf6.osx8._btn.addfav {
+    .sf6.addfav {
         background-position-x: -27.5px
     }
 }
 
 /*Safari 8 Mac OS 10.10*/
 
-.sf8.osx10._btn {
+.sf8 {
     width: 38px;
     height: 23px;
 }
 
-.sf8.osx10._btn:not(.stop):not(.refr)::before {
+.sf8:not(.stop):not(.refr)::before {
     position: absolute;
     content: '';
     width: 200%;
@@ -2714,16 +3181,16 @@
     border-radius: 9px;
 }
 
-.sf8.osx10._btn:not(.stop):not(.refr):not(.false):hover:active::before {
+.sf8:not(.false):not(.stop):not(.refr):hover:active::before {
     background: linear-gradient(0, #D4D3D4, #E6E6E6);
     box-shadow: 0 1px rgba(0, 0, 0, 0.055), inset 0 -1px #A5A3A5, inset 0 0 0 1px #D1CFD1, inset 0 2px 1px #F1F1F1;
 }
 
-.sf8.osx10._btn:hover:active::after {
+.sf8:hover:active::after {
     opacity: 0.66;
 }
 
-.sf8.osx10._btn::after {
+.sf8::after {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -2733,107 +3200,109 @@
     content: '';
 }
 
-.sf8.osx10._btn.dash {
+.sf8.dash {
     background-position-y: 3px
 }
 
-.sf8.osx10._btn.hist {
+.sf8.hist {
     background-position-y: -17px
 }
 
-.sf8.osx10._btn.insp {
+.sf8.insp {
     background-position-y: -36px
 }
 
-.sf8.osx10._btn.mail {
+.sf8.mail {
     background-position-y: -55px
 }
 
-.sf8.osx10._btn.setts {
+.sf8.setts {
     background-position-y: -76px
 }
 
-.sf8.osx10._btn.share {
+.sf8.share {
     background-position-y: -97px
 }
 
-.sf8.osx10._btn.home {
+.sf8.home {
     background-position-y: -117px
 }
 
-.sf8.osx10._btn.showfav {
+.sf8.showfav {
     background-position-y: -136px
 }
 
-.sf8.osx10._btn.showbar {
+.sf8.showbar {
     background-position-y: -154px
 }
 
-.sf8.osx10._btn.prev {
+.sf8.prev {
     width: 27px;
     background-position-y: -172px
 }
 
-.sf8.osx10._btn.next {
+.sf8.next {
     width: 25px;
     background-position-y: -190px
 }
 
-.sf8.osx10._btn.autocomp {
+.sf8.autocomp {
     background-position-y: -208px
 }
 
-.sf8.osx10._btn.prnt {
+.sf8.prnt {
     background-position-y: -226px
 }
 
-.sf8.osx10._btn.tabs {
+.sf8.tabs {
     background-position-y: -246px
 }
 
-.sf8.osx10._btn.icloud {
+.sf8.icloud {
     background-position-y: -264px
 }
 
-.sf8.osx10._btn.fav {
+.sf8.fav {
     background-position-y: -282px
 }
 
-.sf8.osx10._btn.refr {
+.sf8.refr {
     background-position-y: -301px
 }
 
-.sf8.osx10._btn.stop {
+.sf8.stop {
     background-position-y: -319px
 }
 
-.sf8.osx10._btn.zout {
+.sf8.zout {
     width: 26px;
     border-radius: 9px 0 0 9px;
     background-position-y: -355px
 }
 
-.sf8.osx10._btn.zin {
+.sf8.zin {
     width: 26px;
     border-radius: 0 9px 9px 0;
     background-position-y: -337px
 }
 
-.sf8.osx10._btn.refr:hover::after,
-.sf8.osx10._btn.stop:hover::after {
+.sf8.refr:hover::after,
+.sf8.stop:hover::after {
     opacity: 0.66
 }
 
-.sf8.osx10._btn.refr:hover:active::after,
-.sf8.osx10._btn.stop:hover:active::after {
+.sf8.refr:hover:active::after,
+.sf8.stop:hover:active::after {
     opacity: 1
 }
 
-.sf8.osx10._btn.refr.false::after {
+.sf8.refr.false::after {
     opacity: 0.25 !important
 }
 
-.op1.w3._btn {
+/*Opera 1.00 Windows 3.0*/
+
+.op1 {
     background: silver;
     position: relative;
     box-shadow:
@@ -2841,11 +3310,12 @@
         inset 1px 1px white,
         inset -2px -2px gray,
         1px 0 black, 0 1px black, -1px 0 black, 0 -1px black;
+    margin-top: 1px;
     height: 20px;
     width: 22px;
 }
 
-.op1.w3._btn::after {
+.op1::after {
     content: '';
     position: absolute;
     width: 16px;
@@ -2856,703 +3326,725 @@
     background-position: inherit;
 }
 
-.op1.w3._btn:not(.false):hover:active {
+:not(.false).op1:hover:active {
     box-shadow:
         inset 1px 1px gray,
         1px 0 black, 0 1px black, -1px 0 black, 0 -1px black
 }
 
-.op1.w3._btn.false::after {
+.op1.false::after {
     filter: drop-shadow(1px 1px white);
     background-position-y: -16px;
 }
 
-.op1.w3._btn:not(.false):hover:active::after {
+.op1:not(.false):hover:active::after {
     left: 3px;
     top: 3px
 }
 
-.op1.w3._btn.save {
+.op1.save {
     background-position-x: 0
 }
 
-.op1.w3._btn.prev {
+.op1.prev {
     background-position-x: -16px
 }
 
-.op1.w3._btn.next {
+.op1.next {
     background-position-x: -32px
 }
 
-.op1.w3._btn.home {
+.op1.home {
     background-position-x: -48px
 }
 
-.op1.w3._btn.refr {
+.op1.refr {
     background-position-x: -64px
 }
 
-.op1.w3._btn.copy {
+.op1.copy {
     background-position-x: -80px
 }
 
-.op1.w3._btn.new {
+.op1.new {
     background-position-x: -96px
 }
 
-.op1.w3._btn.open {
+.op1.open {
     background-position-x: -112px
 }
 
-.op1.w3._btn.tile {
+.op1.tile {
     background-position-x: -128px
 }
 
-.op1.w3._btn.panel {
+.op1.panel {
     background-position-x: -144px
 }
 
-.op1.w3._btn.prnt {
+.op1.prnt {
     background-position-x: -160px
 }
 
-.op1.w3._btn.list {
+.op1.list {
     background-position-x: -176px
 }
 
-.op1.w3._btn.phone {
+.op1.phone {
     background-position-x: -192px
 }
 
-.op2.w95._btn {
+/*Opera 2.00 Windows 95*/
+/*Opera 3.00 Windows 95*/
+
+.op2 {
     width: 18px;
     height: 16px;
     background: url(src/op2_w95__btn.png) no-repeat;
 }
 
-.op3.w95._btn {
+.op3 {
     width: 18px;
     height: 15px;
     background: url(src/op3_w95__btn.png) no-repeat;
 }
 
-.op2.w95._btn:not(.false):hover:active,
-.op3.w95._btn:not(.false):hover:active {
+:not(.false).op2:hover:active,
+:not(.false).op3:hover:active {
     margin: -1px 0 0 1px
 }
 
-.op2.w95._btn.false {
+.op2.false {
     background-position-y: -16px
 }
 
-.op3.w95._btn.false {
+.op3.false {
     background-position-y: -15px
 }
 
-.op2.w95._btn.new,
-.op3.w95._btn.new {
+.op2.new,
+.op3.new {
     background-position-x: 0
 }
 
-.op2.w95._btn.open,
-.op3.w95._btn.open {
+.op2.open,
+.op3.open {
     background-position-x: -18px
 }
 
-.op2.w95._btn.save,
-.op3.w95._btn.save {
+.op2.save,
+.op3.save {
     background-position-x: -36px
 }
 
-.op2.w95._btn.prnt,
-.op3.w95._btn.prnt {
+.op2.prnt,
+.op3.prnt {
     background-position-x: -54px
 }
 
-.op2.w95._btn.copy,
-.op3.w95._btn.copy {
+.op2.copy,
+.op3.copy {
     background-position-x: -72px
 }
 
-.op2.w95._btn.srch,
-.op3.w95._btn.srch {
+.op2.srch,
+.op3.srch {
     background-position-x: -90px
 }
 
-.op2.w95._btn.prev,
-.op3.w95._btn.prev {
+.op2.prev,
+.op3.prev {
     background-position-x: -108px
 }
 
-.op2.w95._btn.refr,
-.op3.w95._btn.refr {
+.op2.refr,
+.op3.refr {
     background-position-x: -126px
 }
 
-.op2.w95._btn.next,
-.op3.w95._btn.next {
+.op2.next,
+.op3.next {
     background-position-x: -144px
 }
 
-.op2.w95._btn.home,
-.op3.w95._btn.home {
+.op2.home,
+.op3.home {
     background-position-x: -162px
 }
 
-.op2.w95._btn.pen,
-.op3.w95._btn.pen {
+.op2.pen,
+.op3.pen {
     background-position-x: -180px
 }
 
-.op2.w95._btn.list,
-.op3.w95._btn.list {
+.op2.list,
+.op3.list {
     background-position-x: -198px
 }
 
-.op2.w95._btn.tile,
-.op3.w95._btn.tile {
+.op2.tile,
+.op3.tile {
     background-position-x: -216px
 }
 
-.op2.w95._btn.panel,
-.op3.w95._btn.panel {
+.op2.panel,
+.op3.panel {
     background-position-x: -234px
 }
 
-/*Opera 3.6*/
-.op3d60.w98._btn {
+/*Opera 3.6 Windows 98*/
+.op3d60 {
+    margin-top: -5px;
     width: 27px;
     height: 26px;
     background: url(src/op3d60_w98__btn.png) no-repeat;
 }
 
-.op3d60.w98._btn:not(.false):hover:active {
-    margin: -1px 0 0 1px
+:not(.false).op3d60:hover:active {
+    margin: -6px 0 0 1px
 }
 
-.op3d60.w98._btn.false {
+.op3d60.false {
     background-position-y: -26px
 }
 
-.op3d60.w98._btn.new {
+.op3d60.new {
     background-position-x: 0
 }
 
-.op3d60.w98._btn.open {
+.op3d60.open {
     background-position-x: -27px
 }
 
-.op3d60.w98._btn.save {
+.op3d60.save {
     background-position-x: -54px
 }
 
-.op3d60.w98._btn.prnt {
+.op3d60.prnt {
     background-position-x: -81px
 }
 
-.op3d60.w98._btn.copy {
+.op3d60.copy {
     background-position-x: -108px
 }
 
-.op3d60.w98._btn.srch {
+.op3d60.srch {
     background-position-x: -135px
 }
 
-.op3d60.w98._btn.prev {
+.op3d60.prev {
     background-position-x: -162px
 }
 
-.op3d60.w98._btn.refr {
+.op3d60.refr {
     background-position-x: -189px
 }
 
-.op3d60.w98._btn.next {
+.op3d60.next {
     background-position-x: -216px
 }
 
-.op3d60.w98._btn.home {
+.op3d60.home {
     background-position-x: -243px
 }
 
-.op3d60.w98._btn.url {
+.op3d60.url {
     background-position-x: -270px
 }
 
-.op3d60.w98._btn.list {
+.op3d60.list {
     background-position-x: -297px
 }
 
-.op3d60.w98._btn.tile {
+.op3d60.tile {
     background-position-x: -324px
 }
 
-.op3d60.w98._btn.panel {
+.op3d60.panel {
     background-position-x: -351px
 }
 
 
 /*Opera 4.0, Windows 98*/
-.op4.w98._btn {
+.op4 {
     width: 32px;
     height: 30px;
     background: url(src/op4_w98__btn.png) no-repeat;
 }
 
-.op4.w98._btn:not(.false):hover:active {
+:not(.false).op4:hover:active {
     margin: -1px 0 0 1px
 }
 
-.op4.w98._btn.false {
+.op4.false {
     background-position-y: -30px
 }
 
-.op4.w98._btn.url {
+.op4.url {
     background-position-x: 0
 }
 
-.op4.w98._btn.prev {
+.op4.prev {
     background-position-x: -32px
 }
 
-.op4.w98._btn.panel {
+.op4.panel {
     background-position-x: -64px
 }
 
-.op4.w98._btn.home {
+.op4.home {
     background-position-x: -96px
 }
 
-.op4.w98._btn.list {
+.op4.list {
     background-position-x: -128px
 }
 
-.op4.w98._btn.fav {
+.op4.fav {
     background-position-x: -160px
 }
 
-.op4.w98._btn.menu {
+.op4.menu {
     background-position-x: -192px
 }
 
-.op4.w98._btn.new {
+.op4.new {
     background-position-x: -224px
 }
 
-.op4.w98._btn.addfav {
+.op4.addfav {
     background-position-x: -256px
 }
 
-.op4.w98._btn.addfolder {
+.op4.addfolder {
     background-position-x: -288px
 }
 
-.op4.w98._btn.next {
+.op4.next {
     background-position-x: -320px
 }
 
-.op4.w98._btn.prnt {
+.op4.prnt {
     background-position-x: -352px
 }
 
-.op4.w98._btn.refr {
+.op4.refr {
     background-position-x: -384px
 }
 
-.op4.w98._btn.srch {
+.op4.srch {
     background-position-x: -416px
 }
 
-.op4.w98._btn.tile {
+.op4.tile {
     background-position-x: -448px
 }
 
-.op4.w98._btn.fscr {
+.op4.fscr {
     background-position-x: -480px
 }
 
-.op4.w98._btn.save {
+.op4.save {
     background-position-x: -512px
 }
 
-.op4.w98._btn.copy {
+.op4.copy {
     background-position-x: -544px
 }
 
-.op4.w98._btn.open {
+.op4.open {
     background-position-x: -576px
 }
 
-.op6.xp._btn {
+/*Opera 6 Windows XP*/
+
+.op6 {
     width: 26px;
     height: 26px;
     background: url(src/op6_xp__btn.png) no-repeat;
 }
 
-.op6.xp._btn:not(.false):hover:active {
+:not(.false).op6:hover:active {
     margin: -1px 0 0 1px
 }
 
-.op6.xp._btn.false {
+.op6.false {
     opacity: 0.5;
 }
 
-.op6.xp._btn.fav {
+.op6.fav {
     background-position-x: 0
 }
 
-.op6.xp._btn.prev {
+.op6.prev {
     background-position-x: -26px
 }
 
-.op6.xp._btn.panel {
+.op6.panel {
     background-position-x: -52px
 }
 
-.op6.xp._btn.srch {
+.op6.srch {
     background-position-x: -78px
 }
 
-.op6.xp._btn.next {
+.op6.next {
     background-position-x: -104px
 }
 
-.op6.xp._btn.fscr {
+.op6.fscr {
     background-position-x: -130px
 }
 
-.op6.xp._btn.home {
+.op6.home {
     background-position-x: -156px
 }
 
-.op6.xp._btn.list {
+.op6.list {
     background-position-x: -182px
 }
 
-.op6.xp._btn.new {
+.op6.new {
     background-position-x: -208px
 }
 
-.op6.xp._btn.open {
+.op6.open {
     background-position-x: -234px
 }
 
-.op6.xp._btn.prnt {
+.op6.prnt {
     background-position-x: -260px
 }
 
-.op6.xp._btn.refr {
+.op6.refr {
     background-position-x: -286px
 }
 
-.op6.xp._btn.save {
+.op6.save {
     background-position-x: -312px
 }
 
-.op6.xp._btn.stop {
+.op6.stop {
     background-position-x: -338px
 }
 
-.op6.xp._btn.tile {
+.op6.tile {
     background-position-x: -364px
 }
 
-.op7.xp._btn {
+/*Opera 7.00 Windows XP*/
+
+.op7 {
+    margin-top: -12px;
     width: 45px;
     height: 45px;
-    margin-top: -12px;
     background: url(src/op7_xp__btn.png) no-repeat;
 }
 
-.op7.xp._btn:not(.false):hover:active {
-    margin: -1px 0 0 1px
+:not(.false).op7:hover:active {
+    margin: -13px 0 0 1px
 }
 
-.op7.xp._btn.false {
+.op7.false {
     opacity: 0.5;
 }
 
-.op7.xp._btn.mail {
+.op7.mail {
     width: 47px;
     background-position-x: -605px
 }
 
-.op7.xp._btn.fscr {
+.op7.fscr {
     width: 39px;
     background-position-x: -71px
 }
 
-.op7.xp._btn.refr {
+.op7.refr {
     background-position-x: -309px
 }
 
-.op7.xp._btn.new {
+.op7.new {
     width: 39px;
     background-position-x: -110px
 }
 
-.op7.xp._btn.open {
+.op7.open {
     width: 47px;
     background-position-x: -652px
 }
 
-.op7.xp._btn.home {
+.op7.home {
     width: 46px;
     background-position-x: -559px
 }
 
-.op7.xp._btn.stop {
+.op7.stop {
     width: 41px;
     background-position-x: -350px
 }
 
-.op7.xp._btn.tile {
+.op7.tile {
     width: 42px;
     background-position-x: -473px
 }
 
-.op7.xp._btn.save {
+.op7.save {
     width: 44px;
     background-position-x: -515px
 }
 
-.op7.xp._btn.forw {
+.op7.forw {
     width: 40px;
     background-position-x: -149px
 }
 
-.op7.xp._btn.wand {
+.op7.wand {
     background-position-x: -391px
 }
 
-.op7.xp._btn.next {
+.op7.next {
     width: 40px;
     background-position-x: -189px
 }
 
-.op7.xp._btn.srch {
+.op7.srch {
     background-position-x: -432px
 }
 
-.op7.xp._btn.panel {
+.op7.panel {
     width: 33px;
     background-position-x: 0
 }
 
-.op7.xp._btn.prnt {
+.op7.prnt {
     width: 40px;
     background-position-x: -229px
 }
 
-.op7.xp._btn.fav {
+.op7.fav {
     width: 38px;
     background-position-x: -33px
 }
 
-.op7.xp._btn.prev {
+.op7.prev {
     width: 40px;
     background-position-x: -269px
 }
 
 /*Opera 8 Windows xp*/
-.op8.xp._btn {
+.op8 {
+    margin-top: -2px;
     width: 22px;
     height: 22px;
     background: url(src/op8_xp__btn.png) no-repeat;
 }
 
-.op8.xp._btn:not(.false):hover:active {
-    margin: -1px 0 0 1px
-}
-
-.op8.xp._btn::after {
+.op8::after {
     position: absolute;
-    content: '';
-    width: 100%;
-    mix-blend-mode: soft-light;
-    height: 100%;
-    background: yellow;
-    opacity: 0;
+    width: 22px;
+    height: 22px;
+    background: inherit;
+    filter: sepia(20%) brightness(110%);
     transition: opacity 0.3s;
+    opacity: 0;
+    content: '';
 }
 
-.op8.xp._btn:not(.false):hover::after {
-    opacity: 1
+:not(.false).op8:hover:active {
+    margin: -3px 0 0 1px
 }
 
-.op8.xp._btn.false {
+:not(.false).op8:hover::after {
+    opacity: 1;
+}
+
+.op8.false {
     opacity: 0.5
 }
 
-.op8.xp._btn.bin {
+.op8.bin {
     width: 16px;
     height: 16px;
     background-position-x: 0
 }
 
-.op8.xp._btn.forw {
+.op8.forw {
     background-position-x: -53px
 }
 
-.op8.xp._btn.glass {
+.op8.glass {
     background-position-x: -75px
 }
 
-.op8.xp._btn.home {
+.op8.home {
     background-position-x: -97px
 }
 
-.op8.xp._btn.addtab {
+.op8.addtab {
     background-position-x: -119px
 }
 
-.op8.xp._btn.next {
+.op8.next {
     background-position-x: -141px
 }
 
-.op8.xp._btn.open {
+.op8.open {
     background-position-x: -163px
 }
 
-.op8.xp._btn.panel {
+.op8.panel {
     background-position-x: -185px
 }
 
-.op8.xp._btn.prev {
+.op8.prev {
     background-position-x: -207px
 }
 
-.op8.xp._btn.prnt {
+.op8.prnt {
     background-position-x: -229px
 }
 
-.op8.xp._btn.refr {
+.op8.refr {
     background-position-x: -251px
 }
 
-.op8.xp._btn.rew {
+.op8.rew {
     background-position-x: -273px
 }
 
-.op8.xp._btn.rss {
+.op8.rss {
     width: 21px;
     height: 11px;
     background-position-x: -32px
 }
 
-.op8.xp._btn.save {
+.op8.save {
     background-position-x: -295px
 }
 
-.op8.xp._btn.srch2 {
+.op8.srch2 {
     width: 16px;
     height: 16px;
     background-position-x: -16px
 }
 
-.op8.xp._btn.srch {
+.op8.srch {
     background-position-x: -317px
 }
 
-.op8.xp._btn.tile {
+.op8.tile {
     background-position-x: -339px
 }
 
-.op8.xp._btn.stop {
+.op8.stop {
     background-position-x: -361px
 }
 
-.op8.xp._btn.voice {
+.op8.voice {
     background-position-x: -383px
 }
 
-.op8.xp._btn.wand {
+.op8.wand {
     background-position-x: -405px
 }
 
 /*Opera 9.60 Windows Vista*/
-.op9d60.vista._btn {
+.op9d60 {
     width: 22px;
     height: 22px;
-    background: url(src/op9d60_vista__btn.png) no-repeat;
-    transition: filter 0.1s;
+    background: url(src/op9d60_vista__btn.png) 0 22px no-repeat;
 }
 
-.op9d60.vista._btn:not(.false):not(.setts):hover:active {
+.op9d60::after {
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    background: inherit;
+    transition: filter 0.1s;
+    background-position-y: 0;
+}
+
+.op9d60:hover:active:not(.setts):not(.false) {
     margin: -1px 0 0 1px
 }
 
-.op9d60.vista._btn:not(.false):not(.setts):hover {
+.op9d60:hover:not(.setts):not(.false)::after {
     filter: brightness(120%) saturate(50%);
 }
 
-.op9d60.vista._btn.false {
+.op9d60.false {
     opacity: 0.5;
 }
 
-.op9d60.vista._btn.bin {
+.op9d60.bin {
     width: 17px;
     height: 20px;
-    background-position: 0
+    background-position-x: 0
 }
 
-.op9d60.vista._btn.forw {
-    background-position: -17px
+.op9d60.forw {
+    background-position-x: -17px
 }
 
-.op9d60.vista._btn.next {
-    background-position: -39px
+.op9d60.next {
+    background-position-x: -39px
 }
 
-.op9d60.vista._btn.prev {
-    background-position: -61px
+.op9d60.prev {
+    background-position-x: -61px
 }
 
-.op9d60.vista._btn.refr {
-    background-position: -83px
+.op9d60.refr {
+    background-position-x: -83px
 }
 
-.op9d60.vista._btn.rew {
-    background-position: -105px
+.op9d60.rew {
+    background-position-x: -105px
 }
 
-.op9d60.vista._btn.setts {
+.op9d60.setts {
     filter: brightness(80%);
     height: 21px;
-    background-position: -127px
+    background-position-x: -127px
 }
 
-.op9d60.vista._btn.stop {
-    background-position: -149px
+.op9d60.stop {
+    background-position-x: -149px
 }
 
-.op9d60.vista._btn.wand {
+.op9d60.wand {
     width: 23px;
-    background-position: -171px
+    background-position-x: -171px
+}
+
+.op9d60.home {
+    background-position-x: -194px
 }
 
 
 /*Opera 10 Windows 7*/
 /*Opera 10.50 Windows 7*/
 /*Opera 11 Windows 7*/
-.op10.w7._btn,
-.op10d50.w7._btn,
-.op11.w7._btn {
+.op10,
+.op10d50,
+.op11 {
     width: 27px;
     height: 23px;
     background: url(src/op10_w7__btn.png) no-repeat;
 }
 
-.op10d50.w7._btn {
+.op10d50 {
     background-image: url(src/op10d50_w7__btn.png)
 }
 
-.op11.w7._btn {
+.op11 {
     background-image: url(src/op11_w7__btn.png)
 }
 
-.op10.w7._btn::after,
-.op10d50.w7._btn::after,
-.op11.w7._btn::after {
+.op10::after,
+.op10d50::after,
+.op11::after {
     width: 100%;
     height: 100%;
     background: inherit;
@@ -3563,138 +4055,138 @@
     transition: opacity 0.4s
 }
 
-.op10.w7._btn:not(.false):hover::after,
-.op10d50.w7._btn:not(.false):hover::after,
-.op11.w7._btn:not(.false):hover::after {
+:not(.false):hover.op10::after,
+:not(.false):hover.op10d50::after,
+:not(.false):hover.op11::after {
     transition: opacity 0.2s;
     opacity: 1
 }
 
-.op10.w7._btn:not(.false):hover:active::after,
-.op10d50.w7._btn:not(.false):hover:active::after,
-.op11.w7._btn:not(.false):hover:active::after {
+:not(.false):hover:active.op10::after,
+:not(.false):hover:active.op10d50::after,
+:not(.false):hover:active.op11::after {
     transition: none;
     background-position-y: -52px
 }
 
-.op10.w7._btn.false,
-.op10d50.w7._btn.false,
-.op11d50.w7._btn.false {
+.false.op10,
+.false.op10d50,
+.false.op11 {
     opacity: 0.5
 }
 
-.op10.w7._btn.home,
-.op10d50.w7._btn.home,
-.op11.w7._btn.home {
+.home.op10,
+.home.op10d50,
+.home.op11 {
     background-position-x: 0
 }
 
-.op10.w7._btn.prev,
-.op10d50.w7._btn.prev,
-.op11.w7._btn.prev {
+.prev.op10,
+.prev.op10d50,
+.prev.op11 {
 
     background-position-x: -26px
 }
 
-.op10.w7._btn.next,
-.op10d50.w7._btn.next,
-.op11.w7._btn.next {
+.next.op10,
+.next.op10d50,
+.next.op11 {
     background-position-x: -52px
 }
 
-.op10.w7._btn.refr,
-.op10d50.w7._btn.refr,
-.op11.w7._btn.refr {
+.refr.op10,
+.refr.op10d50,
+.refr.op11 {
     background-position-x: -78px
 }
 
-.op10.w7._btn.rew {
+.rew.op10 {
     background-position-x: -104px
 }
 
-.op10.w7._btn.stop,
-.op10d50.w7._btn.stop,
-.op11.w7._btn.stop {
+.stop.op10,
+.stop.op10d50,
+.stop.op11 {
     background-position-x: -130px
 }
 
-.op10.w7._btn.key {
+.key.op10 {
     background-position-x: -156px
 }
 
-.op10.w7._btn.forw {
+.forw.op10 {
     background-position-x: -182px
 }
 
-.op10.w7._btn.bin {
+.bin.op10 {
     width: 39px;
     height: 26px;
     background-position-x: -209px
 }
 
-.op10.w7._btn.menu {
+.menu.op10 {
     width: 39px;
     height: 26px;
     background-position-x: -243px
 }
 
-.op10.w7._btn.addtab {
+.addtab.op10 {
     width: 44px;
     height: 26px;
     background-position-x: -281px
 }
 
-.op10.w7._btn.srch {
+.srch.op10 {
     width: 16px;
     height: 15px;
     background-position-x: -324px
 }
 
-.op10.w7._btn.srch::after {
+.srch.op10::after {
     content: none
 }
 
-.op10d50.w7._btn.key,
-.op11.w7._btn.key {
+.key.op10d50,
+.key.op11 {
     background-position-x: -104px
 }
 
-.op10d50.w7._btn.forw,
-.op11.w7._btn.forw {
+.forw.op10d50,
+.forw.op11 {
     background-position-x: -156px
 }
 
-.op10d50.w7._btn.srch,
-.op11.w7._btn.srch {
+.srch.op10d50,
+.srch.op11 {
     background-position-x: -183px
 }
 
-.op10d50.w7._btn.bin,
-.op11.w7._btn.bin {
+.bin.op10d50,
+.bin.op11 {
     width: 20px;
     background-position-x: -256px
 }
 
-.op10d50.w7._btn.bin.check,
-.op11.w7._btn.bin.check {
+.bin.op10d50.check,
+.bin.op11.check {
     background-position-x: -275px
 }
 
-.op10d50.w7._btn.addtab,
-.op11.w7._btn.addtab {
+.addtab.op10d50,
+.addtab.op11 {
     width: 46px;
     height: 26px;
     background-position-x: -210px
 }
 
 /*Opera 12 Windows 7*/
-.op12.w7._btn {
+.op12 {
     width: 33px;
     height: 21px;
     background: url(src/op12_w7__btn.png) no-repeat
 }
 
-.op12.w7._btn::after {
+.op12::after {
     width: 100%;
     height: 100%;
     background: inherit;
@@ -3705,169 +4197,873 @@
     transition: opacity 0.4s
 }
 
-.op12.w7._btn:not(.false):hover::after {
+:not(.false):hover.op12::after {
     opacity: 1;
 }
 
-.op12.w7._btn:not(.false):hover:active::after {
+:not(.false):hover:active.op12::after {
     transition: none;
     background-position-y: -42px;
 }
 
-.op12.w7._btn.false {
+.false.op12 {
     opacity: 0.5;
 }
 
-.op12.w7._btn.prev {
+.prev.op12 {
     background-position-x: 0
 }
 
-.op12.w7._btn.next {
+.next.op12 {
     background-position-x: -32px
 }
 
-.op12.w7._btn.refr {
+.refr.op12 {
     background-position-x: -64px
 }
 
-.op12.w7._btn.stop {
+.stop.op12 {
     background-position-x: -96px
 }
 
-.op12.w7._btn.key {
+.key.op12 {
     background-position-x: -128px
 }
 
-.op12.w7._btn.forw {
+.forw.op12 {
     background-position-x: -160px
 }
 
-.op12.w7._btn.addfav {
+.home.op12 {
+    background-position-x: -192px
+}
+
+.menu.op12 {
+    width: 19px;
+    background-position-x: -224px;
+}
+
+.addfav.op12 {
     width: 13px;
     height: 14px;
-    background-position-x: -193px
+    background-position-x: -243px
 }
 
-.op12.w7._btn.addfav.check {
-    background-position-x: -206px
+.addfav.op12.check {
+    background-position-x: -256px
 }
 
-.op12.w7._btn.srch {
+.srch.op12 {
     width: 12px;
     height: 12px;
-    background-position-x: -219px
+    background-position-x: -269px
 }
 
-.op12.w7._btn.addtab {
+.addtab.op12 {
     width: 13px;
     height: 13px;
-    background-position-x: -231px
-}
-
-.op12.w7._btn.menu {
-    width: 11px;
-    height: 7px;
-    background-position-x: -244px
+    background-position-x: -281px
 }
 
 /*Opera 15 Windows 8*/
-.op15.w8._btn {
+.op15 {
     width: 19px;
     height: 19px;
     background: url(src/op15_w8__btn.svg) no-repeat;
     opacity: 0.5;
 }
-/*Opera 15 Windows 8*/
-.op15.w8._btn:not(.false):active:hover {
+
+:not(.false):active:hover.op15 {
     opacity: 1;
 }
 
-.op15.w8._btn.false {
+.false.op15 {
     opacity: 0.25;
 }
 
-.op15.w8._btn.prev {
+.prev.op15 {
     background-position-y: 0
 }
 
-.op15.w8._btn.next {
+.next.op15 {
     background-position-y: -19px
 }
 
-
-.op15.w8._btn.addtab {
+.addtab.op15 {
     opacity: 1;
     background-position-y: -38px
 }
 
-.op15.w8._btn.refr {
+.refr.op15 {
     background-position-y: -57px
 }
-.op15.w8._btn.fav {
+
+.fav.op15 {
     background-position-y: -76px
 }
 
-.op15.w8._btn.stop {
+.stop.op15 {
     background-position-y: -95px
 }
 
-.op15.w8._btn.srch {
+.srch.op15 {
     opacity: 1;
     background-position-y: -114px
 }
 
 /*Opera 50 Windows 10*/
-.op50.w10._btn {
+.op50 {
     width: 16px;
     height: 16px;
     background: url(src/op50_w10__btn.svg) no-repeat;
 }
-/*Opera 15 Windows 8*/
 
-.op50.w10._btn.false {
+.false.op50 {
     opacity: 0.5;
 }
 
-.op50.w10._btn.addtab {
+.addtab.op50 {
     opacity: 0.75;
     background-position-y: 0
 }
-.op50.w10._btn.addtab:hover:active {
+
+:hover:active.addtab.op50 {
     opacity: 0.5;
 }
 
-.op50.w10._btn.menu {
+.menu.op50 {
     opacity: 0.75;
     background-position-y: -16px
 }
 
-.op50.w10._btn.menu:hover:active {
+:hover:active.menu.op50 {
     opacity: 1
 }
 
-.op50.w10._btn.srch {
+.srch.op50 {
     background-position-y: -32px
 }
 
-.op50.w10._btn.fav {
+.fav.op50 {
     background-position-y: -48px
 }
 
-.op50.w10._btn.next {
+.next.op50 {
     background-position-y: -64px
 }
 
-.op50.w10._btn.prev {
+.prev.op50 {
     background-position-y: -80px
 }
 
-.op50.w10._btn.refr {
+.refr.op50 {
     background-position-y: -96px
 }
 
-.op50.w10._btn.stop {
+.stop.op50 {
     background-position-y: -112px
 }
-.op50.w10._btn.share {
+
+.share.op50 {
     background-position-y: -128px
+}
+
+/*Firefox 57 Quantum Windows 10*/
+
+.ff57 {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+}
+
+.ff57::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 18px;
+    height: 20px;
+    opacity: 0.666;
+    background: url(src/ff57_w10__btn.svg) no-repeat;
+    background-position: inherit;
+}
+
+.ff57.false::after {
+    opacity: 0.267;
+}
+
+:not(.false).ff57:hover {
+    background-color: rgba(0, 0, 0, 0.098);
+}
+
+.refr.ff57::after,
+.stop.ff57::after {
+    background: url(src/ff57_w10__btn_refr.svg) 18px 0 no-repeat;
+    animation: 0.52s ff57refr steps(26, start) forwards;
+}
+
+.stop.ff57::after {
+    background-position: 18px -20px;
+    animation-name: ff57stop;
+}
+
+.prev.ff57 {
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+    border: 1px solid rgba(160, 160, 160, 0.8);
+    background-color: #FDFDFD;
+    background-position-y: 0;
+    transition: box-shadow 0.3s;
+}
+
+.prev.ff57::after {
+    top: 6px;
+    left: 7px;
+}
+
+.next.ff57 {
+    background-position-y: -20px;
+}
+
+.home.ff57 {
+    background-position-y: -40px;
+}
+
+.dwl.ff57 {
+    background-position-y: -120px;
+}
+
+.osx3.ff1 {
+    background: url(src/ff1_osx3__btn.png) no-repeat;
+    height: 32px;
+    width: 32px;
+}
+
+:not(.false).osx3.ff1:hover:active {
+    background-position-y: -32px;
+}
+
+.osx3.false.ff1 {
+    background-position-y: -64px;
+}
+
+.osx3.prev.ff1 {
+    background-position-x: 0;
+}
+
+.osx3.next.ff1 {
+    background-position-x: -32px;
+}
+
+.osx3.stop.ff1 {
+    background-position-x: -64px;
+}
+
+.osx3.refr.ff1 {
+    background-position-x: -96px;
+}
+
+.osx3.home.ff1 {
+    background-position-x: -128px;
+}
+
+.osx3.dwl.ff1 {
+    background-position-x: -160px;
+}
+
+.osx3.hist.ff1 {
+    background-position-x: -192px;
+}
+
+.osx3.book.ff1 {
+    background-position-x: -224px;
+}
+
+.osx3.prnt.ff1 {
+    background-position-x: -256px;
+}
+
+.osx3.addtab.ff1 {
+    background-position-x: -288px;
+}
+
+.osx3.new.ff1 {
+    background-position-x: -320px;
+}
+
+.osx3.cut.ff1 {
+    background-position-x: -352px;
+}
+
+.osx3.copy.ff1 {
+    background-position-x: -384px;
+}
+
+.osx3.ff1.paste {
+    background-position-x: -416px;
+}
+
+.osx3.ff1.go {
+    width: 20px;
+    height: 20px;
+    background-position-x: -448px;
+}
+
+/*Firefox 2 Mac os x tiger*/
+
+.osx4.ff2 {
+    background: url(src/ff2_osx4__btn.png) no-repeat;
+    height: 24px;
+    width: 24px;
+}
+
+:not(.false).osx4.ff2:hover {
+    background-position-y: -24px;
+}
+
+:not(.false).osx4.ff2:hover:active {
+    background-position-y: -48px;
+}
+
+.osx4.ff2.false {
+    background-position-y: -72px;
+}
+
+.osx4.ff2.check {
+    /*background-position-y: -96px !important; firefox doesnt use those apparently*/
+    background-position-y: -48px !important;
+}
+
+.prev.osx4.ff2 {
+    background-position-x: 0px;
+    width: 39px
+}
+
+.next.osx4.ff2 {
+    background-position-x: -38px;
+    width: 39px
+}
+
+.stop.osx4.ff2 {
+    background-position-x: -76px;
+}
+
+.osx4.refr.ff2 {
+    background-position-x: -100px;
+}
+
+.osx4.home.ff2 {
+    background-position-x: -124px;
+}
+
+.osx4.dwl.ff2 {
+    background-position-x: -148px;
+}
+
+.osx4.ff2.hist {
+    background-position-x: -172px;
+}
+
+.osx4.ff2.book {
+    background-position-x: -196px;
+}
+
+.osx4.ff2.prnt {
+    background-position-x: -220px;
+}
+
+.osx4.ff2.addtab {
+    background-position-x: -244px;
+}
+
+.osx4.ff2.new {
+    background-position-x: -268px;
+}
+
+.osx4.ff2.cut {
+    background-position-x: -292px;
+}
+
+.osx4.ff2.copy {
+    background-position-x: -316px;
+}
+
+.osx4.ff2.paste {
+    background-position-x: -339px;
+}
+
+.osx4.srch.ff2 {
+    height: 22px;
+    width: 25px;
+    background-position-x: -363px;
+}
+
+.osx4.go.ff2 {
+    height: 22px;
+    width: 25px;
+    background-position-x: -388px;
+}
+
+
+
+/*Firefox 3 Mac os x leopard*/
+
+
+.osx5.ff3 {
+    background: url(src/ff3_osx5__btn.png) no-repeat;
+    height: 23px;
+    width: 36px
+}
+
+:not(.false).osx5.ff3:hover:active {
+    background-position-y: -46px
+}
+
+:not(.false).osx5.ff3.check:hover:active {
+    background-position-y: -92px
+}
+
+.osx5.ff3.check {
+    background-position-y: -69px
+}
+
+.false.osx5.ff3 {
+    background-position-y: -23px
+}
+
+.false.osx5.ff3 {
+    background-position-y: -23px
+}
+
+.next3.osx5.ff3 {
+    background-position-x: 0
+}
+
+.prev3.osx5.ff3 {
+    background-position-x: -35px
+}
+
+.refr.osx5.ff3 {
+    background-position-x: -70px
+}
+
+.stop.osx5.ff3 {
+    background-position-x: -105px
+}
+
+.home.osx5.ff3 {
+    background-position-x: -140px
+}
+
+.dwl.osx5.ff3 {
+    background-position-x: -175px
+}
+
+.hist.osx5.ff3 {
+    background-position-x: -210px
+}
+
+.book.osx5.ff3 {
+    background-position-x: -245px
+}
+
+.prnt.osx5.ff3 {
+    background-position-x: -280px
+}
+
+.addtab.osx5.ff3 {
+    background-position-x: -315px
+}
+
+.new.osx5.ff3 {
+    background-position-x: -350px
+}
+
+.cut.osx5.ff3 {
+    background-position-x: -385px
+}
+
+.copy.osx5.ff3 {
+    background-position-x: -420px
+}
+
+.paste.osx5.ff3 {
+    background-position-x: -455px
+}
+
+.stop2.osx5.ff3 {
+    width: 34px;
+    background-position-x: -490px
+}
+
+.refr.osx5.ff3 {
+    width: 34px;
+    background-position-x: -523px
+}
+
+.bug.osx5.ff3 {
+    background-position-x: -556px
+}
+
+.prev2.osx5.ff3 {
+    width: 34px;
+    background-position-x: -591px
+}
+
+.next2.osx5.ff3 {
+    width: 49px;
+    background-position-x: -624px
+}
+
+.prev.osx5.ff3 {
+    width: 36px;
+    height: 33px;
+    background-position-x: -673px
+}
+
+:not(.false).osx5.prev.ff3:hover:active {
+    background-position-y: -66px
+}
+
+.prev.osx5.false.ff3 {
+    background-position-y: -33px
+}
+
+.next.osx5.ff3 {
+    width: 47px;
+    background-position-x: -709px
+}
+
+
+/*.osx5.ff4 {
+    height: 22px;
+    width: 28px;
+    border: 1px solid rgba(59, 59, 59, 0.9);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 0 1px rgba(255, 255, 255, 0.2);
+    background: linear-gradient(to bottom, #FFF, #ADADAD) repeat-x;
+    /*background-origin: border-box;
+}
+
+.osx5.ff4 {
+    background: #B5B5B5;
+    text-shadow: 0 1px rgba(255, 255, 255, .4);
+    box-shadow: inset rgba(0, 0, 0, 0.3) 0 -6px 10px, inset #000 0 1px 3px, inset rgba(0, 0, 0, 0.2) 0 1px 3px, 0 1px rgba(255, 255, 255, .4);
+}*/
+
+.osx7.ff4,
+.osx7.ff10 {
+    width: 28px;
+    height: 22px;
+    background: url(src/ff4_osx7__btn_bg.png) no-repeat, url("") 0 -22px no-repeat;
+}
+
+.osx7.ff10 {
+    background: url(src/ff10_osx7__btn_bg.png) no-repeat, url("") 0 -22px no-repeat;
+}
+
+.osx7.ff4::after,
+.osx7.ff10::after {
+    position: absolute;
+    content: '';
+    width: 73%;
+    height: 19px;
+    top: 3px;
+    left: 6px;
+
+    /*background-color: red;*/
+    background: inherit;
+    background-image: url(""), url(src/ff4_osx7__btn.png);
+}
+
+.osx7.ff10::after {
+    background-image: url(""), url(src/ff10_osx7__btn.png);
+}
+
+:not(.false).osx7.ff4:hover:active,
+:not(.false).osx7.ff10:hover:active {
+    background-position-y: -31px, -22px;
+}
+
+.osx7.false.ff4::after,
+.osx7.false.ff10::after {
+    opacity: 0.4;
+}
+
+.osx7.ff4.prev2,
+.osx7.ff10.prev2 {
+    background-position-x: 0, -23px;
+}
+
+.osx7.ff4.next,
+.osx7.ff10.next {
+    background-position-x: -149px, -41px;
+}
+
+.osx7.ff4.refr,
+.osx7.ff10.refr {
+    background-position-x: 0, -62px;
+}
+
+.osx7.ff4.stop,
+.osx7.ff10.stop {
+    background-position-x: 0, -82px;
+}
+
+.osx7.ff4.home,
+.osx7.ff10.home {
+    background-position-x: 0, -102px;
+}
+
+.osx7.ff4.dwl,
+.osx7.ff10.dwl {
+    background-position-x: 0, -122px;
+}
+
+.osx7.ff4.hist,
+.osx7.ff10.hist {
+    background-position-x: 0, -142px;
+}
+
+.osx7.ff4.book,
+.osx7.ff10.book {
+    width: 38px;
+    background-position: -81px 0, -163px -22px;
+}
+
+.osx7.ff4.hist.check,
+.osx7.ff10.hist.check {
+    background-position: 0 -31px, -142px -41px;
+}
+
+.osx7.ff4:hover:active.hist.check::after,
+.osx7.ff10:hover:active.hist.check::after {
+    background-position-y: -31px, -41px;
+    opacity: 0.5;
+}
+
+.osx7.ff4.prnt,
+.osx7.ff10.prnt {
+    background-position-x: 0, -191px;
+}
+
+.osx7.ff4.addtab2,
+.osx7.ff10.addtab2 {
+    background-position-x: 0, -211px;
+}
+
+.osx7.ff4.new,
+.osx7.ff10.new {
+    background-position-x: 0, -231px;
+}
+
+.osx7.ff4.cut,
+.osx7.ff10.cut {
+    background-position-x: 0, -251px;
+}
+
+.osx7.ff4.copy,
+.osx7.ff10.copy {
+    background-position-x: 0, -271px;
+}
+
+.osx7.ff4.paste,
+.osx7.ff10.paste {
+    background-position-x: 0, -291px;
+}
+
+.osx7.ff4.bug,
+.osx7.ff10.bug {
+    background-position-x: 0, -311px;
+}
+
+.osx7.ff4.fscr,
+.osx7.ff10.fscr {
+    background-position-x: 0, -331px;
+}
+
+.osx7.ff4.fscr.check,
+.osx7.ff10.fscr.check {
+    background-position-x: 0, -351px;
+}
+
+.osx7.ff4.tabls,
+.osx7.ff10.tabls {
+    background-position-x: 0, -371px;
+}
+
+.osx7.ff4.zout,
+.osx7.ff10.zout {
+    background-position-x: -27px, -391px;
+}
+
+.osx7.ff4.zin,
+.osx7.ff10.zin {
+    background-position-x: -54px, -411px;
+}
+
+.osx7.ff4.sync,
+.osx7.ff10.sync {
+    background-position-x: 0, -431px;
+}
+
+.osx7.ff4.sbcr,
+.osx7.ff10.sbcr {
+    background-position-x: 0, -451px;
+}
+
+.osx7.ff4.prev,
+.osx7.ff10.prev {
+    width: 30px;
+    height: 30px;
+    background-position-x: -119px, -2px;
+}
+
+.osx7.ff4.addtab,
+.osx7.ff10.addtab {
+    width: 40px;
+    height: 24px;
+    background-position: -177px 0, -466px 1px;
+}
+
+.osx7.fav.ff4,
+.osx7.fav.ff10 {
+    width: 22px;
+    height: 20px;
+    background-position: 22px 0, -495px 1px;
+}
+
+.osx7.ff4.fav.check,
+.osx7.ff10.fav.check {
+    background-position: 22px 0, -511px 1px;
+}
+
+.osx7:hover.b.ff4,
+.osx7:hover.b.ff10 {
+    background-position-y: 0, -42px;
+}
+
+.osx7:hover.ff4.addtab,
+.osx7:hover.ff10.addtab {
+    background-position-x: -217px, -466px;
+}
+
+.osx7:hover:active.b.ff4,
+.osx7:hover:active.b.ff10 {
+    background-position-y: -31px, -22px;
+}
+
+.osx7.ff10.refr2 {
+    background-position: 200px 0, -529px -42px;
+}
+
+.osx7.ff10.stop2 {
+    background-position: 200px 0, -550px -42px;
+}
+
+.osx7.ff10.go {
+    background-position: 200px 0, -571px -42px;
+}
+
+.osx7.ff5 {
+    width: 22px;
+    height: 23px;
+    background: url(src/ff5_osx7__btn.png) no-repeat;
+}
+
+.osx7.ff5:hover {
+    background-position-y: -23px;
+}
+
+.osx7.ff5:hover:active {
+    background-position-y: -46px;
+}
+
+.osx7.ff5.refr {
+    background-position-x: 0
+}
+
+.osx7.ff5.go {
+    background-position-x: -22px;
+}
+.osx7.ff5.stop {
+    background-position-x: -44px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ff57.libr {
+    background-position-y: -100px;
+}
+
+.ff57.menu {
+    background-position-y: -80px;
+}
+
+.ff57.showbar.check:hover {
+    background-color: rgba(0, 0, 0, 0.098);
+    transition: background-color 0.3s;
+}
+
+:not(.false).ff57:hover:active,
+.ff57.showbar.check {
+    transition: none;
+    background-color: rgba(0, 0, 0, 0.145);
+}
+
+.ff57.showbar {
+    background-position-y: -60px;
+}
+
+:not(.false).prev.ff57:hover {
+    background-color: #fefefe;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+:not(.false).prev.ff57:hover:active {
+    background-color: #cececf;
+}
+
+@keyframes ff57refr {
+
+    39.99% {
+        opacity: 0.666;
+    }
+
+    40%,
+    99.99% {
+        opacity: 0.19;
+    }
+
+    100% {
+        background-position-x: 100%
+    }
+}
+
+@keyframes ff57stop {
+
+    39.99% {
+        opacity: 0.666;
+    }
+
+    40%,
+    99.99% {
+        opacity: 0.19;
+    }
+
+    100% {
+        background-position-x: 100%
+    }
 }

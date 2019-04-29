@@ -1,17 +1,17 @@
 /* exported moveToBlockBy initDom */
-/* globals dataReady */
+/* globals dataReady timelineGoToId */
 
 var dataset = [];
 var resizing = false;
 
-$.getJSON("./events.json", json => {
+$.getJSON("./events.json", function(json) {
   // Remove hidden elements.
   for (var i = json.length - 1; i >= 0; i--) {
     if (json[i].hidden) {
       json.splice(i, 1);
     }
   }
-  json.sort((a, b) => {
+  json.sort(function(a, b) {
     return a.timestamp - b.timestamp;
   });
   dataset = json;
@@ -26,7 +26,7 @@ function initDom() {
   container = document.getElementById("container-textblocs");
 
   prepareDataset();
-  for (let i = 0; i < dataset.length; i++) {
+  for (var i = 0; i < dataset.length; i++) {
     createBlock(dataset[i], i);
   }
 
@@ -34,7 +34,7 @@ function initDom() {
 }
 
 function prepareDataset() {
-  for (let i = 0; i < dataset.length; i++) {
+  for (var i = 0; i < dataset.length; i++) {
     dataset[i].index = i;
     dataset[i].id = indexToId(i);
   }
@@ -61,16 +61,17 @@ function createBlock(data) {
   title.className = "block-title";
   title.textContent = data.title;
   eventBlock.appendChild(title);
-  var description = document.createElement("div");
+  var description = document.createElement("bockquote");
+  description.cite = data.readmore;
   description.className = "block-description";
-  description.innerHTML = data.content;
+  description.innerHTML = "“" + data.content + "”";
   eventBlock.appendChild(description);
 
   var stats = document.createElement("div");
   stats.className = "block-stats";
   eventBlock.appendChild(stats);
   var icon = document.createElement("img");
-  icon.src = `assets/imgs/img-${data.type}-icon.png`;
+  icon.src = "assets/imgs/img-" + data.type + "-icon.png";
   icon.className = "vertical-center";
   stats.appendChild(icon);
   var legend = document.createElement("span");
@@ -79,21 +80,29 @@ function createBlock(data) {
     var suffix = data.visualValueSuffix.trim();
     var num = data.visualValue;
     if (suffix === "%") num = Math.floor(num * 100);
-    legendStr += `: ${num.toLocaleString("en-US")} ${suffix}`;
+    legendStr += ": " + num.toLocaleString("en-US") + " " + suffix;
   }
   legend.textContent = legendStr;
   legend.className = "vertical-center";
   stats.appendChild(legend);
 
+  var readmore = document.createElement("cite");
+  var readmoreLink = document.createElement("a");
+  readmoreLink.target = "_blank";
+  readmoreLink.rel = "noopener noreferrer";
   if (data.readmore) {
-    var readmore = document.createElement("div");
-    var readmoreLink = document.createElement("a");
     readmoreLink.href = data.readmore;
-    readmoreLink.textContent = "Read more";
-    readmoreLink.target = "_blank";
-    readmore.appendChild(readmoreLink);
-    eventBlock.appendChild(readmore);
+    readmoreLink.textContent = "Read more on " + getDomainTitle(data.readmore);
+  } else {
+    readmoreLink.href = data.source;
+    readmoreLink.textContent =
+      data.source === "https://en.wikipedia.org/wiki/List_of_data_breaches"
+        ? "Source: Data breach list on Wikipedia"
+        : "Source: Event list on Wikipedia";
   }
+  readmore.appendChild(readmoreLink);
+
+  eventBlock.insertBefore(readmore, stats);
 
   // Now that we have added all the content, we can calculate the height
   // of the div to determine an offset.
@@ -106,17 +115,17 @@ var typeNames = {
   media: "New media",
   newAttackType: "New attack type",
   incident: "Security incident",
-  law: "Legislation event",
+  law: "Governmental event",
   foundation: "Foundation",
   moneyTheft: "Money theft",
-  other: "Other",
+  loss: "Loss",
   virus: "Virus",
   defacement: "Defacement",
   infiltration: "Infiltration",
   breach: "Data breach",
   dataTheft: "Data theft",
   hack: "Hack",
-  ransomware: "Ransomware",
+  leak: "Data leak",
   destructive: "Destructive hack"
 };
 
@@ -141,19 +150,16 @@ function indexToId(index) {
 
 function goToBlock(newIndex, isTimelineEvent) {
   var forward = newIndex > currentBlock;
-  if (newIndex >= dataset.length) {
-    newIndex = 0;
-  }
-  if (newIndex < 0) {
-    newIndex = dataset.length - 1;
-  }
+  // Loop the timeline
+  if (newIndex >= dataset.length) newIndex = 0;
+  if (newIndex < 0) newIndex = dataset.length - 1;
+
+  // Reset the randomized height
   var lastIndex = currentBlock;
   updateOldBlocks(lastIndex, newIndex);
   currentBlock = newIndex;
 
-  if (!isTimelineEvent) {
-    timelineGoToId(currentBlock);
-  }
+  if (!isTimelineEvent) timelineGoToId(currentBlock);
   updateNewBlocks();
   updateContainer();
   updateYear();
@@ -172,7 +178,9 @@ function updateYear() {
 
 function updateContainer() {
   var e = document.getElementById(indexToId(currentBlock));
-  container.style.transform = "translateX(" + -e.parentNode.offsetLeft + "px)";
+  var leftAlign = -e.parentNode.offsetLeft;
+  var center = leftAlign - e.offsetWidth / 2 + window.innerWidth / 2;
+  container.style.transform = "translateX(" + center + "px)";
 }
 
 function updateOldBlocks(lastIndex) {
@@ -182,14 +190,9 @@ function updateOldBlocks(lastIndex) {
 
 function updateNewBlocks() {
   for (var i = 0; i < container.children.length; i++) {
-    $(container.children[i].firstChild).toggleClass(
-      "ancientHistory",
-      Boolean(i < currentBlock)
-    );
-    $(container.children[i].firstChild).toggleClass(
-      "futureHistory",
-      Boolean(i > currentBlock)
-    );
+    var child = $(container.children[i].firstChild);
+    child.toggleClass("ancientHistory", Boolean(i < currentBlock));
+    child.toggleClass("futureHistory", Boolean(i > currentBlock));
     if (i === currentBlock) {
       container.children[i].style.transform = "translateY(" + 0 + "px)";
     }
@@ -200,7 +203,7 @@ function updateNewBlocks() {
   }
 }
 
-window.addEventListener("resize", () => {
+window.addEventListener("resize", function() {
   // Don't update if we're in a resizing event from the left infomesh panel.
   if (!resizing) {
     updateNewBlocks();
@@ -209,13 +212,20 @@ window.addEventListener("resize", () => {
 });
 
 // Receive the UI resizing events from infomesh, to avoid glitchy UI.
-$(window).on("message", e => {
+$(window).on("message", function(e) {
   if (e.originalEvent.data.message == "isExtended") {
     resizing = true;
-    setTimeout(() => {
+    setTimeout(function() {
       resizing = false;
       updateNewBlocks();
       updateContainer();
-    }, 3000); // TODO: update with final transition value.
+    }, 540);
   }
 });
+
+function getDomainTitle(urlStr) {
+  var url = new URL(urlStr);
+  var domain = url.hostname;
+  domain = domain.replace("www.", "").replace(/^en\./, "");
+  return domain;
+}

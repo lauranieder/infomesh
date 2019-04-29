@@ -1,4 +1,5 @@
 /* exported pixiReady paperReady dataReady */
+/* globals initPixi initDom */
 
 // var isPaperReady = false;
 // function paperReady() {

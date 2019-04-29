@@ -113,11 +113,13 @@ nav a,
 }
 
 .show-splashscreen.enable-splashscreen-titles .splashscreen-title {
-  transform: translate(-50%, 100%);
+  transform: translate(-50%,0%);
+  padding:1rem;
 }
 
 .show-splashscreen.enable-splashscreen-titles .click-to-start {
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, 0%);
+  padding:1rem;
 
 }
 
@@ -670,9 +672,24 @@ iframe {
   nav-mobile svg{
     position:relative;
     width:2rem;
-    stroke:black;
+    stroke:white;
     stroke-width:4px;
   }
+
+  nav-mobile .nav-full{
+    display:inline;
+    visibility: visible;
+    position:absolute;
+    right:0rem;
+    top:0rem;
+    padding:1rem;
+  }
+
+  nav-mobile #button-closeoverlay{
+    display:none;
+    visibility: hidden;
+  }
+
 
 
   /*nav-mobile #button-menu{

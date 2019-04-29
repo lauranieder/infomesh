@@ -38,6 +38,8 @@ function getProjectIdFromName(name) {
 }
 
 function toggleInformation() {
+  console.log("toggleInformation : is Reduced "+ $('#container-side').hasClass('reduced'))
+
   $('#container-side').toggleClass('reduced');
   var style = projectsData[currentProjectID].style;
 
@@ -51,12 +53,23 @@ function toggleInformation() {
   }
 }
 
+//only on mobile with burger menu
 function toggleMenu(){
-  $('#container-side').toggleClass('mobile-reduced');
+  if(isMobile){
+    console.log("toggle menu : is reduced was " +$('#container-side').hasClass('mobile-reduced'));
+    console.log("main is reduced " +$('#container-main').hasClass('reduced')); //if it is not reduced means a project is open
+    if($('#container-main').hasClass('reduced')){ //not project open
+      $('#project-title').text(siteTitle);
+      $('#container-title').text(siteTitle);
+      //$('nav-mobile').addClass('d-none');
+    }
+    $('#container-side').toggleClass('mobile-reduced');
+  }
 }
 
 function init() {
   console.log("init");
+  console.log("currentPagetName = "+currentPagetName);
   $.getJSON('data/projects.json', function(data) {
     projectsData = data;
     loadProjectsPreview();
@@ -72,6 +85,7 @@ function init() {
 }
 
 function gotoProject(index, direction) {
+  console.log("gotoProject");
   $('#navigation nav').removeClass('d-none');
 
   $('#container-main').addClass('main').removeClass('reduced');
@@ -85,6 +99,7 @@ function gotoProject(index, direction) {
 
 /*OPEN A PROJECT*/
 function loadProject(index, direction) {
+  console.log("loadProject");
   currentProjectID = index;
 
   $('#project-title').text(projectsData[index].title);
@@ -95,7 +110,7 @@ function loadProject(index, direction) {
 
   $('.current-iframe').addClass('previous-iframe').removeClass('current-iframe');
 
-
+  //to improve définir le style background ici
 
   var iframe = $('<iframe class="current-iframe appear-' + direction + '" src="/projects/' + projectsData[index].slug + '">');
   $('#container-main').append(iframe);
@@ -146,6 +161,7 @@ $(document).ready(function() {
   });
 
   $('#button-open-about').on('click', function(e) {
+    console.log("about");
     e.preventDefault();
 
     $('.selected').removeClass('selected');
@@ -156,8 +172,15 @@ $(document).ready(function() {
     $('#container-about').addClass('main').removeClass('reduced');
     $('#container-main, #container-projects').addClass('reduced').removeClass('main');
 
-    $('#project-title').text(siteTitle);
-    $('#container-title').text(siteTitle);
+
+    if(!isMobile){
+      $('#project-title').text(siteTitle);
+      $('#container-title').text(siteTitle);
+    }else{
+      $('#project-title').text("About");
+      $('#container-title').text("About");
+    }
+
     $('#project-text p:first').text("");
     $('#project-credits p:first').text("");
 
@@ -168,6 +191,7 @@ $(document).ready(function() {
   });
 
   $('#button-open-projects').on('click', function(e) {
+    console.log("project");
     e.preventDefault();
 
     $('.selected').removeClass('selected');
@@ -180,8 +204,14 @@ $(document).ready(function() {
     //only for mobile
     $('#container-side').addClass('mobile-reduced');
 
-    $('#project-title').text(siteTitle);
-    $('#container-title').text(siteTitle);
+    if(!isMobile){
+      $('#project-title').text(siteTitle);
+      $('#container-title').text(siteTitle);
+    }else{
+      $('#project-title').text("30 years of");
+      $('#container-title').text("30 years of");
+    }
+
     $('#project-text p:first').text("");
     $('#project-credits p:first').text("");
 

@@ -1,7 +1,7 @@
 /* exported setupGraphics */
 /* globals resources app */
 
-var g_frameCount = 0;
+// var g_frameCount = 0;
 var background;
 var sprites = [];
 var spriteModel = {
@@ -32,14 +32,16 @@ function setupGraphics() {
   app.stage.addChild(background);
 
   // Event loops
-  app.ticker.add(delta => graphicsGameLoop(delta));
-  app.renderer.view.addEventListener("canvasResize", e => {
+  app.ticker.add(function(delta) {
+    graphicsGameLoop(delta);
+  });
+  app.renderer.view.addEventListener("canvasResize", function(e) {
     background.drawRect(0, 0, e.detail.width, e.detail.height);
   });
 }
 
 function graphicsGameLoop(_delta) {
-  g_frameCount += 1;
+  // g_frameCount += 1;
 
   for (var i = 0; i < sprites.length; i += 1) {
     var s = sprites[i];
@@ -85,7 +87,7 @@ function onNewBlock(event) {
       i -= 1;
     } else if (s.deathTime === 0) {
       // Send the old ones to their death;
-      s.deathTime = now + 2000;
+      s.deathTime = now + 3000;
       s.lissajousEnabled = false;
       if (event.detail.forward) {
         s.targetX = -(400 + s.sprite.width);
@@ -110,7 +112,7 @@ function createSprites(event) {
     var l10 = Math.log(data.visualValue) / Math.log(10);
     if (data.visualValue < 1) {
       // = percent data.
-      scale = map_range(data.visualValue, 0, 1, 0.2, 10);
+      scale = map_range(data.visualValue, 0, 1, 0.2, 15);
     } else if (data.visualValue < 10) {
       // = no data from this order yet.
     } else if (l10 < 7) {
@@ -151,6 +153,12 @@ function createSprites(event) {
     sData.lissajousProgress = Math.random();
     sData.speedLissajous = (Math.random() * 0.003 + 0.0003) / sData.lissajousA;
     sData.lockOnTarget = false;
+
+    // Setup a rotaion, except for meaningful icons
+    if (data.type !== "law" && data.type !== "moneyTheft") {
+      sData.targetRotation = Math.PI * 2 * Math.random();
+      sData.speedRotation = 0.008 * Math.random();
+    }
 
     // Add to the app.
     app.stage.addChild(s);

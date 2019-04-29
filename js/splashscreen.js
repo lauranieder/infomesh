@@ -48,7 +48,7 @@
     "It took only 5 years for the internet to reach a market audience of 50 million users. 5 times faster than Radio and 15 times faster than TV.",
     "The world record for fastest “texter” is held by a Brazilian teenager.",
     "Over 1 million babies have been born from people who met on Match.com.",
-    "Online daters spend an average of $243 per year on online dating",
+    "Online daters spend an average of $243 per year on online dating.",
     "WordPress, the most widely known Content Management System (CMS) approximately 63 million blogs.",
     "On the original “The Facebook” website, Al Pacino’s face can be seen in the upper left-hand corner.",
     "The “@” symbol was used to signify that the message was sent to a person instead of a machine.",
@@ -56,9 +56,9 @@
     "Garfield the cartoon cat once offered a free email service.",
     "An estimated 65% of Americans watch TV and use the Internet simultaneously.",
     "Over 1 billion people watch videos on YouTube every month. That is an average of 4 hours each per month.",
-    "Over 72 hours of video are uploaded to YouTube every minute",
+    "Over 72 hours of video are uploaded to YouTube every minute.",
     "YouTube’s copyright-checking software scans over 100 years of video every day.",
-    "The iPhone 3 is about 2,000 times faster than the Super Nintendo",
+    "The iPhone 3 is about 2,000 times faster than the Super Nintendo.",
     "It’s estimated that 80% of all images on the Internet are of naked women.",
     "The internet speed on the International Space Station is faster than the average internet speed in Australia.",
     "Canada is rated as “Third World” in Broadband Internet rating by Netflix.",
@@ -78,14 +78,14 @@
     "In 1995, the University of South California built a robotic garden that was open to anyone on the internet.",
     "Another one for the conspiracy theorists: the US military is developing software that will use fake profiles to influence internet conversations and spread pro-American propaganda.",
     "The internet took a total of 4 years to reach an audience of 50 million; it took radio 38 years, and television 13 years.",
-    "35.6% of internet users are Asian",
-    "In Africa, 3 out of 100 surf the Internet",
-    "In Asia, 10 out of 100 surf the Internet",
-    "Around 18 countries still don’t have Internet connection",
-    "The first space tweet was sent in January of 2010 by Astronaut Timothy Creamer @Astro_TJ",
+    "35.6% of internet users are Asian.",
+    "In Africa, 3 out of 100 surf the Internet.",
+    "In Asia, 10 out of 100 surf the Internet.",
+    "Around 18 countries still don’t have Internet connection.",
+    "The first space tweet was sent in January of 2010 by Astronaut Timothy Creamer @Astro_TJ.",
     "There are 1,158 photos uploaded to Instagram every second.",
-    "There are 1485 Skype calls made every second",
-    "There is 22,343GB of Internet traffic every second",
+    "There are 1485 Skype calls made every second.",
+    "There is 22,343GB of Internet traffic every second.",
     "Every Google query travels about 1,500 miles to a data center and back to return the answer to the user.",
     "The first emoticon is commonly credited to Kevin Mackenzie in 1979, but was a rather simple -)",
     "Remember Napster? In 1998, the first music file-sharing service Napster, went live and changed the way the Internet was used forever.",
@@ -97,7 +97,7 @@
     "Archie is considered the world’s first Internet search engine.",
     "PewDiePie is still richest YouTuber ever with a net worth of $7 million."
   ]
-  
+
   let isRunning = false;
   let lastText = false;
   const titleText = 'Information mesh';
@@ -112,7 +112,7 @@
       requestAnimationFrame(() => {
         enableSplashScreen(false);
         enableSplashScreenTitles(false);
-      }); 
+      });
     }
   })
 
@@ -125,8 +125,15 @@
       });
     }
   })
+  if(!currentPagetName){
+    console.log("startsequence");
+    startSequence();
+  }else{
+    console.log("do not start sequence");
+    enableSplashScreen(false);
+    enableSplashScreenTitles(false);
+  }
 
-  startSequence()
 
   function isSplashscreenEnabled() {
     return body.classList.contains('show-splashscreen');
@@ -159,7 +166,7 @@
       await wait(3000);
       runSequence();
     }
-  } 
+  }
 
   async function runSequence() {
     const text = isSplashscreenEnabled() ? getRandomFact() : titleText;
@@ -168,7 +175,7 @@
     enableSplashScreenTitles(isSplashscreenEnabled());
     await wait(100);
     await write(title, text);
-    
+
     if (isSplashscreenEnabled() || title.innerHTML !== titleText) {
       await wait(3000);
       lastText = text;
@@ -254,15 +261,20 @@
   }
 
   function getRandomFact() {
-    const numericalFacts = facts.filter(it => /\d/.test(it));
-    return numericalFacts[Math.floor(Math.random() * numericalFacts.length)];
+    var number = 100;
+    if(isMobile){
+      console.log("mobile 70");
+      number = 70;
+    }
+    const fileteredFacts = facts.filter(it => it.length < number);
+    return fileteredFacts[Math.floor(Math.random() * fileteredFacts.length)];
   }
-  
+
   // Select a part of a text node
   function selectText(textElement, startOffset, endOffset) {
     // Reset window selections
     removeSelections();
-  
+
     // Create a new range from the offsets
     const anchorNodeInfos = getTextNodeInformations(textElement, startOffset);
     const focusNodeInfos = getTextNodeInformations(textElement, endOffset);
@@ -276,23 +288,23 @@
     }
     return selection;
   }
-  
+
   function deleteSelectionContent(selection) {
     const range = selection.getRangeAt(0);
     range.deleteContents();
     return selection;
   }
-  
+
   function removeSelections() {
     const selection = window.getSelection();
     selection.empty();
   }
-  
+
   function getTextNodeInformations(textElement, offset) {
     let currentOffset = 0;
     let textNodeOffset = 0;
     let textNode = null;
-  
+
     // Traverse childNodes to find #text nodes.
     traverseChidNodes(textElement, child => {
       // Find the right #text node where we can find the correct offset
@@ -311,7 +323,7 @@
       textNodeOffset
     }
   }
-  
+
   function traverseChidNodes(element, callback) {
     for (const child of element.childNodes) {
       callback(child);
