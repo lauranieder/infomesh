@@ -24,21 +24,23 @@ var total_countries;
 var last_selected_country;
 
 // UI interactions and events //////////////////////////////////////////////////
-$("#info_change_data").click(function() {
-  changeData();
+$("#info_total").click(function() {
+  $("#info_total").addClass("selected");
+  $("#info_percentage").removeClass("selected");
+  if (dataType == "access_") changeData();
+});
+
+$("#info_percentage").click(function() {
+  $("#info_total").removeClass("selected");
+  $("#info_percentage").addClass("selected");
+  if (dataType == "access_population_") changeData();
 });
 
 function changeData() {
   if (dataType == "access_population_") {
     dataType = "access_";
-    $("#info_description").html(
-      "Percentage of the population having acces to the internet"
-    );
   } else {
     dataType = "access_population_";
-    $("#info_description").html(
-      "Total number of people having acces to the internet"
-    );
   }
   updateMapWithNewYear();
 }
@@ -47,12 +49,12 @@ function changeData() {
 document.addEventListener(
   "keypress",
   function(e) {
-    if (e.key == "d") {
-      if (current_year < max_year) current_year++;
-    } else if (e.key == "a") {
-      if (current_year > min_year) current_year--;
-    }
-    updateMapWithNewYear();
+    // if (e.key == "d") {
+    //   if (current_year < max_year) current_year++;
+    // } else if (e.key == "a") {
+    //   if (current_year > min_year) current_year--;
+    // }
+    // updateMapWithNewYear();
   }.bind(this)
 );
 
@@ -61,7 +63,7 @@ var last_t_change;
 function timeline_change(year) {
   if (last_t_change) clearTimeout(last_t_change);
   last_t_change = setTimeout(function() {
-    if (year == 1989) year = 1990;
+    //if (year == 1989) year = 1990;
     if (year > 2016) year = 2016;
     if (year !== last_timeline_request) {
       last_timeline_request = year;
@@ -89,7 +91,6 @@ function create_legend() {
       );
     });
 }
-
 create_legend();
 
 function addHoverEvents() {
@@ -107,7 +108,7 @@ function addHoverEvents() {
 }
 
 function activateCountrySelection(path) {
-  var p_offset = path.offset();
+  var p_offset = path[0].getBoundingClientRect();
   var p_width = path.width();
   var p_height = path.height();
 
@@ -153,7 +154,8 @@ function autoShowCountries() {
 
 //First loading of th first map
 main_svg_holder.load(
-  "./frames/" + dataType + current_year + ".svg",
+  "worldwidemap/frames/" + dataType + current_year + ".svg",
+  // "./frames/" + dataType + current_year + ".svg",
   function() {
     remapColors(main_svg_holder.children("svg"));
     setupMap();
@@ -171,7 +173,8 @@ function setupMap() {
 // whatever map correspond to the current_year
 function updateMapWithNewYear() {
   next_svg_holder.load(
-    "./frames/" + dataType + current_year + ".svg",
+    // "./frames/" + dataType + current_year + ".svg",
+    "worldwidemap/frames/" + dataType + current_year + ".svg",
     function() {
       setup_tween();
       // remapColors(next_svg_holder.children("svg"));
@@ -225,7 +228,8 @@ function draw() {
     requestAnimationFrame(draw);
   } else {
     main_svg_holder.load(
-      "./frames/" + dataType + current_year + ".svg",
+      // "./frames/" + dataType + current_year + ".svg",
+      "worldwidemap/frames/" + dataType + current_year + ".svg",
       function() {
         remapColors(main_svg_holder.children("svg"));
         setupMap();
@@ -261,9 +265,9 @@ function resizeMap() {
   var svg = $("svg.cartogram");
 
   var svgMarginLeft = 150;
-  var svgMarginTop = 100;
+  var svgMarginTop = 135;
 
-  var scale = (W / 2000) * 1.9;
+  var scale = (W / 2000) * 1.7;
   var padding_left = svgMarginLeft * scale;
   var padding_top = svgMarginTop * scale;
   var svg_width = 2000 * scale;
@@ -304,6 +308,7 @@ function parseDataFormat() {
           window._maximum_val = parseFloat(val);
         if (parseFloat(val) < window._minimum_val)
           window._minimum_val = parseFloat(val);
+
         //Give attribute value
         val = val + "%";
         if (val == "NaN%") val = "";
@@ -325,12 +330,14 @@ function parseDataFormat() {
         if (parseFloat(val) < window._minimum_val)
           window._minimum_val = parseFloat(val);
         //Give attribute value
+
         val = val + "m";
         if (val == "NaNm") val = "";
         $(this).attr("value", val);
       }
     });
-  var suffix = "m";
+  // var suffix = "m";
+  var suffix = "";
   if (dataType == "access_") suffix = "%";
 
   if (isNaN(window._minimum_val)) window._minimum_val = "";
