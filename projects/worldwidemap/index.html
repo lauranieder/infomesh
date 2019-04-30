@@ -7,18 +7,21 @@
   <meta name="author" content="SitePoint">
   <!--styles-->
   <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+  <link rel="stylesheet" href="worldwidemap/css/style.css">
   <link rel="stylesheet" href="../../css/reset.css">
   <link rel="stylesheet" href="../../css/main.css">
   <link rel="stylesheet" href="../../css/main-popup.css">
   <!--script-->
-  <script src="./js/lib/chroma.min.js"></script>
+  <!-- <script src="./js/lib/chroma.min.js"></script> -->
+  <script src="worldwidemap/js/lib/chroma.min.js"></script>
   <script src="https://unpkg.com/flubber@0.3.0"></script>
   <script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="../../js/timeline-action.js"></script>
   <script type="text/javascript" src="../../js/moment-2.22.2.js"></script>
 
-  <script type="text/javascript" src="./js/action.js"></script>
+  <!-- <script type="text/javascript" src="./js/action.js"></script> -->
+  <script type="text/javascript" src="worldwidemap/js/action.js"></script>
   <script type="text/javascript" src="../../js/communication.js"></script>
   <script type="text/javascript" src="../../js/events.js"></script>
 </head>
@@ -26,6 +29,16 @@
   <section id="worldwidemap" class="timeline-containers">
     <div id="container-project">
       <!-- <div id="shadow"></div> -->
+
+      <div id="info">
+        <div id="lines_wrapper">
+          <div id="line_1">
+            <div id="info_total" class="button selected">People having acces to the internet (in millions)</div>
+            <div id="info_percentage" class="button">Percentage of people having acces to the internet</div>
+          </div>
+        </div>
+      </div>
+
       <div id="legend">
         <div class="lSquare" id="leg1">0%</div>
         <div class="lSquare" id="leg2"></div>
@@ -39,16 +52,7 @@
         <div class="lSquare" id="leg10"></div>
         <div class="lSquare" id="leg11">100%</div>
       </div>
-      <div id="info">
-        <div id="lines_wrapper">
 
-          <div id="line_1">
-            <div id="info_description">Total number of people having acces to the internet</div>
-            <div id="info_change_data"><div>change</div></div>
-          </div>
-
-        </div>
-      </div>
 
       <div id="world"></div>
       <div id="next_svg_holder"></div>
@@ -98,7 +102,8 @@
   </section>
 </body>
 
-<script src="./js/svg_tween.js"></script>
+<!-- <script src="./js/svg_tween.js"></script> -->
+<script src="worldwidemap/js/svg_tween.js"></script>
 
 
 </html>
