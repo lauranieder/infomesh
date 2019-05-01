@@ -1,0 +1,572 @@
+[
+    {
+      "timeline": "",
+      "title": "WorldWideWeb / Nexus Browser",
+      "start": "1990",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "WorldWideWeb"
+    },
+    {
+      "timeline": "",
+      "title": "Launch of ViolaWWW",
+      "start": "1991",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "ViolaWWW"
+    },
+    {
+      "timeline": "",
+      "title": "Erwise — first graphical browser — released",
+      "start": "1992",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Erwise"
+    },
+    {
+      "timeline": "",
+      "title": "MacWWW (Samba) released — first browser for Apple",
+      "start": "1992",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "MacWWW"
+    },
+    {
+      "timeline": "",
+      "title": "Lynx, a text-based browser, released. It is still in use.",
+      "start": "1992",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Lynx_(web_browser)"
+    },
+    {
+      "timeline": "",
+      "title": "Nexus Browser released to public domain",
+      "start": "1993",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": ""
+    },
+    {
+      "timeline": "",
+      "title": "NCSA launches Mosaic browser",
+      "start": "1993",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": ""
+    },
+    {
+      "timeline": "",
+      "title": "Cello, the first browser for Windows, is released.",
+      "start": "1993",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Cello_(web_browser)"
+    },
+    {
+      "timeline": "",
+      "title": "Nexus Browser discontinued",
+      "start": "1994",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": ""
+    },
+    {
+      "timeline": "",
+      "title": "Wired magazine credits Mosaic with starting the \"second phase of the revolution.\" ",
+      "start": "1994",
+      "end": "",
+      "content": "\"Mosaic is not the most direct way to find online information. Nor is it the most powerful. It is merely the most pleasurable way, and in the 18 months since it was released, Mosaic has incited a rush of excitement and commercial energy unprecedented in the history of the Net.\"",
+      "context": "",
+      "readmore": "https://www.wired.com/1994/10/mosaic/",
+      "wikifetch": ""
+    },
+    {
+      "timeline": "",
+      "title": "Netscape Navigator released",
+      "start": "1994",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Netscape_(web_browser)"
+    },
+    {
+      "timeline": "",
+      "title": "World Wide Web Consortium (W3C) founded",
+      "start": "1994",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "World_Wide_Web_Consortium"
+    },
+    {
+      "timeline": "",
+      "title": "Netscape IPO sparks the \"dot-com bubble.\"",
+      "start": "1995",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Dot-com_bubble"
+    },
+    {
+      "timeline": "",
+      "title": "JavaScript introduced through Netscape Navigator 2.0",
+      "start": "1995",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "JavaScript"
+    },
+    {
+      "timeline": "",
+      "title": "Start of the \"First Browser Wars\" ",
+      "start": "1995",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Browser_wars#First_Browser_War"
+    },
+    {
+      "timeline": "",
+      "title": "Microsoft releases Internet Explorer",
+      "start": "1995",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Internet_Explorer_2"
+    },
+    {
+      "timeline": "",
+      "title": "Opera browser released to the public",
+      "start": "1996",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "History_of_the_Opera_web_browser#Version_2"
+    },
+    {
+      "timeline": "",
+      "title": "Internet Explorer 4.0 released, bundled with Windows",
+      "start": "1997",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Internet_Explorer_4"
+    },
+    {
+      "timeline": "",
+      "title": "W3C announces web-accessibility standards",
+      "start": "1997",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Web_Accessibility_Initiative"
+    },
+    {
+      "timeline": "",
+      "title": "Netscape Navigator changes name to Netscape Communicator",
+      "start": "06/1997",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Netscape_Communicator"
+    },
+    {
+      "timeline": "",
+      "title": "Patent for \"Cookies\" granted to Netscape ",
+      "start": "1998",
+      "end": "",
+      "content": "\"The first use of cookies (out of the labs) was checking whether visitors to the Netscape website had already visited the site. Lou Montulli applied for a patent for the cookie technology in 1995, and US 5774670 was granted in 1998. Support for cookies was later integrated into Internet Explorer in October 1995.\"",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "HTTP_cookie"
+    },
+    {
+      "timeline": "",
+      "title": "US Government opens antitrust case against Microsoft over distribution of its IE browser",
+      "start": "1998",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "United_States_v._Microsoft_Corp."
+    },
+    {
+      "timeline": "",
+      "title": "Mozilla created when Netscape releases Communicator code as open source",
+      "start": "1998",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Mozilla_Application_Suite"
+    },
+    {
+      "timeline": "",
+      "title": "Internet Explorer 5 reaches 50% of market share",
+      "start": "2000",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Internet_Explorer_5"
+    },
+    {
+      "timeline": "",
+      "title": "Netscape acquired by America Online among a pool of assets worth $10 billion.",
+      "start": "2000",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "https://www.thefreelibrary.com/America+Online+Inc.+Completes+Acquisition+of+Netscape+Communications...-a054131091",
+      "wikifetch": ""
+    },
+    {
+      "timeline": "",
+      "title": "Opera introduces tabbed browsing",
+      "start": "2000",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Tab_(GUI)"
+    },
+    {
+      "timeline": "",
+      "title": "Microsoft antitrust lawsuit around Internet Explorer is settled",
+      "start": "2001",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "United_States_v._Microsoft_Corp."
+    },
+    {
+      "timeline": "",
+      "title": "Internet Explorer 6 released",
+      "start": "2001",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Internet_Explorer_6"
+    },
+    {
+      "timeline": "",
+      "title": "Microsoft blocks any non-IE browsers from viewing MSN.com",
+      "start": "2002",
+      "end": "",
+      "content": "After the launch of Windows XP, Microsoft's website detected your browser. If it wasn't the company's own Internet Explorer browser, the page redirected tp a download site, effectively blocking access to anyone who wasn't using their software. ",
+      "context": "",
+      "readmore": "https://www.cnet.com/news/microsoft-backpedals-on-msn-browser-block/",
+      "wikifetch": ""
+    },
+    {
+      "timeline": "",
+      "title": "Opera browser deliberately renders MSN.com as gibberish",
+      "start": "2003",
+      "end": "",
+      "content": "In 2003, MSN.com was configured to present Opera browsers with an outdated style sheet that made Opera move a significant amount of MSN.com's content 30 pixels to the left of where it should be, distorting the page and making it appear as though there was a bug in Opera. Opera responded by creating a version of their browser that rendered MSN.com, and only MSN.com, as complete gibberish.  ",
+      "context": "",
+      "readmore": "https://www.theregister.co.uk/2003/02/06/msn_deliberately_breaks_operas_browser/",
+      "wikifetch": ""
+    },
+    {
+      "timeline": "",
+      "title": "95% of the WWW is reached through a Microsoft browser",
+      "start": "2003",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Internet_Explorer_6"
+    },
+    {
+      "timeline": "",
+      "title": "Apple releases Safari browser",
+      "start": "2003",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Safari_(web_browser)"
+    },
+    {
+      "timeline": "",
+      "title": "Mozilla Foundation created",
+      "start": "2003",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Mozilla_Foundation"
+    },
+    {
+      "timeline": "",
+      "title": "Mozilla, an open-source descendent of Netscape, releases Firefox.",
+      "start": "2004",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Firefox"
+    },
+    {
+      "timeline": "",
+      "title": "Mozilla community releases SeaMonkey open-source browser",
+      "start": "2005",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "SeaMonkey"
+    },
+    {
+      "timeline": "",
+      "title": "Microsoft releases Internet Explorer 7",
+      "start": "2006",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Internet_Explorer_7"
+    },
+    {
+      "timeline": "",
+      "title": "AOL releases Netscape Navigator 9.",
+      "start": "2007",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Netscape_Navigator_9"
+    },
+    {
+      "timeline": "",
+      "title": "AOL discontinues development of Netscape Navigator.",
+      "start": "2008",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": ""
+    },
+    {
+      "timeline": "",
+      "title": "Google releases Chrome browser",
+      "start": "2008",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Google_Chrome"
+    },
+    {
+      "timeline": "",
+      "title": "Netscape drops Netscape Navigator, urges adoption of Mozilla Firefox",
+      "start": "2008",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": ""
+    },
+    {
+      "timeline": "",
+      "title": "AdBlock introduced across a number of browsers.",
+      "start": "2009",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "AdBlock"
+    },
+    {
+      "timeline": "",
+      "title": "Firefox reaches its peak of 32% market share.",
+      "start": "2009",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Firefox"
+    },
+    {
+      "timeline": "",
+      "title": "Microsoft releases Internet Explorer 8",
+      "start": "2009",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": ""
+    },
+    {
+      "timeline": "",
+      "title": "Google Chrome holds 3.6% of web traffic share",
+      "start": "2009",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": ""
+    },
+    {
+      "timeline": "",
+      "title": "Google Chrome takes 10% market share",
+      "start": "2010",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Usage_share_of_web_browsers#StatCounter_(July_2008_to_October_2018)"
+    },
+    {
+      "timeline": "",
+      "title": "Firefox takes a third of market share ",
+      "start": "2010",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Usage_share_of_web_browsers#StatCounter_(July_2008_to_October_2018)"
+    },
+    {
+      "timeline": "",
+      "title": "Firefox takes a third of market share ",
+      "start": "2010",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Usage_share_of_web_browsers#StatCounter_(July_2008_to_October_2018)"
+    },
+    {
+      "timeline": "",
+      "title": "Internet Explorer falls below 50% market share",
+      "start": "2011",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Usage_share_of_web_browsers#StatCounter_(July_2008_to_October_2018)"
+    },
+    {
+      "timeline": "",
+      "title": "Google Chrome takes 25% market share",
+      "start": "2012",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Usage_share_of_web_browsers#StatCounter_(July_2008_to_October_2018)"
+    },
+    {
+      "timeline": "",
+      "title": "Safari doubles market share",
+      "start": "2012",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Usage_share_of_web_browsers#StatCounter_(July_2008_to_October_2018)"
+    },
+    {
+      "timeline": "",
+      "title": "Google Chrome takes a third of market share, exceeding IE",
+      "start": "2013",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Usage_share_of_web_browsers#StatCounter_(July_2008_to_October_2018)"
+    },
+    {
+      "timeline": "",
+      "title": "Internet Explorer drops below 25% of market share",
+      "start": "2013",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Usage_share_of_web_browsers#StatCounter_(July_2008_to_October_2018)"
+    },
+    {
+      "timeline": "",
+      "title": "Chrome, Safari and Firefox each have more users than IE",
+      "start": "2015",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Usage_share_of_web_browsers#StatCounter_(July_2008_to_October_2018)"
+    },
+    {
+      "timeline": "",
+      "title": "Microsoft rebrands IE as Microsoft Edge",
+      "start": "2015",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": ""
+    },
+    {
+      "timeline": "",
+      "title": "Google Chrome takes half of market share",
+      "start": "2016",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Usage_share_of_web_browsers#StatCounter_(July_2008_to_October_2018)"
+    },
+    {
+      "timeline": "",
+      "title": "Chrome takes 60% of market share",
+      "start": "2018",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "",
+      "wikifetch": "Usage_share_of_web_browsers#StatCounter_(July_2008_to_October_2018)"
+    },
+    {
+      "timeline": "",
+      "title": "Microsoft announces it will use Google's Chromium to develop Edge in 2019.",
+      "start": "2018",
+      "end": "",
+      "content": "",
+      "context": "",
+      "readmore": "https://www.digitaltrends.com/computing/microsoft-chromium-browser-everything-you-need-to-know/",
+      "wikifetch": ""
+    }
+  ]
