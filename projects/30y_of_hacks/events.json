@@ -247,7 +247,7 @@
     "timestamp": 904633200000
   },
   {
-    "start": "01/01/1999",
+    "start": "07/01/1999",
     "title": "Security goes mainstream",
     "contentText": "Software security goes mainstream In the wake of Microsoft's Windows 98 release, 1999 becomes a banner year for security (and hacking). Hundreds of advisories and patches are released in response to newfound (and widely publicized) bugs in Windows and other commercial software products. A host of security software vendors release anti-hacking products for use on home computers.",
     "visualValue": 0,
@@ -257,10 +257,10 @@
     "content": "<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/Software_security\" class=\"mw-redirect\" title=\"Software security\">Software security</a> goes mainstream In the wake of Microsoft's <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/Windows_98\" title=\"Windows 98\">Windows 98</a> release, 1999 becomes a banner year for security (and hacking). Hundreds of advisories and patches are released in response to newfound (and widely publicized) <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/Computer_bug\" class=\"mw-redirect\" title=\"Computer bug\">bugs</a> in Windows and other commercial software products. A host of security software vendors release anti-hacking products for use on home computers.",
     "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
     "readmore": "",
-    "timestamp": 915148800000
+    "timestamp": 915696000000
   },
   {
-    "start": "07/01/1999",
+    "start": "26/01/1999",
     "title": "Legion of the Underground",
     "contentText": "The \"Legion of the Underground\" (LoU) declares \"war\" against the governments of Iraq and the People's Republic of China. An international coalition of hackers (including Cult of the Dead Cow, 2600's staff, Phrack's staff, L0pht, and the Chaos Computer Club) issued a joint statement condemning the LoU's declaration of war. The LoU responded by withdrawing its declaration.",
     "visualValue": 0,
@@ -270,10 +270,10 @@
     "content": "The \"Legion of the Underground\" (LoU) declares \"war\" against the governments of Iraq and the People's Republic of China. An international coalition of hackers (including <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/Cult_of_the_Dead_Cow\" title=\"Cult of the Dead Cow\">Cult of the Dead Cow</a>, <i>2600</i><span class=\"nowrap\" style=\"padding-left:0.1em;\">'</span>s staff, <i><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/Phrack\" title=\"Phrack\">Phrack</a></i><span class=\"nowrap\" style=\"padding-left:0.1em;\">'</span>s staff, <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/L0pht\" title=\"L0pht\">L0pht</a>, and the <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/Chaos_Computer_Club\" title=\"Chaos Computer Club\">Chaos Computer Club</a>) issued a joint statement condemning the LoU's declaration of war. The LoU responded by withdrawing its declaration.",
     "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
     "readmore": "",
-    "timestamp": 915696000000
+    "timestamp": 917308800000
   },
   {
-    "start": "26/01/1999",
+    "start": "01/03/1999",
     "title": "$1.46 billion initiative",
     "contentText": "U.S. President Bill Clinton announces a $1.46 billion initiative to improve government computer security. The plan would establish a network of intrusion detection monitors for certain federal agencies and encourage the private sector to do the same.",
     "visualValue": 1460000000,
@@ -283,10 +283,10 @@
     "content": "U.S. President <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/Bill_Clinton\" title=\"Bill Clinton\">Bill Clinton</a> announces a $1.46 billion initiative to improve government <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/Computer_security\" title=\"Computer security\">computer security</a>. The plan would establish a network of intrusion detection monitors for certain federal agencies and encourage the private sector to do the same.",
     "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
     "readmore": "",
-    "timestamp": 917308800000
+    "timestamp": 920275200000
   },
   {
-    "start": "01/03/1999",
+    "start": "01/06/1999",
     "title": "The Melissa worm",
     "contentText": "The Melissa worm is released and quickly becomes the most costly malware outbreak to date.",
     "visualValue": 385000000,
@@ -296,7 +296,7 @@
     "content": "The <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://en.wikipedia.org/wiki/Melissa_worm\" class=\"mw-redirect\" title=\"Melissa worm\">Melissa worm</a> is released and quickly becomes the most costly malware outbreak to date.",
     "source": "https://en.wikipedia.org/wiki/List_of_security_hacking_incidents",
     "readmore": "",
-    "timestamp": 920275200000
+    "timestamp": 928274400000
   },
   {
     "start": "17/11/1999",
@@ -650,32 +650,6 @@
     "timestamp": 1287705600000
   },
   {
-    "start": "28/11/2010",
-    "title": "U.S. government (United States diplomatic cables leak)",
-    "contentText": "The United States diplomatic cables leak, widely known as Cablegate, began on Sunday, 28 November 2010 when WikiLeaks—a non-profit organization that publishes submissions from anonymous whistleblowers—began releasing classified cables that had been sent to the U.S. State Department by 274 of its consulates, embassies, and diplomatic missions around the world.",
-    "visualValue": 260000,
-    "visualValueSuffix": " records were leaked by an inside job.",
-    "type": "leak",
-    "year": 2010,
-    "content": "The United States diplomatic cables leak, widely known as Cablegate, began on Sunday, 28 November 2010 when WikiLeaks—a non-profit organization that publishes submissions from anonymous whistleblowers—began releasing classified cables that had been sent to the U.S. State Department by 274 of its consulates, embassies, and diplomatic missions around the world.",
-    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
-    "readmore": "",
-    "timestamp": 1290902400000
-  },
-  {
-    "start": "13/12/2010",
-    "title": "Gawker",
-    "contentText": "The 24-hour attack penetrated deep into Gawker's computer systems, shattering its security shield and catching its executives off guard.",
-    "visualValue": 250000,
-    "visualValueSuffix": "passwords published",
-    "type": "hack",
-    "year": 2010,
-    "content": "The 24-hour attack penetrated deep into Gawker's computer systems, shattering its security shield and catching its executives off guard.",
-    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
-    "readmore": "https://www.theguardian.com/technology/2010/dec/13/gawker-hackers-passwords-twitter-wikileaks?INTCMP=SRCH",
-    "timestamp": 1292198400000
-  },
-  {
     "start": "21/12/2010",
     "title": "China Software Developer Network",
     "contentText": "In what is being called the biggest hacking case in China's Internet history, police have arrested a man, surnamed Zeng, suspected of leaking personal information belonging to more than 6 million users of the China Software Developer Network (CSDN). Zeng has been detained on charges of illegal acquisition of computer data.",
@@ -687,19 +661,6 @@
     "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
     "readmore": "https://www.zdnet.com/article/chinese-hacker-arrested-for-leaking-6-million-logins/",
     "timestamp": 1292889600000
-  },
-  {
-    "start": "22/12/2010",
-    "title": "Chinese gaming websites (three: Duowan, 7K7K, 178.com)",
-    "contentText": "Chinese gaming websites (three: Duowan, 7K7K, 178.com) were hacked, just a day after another major hack in China.",
-    "visualValue": 10000000,
-    "visualValueSuffix": " records were hacked.",
-    "type": "breach",
-    "year": 2011,
-    "content": "Chinese gaming websites (three: Duowan, 7K7K, 178.com) were hacked, just a day after another major hack in China.",
-    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
-    "readmore": "http://www.ehackingnews.com/2011/12/hackers-compromised-38-million-chinese.html",
-    "timestamp": 1292976000000
   },
   {
     "start": "09/04/2011",
@@ -1016,7 +977,7 @@
   {
     "start": "07/02/2014",
     "title": "Mt.Gox",
-    "contentText": "The bitcoin exchange Mt.Gox filed for bankruptcy after $460 million was apparently stolen by hackers due to \"weaknesses in [their] system\" and another $27.4 million went missing from its bank accounts.",
+    "contentText": "The bitcoin exchange Mt.Gox filed for bankruptcy after $460 million was apparently stolen by hackers due to \"weaknesses in [their] system\" and another $27.4 million went missing from its bank accounts.",
     "visualValue": 460000000,
     "visualValueSuffix": "$ stolen",
     "type": "moneyTheft",
@@ -1051,19 +1012,6 @@
     "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
     "readmore": "",
     "timestamp": 1404172800000
-  },
-  {
-    "start": "01/09/2014",
-    "title": "UCLA Medical Center, Santa Monica",
-    "contentText": "The four-hospital UCLA Health System on Friday notified a staggering 4.5 million of its patients that their protected health information and Social Security numbers were compromised following one of the largest HIPAA breaches ever reported.",
-    "visualValue": 4500000,
-    "visualValueSuffix": "patients compromised",
-    "type": "breach",
-    "year": 2015,
-    "content": "The four-hospital UCLA Health System on Friday notified a staggering 4.5 million of its patients that their protected health information and Social Security numbers were compromised following one of the largest HIPAA breaches ever reported.",
-    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
-    "readmore": "https://www.healthcareitnews.com/news/hackers-swipe-data-45m-ucla-health-system-massive-cyberattack",
-    "timestamp": 1409529600000
   },
   {
     "start": "09/09/2014",
@@ -1106,6 +1054,19 @@
   },
   {
     "start": "15/07/2015",
+    "title": "UCLA Medical Center, Santa Monica",
+    "contentText": "The four-hospital UCLA Health System on Friday notified a staggering 4.5 million of its patients that their protected health information and Social Security numbers were compromised following one of the largest HIPAA breaches ever reported.",
+    "visualValue": 4500000,
+    "visualValueSuffix": "patients compromised",
+    "type": "breach",
+    "year": 2015,
+    "content": "The four-hospital UCLA Health System on Friday notified a staggering 4.5 million of its patients that their protected health information and Social Security numbers were compromised following one of the largest HIPAA breaches ever reported.",
+    "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
+    "readmore": "https://www.healthcareitnews.com/news/hackers-swipe-data-45m-ucla-health-system-massive-cyberattack",
+    "timestamp": 1436997600000
+  },
+  {
+    "start": "20/08/2015",
     "title": "Ashley Madison",
     "contentText": "In July 2015, a group calling itself \"The Impact Team\" stole the user data of Ashley Madison, a commercial website billed as enabling extramarital affairs. The group copied personal information about the site's user base and threatened to release users' names and personally identifying information if Ashley Madison would not immediately shut down. On 18th and 20th of August, the group leaked more than 25 gigabytes of company data, including user details.\n\nBecause of the site's policy of not deleting users' personal information – including real names, home addresses, search history and credit card transaction records – many users feared being publicly shamed",
     "visualValue": 32000000,
@@ -1115,7 +1076,7 @@
     "content": "In July 2015, a group calling itself \"The Impact Team\" stole the user data of Ashley Madison, a commercial website billed as enabling extramarital affairs. The group copied personal information about the site's user base and threatened to release users' names and personally identifying information if Ashley Madison would not immediately shut down. On 18th and 20th of August, the group leaked more than 25 gigabytes of company data, including user details.\n\nBecause of the site's policy of not deleting users' personal information – including real names, home addresses, search history and credit card transaction records – many users feared being publicly shamed",
     "source": "https://en.wikipedia.org/wiki/List_of_data_breaches",
     "readmore": "https://en.wikipedia.org/wiki/Ashley_Madison_data_breach",
-    "timestamp": 1436918400000
+    "timestamp": 1440108000000
   },
   {
     "start": "01/02/2016",
