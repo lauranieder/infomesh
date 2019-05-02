@@ -98,13 +98,101 @@
     "PewDiePie is still richest YouTuber ever with a net worth of $7 million."
   ]
 
-  let isRunning = false;
-  let lastText = false;
+  const TextAnimator = function() {
+    let isWriting = false;
+    let isSelecting = false;
+    let isEnabled = false;
+    let currentTimeout = null;
+    let currentResolve = null;
+  
+    return {  
+      async write(element, text) {
+        isWriting = true;
+        let index = 0;
+  
+        return new Promise(resolve => {
+          this.currentResolve = resolve
+          const writeLetter = () => {
+            this.currentTimeout = setTimeout(() => {
+              element.innerHTML += text[index];
+              index++;
+              if (index < text.length && isWriting && !isEnabled) {
+                writeLetter();
+              } else {
+                isWriting = false;
+                resolve();
+              }
+            }, 20 + Math.random() * 20);
+          };
+    
+          writeLetter();
+        })
+      },
+  
+      async erase(element) {
+        const selection = await this.select(element);
+        await this.wait(200);
+        deleteSelectionContent(selection);
+      },
+  
+      async select(element) {
+        isSelecting = true;
+
+        const { innerText: text } = element;
+        let index = text.length;
+  
+        return new Promise(resolve => {
+          currentResolve = resolve
+          const selectLetter = () => {
+            currentTimeout = setTimeout(() => {
+              const selection = selectText(element, index, text.length);
+              if (index > 0 && isSelecting && !isEnabled) {
+                index--;
+                selectLetter();
+              } else {
+                isSelecting = false;
+                resolve(selection);
+              }
+            }, 10 + Math.random() * 10);
+          }
+  
+          selectLetter();
+        })
+      },
+
+      async wait(delay) {
+        if (!isEnabled) {
+          return new Promise(resolve => {
+            currentResolve = resolve;
+            currentOffset = setTimeout(resolve, delay);
+          })
+        }
+      },
+  
+      enable() {
+        isEnabled = false;
+      },
+
+      disable() {
+        isEnabled = true;
+        isWriting = false;
+        isSelecting = false;
+
+        clearTimeout(currentTimeout);
+        if (currentResolve) {
+          currentResolve();
+        }
+      }
+    }
+  }
+
   const titleText = 'Information mesh';
-  const subTitle = '30 years of facts about the World Wide Web'
+  const subTitle = '30 years of facts about the World Wide Web';
+  const firstFact = 'Information Mesh was a potential name for the web in Tim Berners Lee\'s 1989 original proposal.';
   const title = document.querySelector('.splashscreen-main-title h5');
   const mainTitle = document.querySelector('#project-title');
   const body = document.querySelector('body');
+  const textAnimator = new TextAnimator()
 
   body.addEventListener('click', () => {
     if (isSplashscreenEnabled()) {
@@ -112,6 +200,7 @@
       requestAnimationFrame(() => {
         enableSplashScreen(false);
         enableSplashScreenTitles(false);
+        textAnimator.disable();
       });
     }
   })
@@ -121,19 +210,18 @@
       // Debouce state changes to prevent event conflicts.
       requestAnimationFrame(() => {
         enableSplashScreen(true);
+        textAnimator.enable();
         startSequence()
       });
     }
   })
+
   if(!currentPagetName){
-    //console.log("startsequence");
     startSequence();
   }else{
-    //console.log("do not start sequence");
     enableSplashScreen(false);
     enableSplashScreenTitles(false);
   }
-
 
   function isSplashscreenEnabled() {
     return body.classList.contains('show-splashscreen');
@@ -156,66 +244,43 @@
   }
 
   async function startSequence() {
-    if (!isRunning && isSplashscreenEnabled()) {
+    if (isSplashscreenEnabled()) {
       highlight(true);
-      await wait(3000);
-      isRunning = true;
-      await erase();
-      await wait(100);
-      await write(title, subTitle);
-      await wait(3000);
+      enableCaret(false);
+      await textAnimator.erase(title);
+      await textAnimator.wait(100);
+      enableCaret(true);
+      await textAnimator.write(title, titleText);
+      await textAnimator.wait(3000);
+      enableCaret(false);
+      await textAnimator.erase(title);
+      await textAnimator.wait(100);
+      enableCaret(true);
+      await textAnimator.write(title, subTitle);
+      await textAnimator.wait(3000);
+      enableCaret(false);
+      await textAnimator.erase(title);
+      await textAnimator.wait(100);
+      highlight(false);
+      enableCaret(true);
+      await textAnimator.write(title, firstFact);
+      await textAnimator.wait(3000);
       runSequence();
     }
   }
 
   async function runSequence() {
-    const text = isSplashscreenEnabled() ? getRandomFact() : titleText;
-    await erase();
     highlight(false);
+    await textAnimator.erase(title);
     enableSplashScreenTitles(isSplashscreenEnabled());
-    await wait(100);
-    await write(title, text);
+    await textAnimator.wait(100);
+    const text = getRandomFact();
+    await textAnimator.write(title, text);
 
-    if (isSplashscreenEnabled() || title.innerHTML !== titleText) {
-      await wait(3000);
-      lastText = text;
-
-      if (lastText === title.innerHTML) {
-        runSequence();
-      } else {
-        isRunning = false;
-      }
-
-    } else {
-      isRunning = false;
+    if (isSplashscreenEnabled()) {
+      await textAnimator.wait(3000);
+      runSequence();
     }
-  }
-
-  function write(element, text) {
-    return new Promise(resolve => {
-      let index = 0;
-      const writeLetter = () => {
-        setTimeout(() => {
-          element.innerHTML += text[index];
-          index++;
-          if (index < text.length) {
-            writeLetter();
-          } else {
-            resolve();
-          }
-        }, 20 + Math.random() * 20);
-      };
-
-      writeLetter();
-    })
-  }
-
-  async function erase() {
-    enableCaret(false);
-    const selection = await select(title);
-    await wait(200);
-    deleteSelectionContent(selection);
-    enableCaret(true);
   }
 
   function enableCaret(enable) {
@@ -234,32 +299,6 @@
     }
   }
 
-  function select(element) {
-    const { innerText: text } = element;
-    let index = text.length;
-    return new Promise(resolve => {
-      const selectLetter = () => {
-        setTimeout(() => {
-          const selection = selectText(element, index, text.length);
-          if (index > 0) {
-            index--;
-            selectLetter();
-          } else {
-            resolve(selection);
-          }
-        }, 10 + Math.random() * 10);
-      }
-
-      selectLetter();
-    })
-  }
-
-  function wait(delay) {
-    return new Promise(resolve => {
-      setTimeout(resolve, delay);
-    })
-  }
-
   function getRandomFact() {
     var number = 100;
     if(isMobile){
@@ -274,25 +313,30 @@
   function selectText(textElement, startOffset, endOffset) {
     // Reset window selections
     removeSelections();
+    const { innerText } = textElement;
 
-    // Create a new range from the offsets
-    const anchorNodeInfos = getTextNodeInformations(textElement, startOffset);
-    const focusNodeInfos = getTextNodeInformations(textElement, endOffset);
-    const range = document.createRange();
-    const selection = window.getSelection();
-    if (anchorNodeInfos) {
-      range.setStart(anchorNodeInfos.textNode, anchorNodeInfos.textNodeOffset);
-      range.setEnd(focusNodeInfos.textNode, focusNodeInfos.textNodeOffset);
-      // Select the range
-      selection.addRange(range);
+    if (innerText.length > 0) {
+      // Create a new range from the offsets
+      const anchorNodeInfos = getTextNodeInformations(textElement, startOffset);
+      const focusNodeInfos = getTextNodeInformations(textElement, endOffset);
+      const range = document.createRange();
+      const selection = window.getSelection();
+      if (anchorNodeInfos) {
+        range.setStart(anchorNodeInfos.textNode, anchorNodeInfos.textNodeOffset);
+        range.setEnd(focusNodeInfos.textNode, focusNodeInfos.textNodeOffset);
+        // Select the range
+        selection.addRange(range);
+      }
+      return selection;
     }
-    return selection;
   }
 
   function deleteSelectionContent(selection) {
-    const range = selection.getRangeAt(0);
-    range.deleteContents();
-    return selection;
+    if (selection) {
+      const range = selection.getRangeAt(0);
+      range.deleteContents();
+      return selection;
+    }
   }
 
   function removeSelections() {
