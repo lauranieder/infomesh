@@ -19,6 +19,7 @@
 - doit pas recharger l'iframe si c'est le premier
 - timeline déja la quand on ouvre le projet mais elle devrait slider avec
 - slider reload pas au bon endroit timelime
+  - clic partout pour fermer popup
 
 ### Mobile
 - Menu navigation.
