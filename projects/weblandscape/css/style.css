@@ -3244,13 +3244,37 @@
 
 ._btn.sf8 {
     width: 37px;
-    height: 23px;
+    height: 25px;
 }
 
 .ico.sf8 {
     background-image: url(src/sf8_osx10_ico.png);
 }
 
+:not(.stop):not(.refr)._btn.sf8 {
+    background: url(src/sf8_osx10_btn_bg.svg) no-repeat;
+    background-size: 100% 50px;
+}
+
+:not(.stop):not(.refr):not(.false)._btn.sf8:hover:active {
+    background-position-y: -25px;
+}
+
+.sf8:hover:active::after {
+    opacity: 0.66;
+}
+
+._btn.sf8::after {
+    position: absolute;
+    width: 100%;
+    height: 24px;
+    background: url(src/sf8_osx10_btn.svg) no-repeat 50%;
+    background-position-y: var(--sf8_y, 0);
+    opacity: 0.543;
+    content: '';
+}
+
+/*
 :not(.stop):not(.refr)._btn.sf8::before {
     position: absolute;
     content: '';
@@ -3282,92 +3306,89 @@
     background-position-y: inherit;
     opacity: 0.543;
     content: '';
-}
+}*/
 
 .dash.sf8 {
-    background-position-y: 3px
+    --sf8_y: 3px
 }
 
 .hist.sf8 {
-    background-position-y: -17px
+    --sf8_y: -17px
 }
 
 .insp.sf8 {
-    background-position-y: -36px
+    --sf8_y: -36px
 }
 
 .mail.sf8 {
-    background-position-y: -55px
+    --sf8_y: -55px
 }
 
 .setts.sf8 {
-    background-position-y: -76px
+    --sf8_y: -76px
 }
 
 .share.sf8 {
-    background-position-y: -97px
+    --sf8_y: -97px
 }
 
 .home.sf8 {
-    background-position-y: -117px
+    --sf8_y: -117px
 }
 
 .showfav.sf8 {
-    background-position-y: -136px
+    --sf8_y: -136px
 }
 
 .showbar.sf8 {
-    background-position-y: -154px
+    --sf8_y: -154px
 }
 
 .prev.sf8 {
     width: 27px;
-    background-position-y: -172px
+    --sf8_y: -172px
 }
 
 .next.sf8 {
     width: 25px;
-    background-position-y: -190px
+    --sf8_y: -190px
 }
 
 .autocomp.sf8 {
-    background-position-y: -208px
+    --sf8_y: -208px
 }
 
 .prnt.sf8 {
-    background-position-y: -226px
+    --sf8_y: -227px
 }
 
 .tabs.sf8 {
-    background-position-y: -246px
+    --sf8_y: -247px
 }
 
 .icloud.sf8 {
-    background-position-y: -264px
+    --sf8_y: -266px
 }
 
 .fav.sf8 {
-    background-position-y: -282px
+    --sf8_y: -284px
 }
 
 .refr.sf8 {
-    background-position-y: -301px
+    --sf8_y: -301px
 }
 
 .stop.sf8 {
-    background-position-y: -319px
+    --sf8_y: -321px
+}
+.zin.sf8 {
+    width: 26px;
+    --sf8_y: -340px
 }
 
 .zout.sf8 {
     width: 26px;
-    border-radius: 9px 0 0 9px;
-    background-position-y: -355px
-}
-
-.zin.sf8 {
-    width: 26px;
-    border-radius: 0 9px 9px 0;
-    background-position-y: -337px
+    --sf8_y: -359px
 }
 
 .sf8.refr:hover::after,
