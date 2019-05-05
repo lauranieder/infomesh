@@ -105,8 +105,13 @@ function loadProject(index, direction) {
   $('#project-title').text(projectsData[index].title);
   $('#container-title').text(projectsData[index].title);
   $('#project-title').attr("slug",projectsData[index].slug);
-  $('#project-text p:first').text(projectsData[index].text);
-  $('#project-credits p:first').html("&lt;Project by&gt;</br>"+projectsData[index].student);
+  if(projectsData[index].source !=null){
+    $('#project-text p:first').html(projectsData[index].text+"<br/><br/>"+projectsData[index].source);
+  }else{
+    $('#project-text p:first').html(projectsData[index].text);
+  }
+
+  $('#project-credits p:first').html("Designed by "+projectsData[index].student); //or created by
 
   $('.current-iframe').addClass('previous-iframe').removeClass('current-iframe');
 

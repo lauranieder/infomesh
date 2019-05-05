@@ -19,9 +19,9 @@
       "student": "Maëlle Chenaux",
       "title": "Web Dictionnary",
       "slug": "webdictionnary",
-      "text": "Starting with the first word invented, the \"web\" itself, this timeline shows the evolution of the vocabulary related to the web presented graphically.",
+      "text": "This timeline presents an overview of the evolution of vocabulary that emerged with the advent of the Internet in 1989. Words are added and crossed to offer a graphic and dynamic presentation of the different words related to the year of their appearance.",
       "style": "background-white",
-      "source": null
+      "source": "The words were found mainly on wikipedia, as well as in Nicolas Nova's newsletter. But other sources complete the list such as Urban dictonnary, the Guardian, medium.com & twitter."
     },
     {
       "student": "Bastien Mouthon, Kevin Breithaupt",
@@ -43,8 +43,8 @@
       "student": "Nathan Vogel",
       "title": "Hacks.exe",
       "slug": "hacks",
-      "text": "This timeline explore 30 years of hacking on the web and highlights the evolution of the impact of these hacks.",
+      "text": "This chronologie shows events that forged the history of cybersecurity on the web. Hacker groups are forming, new mysterious computer viruses appear, governments attack each other and, of course, colossal amounts of data are gathered, stolen, lost or destroyed.",
       "style": "background-black",
-      "source": null
+      "source": "All the events on this timeline come from these two Wikipedia webpages : <a href=\"https://en.wikipedia.org/wiki/List_of_security_hacking_incidents\">List of security hacking incidents</a> and <a href=\"https://en.wikipedia.org/wiki/List_of_data_breaches\">List of data breaches</a>. Events were then classified in categories and snippets of text from the original sources of the Wikipedia pages were added when more information on the event was needed."
     }
   ]
