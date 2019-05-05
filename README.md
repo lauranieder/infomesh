@@ -2,8 +2,9 @@
 30 years of the web website during Summer University at swissnex SF
 
 ### General
-- Lien dans la barre d'addresse à updater avec les nouveaux slug + communiquer les nouveaux slugs aux étudiants
+- ~~Lien dans la barre d'addresse à updater avec les nouveaux slug + communiquer les nouveaux slugs aux étudiants~~
 - Check SSL certificate (google block access from ipad chrome)
+- Move to the new url
 
 ### Interface/css
 - Amélioration du jump d'event en event. Clic sur l'événements et mouvement dynamique. Fin ne retourne pas au début
@@ -19,7 +20,7 @@
 - doit pas recharger l'iframe si c'est le premier
 - timeline déja la quand on ouvre le projet mais elle devrait slider avec
 - slider reload pas au bon endroit timelime
-  - clic partout pour fermer popup
+- ~~clic partout pour fermer popup~~ Ferme toujours quand on clique sur un lien. 
 
 ### Mobile
 - Menu navigation.
@@ -57,6 +58,7 @@
 - petit décalage en dessous
 - zoom de le carte (contain)
 - 2018, quand on passe d'une carte à l'autre, même événement que quand on bouge 
+- envoyé l'événement de timeline à luca
 
 #### web landscape
 - ~~enlever la ligne d'horizon~~
@@ -72,18 +74,18 @@
 - mobile encore plus petit en basse def
 
 
-#### internet dictionnary
-- check email de maëlle, update description
+#### web dictionnary
+- ~~check email de maëlle, update description~~
 - version mobile, on ne comprends pas qu'on peut cliquer sur les mots, alors il faut mettre un tooltip. Ajouter un truc d'accueil.
 - mots trop petits en petite taille, changer la taille minimium pour la lecture.
 - animation des mots sur mobile.
 
 #### 30y_of_hacks.exe
 - les evenements ne sont pas tous aligné avec les points dans la timeline, certains ne s'ouvrent pas. Checker les timestamps
-- marge des popus en mobile
+- ~~marge des popus en mobile~~
 
-#### Internet phenomena 
-- cadrage vertical/horizontal répétition grille
+#### web phenomena 
+- ~~cadrage vertical/horizontal répétition grille~~
 - vérifier la liste des popup
 
 
