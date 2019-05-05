@@ -4,41 +4,47 @@
       "title": "Web Landscape",
       "slug": "weblandscape",
       "text": "This timeline shows the evolution of the aesthetics of web browsers, reinterpreting the different elements and assembling them as a city. ",
-      "style": "background-white"
+      "style": "background-blue",
+      "source": null
     },
     {
       "student": "Luca Sassoli De Bianchi",
       "title": "WorldWideMap",
       "slug": "worldwidemap",
       "text": "The timeline presents web access worldwide and other data",
-      "style": "background-blue"
+      "style": "background-blue",
+      "source": null
     },
     {
       "student": "Maëlle Chenaux",
       "title": "Web Dictionnary",
-      "slug": "internetdictionnary",
+      "slug": "webdictionnary",
       "text": "Starting with the first word invented, the \"web\" itself, this timeline shows the evolution of the vocabulary related to the web presented graphically.",
-      "style": "background-white"
+      "style": "background-white",
+      "source": null
     },
     {
       "student": "Bastien Mouthon, Kevin Breithaupt",
-      "title": "Web Influencer",
+      "title": "Web Influencer Identity",
       "slug": "webinfluenceridentity",
       "text": "This timeline shows the visual identity evolution of the main tech companies on the web through their logo.",
-      "style": "background-white"
+      "style": "background-white",
+      "source": null
     },
     {
       "student": "Alfatih Al Zouabi",
       "title": "Web Phenomena",
-      "slug": "internetphenomena",
+      "slug": "webphenomena",
       "text": "This timeline gathers different viral events on the web by proposing a graphical exploration passing among others by the buzzs, the memes and the spamms.\r",
-      "style": "background-black"
+      "style": "background-black",
+      "source": null
     },
     {
       "student": "Nathan Vogel",
       "title": "Hacks.exe",
-      "slug": "30y_of_hacks",
+      "slug": "hacks",
       "text": "This timeline explore 30 years of hacking on the web and highlights the evolution of the impact of these hacks.",
-      "style": "background-black"
+      "style": "background-black",
+      "source": null
     }
   ]
