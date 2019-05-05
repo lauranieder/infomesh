@@ -2,7 +2,7 @@
     {
       "student": "Sebastien Matos, Guillaume Simmen, Jonathan Boulenaz",
       "title": "Web Landscape",
-      "slug": "browserlandscape",
+      "slug": "weblandscape",
       "text": "This timeline shows the evolution of the aesthetics of web browsers, reinterpreting the different elements and assembling them as a city. ",
       "style": "background-white"
     },
@@ -21,7 +21,7 @@
       "style": "background-white"
     },
     {
-      "student": "Bastien Mouthon, Kevin Breithaup",
+      "student": "Bastien Mouthon, Kevin Breithaupt",
       "title": "Web Influencer",
       "slug": "webinfluenceridentity",
       "text": "This timeline shows the visual identity evolution of the main tech companies on the web through their logo.",
