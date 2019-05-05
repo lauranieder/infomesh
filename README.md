@@ -2,11 +2,11 @@
 30 years of the web website during Summer University at swissnex SF
 
 ### General
-- Lien dans la barre d'addresse à updater avec les nouveaux slug
+- Lien dans la barre d'addresse à updater avec les nouveaux slug + communiquer les nouveaux slugs aux étudiants
 - Check SSL certificate (google block access from ipad chrome)
 
 ### Interface/css
-- Amélioration du jump d'évent en event. Clic sur l'événements et mouvement dynamique. Fin ne retourne pas au début
+- Amélioration du jump d'event en event. Clic sur l'événements et mouvement dynamique. Fin ne retourne pas au début
 - Less information Resize timeline pas au bon endroit!
 - taille max des flèches de la timeline trop petites 
 - Design de la barre de navigation timeline pas beau avec les fade, améliorer les transitions css. 
@@ -45,7 +45,7 @@
 - Checker deux fois le reflow
 
 ### Page-about
-
+- Récrire le texte avec Eryk
   
 
 ### Adapt student project
@@ -73,6 +73,7 @@
 
 
 #### internet dictionnary
+- check email de maëlle, update description
 - version mobile, on ne comprends pas qu'on peut cliquer sur les mots, alors il faut mettre un tooltip. Ajouter un truc d'accueil.
 - mots trop petits en petite taille, changer la taille minimium pour la lecture.
 - animation des mots sur mobile.
