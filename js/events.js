@@ -2,59 +2,50 @@
 events
 timelineWidthmobile check.*/
 
-$(document).ready(function() {
-
-  console.log("event.js loaded");
-
-  //TO DEBUG doesn't fire on iphone/ipad
-  $(document).on('click', '#popup', function() { //#button-toggle-popup
-    console.log("clicked on button toggle popup");
-
-    $('#popup').toggleClass('reduced');
-    window.parent.postMessage({message: 'isPopReduced', status: $('#popup').hasClass('reduced')}, '*');
-  });
-
-  var events = []; //To contain timelines events
-  var rootStartDate = moment('01/01/1989', 'DD/MM/YYYY');
-  var rootEndDate = moment('31/12/2019', 'DD/MM/YYYY');
-  var totalTime = rootEndDate.diff(rootStartDate, 'seconds');
-  var timelineWidth;
-  var noDurationEventSize = 30;
-  var eventPadding = 30;
-  var popupCallback;
-  var cellwidth = 8.333; //cells have different size on mobile or not
-  function isMobileF(x){
-    if (x) { // If media query matches
-      console.log("isMobile");
-      cellwidth = 16.666;
-      $('body').addClass("mobile");
-      $('html').addClass("mobile");
-    } else {
-      //document.body.style.backgroundColor = "pink";
-      //console.log("desktop")
-      console.log("isnotMobile");;
-      cellwidth = 8.333;
-      $('body').removeClass("mobile");
-      $('html').removeClass("mobile");
-      //$('.timeline-containers').removeClass("mobile");
-    }
-    computeEvents();
+var events = [];
+var rootStartDate = moment('01/01/1989', 'DD/MM/YYYY');
+var rootEndDate = moment('31/12/2019', 'DD/MM/YYYY');
+var totalTime = rootEndDate.diff(rootStartDate, 'seconds');
+var timelineWidth;
+var noDurationEventSize = 30;
+var eventPadding = 30;
+var popupCallback;
+var cellwidth = 8.333;
+function isMobileF(x){
+  //console.log("[event.js] mobile checker");
+  //console.log("isMobile = "+x);
+  if (x) { // If media query matches
+    //document.body.style.backgroundColor = "yellow";
+    //console.log("mobile");
+    cellwidth = 16.666;
+    //$('.timeline-containers').addClass("mobile");
+    $('body').addClass("mobile");
+    $('html').addClass("mobile");
+  } else {
+    //document.body.style.backgroundColor = "pink";
+    //console.log("desktop");
+    cellwidth = 8.333;
+    $('body').removeClass("mobile");
+    $('html').removeClass("mobile");
+    //$('.timeline-containers').removeClass("mobile");
   }
-  function isExtendedF(status){
-    if (status) { // If side panel is hidden
-      $('body').addClass("extended");
-      $('html').addClass("extended");
-    } else {  //If side panel is shown
-      $('body').removeClass("extended");
-      $('html').removeClass("extended");
-    }
-    //computeEvents(); ???
+  computeEvents();
+}
+function isExtendedF(status){
+  if (status) { // If side panel is hidden
+    $('body').addClass("extended");
+    $('html').addClass("extended");
+  } else {  //If side panel is shown
+    $('body').removeClass("extended");
+    $('html').removeClass("extended");
   }
+  //computeEvents(); ???
+}
 
 function createPopup() {
-  console.log("create popup");
   var popupContainer = $('<div id="popup-container"></div>');
   $('body').append(popupContainer);
+
   $('#popup-container').load('/template/popup.html');
 }
 
@@ -150,7 +141,6 @@ function computeEvents() {
     }
     /*TO PUT BACK*/
     /*console.log(item.readmore);
-
       var containReadmore = item.readmore.match(/id='readmore'/g);
       if(item.readmore != null && item.readmore != "" && !containReadmore){
         item.content += "<a target='_blank' id='readmore' href='"+item.readmore+"'>Read more</a>";
@@ -202,7 +192,32 @@ function wikitest(){
 
 }
 
+function wikifetchingnew(wiki,index){
+  // postData = function() {
+ //   $.ajax({
+ //      url : 'more_com.php' // La ressource ciblée
+ //   });
+ //   var settings = {
+ //     "async": true,
+ //     "crossDomain": true,
+ //     "url": "http://10.0.10.18:8000/api/v1/documents/bac85005-5c6d-43b4-9d6a-6f6a89e20d52/status",
+ //     "method": "GET",
+ //     "headers": {
+ //       "Content-Type": "application/x-www-form-urlencoded",
+ //       "cache-control": "no-cache",
+ //       "Postman-Token": "d6d93159-3e42-49ec-b06d-4bb884844dcf"
+ //     }
+ //   }
+ //   $.ajax(settings).done(function (response) {
+ //     //console.log(response);
+ //   });
+ // }
 
+
+}
+
+$(document).ready(function() {
+  //console.log("[event.js]");
   loadEvents();
   createPopup();
   window.parent.postMessage({message: 'getResponsive'}, '*');
@@ -266,149 +281,9 @@ function wikitest(){
     }
   });
 
-  //////communication / was previously in communication.js
-  //console.log("communication.js loaded");
-  $(window).on('message', function(e) {
-    if (e.originalEvent.data.message == 'receiveScrollPosition') {
-      $('#container-timeline').scrollLeft(e.originalEvent.data.position);
-    }
-
-    if (e.originalEvent.data.message == 'receivePopupStatus') {
-      if (e.originalEvent.data.status) $('#popup').addClass('reduced');
-    }
-
-    if (e.originalEvent.data.message == 'goright') {
-      var left = $('#container-timeline').scrollLeft();
-      var space = $('.timeline-cell').first().width();
-      //$('#container-timeline').scrollLeft(left+space);
-      //$('#container-timeline').animate({scrollLeft: left+space}, 400);
-      //console.log(getClosestDot(true));
-      var scrolltarget = getClosestDot(true);
-      //console.log("scrolltarget " +scrolltarget);
-      $('#container-timeline').animate({scrollLeft: scrolltarget}, scrollDist(scrolltarget,left));
-    }
-
-    if (e.originalEvent.data.message == 'goleft') {
-      var left = $('#container-timeline').scrollLeft();
-
-      var space = $('.timeline-cell').first().width();
-      //$('#container-timeline').scrollLeft(left-space);
-      //$('#container-timeline').animate({scrollLeft: left-space}, 400);
-      //use distance instead of time
-      //console.log(getClosestDot(false));
-      var scrolltarget = getClosestDot(false);
-      //console.log("scrolltarget "+scrolltarget);
-      if(scrolltarget != null){
-
-
-        $('#container-timeline').animate({scrollLeft: scrolltarget}, scrollDist(scrolltarget,left));
-      }
-    }
-
-    if (e.originalEvent.data.message == 'isMobile') {
-      //$('#container-timeline').scrollLeft(e.originalEvent.data.position);
-      //console.log("isMobile ");
-      isMobileF(e.originalEvent.data.status);
-    }
-
-    if (e.originalEvent.data.message == 'isExtended') {
-      //$('#container-timeline').scrollLeft(e.originalEvent.data.position);
-      console.log("isExtended "+ e.originalEvent.data.status);
-      isExtendedF(e.originalEvent.data.status);
-    }
-
-    if (e.originalEvent.data.message == 'hideTimeline') {
-
-      $('#container-timeline').addClass('hidden');
-    }
-
-    if (e.originalEvent.data.message == 'showTimeline') {
-      console.log("show");
-      $('#container-timeline').removeClass('hidden');
-
-    }
-
-
+  $('body').on('click', '#button-toggle-popup', function() {
+    console.log("clicked on button toggle popup");
+    $('#popup').toggleClass('reduced');
+    window.parent.postMessage({message: 'isPopReduced', status: $('#popup').hasClass('reduced')}, '*');
   });
-
-  $('#container-timeline').on('scroll', function() {
-    window.parent.postMessage({message: 'setScrollPosition', position: $('#container-timeline').scrollLeft()}, '*');
-  });
-
-  window.parent.postMessage({message: 'getScrollPosition'}, '*');
-  window.parent.postMessage({message: 'getPopupStatus'}, '*');
-
-  //TO CONTINUE
-  //Calculate which is is the closest dot.
-  function getClosestDot(next) {
-    //console.log("[timeline.js] Get closest dot !");
-    scrollcenter = $("#container-timeline").scrollLeft() + $("#container-timeline").width() / 2;
-    var positions = [];
-    //console.log("scrollcenter "+scrollcenter);
-    $(".event-marker").each(function() {
-      positions.push({ position: $(this).position().left, element: $(this) });
-    });
-    //console.log(positions);
-    var closestEl = closest(positions, scrollcenter,next);
-    if(closestEl != null){
-      return getClosest = AbsToRel(closest(positions, scrollcenter,next));
-    }else{
-      return null;
-    }
-  }
-
-
-  // finds the nearest position (from an array of objects) to the specified number
-  function closest(array, ref, next) {
-    var num = -1;
-    for (var i = array.length - 1; i >= 0; i--) {
-      var pos = array[i].position;
-      if(num != -1){
-        var pos2 = array[num].position;
-      }else {
-        var pos2 = 0;
-      }
-      var dist = Math.abs(ref - pos);
-
-      if (Math.abs(ref - pos) < Math.abs(ref - pos2) && dist > 2) {
-        if(next == true){
-          if(pos > ref){
-          //console.log("NEEEXT");
-            num = i;
-          }
-        }else{
-          //console.log("LEEEFT");
-          //console.log("dist  "+dist);
-          if(pos < ref){
-            //console.log("nono");
-            num = i;
-          }
-        }
-      }
-    }
-    //console.log("num  "+num);
-    if(num != -1){
-      //console.log("array[num].position  "+ array[num].position);
-      return array[num].position;
-    }else{
-      return null
-    }
-  }
-  function scrollDist(centerTarget,scroll){
-    var scrollDistance = 0;
-    if (centerTarget > scroll) {
-      scrollDistance = centerTarget - scroll;
-    } else {
-      scrollDistance = scroll - centerTarget;
-    }
-    return scrollDistance *2;
-  }
-  /*Transform Absolute Position of event to Relative Distance to cursor*/
-  function AbsToRel(left) {
-    var width = $(window).width() / 2;
-    var centerTarget = left - width;
-    return centerTarget;
-  }
-
-
 });
