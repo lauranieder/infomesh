@@ -145,10 +145,10 @@ $(document).ready(function() {
   }
 
   function loadProjectsPreview(){
-    $.each(projectsData, function(index, project) {
+    /*$.each(projectsData, function(index, project) {
       var link = $('<a href="#" class="font-large button-open-project" data-id="'+index+'">'+project.title+'</a>');
       $('#container-projects').append(link);
-    });
+    });*/
   }
 
   $(window).resize(function(){

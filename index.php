@@ -60,7 +60,14 @@
     </div>
 
     <div id="container-projects" class="container d-flex main">
-      <div class="project-list"></div>
+      <div class="project-list">
+        <a href="projects/hacks" class="font-large button-open-project" data-id="0">Hacks.exe</a>
+        <a href="projects/webdictionary" class="font-large button-open-project" data-id="1">Web dictionary</a>
+        <a href="projects/webinfluenceridentity" class="font-large button-open-project" data-id="2">Web influencer identity</a>
+        <a href="projects/webphenomena" class="font-large button-open-project" data-id="2">Web phenomena</a>
+        <a href="projects/worldwidemap" class="font-large button-open-project" data-id="2">World wide map</a>
+          <a href="projects/weblandscape" class="font-large button-open-project" data-id="2">World landscape</a>
+      </div>
     </div>
     <div id="container-main" class="container reduced">
       <div id="timeline-cursor">
