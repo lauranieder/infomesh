@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+  console.log("[action.js] loaded");
 
   $(document).on('click','.less', function() {
     $("#container-side").hide();
@@ -15,7 +15,7 @@ $(document).ready(function(){
   $(document).on('click','.up', function() {
     console.log("up");
     let actualtop = $( "#wrapper-timelines" ).css("top");
-    
+
     console.log(actualtop);
     $( "#wrapper-timelines" ).animate({
       top: "0"

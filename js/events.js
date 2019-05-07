@@ -1,7 +1,7 @@
 /*POPUP
 events
 timelineWidthmobile check.*/
-
+console.log("[events.js] loaded");
 var events = [];
 var rootStartDate = moment('01/01/1989', 'DD/MM/YYYY');
 var rootEndDate = moment('31/12/2019', 'DD/MM/YYYY');

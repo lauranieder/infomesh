@@ -3,6 +3,7 @@ main script
 - iframe
 */
 $(document).ready(function() {
+  console.log("[script.js] loaded");
   var projectsData;
   var currentProjectID = 0;
   var siteTitle = document.title;
