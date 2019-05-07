@@ -20,7 +20,7 @@ var Sequencer = {
   },
 
   loader: function () {
-    console.log("loader...");
+    //console.log("loader...");
     this.loadStart = new Date();
 
     for (var i = 1; i < this.options.frameCount; i++) {
@@ -32,17 +32,17 @@ var Sequencer = {
 
     var image = new Image();
     image.src = url;
-    console.log("starts.. "+url);
+    //console.log("starts.. "+url);
 
     var self = this;
     image.onload = function() {
       self.imageLoaded++;
 
-      console.log(self.imageLoaded, self.options.frameCount);
+      //console.log(self.imageLoaded, self.options.frameCount);
       if (self.imageLoaded == self.options.frameCount) {
         var date = new Date();
         //console.log('Low res loaded in ' + (date.getTime() - self.loadStart.getTime()));
-          console.log("loaded "+url);
+          //console.log("loaded "+url);
       }
     };
 
