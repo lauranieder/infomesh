@@ -29,6 +29,11 @@
   <div class="click-to-start">
     <h5>Click to continue</h5>
   </div>
+
+  <div class="iframe-popup">
+    <iframe class="iframe-popup__content" src="" frameborder="0"></iframe>
+  </div>
+
   <!--<div id="smartphone">mobile</div>-->
   <header id="navigation">
     <h1 id="project-title">Information mesh</h1>
@@ -54,19 +59,19 @@
         <div id="project-credits"><p></p></div>
       </div>
       <div id="container-menu" class="content flex-bottom font-large">
-        <a href="#" id="button-open-projects" class="selected">30 years of</a>
-        <a href="#" id="button-open-about" >About</a>
+        <a href="./" id="button-open-projects" class="selected">30 years of</a>
+        <a href="./" id="button-open-about" >About</a>
       </div>
     </div>
 
     <div id="container-projects" class="container d-flex main">
       <div class="project-list">
-        <a href="projects/hacks" class="font-large button-open-project" data-id="0">Hacks.exe</a>
-        <a href="projects/webdictionary" class="font-large button-open-project" data-id="1">Web dictionary</a>
-        <a href="projects/webinfluenceridentity" class="font-large button-open-project" data-id="2">Web influencer identity</a>
-        <a href="projects/webphenomena" class="font-large button-open-project" data-id="2">Web phenomena</a>
-        <a href="projects/worldwidemap" class="font-large button-open-project" data-id="2">World wide map</a>
-          <a href="projects/weblandscape" class="font-large button-open-project" data-id="2">World landscape</a>
+        <a href="./projects/hacks" class="font-large button-open-project" data-id="5">Hacks.exe</a>
+        <a href="./projects/webdictionary" class="font-large button-open-project" data-id="2">Web dictionary</a>
+        <a href="./projects/webinfluenceridentity" class="font-large button-open-project" data-id="3">Web influencer identity</a>
+        <a href="./projects/webphenomena" class="font-large button-open-project" data-id="4">Web phenomena</a>
+        <a href="./projects/worldwidemap" class="font-large button-open-project" data-id="1">World wide map</a>
+        <a href="./projects/weblandscape" class="font-large button-open-project" data-id="0">World landscape</a>
       </div>
     </div>
     <div id="container-main" class="container reduced">
@@ -112,6 +117,7 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="js/splashscreen.js"></script>
+    <script type="text/javascript" src="./js/splashscreen.js"></script>
+    <script type="text/javascript" src="./js/preventDefaultAnchors.js"></script>
   </body>
 </html>

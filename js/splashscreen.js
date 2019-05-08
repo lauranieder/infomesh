@@ -303,6 +303,9 @@
 
   function getRandomFact() {
     var number = 100;
+    if(window.isMobile){
+      number = 70;
+    }
     const fileteredFacts = facts.filter(it => it.length < number);
     return fileteredFacts[Math.floor(Math.random() * fileteredFacts.length)];
   }

@@ -64,20 +64,23 @@ $(document).ready(function() {
   }
 
   function init() {
-    //console.log("init");
-    //console.log("currentPagetName = "+currentPagetName);
-    $.getJSON('data/projects.json', function(data) {
-      projectsData = data;
-      loadProjectsPreview();
-      if (currentPagetName == 'index') {
-        $('#button-open-projects').trigger('click');
-      } else if (currentPagetName == 'about') {
-        $('#button-open-about').trigger('click');
-      } else {
-        var currentProjectID = getProjectIdFromName(currentPagetName);
-        if (currentProjectID != -1) gotoProject(currentProjectID, 'up');
+    $.ajax({
+      dataType: "json",
+      url: "./data/projects.json",
+      mimeType: "application/json",
+      success: function(data){
+        projectsData = data;
+        loadProjectsPreview();
+        if (currentPagetName == 'index') {
+          $('#button-open-projects').trigger('click');
+        } else if (currentPagetName == 'about') {
+          $('#button-open-about').trigger('click');
+        } else {
+          var currentProjectID = getProjectIdFromName(currentPagetName);
+          if (currentProjectID != -1) gotoProject(currentProjectID, 'up');
+        }
       }
-    });
+    })
   }
 
   function gotoProject(index, direction) {
@@ -97,23 +100,26 @@ $(document).ready(function() {
   function loadProject(index, direction) {
     //console.log("loadProject");
     currentProjectID = index;
+    const project = projectsData[index];
 
-    $('#project-title').text(projectsData[index].title);
-    $('#container-title').text(projectsData[index].title);
-    $('#project-title').attr("slug",projectsData[index].slug);
-    if(projectsData[index].source !=null){
-      $('#project-text p:first').html(projectsData[index].text+"<br/><br/>"+projectsData[index].source);
+    $('#project-title').text(project.title);
+    $('#container-title').text(project.title);
+    $('#project-title').attr("slug",project.slug);
+    if(project.source !=null){
+      $('#project-text p:first').html(project.text+"<br/><br/>"+project.source);
     }else{
-      $('#project-text p:first').html(projectsData[index].text);
+      $('#project-text p:first').html(project.text);
     }
 
-    $('#project-credits p:first').html("Designed by "+projectsData[index].student); //or created by
+    $('#project-credits p:first').html("Designed by "+project.student); //or created by
 
     $('.current-iframe').addClass('previous-iframe').removeClass('current-iframe');
 
     //to improve définir le style background ici
 
-    var iframe = $('<iframe class="current-iframe appear-' + direction + '" src="/projects/' + projectsData[index].slug + '">');
+    console.log()
+
+    var iframe = $('<iframe class="current-iframe appear-' + direction + '" src="./projects/' + project.slug + '">');
     $('#container-main').append(iframe);
     $('#timeline-barre').css('transition','all 100ms cubic-bezier(0.23, 1, 0.32, 1)');
     $('#timeline-barre').css('background-color','rgba(255,255,255,1)');
@@ -215,7 +221,7 @@ $(document).ready(function() {
     $('#project-text p:first').text("");
     $('#project-credits p:first').text("");
 
-    if (!ignoreURLS) history.pushState({}, siteTitle , '/index');
+    if (!ignoreURLS) history.pushState({}, siteTitle , '/infomesh/');
   });
 
   $('.button-up').on('click', function(e) {
@@ -257,22 +263,42 @@ $(document).ready(function() {
     loadProject(data.originalEvent.state.index, data.originalEvent.state.direction);
   });
 
+  var iframeClass = 'show-iframe-popup';
+
+  $('.iframe-popup').click(function () {
+    $('body').removeClass(iframeClass);
+  });
+
   $(window).on('message', function(e) {
-    switch (e.originalEvent.data.message) {
+    var data = e.originalEvent.data;
+    var message = data.message;
+
+    switch (message) {
       case 'isPopReduced':
-        isPopupReduced = e.originalEvent.data.status;
+        isPopupReduced = data.status;
         break;
       case 'getPopupStatus':
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'receivePopupStatus', status: isPopupReduced}, '*')
         break;
       case 'setScrollPosition':
-        timelinePosition = e.originalEvent.data.position;
+        timelinePosition = data.position;
         break;
       case 'getScrollPosition':
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'receiveScrollPosition', position: timelinePosition}, '*')
         break;
       case 'getResponsive':
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'isMobile', status: isMobile}, '*')
+        break;
+      case 'anchor':
+        var href = data.href;
+        var iframe = document.querySelector('.iframe-popup__content');
+        iframe.src = href;
+
+        if (!iframe.onload) {
+          iframe.onload = function () {
+            $('body').addClass(iframeClass);
+          }
+        }
         break;
     }
   });
