@@ -215,7 +215,7 @@ function wikifetchingnew(wiki,index){
 
 
 }
-
+console.log("tib")
 $(document).ready(function() {
   //console.log("[event.js]");
   loadEvents();
@@ -281,9 +281,15 @@ $(document).ready(function() {
     }
   });
 
-  $('body').on('click', '#popup', function() {
+
+  var funcTogglePopup = function() {
+    alert("TOUCH");
     console.log("clicked on button toggle popup");
     $('#popup').toggleClass('reduced');
     window.parent.postMessage({message: 'isPopReduced', status: $('#popup').hasClass('reduced')}, '*');
-  });
+  };
+
+  $('body').on('click', '#button-toggle-popup', funcTogglePopup);
+  $('body').on('touchstart', '#button-toggle-popup', funcTogglePopup);
+  console.log("tib")
 });
