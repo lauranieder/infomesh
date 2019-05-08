@@ -28,7 +28,6 @@
 ### Popup sur mobile
 - Recréer la div (supprimer et recréer) ou la remettre à zéro, quand on a scrollé et qu'on reouvre un popup, le scroll est déja en bas
 
-
 ### Timeline
 - Evenement début de l'année envoie l'année d'avant !
 - Hightlight pas en bleu pour les événements au début
@@ -37,10 +36,12 @@
 - Gérer les événements qui sont hors du temps. 
 - Checker deux fois le reflow
 
-### Page-about / information
-- Récrire le texte avec Eryk
+### Contenue texte / Page-about / information / evenement timeline
+- Récrire le texte de la page about avec Eryk.
+- Remplacer les logos sur la page about par les vectoriel final. 
 - Checker toutes les descriptions des projets d'étudiants
-  
+- Checker toutes les informations dans les timeline.
+- Checker la liste des facts.
 
 ### Adapt student project
 #### worldwidemap
@@ -53,7 +54,6 @@
 #### web influencer identity
 - loading des images ? Image qui saute avant de s'afficher sur mobile. Est-ce que sur mobile on garde que la basse def ?
 - Améliorer la composition de la fin
-
 
 #### web dictionnary
 - Choix des sources, texte description
