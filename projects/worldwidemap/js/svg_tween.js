@@ -154,7 +154,7 @@ function autoShowCountries() {
 
 //First loading of th first map
 main_svg_holder.load(
-  "worldwidemap/frames/" + dataType + current_year + ".svg",
+  "./frames/" + dataType + current_year + ".svg",
   // "./frames/" + dataType + current_year + ".svg",
   function() {
     remapColors(main_svg_holder.children("svg"));
@@ -174,7 +174,7 @@ function setupMap() {
 function updateMapWithNewYear() {
   next_svg_holder.load(
     // "./frames/" + dataType + current_year + ".svg",
-    "worldwidemap/frames/" + dataType + current_year + ".svg",
+    "./frames/" + dataType + current_year + ".svg",
     function() {
       setup_tween();
       // remapColors(next_svg_holder.children("svg"));

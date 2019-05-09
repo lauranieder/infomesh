@@ -9,11 +9,15 @@ $(document).ready(function(){
         date: searchdate
       }
     });
+    console.log(searchdate.year());
 
     document.dispatchEvent(event);
   }
 
   $("#container-timeline").scroll(function(event) {
+
+    console.log("scrolled detected");
+    clearTimeout(timer);
       let scroll = $("#container-timeline").scrollLeft();
       let maxScroll = $("#timeline-scrollable").width();
       let normalized = map_range(scroll, 0, maxScroll, 0, 1);
@@ -26,10 +30,24 @@ $(document).ready(function(){
       searchdate = moment(searchdate).add(secondsToFind, "seconds");
 
       dispatchTimelineEvent(normalized, searchdate);
+
   });
 
-  setTimeout(function() {
-    dispatchTimelineEvent(0, moment("01/01/1989", "D/M/YYYY"));
+  let timer = setTimeout(function() {
+    console.log("scrolled detected by timeout");
+    let scroll = $("#container-timeline").scrollLeft();
+    let maxScroll = $("#timeline-scrollable").width();
+    let normalized = map_range(scroll, 0, maxScroll, 0, 1);
+
+    let startdate = moment("01/01/1989", "D/M/YYYY");
+    var enddatetest = moment("31/12/2019", "D/M/YYYY");
+    var diffSeconds = enddatetest.diff(startdate, "seconds");
+    let secondsToFind = map_range(normalized, 0, 1, 0, diffSeconds);
+    let searchdate = moment("01/01/1989", "D/M/YYYY");
+    searchdate = moment(searchdate).add(secondsToFind, "seconds");
+
+    //dispatchTimelineEvent(0, moment("01/01/1989", "D/M/YYYY"));
+    dispatchTimelineEvent(normalized, searchdate);
   }, 1000);
 
   function map_range(value, low1, high1, low2, high2) {
