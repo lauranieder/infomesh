@@ -3,8 +3,8 @@
     const
         GLOBAL = {
             year: 1989,
-            needsUpdate: 1,
-            needsRender: 1,
+            needsUpdate: 1, // 1 = needs to update city again
+            needsRender: 1, // 1 = render 3d
             _time: performance.now(),
             fps: 1000 / 30,
 
@@ -24,11 +24,7 @@
             camFov: 55,
             camY: -20,
             camZ: 700,
-            // angleY: 0,
-            // angleY_: 0,
-            // angleX: 0,
-            // angleX_: 0,
-            // horizAngle: 0,
+            // angleY: 0,angleY_: 0,angleX: 0,angleX_: 0,horizAngle: 0,
             panAmt: Math.PI * 0.12
         },
 
@@ -53,13 +49,13 @@
         MODEL_EL = {},
 
         DATA = {
-            opt_el: 'city_options.json',
-            map: 'datas.json', //json data for position and animation
-            name_el: 'tooltips.json',
-            textures: 'textures.json'
+            opt_el: 'json/city_options.json',
+            map: 'json/datas.json', //json data for position and animation
+            name_el: 'json/tooltips.json',
+            textures: 'json/textures.json'
         }
 
-    // = 1, //needs to update city again
+    
     // VIEW.heightFactor = 400,
     window.addEventListener('load', init, false);
     async function init() {
@@ -105,7 +101,6 @@
         THREE_EL.renderer.setSize(window.innerWidth, window.innerHeight);
         THREE_EL.renderer.domElement.style.position = 'absolute';
 
-
         DOM_EL.containerProject.appendChild(THREE_EL.renderer.domElement);
         DOM_EL.camera = THREE_EL.renderer.domElement.querySelector('#camera');
 
@@ -134,6 +129,7 @@
 
         for (i = keys.length; i--;) {
             DATA[keys[i]] = results[i];
+            // console.log(results[i]);
         }
 
         //preload background-images
@@ -151,8 +147,9 @@
 
         let amt = -VIEW.panAmt,
             amtY = -VIEW.panAmt * 1.3,
-            deltaX = MOUSE.y / window.innerHeight - MOUSE._y / window.innerHeight,
-            deltaY = MOUSE.x / window.innerWidth - MOUSE._x / window.innerWidth,
+            deltaX = (MOUSE.y - MOUSE._y) / window.innerHeight,
+            deltaY = (MOUSE.x - MOUSE._x) / 950,
+
             ampX = MOUSE.pressed ? 1 : 0.05,
             ampY = ampX;
 
@@ -285,6 +282,8 @@
             i = keys.length,
             id, obj;
 
+
+
         for (; i--;) {
             id = keys[i];
             obj = DATA.map[GLOBAL.year][id];
@@ -316,6 +315,9 @@
             if (className.includes(MODEL_EL.keys[i])) {
                 const elem = MODEL_EL[MODEL_EL.keys[i]].cloneNode(true);
                 elem.className = obj[4] + (obj[3] < 0 ? ' grow_w' : ' grow_h');
+
+
+
                 elem.dataset.o = 'obj';
 
                 addOptions(elem, className);
@@ -323,6 +325,7 @@
                 CITY_EL.set(id, obj.length > 5 ?
                     new THREE.CSS3DObject(elem, obj) :
                     new THREE.CSS3DSprite(elem, obj));
+
 
 
                 THREE_EL.city.add(CITY_EL.get(id));
@@ -337,25 +340,34 @@
         if (currTime - SCROLL.time > SCROLL.delay && !MOUSE.pressed) {
             SCROLL.time = currTime;
 
-            let scrolls = document.querySelectorAll(':not(:active):not(:hover).scroll');
+            let scrolls = Array.from(document.querySelectorAll(':not(:active):not(:hover).scroll')),
+                nScrolls = ~~(scrolls.length/30) + 1;
 
             SCROLL.delay = Math.random() * (SCROLL.max / (scrolls.length || SCROLL.max)) + SCROLL.min;
 
             if (!scrolls.length)
                 return;
 
-            let scr = scrolls[Math.floor(Math.random() * scrolls.length)],
-                prg = scr.querySelector('.prg'),
-                currFlex = +prg.style.flexGrow,
-                direction = Math.sign(Math.random() - 0.5);
+            for (; nScrolls--;) {
 
-            if (currFlex > 1) {
-                direction = -1;
-            } else if (currFlex < 0) {
-                direction = 1;
+                let scr = scrolls.splice(~~(Math.random() * scrolls.length), 1)[0];
+                // console.log(scr);
+                    let prg = scr.querySelector('.prg'),
+                    currFlex = +prg.style.flexGrow,
+                    direction;
+
+                if (currFlex > 1) {
+                    direction = -1;
+                } else if (currFlex < 0) {
+                    direction = 1;
+                } else {
+                     direction = Math.sign(Math.random() - 0.5);
+                }
+
+                prg.style.flexGrow = currFlex + (Math.random() * 0.3 + 0.1) * direction;
             }
 
-            prg.style.flexGrow = currFlex + (Math.random() * 0.3 + 0.1) * direction;
+
         }
     }
 
@@ -469,9 +481,7 @@
 
         DOM_EL.containerProject.addEventListener('mousedown', mouseDown, false);
         document.addEventListener('mousedown', mouseDown_capture, true);
-
         document.addEventListener('mousemove', mouseMove, false);
-
         document.addEventListener('mouseup', mouseUp_capture, true);
 
         //mobile
