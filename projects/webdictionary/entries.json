@@ -1,1451 +1,1402 @@
 [
-    {
-      "label": "Backbone",
-      "year": "1989",
-      "tooltip": "The first packet-switched computer network was the NPL network, followed closely by the ARPANET.",
-      "url": "https://en.wikipedia.org/wiki/Backbone",
-      "target": "_blank"
-    },
-    {
-      "label": "Honeypot",
-      "year": "1989",
-      "tooltip": "Computer security mechanism set to detect, deflect, or, in some manner, counteract attempts at unauthorized use of information systems.",
-      "url": "https://en.wikipedia.org/wiki/Honeypot",
-      "target": "_blank"
-    },
-    {
-      "label": "HTTP",
-      "year": "1989",
-      "tooltip": "HTTP was developed to facilitate hypertext and the World Wide Web.",
-      "url": "https://en.wikipedia.org/wiki/HTTP",
-      "target": "_blank"
-    },
-    {
-      "label": "ISP",
-      "year": "1989",
-      "tooltip": "In 1989, the first Internet service providers, companies offering the public direct access to the Internet for a monthly fee, were established in Australia and the United States. In Brookline, Massachusetts, The World became the first commercial ISP in the US.",
-      "url": "https://en.wikipedia.org/wiki/ISP",
-      "target": "_blank"
-    },
-    {
-      "label": "Ransomware",
-      "year": "1989",
-      "tooltip": "The first known malware extortion attack, the \"AIDS Trojan\" written by Joseph Popp in 1989, had a design failure so severe it was not necessary to pay the extortionist at all. Its payload hid the files on the hard drive and encrypted only their names, and displayed a message claiming that the user's license to use a certain piece of software had expired.",
-      "url": "https://en.wikipedia.org/wiki/Ransomware",
-      "target": "_blank"
-    },
-    {
-      "label": "WWW",
-      "year": "1989",
-      "tooltip": "The World Wide Web (WWW), commonly known as the Web, is an information space where documents and other web resources are identified by Uniform Resource Locators, which may be interlinked by hypertext, and are accessible via the Internet.",
-      "url": "https://en.wikipedia.org/wiki/WWW",
-      "target": "_blank"
-    },
-    {
-      "label": "Zip",
-      "year": "1989",
-      "tooltip": "The .ZIP file format was created by Phil Katz of PKWARE.",
-      "url": "https://en.wikipedia.org/wiki/Zip",
-      "target": "_blank"
-    },
-    {
-      "label": "Applet",
-      "year": "1990",
-      "tooltip": "A short computer",
-      "url": "https://en.wikipedia.org/wiki/Applet",
-      "target": "_blank"
-    },
-    {
-      "label": "spam",
-      "year": "1990",
-      "tooltip": "Unsolicited usually commercial messages (such as e-mails, text messages, or Internet postings) sent to a large number of recipients or posted in a large number of places",
-      "url": "https://en.wikipedia.org/wiki/Spamming",
-      "target": "_blank"
-    },
-    {
-      "label": "Browser",
-      "year": "1990",
-      "tooltip": "The first web browser, called WorldWideWeb, was invented in 1990 by Sir Tim Berners-Lee.",
-      "url": "https://en.wikipedia.org/wiki/Browser",
-      "target": "_blank"
-    },
-    {
-      "label": "Smartwatch",
-      "year": "1990",
-      "tooltip": "Seiko Receptor, première montre permettant de recevoir des messages texte à la manière d’un pager.",
-      "url": "https://en.wikipedia.org/wiki/smartwatch",
-      "target": "_blank"
-    },
-    {
-      "label": "Malware",
-      "year": "1990",
-      "tooltip": "Software designed to interfere with a computer's normal functioning",
-      "url": "https://en.wikipedia.org/wiki/malware",
-      "target": "_blank"
-    },
-    {
-      "label": "Internaut",
-      "year": "1990",
-      "tooltip": "The more someone knows about the Internet, its history and politics, the more likely the term internaut fits them.",
-      "url": "https://en.wikipedia.org/wiki/internaut",
-      "target": "_blank"
-    },
-    {
-      "label": "Gopher",
-      "year": "1991",
-      "tooltip": "The World Wide Web was in its infancy in 1991, and Gopher services quickly became established. By the late 1990s, Gopher had ceased expanding.",
-      "url": "https://en.wikipedia.org/wiki/Gopher",
-      "target": "_blank"
-    },
-    {
-      "label": "3D printer",
-      "year": "1991",
-      "tooltip": "A device used to manufacture objects by depositing material in successive layers according to a prescribed pattern or model",
-      "url": "https://en.wikipedia.org/wiki/3D_printing#Printers",
-      "target": "_blank"
-    },
-    {
-      "label": "SSD",
-      "year": "1991",
-      "tooltip": "SanDisk Corporation (then SunDisk) shipped the first SSD, a 20 MB solid state drive which sold OEM for around $1,000. It was used by IBM in a ThinkPad laptop.",
-      "url": "https://en.wikipedia.org/wiki/SSD",
-      "target": "_blank"
-    },
-    {
-      "label": "Linux",
-      "year": "1991",
-      "tooltip": "In 1991, while attending the University of Helsinki, Torvalds became curious about operating systems.[40] Frustrated by the licensing of MINIX, which at the time limited it to educational use only, he began to work on his own operating system kernel, which eventually became the Linux kernel.",
-      "url": "https://en.wikipedia.org/wiki/Linux",
-      "target": "_blank"
-    },
-    {
-      "label": "Cybercrime",
-      "year": "1991",
-      "tooltip": "Criminal activity (such as fraud, theft, or distribution of child pornography) committed using a computer especially to illegally access, transmit, or manipulate data",
-      "url": "https://en.wikipedia.org/wiki/Cybercrime",
-      "target": "_blank"
-    },
-    {
-      "label": "SMS",
-      "year": "1991",
-      "tooltip": "A technology for sending short text message.",
-      "url": "https://en.wikipedia.org/wiki/sms",
-      "target": "_blank"
-    },
-    {
-      "label": "Home page",
-      "year": "1992",
-      "tooltip": "The page typically encountered first on a website that usually contains links to the other pages of the site",
-      "url": "https://en.wikipedia.org/wiki/Home_page",
-      "target": "_blank"
-    },
-    {
-      "label": "HTML",
-      "year": "1992",
-      "tooltip": "A markup language that is used to create documents on the World Wide Web incorporating text, graphics, sound, video, and hyperlinks",
-      "url": "https://en.wikipedia.org/wiki/HTML",
-      "target": "_blank"
-    },
-    {
-      "label": "Portal",
-      "year": "1992",
-      "tooltip": "As intranets quickly grew more complex, the concept of intranet portal was born. Today, intranet portals provide value-added capabilities such as managing workflows, increasing collaboration between work groups, and allowing content creators to self-publish their information.",
-      "url": "https://en.wikipedia.org/wiki/Captive_portal",
-      "target": "_blank"
-    },
-    {
-      "label": "URL",
-      "year": "1992",
-      "tooltip": "The address of a resource (such as a document or website) on the Internet that consists of a communications protocol followed by the name or address of a computer on the network and that often includes additional locating information (such as directory and file names)",
-      "url": "https://en.wikipedia.org/wiki/URL",
-      "target": "_blank"
-    },
-    {
-      "label": "Augmented Reality",
-      "year": "1992",
-      "tooltip": "An enhanced version of reality created by the use of technology to overlay digital information on an image of something being viewed through a device (such as a smartphone camera)",
-      "url": "https://en.wikipedia.org/wiki/Augmented_reality",
-      "target": "_blank"
-    },
-    {
-      "label": "PDF",
-      "year": "1992",
-      "tooltip": "A computer file format for the transmission of a multimedia document that is not intended to be edited further and appears unaltered in most computer environments",
-      "url": "https://en.wikipedia.org/wiki/PDF",
-      "target": "_blank"
-    },
-    {
-      "label": "Generation Y",
-      "year": "1992",
-      "tooltip": "The generation of Americans born in the 1980s and 1990s.",
-      "url": "https://en.wikipedia.org/wiki/Millennials",
-      "target": "_blank"
-    },
-    {
-      "label": "Banner Ad",
-      "year": "1993",
-      "tooltip": "The first clickable web ad was sold by Global Network Navigator in 1993 to a Silicon Valley law firm.",
-      "url": "https://en.wikipedia.org/wiki/Web_banner",
-      "target": "_blank"
-    },
-    {
-      "label": "Bookmark",
-      "year": "1993",
-      "tooltip": "Bookmarks have been incorporated in browsers since the Mosaic browser in 1993",
-      "url": "https://en.wikipedia.org/wiki/bookmark",
-      "target": "_blank"
-    },
-    {
-      "label": "E-commerce",
-      "year": "1993",
-      "tooltip": "Commerce conducted via the Internet",
-      "url": "https://en.wikipedia.org/wiki/e-commerce",
-      "target": "_blank"
-    },
-    {
-      "label": "Email",
-      "year": "1993",
-      "tooltip": "Historically, the term electronic mail was used generically for any electronic document transmission. For example, several writers in the early 1970s used the term to describe fax document transmission.",
-      "url": "https://en.wikipedia.org/wiki/email",
-      "target": "_blank"
-    },
-    {
-      "label": "Botnet",
-      "year": "1993",
-      "tooltip": "A botnet is a logical collection of internet-connected devices such as computers, smartphones or IoT devices whose security has been breached and control ceded to a third party.",
-      "url": "https://en.wikipedia.org/wiki/Botnet",
-      "target": "_blank"
-    },
-    {
-      "label": "Meme",
-      "year": "1993",
-      "tooltip": "A meme is an idea, behavior, or style that spreads from person to person within a culture often with the aim of conveying a particular phenomenon, theme, or meaning represented by the meme.",
-      "url": "https://en.wikipedia.org/wiki/Meme",
-      "target": "_blank"
-    },
-    {
-      "label": "Scraping",
-      "year": "1993",
-      "tooltip": "Data scraping is a technique in which a computer program extracts data from human-readable output coming from another program.In 1993,December, the First crawler-based web search engine - JumpStation.",
-      "url": "https://en.wikipedia.org/wiki/Scraping",
-      "target": "_blank"
-    },
-    {
-      "label": "Streaming",
-      "year": "1993",
-      "tooltip": "On June 24, 1993, the band was playing a gig at Xerox PARC while elsewhere in the building, scientists were discussing new technology (the Mbone) for broadcasting on the Internet using multicasting.",
-      "url": "https://en.wikipedia.org/wiki/Streaming",
-      "target": "_blank"
-    },
-    {
-      "label": "Webmail",
-      "year": "1993",
-      "tooltip": "The first Web Mail implementation was developed at CERN in 1993 by Phillip Hallam-Baker as a test of the HTTP protocol stack.",
-      "url": "https://en.wikipedia.org/wiki/Webmail",
-      "target": "_blank"
-    },
-    {
-      "label": "Webmaster",
-      "year": "1993",
-      "tooltip": "A person responsible for the creation or maintenance of a website especially for a company or organization",
-      "url": "https://en.wikipedia.org/wiki/Webmaster",
-      "target": "_blank"
-    },
-    {
-      "label": "Website",
-      "year": "1993",
-      "tooltip": "A group of World Wide Web pages usually containing hyperlinks to each other and made available online by an individual, company, educational institution, government, or organization",
-      "url": "https://en.wikipedia.org/wiki/Website",
-      "target": "_blank"
-    },
-    {
-      "label": "Keylogger",
-      "year": "1993",
-      "tooltip": "A piece of software that records the signals sent from a keyboard to a computer usually for the purpose of gaining information about the user without the user's knowledge",
-      "url": "https://en.wikipedia.org/wiki/keylogger",
-      "target": "_blank"
-    },
-    {
-      "label": "Log in",
-      "year": "1993",
-      "tooltip": "The noun login comes from the verb (to) log in, and by analogy with the verb to clock in.",
-      "url": "https://en.wikipedia.org/wiki/login",
-      "target": "_blank"
-    },
-    {
-      "label": "Tab",
-      "year": "1993",
-      "tooltip": "Microsoft Word in 1993 used them to simplify submenus.",
-      "url": "https://en.wikipedia.org/wiki/tab_key",
-      "target": "_blank"
-    },
-    {
-      "label": "Astroturfing",
-      "year": "1993",
-      "tooltip": "Organized activity that is intended to create a false impression of a widespread, spontaneously arising, grassroots movement in support of or in opposition to something (such as a political policy) but that is in reality initiated and controlled by a concealed group or organization (such as a corporation)",
-      "url": "https://en.wikipedia.org/wiki/astroturfing",
-      "target": "_blank"
-    },
-    {
-      "label": "moe",
-      "year": "1993",
-      "tooltip": "Moe characters have expanded within the Japanese media market. In 2004, the market for moe media such as printed media, video, and games was worth 88 billion yen; roughly one-third of the estimated 290 billion yen otaku market in Japan",
-      "url": "https://en.wikipedia.org/wiki/moe",
-      "target": "_blank"
-    },
-    {
-      "label": "adsl",
-      "year": "1993",
-      "tooltip": "A gateway is commonly used to make an ADSL connection\nAsymmetric digital subscriber line (ADSL) is a type of digital subscriber line (DSL) technology, a data communications technology that enables faster data transmission over copper telephone lines than a conventional voiceband modem can provide.",
-      "url": "https://en.wikipedia.org/wiki/adsl",
-      "target": "_blank"
-    },
-    {
-      "label": "Cookie",
-      "year": "1994",
-      "tooltip": "The term \"cookie\" was coined by web browser programmer Lou Montulli. It was derived from the term \"magic cookie\", which is a packet of data a program receives and sends back unchanged, used by Unix programmers.",
-      "url": "https://en.wikipedia.org/wiki/cookie",
-      "target": "_blank"
-    },
-    {
-      "label": "CSS",
-      "year": "1994",
-      "tooltip": "Cascading Style Sheets wasn't the only proposed style language at the time. There was Pei Wei's language from the Viola browser, and around 10 other proposals for style sheet languages were sent to the www-talk and www-html mailing lists.",
-      "url": "https://en.wikipedia.org/wiki/css",
-      "target": "_blank"
-    },
-    {
-      "label": "HTTPS",
-      "year": "1994",
-      "tooltip": "Historically, HTTPS connections were primarily used for payment transactions on the World Wide Web, e-mail and for sensitive transactions in corporate information systems. Since 2018, HTTPS is used more often by web users than the original non-secure HTTP, primarily to protect page authenticity on all types of websites; secure accounts; and keep user communications, identity, and web browsing private.",
-      "url": "https://en.wikipedia.org/wiki/https",
-      "target": "_blank"
-    },
-    {
-      "label": "Media Queries",
-      "year": "1994",
-      "tooltip": "A media query consists of a media type and one or more expressions, involving media features, which resolve to either true or false.",
-      "url": "https://en.wikipedia.org/wiki/media_queries",
-      "target": "_blank"
-    },
-    {
-      "label": "PHP",
-      "year": "1994",
-      "tooltip": "PHP development began in 1994 when Rasmus Lerdorf wrote several Common Gateway Interface programs in C, which he used to maintain his personal homepage.",
-      "url": "https://en.wikipedia.org/wiki/php",
-      "target": "_blank"
-    },
-    {
-      "label": "URI",
-      "year": "1994",
-      "tooltip": "URIs and URLs have a shared history. In 1994, Tim Berners-Lee's proposals for hypertext implicitly introduced the idea of a URL as a short string representing a resource that is the target of a hyperlink. At the time, people referred to it as a \"hypertext name\" or \"document name\".",
-      "url": "https://en.wikipedia.org/wiki/uri",
-      "target": "_blank"
-    },
-    {
-      "label": "W3C",
-      "year": "1994",
-      "tooltip": "The World Wide Web Consortium (W3C) is the main international standards organization for the World Wide Web (abbreviated WWW or W3).",
-      "url": "https://en.wikipedia.org/wiki/W3c",
-      "target": "_blank"
-    },
-    {
-      "label": "Compact flash",
-      "year": "1994",
-      "tooltip": "Flash memory mass storage device used mainly in portable electronic devices. The format was specified and the devices were first manufactured by SanDisk in 1994",
-      "url": "https://en.wikipedia.org/wiki/Web",
-      "target": "_blank"
-    },
-    {
-      "label": "Webcam",
-      "year": "1994",
-      "tooltip": "A camera used in transmitting live images over the World Wide Web",
-      "url": "https://en.wikipedia.org/wiki/Webcam",
-      "target": "_blank"
-    },
-    {
-      "label": "C#",
-      "year": "1994",
-      "tooltip": "Hejlsberg is C#'s principal designer and lead architect at Microsoft, and was previously involved with the design of Turbo Pascal, Embarcadero Delphi (formerly CodeGear Delphi, Inprise Delphi and Borland Delphi), and Visual J++.",
-      "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
-      "target": "_blank"
-    },
-    {
-      "label": "QR code",
-      "year": "1994",
-      "tooltip": "The QR code system was invented in 1994 by the Japanese company Denso Wave. Its purpose was to track vehicles during manufacturing; it was designed to allow high-speed component scanning.",
-      "url": "https://en.wikipedia.org/wiki/QR_code",
-      "target": "_blank"
-    },
-    {
-      "label": "MP3",
-      "year": "1994",
-      "tooltip": "A computer file format for the compression and storage of digital audio data",
-      "url": "https://en.wikipedia.org/wiki/mp3",
-      "target": "_blank"
-    },
-    {
-      "label": "Webzine",
-      "year": "1994",
-      "tooltip": "A publication usually in magazine format that exists solely on the World Wide Web",
-      "url": "https://en.wikipedia.org/wiki/webzine",
-      "target": "_blank"
-    },
-    {
-      "label": "Spyware",
-      "year": "1994",
-      "tooltip": "Software that is installed in a computer without the user's knowledge and transmits information about the user's computer activities over the Internet",
-      "url": "https://en.wikipedia.org/wiki/spyware",
-      "target": "_blank"
-    },
-    {
-      "label": "Extranet",
-      "year": "1995",
-      "tooltip": "A network (as of a company) similar to an intranet that also allows access by certain others (such as customers or suppliers)",
-      "url": "https://en.wikipedia.org/wiki/etranet",
-      "target": "_blank"
-    },
-    {
-      "label": "Javascript",
-      "year": "1995",
-      "tooltip": "It was developed under the name Mocha, the language was officially called LiveScript when it first shipped in beta releases of Netscape Navigator 2.0 in September 1995.",
-      "url": "https://en.wikipedia.org/wiki/javascript",
-      "target": "_blank"
-    },
-    {
-      "label": "Spoofing",
-      "year": "1995",
-      "tooltip": "Spoofing attack is a situation in which a person or program successfully masquerades as another by falsifying data, to gain an illegitimate advantage.",
-      "url": "https://en.wikipedia.org/wiki/spoofing",
-      "target": "_blank"
-    },
-    {
-      "label": "SSH",
-      "year": "1995",
-      "tooltip": "Ylönen founded SSH Communications Security to market and develop SSH. It was estimated that by the year 2000 the number of users had grown to 2 million.",
-      "url": "https://en.wikipedia.org/wiki/ssh",
-      "target": "_blank"
-    },
-    {
-      "label": "Wiki",
-      "year": "1995",
-      "tooltip": "A website that allows visitors to make changes, contributions, or corrections",
-      "url": "https://en.wikipedia.org/wiki/wiki",
-      "target": "_blank"
-    },
-    {
-      "label": "Antispam",
-      "year": "1995",
-      "tooltip": "Serving or intended to eliminate or reduce",
-      "url": "https://en.wikipedia.org/wiki/antispam",
-      "target": "_blank"
-    },
-    {
-      "label": "Chatiquette",
-      "year": "1995",
-      "tooltip": "The term chatiquette is a variation of netiquette (Internet etiquette) and describes basic rules of online communication.",
-      "url": "https://en.wikipedia.org/wiki/Etiquette_in_technology#Netiquette",
-      "target": "_blank"
-    },
-    {
-      "label": "Extranet",
-      "year": "1995",
-      "tooltip": "A network (as of a company) similar to an intranet that also allows access by certain others (such as customers or suppliers)",
-      "url": "https://en.wikipedia.org/wiki/extranet",
-      "target": "_blank"
-    },
-    {
-      "label": "ActiveX",
-      "year": "1996",
-      "tooltip": "ActiveX is a software framework created by Microsoft that adapts its earlier Component Object Model (COM) and Object Linking and Embedding technologies for content downloaded from a network, particularly from the World Wide Web.",
-      "url": "https://en.wikipedia.org/wiki/Web",
-      "target": "_blank"
-    },
-    {
-      "label": "Big data",
-      "year": "1996",
-      "tooltip": "An accumulation of data that is too large and complex for processing by traditional database management tools",
-      "url": "https://en.wikipedia.org/wiki/big_data",
-      "target": "_blank"
-    },
-    {
-      "label": "CIFS",
-      "year": "1996",
-      "tooltip": "In 1996, when Sun Microsystems announced WebNFS, Microsoft launched an initiative to rename SMB to Common Internet File System (CIFS) and added more features",
-      "url": "https://en.wikipedia.org/wiki/cifs",
-      "target": "_blank"
-    },
-    {
-      "label": "Cloud",
-      "year": "1996",
-      "tooltip": "While the term \"cloud computing\" was popularized with amazon.com releasing its Elastic Compute Cloud product in 2006, references to the phrase \"cloud computing\" appeared as early as 1996, with the first known mention in a Compaq internal document.",
-      "url": "https://en.wikipedia.org/wiki/cloud",
-      "target": "_blank"
-    },
-    {
-      "label": "Dynamic website",
-      "year": "1996",
-      "tooltip": "Execusite introduced the first dynamic website solution for the professional marketplace in June 1997.",
-      "url": "https://en.wikipedia.org/wiki/Dynamic_web_page",
-      "target": "_blank"
-    },
-    {
-      "label": "Phishing",
-      "year": "1996",
-      "tooltip": "A scam by which an Internet user is duped (as by a deceptive e-mail message) into revealing personal or confidential information which the scammer can use illicitly",
-      "url": "https://en.wikipedia.org/wiki/phishing",
-      "target": "_blank"
-    },
-    {
-      "label": "Servlet",
-      "year": "1996",
-      "tooltip": "A Servlet is an object that receives a request and generates a response based on that request.",
-      "url": "https://en.wikipedia.org/wiki/servlet",
-      "target": "_blank"
-    },
-    {
-      "label": "XML",
-      "year": "1996",
-      "tooltip": "In computing, Extensible Markuo Language is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.",
-      "url": "https://en.wikipedia.org/wiki/xml",
-      "target": "_blank"
-    },
-    {
-      "label": "smartphone",
-      "year": "1996",
-      "tooltip": "A cell phone that includes additional software functions (such as e-mail or an Internet browser)",
-      "url": "https://en.wikipedia.org/wiki/smartphone",
-      "target": "_blank"
-    },
-    {
-      "label": "Blog",
-      "year": "1997",
-      "tooltip": "The term \"weblog\" was coined by Jorn Barger",
-      "url": "https://en.wikipedia.org/wiki/blog",
-      "target": "_blank"
-    },
-    {
-      "label": "Emoji",
-      "year": "1997",
-      "tooltip": "Any of various small images, symbols, or icons used in text fields in electronic communication (as in text messages, e-mail, and social media) to express the emotional attitude of the writer, convey information succinctly, communicate a message playfully without using words, etc.",
-      "url": "https://en.wikipedia.org/wiki/emoji",
-      "target": "_blank"
-    },
-    {
-      "label": "Slashdot",
-      "year": "1997",
-      "tooltip": "Social news website that originally billed itself as \"News for Nerds. Stuff that Matters\". It features news stories on science, technology, and politics that are submitted and evaluated by site users and editors.",
-      "url": "https://en.wikipedia.org/wiki/slashdot",
-      "target": "_blank"
-    },
-    {
-      "label": "Metadata Tag",
-      "year": "1997",
-      "tooltip": "In information systems, a tag is a keyword or term assigned to a piece of information. This kind of metadata helps describe an item and allows it to be found again by browsing or searching.",
-      "url": "https://en.wikipedia.org/wiki/metadata_tag",
-      "target": "_blank"
-    },
-    {
-      "label": "Frame",
-      "year": "1997",
-      "tooltip": "First introduced by Microsoft Internet Explorer in 1997, standardized in HTML 4.0 Transitional, allowed in HTML5.",
-      "url": "https://en.wikipedia.org/wiki/frame",
-      "target": "_blank"
-    },
-    {
-      "label": "Cyberbullying",
-      "year": "1998",
-      "tooltip": "The electronic posting of mean-spirited messages about a person (such as a student) often done anonymously",
-      "url": "https://en.wikipedia.org/wiki/cyberbullying",
-      "target": "_blank"
-    },
-    {
-      "label": "Cybersquatter",
-      "year": "1998",
-      "tooltip": "Some countries have specific laws against cybersquatting beyond the normal rules of trademark law. The United States, for example, has the U.S. Anticybersquatting Consumer Protection Act (ACPA) of 1999.",
-      "url": "https://en.wikipedia.org/wiki/cybersquatting",
-      "target": "_blank"
-    },
-    {
-      "label": "Netiquette",
-      "year": "1998",
-      "tooltip": "Online etiquette is ingrained into culture, although etiquette in technology is a fairly recent concept. The rules of etiquette that apply when communicating over the Internet or social networks or devices are different from those applied when communicating in person or by audio such as telephone or videophone.",
-      "url": "https://en.wikipedia.org/wiki/netiquette",
-      "target": "_blank"
-    },
-    {
-      "label": "SOAP",
-      "year": "1998",
-      "tooltip": "SOAP was designed as an object-access protocol by Dave Winer, Don Box, Bob Atkinson, and Mohsen Al-Ghosein for Microsoft, where Atkinson and Al-Ghosein were working.",
-      "url": "https://en.wikipedia.org/wiki/soap",
-      "target": "_blank"
-    },
-    {
-      "label": "Social networking",
-      "year": "1998",
-      "tooltip": "The creation and maintenance of personal and business relationships especially online",
-      "url": "https://en.wikipedia.org/wiki/social_network",
-      "target": "_blank"
-    },
-    {
-      "label": "Zigbee",
-      "year": "1998",
-      "tooltip": "The technology defined by the Zigbee specification is intended to be simpler and less expensive than other wireless personal area networks (WPANs), such as Bluetooth or more general wireless networking such as Wi-Fi.",
-      "url": "https://en.wikipedia.org/wiki/zigbee",
-      "target": "_blank"
-    },
-    {
-      "label": "texto",
-      "year": "1998",
-      "tooltip": "Date of parution in the dictionary.",
-      "url": "https://en.wikipedia.org/wiki/texto",
-      "target": "_blank"
-    },
-    {
-      "label": "P2P",
-      "year": "1999",
-      "tooltip": "Tim Berners-Lee's vision for the World Wide Web was close to a P2P network in that it assumed each user of the web would be an active editor and contributor, creating and linking content to form an interlinked \"web\" of links.",
-      "url": "https://en.wikipedia.org/wiki/p2p",
-      "target": "_blank"
-    },
-    {
-      "label": "Web 2.0",
-      "year": "1999",
-      "tooltip": "Web 2.0 (also known as Participative and Social Web refers to websites that emphasize user-generated content, ease of use, participatory culture and interoperability for end users. ",
-      "url": "https://en.wikipedia.org/wiki/Web_2.0",
-      "target": "_blank"
-    },
-    {
-      "label": "Web application",
-      "year": "1999",
-      "tooltip": "In earlier computing models like client–server, the processing load for the application was shared between code on the server and code installed on each client locally. In other words, an application had its own pre-compiled client program which served as its user interface and had to be separately installed on each user's personal computer.",
-      "url": "https://en.wikipedia.org/wiki/Web_application",
-      "target": "_blank"
-    },
-    {
-      "label": "Firewire",
-      "year": "1999",
-      "tooltip": "Apple first included on-board FireWire in some of its 1999 Macintosh models, and most Apple Macintosh computers manufactured in the years 2000 through 2011 included FireWire ports.",
-      "url": "https://en.wikipedia.org/wiki/firewire",
-      "target": "_blank"
-    },
-    {
-      "label": "Extension",
-      "year": "1999",
-      "tooltip": "A browser-extension is a plug-in that extends the functionality of a web browser. Some extensions are authored using web technologies such as HTML, JavaScript, and CSS.",
-      "url": "https://en.wikipedia.org/wiki/extension",
-      "target": "_blank"
-    },
-    {
-      "label": "Wifi",
-      "year": "1999",
-      "tooltip": "The first version of the 802.11 protocol was released in 1997 and provided up to 2 Mbit/s link speeds. This was updated in 1999 with 802.11b to permit 11 Mbit/s link speeds and this proved to be popular.",
-      "url": "https://en.wikipedia.org/wiki/wifi",
-      "target": "_blank"
-    },
-    {
-      "label": "blog",
-      "year": "1999",
-      "tooltip": "A website that contains online personal reflections, comments, and often",
-      "url": "https://en.wikipedia.org/wiki/blog",
-      "target": "_blank"
-    },
-    {
-      "label": "Hackathon",
-      "year": "1999",
-      "tooltip": "OpenBSD's apparent first use of the term referred to a cryptographic development event held in Calgary on June 4, 1999,[3] where ten developers came together to avoid legal problems caused by export regulations of cryptographic software from the United States.",
-      "url": "https://en.wikipedia.org/wiki/hackathon",
-      "target": "_blank"
-    },
-    {
-      "label": "pop-up",
-      "year": "1999",
-      "tooltip": "A menu in a graphical user interface (GUI) that appears upon user interaction, such as a right-click mouse operation.",
-      "url": "https://en.wikipedia.org/wiki/pop_up",
-      "target": "_blank"
-    },
-    {
-      "label": "3G",
-      "year": "2000",
-      "tooltip": "3G Technology provides an information transfer rate of at least 200 kbit/s. Later 3G releases, often denoted 3.5G and 3.75G, also provide mobile broadband access of several Mbit/s to smartphones and mobile modems in laptop computers.R",
-      "url": "https://en.wikipedia.org/wiki/3G",
-      "target": "_blank"
-    },
-    {
-      "label": "Google",
-      "year": "2000",
-      "tooltip": "Verb, to use the Google",
-      "url": "https://en.wikipedia.org/wiki/google",
-      "target": "_blank"
-    },
-    {
-      "label": "Permalink",
-      "year": "2000",
-      "tooltip": "In the early years of the web, all content was static, and thus all hyperlinks pointed at a filename. Soon, though, many web pages became dynamic, and many URLs began to include query terms.",
-      "url": "https://en.wikipedia.org/wiki/permalink",
-      "target": "_blank"
-    },
-    {
-      "label": "Networking",
-      "year": "2000",
-      "tooltip": "In the 2000s, \"networking\" has expanded beyond its roots as a business practice to the point that parents meeting to share child-rearing tips to scientists meeting research colleagues are described as engaging in \"networking\".",
-      "url": "https://en.wikipedia.org/wiki/networking",
-      "target": "_blank"
-    },
-    {
-      "label": "BitTorrent",
-      "year": "2001",
-      "tooltip": "BitTorrent is a communication protocol for peer-to-peer file sharing (P2P) which is used to distribute data and electronic files over the Internet.",
-      "url": "https://en.wikipedia.org/wiki/bit_torrent",
-      "target": "_blank"
-    },
-    {
-      "label": "Captcha",
-      "year": "2001",
-      "tooltip": "A test to prevent spamming software from accessing a website by requiring visitors to the site to solve a simple puzzle (typically by reading and transcribing a series of numbers or letters from a distorted image) in order to gain access",
-      "url": "https://en.wikipedia.org/wiki/captcha",
-      "target": "_blank"
-    },
-    {
-      "label": "Favicon",
-      "year": "2001",
-      "tooltip": "A small icon associated with a particular website or page that is displayed in an Internet browser (as in the browser's address bar or in a list of favorites)",
-      "url": "https://en.wikipedia.org/wiki/favicon",
-      "target": "_blank"
-    },
-    {
-      "label": "Splinternet",
-      "year": "2001",
-      "tooltip": "Describing the splintering of Internet technology, some writers see the problem in terms of new devices using different standards. Users no longer require web browsers to access the Internet, as new hardware tools often come with their own \"unique set of standards\" for displaying information.",
-      "url": "https://en.wikipedia.org/wiki/splinternet",
-      "target": "_blank"
-    },
-    {
-      "label": "Linkedin",
-      "year": "2002",
-      "tooltip": "The company was founded in December 2002 by Reid Hoffman and founding team members from PayPal and Socialnet.com .",
-      "url": "https://en.wikipedia.org/wiki/linkedin",
-      "target": "_blank"
-    },
-    {
-      "label": "Moodle",
-      "year": "2002",
-      "tooltip": "Moodle was originally developed by Martin Dougiamas to help educators create online courses with a focus on interaction and collaborative construction of content, and it is in continual evolution.",
-      "url": "https://en.wikipedia.org/wiki/moodle",
-      "target": "_blank"
-    },
-    {
-      "label": "Trackback",
-      "year": "2002",
-      "tooltip": "A trackback is an acknowledgment. This acknowledgment is sent via a network signal from the originating site to the receiving site.",
-      "url": "https://en.wikipedia.org/wiki/trackback",
-      "target": "_blank"
-    },
-    {
-      "label": "Vlog",
-      "year": "2002",
-      "tooltip": "A blog that contains video material",
-      "url": "https://en.wikipedia.org/wiki/vlog",
-      "target": "_blank"
-    },
-    {
-      "label": "Selfie",
-      "year": "2002",
-      "tooltip": "An image of oneself taken by oneself using a digital camera especially for posting on social networks",
-      "url": "https://en.wikipedia.org/wiki/selfie",
-      "target": "_blank"
-    },
-    {
-      "label": "darknet",
-      "year": "2002",
-      "tooltip": "The term gained public acceptance following publication of \"The Darknet and the Future of Content Distribution\", a 2002 paper by Peter Biddle, Paul England, Marcus Peinado, and Bryan Willman, four employees of Microsoft who argued the presence of the darknet was the primary hindrance to the development of workable digital rights management (DRM) technologies and made copyright infringement inevitable.",
-      "url": "https://en.wikipedia.org/wiki/darknet",
-      "target": "_blank"
-    },
-    {
-      "label": "Wordpress",
-      "year": "2003",
-      "tooltip": "In 2004 the licensing terms for the competing Movable Type package were changed by Six Apart, resulting in many of its most influential users migrating to WordPress.",
-      "url": "https://en.wikipedia.org/wiki/wordpress",
-      "target": "_blank"
-    },
-    {
-      "label": "Flarf",
-      "year": "2003",
-      "tooltip": "Flarfs first practitioners, working in loose collaboration on an email listserv, used an approach that rejected conventional standards of quality and explored subject matter and tonality not typically considered appropriate for poetry.",
-      "url": "https://en.wikipedia.org/wiki/flaf",
-      "target": "_blank"
-    },
-    {
-      "label": "Facebook",
-      "year": "2004",
-      "tooltip": "Zuckerberg wrote a program called \"Facemash\" in 2003 while attending Harvard University as a sophomore (second-year student).",
-      "url": "https://en.wikipedia.org/wiki/facebook",
-      "target": "_blank"
-    },
-    {
-      "label": "Ubuntu",
-      "year": "2004",
-      "tooltip": "Ubuntu is named after the Southern African philosophy of ubuntu (literally, 'human-ness'), which Canonical suggests can be loosely translated as \"humanity to others\" or \"I am what I am because of who we all are\".",
-      "url": "https://en.wikipedia.org/wiki/ubuntu",
-      "target": "_blank"
-    },
-    {
-      "label": "Podcast",
-      "year": "2004",
-      "tooltip": "A program (as of music or talk) made available in digital format for automatic download over the Internet",
-      "url": "https://en.wikipedia.org/wiki/podcast",
-      "target": "_blank"
-    },
-    {
-      "label": "Fomo",
-      "year": "2004",
-      "tooltip": "Fear of missing out",
-      "url": "https://en.wikipedia.org/wiki/fomo",
-      "target": "_blank"
-    },
-    {
-      "label": "Loot box",
-      "year": "2004",
-      "tooltip": "In video games, a loot box (sometimes loot crate or prize crate, among other names) is a consumable virtual item which can be redeemed to receive a randomized selection of further virtual items, ranging from simple customization options for a player's avatar or character, to game-changing equipment such as weapons and armor.",
-      "url": "https://en.wikipedia.org/wiki/loot_box",
-      "target": "_blank"
-    },
-    {
-      "label": "Ajax",
-      "year": "2005",
-      "tooltip": "The term Ajax was publicly used on 18 February 2005 by Jesse James Garrett in an article titled Ajax: A New Approach to Web Applications, based on techniques used on Google pages",
-      "url": "https://en.wikipedia.org/wiki/ajax",
-      "target": "_blank"
-    },
-    {
-      "label": "Microblogging",
-      "year": "2005",
-      "tooltip": "Blogging done with severe space or size constraints typically by posting frequent brief messages about personal activities",
-      "url": "https://en.wikipedia.org/wiki/microblogging",
-      "target": "_blank"
-    },
-    {
-      "label": "Pharming",
-      "year": "2005",
-      "tooltip": "The term \"pharming\" is a neologism based on the words \"farming\" and \"phishing\". Phishing is a type of social-engineering attack to obtain access credentials, such as user names and passwords.",
-      "url": "https://en.wikipedia.org/wiki/pharming",
-      "target": "_blank"
-    },
-    {
-      "label": "Site map",
-      "year": "2005",
-      "tooltip": "Google introduced the Sitemaps protocol so web developers can publish lists of links from across their sites.",
-      "url": "https://en.wikipedia.org/wiki/site_map",
-      "target": "_blank"
-    },
-    {
-      "label": "Beta Software",
-      "year": "2005",
-      "tooltip": "As the Internet has facilitated rapid and inexpensive distribution of software, companies have begun to take a looser approach to use of the word \"beta\".",
-      "url": "https://en.wikipedia.org/wiki/beta_software",
-      "target": "_blank"
-    },
-    {
-      "label": "Dashboard",
-      "year": "2005",
-      "tooltip": "Dashboard was first introduced in Mac OS X 10.4 Tiger. It can be activated as an application, from the Dock, Launchpad or Spotlight. It can also be accessed by a dashboard key.",
-      "url": "https://en.wikipedia.org/wiki/dashboard",
-      "target": "_blank"
-    },
-    {
-      "label": "Follower",
-      "year": "2005",
-      "tooltip": "The first scholarly definition and examination of friending and defriending (the act of removing someone from one's friend list, also called unfriending) was David Fono and Kate Raynes-Goldie's \"Hyperfriendship and beyond: Friends and Social Norms on LiveJournal\" from 2005,[7] which identified the use of the term as both a noun and a verb by users of early social network site and blogging platform LiveJournal, which was originally launched in 1999.",
-      "url": "https://en.wikipedia.org/wiki/follower",
-      "target": "_blank"
-    },
-    {
-      "label": "jQuery",
-      "year": "2006",
-      "tooltip": "jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications.",
-      "url": "https://en.wikipedia.org/wiki/jquery",
-      "target": "_blank"
-    },
-    {
-      "label": "Smishing",
-      "year": "2006",
-      "tooltip": "In computing, SMS phishing or smishing is a form of criminal activity using social engineering techniques. Phishing is the act of attempting to acquire personal information such as passwords and details by masquerading as a trustworthy entity in an electronic communication.",
-      "url": "https://en.wikipedia.org/wiki/smishing",
-      "target": "_blank"
-    },
-    {
-      "label": "CrowdFunding",
-      "year": "2006",
-      "tooltip": "The practice of obtaining needed funding (as for a new business) by soliciting contributions from a large number of people especially from the online community",
-      "url": "https://en.wikipedia.org/wiki/crowdfunding",
-      "target": "_blank"
-    },
-    {
-      "label": "Algocracy",
-      "year": "2006",
-      "tooltip": "A. Aneesh is the author of Virtual Migration (2006) who put forward the concept of \"algocracy\" now widely used to convey the growing importance and threat of algorithms in social life.",
-      "url": "https://tinyletter.com/nicolasnova/letters/lagniappe-soixante-et-un-moe-algocracy-neuralism-angewandte",
-      "target": "_blank"
-    },
-    {
-      "label": "Hashtag",
-      "year": "2007",
-      "tooltip": "A word or phrase preceded by the symbol # that classifies or categorizes the accompanying text (such as a tweet)",
-      "url": "https://en.wikipedia.org/wiki/hashtag",
-      "target": "_blank"
-    },
-    {
-      "label": "HTML5",
-      "year": "2007",
-      "tooltip": "Its goals are to improve the language with support for the latest multimedia and other new features; to keep the language both easily readable by humans and consistently understood by computers and devices such as Web browsers, parsers, etc., without XHTML's rigidity.",
-      "url": "https://en.wikipedia.org/wiki/html5",
-      "target": "_blank"
-    },
-    {
-      "label": "Webhook",
-      "year": "2007",
-      "tooltip": "A webhook in web development is a method of augmenting or altering the behaviour of a web page, or web application, with custom callbacks.",
-      "url": "https://en.wikipedia.org/wiki/Webhook",
-      "target": "_blank"
-    },
-    {
-      "label": "Wordart",
-      "year": "2007",
-      "tooltip": "Wordart is a text-styling utility. It allows users to create stylized text with various \"special effects\" such as textures, outlines, and many other manipulations that are not available through the standard font formatting.",
-      "url": "https://en.wikipedia.org/wiki/Wordart",
-      "target": "_blank"
-    },
-    {
-      "label": "Farecasting",
-      "year": "2007",
-      "tooltip": "Predicting the ideal moment to buy a plane ticket has long been the holy grail of travel planning.",
-      "url": "https://en.wikipedia.org/wiki/farecasting",
-      "target": "_blank"
-    },
-    {
-      "label": "Spoil",
-      "year": "2007",
-      "tooltip": "Date of parution in the dictionary.",
-      "url": "https://en.wikipedia.org/wiki/spoiler",
-      "target": "_blank"
-    },
-    {
-      "label": "Bitcoins",
-      "year": "2008",
-      "tooltip": "A digital currency created for use in",
-      "url": "https://en.wikipedia.org/wiki/bitcoins",
-      "target": "_blank"
-    },
-    {
-      "label": "Nomophobia",
-      "year": "2008",
-      "tooltip": "Fear of being without access to a working cell phone",
-      "url": "https://en.wikipedia.org/wiki/Nomophobia",
-      "target": "_blank"
-    },
-    {
-      "label": "Pinterest",
-      "year": "2009",
-      "tooltip": "Pinterest CEO Ben Silbermann summarized the company as a \"catalogue of ideas\" that inspires users to \"go out and do that thing\", rather than as an image-based social network.",
-      "url": "https://en.wikipedia.org/wiki/pinterest",
-      "target": "_blank"
-    },
-    {
-      "label": "CashTag",
-      "year": "2009",
-      "tooltip": "StockTwits used ticker symbols preceded by the dollar sign to create \"cashtags\".",
-      "url": "https://en.wikipedia.org/wiki/cashtag",
-      "target": "_blank"
-    },
-    {
-      "label": "Instagram",
-      "year": "2010",
-      "tooltip": "To post (a picture) to the Instagram photo-sharing service",
-      "url": "https://en.wikipedia.org/wiki/instagram",
-      "target": "_blank"
-    },
-    {
-      "label": "Responsive",
-      "year": "2010",
-      "tooltip": "The first site to feature a layout that adapts to browser viewport width was Audi.com launched in late 2001, created by a team at razorfish.In the early 2000s, terms like fluid design andliquid layout were, sort of, primitive versions of RWD.",
-      "url": "https://en.wikipedia.org/wiki/Responsive_web_design",
-      "target": "_blank"
-    },
-    {
-      "label": "Gamification",
-      "year": "2010",
-      "tooltip": "The process of adding games or gamelike elements to something (such as a task) so as to encourage participation",
-      "url": "https://en.wikipedia.org/wiki/gamification",
-      "target": "_blank"
-    },
-    {
-      "label": "Kaggler",
-      "year": "2010",
-      "tooltip": "World's largest community of data scientists and machine learners, owned by Google, Inc. Kaggle got its start by offering machine learning competitions and now also offers a public data platform, a cloud-based workbench for data science, and short form AI education.",
-      "url": "https://en.wikipedia.org/wiki/kaggle",
-      "target": "_blank"
-    },
-    {
-      "label": "Vaporwave",
-      "year": "2010",
-      "tooltip": "Vaporwave is an Internet-based microgenre that was built upon the experimental and ironic tendencies of genres such as chillwave and hypnagogic pop.",
-      "url": "https://en.wikipedia.org/wiki/vaporwave",
-      "target": "_blank"
-    },
-    {
-      "label": "iCloud",
-      "year": "2011",
-      "tooltip": "It replaced Apple's MobileMe service, acting as a data syncing center for email, contacts, calendars, bookmarks, notes, reminders, iWork documents, photos and other data.",
-      "url": "https://en.wikipedia.org/wiki/icloud",
-      "target": "_blank"
-    },
-    {
-      "label": "Defriend",
-      "year": "2011",
-      "tooltip": "To delete a person from a list of friends or acquaintances on Facebook.",
-      "url": "https://en.wikipedia.org/wiki/Internet_relationship",
-      "target": "_blank"
-    },
-    {
-      "label": "Chromebook",
-      "year": "2011",
-      "tooltip": "Critical reaction to the device was initially skeptical, with some reviewers, such as then New York Times technology columnist David Pogue,[9] unfavorably comparing the value proposition of Chromebooks with that of more fully featured laptops running the Microsoft Windows operating system.",
-      "url": "https://en.wikipedia.org/wiki/chromebook",
-      "target": "_blank"
-    },
-    {
-      "label": "Snapchat",
-      "year": "2011",
-      "tooltip": "One exception was the decision to keep a mascot designed by Brown, \"Ghostface Chillah\", named after Ghostface Killah of the hip-hop group Wu-Tang Clan.",
-      "url": "https://en.wikipedia.org/wiki/snapchat",
-      "target": "_blank"
-    },
-    {
-      "label": "Blockchain",
-      "year": "2011",
-      "tooltip": "A digital database containing information (such as records of financial transactions) that can be simultaneously used and shared within a large decentralized, publicly accessible network",
-      "url": "https://en.wikipedia.org/wiki/blockchain",
-      "target": "_blank"
-    },
-    {
-      "label": "Geeker",
-      "year": "2011",
-      "tooltip": "Date of parution in the dictionary.",
-      "url": "https://en.wikipedia.org/wiki/geeker",
-      "target": "_blank"
-    },
-    {
-      "label": "Troll",
-      "year": "2012",
-      "tooltip": "Application of the term troll is subjective. Some readers may characterize a post as trolling, while others may regard the same post as a legitimate contribution to the discussion, even if controversial.",
-      "url": "https://en.wikipedia.org/wiki/troll",
-      "target": "_blank"
-    },
-    {
-      "label": "Heartbleed",
-      "year": "2012",
-      "tooltip": "Heartbleed is a security bug in the OpenSSL cryptography library, which is a widely used implementation of the Transport Layer Security protocol. It was introduced into the software in 2012 and publicly disclosed in April 2014.",
-      "url": "https://en.wikipedia.org/wiki/heartbleed",
-      "target": "_blank"
-    },
-    {
-      "label": "GIF",
-      "year": "2012",
-      "tooltip": "The original version of GIF was called 87a. the word GIF is found in the newer editions of many dictionaries. In 2012, the American wing of the Oxford University Press recognized GIF as a verb as well, meaning \"to create a GIF file\", as in \"GIFing was perfect medium for sharing scenes from the Summer Olympics\". ",
-      "url": null,
-      "target": "_blank"
-    },
-    {
-      "label": "4G",
-      "year": "2013",
-      "tooltip": "4G provides, in addition to the usual voice and other services of 3G, mobile broadband Internet access, for example to laptops with wireless modems, to smartphones, and to other mobile devices.",
-      "url": "https://en.wikipedia.org/wiki/4G",
-      "target": "_blank"
-    },
-    {
-      "label": "Trickjumping",
-      "year": "2015",
-      "tooltip": "Movement mode in First Person Shooter Games (FPS) which involves agile movement using the game's physics engine.",
-      "url": "https://en.wikipedia.org/wiki/Slacktivism#Clicktivism",
-      "target": "_blank"
-    },
-    {
-      "label": "Clicktivism",
-      "year": "2015",
-      "tooltip": "Referring to engaging volunteer participants via online platforms and social networks.",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-trente-cinq-lift16-technologie-x-magie-1983-et-un-mardi-gras-cajun",
-      "target": "_blank"
-    },
-    {
-      "label": "Lonely Web",
-      "year": "2015",
-      "tooltip": "Word refers to those web contents which, despite their public nature and the fact that they are indexed by the search engines, are nonetheless very limited in their readership.",
-      "url": "https://splinternews.com/how-the-weird-unfiltered-internet-became-a-media-goldm-1793853905",
-      "target": "_blank"
-    },
-    {
-      "label": "Skreaming",
-      "year": "2015",
-      "tooltip": "Corresponds to this grueling practice involving having to speak very loudly in a meeting to make itself heard by a participant participating remotely via audio / videoconference",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-trente-deux-kicksnark-circulations-high-tech-pirate-book-et-clairage-pour-selfie",
-      "target": "_blank"
-    },
-    {
-      "label": "Kicksnark",
-      "year": "2015",
-      "tooltip": "Verb describing the action of supporting a project by subscription (crowdfunding) while hoping / knowing that it will not reach its objective of fundraising.",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-trente-deux-kicksnark-circulations-high-tech-pirate-book-et-clairage-pour-selfie",
-      "target": "_blank"
-    },
-    {
-      "label": "Poseurmoji",
-      "year": "2015",
-      "tooltip": "Emoji announced with fanfare as new and original while it is not included in the certifications of the Unicode Consortium and therefore unusable.",
-      "url": "https://twitter.com/nicolasnova/status/664507636973494272",
-      "target": "_blank"
-    },
-    {
-      "label": "Phubbing",
-      "year": "2015",
-      "tooltip": "Term coined as part of a campaign by Macquarie Dictionary to describe the habit of snubbing someone in favour of a mobile phone.",
-      "url": "https://en.wikipedia.org/wiki/Phubbing",
-      "target": "_blank"
-    },
-    {
-      "label": "Brouteurs",
-      "year": "2015",
-      "tooltip": "Idiom used in Ivory Coast to designate crooks acting with information and communication technologies.",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-vingt-huit-maskenfreiheit-des-mturks-pour-d-crypter-les-glitchs-et-le-tsundoku-actuel",
-      "target": "_blank"
-    },
-    {
-      "label": "Plogging",
-      "year": "2015",
-      "tooltip": "Transposition of the logic of (web) logging to the platforms of social networks like Facebook, Twitter, etc.",
-      "url": "https://www.wired.com/2015/10/long-blogging-hello-yep-going-say-plogging/",
-      "target": "_blank"
-    },
-    {
-      "label": "Speakularity",
-      "year": "2015",
-      "tooltip": "Term proposed by journalist Matt Thompson that refers to the transition to a society in which \"the default expectation for recorded speech will be searchable and readable, nearly in the moment.\"",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-vingt-six-sega-core-dadabots-si-ge-et-algorithmes-le-glitch-du-virage-du-tour-de-france",
-      "target": "_blank"
-    },
-    {
-      "label": "Stratocaching",
-      "year": "2015",
-      "tooltip": "\nEvolution of the concept of geocaching, the principle rests on the idea of ​​finding flying objects fallen on the ground: balloons, flying capsules, etc. ",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-vingt-six-sega-core-dadabots-si-ge-et-algorithmes-le-glitch-du-virage-du-tour-de-france",
-      "target": "_blank"
-    },
-    {
-      "label": "Spoti-stalker",
-      "year": "2015",
-      "tooltip": "Term for voyeurs on Spotify, who play songs that are similar to your playlist.\n",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-vingt-quatre-pk-pagers-ipod-touch-et-feature-phones-lee-scratch-perry",
-      "target": "_blank"
-    },
-    {
-      "label": "Crapularity",
-      "year": "2016",
-      "tooltip": "Quantity of poor quality objects that could emerge from the combination of 3D printing technologies, spam and micro-payment.",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-trente-sept-human-computation-observer-le-vite-obsol-te-et-d-placement-adaptation-extension-d-tournement",
-      "target": "_blank"
-    },
-    {
-      "label": "Commentariat",
-      "year": "2016",
-      "tooltip": "Word-bag composed of the words \"commentary\" and \"proletariat\", and which refers to the class of journalists and media people.",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-trente-sept-human-computation-observer-le-vite-obsol-te-et-d-placement-adaptation-extension-d-tournement",
-      "target": "_blank"
-    },
-    {
-      "label": "Zooglers",
-      "year": "2016",
-      "tooltip": "This is when a person named Zoob comes up with a new word relating to Google.",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-trente-sept-human-computation-observer-le-vite-obsol-te-et-d-placement-adaptation-extension-d-tournement",
-      "target": "_blank"
-    },
-    {
-      "label": "Algorave",
-      "year": "2016",
-      "tooltip": "a form of rave that proposes to make people dance on loops programmed in real time (live coding) by the musicians in front of the public.",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-trentre-six-iphone-favela-chic-et-du-rikimbili",
-      "target": "_blank"
-    },
-    {
-      "label": "Wearapeuthics",
-      "year": "2016",
-      "tooltip": "Refers to portable technology products on the body intended to monitor the health of users and possibly provide care",
-      "url": "https://hax.co/how-it-works/",
-      "target": "_blank"
-    },
-    {
-      "label": "Microporn",
-      "year": "2016",
-      "tooltip": "Term used to describe pornographic video sequences presented as animated GIF",
-      "url": "https://www.tandfonline.com/doi/full/10.1080/23268743.2015.1083883",
-      "target": "_blank"
-    },
-    {
-      "label": "Belfie",
-      "year": "2017",
-      "tooltip": "A 'bottom selfie' - a photographic self-portrait featuring the buttocks, usually posted by female celebrities on social media networks.",
-      "url": "https://www.urbandictionary.com/define.php?term=belfie",
-      "target": "_blank"
-    },
-    {
-      "label": "Flop account",
-      "year": "2017",
-      "tooltip": "An account usually found on instagram typically made fandom based to make fun of and demean what they call \"flops\" and things they find embarassing .",
-      "url": "https://www.urbandictionary.com/define.php?term=flop%20account",
-      "target": "_blank"
-    },
-    {
-      "label": "Mutual",
-      "year": "2017",
-      "tooltip": "Transposition of the term \"mutual friends / contacts\", which by extension refers to the portion of contacts on an online social network that follows each other.",
-      "url": "https://tinyletter.com/nicolasnova/letters/lagniappe-quarante-neuf-urks-e-waste-d-agbogbloshie-ethique-et-design",
-      "target": "_blank"
-    },
-    {
-      "label": "Page parking",
-      "year": "2017",
-      "tooltip": "Tactical use of tabs in the web browser that consists of \"opening multiple pages in rapid-fire succession\".",
-      "url": "https://www.nngroup.com/articles/multi-tab-page-parking/",
-      "target": "_blank"
-    },
-    {
-      "label": "Memewear",
-      "year": "2017",
-      "tooltip": "The tangible detritus of a very popular, very temporary joke. ",
-      "url": "https://www.nytimes.com/2017/08/17/magazine/letter-of-recommendation-memewear.html",
-      "target": "_blank"
-    },
-    {
-      "label": "Computational Propaganda",
-      "year": "2017",
-      "tooltip": "Term used to refer to the automation of the production and propagation of partial or erroneous messages and information.",
-      "url": "https://tinyletter.com/nicolasnova/letters/lagniappe-quarante-six-leijiverse-chungking-mansions-et-une-requ-te-sur-le-basicois",
-      "target": "_blank"
-    },
-    {
-      "label": "One-up",
-      "year": "2017",
-      "tooltip": "Synonymous with \"extra life\" in video games, and which lesser known is a legacy of the 1960s pinball machines",
-      "url": "https://www.atlasobscura.com/articles/how-1up-went-from-pinball-to-gamer-speak",
-      "target": "_blank"
-    },
-    {
-      "label": "Nosetap",
-      "year": "2017",
-      "tooltip": "Neologism corresponding to the use of his nose to interact with the screen of a touch screen",
-      "url": "https://tinyletter.com/nicolasnova/letters/lagniappe-quarante-six-leijiverse-chungking-mansions-et-une-requ-te-sur-le-basicois",
-      "target": "_blank"
-    },
-    {
-      "label": "Pogosticking",
-      "year": "2017",
-      "tooltip": "The fact of being sent back to the beginning of a page / list after scrolling down, left the page, and pressed the \"back\" button",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-quarante-cinq-soeurveillance-pogosticking-et-un-plafond-mysterieux",
-      "target": "_blank"
-    },
-    {
-      "label": "Brogrammer",
-      "year": "2017",
-      "tooltip": "Suitcase word (\"bro\" and \"programmer\") formed to describe macho programmers.",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-quarante-cinq-soeurveillance-pogosticking-et-un-plafond-mysterieux",
-      "target": "_blank"
-    },
-    {
-      "label": "Swayze effect",
-      "year": "2017",
-      "tooltip": "Common phenomenon when using a virtual reality headset (VR), which is to feel a lack of tangible link with the nearby environment with, while having a sense of presence.",
-      "url": "https://www.oculus.com/story-studio/",
-      "target": "_blank"
-    },
-    {
-      "label": "Puppy syndrome",
-      "year": "2017",
-      "tooltip": "Trend of forms recognition programs, trained with machine learning technologies, to identify dogs in all kinds of images.",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-quarante-deux-puppy-syndrome-histoires-de-fant-mes-vr-alt-ai",
-      "target": "_blank"
-    },
-    {
-      "label": "Telepresenty",
-      "year": "2017",
-      "tooltip": "Adjective denoting the somewhat factitious character of a social situation, as if it suffered from bugs",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-quarante-deux-puppy-syndrome-histoires-de-fant-mes-vr-alt-ai",
-      "target": "_blank"
-    },
-    {
-      "label": "DIFM",
-      "year": "2017",
-      "tooltip": "Acronym for \"Do It For Me\" and which refers to the frenzy of applications or services supposed to automate the delegation of tasks considered as forbidding by the user.",
-      "url": "https://techcrunch.com/2015/04/19/why-do-it-for-me-is-the-next-big-thing/",
-      "target": "_blank"
-    },
-    {
-      "label": "Wiki gnome",
-      "year": "2017",
-      "tooltip": "Wiki users whose humility leads them to not trumpet at all goes the amount of contributions they make on the Wikipedia.",
-      "url": "https://en.wikipedia.org/wiki/Wikipedia:WikiGnome",
-      "target": "_blank"
-    },
-    {
-      "label": "Name-fagging",
-      "year": "2017",
-      "tooltip": "Pejorative expression used to describe the excessive publication of information about his nickname during hacksand other incidents online, in order to boast or to draw attention to oneself.",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-trente-neuf-pp-r-t-reverie-partie-2-big-now",
-      "target": "_blank"
-    },
-    {
-      "label": "Sodcasting",
-      "year": "2017",
-      "tooltip": "Act of playing music through the speaker on a mobile phone, usually on public transport. Commonly practiced by young people wearing polyester, branded sportswear with dubious musical taste.",
-      "url": "https://tinyletter.com/nicolasnova/letters/livraison-trente-huit-toetsenbordschreeuwers-usages-et-m-susages-des-bots-le-retour-des-pigeons-bloggeurs",
-      "target": "_blank"
-    },
-    {
-      "label": "Neurealism",
-      "year": "2018",
-      "tooltip": "A nice label for post-uncanny neural art",
-      "url": "https://twitter.com/quasimondo/status/938426791173255168?s=11",
-      "target": "_blank"
-    },
-    {
-      "label": "GANism",
-      "year": "2018",
-      "tooltip": "Overfitting a neural-net to generating tiny ugly images, that are then sold with the \"made by a creative AI",
-      "url": "https://twitter.com/samim/status/1047089182395576321?s=11",
-      "target": "_blank"
-    },
-    {
-      "label": "Toad",
-      "year": "2018",
-      "tooltip": "A topic trending on Twitter and I want to look it up and find out what the conversation is all about, but oh no, I really didn't want to learn that.",
-      "url": "https://twitter.com/ethanz/status/1042083399295483907?refsrc=email&s=11",
-      "target": "_blank"
-    },
-    {
-      "label": "Halfseen",
-      "year": "2018",
-      "tooltip": "Reading (the beginning of) a message without opening it",
-      "url": "https://www.nextnature.net/2018/09/halfseen/",
-      "target": "_blank"
-    },
-    {
-      "label": "Patadata",
-      "year": "2018",
-      "tooltip": "A pataphysical version of meta-data, which allows potentiel new forms of information foraging, through facetious analogy-based reasoning",
-      "url": "https://pdfs.semanticscholar.org/150b/4e5cae09ef8eb8217e47f09e3a63a6ff8e09.pdf",
-      "target": "_blank"
-    },
-    {
-      "label": "Shadowbanning",
-      "year": "2018",
-      "tooltip": "The act of blocking a user or their content from an online community such that it will not be readily apparent to the user that they have been banned.",
-      "url": "https://en.wikipedia.org/wiki/Shadow_banning",
-      "target": "_blank"
-    },
-    {
-      "label": "Snowbot",
-      "year": "2018",
-      "tooltip": "Nickname used for telepresence robots used for video-conferencing, such as the one on which Edward Snowden appeared in his talk at the \"Technology, Entertainment, Design",
-      "url": "https://amp.theguardian.com/us-news/shortcuts/2016/jun/27/snowbot-edward-snowden-telepresence-robot",
-      "target": "_blank"
-    },
-    {
-      "label": "Congotronics",
-      "year": "2018",
-      "tooltip": "A term used to described a compilation, and probably a set of music styles of Kinshasa, which assemble traditional trance music and heavily-distorted sounds generated by DIY amplification of their instruments",
-      "url": "https://www.ethnomusicologyreview.ucla.edu/journal/volume/16/piece/460",
-      "target": "_blank"
-    },
-    {
-      "label": "Wiki-hounding",
-      "year": "2018",
-      "tooltip": "A form of online stalking that is based on the singling out of one or more editors, joining discussions on multiple pages or topics they may edit or multiple debates where they contribute, to repeatedly confront or inhibit their work",
-      "url": "https://en.wikipedia.org/wiki/Wikipedia:Harassment#Wikihounding",
-      "target": "_blank"
-    },
-    {
-      "label": "Hanmoji",
-      "year": "2018",
-      "tooltip": "using emoji to represent Chinese characters",
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSdmGyvWkpAwqHiZL_4BdOrWzqZm7CCGPSNbALK9WGaNhwtKaw/viewform?usp=send_form",
-      "target": "_blank"
-    },
-    {
-      "label": "Investidating",
-      "year": "2018",
-      "tooltip": "scouring photos for a conversation starter on Tinder",
-      "url": "https://www.theguardian.com/technology/2018/jul/05/tinder-online-dating-apps-photos",
-      "target": "_blank"
-    },
-    {
-      "label": "Computationalism",
-      "year": "2018",
-      "tooltip": "the exaltation of computational systems specifically to manage, replicate, analyze and replace human systems of knowledge. The enthusiasm such researchers display for these approaches is hard to distinguish from contempt",
-      "url": "https://twitter.com/dgolumbia/status/993199668434735105",
-      "target": "_blank"
-    },
-    {
-      "label": "Orphic media",
-      "year": "2018",
-      "tooltip": "Media devices that allow individuals to control and customize their sonic environment, such as noise-cancelling headphones, smartphone apps that turn background noise into a seaside ambience, hearing aids that filter and alter the sound of the world",
-      "url": "https://www.academia.edu/30421108/Hush_Media_and_Sonic_Self-Control_Duke_UP_2019_",
-      "target": "_blank"
-    },
-    {
-      "label": "Finsta",
-      "year": "2018",
-      "tooltip": "A spam Instagram account where people post what they are too afraid to post on the real account: ugly selfies, weird memes, private jokes.",
-      "url": "https://medium.com/bits-pixels/finstagram-the-instagram-revolution-737999d40014",
-      "target": "_blank"
-    },
-    {
-      "label": "Code smell",
-      "year": "2018",
-      "tooltip": "any symptom in the source code of a program that possibly indicates a deeper problem",
-      "url": "https://en.wikipedia.org/wiki/Code_smell",
-      "target": "_blank"
-    },
-    {
-      "label": "Algotorial",
-      "year": "2018",
-      "tooltip": "A combination of the words “algorithm” and “editorial”, where data-generated recommendations are combined with the human curation of music experts\"",
-      "url": "https://tinyletter.com/nicolasnova/letters/lagniappe-cinquante-quatre-alexa-voice-dungeon-synth-et-tsundokus-num-rique",
-      "target": "_blank"
-    },
-    {
-      "label": "Iron Bubble",
-      "year": "2018",
-      "tooltip": "Neologism reflecting the ideological isolation caused by filtering algorithms on social networks, which can potentially leave users in a bubble",
-      "url": "https://medium.com/@trackingexposed/the-iron-bubble-or-how-the-facebook-algorithm-insulates-fascists-from-reality-d36739b0758b",
-      "target": "_blank"
-    },
-    {
-      "label": "Switcheroo",
-      "year": "2018",
-      "tooltip": "term used by users trying to trick supermarket cash registers, the principle being based on peeling off a sticker barcode of a cheaper product and placing it on the desired one",
-      "url": "https://tinyletter.com/nicolasnova/letters/lagniappe-cinquante-et-un-fauxtomation-interaction-18-carnaval-et-rituels-num-riques",
-      "target": "_blank"
-    },
-    {
-      "label": "Podfaster",
-      "year": "2018",
-      "tooltip": "Neologism that refers to people listening to podcasts in accelerated speed",
-      "url": "http://https//www.buzzfeed.com/doree/meet-the-people-who-listen-to-podcasts-at-super-fast-speeds",
-      "target": "_blank"
-    },
-    {
-      "label": "Loot box",
-      "year": "2018",
-      "tooltip": "Virtual object that contains one or more virtual objects, giving new abilities to video game participants",
-      "url": "https://tinyletter.com/nicolasnova/letters/lagniappe-cinquante-podfasting-adversarial-patches-outils-bricol-s-en-prison-futu",
-      "target": "_blank"
-    }
-  ]
+  {
+    "label": "Backbone",
+    "year": "1989",
+    "tooltip": "The first packet-switched computer network was the NPL network, followed closely by the ARPANET.",
+    "url": "https://web.archive.org/web/20190508153959id_/https://en.wikipedia.org/wiki/Backbone",
+    "target": "_blank"
+  },
+  {
+    "label": "Honeypot",
+    "year": "1989",
+    "tooltip": "Computer security mechanism set to detect, deflect, or, in some manner, counteract attempts at unauthorized use of information systems.",
+    "url": "https://web.archive.org/web/20190508154008id_/https://en.wikipedia.org/wiki/Honeypot",
+    "target": "_blank"
+  },
+  {
+    "label": "HTTP",
+    "year": "1989",
+    "tooltip": "HTTP was developed to facilitate hypertext and the World Wide Web.",
+    "url": "https://web.archive.org/web/20190508154017id_/https://en.wikipedia.org/wiki/HTTP",
+    "target": "_blank"
+  },
+  {
+    "label": "ISP",
+    "year": "1989",
+    "tooltip": "In 1989, the first Internet service providers, companies offering the public direct access to the Internet for a monthly fee, were established in Australia and the United States. In Brookline, Massachusetts, The World became the first commercial ISP in the US.",
+    "url": "https://web.archive.org/web/20190508154024id_/https://en.wikipedia.org/wiki/ISP",
+    "target": "_blank"
+  },
+  {
+    "label": "Ransomware",
+    "year": "1989",
+    "tooltip": "The first known malware extortion attack, the \"AIDS Trojan\" written by Joseph Popp in 1989, had a design failure so severe it was not necessary to pay the extortionist at all. Its payload hid the files on the hard drive and encrypted only their names, and displayed a message claiming that the user's license to use a certain piece of software had expired.",
+    "url": "https://web.archive.org/web/20190508154040id_/https://en.wikipedia.org/wiki/Ransomware",
+    "target": "_blank"
+  },
+  {
+    "label": "WWW",
+    "year": "1989",
+    "tooltip": "The World Wide Web (WWW), commonly known as the Web, is an information space where documents and other web resources are identified by Uniform Resource Locators, which may be interlinked by hypertext, and are accessible via the Internet.",
+    "url": "https://web.archive.org/web/20190508154050id_/https://en.wikipedia.org/wiki/WWW",
+    "target": "_blank"
+  },
+  {
+    "label": "Zip",
+    "year": "1989",
+    "tooltip": "The .ZIP file format was created by Phil Katz of PKWARE.",
+    "url": "https://web.archive.org/web/20190508154105id_/https://en.wikipedia.org/wiki/Zip",
+    "target": "_blank"
+  },
+  {
+    "label": "Applet",
+    "year": "1990",
+    "tooltip": "A short computer",
+    "url": "https://web.archive.org/web/20190508154114id_/https://en.wikipedia.org/wiki/Applet",
+    "target": "_blank"
+  },
+  {
+    "label": "spam",
+    "year": "1990",
+    "tooltip": "Unsolicited usually commercial messages (such as e-mails, text messages, or Internet postings) sent to a large number of recipients or posted in a large number of places",
+    "url": "https://web.archive.org/web/20190508154123id_/https://en.wikipedia.org/wiki/Spamming",
+    "target": "_blank"
+  },
+  {
+    "label": "Browser",
+    "year": "1990",
+    "tooltip": "The first web browser, called WorldWideWeb, was invented in 1990 by Sir Tim Berners-Lee.",
+    "url": "https://web.archive.org/web/20190508154136id_/https://en.wikipedia.org/wiki/Browser",
+    "target": "_blank"
+  },
+  {
+    "label": "Smartwatch",
+    "year": "1990",
+    "tooltip": "Seiko Receptor, première montre permettant de recevoir des messages texte à la manière d’un pager.",
+    "url": "https://web.archive.org/web/20190508154142id_/https://en.wikipedia.org/wiki/Smartwatch",
+    "target": "_blank"
+  },
+  {
+    "label": "Malware",
+    "year": "1990",
+    "tooltip": "Software designed to interfere with a computer's normal functioning",
+    "url": "https://web.archive.org/web/20190508154155id_/https://en.wikipedia.org/wiki/Malware",
+    "target": "_blank"
+  },
+  {
+    "label": "Internaut",
+    "year": "1990",
+    "tooltip": "The more someone knows about the Internet, its history and politics, the more likely the term internaut fits them.",
+    "url": "https://web.archive.org/web/20190508154204id_/https://en.wikipedia.org/wiki/Internaut",
+    "target": "_blank"
+  },
+  {
+    "label": "Gopher",
+    "year": "1991",
+    "tooltip": "The World Wide Web was in its infancy in 1991, and Gopher services quickly became established. By the late 1990s, Gopher had ceased expanding.",
+    "url": "https://web.archive.org/web/20190508154210id_/https://en.wikipedia.org/wiki/Gopher",
+    "target": "_blank"
+  },
+  {
+    "label": "3D printer",
+    "year": "1991",
+    "tooltip": "A device used to manufacture objects by depositing material in successive layers according to a prescribed pattern or model",
+    "url": "https://web.archive.org/web/20190508154231id_/https://en.wikipedia.org/wiki/3D_printing",
+    "target": "_blank"
+  },
+  {
+    "label": "SSD",
+    "year": "1991",
+    "tooltip": "SanDisk Corporation (then SunDisk) shipped the first SSD, a 20 MB solid state drive which sold OEM for around $1,000. It was used by IBM in a ThinkPad laptop.",
+    "url": "https://web.archive.org/web/20190508155800id_/https://en.wikipedia.org/wiki/SSD",
+    "target": "_blank"
+  },
+  {
+    "label": "Linux",
+    "year": "1991",
+    "tooltip": "In 1991, while attending the University of Helsinki, Torvalds became curious about operating systems.[40] Frustrated by the licensing of MINIX, which at the time limited it to educational use only, he began to work on his own operating system kernel, which eventually became the Linux kernel.",
+    "url": "https://web.archive.org/web/20190508155817id_/https://en.wikipedia.org/wiki/Linux",
+    "target": "_blank"
+  },
+  {
+    "label": "Cybercrime",
+    "year": "1991",
+    "tooltip": "Criminal activity (such as fraud, theft, or distribution of child pornography) committed using a computer especially to illegally access, transmit, or manipulate data",
+    "url": "https://web.archive.org/web/20190508155848id_/https://en.wikipedia.org/wiki/Cybercrime",
+    "target": "_blank"
+  },
+  {
+    "label": "SMS",
+    "year": "1991",
+    "tooltip": "A technology for sending short text message.",
+    "url": "https://web.archive.org/web/20190508155904id_/https://en.wikipedia.org/wiki/Sms",
+    "target": "_blank"
+  },
+  {
+    "label": "Home page",
+    "year": "1992",
+    "tooltip": "The page typically encountered first on a website that usually contains links to the other pages of the site",
+    "url": "https://web.archive.org/web/20190508155919id_/https://en.wikipedia.org/wiki/Home_page",
+    "target": "_blank"
+  },
+  {
+    "label": "HTML",
+    "year": "1992",
+    "tooltip": "A markup language that is used to create documents on the World Wide Web incorporating text, graphics, sound, video, and hyperlinks",
+    "url": "https://web.archive.org/web/20190508155931id_/https://en.wikipedia.org/wiki/HTML",
+    "target": "_blank"
+  },
+  {
+    "label": "Portal",
+    "year": "1992",
+    "tooltip": "As intranets quickly grew more complex, the concept of intranet portal was born. Today, intranet portals provide value-added capabilities such as managing workflows, increasing collaboration between work groups, and allowing content creators to self-publish their information.",
+    "url": "https://web.archive.org/web/20190508155939id_/https://en.wikipedia.org/wiki/Captive_portal",
+    "target": "_blank"
+  },
+  {
+    "label": "URL",
+    "year": "1992",
+    "tooltip": "The address of a resource (such as a document or website) on the Internet that consists of a communications protocol followed by the name or address of a computer on the network and that often includes additional locating information (such as directory and file names)",
+    "url": "https://web.archive.org/web/20190508155948id_/https://en.wikipedia.org/wiki/URL",
+    "target": "_blank"
+  },
+  {
+    "label": "Augmented Reality",
+    "year": "1992",
+    "tooltip": "An enhanced version of reality created by the use of technology to overlay digital information on an image of something being viewed through a device (such as a smartphone camera)",
+    "url": "https://web.archive.org/web/20190508155954id_/https://en.wikipedia.org/wiki/Augmented_reality",
+    "target": "_blank"
+  },
+  {
+    "label": "PDF",
+    "year": "1992",
+    "tooltip": "A computer file format for the transmission of a multimedia document that is not intended to be edited further and appears unaltered in most computer environments",
+    "url": "https://web.archive.org/web/20190508160016id_/https://en.wikipedia.org/wiki/PDF",
+    "target": "_blank"
+  },
+  {
+    "label": "Generation Y",
+    "year": "1992",
+    "tooltip": "The generation of Americans born in the 1980s and 1990s.",
+    "url": "https://web.archive.org/web/20190508160023id_/https://en.wikipedia.org/wiki/Millennials",
+    "target": "_blank"
+  },
+  {
+    "label": "Banner Ad",
+    "year": "1993",
+    "tooltip": "The first clickable web ad was sold by Global Network Navigator in 1993 to a Silicon Valley law firm.",
+    "url": "https://web.archive.org/web/20190508160031id_/https://en.wikipedia.org/wiki/Web_banner",
+    "target": "_blank"
+  },
+  {
+    "label": "Bookmark",
+    "year": "1993",
+    "tooltip": "Bookmarks have been incorporated in browsers since the Mosaic browser in 1993",
+    "url": "https://web.archive.org/web/20190508160039id_/https://en.wikipedia.org/wiki/Bookmark",
+    "target": "_blank"
+  },
+  {
+    "label": "E-commerce",
+    "year": "1993",
+    "tooltip": "Commerce conducted via the Internet",
+    "url": "https://web.archive.org/web/20190508160044id_/https://en.wikipedia.org/wiki/E-commerce",
+    "target": "_blank"
+  },
+  {
+    "label": "Email",
+    "year": "1993",
+    "tooltip": "Historically, the term electronic mail was used generically for any electronic document transmission. For example, several writers in the early 1970s used the term to describe fax document transmission.",
+    "url": "https://web.archive.org/web/20190508160052id_/https://en.wikipedia.org/wiki/Email",
+    "target": "_blank"
+  },
+  {
+    "label": "Botnet",
+    "year": "1993",
+    "tooltip": "A botnet is a logical collection of internet-connected devices such as computers, smartphones or IoT devices whose security has been breached and control ceded to a third party.",
+    "url": "https://web.archive.org/web/20190508160058id_/https://en.wikipedia.org/wiki/Botnet",
+    "target": "_blank"
+  },
+  {
+    "label": "Meme",
+    "year": "1993",
+    "tooltip": "A meme is an idea, behavior, or style that spreads from person to person within a culture often with the aim of conveying a particular phenomenon, theme, or meaning represented by the meme.",
+    "url": "https://web.archive.org/web/20190508160104id_/https://en.wikipedia.org/wiki/Meme",
+    "target": "_blank"
+  },
+  {
+    "label": "Scraping",
+    "year": "1993",
+    "tooltip": "Data scraping is a technique in which a computer program extracts data from human-readable output coming from another program.In 1993,December, the First crawler-based web search engine - JumpStation.",
+    "url": "https://web.archive.org/web/20190508160121id_/https://en.wikipedia.org/wiki/Scraping",
+    "target": "_blank"
+  },
+  {
+    "label": "Streaming",
+    "year": "1993",
+    "tooltip": "On June 24, 1993, the band was playing a gig at Xerox PARC while elsewhere in the building, scientists were discussing new technology (the Mbone) for broadcasting on the Internet using multicasting.",
+    "url": "https://web.archive.org/web/20190508160133id_/https://en.wikipedia.org/wiki/Streaming",
+    "target": "_blank"
+  },
+  {
+    "label": "Webmail",
+    "year": "1993",
+    "tooltip": "The first Web Mail implementation was developed at CERN in 1993 by Phillip Hallam-Baker as a test of the HTTP protocol stack.",
+    "url": "https://web.archive.org/web/20190508160144id_/https://en.wikipedia.org/wiki/Webmail",
+    "target": "_blank"
+  },
+  {
+    "label": "Webmaster",
+    "year": "1993",
+    "tooltip": "A person responsible for the creation or maintenance of a website especially for a company or organization",
+    "url": "https://web.archive.org/web/20190508160149id_/https://en.wikipedia.org/wiki/Webmaster",
+    "target": "_blank"
+  },
+  {
+    "label": "Website",
+    "year": "1993",
+    "tooltip": "A group of World Wide Web pages usually containing hyperlinks to each other and made available online by an individual, company, educational institution, government, or organization",
+    "url": "https://web.archive.org/web/20190508160156id_/https://en.wikipedia.org/wiki/Website",
+    "target": "_blank"
+  },
+  {
+    "label": "Keylogger",
+    "year": "1993",
+    "tooltip": "A piece of software that records the signals sent from a keyboard to a computer usually for the purpose of gaining information about the user without the user's knowledge",
+    "url": "https://web.archive.org/web/20190508160212id_/https://en.wikipedia.org/wiki/Keylogger",
+    "target": "_blank"
+  },
+  {
+    "label": "Log in",
+    "year": "1993",
+    "tooltip": "The noun login comes from the verb (to) log in, and by analogy with the verb to clock in.",
+    "url": "https://web.archive.org/web/20190508160221id_/https://en.wikipedia.org/wiki/Login",
+    "target": "_blank"
+  },
+  {
+    "label": "Tab",
+    "year": "1993",
+    "tooltip": "Microsoft Word in 1993 used them to simplify submenus.",
+    "url": "https://web.archive.org/web/20190508160238id_/https://en.wikipedia.org/wiki/Tab_key",
+    "target": "_blank"
+  },
+  {
+    "label": "Astroturfing",
+    "year": "1993",
+    "tooltip": "Organized activity that is intended to create a false impression of a widespread, spontaneously arising, grassroots movement in support of or in opposition to something (such as a political policy) but that is in reality initiated and controlled by a concealed group or organization (such as a corporation)",
+    "url": "https://web.archive.org/web/20190508160245id_/https://en.wikipedia.org/wiki/Astroturfing",
+    "target": "_blank"
+  },
+  {
+    "label": "moe",
+    "year": "1993",
+    "tooltip": "Moe characters have expanded within the Japanese media market. In 2004, the market for moe media such as printed media, video, and games was worth 88 billion yen; roughly one-third of the estimated 290 billion yen otaku market in Japan",
+    "url": "https://web.archive.org/web/20190508160256id_/https://en.wikipedia.org/wiki/Moe",
+    "target": "_blank"
+  },
+  {
+    "label": "adsl",
+    "year": "1993",
+    "tooltip": "A gateway is commonly used to make an ADSL connection\nAsymmetric digital subscriber line (ADSL) is a type of digital subscriber line (DSL) technology, a data communications technology that enables faster data transmission over copper telephone lines than a conventional voiceband modem can provide.",
+    "url": "https://web.archive.org/web/20190508160307id_/https://en.wikipedia.org/wiki/Adsl",
+    "target": "_blank"
+  },
+  {
+    "label": "Cookie",
+    "year": "1994",
+    "tooltip": "The term \"cookie\" was coined by web browser programmer Lou Montulli. It was derived from the term \"magic cookie\", which is a packet of data a program receives and sends back unchanged, used by Unix programmers.",
+    "url": "https://web.archive.org/web/20190508160328id_/https://en.wikipedia.org/wiki/Cookie",
+    "target": "_blank"
+  },
+  {
+    "label": "CSS",
+    "year": "1994",
+    "tooltip": "Cascading Style Sheets wasn't the only proposed style language at the time. There was Pei Wei's language from the Viola browser, and around 10 other proposals for style sheet languages were sent to the www-talk and www-html mailing lists.",
+    "url": "https://web.archive.org/web/20190508160335id_/https://en.wikipedia.org/wiki/Css",
+    "target": "_blank"
+  },
+  {
+    "label": "HTTPS",
+    "year": "1994",
+    "tooltip": "Historically, HTTPS connections were primarily used for payment transactions on the World Wide Web, e-mail and for sensitive transactions in corporate information systems. Since 2018, HTTPS is used more often by web users than the original non-secure HTTP, primarily to protect page authenticity on all types of websites; secure accounts; and keep user communications, identity, and web browsing private.",
+    "url": "https://web.archive.org/web/20190508160350id_/https://en.wikipedia.org/wiki/Https",
+    "target": "_blank"
+  },
+  {
+    "label": "Media Queries",
+    "year": "1994",
+    "tooltip": "A media query consists of a media type and one or more expressions, involving media features, which resolve to either true or false.",
+    "url": "https://web.archive.org/web/20190508160359id_/https://en.wikipedia.org/wiki/Media_queries",
+    "target": "_blank"
+  },
+  {
+    "label": "PHP",
+    "year": "1994",
+    "tooltip": "PHP development began in 1994 when Rasmus Lerdorf wrote several Common Gateway Interface programs in C, which he used to maintain his personal homepage.",
+    "url": "https://web.archive.org/web/20190508160411id_/https://en.wikipedia.org/wiki/Php",
+    "target": "_blank"
+  },
+  {
+    "label": "URI",
+    "year": "1994",
+    "tooltip": "URIs and URLs have a shared history. In 1994, Tim Berners-Lee's proposals for hypertext implicitly introduced the idea of a URL as a short string representing a resource that is the target of a hyperlink. At the time, people referred to it as a \"hypertext name\" or \"document name\".",
+    "url": "https://web.archive.org/web/20190508160428id_/https://en.wikipedia.org/wiki/Uri",
+    "target": "_blank"
+  },
+  {
+    "label": "W3C",
+    "year": "1994",
+    "tooltip": "The World Wide Web Consortium (W3C) is the main international standards organization for the World Wide Web (abbreviated WWW or W3).",
+    "url": "https://web.archive.org/web/20190508160439id_/https://en.wikipedia.org/wiki/W3c",
+    "target": "_blank"
+  },
+  {
+    "label": "Compact flash",
+    "year": "1994",
+    "tooltip": "Flash memory mass storage device used mainly in portable electronic devices. The format was specified and the devices were first manufactured by SanDisk in 1994",
+    "url": "https://web.archive.org/web/20190508160445id_/https://en.wikipedia.org/wiki/Web",
+    "target": "_blank"
+  },
+  {
+    "label": "Webcam",
+    "year": "1994",
+    "tooltip": "A camera used in transmitting live images over the World Wide Web",
+    "url": "https://web.archive.org/web/20190508160451id_/https://en.wikipedia.org/wiki/Webcam",
+    "target": "_blank"
+  },
+  {
+    "label": "C#",
+    "year": "1994",
+    "tooltip": "Hejlsberg is C#'s principal designer and lead architect at Microsoft, and was previously involved with the design of Turbo Pascal, Embarcadero Delphi (formerly CodeGear Delphi, Inprise Delphi and Borland Delphi), and Visual J++.",
+    "url": "https://web.archive.org/web/20190508160500id_/https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
+    "target": "_blank"
+  },
+  {
+    "label": "QR code",
+    "year": "1994",
+    "tooltip": "The QR code system was invented in 1994 by the Japanese company Denso Wave. Its purpose was to track vehicles during manufacturing; it was designed to allow high-speed component scanning.",
+    "url": "https://web.archive.org/web/20190508160509id_/https://en.wikipedia.org/wiki/QR_code",
+    "target": "_blank"
+  },
+  {
+    "label": "MP3",
+    "year": "1994",
+    "tooltip": "A computer file format for the compression and storage of digital audio data",
+    "url": "https://web.archive.org/web/20190508160525id_/https://en.wikipedia.org/wiki/Mp3",
+    "target": "_blank"
+  },
+  {
+    "label": "Webzine",
+    "year": "1994",
+    "tooltip": "A publication usually in magazine format that exists solely on the World Wide Web",
+    "url": "https://web.archive.org/web/20190508160534id_/https://en.wikipedia.org/wiki/Webzine",
+    "target": "_blank"
+  },
+  {
+    "label": "Spyware",
+    "year": "1994",
+    "tooltip": "Software that is installed in a computer without the user's knowledge and transmits information about the user's computer activities over the Internet",
+    "url": "https://web.archive.org/web/20190508160542id_/https://en.wikipedia.org/wiki/Spyware",
+    "target": "_blank"
+  },
+  {
+    "label": "Extranet",
+    "year": "1995",
+    "tooltip": "A network (as of a company) similar to an intranet that also allows access by certain others (such as customers or suppliers)",
+    "url": "https://web.archive.org/web/20190508160550id_/https://en.wikipedia.org/wiki/Etranet",
+    "target": "_blank"
+  },
+  {
+    "label": "Javascript",
+    "year": "1995",
+    "tooltip": "It was developed under the name Mocha, the language was officially called LiveScript when it first shipped in beta releases of Netscape Navigator 2.0 in September 1995.",
+    "url": "https://web.archive.org/web/20190508160556id_/https://en.wikipedia.org/wiki/Javascript",
+    "target": "_blank"
+  },
+  {
+    "label": "Spoofing",
+    "year": "1995",
+    "tooltip": "Spoofing attack is a situation in which a person or program successfully masquerades as another by falsifying data, to gain an illegitimate advantage.",
+    "url": "https://web.archive.org/web/20190508160614id_/https://en.wikipedia.org/wiki/Spoofing",
+    "target": "_blank"
+  },
+  {
+    "label": "SSH",
+    "year": "1995",
+    "tooltip": "Ylönen founded SSH Communications Security to market and develop SSH. It was estimated that by the year 2000 the number of users had grown to 2 million.",
+    "url": "https://web.archive.org/web/20190508160620id_/https://en.wikipedia.org/wiki/Ssh",
+    "target": "_blank"
+  },
+  {
+    "label": "Wiki",
+    "year": "1995",
+    "tooltip": "A website that allows visitors to make changes, contributions, or corrections",
+    "url": "https://web.archive.org/web/20190508160626id_/https://en.wikipedia.org/wiki/Wiki",
+    "target": "_blank"
+  },
+  {
+    "label": "Antispam",
+    "year": "1995",
+    "tooltip": "Serving or intended to eliminate or reduce",
+    "url": "https://web.archive.org/web/20190508160634id_/https://en.wikipedia.org/wiki/Antispam",
+    "target": "_blank"
+  },
+  {
+    "label": "Chatiquette",
+    "year": "1995",
+    "tooltip": "The term chatiquette is a variation of netiquette (Internet etiquette) and describes basic rules of online communication.",
+    "url": "https://web.archive.org/web/20190508160639id_/https://en.wikipedia.org/wiki/Etiquette_in_technology",
+    "target": "_blank"
+  },
+  {
+    "label": "ActiveX",
+    "year": "1996",
+    "tooltip": "ActiveX is a software framework created by Microsoft that adapts its earlier Component Object Model (COM) and Object Linking and Embedding technologies for content downloaded from a network, particularly from the World Wide Web.",
+    "url": "https://web.archive.org/web/20190508160445id_/https://en.wikipedia.org/wiki/Web",
+    "target": "_blank"
+  },
+  {
+    "label": "Big data",
+    "year": "1996",
+    "tooltip": "An accumulation of data that is too large and complex for processing by traditional database management tools",
+    "url": "https://web.archive.org/web/20190508160648id_/https://en.wikipedia.org/wiki/Big_data",
+    "target": "_blank"
+  },
+  {
+    "label": "CIFS",
+    "year": "1996",
+    "tooltip": "In 1996, when Sun Microsystems announced WebNFS, Microsoft launched an initiative to rename SMB to Common Internet File System (CIFS) and added more features",
+    "url": "https://web.archive.org/web/20190508160659id_/https://en.wikipedia.org/wiki/Cifs",
+    "target": "_blank"
+  },
+  {
+    "label": "Cloud",
+    "year": "1996",
+    "tooltip": "While the term \"cloud computing\" was popularized with amazon.com releasing its Elastic Compute Cloud product in 2006, references to the phrase \"cloud computing\" appeared as early as 1996, with the first known mention in a Compaq internal document.",
+    "url": "https://web.archive.org/web/20190508160705id_/https://en.wikipedia.org/wiki/Cloud",
+    "target": "_blank"
+  },
+  {
+    "label": "Dynamic website",
+    "year": "1996",
+    "tooltip": "Execusite introduced the first dynamic website solution for the professional marketplace in June 1997.",
+    "url": "https://web.archive.org/web/20190508160724id_/https://en.wikipedia.org/wiki/Dynamic_web_page",
+    "target": "_blank"
+  },
+  {
+    "label": "Phishing",
+    "year": "1996",
+    "tooltip": "A scam by which an Internet user is duped (as by a deceptive e-mail message) into revealing personal or confidential information which the scammer can use illicitly",
+    "url": "https://web.archive.org/web/20190508160731id_/https://en.wikipedia.org/wiki/Phishing",
+    "target": "_blank"
+  },
+  {
+    "label": "Servlet",
+    "year": "1996",
+    "tooltip": "A Servlet is an object that receives a request and generates a response based on that request.",
+    "url": "https://web.archive.org/web/20190508160746id_/https://en.wikipedia.org/wiki/Servlet",
+    "target": "_blank"
+  },
+  {
+    "label": "XML",
+    "year": "1996",
+    "tooltip": "In computing, Extensible Markuo Language is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable.",
+    "url": "https://web.archive.org/web/20190508160755id_/https://en.wikipedia.org/wiki/Xml",
+    "target": "_blank"
+  },
+  {
+    "label": "smartphone",
+    "year": "1996",
+    "tooltip": "A cell phone that includes additional software functions (such as e-mail or an Internet browser)",
+    "url": "https://web.archive.org/web/20190508160808id_/https://en.wikipedia.org/wiki/Smartphone",
+    "target": "_blank"
+  },
+  {
+    "label": "Blog",
+    "year": "1997",
+    "tooltip": "The term \"weblog\" was coined by Jorn Barger",
+    "url": "https://web.archive.org/web/20190508160831id_/https://en.wikipedia.org/wiki/Blog",
+    "target": "_blank"
+  },
+  {
+    "label": "Emoji",
+    "year": "1997",
+    "tooltip": "Any of various small images, symbols, or icons used in text fields in electronic communication (as in text messages, e-mail, and social media) to express the emotional attitude of the writer, convey information succinctly, communicate a message playfully without using words, etc.",
+    "url": "https://web.archive.org/web/20190508160840id_/https://en.wikipedia.org/wiki/Emoji",
+    "target": "_blank"
+  },
+  {
+    "label": "Slashdot",
+    "year": "1997",
+    "tooltip": "Social news website that originally billed itself as \"News for Nerds. Stuff that Matters\". It features news stories on science, technology, and politics that are submitted and evaluated by site users and editors.",
+    "url": "https://web.archive.org/web/20190508160849id_/https://en.wikipedia.org/wiki/Slashdot",
+    "target": "_blank"
+  },
+  {
+    "label": "Metadata Tag",
+    "year": "1997",
+    "tooltip": "In information systems, a tag is a keyword or term assigned to a piece of information. This kind of metadata helps describe an item and allows it to be found again by browsing or searching.",
+    "url": "https://web.archive.org/web/20190508160903id_/https://en.wikipedia.org/wiki/Metadata_tag",
+    "target": "_blank"
+  },
+  {
+    "label": "Frame",
+    "year": "1997",
+    "tooltip": "First introduced by Microsoft Internet Explorer in 1997, standardized in HTML 4.0 Transitional, allowed in HTML5.",
+    "url": "https://web.archive.org/web/20190508160927id_/https://en.wikipedia.org/wiki/Frame",
+    "target": "_blank"
+  },
+  {
+    "label": "Cyberbullying",
+    "year": "1998",
+    "tooltip": "The electronic posting of mean-spirited messages about a person (such as a student) often done anonymously",
+    "url": "https://web.archive.org/web/20190508160934id_/https://en.wikipedia.org/wiki/Cyberbullying",
+    "target": "_blank"
+  },
+  {
+    "label": "Cybersquatter",
+    "year": "1998",
+    "tooltip": "Some countries have specific laws against cybersquatting beyond the normal rules of trademark law. The United States, for example, has the U.S. Anticybersquatting Consumer Protection Act (ACPA) of 1999.",
+    "url": "https://web.archive.org/web/20190508160942id_/https://en.wikipedia.org/wiki/Cybersquatting",
+    "target": "_blank"
+  },
+  {
+    "label": "Netiquette",
+    "year": "1998",
+    "tooltip": "Online etiquette is ingrained into culture, although etiquette in technology is a fairly recent concept. The rules of etiquette that apply when communicating over the Internet or social networks or devices are different from those applied when communicating in person or by audio such as telephone or videophone.",
+    "url": "https://web.archive.org/web/20190508160949id_/https://en.wikipedia.org/wiki/Netiquette",
+    "target": "_blank"
+  },
+  {
+    "label": "SOAP",
+    "year": "1998",
+    "tooltip": "SOAP was designed as an object-access protocol by Dave Winer, Don Box, Bob Atkinson, and Mohsen Al-Ghosein for Microsoft, where Atkinson and Al-Ghosein were working.",
+    "url": "https://web.archive.org/web/20190508160957id_/https://en.wikipedia.org/wiki/Soap",
+    "target": "_blank"
+  },
+  {
+    "label": "Social networking",
+    "year": "1998",
+    "tooltip": "The creation and maintenance of personal and business relationships especially online",
+    "url": "https://web.archive.org/web/20190508161005id_/https://en.wikipedia.org/wiki/Social_network",
+    "target": "_blank"
+  },
+  {
+    "label": "Zigbee",
+    "year": "1998",
+    "tooltip": "The technology defined by the Zigbee specification is intended to be simpler and less expensive than other wireless personal area networks (WPANs), such as Bluetooth or more general wireless networking such as Wi-Fi.",
+    "url": "https://web.archive.org/web/20190508161018id_/https://en.wikipedia.org/wiki/Zigbee",
+    "target": "_blank"
+  },
+  {
+    "label": "texto",
+    "year": "1998",
+    "tooltip": "Date of parution in the dictionary.",
+    "url": "https://web.archive.org/web/20190508161024id_/https://en.wikipedia.org/wiki/Texto",
+    "target": "_blank"
+  },
+  {
+    "label": "P2P",
+    "year": "1999",
+    "tooltip": "Tim Berners-Lee's vision for the World Wide Web was close to a P2P network in that it assumed each user of the web would be an active editor and contributor, creating and linking content to form an interlinked \"web\" of links.",
+    "url": "https://web.archive.org/web/20190508161030id_/https://en.wikipedia.org/wiki/P2p",
+    "target": "_blank"
+  },
+  {
+    "label": "Web 2.0",
+    "year": "1999",
+    "tooltip": "Web 2.0 (also known as Participative and Social Web refers to websites that emphasize user-generated content, ease of use, participatory culture and interoperability for end users. ",
+    "url": "https://web.archive.org/web/20190508161036id_/https://en.wikipedia.org/wiki/Web_2.0",
+    "target": "_blank"
+  },
+  {
+    "label": "Web application",
+    "year": "1999",
+    "tooltip": "In earlier computing models like client–server, the processing load for the application was shared between code on the server and code installed on each client locally. In other words, an application had its own pre-compiled client program which served as its user interface and had to be separately installed on each user's personal computer.",
+    "url": "https://web.archive.org/web/20190508161044id_/https://en.wikipedia.org/wiki/Web_application",
+    "target": "_blank"
+  },
+  {
+    "label": "Firewire",
+    "year": "1999",
+    "tooltip": "Apple first included on-board FireWire in some of its 1999 Macintosh models, and most Apple Macintosh computers manufactured in the years 2000 through 2011 included FireWire ports.",
+    "url": "https://web.archive.org/web/20190508161055id_/https://en.wikipedia.org/wiki/Firewire",
+    "target": "_blank"
+  },
+  {
+    "label": "Extension",
+    "year": "1999",
+    "tooltip": "A browser-extension is a plug-in that extends the functionality of a web browser. Some extensions are authored using web technologies such as HTML, JavaScript, and CSS.",
+    "url": "https://web.archive.org/web/20190508161104id_/https://en.wikipedia.org/wiki/Extension",
+    "target": "_blank"
+  },
+  {
+    "label": "Wifi",
+    "year": "1999",
+    "tooltip": "The first version of the 802.11 protocol was released in 1997 and provided up to 2 Mbit/s link speeds. This was updated in 1999 with 802.11b to permit 11 Mbit/s link speeds and this proved to be popular.",
+    "url": "https://web.archive.org/web/20190508161116id_/https://en.wikipedia.org/wiki/Wifi",
+    "target": "_blank"
+  },
+  {
+    "label": "blog",
+    "year": "1999",
+    "tooltip": "A website that contains online personal reflections, comments, and often",
+    "url": "https://web.archive.org/web/20190508160831id_/https://en.wikipedia.org/wiki/Blog",
+    "target": "_blank"
+  },
+  {
+    "label": "Hackathon",
+    "year": "1999",
+    "tooltip": "OpenBSD's apparent first use of the term referred to a cryptographic development event held in Calgary on June 4, 1999,[3] where ten developers came together to avoid legal problems caused by export regulations of cryptographic software from the United States.",
+    "url": "https://web.archive.org/web/20190508161137id_/https://en.wikipedia.org/wiki/Hackathon",
+    "target": "_blank"
+  },
+  {
+    "label": "pop-up",
+    "year": "1999",
+    "tooltip": "A menu in a graphical user interface (GUI) that appears upon user interaction, such as a right-click mouse operation.",
+    "url": "https://web.archive.org/web/20190508161145id_/https://en.wikipedia.org/wiki/Pop_up",
+    "target": "_blank"
+  },
+  {
+    "label": "3G",
+    "year": "2000",
+    "tooltip": "3G Technology provides an information transfer rate of at least 200 kbit/s. Later 3G releases, often denoted 3.5G and 3.75G, also provide mobile broadband access of several Mbit/s to smartphones and mobile modems in laptop computers.R",
+    "url": "https://web.archive.org/web/20190508161156id_/https://en.wikipedia.org/wiki/3G",
+    "target": "_blank"
+  },
+  {
+    "label": "Google",
+    "year": "2000",
+    "tooltip": "Verb, to use the Google",
+    "url": "https://web.archive.org/web/20190508161204id_/https://en.wikipedia.org/wiki/Google",
+    "target": "_blank"
+  },
+  {
+    "label": "Permalink",
+    "year": "2000",
+    "tooltip": "In the early years of the web, all content was static, and thus all hyperlinks pointed at a filename. Soon, though, many web pages became dynamic, and many URLs began to include query terms.",
+    "url": "https://web.archive.org/web/20190508161226id_/https://en.wikipedia.org/wiki/Permalink",
+    "target": "_blank"
+  },
+  {
+    "label": "Networking",
+    "year": "2000",
+    "tooltip": "In the 2000s, \"networking\" has expanded beyond its roots as a business practice to the point that parents meeting to share child-rearing tips to scientists meeting research colleagues are described as engaging in \"networking\".",
+    "url": "https://web.archive.org/web/20190508161233id_/https://en.wikipedia.org/wiki/Networking",
+    "target": "_blank"
+  },
+  {
+    "label": "BitTorrent",
+    "year": "2001",
+    "tooltip": "BitTorrent is a communication protocol for peer-to-peer file sharing (P2P) which is used to distribute data and electronic files over the Internet.",
+    "url": "https://web.archive.org/web/20190508161240id_/https://en.wikipedia.org/wiki/Bit_torrent",
+    "target": "_blank"
+  },
+  {
+    "label": "Captcha",
+    "year": "2001",
+    "tooltip": "A test to prevent spamming software from accessing a website by requiring visitors to the site to solve a simple puzzle (typically by reading and transcribing a series of numbers or letters from a distorted image) in order to gain access",
+    "url": "https://web.archive.org/web/20190508161249id_/https://en.wikipedia.org/wiki/Captcha",
+    "target": "_blank"
+  },
+  {
+    "label": "Favicon",
+    "year": "2001",
+    "tooltip": "A small icon associated with a particular website or page that is displayed in an Internet browser (as in the browser's address bar or in a list of favorites)",
+    "url": "https://web.archive.org/web/20190508161256id_/https://en.wikipedia.org/wiki/Favicon",
+    "target": "_blank"
+  },
+  {
+    "label": "Splinternet",
+    "year": "2001",
+    "tooltip": "Describing the splintering of Internet technology, some writers see the problem in terms of new devices using different standards. Users no longer require web browsers to access the Internet, as new hardware tools often come with their own \"unique set of standards\" for displaying information.",
+    "url": "https://web.archive.org/web/20190508161314id_/https://en.wikipedia.org/wiki/Splinternet",
+    "target": "_blank"
+  },
+  {
+    "label": "Linkedin",
+    "year": "2002",
+    "tooltip": "The company was founded in December 2002 by Reid Hoffman and founding team members from PayPal and Socialnet.com .",
+    "url": "https://web.archive.org/web/20190508161324id_/https://en.wikipedia.org/wiki/Linkedin",
+    "target": "_blank"
+  },
+  {
+    "label": "Moodle",
+    "year": "2002",
+    "tooltip": "Moodle was originally developed by Martin Dougiamas to help educators create online courses with a focus on interaction and collaborative construction of content, and it is in continual evolution.",
+    "url": "https://web.archive.org/web/20190508161341id_/https://en.wikipedia.org/wiki/Moodle",
+    "target": "_blank"
+  },
+  {
+    "label": "Trackback",
+    "year": "2002",
+    "tooltip": "A trackback is an acknowledgment. This acknowledgment is sent via a network signal from the originating site to the receiving site.",
+    "url": "https://web.archive.org/web/20190508161349id_/https://en.wikipedia.org/wiki/Trackback",
+    "target": "_blank"
+  },
+  {
+    "label": "Vlog",
+    "year": "2002",
+    "tooltip": "A blog that contains video material",
+    "url": "https://web.archive.org/web/20190508161358id_/https://en.wikipedia.org/wiki/Vlog",
+    "target": "_blank"
+  },
+  {
+    "label": "Selfie",
+    "year": "2002",
+    "tooltip": "An image of oneself taken by oneself using a digital camera especially for posting on social networks",
+    "url": "https://web.archive.org/web/20190508161410id_/https://en.wikipedia.org/wiki/Selfie",
+    "target": "_blank"
+  },
+  {
+    "label": "darknet",
+    "year": "2002",
+    "tooltip": "The term gained public acceptance following publication of \"The Darknet and the Future of Content Distribution\", a 2002 paper by Peter Biddle, Paul England, Marcus Peinado, and Bryan Willman, four employees of Microsoft who argued the presence of the darknet was the primary hindrance to the development of workable digital rights management (DRM) technologies and made copyright infringement inevitable.",
+    "url": "https://web.archive.org/web/20190508161419id_/https://en.wikipedia.org/wiki/Darknet",
+    "target": "_blank"
+  },
+  {
+    "label": "Wordpress",
+    "year": "2003",
+    "tooltip": "In 2004 the licensing terms for the competing Movable Type package were changed by Six Apart, resulting in many of its most influential users migrating to WordPress.",
+    "url": "https://web.archive.org/web/20190508161429id_/https://en.wikipedia.org/wiki/Wordpress",
+    "target": "_blank"
+  },
+  {
+    "label": "Flarf",
+    "year": "2003",
+    "tooltip": "Flarfs first practitioners, working in loose collaboration on an email listserv, used an approach that rejected conventional standards of quality and explored subject matter and tonality not typically considered appropriate for poetry.",
+    "url": "https://web.archive.org/web/20190508161438id_/https://en.wikipedia.org/wiki/Flaf",
+    "target": "_blank"
+  },
+  {
+    "label": "Facebook",
+    "year": "2004",
+    "tooltip": "Zuckerberg wrote a program called \"Facemash\" in 2003 while attending Harvard University as a sophomore (second-year student).",
+    "url": "https://web.archive.org/web/20190508161450id_/https://en.wikipedia.org/wiki/Facebook",
+    "target": "_blank"
+  },
+  {
+    "label": "Ubuntu",
+    "year": "2004",
+    "tooltip": "Ubuntu is named after the Southern African philosophy of ubuntu (literally, 'human-ness'), which Canonical suggests can be loosely translated as \"humanity to others\" or \"I am what I am because of who we all are\".",
+    "url": "https://web.archive.org/web/20190508161510id_/https://en.wikipedia.org/wiki/Ubuntu",
+    "target": "_blank"
+  },
+  {
+    "label": "Podcast",
+    "year": "2004",
+    "tooltip": "A program (as of music or talk) made available in digital format for automatic download over the Internet",
+    "url": "https://web.archive.org/web/20190508161526id_/https://en.wikipedia.org/wiki/Podcast",
+    "target": "_blank"
+  },
+  {
+    "label": "Fomo",
+    "year": "2004",
+    "tooltip": "Fear of missing out",
+    "url": "https://web.archive.org/web/20190508161535id_/https://en.wikipedia.org/wiki/Fomo",
+    "target": "_blank"
+  },
+  {
+    "label": "Loot box",
+    "year": "2004",
+    "tooltip": "In video games, a loot box (sometimes loot crate or prize crate, among other names) is a consumable virtual item which can be redeemed to receive a randomized selection of further virtual items, ranging from simple customization options for a player's avatar or character, to game-changing equipment such as weapons and armor.",
+    "url": "https://web.archive.org/web/20190508161542id_/https://en.wikipedia.org/wiki/Loot_box",
+    "target": "_blank"
+  },
+  {
+    "label": "Ajax",
+    "year": "2005",
+    "tooltip": "The term Ajax was publicly used on 18 February 2005 by Jesse James Garrett in an article titled Ajax: A New Approach to Web Applications, based on techniques used on Google pages",
+    "url": "https://web.archive.org/web/20190508161555id_/https://en.wikipedia.org/wiki/Ajax",
+    "target": "_blank"
+  },
+  {
+    "label": "Microblogging",
+    "year": "2005",
+    "tooltip": "Blogging done with severe space or size constraints typically by posting frequent brief messages about personal activities",
+    "url": "https://web.archive.org/web/20190508161602id_/https://en.wikipedia.org/wiki/Microblogging",
+    "target": "_blank"
+  },
+  {
+    "label": "Pharming",
+    "year": "2005",
+    "tooltip": "The term \"pharming\" is a neologism based on the words \"farming\" and \"phishing\". Phishing is a type of social-engineering attack to obtain access credentials, such as user names and passwords.",
+    "url": "https://web.archive.org/web/20190508161609id_/https://en.wikipedia.org/wiki/Pharming",
+    "target": "_blank"
+  },
+  {
+    "label": "Site map",
+    "year": "2005",
+    "tooltip": "Google introduced the Sitemaps protocol so web developers can publish lists of links from across their sites.",
+    "url": "https://web.archive.org/web/20190508161616id_/https://en.wikipedia.org/wiki/Site_map",
+    "target": "_blank"
+  },
+  {
+    "label": "Beta Software",
+    "year": "2005",
+    "tooltip": "As the Internet has facilitated rapid and inexpensive distribution of software, companies have begun to take a looser approach to use of the word \"beta\".",
+    "url": "https://web.archive.org/web/20190508161624id_/https://en.wikipedia.org/wiki/Beta_software",
+    "target": "_blank"
+  },
+  {
+    "label": "Dashboard",
+    "year": "2005",
+    "tooltip": "Dashboard was first introduced in Mac OS X 10.4 Tiger. It can be activated as an application, from the Dock, Launchpad or Spotlight. It can also be accessed by a dashboard key.",
+    "url": "https://web.archive.org/web/20190508161637id_/https://en.wikipedia.org/wiki/Dashboard",
+    "target": "_blank"
+  },
+  {
+    "label": "Follower",
+    "year": "2005",
+    "tooltip": "The first scholarly definition and examination of friending and defriending (the act of removing someone from one's friend list, also called unfriending) was David Fono and Kate Raynes-Goldie's \"Hyperfriendship and beyond: Friends and Social Norms on LiveJournal\" from 2005,[7] which identified the use of the term as both a noun and a verb by users of early social network site and blogging platform LiveJournal, which was originally launched in 1999.",
+    "url": "https://web.archive.org/web/20190508161644id_/https://en.wikipedia.org/wiki/Follower",
+    "target": "_blank"
+  },
+  {
+    "label": "jQuery",
+    "year": "2006",
+    "tooltip": "jQuery's syntax is designed to make it easier to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications.",
+    "url": "https://web.archive.org/web/20190508161650id_/https://en.wikipedia.org/wiki/Jquery",
+    "target": "_blank"
+  },
+  {
+    "label": "Smishing",
+    "year": "2006",
+    "tooltip": "In computing, SMS phishing or smishing is a form of criminal activity using social engineering techniques. Phishing is the act of attempting to acquire personal information such as passwords and details by masquerading as a trustworthy entity in an electronic communication.",
+    "url": "https://web.archive.org/web/20190508161659id_/https://en.wikipedia.org/wiki/Smishing",
+    "target": "_blank"
+  },
+  {
+    "label": "CrowdFunding",
+    "year": "2006",
+    "tooltip": "The practice of obtaining needed funding (as for a new business) by soliciting contributions from a large number of people especially from the online community",
+    "url": "https://web.archive.org/web/20190508161712id_/https://en.wikipedia.org/wiki/Crowdfunding",
+    "target": "_blank"
+  },
+  {
+    "label": "Algocracy",
+    "year": "2006",
+    "tooltip": "A. Aneesh is the author of Virtual Migration (2006) who put forward the concept of \"algocracy\" now widely used to convey the growing importance and threat of algorithms in social life.",
+    "url": "https://web.archive.org/web/20190508161725id_/https://tinyletter.com/nicolasnova/letters/lagniappe-soixante-et-un-moe-algocracy-neuralism-angewandte",
+    "target": "_blank"
+  },
+  {
+    "label": "Hashtag",
+    "year": "2007",
+    "tooltip": "A word or phrase preceded by the symbol # that classifies or categorizes the accompanying text (such as a tweet)",
+    "url": "https://web.archive.org/web/20190508161732id_/https://en.wikipedia.org/wiki/Hashtag",
+    "target": "_blank"
+  },
+  {
+    "label": "HTML5",
+    "year": "2007",
+    "tooltip": "Its goals are to improve the language with support for the latest multimedia and other new features; to keep the language both easily readable by humans and consistently understood by computers and devices such as Web browsers, parsers, etc., without XHTML's rigidity.",
+    "url": "https://web.archive.org/web/20190508161746id_/https://en.wikipedia.org/wiki/Html5",
+    "target": "_blank"
+  },
+  {
+    "label": "Webhook",
+    "year": "2007",
+    "tooltip": "A webhook in web development is a method of augmenting or altering the behaviour of a web page, or web application, with custom callbacks.",
+    "url": "chrome-error://chromewebdata//undefinedid_",
+    "target": "_blank"
+  },
+  {
+    "label": "Wordart",
+    "year": "2007",
+    "tooltip": "Wordart is a text-styling utility. It allows users to create stylized text with various \"special effects\" such as textures, outlines, and many other manipulations that are not available through the standard font formatting.",
+    "url": "https://web.archive.org/web/20190508164239id_/https://en.wikipedia.org/wiki/Wordart",
+    "target": "_blank"
+  },
+  {
+    "label": "Farecasting",
+    "year": "2007",
+    "tooltip": "Predicting the ideal moment to buy a plane ticket has long been the holy grail of travel planning.",
+    "url": "https://web.archive.org/web/20190508164256id_/https://en.wikipedia.org/wiki/Farecasting",
+    "target": "_blank"
+  },
+  {
+    "label": "Spoil",
+    "year": "2007",
+    "tooltip": "Date of parution in the dictionary.",
+    "url": "https://web.archive.org/web/20190508164302id_/https://en.wikipedia.org/wiki/Spoiler",
+    "target": "_blank"
+  },
+  {
+    "label": "Bitcoins",
+    "year": "2008",
+    "tooltip": "A digital currency created for use in",
+    "url": "https://web.archive.org/web/20190508164311id_/https://en.wikipedia.org/wiki/Bitcoins",
+    "target": "_blank"
+  },
+  {
+    "label": "Nomophobia",
+    "year": "2008",
+    "tooltip": "Fear of being without access to a working cell phone",
+    "url": "https://web.archive.org/web/20190508164338id_/https://en.wikipedia.org/wiki/Nomophobia",
+    "target": "_blank"
+  },
+  {
+    "label": "Pinterest",
+    "year": "2009",
+    "tooltip": "Pinterest CEO Ben Silbermann summarized the company as a \"catalogue of ideas\" that inspires users to \"go out and do that thing\", rather than as an image-based social network.",
+    "url": "https://web.archive.org/web/20190508164344id_/https://en.wikipedia.org/wiki/Pinterest",
+    "target": "_blank"
+  },
+  {
+    "label": "CashTag",
+    "year": "2009",
+    "tooltip": "StockTwits used ticker symbols preceded by the dollar sign to create \"cashtags\".",
+    "url": "https://web.archive.org/web/20190508164352id_/https://en.wikipedia.org/wiki/Cashtag",
+    "target": "_blank"
+  },
+  {
+    "label": "Instagram",
+    "year": "2010",
+    "tooltip": "To post (a picture) to the Instagram photo-sharing service",
+    "url": "https://web.archive.org/web/20190508164404id_/https://en.wikipedia.org/wiki/Instagram",
+    "target": "_blank"
+  },
+  {
+    "label": "Responsive",
+    "year": "2010",
+    "tooltip": "The first site to feature a layout that adapts to browser viewport width was Audi.com launched in late 2001, created by a team at razorfish.In the early 2000s, terms like fluid design andliquid layout were, sort of, primitive versions of RWD.",
+    "url": "https://web.archive.org/web/20190508164413id_/https://en.wikipedia.org/wiki/Responsive_web_design",
+    "target": "_blank"
+  },
+  {
+    "label": "Gamification",
+    "year": "2010",
+    "tooltip": "The process of adding games or gamelike elements to something (such as a task) so as to encourage participation",
+    "url": "https://web.archive.org/web/20190508164420id_/https://en.wikipedia.org/wiki/Gamification",
+    "target": "_blank"
+  },
+  {
+    "label": "Kaggler",
+    "year": "2010",
+    "tooltip": "World's largest community of data scientists and machine learners, owned by Google, Inc. Kaggle got its start by offering machine learning competitions and now also offers a public data platform, a cloud-based workbench for data science, and short form AI education.",
+    "url": "https://web.archive.org/web/20190508164431id_/https://en.wikipedia.org/wiki/Kaggle",
+    "target": "_blank"
+  },
+  {
+    "label": "Vaporwave",
+    "year": "2010",
+    "tooltip": "Vaporwave is an Internet-based microgenre that was built upon the experimental and ironic tendencies of genres such as chillwave and hypnagogic pop.",
+    "url": "https://web.archive.org/web/20190508164441id_/https://en.wikipedia.org/wiki/Vaporwave",
+    "target": "_blank"
+  },
+  {
+    "label": "iCloud",
+    "year": "2011",
+    "tooltip": "It replaced Apple's MobileMe service, acting as a data syncing center for email, contacts, calendars, bookmarks, notes, reminders, iWork documents, photos and other data.",
+    "url": "https://web.archive.org/web/20190508164453id_/https://en.wikipedia.org/wiki/Icloud",
+    "target": "_blank"
+  },
+  {
+    "label": "Defriend",
+    "year": "2011",
+    "tooltip": "To delete a person from a list of friends or acquaintances on Facebook.",
+    "url": "https://web.archive.org/web/20190508164459id_/https://en.wikipedia.org/wiki/Internet_relationship",
+    "target": "_blank"
+  },
+  {
+    "label": "Chromebook",
+    "year": "2011",
+    "tooltip": "Critical reaction to the device was initially skeptical, with some reviewers, such as then New York Times technology columnist David Pogue,[9] unfavorably comparing the value proposition of Chromebooks with that of more fully featured laptops running the Microsoft Windows operating system.",
+    "url": "https://web.archive.org/web/20190508164508id_/https://en.wikipedia.org/wiki/Chromebook",
+    "target": "_blank"
+  },
+  {
+    "label": "Snapchat",
+    "year": "2011",
+    "tooltip": "One exception was the decision to keep a mascot designed by Brown, \"Ghostface Chillah\", named after Ghostface Killah of the hip-hop group Wu-Tang Clan.",
+    "url": "https://web.archive.org/web/20190508164516id_/https://en.wikipedia.org/wiki/Snapchat",
+    "target": "_blank"
+  },
+  {
+    "label": "Blockchain",
+    "year": "2011",
+    "tooltip": "A digital database containing information (such as records of financial transactions) that can be simultaneously used and shared within a large decentralized, publicly accessible network",
+    "url": "https://web.archive.org/web/20190508164525id_/https://en.wikipedia.org/wiki/Blockchain",
+    "target": "_blank"
+  },
+  {
+    "label": "Geeker",
+    "year": "2011",
+    "tooltip": "Date of parution in the dictionary.",
+    "url": "https://web.archive.org/web/20190508164546id_/https://en.wikipedia.org/wiki/Geeker",
+    "target": "_blank"
+  },
+  {
+    "label": "Troll",
+    "year": "2012",
+    "tooltip": "Application of the term troll is subjective. Some readers may characterize a post as trolling, while others may regard the same post as a legitimate contribution to the discussion, even if controversial.",
+    "url": "https://web.archive.org/web/20190508164603id_/https://en.wikipedia.org/wiki/Troll",
+    "target": "_blank"
+  },
+  {
+    "label": "Heartbleed",
+    "year": "2012",
+    "tooltip": "Heartbleed is a security bug in the OpenSSL cryptography library, which is a widely used implementation of the Transport Layer Security protocol. It was introduced into the software in 2012 and publicly disclosed in April 2014.",
+    "url": "https://web.archive.org/web/20190508164613id_/https://en.wikipedia.org/wiki/Heartbleed",
+    "target": "_blank"
+  },
+  {
+    "label": "4G",
+    "year": "2013",
+    "tooltip": "4G provides, in addition to the usual voice and other services of 3G, mobile broadband Internet access, for example to laptops with wireless modems, to smartphones, and to other mobile devices.",
+    "url": "https://web.archive.org/web/20190508164622id_/https://en.wikipedia.org/wiki/4G",
+    "target": "_blank"
+  },
+  {
+    "label": "Trickjumping",
+    "year": "2015",
+    "tooltip": "Movement mode in First Person Shooter Games (FPS) which involves agile movement using the game's physics engine.",
+    "url": "https://web.archive.org/web/20190508164633id_/https://en.wikipedia.org/wiki/Slacktivism",
+    "target": "_blank"
+  },
+  {
+    "label": "Clicktivism",
+    "year": "2015",
+    "tooltip": "Referring to engaging volunteer participants via online platforms and social networks.",
+    "url": "https://web.archive.org/web/20190508164639id_/https://tinyletter.com/nicolasnova/letters/livraison-trente-cinq-lift16-technologie-x-magie-1983-et-un-mardi-gras-cajun",
+    "target": "_blank"
+  },
+  {
+    "label": "Skreaming",
+    "year": "2015",
+    "tooltip": "Corresponds to this grueling practice involving having to speak very loudly in a meeting to make itself heard by a participant participating remotely via audio / videoconference",
+    "url": "https://web.archive.org/web/20190508164732id_/https://tinyletter.com/nicolasnova/letters/livraison-trente-deux-kicksnark-circulations-high-tech-pirate-book-et-clairage-pour-selfie",
+    "target": "_blank"
+  },
+  {
+    "label": "Kicksnark",
+    "year": "2015",
+    "tooltip": "Verb describing the action of supporting a project by subscription (crowdfunding) while hoping / knowing that it will not reach its objective of fundraising.",
+    "url": "https://web.archive.org/web/20190508164732id_/https://tinyletter.com/nicolasnova/letters/livraison-trente-deux-kicksnark-circulations-high-tech-pirate-book-et-clairage-pour-selfie",
+    "target": "_blank"
+  },
+  {
+    "label": "Poseurmoji",
+    "year": "2015",
+    "tooltip": "Emoji announced with fanfare as new and original while it is not included in the certifications of the Unicode Consortium and therefore unusable.",
+    "url": "chrome-error://chromewebdata//undefinedid_",
+    "target": "_blank"
+  },
+  {
+    "label": "Phubbing",
+    "year": "2015",
+    "tooltip": "Term coined as part of a campaign by Macquarie Dictionary to describe the habit of snubbing someone in favour of a mobile phone.",
+    "url": "https://web.archive.org/web/20190508164806id_/https://en.wikipedia.org/wiki/Phubbing",
+    "target": "_blank"
+  },
+  {
+    "label": "Brouteurs",
+    "year": "2015",
+    "tooltip": "Idiom used in Ivory Coast to designate crooks acting with information and communication technologies.",
+    "url": "https://web.archive.org/web/20190508164814id_/https://tinyletter.com/nicolasnova/letters/livraison-vingt-huit-maskenfreiheit-des-mturks-pour-d-crypter-les-glitchs-et-le-tsundoku-actuel",
+    "target": "_blank"
+  },
+  {
+    "label": "Plogging",
+    "year": "2015",
+    "tooltip": "Transposition of the logic of (web) logging to the platforms of social networks like Facebook, Twitter, etc.",
+    "url": "https://web.archive.org/web/20190508164818id_/https://www.wired.com/2015/10/long-blogging-hello-yep-going-say-plogging/",
+    "target": "_blank"
+  },
+  {
+    "label": "Speakularity",
+    "year": "2015",
+    "tooltip": "Term proposed by journalist Matt Thompson that refers to the transition to a society in which \"the default expectation for recorded speech will be searchable and readable, nearly in the moment.\"",
+    "url": "https://web.archive.org/web/20190508164833id_/https://tinyletter.com/nicolasnova/letters/livraison-vingt-six-sega-core-dadabots-si-ge-et-algorithmes-le-glitch-du-virage-du-tour-de-france",
+    "target": "_blank"
+  },
+  {
+    "label": "Stratocaching",
+    "year": "2015",
+    "tooltip": "\nEvolution of the concept of geocaching, the principle rests on the idea of ​​finding flying objects fallen on the ground: balloons, flying capsules, etc. ",
+    "url": "https://web.archive.org/web/20190508164833id_/https://tinyletter.com/nicolasnova/letters/livraison-vingt-six-sega-core-dadabots-si-ge-et-algorithmes-le-glitch-du-virage-du-tour-de-france",
+    "target": "_blank"
+  },
+  {
+    "label": "Spoti-stalker",
+    "year": "2015",
+    "tooltip": "Term for voyeurs on Spotify, who play songs that are similar to your playlist.\n",
+    "url": "https://web.archive.org/web/20190508164851id_/https://tinyletter.com/nicolasnova/letters/livraison-vingt-quatre-pk-pagers-ipod-touch-et-feature-phones-lee-scratch-perry",
+    "target": "_blank"
+  },
+  {
+    "label": "Crapularity",
+    "year": "2016",
+    "tooltip": "Quantity of poor quality objects that could emerge from the combination of 3D printing technologies, spam and micro-payment.",
+    "url": "https://web.archive.org/web/20190508164859id_/https://tinyletter.com/nicolasnova/letters/livraison-trente-sept-human-computation-observer-le-vite-obsol-te-et-d-placement-adaptation-extension-d-tournement",
+    "target": "_blank"
+  },
+  {
+    "label": "Commentariat",
+    "year": "2016",
+    "tooltip": "Word-bag composed of the words \"commentary\" and \"proletariat\", and which refers to the class of journalists and media people.",
+    "url": "https://web.archive.org/web/20190508164859id_/https://tinyletter.com/nicolasnova/letters/livraison-trente-sept-human-computation-observer-le-vite-obsol-te-et-d-placement-adaptation-extension-d-tournement",
+    "target": "_blank"
+  },
+  {
+    "label": "Zooglers",
+    "year": "2016",
+    "tooltip": "This is when a person named Zoob comes up with a new word relating to Google.",
+    "url": "https://web.archive.org/web/20190508164859id_/https://tinyletter.com/nicolasnova/letters/livraison-trente-sept-human-computation-observer-le-vite-obsol-te-et-d-placement-adaptation-extension-d-tournement",
+    "target": "_blank"
+  },
+  {
+    "label": "Algorave",
+    "year": "2016",
+    "tooltip": "a form of rave that proposes to make people dance on loops programmed in real time (live coding) by the musicians in front of the public.",
+    "url": "https://web.archive.org/web/20190508164914id_/https://tinyletter.com/nicolasnova/letters/livraison-trentre-six-iphone-favela-chic-et-du-rikimbili",
+    "target": "_blank"
+  },
+  {
+    "label": "Microporn",
+    "year": "2016",
+    "tooltip": "Term used to describe pornographic video sequences presented as animated GIF",
+    "url": "chrome-error://chromewebdata//undefinedid_",
+    "target": "_blank"
+  },
+  {
+    "label": "Belfie",
+    "year": "2017",
+    "tooltip": "A 'bottom selfie' - a photographic self-portrait featuring the buttocks, usually posted by female celebrities on social media networks.",
+    "url": "https://web.archive.org/web/20190508165005id_/https://www.urbandictionary.com/define.php?term=belfie",
+    "target": "_blank"
+  },
+  {
+    "label": "Flop account",
+    "year": "2017",
+    "tooltip": "An account usually found on instagram typically made fandom based to make fun of and demean what they call \"flops\" and things they find embarassing .",
+    "url": "https://web.archive.org/web/20190508165013id_/https://www.urbandictionary.com/define.php?term=flop%20account",
+    "target": "_blank"
+  },
+  {
+    "label": "Mutual",
+    "year": "2017",
+    "tooltip": "Transposition of the term \"mutual friends / contacts\", which by extension refers to the portion of contacts on an online social network that follows each other.",
+    "url": "https://web.archive.org/web/20190508165022id_/https://tinyletter.com/nicolasnova/letters/lagniappe-quarante-neuf-urks-e-waste-d-agbogbloshie-ethique-et-design",
+    "target": "_blank"
+  },
+  {
+    "label": "Page parking",
+    "year": "2017",
+    "tooltip": "Tactical use of tabs in the web browser that consists of \"opening multiple pages in rapid-fire succession\".",
+    "url": "https://web.archive.org/web/20190508165029id_/https://www.nngroup.com/articles/multi-tab-page-parking/",
+    "target": "_blank"
+  },
+  {
+    "label": "Computational Propaganda",
+    "year": "2017",
+    "tooltip": "Term used to refer to the automation of the production and propagation of partial or erroneous messages and information.",
+    "url": "https://web.archive.org/web/20190508165117id_/https://tinyletter.com/nicolasnova/letters/lagniappe-quarante-six-leijiverse-chungking-mansions-et-une-requ-te-sur-le-basicois",
+    "target": "_blank"
+  },
+  {
+    "label": "One-up",
+    "year": "2017",
+    "tooltip": "Synonymous with \"extra life\" in video games, and which lesser known is a legacy of the 1960s pinball machines",
+    "url": "https://web.archive.org/web/20190508165123id_/https://www.atlasobscura.com/articles/how-1up-went-from-pinball-to-gamer-speak",
+    "target": "_blank"
+  },
+  {
+    "label": "Nosetap",
+    "year": "2017",
+    "tooltip": "Neologism corresponding to the use of his nose to interact with the screen of a touch screen",
+    "url": "https://web.archive.org/web/20190508165117id_/https://tinyletter.com/nicolasnova/letters/lagniappe-quarante-six-leijiverse-chungking-mansions-et-une-requ-te-sur-le-basicois",
+    "target": "_blank"
+  },
+  {
+    "label": "Pogosticking",
+    "year": "2017",
+    "tooltip": "The fact of being sent back to the beginning of a page / list after scrolling down, left the page, and pressed the \"back\" button",
+    "url": "https://web.archive.org/web/20190508165150id_/https://tinyletter.com/nicolasnova/letters/livraison-quarante-cinq-soeurveillance-pogosticking-et-un-plafond-mysterieux",
+    "target": "_blank"
+  },
+  {
+    "label": "Brogrammer",
+    "year": "2017",
+    "tooltip": "Suitcase word (\"bro\" and \"programmer\") formed to describe macho programmers.",
+    "url": "https://web.archive.org/web/20190508165150id_/https://tinyletter.com/nicolasnova/letters/livraison-quarante-cinq-soeurveillance-pogosticking-et-un-plafond-mysterieux",
+    "target": "_blank"
+  },
+  {
+    "label": "Puppy syndrome",
+    "year": "2017",
+    "tooltip": "Trend of forms recognition programs, trained with machine learning technologies, to identify dogs in all kinds of images.",
+    "url": "https://web.archive.org/web/20190508165242id_/https://tinyletter.com/nicolasnova/letters/livraison-quarante-deux-puppy-syndrome-histoires-de-fant-mes-vr-alt-ai",
+    "target": "_blank"
+  },
+  {
+    "label": "Telepresenty",
+    "year": "2017",
+    "tooltip": "Adjective denoting the somewhat factitious character of a social situation, as if it suffered from bugs",
+    "url": "https://web.archive.org/web/20190508165242id_/https://tinyletter.com/nicolasnova/letters/livraison-quarante-deux-puppy-syndrome-histoires-de-fant-mes-vr-alt-ai",
+    "target": "_blank"
+  },
+  {
+    "label": "Wiki gnome",
+    "year": "2017",
+    "tooltip": "Wiki users whose humility leads them to not trumpet at all goes the amount of contributions they make on the Wikipedia.",
+    "url": "https://web.archive.org/web/20190508165323id_/https://en.wikipedia.org/wiki/Wikipedia:WikiGnome",
+    "target": "_blank"
+  },
+  {
+    "label": "Name-fagging",
+    "year": "2017",
+    "tooltip": "Pejorative expression used to describe the excessive publication of information about his nickname during hacksand other incidents online, in order to boast or to draw attention to oneself.",
+    "url": "https://web.archive.org/web/20190508165330id_/https://tinyletter.com/nicolasnova/letters/livraison-trente-neuf-pp-r-t-reverie-partie-2-big-now",
+    "target": "_blank"
+  },
+  {
+    "label": "Sodcasting",
+    "year": "2017",
+    "tooltip": "Act of playing music through the speaker on a mobile phone, usually on public transport. Commonly practiced by young people wearing polyester, branded sportswear with dubious musical taste.",
+    "url": "https://web.archive.org/web/20190508165338id_/https://tinyletter.com/nicolasnova/letters/livraison-trente-huit-toetsenbordschreeuwers-usages-et-m-susages-des-bots-le-retour-des-pigeons-bloggeurs",
+    "target": "_blank"
+  },
+  {
+    "label": "Neurealism",
+    "year": "2018",
+    "tooltip": "A nice label for post-uncanny neural art",
+    "url": "https://web.archive.org/web/20190508165342id_/https://twitter.com/quasimondo/status/938426791173255168?s=11",
+    "target": "_blank"
+  },
+  {
+    "label": "GANism",
+    "year": "2018",
+    "tooltip": "Overfitting a neural-net to generating tiny ugly images, that are then sold with the \"made by a creative AI",
+    "url": "https://web.archive.org/web/20190508165351id_/https://twitter.com/samim/status/1047089182395576321?s=11",
+    "target": "_blank"
+  },
+  {
+    "label": "Toad",
+    "year": "2018",
+    "tooltip": "A topic trending on Twitter and I want to look it up and find out what the conversation is all about, but oh no, I really didn't want to learn that.",
+    "url": "https://web.archive.org/web/20190508165403id_/https://twitter.com/ethanz/status/1042083399295483907?refsrc=email&s=11",
+    "target": "_blank"
+  },
+  {
+    "label": "Halfseen",
+    "year": "2018",
+    "tooltip": "Reading (the beginning of) a message without opening it",
+    "url": "https://web.archive.org/web/20190508165413id_/https://www.nextnature.net/2018/09/halfseen/",
+    "target": "_blank"
+  },
+  {
+    "label": "Patadata",
+    "year": "2018",
+    "tooltip": "A pataphysical version of meta-data, which allows potentiel new forms of information foraging, through facetious analogy-based reasoning",
+    "url": "https://web.archive.org/web/20190508165429id_/https://pdfs.semanticscholar.org/150b/4e5cae09ef8eb8217e47f09e3a63a6ff8e09.pdf",
+    "target": "_blank"
+  },
+  {
+    "label": "Shadowbanning",
+    "year": "2018",
+    "tooltip": "The act of blocking a user or their content from an online community such that it will not be readily apparent to the user that they have been banned.",
+    "url": "https://web.archive.org/web/20190508165432id_/https://en.wikipedia.org/wiki/Shadow_banning",
+    "target": "_blank"
+  },
+  {
+    "label": "Snowbot",
+    "year": "2018",
+    "tooltip": "Nickname used for telepresence robots used for video-conferencing, such as the one on which Edward Snowden appeared in his talk at the \"Technology, Entertainment, Design",
+    "url": "https://web.archive.org/web/20190508165445id_/https://amp.theguardian.com/us-news/shortcuts/2016/jun/27/snowbot-edward-snowden-telepresence-robot",
+    "target": "_blank"
+  },
+  {
+    "label": "Congotronics",
+    "year": "2018",
+    "tooltip": "A term used to described a compilation, and probably a set of music styles of Kinshasa, which assemble traditional trance music and heavily-distorted sounds generated by DIY amplification of their instruments",
+    "url": "https://web.archive.org/web/20190508165459id_/https://www.ethnomusicologyreview.ucla.edu/journal/volume/16/piece/460",
+    "target": "_blank"
+  },
+  {
+    "label": "Wiki-hounding",
+    "year": "2018",
+    "tooltip": "A form of online stalking that is based on the singling out of one or more editors, joining discussions on multiple pages or topics they may edit or multiple debates where they contribute, to repeatedly confront or inhibit their work",
+    "url": "https://web.archive.org/web/20190508165522id_/https://en.wikipedia.org/wiki/Wikipedia:Harassment",
+    "target": "_blank"
+  },
+  {
+    "label": "Hanmoji",
+    "year": "2018",
+    "tooltip": "using emoji to represent Chinese characters",
+    "url": "https://web.archive.org/web/20190508165529id_/https://docs.google.com/forms/d/e/1FAIpQLSdmGyvWkpAwqHiZL_4BdOrWzqZm7CCGPSNbALK9WGaNhwtKaw/viewform?usp=send_form",
+    "target": "_blank"
+  },
+  {
+    "label": "Investidating",
+    "year": "2018",
+    "tooltip": "scouring photos for a conversation starter on Tinder",
+    "url": "https://web.archive.org/web/20190508165541id_/https://www.theguardian.com/technology/2018/jul/05/tinder-online-dating-apps-photos",
+    "target": "_blank"
+  },
+  {
+    "label": "Computationalism",
+    "year": "2018",
+    "tooltip": "the exaltation of computational systems specifically to manage, replicate, analyze and replace human systems of knowledge. The enthusiasm such researchers display for these approaches is hard to distinguish from contempt",
+    "url": "https://web.archive.org/web/20190508165608id_/https://twitter.com/dgolumbia/status/993199668434735105",
+    "target": "_blank"
+  },
+  {
+    "label": "Orphic media",
+    "year": "2018",
+    "tooltip": "Media devices that allow individuals to control and customize their sonic environment, such as noise-cancelling headphones, smartphone apps that turn background noise into a seaside ambience, hearing aids that filter and alter the sound of the world",
+    "url": "https://web.archive.org/web/20190508165620id_/https://www.academia.edu/30421108/Hush_Media_and_Sonic_Self-Control_Duke_UP_2019_",
+    "target": "_blank"
+  },
+  {
+    "label": "Finsta",
+    "year": "2018",
+    "tooltip": "A spam Instagram account where people post what they are too afraid to post on the real account: ugly selfies, weird memes, private jokes.",
+    "url": "https://web.archive.org/web/20190508165640id_/https://medium.com/bits-pixels/finstagram-the-instagram-revolution-737999d40014",
+    "target": "_blank"
+  },
+  {
+    "label": "Code smell",
+    "year": "2018",
+    "tooltip": "any symptom in the source code of a program that possibly indicates a deeper problem",
+    "url": "https://web.archive.org/web/20190508165701id_/https://en.wikipedia.org/wiki/Code_smell",
+    "target": "_blank"
+  },
+  {
+    "label": "Algotorial",
+    "year": "2018",
+    "tooltip": "A combination of the words “algorithm” and “editorial”, where data-generated recommendations are combined with the human curation of music experts\"",
+    "url": "https://web.archive.org/web/20190508165713id_/https://tinyletter.com/nicolasnova/letters/lagniappe-cinquante-quatre-alexa-voice-dungeon-synth-et-tsundokus-num-rique",
+    "target": "_blank"
+  },
+  {
+    "label": "Iron Bubble",
+    "year": "2018",
+    "tooltip": "Neologism reflecting the ideological isolation caused by filtering algorithms on social networks, which can potentially leave users in a bubble",
+    "url": "https://web.archive.org/web/20190508165721id_/https://medium.com/@trackingexposed/the-iron-bubble-or-how-the-facebook-algorithm-insulates-fascists-from-reality-d36739b0758b",
+    "target": "_blank"
+  },
+  {
+    "label": "Switcheroo",
+    "year": "2018",
+    "tooltip": "term used by users trying to trick supermarket cash registers, the principle being based on peeling off a sticker barcode of a cheaper product and placing it on the desired one",
+    "url": "https://web.archive.org/web/20190508165731id_/https://tinyletter.com/nicolasnova/letters/lagniappe-cinquante-et-un-fauxtomation-interaction-18-carnaval-et-rituels-num-riques",
+    "target": "_blank"
+  },
+  {
+    "label": "Lonely Web",
+    "year": "2015",
+    "tooltip": "Word refers to those web contents which, despite their public nature and the fact that they are indexed by the search engines, are nonetheless very limited in their readership.",
+    "url": "https://web.archive.org/web/20190508165913id_/https://splinternews.com/how-the-weird-unfiltered-internet-became-a-media-goldm-1793853905",
+    "target": "_blank"
+  },
+  {
+    "label": "Wearapeuthics",
+    "year": "2016",
+    "tooltip": "Refers to portable technology products on the body intended to monitor the health of users and possibly provide care",
+    "url": "https://web.archive.org/web/20190508165923id_/https://hax.co/how-it-works/",
+    "target": "_blank"
+  }
+]

@@ -294,6 +294,10 @@ $(document).ready(function() {
         var iframe = document.querySelector('.iframe-popup__content');
         iframe.src = href;
 
+        iframe.onerror = function () {
+          console.log('asdlkjhlkjh')
+        }
+
         if (!iframe.onload) {
           iframe.onload = function () {
             $('body').addClass(iframeClass);
