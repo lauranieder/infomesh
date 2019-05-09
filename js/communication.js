@@ -1,7 +1,9 @@
 /*in iframe*/
 $(document).ready(function() {
+  console.log("[communication.js] loaded");
   $(window).on('message', function(e) {
     if (e.originalEvent.data.message == 'receiveScrollPosition') {
+      console.log("scrollleft");
       $('#container-timeline').scrollLeft(e.originalEvent.data.position);
     }
 

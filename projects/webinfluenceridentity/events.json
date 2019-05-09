@@ -1,16 +1,5 @@
 [
-    {
-      "timeline": null,
-      "title": "Apple is founded.",
-      "start": "01/04/1976",
-      "end": null,
-      "content": null,
-      "wikifetch": "History_of_Apple_Inc.",
-      "readmore": "https://en.wikipedia.org/wiki/History_of_Apple_Inc.",
-      "context": null,
-      "contentsource": null,
-      "company": null
-    },
+
     {
       "timeline": null,
       "title": "Internet is live",
@@ -121,6 +110,18 @@
     },
     {
       "timeline": null,
+      "title": "Nokia 9000: The first mobile phone with internet capabilities",
+      "start": "01/06/1996",
+      "end": null,
+      "content": "The first mobile phone with Internet connectivity was the Nokia 9000 Communicator, launched in Finland in 1996. The viability of Internet services access on mobile phones was limited until prices came down from that model, and network providers started to develop systems and services conveniently accessible on phones. NTT DoCoMo in Japan launched the first mobile Internet service, i-mode, in 1999 and this is considered the birth of the mobile phone Internet services. In 2001, the mobile phone email system by Research in Motion (now BlackBerry Limited) for their BlackBerry product was launched in America. ",
+      "wikifetch": null,
+      "readmore": "https://en.wikipedia.org/wiki/History_of_the_Internet",
+      "context": null,
+      "contentsource": null,
+      "company": null
+    },
+    {
+      "timeline": null,
       "title": "Google was first known as \"BackRub\", a search algorithm.",
       "start": "01/01/1996",
       "end": null,
@@ -169,6 +170,42 @@
     },
     {
       "timeline": null,
+      "title": "The Internet Protocol V.6 (IPv6) becomes the new standard and allows future growth of Internet Addresses",
+      "start": "01/01/1998",
+      "end": null,
+      "content": null,
+      "wikifetch": "IPv6",
+      "readmore": null,
+      "context": null,
+      "contentsource": null,
+      "company": null
+    },
+    {
+      "timeline": null,
+      "title": "Birth of the \"Web 2.0\"",
+      "start": "01/01/1999",
+      "end": null,
+      "content": null,
+      "wikifetch": "Web_2.0",
+      "readmore": "https://en.wikipedia.org/wiki/Web_2.0",
+      "context": null,
+      "contentsource": null,
+      "company": null
+    },
+    {
+      "timeline": null,
+      "title": "Napster, the first peer-2-peer and file sharing platform is born",
+      "start": "01/06/1999",
+      "end": null,
+      "content": null,
+      "wikifetch": "Napster",
+      "readmore": "https://en.wikipedia.org/wiki/Napster",
+      "context": null,
+      "contentsource": null,
+      "company": null
+    },
+    {
+      "timeline": null,
       "title": "ADSL democratisation",
       "start": "01/01/2000",
       "end": null,
@@ -193,6 +230,30 @@
     },
     {
       "timeline": null,
+      "title": "Napster, unable to comply to to the district court decision, closes down it's service",
+      "start": "01/01/2001",
+      "end": null,
+      "content": "Napster lost the case in the District Court but then appealed to the U.S. Court of Appeals for the Ninth Circuit. Although it was clear that Napster could have commercially significant non-infringing uses, the Ninth Circuit upheld the District Court's decision. Immediately after, the District Court commanded Napster to keep track of the activities of its network and to restrict access to infringing material when informed of that material's location. Napster wasn't able to comply and thus had to close down its service in July 2001. In 2002, Napster announced that it was bankrupt and sold its assets to a third party.",
+      "wikifetch": null,
+      "readmore": "https://en.wikipedia.org/wiki/Napster",
+      "context": null,
+      "contentsource": null,
+      "company": null
+    },
+    {
+      "timeline": null,
+      "title": "The hacktivist Anonymous is born on 4chan",
+      "start": "01/01/2003",
+      "end": null,
+      "content": null,
+      "wikifetch": "Anonymous_(group)",
+      "readmore": null,
+      "context": null,
+      "contentsource": null,
+      "company": null
+    },
+    {
+      "timeline": null,
       "title": "Facebook is launched.",
       "start": "04/02/2004",
       "end": null,
@@ -214,6 +275,30 @@
       "context": null,
       "contentsource": null,
       "company": "google"
+    },
+    {
+      "timeline": null,
+      "title": "Wikileaks launches",
+      "start": "01/01/2006",
+      "end": null,
+      "content": null,
+      "wikifetch": "WikiLeaks",
+      "readmore": "https://en.wikipedia.org/wiki/WikiLeaks",
+      "context": null,
+      "contentsource": null,
+      "company": null
+    },
+    {
+      "timeline": null,
+      "title": "Twitter is born, along side the first tweet in history",
+      "start": "01/03/2006",
+      "end": null,
+      "content": "Twitter was created in March 2006 by Jack Dorsey, Noah Glass, Biz Stone, and Evan Williams and launched in July of that year. The service rapidly gained worldwide popularity. In 2012, more than 100 million users posted 340 million tweets a day,[17] and the service handled an average of 1.6 billion search queries per day.[18][19][20] In 2013, it was one of the ten most-visited websites and has been described as \"the SMS of the Internet\".[21][22] As of 2018, Twitter had more than 321 million monthly active users.",
+      "wikifetch": null,
+      "readmore": "https://en.wikipedia.org/wiki/Twitter",
+      "context": null,
+      "contentsource": null,
+      "company": null
     },
     {
       "timeline": null,
@@ -253,6 +338,18 @@
     },
     {
       "timeline": null,
+      "title": "Instagram launches",
+      "start": "01/01/2010",
+      "end": null,
+      "content": null,
+      "wikifetch": "Instagram",
+      "readmore": null,
+      "context": null,
+      "contentsource": null,
+      "company": null
+    },
+    {
+      "timeline": null,
       "title": "Steve Jobs dies, leaving Apple in the hands of Tim Cook",
       "start": "05/10/2011",
       "end": null,
@@ -265,11 +362,35 @@
     },
     {
       "timeline": null,
-      "title": "Edward Snowden leaks sensitive datas about mass surveillance",
+      "title": "Protest against SOPA and PIPA from major actors including Wikipedia",
+      "start": "01/01/2012",
+      "end": null,
+      "content": null,
+      "wikifetch": "Protests_against_SOPA_and_PIPA",
+      "readmore": null,
+      "context": null,
+      "contentsource": null,
+      "company": null
+    },
+    {
+      "timeline": null,
+      "title": "Edward Snowden leaks top-secret datas about mass surveillance",
       "start": "05/06/2013",
       "end": null,
       "content": null,
       "wikifetch": "Edward_Snowden",
+      "readmore": null,
+      "context": null,
+      "contentsource": null,
+      "company": null
+    },
+    {
+      "timeline": null,
+      "title": "Facebook aquires Whatsapp for 19 billion dollars",
+      "start": "01/01/2014",
+      "end": null,
+      "content": null,
+      "wikifetch": "WhatsApp",
       "readmore": null,
       "context": null,
       "contentsource": null,
@@ -286,6 +407,18 @@
       "context": null,
       "contentsource": null,
       "company": "google"
+    },
+    {
+      "timeline": null,
+      "title": "The FCC reverses many net neutrality rullings",
+      "start": "01/01/2017",
+      "end": null,
+      "content": "With the onset of the Presidency of Donald Trump in 2017, and the appointment of Ajit Pai, an opponent of net neutrality, to the chairman of the FCC, the FCC has reversed many previous net neutrality rulings, and reclassified Internet services as Title I information services. The FCC's decisions have been a matter of several ongoing legal challenges by both states supporting net neutrality, and ISPs challenging it. The United States Congress has attempted to pass legislation supporting net neutrality but have failed to gain sufficient support, while individual states are trying to pass legislation overriding the FCC's decision to make net neutrality a requirement within their state. California has successfully passed its own net neutrality act, which the United States government is challenging on a legal basis.",
+      "wikifetch": null,
+      "readmore": "https://en.wikipedia.org/wiki/Net_neutrality",
+      "context": null,
+      "contentsource": null,
+      "company": null
     },
     {
       "timeline": null,

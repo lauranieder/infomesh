@@ -229,7 +229,7 @@ function draw() {
   } else {
     main_svg_holder.load(
       // "./frames/" + dataType + current_year + ".svg",
-      "worldwidemap/frames/" + dataType + current_year + ".svg",
+      "./frames/" + dataType + current_year + ".svg",
       function() {
         remapColors(main_svg_holder.children("svg"));
         setupMap();

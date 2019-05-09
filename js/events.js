@@ -1,7 +1,7 @@
 /*POPUP
 events
 timelineWidthmobile check.*/
-
+console.log("[events.js] loaded");
 var events = [];
 var rootStartDate = moment('01/01/1989', 'DD/MM/YYYY');
 var rootEndDate = moment('31/12/2019', 'DD/MM/YYYY');
@@ -141,7 +141,6 @@ function computeEvents() {
     }
     /*TO PUT BACK*/
     /*console.log(item.readmore);
-
       var containReadmore = item.readmore.match(/id='readmore'/g);
       if(item.readmore != null && item.readmore != "" && !containReadmore){
         item.content += "<a target='_blank' id='readmore' href='"+item.readmore+"'>Read more</a>";
@@ -282,7 +281,7 @@ $(document).ready(function() {
     }
   });
 
-  $('body').on('click', '#button-toggle-popup', function() {
+  $('body').on('click', '#popup', function() {
     console.log("clicked on button toggle popup");
     $('#popup').toggleClass('reduced');
     window.parent.postMessage({message: 'isPopReduced', status: $('#popup').hasClass('reduced')}, '*');

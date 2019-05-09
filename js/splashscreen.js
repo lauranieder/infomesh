@@ -126,10 +126,10 @@
     }
   })
   if(!currentPagetName){
-    console.log("startsequence");
+    //console.log("startsequence");
     startSequence();
   }else{
-    console.log("do not start sequence");
+    //console.log("do not start sequence");
     enableSplashScreen(false);
     enableSplashScreenTitles(false);
   }
@@ -263,7 +263,7 @@
   function getRandomFact() {
     var number = 100;
     if(isMobile){
-      console.log("mobile 70");
+      //console.log("mobile 70");
       number = 70;
     }
     const fileteredFacts = facts.filter(it => it.length < number);

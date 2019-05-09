@@ -78,10 +78,10 @@
       <div class="content">
         <div class="full">
           <div class="fit-w half-w">
-            <img src="../img/ecal-snx.png" alt="écal swissnex">
+            <img src="../img/ecal-snx.png" alt="écal">
           </div>
           <div class="fit-w half-w">
-            <img src="../img/swissnex_logo_white.png" alt="écal swissnex">
+            <img src="../img/swissnex_logo_white.png" alt="swissnex">
           </div>
         </div>
         <div class="full">
@@ -98,6 +98,9 @@
           </div>
           <div class="fit-w third-w">
             <img src="../img/wikipedia-logo-transparent.png" alt="écal swissnex">
+          </div>
+          <div class="fit-w third-w">
+            <img src="../img/vdwhite.png" alt="canton de vaud">
           </div>
         </div>
       </div>

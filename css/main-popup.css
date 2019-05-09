@@ -23,6 +23,8 @@
   background-color: blue;
 }
 
+
+
 #popup-title{
   font-size: 2rem;
   font-weight: 300;
@@ -45,6 +47,7 @@
   font-size: 1rem;
   font-weight: 300;
   margin-bottom: 0;
+  margin-right: 3rem;
   /*float:right;*/
 
 }
@@ -57,6 +60,7 @@
 }
 
 #popup {
+  cursor : pointer;
   box-sizing: border-box;
   position:fixed;
   /*bottom: 7rem;*/ /*calc(10vh + 50px);*/

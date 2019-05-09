@@ -1,6 +1,6 @@
 $(document).ready(function() {
   Sequencer.init({
-    frameCount: 900,
+    frameCount: 300,
     folder: 'sequence',
     baseName: 'anime_',
     ext: 'jpg'
