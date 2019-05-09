@@ -32,7 +32,6 @@
     width: 100%;
 }
 #elTooltip {
-    box-shadow: -1px 0 black;
     font-size: 0.8em;
     line-height: 1.4em;
     margin: 20px 10px 0 0;
