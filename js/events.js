@@ -281,7 +281,7 @@ $(document).ready(function() {
     }
   });
 
-  $('body').on('click', '#button-toggle-popup', function() {
+  $('body').on('click', '#popup', function() {
     console.log("clicked on button toggle popup");
     $('#popup').toggleClass('reduced');
     window.parent.postMessage({message: 'isPopReduced', status: $('#popup').hasClass('reduced')}, '*');
