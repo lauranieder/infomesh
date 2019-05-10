@@ -41,7 +41,7 @@ THREE.CSS3DSprite.prototype.constructor = THREE.CSS3DSprite;
 
 THREE.CSS3DRenderer = function(coords) {
 
-    console.log('THREE.CSS3DRenderer', THREE.REVISION);
+    //console.log('THREE.CSS3DRenderer', THREE.REVISION);
 
     var _width, _height;
     var _widthHalf, _heightHalf;
@@ -302,7 +302,7 @@ THREE.CSS3DRenderer = function(coords) {
         let cameraCSSMatrix = 'translateZ(' + fov + 'px) ' + getCameraCSSMatrix(camera.matrixWorldInverse);
         let style = cameraCSSMatrix + ' translate(' + _widthHalf + 'px,' + _heightHalf + 'px)';
 
-        
+
         if (cache.camera.style !== style && !isIE) {
             cameraElement.style.WebkitTransform = style;
             cameraElement.style.transform = style;
