@@ -15,6 +15,9 @@
 - slider reload pas au bon endroit timelime
 - ~~clic partout pour fermer popup~~ (à améliorer) Ferme toujours quand on clique sur un lien. 
 
+### Splashscreen 
+- Mots trop long sur mobile
+
 ### Mobile
 - Menu navigation.
 - Boutons navigations pas actifs
