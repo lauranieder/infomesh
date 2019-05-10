@@ -65,6 +65,9 @@
 - vérifier la liste des popup
 - Description
 
+### HTACCESS
+- Autoriser la page /proxy.php dans le .htaccess
+
 
 
 
