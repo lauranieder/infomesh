@@ -240,13 +240,13 @@ nav svg{
   stroke: #0000ff;
 }
 
-#navigation.reduced{
+#navigation.not-extended{
   color: white;
 }
-#navigation.reduced nav > a {
+#navigation.not-extendedd nav > a {
   color: #000000;
 }
-#navigation.reduced .button-nav{
+#navigation.not-extended .button-nav{
   stroke: #000000;
 }
 
