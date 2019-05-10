@@ -43,12 +43,19 @@ $(document).ready(function() {
     var style = projectsData[currentProjectID].style;
 
     $('#container-main').toggleClass('extended main');
+    applyStyleToIframe();
+
+  }
+
+  function applyStyleToIframe(){
     if($('#container-main').hasClass('extended')){
       $('.current-iframe').get(0).contentWindow.postMessage({message: 'isExtended', status: true}, '*');
-      $('#navigation').addClass(style); //alone
+      //$('#navigation').addClass(style); //alone
+      $('#navigation').removeClass('reduced'); //alone
     }else{
       $('.current-iframe').get(0).contentWindow.postMessage({message: 'isExtended', status: false}, '*');
-      $('#navigation').removeClass(style);
+      //$('#navigation').removeClass(style);
+      $('#navigation').addClass('reduced'); //alone
     }
   }
 
@@ -66,10 +73,10 @@ $(document).ready(function() {
       }
 
       if ( $('#container-side').hasClass('mobile-reduced') ) {
-        $('#navigation').removeClass("background-white"); 
-        $('#navigation').removeClass("background-black"); 
+        $('#navigation').removeClass("background-white");
+        $('#navigation').removeClass("background-black");
       } else {
-        $('#navigation').addClass(projectsData[currentProjectID].style); 
+        $('#navigation').addClass(projectsData[currentProjectID].style);
       }
 
       $('#container-side').toggleClass('mobile-reduced');
@@ -129,21 +136,35 @@ $(document).ready(function() {
     $('#project-credits p:first').html("Designed by "+project.student); //or created by
 
     $('.current-iframe').addClass('previous-iframe').removeClass('current-iframe');
-    
-    // 🤔not sure if ok in every case
-    if (isMobile) { 
-      $('#navigation').removeClass("background-white"); 
-      $('#navigation').removeClass("background-black"); 
 
-      $('#navigation').addClass(project.style); 
+    // 🤔not sure if ok in every case
+    if (isMobile) {
+      $('#navigation').removeClass("background-white");
+      $('#navigation').removeClass("background-black");
+
+      $('#navigation').addClass(project.style);
     }
-    
+
     var iframe = $('<iframe class="current-iframe appear-' + direction + '" src="./projects/' + project.slug + '">');
     $('#container-main').append(iframe);
     $('#timeline-barre').css('transition','all 100ms cubic-bezier(0.23, 1, 0.32, 1)');
     $('#timeline-barre').css('background-color','rgba(255,255,255,1)');
 
+
+    $('#navigation').removeClass('background-blue');
+    $('#navigation').removeClass('background-white');
+    $('#navigation').removeClass('background-black');
+    var style = projectsData[currentProjectID].style;
+    $('#navigation').addClass(style); //alone
+    console.log("addClass "+style);
+
+
+    /*back here*/
+    //ajouter extended reduced en fonction
+
+    /*debugger le settimout iframe*/
     setTimeout(function() {
+
       $('.previous-iframe').addClass('move-' + direction);
       $('.current-iframe').removeClass('appear-' + direction);
       if($('.previous-iframe').get(0) != null && $('.previous-iframe').get(0) != undefined){
@@ -151,7 +172,8 @@ $(document).ready(function() {
       }
 
       $('.current-iframe').get(0).contentWindow.postMessage({message: 'hideTimeline'}, '*');
-
+      applyStyleToIframe();
+      console.log("Set timeout iframe 1 sended");
 
       //$('#timeline-barre').css('background-color','white');
     }, 100); //100
