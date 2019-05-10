@@ -301,10 +301,6 @@
 
   function getRandomFact() {
     var number = 100;
-    if(isMobile){
-      //console.log("mobile 70");
-      number = 70;
-    }
     const fileteredFacts = facts.filter(it => it.length < number);
     return fileteredFacts[Math.floor(Math.random() * fileteredFacts.length)];
   }
