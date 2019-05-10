@@ -140,6 +140,10 @@ nav a,
   transition: opacity 2.5s ease-in-out;
   opacity: 1;
 }
+.splashscreen-main-title h5{
+    /*word-break: break-all;*/
+    /*word-break: break-word;*/
+}
 
 .splashscreen-main-title h5.title-bold {
   font-weight: bold;

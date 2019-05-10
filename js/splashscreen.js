@@ -63,7 +63,6 @@
     "The internet speed on the International Space Station is faster than the average internet speed in Australia.",
     "Canada is rated as “Third World” in Broadband Internet rating by Netflix.",
     "There’s a bigger part of the Internet, which is not linked with the common internet we use. It’s called ‘The Deep Web’ and is estimated to be 500 times larger than the common Internet (over 70%).",
-    "In 1995, Newsweek published an article scoffing the future of the internet – the articles can be found here: http://www.newsweek.com/clifford-stoll-why-web-wont-be-nirvana-185306.",
     "In 2011, a 75 year-old woman in Georgia accidentally cut the fiber optic cable that provided internet to 90% of Armenia.",
     "An Institute in Colorado created the world’s most accurate clock, so accurate that it would not lose or gain a second in 20 million years. This is the same clock that is used for intern et time.",
     "AOL still brings in $600 million a year from dial up Internet subscriptions.",
@@ -98,23 +97,29 @@
     "PewDiePie is still richest YouTuber ever with a net worth of $7 million."
   ]
 
+  console.log("isMobile : "+window.isMobile );
+
   const TextAnimator = function() {
     let isWriting = false;
     let isSelecting = false;
     let isEnabled = false;
     let currentTimeout = null;
     let currentResolve = null;
-  
-    return {  
+
+    return {
       async write(element, text) {
         isWriting = true;
         let index = 0;
-  
+
         return new Promise(resolve => {
           this.currentResolve = resolve
           const writeLetter = () => {
+            //console.log("isMobile : "+window.isMobile );
+            let delay = window.isMobile? 500: 200; //20 + Math.random() * 20;
             this.currentTimeout = setTimeout(() => {
+              //console.log("writeletter: "+text[index]);
               element.innerHTML += text[index];
+              console.log("writeletter: "+element.innerHTML);
               index++;
               if (index < text.length && isWriting && !isEnabled) {
                 writeLetter();
@@ -124,23 +129,23 @@
               }
             }, 20 + Math.random() * 20);
           };
-    
+
           writeLetter();
         })
       },
-  
+
       async erase(element) {
         const selection = await this.select(element);
         await this.wait(200);
         deleteSelectionContent(selection);
       },
-  
+
       async select(element) {
         isSelecting = true;
 
         const { innerText: text } = element;
         let index = text.length;
-  
+
         return new Promise(resolve => {
           currentResolve = resolve
           const selectLetter = () => {
@@ -155,7 +160,7 @@
               }
             }, 10 + Math.random() * 10);
           }
-  
+
           selectLetter();
         })
       },
@@ -168,7 +173,7 @@
           })
         }
       },
-  
+
       enable() {
         isEnabled = false;
       },
