@@ -3,7 +3,7 @@ $(document).ready(function() {
   console.log("[communication.js] loaded");
   $(window).on('message', function(e) {
     if (e.originalEvent.data.message == 'receiveScrollPosition') {
-      console.log("scrollleft");
+      //console.log("scrollleft");
       $('#container-timeline').scrollLeft(e.originalEvent.data.position);
     }
 
@@ -47,7 +47,7 @@ $(document).ready(function() {
 
     if (e.originalEvent.data.message == 'isExtended') {
       //$('#container-timeline').scrollLeft(e.originalEvent.data.position);
-      console.log("isExtended "+ e.originalEvent.data.status);
+      //console.log("isExtended "+ e.originalEvent.data.status);
       isExtendedF(e.originalEvent.data.status);
     }
 
@@ -57,7 +57,7 @@ $(document).ready(function() {
     }
 
     if (e.originalEvent.data.message == 'showTimeline') {
-      console.log("show");
+      //console.log("show");
       $('#container-timeline').removeClass('hidden');
 
     }

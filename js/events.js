@@ -102,9 +102,9 @@ function formatDate(date){
   }
   // supposedly better regex that doesn't work https://www.sitepoint.com/jquery-basic-regex-selector-examples/  ^(0[1-9]|[12][0-9]|3[01])[- \/.](0[1-9]|1[012])[- \/.](19|20)dd$
 }
-
+//title doesn't make sens
 function computeEvents() {
-  console.log("computeEvents");
+  //console.log("computeEvents");
   //getResponsive message
   timelineWidth = cellwidth * 31;
   /*if($('.timeline-cell').width() != null){
@@ -215,16 +215,13 @@ function wikifetchingnew(wiki,index){
 
 
 }
-console.log("tib")
 $(document).ready(function() {
-  //console.log("[event.js]");
   loadEvents();
   createPopup();
   window.parent.postMessage({message: 'getResponsive'}, '*');
 
   var lastPopupIndex;
   $(window).resize(function(){
-    //console.log("resized");
     //computeEvents();
     window.parent.postMessage({message: 'getResponsive'}, '*');
   });
@@ -232,7 +229,7 @@ $(document).ready(function() {
 
   $(document).on('timeline-scroll', function(e) {
     var currentPopupIndex = -1;
-    console.log(e);
+    //console.log(e);
 
     $.each(events, function(index, item) {
       var startDate = moment(parseDate(item.start), 'DD/MM/YYYY');
@@ -291,5 +288,4 @@ $(document).ready(function() {
 
   $('body').on('click', '#button-toggle-popup', funcTogglePopup);
   $('body').on('touchstart', '#button-toggle-popup', funcTogglePopup);
-  console.log("tib")
 });

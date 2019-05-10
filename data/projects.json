@@ -1,50 +1,50 @@
 [
-  {
-    "student": "Sebastien Matos, Guillaume Simmen, Jonathan Boulenaz",
-    "title": "Web Landscape",
-    "slug": "weblandscape",
-    "text": "This timeline shows the evolution of the aesthetics of web browsers, reinterpreting the different elements and assembling them as a city. ",
-    "style": "background-blue",
-    "source": null
-  },
-  {
-    "student": "Luca Sassoli De Bianchi",
-    "title": "World Wide Map",
-    "slug": "worldwidemap",
-    "text": "The WorldWideMap timeline shows how the internet has spread in different countries through time. With the help of a dynamic <a href='https://en.wikipedia.org/wiki/Cartogram'>cartogram</a> (a map where the the scale of each region has been proportionally modified) we are able to lose the connection with the real geographical space and perceive the cyberspace instead. In this way the connected people of each country clearly show their presence on the world wide web.",
-    "style": "background-blue",
-    "source": "The data used in this visualisation comes from <a href='https://data.worldbank.org/'>WorldBank.org</a> which has comprehensive datasets for the population and the internet access of most countries. The timeline itself display events about how the internet expanded through time, both in term of connecting new regions and welcoming more users. The information about those internet’s milestones have been sourced with <a href='https://www.wikipedia.org/'>Wikipedia</a>."
-  },
-  {
-    "student": "Maëlle Chenaux",
-    "title": "Web Dictionary",
-    "slug": "webdictionary",
-    "text": "This timeline presents an overview of the evolution of vocabulary that emerged with the advent of the Internet in 1989. Words are added and crossed to offer a graphic and dynamic presentation of the different words related to the year of their appearance.",
-    "style": "background-white",
-    "source": "The words were found mainly on wikipedia, as well as in Nicolas Nova's newsletter. But other sources complete the list such as Urban dictonnary, the Guardian, medium.com & twitter."
-  },
-  {
-    "student": "Bastien Mouthon, Kevin Breithaupt",
-    "title": "Web Influencers",
-    "slug": "webinfluencers",
-    "text": "This timeline shows the visual identity evolution of the main tech companies on the web through their logo.",
-    "style": "background-white",
-    "source": null
-  },
-  {
-    "student": "Alfatih Al Zouabi",
-    "title": "Web Phenomena",
-    "slug": "webphenomena",
-    "text": "This timeline gathers different viral events on the web by proposing a graphical exploration passing among others by the buzzs, the memes and the spamms.\r",
-    "style": "background-black",
-    "source": null
-  },
-  {
-    "student": "Nathan Vogel",
-    "title": "Hacks.exe",
-    "slug": "hacks",
-    "text": "This chronologie shows events that forged the history of cybersecurity on the web. Hacker groups are forming, new mysterious computer viruses appear, governments attack each other and, of course, colossal amounts of data are gathered, stolen, lost or destroyed.",
-    "style": "background-black",
-    "source": "All the events on this timeline come from these two Wikipedia webpages : <a href=\"https://en.wikipedia.org/wiki/List_of_security_hacking_incidents\">List of security hacking incidents</a> and <a href=\"https://en.wikipedia.org/wiki/List_of_data_breaches\">List of data breaches</a>. Events were then classified in categories and snippets of text from the original sources of the Wikipedia pages were added when more information on the event was needed."
-  }
-]
+    {
+      "student": "Sebastien Matos, Guillaume Simmen, Jonathan Boulenaz",
+      "title": "Web Landscape",
+      "slug": "weblandscape",
+      "text": "This timeline shows the evolution of the aesthetics of the main desktop web browsers, reinterpreting the different elements and assembling them as a city.\n",
+      "style": "background-blue",
+      "source": "A large part of the design of this project was to recreate all the interactive behaviours of each element. They are actually taken from the original software. This was no easy task as emulation of old operating systems had to be done to successfully extract the icons. Thanks to the power of the Internet, most versions of these browsers were able to be gathered. <a href=\"https://archive.org/\" target=\"_blank\">Archive.org</a>, <a href=\"http://www.oldversion.com/\" target=\"_blank\">oldversion.com</a> and <a href=\"https://winworldpc.com/\" target=\"_blank\">winworldpc.com</a> made this task much easier.</br></br>\nThis project was created with THREE.JS and its CSS 3D renderer.\n"
+    },
+    {
+      "student": "Luca Sassoli De Bianchi",
+      "title": "WorldWideMap",
+      "slug": "worldwidemap",
+      "text": "The timeline presents web access worldwide and other data",
+      "style": "background-blue",
+      "source": null
+    },
+    {
+      "student": "Maëlle Chenaux",
+      "title": "Web Dictionary",
+      "slug": "webdictionary",
+      "text": "This timeline presents an overview of the evolution of vocabulary that emerged with the advent of the Web in 1989. Words are added and crossed to offer a graphic and dynamic presentation of the different words related to the year of their appearance. The visual plays with opacity and movement to reflect the ephemeral notion of the invention and in parallel, the durability and the diffusion that it implies. </br></br> The first word from the Web culture was the World Wide Web itself. At that time, another term was proposed by CERN, « Mesh »  or infomesh, that referenced ENQUIRE, a database and software project he had built in 1980, which used the term \"web\" and described a more elaborate information management system based on links embedded as text.\n",
+      "style": "background-white",
+      "source": "The words were found mainly on <a href=\"https://en.wikipedia.org/wiki/Glossary_of_Internet-related_terms\" target=\"_blank\">Wikipedia’s Glossary of Internet related terms</a>, as well as in Swiss-French researcher <a href=\"https://tinyletter.com/nicolasnova/archive\" target=\"_blank\">Nicolas Nova's newsletter.</a> But other sources complete the list such as <a href=\"https://www.urbandictionary.com/\" target=\"_blank\">Urban dictionary</a>, <a href=\"https://www.theguardian.com/us\" target=\"_blank\">the Guardian</a>, <a href=\"https://dictionary.cambridge.org/us/topics/technology/internet-terminology-and-abbreviations/\" target=\"_blank\">Cambridge’s Internet terminology and abbreviations</a>, <a href=\"https://medium.com/\" target=\"_blank\">medium.com</a> & <a href=\"https://www.twitter.com\" target=\"_blank\">twitter</a>."
+    },
+    {
+      "student": "Bastien Mouthon, Kevin Breithaupt",
+      "title": "Web Influencers",
+      "slug": "webinfluencers",
+      "text": "Through this timeline, you can witness the logos evolution of the top 15 most influential players in the Internet game. Some major design shifts seem to be correlating with web-related events, such as exponential growth and massive company acquisitions that shaped the internet landscape we know today. Navigate through important facts, controversies and unreal transactions that left a mark on the web’s own history.\n",
+      "style": "background-white",
+      "source": "The company list is based on <a href=\"http://fortune.com/fortune500/list/filtered?sector=Technology\" target=\"_blank\">Fortune 500 top tech companies of 2018</a>, while most logos were extracted from the <a href=\"https://archive.org/\" target=\"_blank\">Internet Archives</a>. As for the facts, they are based on <a href=\"https://www.wikipedia.org/\" target=\"_blank\">Wikipedia</a> articles. The logos are then animated to morph seamlessly into their newer redesigned versions."
+    },
+    {
+      "student": "Alfatih Al Zouabi",
+      "title": "Web Phenomena",
+      "slug": "webphenomena",
+      "text": "This timeline displays a selection of social and cultural phenomena specific to the web, such as internet memes, viral content or challenges. These tend to grow rapidly and become more widespread because the instant communication facilitates word of mouth. Alongside theses events, a selection of cases regarding the use of content on the web has been showcased.",
+      "style": "background-black",
+      "source": "All the events on the timeline come from the following Wikipedia webpage: <a href=\"https://en.wikipedia.org/wiki/List_of_Internet_phenomena\" target=\"_blank\">List of internet phenomena</a> and from the <a href=\"https://www.eff.org/issues\" target=\"_blank\">EFF website</a>. Images from various sources are then modified with several superposition techniques to put an emphasis on the mass of content that is created, remixed and shared across the web, rather than an image in particular.\n\n"
+    },
+    {
+      "student": "Nathan Vogel",
+      "title": "Hacks.exe",
+      "slug": "hacks",
+      "text": "This chronologie shows events that forged the history of cybersecurity on the web. Hacker groups are forming, new mysterious computer viruses appear, governments attack each other and, of course, colossal amounts of data are gathered, stolen, lost or destroyed.",
+      "style": "background-black",
+      "source": "All the events on this timeline come from the following Wikipedia webpages : <a href=\"https://en.wikipedia.org/wiki/List_of_security_hacking_incidents\" target=\"_blank\">List of security hacking incidents</a> and <a href=\"https://en.wikipedia.org/wiki/List_of_data_breaches\" target=\"_blank\">List of data breaches</a>. Events were then classified in categories and attributed values corresponding to the size of the hack. A visual for each event was then generated from this data. When more information on the event was needed, snippets of text found in the original sources of the Wikipedia pages were added.\n"
+    }
+  ]

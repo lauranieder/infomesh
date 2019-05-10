@@ -1,6 +1,8 @@
 /*
 main script
 - iframe
+- hide/show left container
+- create projects
 */
 $(document).ready(function() {
   console.log("[script.js] loaded");
@@ -33,6 +35,7 @@ $(document).ready(function() {
     return projectID;
   }
 
+  //Deploy left container
   function toggleInformation() {
     //console.log("toggleInformation : is Reduced "+ $('#container-side').hasClass('reduced'))
 
@@ -54,8 +57,8 @@ $(document).ready(function() {
     // if the menu is open ???
 
     if(isMobile){
-      //console.log("toggle menu : is reduced was " +$('#container-side').hasClass('mobile-reduced'));
-      //console.log("main is reduced " +$('#container-main').hasClass('reduced')); //if it is not reduced means a project is open
+      console.log("toggle menu : is reduced was " +$('#container-side').hasClass('mobile-reduced'));
+      console.log("main is reduced " +$('#container-main').hasClass('reduced')); //if it is not reduced means a project is open
       if($('#container-main').hasClass('reduced')){ //not project open
         $('#project-title').text(siteTitle);
         $('#container-title').text(siteTitle);

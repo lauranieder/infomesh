@@ -77,7 +77,7 @@
 
     buggy = function () { return result; };
     return buggy();
-  };  
+  };
 
   function getTransformationMatrix(element) {
     var identity = matrixFromCssString('matrix(1,0,0,1,0,0)'),

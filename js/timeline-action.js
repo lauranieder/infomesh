@@ -9,14 +9,14 @@ $(document).ready(function(){
         date: searchdate
       }
     });
-    console.log(searchdate.year());
+    //console.log(searchdate.year());
 
     document.dispatchEvent(event);
   }
 
   $("#container-timeline").scroll(function(event) {
 
-    console.log("scrolled detected");
+    //console.log("scrolled detected");
     clearTimeout(timer);
       let scroll = $("#container-timeline").scrollLeft();
       let maxScroll = $("#timeline-scrollable").width();
@@ -34,7 +34,7 @@ $(document).ready(function(){
   });
 
   let timer = setTimeout(function() {
-    console.log("scrolled detected by timeout");
+    //console.log("scrolled detected by timeout");
     let scroll = $("#container-timeline").scrollLeft();
     let maxScroll = $("#timeline-scrollable").width();
     let normalized = map_range(scroll, 0, maxScroll, 0, 1);
@@ -99,12 +99,12 @@ $(document).ready(function(){
     if(!isDown) return;
     e.preventDefault();
     const x = e.pageX - slider.offset().left;
-    console.log(e);
+    //console.log(e);
     //const walk = (x - startX) * 3; //scroll-fast
     const walk = (x - startX);
     //slider.scrollLeft = scrollLeft - walk;
     slider.scrollLeft(scrollLeft - walk);
-    console.log(walk);
+    //console.log(walk);
 
   });
 

@@ -734,6 +734,11 @@ iframe {
     visibility: hidden;
   }
 
+  nav-mobile .mobile-onlytimeline{
+    display:none;
+    visibility: hidden;
+  }
+
 
 
   /*nav-mobile #button-menu{
