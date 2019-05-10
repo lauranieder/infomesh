@@ -73,8 +73,7 @@ $(document).ready(function() {
   window.parent.postMessage({message: 'getPopupStatus'}, '*');
   console.log("window.websiteMode " +window.websiteMode);
   window.parent.postMessage({message: 'getMode', mode: window.websiteMode}, '*');
-
-  //window.parent.postMessage({ mode: window.websiteMode });
+  window.parent.postMessage({message: 'getStyles'}, '*');
 
   //TO CONTINUE
   //Calculate which is is the closest dot.

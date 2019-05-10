@@ -42,7 +42,7 @@ $(document).ready(function() {
     $('#container-side').toggleClass('reduced');
     var style = projectsData[currentProjectID].style;
 
-    $('#container-main').toggleClass('extended main');
+    $('#container-main').toggleClass('extended');
     applyStyleToIframe();
 
   }
@@ -172,7 +172,7 @@ $(document).ready(function() {
       }
 
       $('.current-iframe').get(0).contentWindow.postMessage({message: 'hideTimeline'}, '*');
-      applyStyleToIframe();
+      //applyStyleToIframe();
       console.log("Set timeout iframe 1 sended");
 
       //$('#timeline-barre').css('background-color','white');
@@ -320,16 +320,21 @@ $(document).ready(function() {
         isPopupReduced = data.status;
         break;
       case 'getPopupStatus':
-        $('.current-iframe').get(0).contentWindow.postMessage({message: 'receivePopupStatus', status: isPopupReduced}, '*')
+        $('.current-iframe').get(0).contentWindow.postMessage({message: 'receivePopupStatus', status: isPopupReduced}, '*');
         break;
       case 'setScrollPosition':
         timelinePosition = data.position;
         break;
       case 'getScrollPosition':
-        $('.current-iframe').get(0).contentWindow.postMessage({message: 'receiveScrollPosition', position: timelinePosition}, '*')
+        console.log("iframe ask scroll position");
+        $('.current-iframe').get(0).contentWindow.postMessage({message: 'receiveScrollPosition', position: timelinePosition}, '*');
         break;
       case 'getResponsive':
-        $('.current-iframe').get(0).contentWindow.postMessage({message: 'isMobile', status: isMobile}, '*')
+        $('.current-iframe').get(0).contentWindow.postMessage({message: 'isMobile', status: isMobile}, '*');
+        break;
+      case 'getStyles':
+        console.log("iframe ask styles position");
+        applyStyleToIframe();
         break;
         /*continue here pietro*/
       case 'getMode':
