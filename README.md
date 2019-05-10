@@ -38,6 +38,7 @@
 - Ajouter dynamiquement une variable début fin pour la durée de la timeline.
 - Gérer les événements qui sont hors du temps. 
 - Checker deux fois le reflow
+- evenement se highlight pas
 
 ### Contenue texte / Page-about / information / evenement timeline
 - Récrire le texte de la page about avec Eryk.
