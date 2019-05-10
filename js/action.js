@@ -1,5 +1,6 @@
+/*main document*/
 $(document).ready(function(){
-  console.log("[action.js] loaded");
+  console.log("[main action.js] loaded");
 
   $(document).on('click','.less', function() {
     $("#container-side").hide();

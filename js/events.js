@@ -32,6 +32,7 @@ function isMobileF(x){
   computeEvents();
 }
 function isExtendedF(status){
+  console.log("Iframe received isExtended "+status);
   if (status) { // If side panel is hidden
     $('body').addClass("extended");
     $('html').addClass("extended");
