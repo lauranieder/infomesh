@@ -152,10 +152,10 @@ $(document).ready(function() {
   }
 
   function loadProjectsPreview(){
-    /*$.each(projectsData, function(index, project) {
+    $.each(projectsData, function(index, project) {
       var link = $('<a href="#" class="font-large button-open-project" data-id="'+index+'">'+project.title+'</a>');
       $('#container-projects').append(link);
-    });*/
+    });
   }
 
   $(window).resize(function(){
@@ -222,7 +222,7 @@ $(document).ready(function() {
     $('#project-text p:first').text("");
     $('#project-credits p:first').text("");
 
-    if (!ignoreURLS) history.pushState({}, siteTitle , '/infomesh/');
+    if (!ignoreURLS) history.pushState({}, siteTitle , '/index');
   });
 
   $('.button-up').on('click', function(e) {
@@ -294,10 +294,6 @@ $(document).ready(function() {
         var href = data.href;
         var iframe = document.querySelector('.iframe-popup__content');
         iframe.src = href;
-
-        iframe.onerror = function () {
-          console.log('asdlkjhlkjh')
-        }
 
         if (!iframe.onload) {
           iframe.onload = function () {
