@@ -57,9 +57,8 @@ $(document).ready(function() {
     }
 
     if (e.originalEvent.data.message == 'showTimeline') {
-      //console.log("show");
+      console.log("[iframe] received show timeline");
       $('#container-timeline').removeClass('hidden');
-
     }
 
 

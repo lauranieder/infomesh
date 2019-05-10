@@ -104,17 +104,18 @@
     let isEnabled = false;
     let currentTimeout = null;
     let currentResolve = null;
-  
-    return {  
+
+    return {
       async write(element, text) {
         isWriting = true;
         let index = 0;
-  
+
         return new Promise(resolve => {
           this.currentResolve = resolve
           const writeLetter = () => {
             this.currentTimeout = setTimeout(() => {
               element.innerHTML += text[index];
+              //console.log(element.innerHTML);
               index++;
               if (index < text.length && isWriting && !isEnabled) {
                 writeLetter();
@@ -124,23 +125,23 @@
               }
             }, 20 + Math.random() * 20);
           };
-    
+
           writeLetter();
         })
       },
-  
+
       async erase(element) {
         const selection = await this.select(element);
         await this.wait(200);
         deleteSelectionContent(selection);
       },
-  
+
       async select(element) {
         isSelecting = true;
 
         const { innerText: text } = element;
         let index = text.length;
-  
+
         return new Promise(resolve => {
           currentResolve = resolve
           const selectLetter = () => {
@@ -155,7 +156,7 @@
               }
             }, 10 + Math.random() * 10);
           }
-  
+
           selectLetter();
         })
       },
@@ -168,7 +169,7 @@
           })
         }
       },
-  
+
       enable() {
         isEnabled = false;
       },

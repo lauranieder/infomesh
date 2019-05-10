@@ -246,7 +246,7 @@ nav svg{
 #navigation.not-extended{
   color: white;
 }
-#navigation.not-extendedd nav > a {
+#navigation.not-extended nav > a {
   color: #000000;
 }
 #navigation.not-extended .button-nav{
@@ -261,7 +261,7 @@ nav svg{
 }
 
 /*TO improve, not good to have reduced inverted as extended*/
-#navigation.reduced #button-toggle-informations{
+#navigation.not-extended #button-toggle-informations{
   left:calc(100% - 3rem);
   transform: rotate(0deg);
   top:8rem;
