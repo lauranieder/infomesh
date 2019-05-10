@@ -2,11 +2,6 @@ $(document).ready(function() {
   var entries;
 
   jQuery.getJSON('./entries.json', function(data) {
-    var filteredEntries = [];
-    for (var i = 0; i < data.length; i++) {
-      var d = data[i];
-      console.log(d.url);
-    }
     entries = data;
 
     createSVG();

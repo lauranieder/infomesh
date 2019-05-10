@@ -117,13 +117,14 @@ $(document).ready(function() {
 
     //to improve définir le style background ici
 
-    console.log()
-
     var iframe = $('<iframe class="current-iframe appear-' + direction + '" src="./projects/' + project.slug + '">');
     $('#container-main').append(iframe);
     $('#timeline-barre').css('transition','all 100ms cubic-bezier(0.23, 1, 0.32, 1)');
     $('#timeline-barre').css('background-color','rgba(255,255,255,1)');
 
+    iframe.get(0).onload = function () {
+      this.contentWindow.postMessage({ mode: window.websiteMode })
+    }
 
     setTimeout(function() {
       $('.previous-iframe').addClass('move-' + direction);
