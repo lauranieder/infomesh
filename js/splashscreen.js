@@ -271,10 +271,12 @@
 
   async function runSequence() {
     highlight(false);
+    enableCaret(false);
     await textAnimator.erase(title);
     enableSplashScreenTitles(isSplashscreenEnabled());
     await textAnimator.wait(100);
     const text = getRandomFact();
+    enableCaret(true);
     await textAnimator.write(title, text);
 
     if (isSplashscreenEnabled()) {
