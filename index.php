@@ -37,7 +37,7 @@
   </div>
 
   <!--<div id="smartphone">mobile</div>-->
-  <header id="navigation" class="reduced">
+  <header id="navigation" class="not-extended">
     <h1 id="project-title">Information mesh</h1>
     <nav class="d-none">
       <?php echo file_get_contents("css/UI/UIArrowUp.svg"); ?>
