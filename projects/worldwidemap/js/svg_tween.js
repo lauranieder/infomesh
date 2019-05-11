@@ -1,3 +1,5 @@
+var serverPathHandle = "."; // "." "worldwidemap"
+
 var W = window.innerWidth;
 var H = window.innerHeigh;
 
@@ -58,17 +60,6 @@ function changeData() {
 }
 
 // manual a&d control to test the year change
-document.addEventListener(
-  "keypress",
-  function(e) {
-    // if (e.key == "d") {
-    //   if (current_year < max_year) current_year++;
-    // } else if (e.key == "a") {
-    //   if (current_year > min_year) current_year--;
-    // }
-    // updateMapWithNewYear();
-  }.bind(this)
-);
 
 // Timeline scrolling (with buffer for multiple events)
 var last_t_change;
@@ -166,9 +157,9 @@ function autoShowCountries() {
 
 //First loading of th first map
 main_svg_holder.load(
+  
+   serverPathHandle + "/frames/" + dataType + current_year + ".svg",
 
-  //"worldwidemap/frames/" + dataType + current_year + ".svg",
-   "./frames/" + dataType + current_year + ".svg",
   function() {
     remapColors(main_svg_holder.children("svg"));
     setupMap();
@@ -186,9 +177,7 @@ function setupMap() {
 // whatever map correspond to the current_year
 function updateMapWithNewYear() {
   next_svg_holder.load(
-
-    "./frames/" + dataType + current_year + ".svg",
-    //"worldwidemap/frames/" + dataType + current_year + ".svg",
+     serverPathHandle + "/frames/" + dataType + current_year + ".svg",
 
     function() {
       setup_tween();
@@ -200,6 +189,7 @@ function updateMapWithNewYear() {
     }
   );
 }
+
 
 /////// TWEEN ANIMATION FUNCTIONS //////////////////////////////////////////////
 
@@ -243,8 +233,7 @@ function draw() {
     requestAnimationFrame(draw);
   } else {
     main_svg_holder.load(
-      // "./frames/" + dataType + current_year + ".svg",
-      "./frames/" + dataType + current_year + ".svg",
+      serverPathHandle + "/frames/" + dataType + current_year + ".svg",
       function() {
         remapColors(main_svg_holder.children("svg"));
         setupMap();
