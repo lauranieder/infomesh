@@ -291,7 +291,8 @@ $(document).ready(function() {
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'isMobile', status: isMobile}, '*')
         break;
         /*continue-here*/
-        case 'getMode'
+      case 'getMode':
+        break;
       case 'anchor':
         var href = data.href;
         var iframe = document.querySelector('.iframe-popup__content');
