@@ -214,25 +214,32 @@ $(document).ready(function() {
   function openMenu(){
     console.log("openMenu");
     if(isMobile){
-      console.log("toggle menu : is reduced was " +$('#container-side').hasClass('mobile-reduced'));
+      console.log("open menu : is reduced was " +$('#container-side').hasClass('mobile-reduced'));
       console.log("main is reduced " +$('#container-main').hasClass('reduced')); //if it is not reduced means a project is open
       if($('#container-main').hasClass('reduced')){ //not project open
         $('#project-title').text(siteTitle);
         $('#container-title').text(siteTitle);
         //$('nav-mobile').addClass('d-none');
       }else{
-
+          $('#button-closeOverlay').removeClass('d-none');
       }
       $('#button-menu').addClass('d-none');
-      $('#button-closeOverlay').removeClass('d-none');
-      $('#container-side').toggleClass('mobile-reduced');
+
+      $('#container-side').removeClass('mobile-reduced');
       mobile_applyStyleToNav();
     }
   }
 
   function closeOverlay(){
-    console.log("closeoverlay");
-    $('#button-menu').removeClass('d-none');
+    console.log("open menu : is reduced was " +$('#container-side').hasClass('mobile-reduced'));
+    console.log("main is reduced " +$('#container-main').hasClass('reduced')); //if it is not reduced means a project is open
+    if(isMobile){
+      console.log("closeOverlay");
+      $('#button-menu').removeClass('d-none');
+      $('#button-closeOverlay').addClass('d-none');
+      $('#container-side').addClass('mobile-reduced');
+      mobile_applyStyleToNav();
+    }
   }
 
 
@@ -252,9 +259,12 @@ $(document).ready(function() {
           /*$('#navigation nav-mobile').addClass('d-none');*/
           $('#project-title').text(siteTitle);
           $('#container-title').text(siteTitle);
-        }else{
+        }else{ //mobile
           $('#project-title').text("About");
           $('#container-title').text("About");
+          $('#button-closeOverlay').addClass('d-none');
+          $('#button-menu').removeClass('d-none');
+
         }
 
         $('#project-text p:first').text("");
@@ -287,6 +297,8 @@ $(document).ready(function() {
     }else{
       $('#project-title').text("30 years of");
       $('#container-title').text("30 years of");
+      $('#button-closeOverlay').addClass('d-none');
+      $('#button-menu').removeClass('d-none');
     }
 
     $('#project-text p:first').text("");
@@ -326,7 +338,7 @@ $(document).ready(function() {
     openMenu();
   });
 
-  $('#button-closeoverlay').on('click', function(e) {
+  $('#button-closeOverlay').on('click', function(e) {
     e.preventDefault();
     closeOverlay();
   });

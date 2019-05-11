@@ -759,9 +759,9 @@ iframe {
     padding:1rem;
   }
 
-  nav-mobile #button-closeoverlay{
-    display:none;
-    visibility: hidden;
+  nav-mobile #button-closeOverlay{
+    /*display:none;
+    visibility: hidden;*/
   }
 
   nav-mobile .mobile-onlytimeline{
