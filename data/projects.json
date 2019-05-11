@@ -9,11 +9,11 @@
     },
     {
       "student": "Luca Sassoli De Bianchi",
-      "title": "WorldWideMap",
+      "title": "World Wide Map",
       "slug": "worldwidemap",
-      "text": "The timeline presents web access worldwide and other data",
+      "text": "The WorldWideMap timeline shows how the internet has spread in different countries through time. With the help of a dynamic <a href='https://en.wikipedia.org/wiki/Cartogram'>cartogram</a> (a map where the the scale of each region has been proportionally modified) we are able to lose the connection with the real geographical space and perceive the cyberspace instead. In this way the connected people of each country clearly show their presence on the world wide web.",
       "style": "background-blue",
-      "source": null
+      "source": "The data used in this visualisation comes from <a href='https://data.worldbank.org/'>WorldBank.org</a> which has comprehensive datasets for the population and the internet access of most countries. The timeline itself display events about how the internet expanded through time, both in term of connecting new regions and welcoming more users. The information about those internet’s milestones have been sourced with <a href='https://www.wikipedia.org/'>Wikipedia</a>."
     },
     {
       "student": "Maëlle Chenaux",

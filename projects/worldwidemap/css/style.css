@@ -34,11 +34,11 @@ body {
 }
 .button.selected {
   background-color: white;
-  color: black;
+  color: blue;
 }
 .button:hover {
   background-color: white;
-  color: black;
+  color: blue;
 }
 #lines_wrapper {
   /* width: 100%; */
@@ -143,17 +143,17 @@ body.mobile svg.cartogram {
 }
 body.mobile #legend {
   top: 4rem;
-  height: 20px;
+  height: 2rem;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.27);
 }
 body.mobile .lSquare {
   font-size: 0.8rem;
-  height: 15px;
-  padding-top: 5px;
+  height: calc(2rem - 10px);
+  padding-top: 10px;
   padding-bottom: 0px;
 }
 body.mobile #info {
-  top: calc(4.5rem + 30px);
+  top: calc(5.5rem + 30px);
   font-size: 1rem;
 }
 body.mobile #lines_wrapper {
