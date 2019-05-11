@@ -765,8 +765,8 @@ iframe {
   }
 
   nav-mobile .mobile-onlytimeline{
-    display:none;
-    visibility: hidden;
+    /*display:none;
+    visibility: hidden;*/
   }
 
 
@@ -819,4 +819,11 @@ iframe {
     left: 50vw;
   }
 
+}
+
+@media only screen and (max-width: 370px) {
+  html,
+  body {
+    font-size: 13px; /*not so satisfying, to improve*/
+  }
 }
