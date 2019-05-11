@@ -77,7 +77,9 @@ nav a,
 /* SPLASHSCREEN */
 
 .splashscreen-main-title {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -135,6 +137,7 @@ nav a,
 }
 
 .show-splashscreen .splashscreen-main-title {
+  transition: opacity 2.5s ease-in-out;
   opacity: 1;
 }
 
@@ -176,6 +179,47 @@ nav a,
 .show-splashscreen #container-menu {
   transform: translate(0, 100%);
   transition: transform 1s ease-in-out;
+}
+
+/* IFRAME POPUP */
+
+.iframe-popup {
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate3d(0, -100%, 0);
+  transition: transform 0.3s ease-in-out;
+  background-color: rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+.iframe-popup-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  width: 30px;
+  height: 30px;
+  stroke-width: 4px;
+}
+
+.iframe-popup .iframe-popup__content {
+  background-color: white;
+  width: 50%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow:4px 0px 49px rgba(0, 0, 1, 0.5);
+  -moz-box-shadow:4px 0px 49px rgba(0, 0, 1, 0.5);
+  box-shadow: 4px 0px 49px rgba(0, 0, 1, 0.5);
+}
+
+.show-iframe-popup .iframe-popup {
+  transform: translate3d(0, 0, 0);
 }
 
 #container-menu {

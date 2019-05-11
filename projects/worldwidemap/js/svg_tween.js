@@ -157,7 +157,9 @@ function autoShowCountries() {
 
 //First loading of th first map
 main_svg_holder.load(
+  
    serverPathHandle + "/frames/" + dataType + current_year + ".svg",
+
   function() {
     remapColors(main_svg_holder.children("svg"));
     setupMap();
@@ -176,6 +178,7 @@ function setupMap() {
 function updateMapWithNewYear() {
   next_svg_holder.load(
      serverPathHandle + "/frames/" + dataType + current_year + ".svg",
+
     function() {
       setup_tween();
       // remapColors(next_svg_holder.children("svg"));

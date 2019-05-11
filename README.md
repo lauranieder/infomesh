@@ -15,6 +15,9 @@
 - slider reload pas au bon endroit timelime
 - ~~clic partout pour fermer popup~~ (à améliorer) Ferme toujours quand on clique sur un lien. 
 
+### Splashscreen 
+- Mots trop long sur mobile
+
 ### Mobile
 - Menu navigation.
 - Boutons navigations pas actifs
@@ -35,6 +38,7 @@
 - Ajouter dynamiquement une variable début fin pour la durée de la timeline.
 - Gérer les événements qui sont hors du temps. 
 - Checker deux fois le reflow
+- evenement se highlight pas
 
 ### Contenue texte / Page-about / information / evenement timeline
 - Récrire le texte de la page about avec Eryk.
@@ -64,6 +68,9 @@
 #### web phenomena 
 - vérifier la liste des popup
 - Description
+
+### HTACCESS
+- Autoriser la page /proxy.php dans le .htaccess
 
 
 
