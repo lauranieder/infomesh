@@ -122,10 +122,6 @@ $(document).ready(function() {
     $('#timeline-barre').css('transition','all 100ms cubic-bezier(0.23, 1, 0.32, 1)');
     $('#timeline-barre').css('background-color','rgba(255,255,255,1)');
 
-    iframe.get(0).onload = function () {
-      this.contentWindow.postMessage({ mode: window.websiteMode })
-    }
-
     setTimeout(function() {
       $('.previous-iframe').addClass('move-' + direction);
       $('.current-iframe').removeClass('appear-' + direction);
@@ -290,8 +286,10 @@ $(document).ready(function() {
       case 'getResponsive':
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'isMobile', status: isMobile}, '*')
         break;
-        /*continue-here*/
+        /*continue here pietro*/
       case 'getMode':
+
+        console.log("getmode sended by iframe "+data.mode);
         break;
       case 'anchor':
         var href = data.href;
