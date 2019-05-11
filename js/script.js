@@ -1,6 +1,6 @@
 /*
 main script
-- iframe
+- iframe gestion
 - hide/show left container
 - create projects
 */
@@ -14,98 +14,14 @@ $(document).ready(function() {
   var ignoreURLS = false; //put back to false !!!
   var isMobile = false;
 
-  function mobileCheck(x) {
-    if (x.matches) { // If media query matches
-      //console.log("[mobileCheck] mobile");
-      isMobile = true;
-    } else {
-      //console.log("[mobileCheck] desktop");
-      isMobile = false;
-    }
-  }
-  var x = window.matchMedia("(max-width: 800px)");
-  mobileCheck(x); // Call listener function at run time
-  x.addListener(mobileCheck); // Attach listener function on state changes
-
-  function getProjectIdFromName(name) {
-    var projectID = -1;
-    $.each(projectsData, function(index, item) {
-      if (item.slug == name) projectID = index;
-    });
-    return projectID;
-  }
-
-  //Deploy left container
-  function toggleInformation() {
-    //console.log("toggleInformation : is Reduced "+ $('#container-side').hasClass('reduced'))
-
-    $('#container-side').toggleClass('reduced');
-    var style = projectsData[currentProjectID].style;
-
-    $('#container-main').toggleClass('extended');
-    applyStyleToIframe();
-
-  }
-
-  function mobile_applyStyleToNav(){
-    if($('#container-side').hasClass('mobile-reduced')){
-        $('#navigation').removeClass('not-extended');
-    }else{
-        $('#navigation').addClass('not-extended');
-    }
-  }
-
-  function applyStyleToIframe(){
-    if($('#container-main').hasClass('extended')){
-      $('.current-iframe').get(0).contentWindow.postMessage({message: 'isExtended', status: true}, '*');
-      //$('#navigation').addClass(style); //alone
-      if(isMobile){
-        mobile_applyStyleToNav();
-      }else{
-        $('#navigation').removeClass('not-extended'); //alone
-      }
-
-    }else{
-      $('.current-iframe').get(0).contentWindow.postMessage({message: 'isExtended', status: false}, '*');
-      //$('#navigation').removeClass(style);
-      if(isMobile){
-        mobile_applyStyleToNav();
-      }else{
-        $('#navigation').addClass('not-extended'); //alone
-      }
-
-    }
-  }
-
-  //only on mobile with burger menu
-  function toggleMenu(){
-    // if the menu is open ???
-
-    if(isMobile){
-      console.log("toggle menu : is reduced was " +$('#container-side').hasClass('mobile-reduced'));
-      console.log("main is reduced " +$('#container-main').hasClass('reduced')); //if it is not reduced means a project is open
-      if($('#container-main').hasClass('reduced')){ //not project open
-        $('#project-title').text(siteTitle);
-        $('#container-title').text(siteTitle);
-
-        //$('nav-mobile').addClass('d-none');
-      }else{
-
-      }
-
-      if ( $('#container-side').hasClass('mobile-reduced') ) {
-        $('#navigation').removeClass("background-white");
-        $('#navigation').removeClass("background-black");
-      } else {
-        $('#navigation').addClass(projectsData[currentProjectID].style);
-      }
-
-      $('#container-side').toggleClass('mobile-reduced');
-      mobile_applyStyleToNav();
-    }
-  }
-
   function init() {
+    console.log('[script.js] init');
+    loadProjectsJson();
+  }
+
+  //PROJECTS LISTS___________________________________________________________________________________________________
+  //load the list of projects from json
+  function loadProjectsJson(){
     $.ajax({
       dataType: "json",
       url: "./data/projects.json",
@@ -125,17 +41,28 @@ $(document).ready(function() {
     })
   }
 
+  //load each project
+  function loadProjectsPreview(){
+    $.each(projectsData, function(index, project) {
+      var link = $('<a href="#" class="font-large button-open-project" data-id="'+index+'">'+project.title+'</a>');
+      $('#container-projects').append(link);
+    });
+  }
+
+  function getProjectIdFromName(name) {
+    var projectID = -1;
+    $.each(projectsData, function(index, item) {
+      if (item.slug == name) projectID = index;
+    });
+    return projectID;
+  }
+
   function gotoProject(index, direction) {
-    //console.log("gotoProject");
-    // change the navigation here
 
     $('#navigation nav').removeClass('d-none');
-
     $('#container-main').addClass('main').removeClass('reduced');
     $('#container-about, #container-projects').addClass('reduced').removeClass('main');
-
     if (!direction) direction = 'none';
-
     if (!ignoreURLS) history.pushState({index: index, direction: direction}, siteTitle + ' - ' + projectsData[index].title, projectsData[index].slug);
     loadProject(index, direction);
   }
@@ -213,69 +140,148 @@ $(document).ready(function() {
     }, 3000); //500
   }
 
-  function loadProjectsPreview(){
-    $.each(projectsData, function(index, project) {
-      var link = $('<a href="#" class="font-large button-open-project" data-id="'+index+'">'+project.title+'</a>');
-      $('#container-projects').append(link);
-    });
+
+
+  //__________________________________________________________________________
+  //MOBILE
+  function mobileCheck(x) {
+    if (x.matches) { // If media query matches
+      //console.log("[mobileCheck] mobile");
+      isMobile = true;
+    } else {
+      //console.log("[mobileCheck] desktop");
+      isMobile = false;
+    }
   }
+  var x = window.matchMedia("(max-width: 800px)");
+  mobileCheck(x); // Call listener function at run time
+  x.addListener(mobileCheck); // Attach listener function on state changes
+
+
+  //BUTTONS___________________________________________________________________________________________________
+  $('#button-toggle-informations').on('click', function(e) {
+    e.preventDefault();
+    toggleInformation();
+  });
+  $('#button-open-about').on('click', function(e) {
+    e.preventDefault();
+    openAboutPage();
+  });
+  $('#button-open-projects').on('click', function(e) {
+    e.preventDefault();
+    openProjectsPage();
+  });
+
+
+  //Toggle left container
+  function toggleInformation() {
+    $('#container-side').toggleClass('reduced');
+    console.log("toggle info and deal with style");
+    $('#container-main').toggleClass('extended');
+    applyStyleToIframe();
+
+  }
+  //Apply style extended/not extended
+  function applyStyleToIframe(){
+    if($('#container-main').hasClass('extended')){
+      $('.current-iframe').get(0).contentWindow.postMessage({message: 'isExtended', status: true}, '*');
+      if(isMobile){
+        mobile_applyStyleToNav();
+      }else{
+        $('#navigation').removeClass('not-extended'); //alone
+      }
+
+    }else{
+      $('.current-iframe').get(0).contentWindow.postMessage({message: 'isExtended', status: false}, '*');
+      //$('#navigation').removeClass(style);
+      if(isMobile){
+        mobile_applyStyleToNav();
+      }else{
+        $('#navigation').addClass('not-extended'); //alone
+      }
+    }
+  }
+  //Apply style extended/not extended mobile
+  function mobile_applyStyleToNav(){
+    if($('#container-side').hasClass('mobile-reduced')){
+        $('#navigation').removeClass('not-extended');
+    }else{
+        $('#navigation').addClass('not-extended');
+    }
+  }
+
+  //only on mobile with burger menu
+  function openMenu(){
+    console.log("openMenu");
+    if(isMobile){
+      console.log("toggle menu : is reduced was " +$('#container-side').hasClass('mobile-reduced'));
+      console.log("main is reduced " +$('#container-main').hasClass('reduced')); //if it is not reduced means a project is open
+      if($('#container-main').hasClass('reduced')){ //not project open
+        $('#project-title').text(siteTitle);
+        $('#container-title').text(siteTitle);
+        //$('nav-mobile').addClass('d-none');
+      }else{
+
+      }
+      $('#button-menu').addClass('d-none');
+      $('#button-closeOverlay').removeClass('d-none');
+      $('#container-side').toggleClass('mobile-reduced');
+      mobile_applyStyleToNav();
+    }
+  }
+
+  function closeOverlay(){
+    console.log("closeoverlay");
+    $('#button-menu').removeClass('d-none');
+  }
+
 
   $(window).resize(function(){
     //console.log("resized");
   });
 
-  $('#button-toggle-informations').on('click', function(e) {
-    e.preventDefault();
-    toggleInformation();
-  });
+  function openAboutPage(){
+        $('.selected').removeClass('selected');
+        $(this).addClass('selected');
+        $('#navigation nav').addClass('d-none');
 
-  $('#button-open-about').on('click', function(e) {
-    //console.log("about");
-    e.preventDefault();
+        $('#container-about').addClass('main').removeClass('reduced');
+        $('#container-main, #container-projects').addClass('reduced').removeClass('main');
 
+        if(!isMobile){
+          /*$('#navigation nav-mobile').addClass('d-none');*/
+          $('#project-title').text(siteTitle);
+          $('#container-title').text(siteTitle);
+        }else{
+          $('#project-title').text("About");
+          $('#container-title').text("About");
+        }
+
+        $('#project-text p:first').text("");
+        $('#project-credits p:first').text("");
+
+        /*to improve*/
+        //only for mobile
+        $('#container-side').addClass('mobile-reduced');
+
+        if (!ignoreURLS) history.pushState({}, siteTitle , '/about');
+  }
+
+  function openProjectsPage(){
     $('.selected').removeClass('selected');
     $(this).addClass('selected');
-
-    $('#navigation nav').addClass('d-none');
-
-    $('#container-about').addClass('main').removeClass('reduced');
-    $('#container-main, #container-projects').addClass('reduced').removeClass('main');
-
-
-    if(!isMobile){
-      $('#project-title').text(siteTitle);
-      $('#container-title').text(siteTitle);
-
-
-    }else{
-      $('#project-title').text("About");
-      $('#container-title').text("About");
-    }
-
-    $('#project-text p:first').text("");
-    $('#project-credits p:first').text("");
-
-    //only for mobile
-    $('#container-side').addClass('mobile-reduced');
-
-    if (!ignoreURLS) history.pushState({}, siteTitle , '/about');
-  });
-
-  $('#button-open-projects').on('click', function(e) {
-    //console.log("project");
-    e.preventDefault();
-
-    $('.selected').removeClass('selected');
-    $(this).addClass('selected');
-
     $('#navigation nav').addClass('d-none');
 
     $('#container-projects').addClass('main').removeClass('reduced');
     $('#container-about, #container-main').addClass('reduced').removeClass('main');
+
+    /*to improve*/
     //only for mobile
     $('#container-side').addClass('mobile-reduced');
 
+
     if(!isMobile){
+
       $('#project-title').text(siteTitle);
       $('#container-title').text(siteTitle);
     }else{
@@ -287,7 +293,9 @@ $(document).ready(function() {
     $('#project-credits p:first').text("");
 
     if (!ignoreURLS) history.pushState({}, siteTitle , '/index');
-  });
+  }
+
+
 
   $('.button-up').on('click', function(e) {
     e.preventDefault();
@@ -315,7 +323,12 @@ $(document).ready(function() {
   //Only in mobile version
   $('#button-menu').on('click', function(e) {
     e.preventDefault();
-    toggleMenu();
+    openMenu();
+  });
+
+  $('#button-closeoverlay').on('click', function(e) {
+    e.preventDefault();
+    closeOverlay();
   });
 
   $('body').on('click', '.button-open-project', function(e) {
