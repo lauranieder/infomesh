@@ -13,7 +13,8 @@
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script>
-  var currentPagetName = "<? echo str_replace('/', '', $_SERVER['REQUEST_URI']); ?>";
+    var websiteMode = "<?= $_GET ? $_GET['mode'] : 'undefined'; ?>";
+    var currentPagetName = "<? echo str_replace('/', '', $_SERVER['REQUEST_URI']); ?>";
   </script>
 </head>
 <?
@@ -29,6 +30,12 @@
   <div class="click-to-start">
     <h5>Click to continue</h5>
   </div>
+
+  <div class="iframe-popup">
+    <?php echo file_get_contents("css/UI/UICrossiframe.svg"); ?>
+    <iframe class="iframe-popup__content" src="" frameborder="0"></iframe>
+  </div>
+
   <!--<div id="smartphone">mobile</div>-->
   <header id="navigation" class="not-extended">
     <h1 id="project-title">Information mesh</h1>
@@ -105,6 +112,7 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="js/splashscreen.js"></script>
+    <script type="text/javascript" src="./js/splashscreen.js"></script>
+    <script type="text/javascript" src="./js/preventDefaultAnchors.js"></script>
   </body>
 </html>

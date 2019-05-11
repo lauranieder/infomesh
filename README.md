@@ -49,6 +49,7 @@ npm run deploy
 - Ajouter dynamiquement une variable début fin pour la durée de la timeline.
 - Gérer les événements qui sont hors du temps. 
 - Checker deux fois le reflow
+- evenement se highlight pas
 
 ### Contenue texte / Page-about / information / evenement timeline
 - Récrire le texte de la page about avec Eryk.
@@ -78,6 +79,9 @@ npm run deploy
 #### web phenomena 
 - vérifier la liste des popup
 - Description
+
+### HTACCESS
+- Autoriser la page /proxy.php dans le .htaccess
 
 
 

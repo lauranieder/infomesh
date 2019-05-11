@@ -71,6 +71,9 @@ $(document).ready(function() {
   window.parent.postMessage({message: 'getScrollPosition'}, '*');
   window.parent.postMessage({message: 'getPopupStatus'}, '*');
   window.parent.postMessage({message: 'getStyles'}, '*');
+  console.log("window.websiteMode " +window.websiteMode);
+  window.parent.postMessage({message: 'getMode', mode: window.websiteMode}, '*');
+
 
   //TO CONTINUE
   //Calculate which is is the closest dot.

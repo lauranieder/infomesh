@@ -250,9 +250,9 @@ window.addEventListener('load', _ => {
         // $thumb() {}
     }
 
-    document.addEventListener('touchstart', e => {
+    DOM_EL.containerProject.addEventListener('touchstart', e => {
 
-        //disable long press (right click ) on mobile
+        //disable long press (right click) on mobile
         e.target.oncontextmenu = function(e) {
             this.oncontextmenu = null;
             e.preventDefault();

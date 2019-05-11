@@ -28,7 +28,7 @@
             panAmt: Math.PI * 0.12
         },
 
-        MOUSE = {
+        MOUSE = {  //also used by ui.js
             vX: 0,
             vY: 0,
             x: 0,
@@ -45,7 +45,7 @@
         CITY_SPAWNED = new Map(), //newly added elements
         CITY_EL = new Map(),
         THREE_EL = {},
-        DOM_EL = {},
+        DOM_EL = {},    //also used by ui.js
         MODEL_EL = {},
 
         DATA = {
@@ -55,7 +55,7 @@
             textures: 'json/textures.json'
         }
 
-    
+
     // VIEW.heightFactor = 400,
     window.addEventListener('load', init, false);
     async function init() {
@@ -341,7 +341,7 @@
             SCROLL.time = currTime;
 
             let scrolls = Array.from(document.querySelectorAll(':not(:active):not(:hover).scroll')),
-                nScrolls = ~~(scrolls.length/30) + 1;
+                nScrolls = ~~(scrolls.length / 30) + 1;
 
             SCROLL.delay = Math.random() * (SCROLL.max / (scrolls.length || SCROLL.max)) + SCROLL.min;
 
@@ -352,7 +352,7 @@
 
                 let scr = scrolls.splice(~~(Math.random() * scrolls.length), 1)[0];
                 // console.log(scr);
-                    let prg = scr.querySelector('.prg'),
+                let prg = scr.querySelector('.prg'),
                     currFlex = +prg.style.flexGrow,
                     direction;
 
@@ -361,7 +361,7 @@
                 } else if (currFlex < 0) {
                     direction = 1;
                 } else {
-                     direction = Math.sign(Math.random() - 0.5);
+                    direction = Math.sign(Math.random() - 0.5);
                 }
 
                 prg.style.flexGrow = currFlex + (Math.random() * 0.3 + 0.1) * direction;
@@ -490,8 +490,7 @@
             mouseDown(e.touches[0]);
         }, false);
 
-        document.addEventListener('touchstart', e => {
-
+        document.addEventListener('touchstart', function(e) {
             if (e.touches.length === 1) {
                 const t = e.touches[0];
                 MOUSE._x = MOUSE.x = t.clientX;
@@ -502,12 +501,15 @@
 
         }, true);
 
-
-        document.addEventListener('touchend', e => {
+        document.addEventListener('touchend', function(e) {
             if (!e.touches.length) {
 
-                if (e.cancelable)
+                if(e.cancelable) {
+                    //prevent event flow after touchend
                     e.preventDefault();
+                    //dirty fix for the click event of Popup
+                    e.target.dispatchEvent(new Event('click', {bubbles: true}));
+                }
 
                 Object.assign(e, { clientX: MOUSE.x, clientY: MOUSE.y });
                 mouseUp_capture(e);
@@ -516,7 +518,7 @@
         }, true);
 
 
-        document.addEventListener('touchmove', e => {
+        document.addEventListener('touchmove', function(e) {
             if (e.touches.length === 1) mouseMove(e.touches[0]);
         }, false);
 
@@ -536,7 +538,7 @@
             e.target.ontouchmove = function(te) {
                 const t = te.touches[0];
                 if (te.target !== document.elementFromPoint(t.clientX, t.clientY))
-                    leave();
+                    leave.call(this);
             }
 
             function leave() {
