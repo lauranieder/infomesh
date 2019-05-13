@@ -21,7 +21,7 @@
 ### Mobile
 - Menu navigation.
 - Boutons navigations pas actifs
-- (important, pietro) Intro splash screen, longueur de texte sur mobile. Fin de phrase qui freeze
+- (important, pietro) Intro splash screen, longueur de texte sur mobile. ✅ Fin de phrase qui freeze
 - Splashscreen. Point ou pas point dans les phrases.
 - Splashscreen. Source des phrases ?  
 - Transitions (supprimer sur mobile)
