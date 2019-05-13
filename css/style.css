@@ -283,17 +283,29 @@ nav svg{
 #navigation.background-white .button-nav{
   stroke: #0000ff;
 }
-#button-toggle-informations{
-  left:calc(100% - 3rem);
-  /*bottom:0rem;*/
-  top:8rem;
+
+#navigation.not-extended{
+  color: white;
 }
-/*to improve trop moche!*/
-#navigation.background-white #button-toggle-informations,
-#navigation.background-black #button-toggle-informations,
-#navigation.background-blue #button-toggle-informations{
+#navigation.not-extended nav > a {
+  color: #000000;
+}
+#navigation.not-extended .button-nav{
+  stroke: #000000;
+}
+
+
+#navigation #button-toggle-informations{
   left:1rem;
   transform: rotate(180deg);
+  top:8rem;
+}
+
+/*TO improve, not good to have reduced inverted as extended*/
+#navigation.not-extended #button-toggle-informations{
+  left:calc(100% - 3rem);
+  transform: rotate(0deg);
+  top:8rem;
 }
 
 nav .button-up{
@@ -612,7 +624,7 @@ iframe {
   stroke:blue;
 }
 
-@media (max-width: 1500px){
+@media (max-width: 1500px){ /*tablet landscape*/
   #container-about .content {
     width: 50%;
     min-width:50%;
@@ -640,7 +652,8 @@ iframe {
   }
 }
 
-@media only screen and (max-width: 800px) {
+/*BACK HERE*/
+@media only screen and (max-width: 800px) { /*mobile*/
   /*to remove*/
   #smartphone{
     display:inline-block;
@@ -696,8 +709,25 @@ iframe {
   #navigation {
     width:100%;
     position:fixed;
-    height:6rem;
+    height:4rem; /*6rem*/
+    padding-bottom: 1rem;
   }
+
+  #project-title {
+    padding-right: 3rem !important;
+    transition: padding 0.7s ease-in-out;
+    cursor: pointer;
+  }
+
+  #container-title {
+    padding-right: 3rem !important;
+    transition: padding 0.7s ease-in-out;
+    cursor: pointer;
+    height:4rem; /*rem*/
+    padding-bottom: 1rem !important;
+  }
+
+
   /*container button*/
   nav{
     display:none;
@@ -729,9 +759,14 @@ iframe {
     padding:1rem;
   }
 
-  nav-mobile #button-closeoverlay{
-    display:none;
-    visibility: hidden;
+  nav-mobile #button-closeOverlay{
+    /*display:none;
+    visibility: hidden;*/
+  }
+
+  nav-mobile .mobile-onlytimeline{
+    /*display:none;
+    visibility: hidden;*/
   }
 
 
@@ -756,8 +791,8 @@ iframe {
   #container-projects.main,
   #container-about.main {
     position:absolute;
-    height: calc(100% - 6rem);
-    top:6rem;
+    height: calc(100% - 4rem); /*6rem*/
+    top:4rem; /*6rem*/
   }
   .reduced {
     display:none;
@@ -768,6 +803,8 @@ iframe {
     display:inline;
     visibility: visible;
   }
+
+
 
   .mobile-reduced {
     display:none;
@@ -782,4 +819,11 @@ iframe {
     left: 50vw;
   }
 
+}
+
+@media only screen and (max-width: 370px) {
+  html,
+  body {
+    font-size: 13px; /*not so satisfying, to improve*/
+  }
 }

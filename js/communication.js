@@ -3,7 +3,7 @@ $(document).ready(function() {
   console.log("[communication.js] loaded");
   $(window).on('message', function(e) {
     if (e.originalEvent.data.message == 'receiveScrollPosition') {
-      console.log("scrollleft");
+      //console.log("scrollleft");
       $('#container-timeline').scrollLeft(e.originalEvent.data.position);
     }
 
@@ -47,7 +47,7 @@ $(document).ready(function() {
 
     if (e.originalEvent.data.message == 'isExtended') {
       //$('#container-timeline').scrollLeft(e.originalEvent.data.position);
-      console.log("isExtended "+ e.originalEvent.data.status);
+      //console.log("isExtended "+ e.originalEvent.data.status);
       isExtendedF(e.originalEvent.data.status);
     }
 
@@ -57,9 +57,8 @@ $(document).ready(function() {
     }
 
     if (e.originalEvent.data.message == 'showTimeline') {
-      console.log("show");
+      console.log("[iframe] received show timeline");
       $('#container-timeline').removeClass('hidden');
-
     }
 
 
@@ -71,10 +70,11 @@ $(document).ready(function() {
 
   window.parent.postMessage({message: 'getScrollPosition'}, '*');
   window.parent.postMessage({message: 'getPopupStatus'}, '*');
+  window.parent.postMessage({message: 'getStyles'}, '*');
   console.log("window.websiteMode " +window.websiteMode);
   window.parent.postMessage({message: 'getMode', mode: window.websiteMode}, '*');
 
-  //window.parent.postMessage({ mode: window.websiteMode });
+
 
   //TO CONTINUE
   //Calculate which is is the closest dot.

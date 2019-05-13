@@ -1,0 +1,11 @@
+{
+  "name": "infomesh",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "deploy": "node deploy.js"
+  },
+  "devDependencies": {
+    "ftp-deploy": "2.3.3"
+  }
+}
