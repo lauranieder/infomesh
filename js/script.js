@@ -245,6 +245,7 @@ $(document).ready(function() {
 
   $(window).resize(function(){
     //console.log("resized");
+    handleResize();
   });
 
   function openAboutPage(){
@@ -347,6 +348,14 @@ $(document).ready(function() {
     e.preventDefault();
     gotoProject($(this).data('id'), 'up');
   });
+
+
+  function handleResize(){
+    console.log("handleResize -> isMobile "+isMobile);
+    if(isMobile){
+
+    }
+  }
 
   $(window).bind('popstate', function(data) {
     if (!data.originalEvent.state) loadProject(0, 'up');

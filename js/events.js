@@ -138,7 +138,7 @@ function computeEvents() {
     $('#timeline-scrollable').prepend(block);
 
     if (item.wikifetch) {
-      wikifetching(item.wikifetch, index);
+      //wikifetching(item.wikifetch, index);  /*TO PUT BACK AFTER*/
     }
     /*TO PUT BACK*/
     /*console.log(item.readmore);
