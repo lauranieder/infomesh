@@ -58,7 +58,6 @@ $(document).ready(function() {
   }
 
   function gotoProject(index, direction) {
-
     $('#navigation nav').removeClass('d-none');
     $('#container-main').addClass('main').removeClass('reduced');
     $('#container-about, #container-projects').addClass('reduced').removeClass('main');
@@ -100,6 +99,8 @@ $(document).ready(function() {
     $('#timeline-barre').css('background-color','rgba(255,255,255,1)');
 
 
+
+
     $('#navigation').removeClass('background-blue');
     $('#navigation').removeClass('background-white');
     $('#navigation').removeClass('background-black');
@@ -108,10 +109,12 @@ $(document).ready(function() {
     console.log("addClass "+style);
 
 
+
     /*back here*/
     //ajouter extended reduced en fonction
 
     /*debugger le settimout iframe*/
+
     setTimeout(function() {
 
       $('.previous-iframe').addClass('move-' + direction);
@@ -206,6 +209,7 @@ $(document).ready(function() {
     if($('#container-side').hasClass('mobile-reduced')){
         $('#navigation').removeClass('not-extended');
     }else{
+
         $('#navigation').addClass('not-extended');
     }
   }
@@ -241,6 +245,7 @@ $(document).ready(function() {
       mobile_applyStyleToNav();
     }
   }
+
 
 
   $(window).resize(function(){

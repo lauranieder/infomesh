@@ -283,6 +283,7 @@ $(document).ready(function() {
   var funcTogglePopup = function() {
     alert("TOUCH");
     console.log("clicked on button toggle popup");
+
     $('#popup').toggleClass('reduced');
     window.parent.postMessage({message: 'isPopReduced', status: $('#popup').hasClass('reduced')}, '*');
   };
