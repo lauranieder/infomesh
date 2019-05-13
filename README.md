@@ -2,8 +2,8 @@
 30 years of the web website during Summer University at swissnex SF
 
 ### General
-- Check SSL certificate (google block access from ipad chrome)
-- Move to the new url (infomaniak !)
+- ✅ Check SSL certificate (google block access from ipad chrome)
+- ✅ Move to the new url (infomaniak !)
 
 ### Interface/css
 - (si on a le temps) Amélioration du jump d'event en event. Clic sur l'événements et mouvement dynamique. Fin ne retourne pas au début
