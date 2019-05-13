@@ -372,6 +372,10 @@ window.clearRequestTimeout = function(handle) {
 
   // Select a part of a text node
   function selectText(textElement, startOffset, endOffset) {
+    if (window.isMobile) {
+      return; // Deactivated on mobile layout - buggy
+    }
+
     // Reset window selections
     removeSelections();
     const { innerText } = textElement;
