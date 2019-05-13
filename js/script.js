@@ -85,6 +85,8 @@ $(document).ready(function() {
 
   function gotoProject(index, direction) {
     //console.log("gotoProject");
+    // change the navigation here
+
     $('#navigation nav').removeClass('d-none');
 
     $('#container-main').addClass('main').removeClass('reduced');
@@ -114,8 +116,15 @@ $(document).ready(function() {
     $('#project-credits p:first').html("Designed by "+project.student); //or created by
 
     $('.current-iframe').addClass('previous-iframe').removeClass('current-iframe');
+    
+    // 🤔not sure if ok in every case
+    if (isMobile) { 
+      $('#navigation').removeClass("background-white"); 
+      $('#navigation').removeClass("background-black"); 
 
-    //to improve définir le style background ici
+      $('#navigation').addClass(project.style); 
+    }
+    
 
     var iframe = $('<iframe class="current-iframe appear-' + direction + '" src="./projects/' + project.slug + '">');
     $('#container-main').append(iframe);
