@@ -170,9 +170,13 @@ window.clearRequestTimeout = function(handle) {
           this.currentResolve = resolve
           const writeLetter = () => {
 
-            this.currentTimeout = setTimeout(() => {
-              element.innerHTML += text[index];
-							//element.insertAdjacentHTML('beforeend', text[index]);
+
+            console.log("write letter")
+            // Replace with a requestAnimationFrame thing
+            //this.currentTimeout = setTimeout(() => {
+            this.currentTimeout = requestTimeout(() => {
+              element.insertAdjacentHTML('beforeend', text[index]);
+	              //element.innerHTML += text[index];
               //console.log(element.innerHTML);
               index++;
               if (index < text.length && isWriting && !isEnabled) {
