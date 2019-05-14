@@ -26,6 +26,7 @@ npm run deploy
 - timeline déja la quand on ouvre le projet mais elle devrait slider avec
 - slider reload pas au bon endroit timelime
 - ~~clic partout pour fermer popup~~ (à améliorer) Ferme toujours quand on clique sur un lien. 
+- (Pietro) Iframe link pour expo ne marche pas pour les link des descriptions des projets des étudiants (hors de l'iframe project).
 
 ### Splashscreen 
 - Mots trop long sur mobile
