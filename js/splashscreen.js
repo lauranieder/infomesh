@@ -169,13 +169,8 @@ window.clearRequestTimeout = function(handle) {
         return new Promise(resolve => {
           this.currentResolve = resolve
           const writeLetter = () => {
-            //console.log("write letter")
-            // Replace with a requestAnimationFrame thing
-            //this.currentTimeout = setTimeout(() => {
             this.currentTimeout = requestTimeout(() => {
               element.insertAdjacentHTML('beforeend', text[index]);
-	              //element.innerHTML += text[index];
-              //console.log(element.innerHTML);
               index++;
               if (index < text.length && isWriting && !isEnabled) {
                 writeLetter();
@@ -251,37 +246,23 @@ window.clearRequestTimeout = function(handle) {
   const subTitle = '30 years of facts about the World Wide Web';
   const firstFact = 'Information Mesh was a potential name for the web in Tim Berners Lee\'s 1989 original proposal.';
   const title = document.querySelector('.splashscreen-main-title h5');
-  const mainTitle = document.querySelector('#project-title');
   const body = document.querySelector('body');
   const textAnimator = new TextAnimator()
 
-  body.addEventListener('click', () => {
-    if (isSplashscreenEnabled()) {
-      // Debouce state changes to prevent event conflicts.
-      requestAnimationFrame(() => {
-        enableSplashScreen(false);
-        enableSplashScreenTitles(false);
-        textAnimator.disable();
-      });
-    }
-  })
+  window.startSplashscreen = function () {
+    requestAnimationFrame(() => {
+      enableSplashScreen(true);
+      textAnimator.enable();
+      startSplashscreenSequence()
+    });
+  }
 
-  mainTitle.addEventListener('click', () => {
-    if (!isSplashscreenEnabled()) {
-      // Debouce state changes to prevent event conflicts.
-      requestAnimationFrame(() => {
-        enableSplashScreen(true);
-        textAnimator.enable();
-        startSequence()
-      });
-    }
-  })
-
-  if(!currentPagetName){
-    startSequence();
-  }else{
-    enableSplashScreen(false);
-    enableSplashScreenTitles(false);
+  window.stopSplashscreen = function () {
+    requestAnimationFrame(() => {
+      enableSplashScreen(false);
+      enableSplashScreenTitles(false);
+      textAnimator.disable();
+    });
   }
 
   function isSplashscreenEnabled() {
@@ -304,7 +285,7 @@ window.clearRequestTimeout = function(handle) {
     }
   }
 
-  async function startSequence() {
+  async function startSplashscreenSequence() {
     if (isSplashscreenEnabled()) {
       highlight(true);
       enableCaret(false);
