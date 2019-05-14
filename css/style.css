@@ -832,3 +832,29 @@ iframe {
     font-size: 13px; /*not so satisfying, to improve*/
   }
 }
+
+.logo {
+  max-height: 2.5rem;
+  height: 100%;
+  object-fit: contain !important;
+  width: auto !important;
+  margin-bottom: 1.2rem;
+}
+
+.logo-bottom {
+  max-height: 4rem;
+  margin-top: 1.3rem;
+}
+
+.logo-bottom-middle {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.logos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

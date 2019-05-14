@@ -85,13 +85,16 @@
       <div class="content">
         <div class="full">
           <div class="fit-w half-w">
-            <img src="../img/ecal-snx.png" alt="écal">
+          <img src="../img/logos/logo_ecal_white.svg" alt="Logo of ECAL" class="logo">
+            <!-- <img src="../img/ecal-snx.png" alt="écal"> -->
           </div>
           <div class="fit-w half-w">
-            <img src="../img/swissnex_logo_white.png" alt="swissnex">
+            <img src="../img/logos/logo_swissnex_white.svg" alt="Logo of Swissnex" class="logo">
+            <!-- <img src="../img/swissnex_logo_white.png" alt="swissnex"> -->
           </div>
         </div>
         <div class="full">
+        <br>
           <h4>&lt;Team ecal&gt;</h4>
           <p>Vincent Jacquier, Pauline Saglio, Laura Perrenoud, Tibor Udvari, Pietro Alberti</p></br>
           <h4>&lt;Team swissnex&gt;</h4>
@@ -99,16 +102,29 @@
           <h4>&lt;Students&gt;</h4>
           <p>Al Zouabi Alfatih, Becheras Diane, Bisseck Iyo, Boulenaz Jonathan, Breithaupt Kevin, Chenaux Maëlle, Matos Sébastien, Mouthon Bastien, Palauqui Mathieu, Sassoli De Bianchi Luca, Simmen Guillaume, Virág Tamara, Vogel Nathan, Zibaut Anouk</p></br>
         </div>
-        <div class="full">
+        <div class="logos">
+          <a href="https://archive.org/" target="_blank">
+            <img src="../img/logos/logo_archive_white.svg" alt="Logo of the internet archive" class="logo logo-bottom">
+          </a>
+          <a href="https://wikimediafoundation.org/" target="_blank">
+            <img src="../img/logos/logo_wikimedia_white.svg" alt="Logo of the Wikimedia foundation" class="logo logo-bottom logo-bottom-middle">
+          </a>
+          <a href="https://vd.ch" target="_blank">
+            <img src="../img/logos/logo_vd_white.svg" alt="Logo of the Canton of Vaud" class="logo logo-bottom">
+          </a>
+<!-- 
           <div class="fit-w third-w">
-            <img src="../img/internet-archive-logo-transparent.png" alt="écal swissnex">
+            <img src="../img/logos/logo_archive_white.svg" alt="Logo of the internet archive" class="logo logo-bottom">
+            <!-- <img src="../img/internet-archive-logo-transparent.png" alt="écal swissnex"> -->
           </div>
           <div class="fit-w third-w">
-            <img src="../img/wikipedia-logo-transparent.png" alt="écal swissnex">
+            <img src="../img/logos/logo_wikimedia_white.svg" alt="Logo of the Wikimedia foundation" class="logo logo-bottom logo-bottom-middle">
+            <!-- <img src="../img/wikipedia-logo-transparent.png" alt="écal swissnex"> -->
           </div>
           <div class="fit-w third-w">
-            <img src="../img/vdwhite.png" alt="canton de vaud">
-          </div>
+            <img src="../img/logos/logo_vd_white.svg" alt="Logo of the Canton of Vaud" class="logo logo-bottom">
+            <!--  <img src="../img/vdwhite.png" alt="canton de vaud"> -->
+          </div> -->
         </div>
       </div>
     </div>
