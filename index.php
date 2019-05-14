@@ -1,4 +1,5 @@
 <?
+  $mode = isset($_GET['mode']) ? $_GET['mode'] : null;
   $state = $_SERVER['REQUEST_URI'];
   $bodyClasses = 'show-splashscreen';
 ?>
@@ -17,6 +18,10 @@
   <!--script-->
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+
+  <script>
+    var appMode = "<?= $mode ?>";
+  </script>
 </head>
 <body class="<?= $bodyClasses ?>">
   <div class="splashscreen-title">
@@ -113,6 +118,5 @@
       </div>
     </div>
     <script type="text/javascript" src="./js/splashscreen.js"></script>
-    <script type="text/javascript" src="./js/preventDefaultAnchors.js"></script>
   </body>
 </html>
