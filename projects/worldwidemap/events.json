@@ -1,254 +1,222 @@
 [
-  {
-    "timeline": "",
-    "title": "Tim Berners-Lee builds tools",
-    "start": "31/12/1990",
-    "end": "",
-    "content":
-      "By Christmas 1990, Berners-Lee had built all the tools necessary for a working Web: the <a href=\"https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol\">HyperText Transfer Protocol</a> (HTTP) 0.9, the <a href=\"https://en.wikipedia.org/wiki/HTML\">HyperText Markup</a> Language (HTML), the first <a href=\"https://en.wikipedia.org/wiki/Web_browser\">Web browser</a> (named WorldWideWeb, which was also a Web editor), the first HTTP server software (later known as CERN httpd), the first web server (http://info.cern.ch), and the first Web pages that described the project itself. The browser could access Usenet newsgroups and FTP files as well. However, it could run only on the NeXT; Nicola Pellow therefore created a simple text browser, called the Line Mode Browser, that could run on almost any computer. To encourage use within CERN, Bernd Pollermann put the CERN telephone directory on the web—previously users had to log onto the mainframe in order to look up phone numbers.",
-    "wikifetch": "",
-    "readmore": "",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "The web is publicly announced.",
-    "start": "06/08/1991",
-    "end": "",
-    "content":
-      "The Web was publicly announced (via a posting to the Usenet newsgroup alt.hypertext) on August 6, 1991.",
-    "wikifetch": "",
-    "readmore":
-      "https://groups.google.com/forum/#!msg/alt.hypertext/eCTkkOoWTAY/pwyBmDUpCAAJ",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "50 websites are online.",
-    "start": "01/01/1993",
-    "end": "",
-    "content": "",
-    "wikifetch": "",
-    "readmore": "",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title":
-      "The World Wide Web becomes public domain, waiving fees to participate.",
-    "start": "30/04/1993",
-    "end": "",
-    "content":
-      "“CERN’s intention in this is to further compatibility, common practices, and standards in networking and computer supported collaboration. This does not constitute a precedent to be applied to any other CERN copyright software.<br>CERN relinquishes all intellectual property rights to this code, both source and binary form and permission is granted for anyone to use, duplicate, modify and redistribute it.</br>CERN provides absolutely NO WARRANTY OF ANY KIND with respect to this software. The entire risk as to the quality and performance of this software is with the user.”",
-    "wikifetch": "",
-    "readmore":
-      "At the start of 1993, 50 websites were on the web. Within months after the release of software on the public domain, there were 500.",
-    "contentsource": "http://cds.cern.ch/record/1164399"
-  },
-  {
-    "timeline": "",
-    "title": "The World Wide Web reaches 623 websites",
-    "start": "31/12/1993",
-    "end": "",
-    "content":
-      "By the end of 1993, there were 623 websites, according to a study by MIT Researcher Matthew Gray",
-    "wikifetch": "",
-    "readmore":
-      "https://stuff.mit.edu/people/mkgray/net/web-growth-summary.html",
-    "contentsource":
-      "wikipédia, Matthew Gray of the Massachusetts Institute of Technology"
-  },
-  {
-    "timeline": "",
-    "title": "The World Wide Web reaches 2,738 websites",
-    "start": "01/06/1994",
-    "end": "",
-    "content":
-      "By mid-1994 there were 2,738 websites, according to Gray's statistics; by the end of the year, more than 10,000.",
-    "wikifetch": "",
-    "readmore":
-      "https://stuff.mit.edu/people/mkgray/net/web-growth-summary.html",
-    "contentsource":
-      "wikipédia, Matthew Gray of the Massachusetts Institute of Technology"
-  },
-  {
-    "timeline": "",
-    "title": "A New Giant Rises",
-    "start": "01/01/2008",
-    "end": "",
-    "content":
-      "World Internet population surpasses 1.5 billion. China's Internet population reaches 250 million, surpassing the United States as the world's largest.",
-    "wikifetch": "",
-    "readmore":
-      "https://phys.org/news/2009-08-key-milestones-internet.html#jCp",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "A Surfboard for the Net",
-    "start": "01/01/1994",
-    "end": "",
-    "content":
-      "Andreessen and others on the Mosaic team form a company to develop the first commercial Web browser, Netscape, piquing the interest of Microsoft Corp.",
-    "wikifetch": "",
-    "readmore": "",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "A Quarter of a Billion",
-    "start": "01/01/1998",
-    "end": "",
-    "content": "World Internet population surpasses 250 million.",
-    "wikifetch": "",
-    "readmore": "",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "Half a Billion",
-    "start": "01/01/2002",
-    "end": "",
-    "content":
-      "World Internet population surpasses 500 million. Acquiring more users in the last 3 years than in the previous 10.",
-    "wikifetch": "",
-    "readmore": "",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "First Billion",
-    "start": "01/01/2006",
-    "end": "",
-    "content": "World Internet population surpasses 1 billion.",
-    "wikifetch": "",
-    "readmore": "",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "The World in Your Hand",
-    "start": "01/01/1996",
-    "end": "",
-    "content":
-      "The first access to the mobile web was commercially offered in Finland at the end of 1996 on the <a href=\"https://en.wikipedia.org/wiki/Nokia_9000_Communicator\">Nokia 9000 Communicator</a> phone via the Sonera and Radiolinja networks.",
-    "wikifetch": "",
-    "readmore": "https://en.wikipedia.org/wiki/Mobile_Web#Mobile_access",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "Mobile Internet on the Rise",
-    "start": "01/01/1997",
-    "end": "",
-    "content":
-      "Unwired Planet, Nokia, Ericsson, and Motorola started the <a href=\"https://en.wikipedia.org/wiki/Open_Mobile_Alliance\">WAP Forum</a> to create and harmonize the standards to ease the transition to bandwidth networks and small display devices.",
-    "wikifetch": "",
-    "readmore":
-      "https://www.wired.com/1997/11/handheld-internet-will-be-huge-really/",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "Wider Waves fo a Wider Sky",
-    "start": "01/11/1993",
-    "end": "",
-    "content":
-      "Hughes Aircraft Co. filed with the <a href=\"https://en.wikipedia.org/wiki/Federal_Communications_Commission\">Federal Communications Commission</a> (USA) for a license to launch the first Ka-band satellite, <a href=\"https://en.wikipedia.org/wiki/Spaceway\">Spaceway </a>. Ka-band capable satellites were what enable the internet to be delivered via satellite in a significant way.",
-    "wikifetch": "",
-    "readmore": "https://en.wikipedia.org/wiki/Satellite_Internet_access",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "A Bigger Rocket",
-    "start": "01/01/2004",
-    "end": "",
-    "content":
-      "The <a href=\"https://en.wikipedia.org/wiki/Anik_(satellite)#Anik_F2\">Anik F2 </a> is launched in orbit, the first high throughput satellite, a class of next-generation satellites providing improved capacity and bandwidth became operational. Anik F2 is one of the largest, most powerful communications satellites ever built.",
-    "wikifetch": "",
-    "readmore": "https://en.wikipedia.org/wiki/Satellite_Internet_access",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "East Africa Plugged",
-    "start": "01/07/2009",
-    "end": "",
-    "content":
-      "An underwater fiber optic cable line plugged East Africa into the broader Internet. The company that provided this new cable was <a href=\"https://en.wikipedia.org/wiki/SEACOM_(African_cable_system)\">SEACOM</a>.",
-    "wikifetch": "",
-    "readmore":
-      "https://en.wikipedia.org/wiki/Submarine_communications_cable#Investment_in_and_financing_of_submarine_cables",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "Snakes of the Ocean",
-    "start": "01/01/2014",
-    "end": "",
-    "content":
-      "A total of 285 separated communications cables at the bottom of the ocean are operative and carrying the vast majority of the interenet intercontinental transmissions.",
-    "wikifetch": "",
-    "readmore":
-      "http://mentalfloss.com/article/60150/10-facts-about-internets-undersea-cables",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "NSFNET Final Upgrade",
-    "start": "01/01/1992",
-    "end": "",
-    "content":
-      "The <a href=\"https://en.wikipedia.org/wiki/National_Science_Foundation_Network\">National Science Foundation Network</a> is upgraded to 45 Mbit/s (T3), thus expanding the internet backbone at the time.",
-    "wikifetch": "",
-    "readmore":
-      "https://en.wikipedia.org/wiki/National_Science_Foundation_Network#/media/File:NSFNET-backbone-T3.png",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "More Space in the Air",
-    "start": "01/06/1999",
-    "end": "",
-    "content":
-      "The IEEE 802.11b specification is developped allowing to the extends throughput the wirless networking systems up to 11 Mbit/s.",
-    "wikifetch": "",
-    "readmore": "https://en.wikipedia.org/wiki/IEEE_802.11b-1999",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "Less Wires More Powers",
-    "start": "01/01/2003",
-    "end": "",
-    "content":
-      "The IEEE 802.11g specification si released. The wireless networks throughput is pushed to 54 Mbit/s. The specification gets the commercial name of <a href=\"https://en.wikipedia.org/wiki/Wi-Fi\">Wi-Fi</a>.",
-    "wikifetch": "",
-    "readmore": "https://en.wikipedia.org/wiki/IEEE_802.11g-2003",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "A Name for Every Place",
-    "start": "01/04/2010",
-    "end": "",
-    "content":
-      "First internationalized country code top-level domains are registered.",
-    "wikifetch": "",
-    "readmore":
-      "https://en.wikipedia.org/wiki/Top-level_domain#Internationalized_country_code_TLDs",
-    "contentsource": ""
-  },
-  {
-    "timeline": "",
-    "title": "America On Line",
-    "start": "01/02/1991",
-    "end": "",
-    "content":
-      "AOL launches its pay-based online services and will soon become the main actor and the most recognized brand on the web in the United States.",
-    "wikifetch": "",
-    "readmore": "https://en.wikipedia.org/wiki/AOL",
-    "contentsource": ""
-  }
-]
+    {
+      "timeline": null,
+      "title": "Tim Berners-Lee builds tools",
+      "start": "31/12/1990",
+      "end": null,
+      "content": "By Christmas 1990, Berners-Lee had built all the tools necessary for a working Web: the <a href=\"https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol\">HyperText Transfer Protocol</a> (HTTP) 0.9, the <a href=\"https://en.wikipedia.org/wiki/HTML\">HyperText Markup</a> Language (HTML), the first <a href=\"https://en.wikipedia.org/wiki/Web_browser\">Web browser</a> (named WorldWideWeb, which was also a Web editor), the first HTTP server software (later known as CERN httpd), the first web server (http://info.cern.ch), and the first Web pages that described the project itself. The browser could access Usenet newsgroups and FTP files as well. However, it could run only on the NeXT; Nicola Pellow therefore created a simple text browser, called the Line Mode Browser, that could run on almost any computer. To encourage use within CERN, Bernd Pollermann put the CERN telephone directory on the web—previously users had to log onto the mainframe in order to look up phone numbers.",
+      "wikifetch": null,
+      "readmore": null,
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "The web is publicly announced. ",
+      "start": "06/08/1991",
+      "end": null,
+      "content": "The Web was publicly announced (via a posting to the Usenet newsgroup alt.hypertext) on August 6, 1991.",
+      "wikifetch": null,
+      "readmore": "https://groups.google.com/forum/#!msg/alt.hypertext/eCTkkOoWTAY/pwyBmDUpCAAJ",
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "50 websites are online. ",
+      "start": "01/01/1993",
+      "end": null,
+      "content": null,
+      "wikifetch": null,
+      "readmore": null,
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "The World Wide Web becomes public domain, waiving fees to participate.",
+      "start": "30/04/1993",
+      "end": null,
+      "content": "“CERN’s intention in this is to further compatibility, common practices, and standards in networking and computer supported collaboration. This does not constitute a precedent to be applied to any other CERN copyright software.<br>CERN relinquishes all intellectual property rights to this code, both source and binary form and permission is granted for anyone to use, duplicate, modify and redistribute it.</br>CERN provides absolutely NO WARRANTY OF ANY KIND with respect to this software. The entire risk as to the quality and performance of this software is with the user.”",
+      "wikifetch": null,
+      "readmore": "At the start of 1993, 50 websites were on the web. Within months after the release of software on the public domain, there were 500. ",
+      "contentsource": "http://cds.cern.ch/record/1164399"
+    },
+    {
+      "timeline": null,
+      "title": "The World Wide Web reaches 623 websites",
+      "start": "31/12/1993",
+      "end": null,
+      "content": "By the end of 1993, there were 623 websites, according to a study by MIT Researcher Matthew Gray",
+      "wikifetch": null,
+      "readmore": "https://stuff.mit.edu/people/mkgray/net/web-growth-summary.html",
+      "contentsource": "wikipédia, Matthew Gray of the Massachusetts Institute of Technology"
+    },
+    {
+      "timeline": null,
+      "title": "The World Wide Web reaches 2,738 websites",
+      "start": "01/06/1994",
+      "end": null,
+      "content": "By mid-1994 there were 2,738 websites, according to Gray's statistics; by the end of the year, more than 10,000.",
+      "wikifetch": null,
+      "readmore": "https://stuff.mit.edu/people/mkgray/net/web-growth-summary.html",
+      "contentsource": "wikipédia, Matthew Gray of the Massachusetts Institute of Technology"
+    },
+    {
+      "timeline": null,
+      "title": "A New Giant Rises",
+      "start": "01/01/2008",
+      "end": null,
+      "content": "World Internet population surpasses 1.5 billion. China's Internet population reaches 250 million, surpassing the United States as the world's largest.",
+      "wikifetch": null,
+      "readmore": "https://phys.org/news/2009-08-key-milestones-internet.html#jCp",
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "A Surfboard for the Net",
+      "start": "01/01/1994",
+      "end": null,
+      "content": "Andreessen and others on the Mosaic team form a company to develop the first commercial Web browser, Netscape, piquing the interest of Microsoft Corp.",
+      "wikifetch": null,
+      "readmore": null,
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "A Quarter of a Billion",
+      "start": "01/01/1998",
+      "end": null,
+      "content": "World Internet population surpasses 250 million.",
+      "wikifetch": null,
+      "readmore": null,
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "Half a Billion",
+      "start": "01/01/2002",
+      "end": null,
+      "content": "World Internet population surpasses 500 million. Acquiring more users in the last 3 years than in the previous 10.",
+      "wikifetch": null,
+      "readmore": null,
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "First Billion",
+      "start": "01/01/2006",
+      "end": null,
+      "content": "World Internet population surpasses 1 billion.",
+      "wikifetch": null,
+      "readmore": null,
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "The World in Your Hand",
+      "start": "01/01/1996",
+      "end": null,
+      "content": "The first access to the mobile web was commercially offered in Finland at the end of 1996 on the <a href=\"https://en.wikipedia.org/wiki/Nokia_9000_Communicator\">Nokia 9000 Communicator</a> phone via the Sonera and Radiolinja networks.",
+      "wikifetch": null,
+      "readmore": "https://en.wikipedia.org/wiki/Mobile_Web#Mobile_access",
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "Mobile Internet on the Rise",
+      "start": "01/01/1997",
+      "end": null,
+      "content": "Unwired Planet, Nokia, Ericsson, and Motorola started the <a href=\"https://en.wikipedia.org/wiki/Open_Mobile_Alliance\">WAP Forum</a> to create and harmonize the standards to ease the transition to bandwidth networks and small display devices.",
+      "wikifetch": null,
+      "readmore": "https://www.wired.com/1997/11/handheld-internet-will-be-huge-really/",
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "Wider Waves fo a Wider Sky",
+      "start": "01/11/1993",
+      "end": null,
+      "content": "Hughes Aircraft Co. filed with the <a href=\"https://en.wikipedia.org/wiki/Federal_Communications_Commission\">Federal Communications Commission</a> (USA) for a license to launch the first Ka-band satellite, <a href=\"https://en.wikipedia.org/wiki/Spaceway\">Spaceway </a>. Ka-band capable satellites were what enable the internet to be delivered via satellite in a significant way.",
+      "wikifetch": null,
+      "readmore": "https://en.wikipedia.org/wiki/Satellite_Internet_access",
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "A Bigger Rocket",
+      "start": "01/01/2004",
+      "end": null,
+      "content": "The <a href=\"https://en.wikipedia.org/wiki/Anik_(satellite)#Anik_F2\">Anik F2 </a> is launched in orbit, the first high throughput satellite, a class of next-generation satellites providing improved capacity and bandwidth became operational. Anik F2 is one of the largest, most powerful communications satellites ever built.",
+      "wikifetch": null,
+      "readmore": "https://en.wikipedia.org/wiki/Satellite_Internet_access",
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "East Africa Plugged",
+      "start": "01/07/2009",
+      "end": null,
+      "content": "An underwater fiber optic cable line plugged East Africa into the broader Internet. The company that provided this new cable was <a href=\"https://en.wikipedia.org/wiki/SEACOM_(African_cable_system)\">SEACOM</a>.",
+      "wikifetch": null,
+      "readmore": "https://en.wikipedia.org/wiki/Submarine_communications_cable#Investment_in_and_financing_of_submarine_cables",
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "Snakes of the Ocean",
+      "start": "01/01/2014",
+      "end": null,
+      "content": "A total of 285 separated communications cables at the bottom of the ocean are operative and carrying the vast majority of the interenet intercontinental transmissions.",
+      "wikifetch": null,
+      "readmore": "http://mentalfloss.com/article/60150/10-facts-about-internets-undersea-cables",
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "NSFNET Final Upgrade",
+      "start": "01/01/1992",
+      "end": null,
+      "content": "The <a href=\"https://en.wikipedia.org/wiki/National_Science_Foundation_Network\">National Science Foundation Network</a> is upgraded to 45 Mbit/s (T3), thus expanding the internet backbone at the time.",
+      "wikifetch": null,
+      "readmore": "https://en.wikipedia.org/wiki/National_Science_Foundation_Network#/media/File:NSFNET-backbone-T3.png",
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "More Space in the Air",
+      "start": "01/06/1999",
+      "end": null,
+      "content": "The IEEE 802.11b specification is developped allowing to the extends throughput the wirless networking systems up to 11 Mbit/s.",
+      "wikifetch": null,
+      "readmore": "https://en.wikipedia.org/wiki/IEEE_802.11b-1999",
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "Less Wires More Powers",
+      "start": "01/01/2003",
+      "end": null,
+      "content": "The IEEE 802.11g specification si released. The wireless networks throughput is pushed to 54 Mbit/s. The specification gets the commercial name of <a href=\"https://en.wikipedia.org/wiki/Wi-Fi\">Wi-Fi</a>.",
+      "wikifetch": null,
+      "readmore": "https://en.wikipedia.org/wiki/IEEE_802.11g-2003",
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "A Name for Every Place ",
+      "start": "01/04/2010",
+      "end": null,
+      "content": "First internationalized country code top-level domains are registered.",
+      "wikifetch": null,
+      "readmore": "https://en.wikipedia.org/wiki/Top-level_domain#Internationalized_country_code_TLDs",
+      "contentsource": null
+    },
+    {
+      "timeline": null,
+      "title": "America On Line",
+      "start": "01/02/1991",
+      "end": null,
+      "content": "AOL launches its pay-based online services and will soon become the main actor and the most recognized brand on the web in the United States.",
+      "wikifetch": null,
+      "readmore": "https://en.wikipedia.org/wiki/AOL",
+      "contentsource": null
+    }
+  ]

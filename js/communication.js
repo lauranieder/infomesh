@@ -1,6 +1,6 @@
 /*in iframe*/
 $(document).ready(function() {
-  console.log("[communication.js] loaded");
+  //console.log("[communication.js] loaded");
   $(window).on('message', function(e) {
     if (e.originalEvent.data.message == 'receiveScrollPosition') {
       //console.log("scrollleft");
@@ -57,7 +57,7 @@ $(document).ready(function() {
     }
 
     if (e.originalEvent.data.message == 'showTimeline') {
-      console.log("[iframe] received show timeline");
+      //console.log("[iframe] received show timeline");
       $('#container-timeline').removeClass('hidden');
     }
 
@@ -71,7 +71,7 @@ $(document).ready(function() {
   window.parent.postMessage({message: 'getScrollPosition'}, '*');
   window.parent.postMessage({message: 'getPopupStatus'}, '*');
   window.parent.postMessage({message: 'getStyles'}, '*');
-  console.log("window.websiteMode " +window.websiteMode);
+  //console.log("window.websiteMode " +window.websiteMode);
   window.parent.postMessage({message: 'getMode', mode: window.websiteMode}, '*');
 
 

@@ -8,18 +8,18 @@
       "wikifetch": null,
       "readmore": "https://www.w3.org/History/1989/proposal.html",
       "context": "This document was an attempt to persuade CERN management that a global hypertext system was in CERN's interests. Note that the only name I had for it at this time was \"Mesh\" -- I decided on \"World Wide Web\" when writing the code in 1990.",
-      "Sources": null
+      "sources": null
     },
     {
       "timeline": null,
       "title": "The world wide communication by Mark Twain",
       "start": "01/01/1989",
       "end": null,
-      "content": "“From the ‘London Times’ of 1904,” by Mark Twain (1898): Did you know that when he wasn’t writing about irascible orphans and jumping frogs, Mark Twain sometimes wrote science fiction? In one of them, he imagined the “telelectroscope,” a device that used telephone wires to create a world-wide communication network that allowed users to get a peek at what people were doing at any given moment in any place on earth (if today’s social media landscape is any indication, they were probably taking tintypes of what they ate for breakfast). The story even features a murder suspect who is cleared of the crime when he’s able to locate the supposed victim alive and well via a livestream from a webcam filming a festival in China. Okay, not in those exact words. But essentially, what I’m saying is, Mark Twain invented the internet.",
+      "content": "\"As soon as the Paris contract released the telelectroscope, it was delivered to public use, and was soon connected with the telephonic systems of the whole world. The improved 'limitless-distance' telephone was presently introduced and the daily doings of the globe made visible to everybody, and audibly discussable too, by witnesses separated by any number of leagues.\" — From a short story by Mark Twain published in 1898. ",
       "wikifetch": null,
       "readmore": "https://en.wikipedia.org/wiki/World_Wide_Web",
       "context": null,
-      "Sources": null
+      "sources": null
     },
     {
       "timeline": null,
@@ -30,7 +30,7 @@
       "wikifetch": null,
       "readmore": "http://info.cern.ch/hypertext/WWW/TheProject.html",
       "context": null,
-      "Sources": "https://factslegend.org/40-interesting-world-wide-web-facts/"
+      "sources": "https://factslegend.org/40-interesting-world-wide-web-facts/"
     },
     {
       "timeline": "internetphenomena",
@@ -41,7 +41,7 @@
       "wikifetch": null,
       "readmore": null,
       "context": null,
-      "Sources": null
+      "sources": null
     },
     {
       "timeline": null,
@@ -52,7 +52,7 @@
       "wikifetch": null,
       "readmore": null,
       "context": null,
-      "Sources": null
+      "sources": null
     },
     {
       "timeline": "webphenomena",
@@ -63,29 +63,29 @@
       "wikifetch": null,
       "readmore": "https://web.archive.org/web/20121115110701im_/http://www.viceland.com/viceblog/15968853firstphoto_finished_full.jpg",
       "context": null,
-      "Sources": null
+      "sources": null
     },
     {
       "timeline": null,
       "title": "The concept of the Internet meme proposed by Mike Godwin ",
       "start": "01/01/1993",
       "end": null,
-      "content": "The word meme was coined by Richard Dawkins in his 1976 book The Selfish Gene as an attempt to explain the way cultural information spreads; The concept of the Internet meme was first proposed by Mike Godwin in the June 1993 issue of Wired.",
+      "content": "The word meme was coined by Richard Dawkins in his 1976 book, \"The Selfish Gene,\" as an attempt to explain the way cultural information spreads. The concept of the Internet meme was first proposed by Mike Godwin in the June 1993 issue of Wired.",
       "wikifetch": null,
       "readmore": null,
       "context": null,
-      "Sources": "https://en.wikipedia.org/wiki/Meme"
+      "sources": "https://en.wikipedia.org/wiki/Meme"
     },
     {
       "timeline": null,
       "title": "Early AOL phishing",
       "start": "31/12/1995",
       "end": null,
-      "content": "AOHell, released in early 1995, was a program designed to hack AOL users by allowing the attacker to pose as an AOL staff member, and send an instant message to a potential victim, asking him to reveal his password. The symbol <>< was replaced for any wording that referred to stolen credit cards, accounts, or illegal activity. Since the symbol looked like a fish, and due to the popularity of phreaking it was adapted as 'Phishing'. ",
+      "content": "AOHell, released in early 1995, was a program designed to hack AOL users by allowing the attacker to pose as an AOL staff member. The attacker would send an instant message to a potential victim, asking them to reveal their AOL password. A symbol <>< replaced words that referred to stolen credit cards, accounts, or illegal activity. Since the symbol looked like a fish, and due to the popularity of phreaking, the activity of casting about for information in this way came to be known as 'Phishing'. ",
       "wikifetch": null,
       "readmore": null,
       "context": null,
-      "Sources": "https://en.wikipedia.org/wiki/Phishing"
+      "sources": "https://en.wikipedia.org/wiki/Phishing"
     },
     {
       "timeline": "webdictionnary",
@@ -96,7 +96,7 @@
       "wikifetch": null,
       "readmore": null,
       "context": null,
-      "Sources": null
+      "sources": null
     },
     {
       "timeline": "internetphenomena",
@@ -107,18 +107,18 @@
       "wikifetch": "History_of_blogging",
       "readmore": null,
       "context": null,
-      "Sources": null
+      "sources": null
     },
     {
       "timeline": null,
       "title": "Web 2.0 popularized by Tim O'Reilly",
       "start": "01/01/1999",
       "end": null,
-      "content": "The term was invented by Darcy DiNucci in 1999 and popularized several years later by Tim O'Reilly and Dale Dougherty at the O'Reilly Media Web 2.0 Conference in late 2004.",
+      "content": "The term \"Web 2.0\" was invented by Darcy DiNucci in 1999 and popularized several years later by Tim O'Reilly and Dale Dougherty at the O'Reilly Media Web 2.0 Conference in late 2004.",
       "wikifetch": null,
       "readmore": "https://en.wikipedia.org/wiki/Web_2.0",
       "context": null,
-      "Sources": null
+      "sources": null
     },
     {
       "timeline": null,
@@ -129,7 +129,7 @@
       "wikifetch": "RSS",
       "readmore": null,
       "context": null,
-      "Sources": null
+      "sources": null
     },
     {
       "timeline": "missed content",
@@ -140,18 +140,18 @@
       "wikifetch": null,
       "readmore": null,
       "context": null,
-      "Sources": null
+      "sources": null
     },
     {
       "timeline": null,
-      "title": "Wikipédia Founded",
+      "title": "Wikipedia Founded",
       "start": "15/01/2001",
       "end": null,
       "content": "Wikipedia is a universal, multilingual encyclopedia created by Jimmy Wales and Larry Sanger on January 15, 2001, managed by wiki on the <a href=\"https://en.wikipedia.org\">wikipedia.org</a> website. The versions of the different languages ​​use the same publishing software, MediaWiki, and have the same appearance, but they include variations in their content, their structures and their editing and management.\n\nThe encyclopedia and its environment are hosted on the Internet thanks to the servers funded by the <a href=\"https://wikimediafoundation.org/\">Wikimedia Foundation</a>, a non-profit organization in the United States, the depository of the Wikipedia brand.\n\n<a href=\"https://en.wikipedia.org/w/index.php?title=TransporT&oldid=286342\">See the oldest archived Wikipedia article.</a>",
       "wikifetch": null,
       "readmore": null,
       "context": null,
-      "Sources": null
+      "sources": null
     },
     {
       "timeline": "webphenomena",
@@ -162,18 +162,18 @@
       "wikifetch": "Creative_Commons",
       "readmore": null,
       "context": null,
-      "Sources": null
+      "sources": null
     },
     {
       "timeline": null,
       "title": "Introduction of the Front-facing camera",
       "start": "01/01/2003",
       "end": null,
-      "content": "Several mobile phones released in 2003 to western markets introduced front-facing cameras, including the NEC e606, NEC e616, Sony Ericsson Z1010 and Motorola A835. The front-facing camera was originally intended for video-conferencing",
+      "content": "Several mobile phones released in 2003 to Western markets introduced front-facing cameras, including the NEC e606, NEC e616, Sony Ericsson Z1010 and Motorola A835. The front-facing camera was originally intended for video-conferencing.",
       "wikifetch": null,
       "readmore": null,
       "context": null,
-      "Sources": "https://en.wikipedia.org/wiki/Front-facing_camera"
+      "sources": "https://en.wikipedia.org/wiki/Front-facing_camera"
     },
     {
       "timeline": null,
@@ -184,29 +184,29 @@
       "wikifetch": "Wikimedia_Foundation",
       "readmore": null,
       "context": null,
-      "Sources": null
+      "sources": null
     },
     {
       "timeline": null,
       "title": "First Youtube video",
       "start": "23/04/2005",
       "end": null,
-      "content": "The first ever YouTube video was ‘Me at the Zoo’. It featured Jawed Karim – a founder of San Diego Zoo. The video was uploaded on 23rd April, 2005.",
+      "content": "The first public YouTube video was ‘Me at the Zoo’. It featured Jawed Karim – a founder of San Diego Zoo. The video was uploaded on 23rd April, 2005.",
       "wikifetch": null,
       "readmore": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
       "context": null,
-      "Sources": "https://factslegend.org/40-interesting-world-wide-web-facts/"
+      "sources": "https://factslegend.org/40-interesting-world-wide-web-facts/"
     },
     {
       "timeline": null,
       "title": "First tweet",
       "start": "21/03/2006",
       "end": null,
-      "content": "Jack Dorsey – Twitter founder twitted the first tweet on 21st March, 2006. The tweet he sent was ‘just setting up my twttr’.",
+      "content": "Jack Dorsey, Twitter's founder, Tweeted the first Tweet on 21st March, 2006. The Tweet he sent: ‘just setting up my twttr’.",
       "wikifetch": null,
       "readmore": null,
       "context": null,
-      "Sources": "https://www.buzzfeednews.com/article/katienotopoulos/50-surprising-facts-about-the-internet#.cpJPzyW2y"
+      "sources": "https://www.buzzfeednews.com/article/katienotopoulos/50-surprising-facts-about-the-internet#.cpJPzyW2y"
     },
     {
       "timeline": null,
@@ -217,18 +217,18 @@
       "wikifetch": null,
       "readmore": null,
       "context": null,
-      "Sources": "https://en.wikipedia.org/wiki/Emoji"
+      "sources": "https://en.wikipedia.org/wiki/Emoji"
     },
     {
       "timeline": null,
       "title": "GIF was voted \"Word of the Year\"",
       "start": "01/01/2012",
       "end": null,
-      "content": " The press's lexicographers voted it their word of the year, saying that GIFs have evolved into \"a tool with serious applications including research and journalism\"",
+      "content": " The press's lexicographers voted it their word of the year, saying that GIFs have evolved into \"a tool with serious applications including research and journalism.\"",
       "wikifetch": null,
       "readmore": null,
       "context": null,
-      "Sources": "https://en.wikipedia.org/wiki/GIF"
+      "sources": "https://en.wikipedia.org/wiki/GIF"
     },
     {
       "timeline": null,
@@ -239,7 +239,7 @@
       "wikifetch": null,
       "readmore": null,
       "context": null,
-      "Sources": "https://www.brandwatch.com/blog/amazing-social-media-statistics-and-facts/"
+      "sources": "https://www.brandwatch.com/blog/amazing-social-media-statistics-and-facts/"
     },
     {
       "timeline": null,
@@ -250,18 +250,18 @@
       "wikifetch": null,
       "readmore": null,
       "context": null,
-      "Sources": "https://www.websitehostingrating.com/internet-statistics-facts/"
+      "sources": "https://www.websitehostingrating.com/internet-statistics-facts/"
     },
     {
       "timeline": null,
       "title": "The mobile internet usage",
       "start": "01/01/2018",
       "end": null,
-      "content": "More people access the internet on a mobile device than they do on a desktop computer. In 2018, the mobile internet usage was 48.2%.",
+      "content": "For the first time, more people access the internet on a mobile device than from a desktop computer. In 2018, mobile internet usage was 48.2%.",
       "wikifetch": null,
       "readmore": null,
       "context": null,
-      "Sources": "https://www.websitehostingrating.com/internet-statistics-facts/"
+      "sources": "https://www.websitehostingrating.com/internet-statistics-facts/"
     },
     {
       "timeline": null,
@@ -272,6 +272,6 @@
       "wikifetch": null,
       "readmore": null,
       "context": null,
-      "Sources": "https://www.websitehostingrating.com/internet-statistics-facts/"
+      "sources": "https://www.websitehostingrating.com/internet-statistics-facts/"
     }
   ]

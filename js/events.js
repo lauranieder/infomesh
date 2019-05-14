@@ -29,8 +29,9 @@ function isMobileF(x){
     $('html').removeClass("mobile");
     //$('.timeline-containers').removeClass("mobile");
   }
-  computeEvents();
+  displayEvents();
 }
+
 function isExtendedF(status){
   console.log("Iframe received isExtended "+status);
   if (status) { // If side panel is hidden
@@ -40,7 +41,6 @@ function isExtendedF(status){
     $('body').removeClass("extended");
     $('html').removeClass("extended");
   }
-  //computeEvents(); ???
 }
 
 function createPopup() {
@@ -51,10 +51,11 @@ function createPopup() {
 }
 
 function loadEvents() {
-  //wikitest();
   jQuery.getJSON('./events.json', function(data) {
     events = data;
-    computeEvents();
+
+    displayEvents(); //calculate event pos and add them to the dom
+    computeEventsContent(); //fetch wiki and automate text data
   });
 }
 
@@ -103,15 +104,37 @@ function formatDate(date){
   }
   // supposedly better regex that doesn't work https://www.sitepoint.com/jquery-basic-regex-selector-examples/  ^(0[1-9]|[12][0-9]|3[01])[- \/.](0[1-9]|1[012])[- \/.](19|20)dd$
 }
-//title doesn't make sens
-function computeEvents() {
-  //console.log("computeEvents");
+
+
+//Improved this executes ONLY ONCE ! Not at every reload of the page
+function computeEventsContent(){
+  console.log("[event.js] computeEventsContent");
+  $.each(events, function(index, item) {
+    if (item.wikifetch) {
+      wikifetching(item.wikifetch, index);  /*TO PUT BACK AFTER*/
+    }
+
+    /*TO IMPROVE*/
+    console.log(item.readmore);
+    var containReadmore = item.readmore.match(/id='readmore'/g);
+    if(item.readmore != null && item.readmore != ""){
+      item.content += "</br><a target='_blank' id='readmore' href='"+item.readmore+"'>Read more</a>";
+    }
+
+    //TODO : regex to improve, replace link with target blank //doit être fait après le wikifetch ? non pas de link sauf erreur donc ok
+    if(item.content){
+      var temp = item.content;
+      var temp = temp.replace("<a", "<a target='_blank' ");
+      item.content = temp;
+    }
+  });
+}
+
+//Will fire at every resize of the page
+function displayEvents() {
+  console.log("[event.js] display Events");
   //getResponsive message
   timelineWidth = cellwidth * 31;
-  /*if($('.timeline-cell').width() != null){
-    var cellwidth = $('.timeline-cell').css("width");
-    //console.log("cellwidth  "+cellwidth);
-  }*/
   $('.event-marker').remove();
 
   $.each(events, function(index, item) {
@@ -129,30 +152,12 @@ function computeEvents() {
 
     var startTime = startDate.diff(rootStartDate, 'seconds');
     var endTime = endDate.diff(rootStartDate, 'seconds');
-
     var startPosition = startTime * timelineWidth / totalTime;
     var endPosition = endTime * timelineWidth / totalTime;
     var width = endPosition - startPosition;
     var block = $('<div id="marker-' + index + '" class="event-marker ' + className + '" style="left:calc(50vw + '+startPosition+'vw);width:'+width+'vw;"></div>');
-    //console.log(block);
     $('#timeline-scrollable').prepend(block);
 
-    if (item.wikifetch) {
-      //wikifetching(item.wikifetch, index);  /*TO PUT BACK AFTER*/
-    }
-    /*TO PUT BACK*/
-    /*console.log(item.readmore);
-      var containReadmore = item.readmore.match(/id='readmore'/g);
-      if(item.readmore != null && item.readmore != "" && !containReadmore){
-        item.content += "<a target='_blank' id='readmore' href='"+item.readmore+"'>Read more</a>";
-      }*/
-
-    //TODO : regex to improve, replace link with target blank
-    if(item.content){
-      var temp = item.content;
-      var temp = temp.replace("<a", "<a target='_blank' ");
-      item.content = temp;
-    }
   });
 }
 
@@ -163,59 +168,13 @@ function wikifetching(wiki, index){
 
     //Remove the stupid citation-needed-content span from wiki
     content = content.replace(/<\/?span[^>]*>/g, '');
-    content += "<a target='_blank' href='https://en.wikipedia.org/wiki/"+wiki+"'>Read full article on Wikipédia</a>";
+    content += "<a target='_blank' href='https://en.wikipedia.org/wiki/"+wiki+"'>Read full article on Wikipedia</a>";
     events[index].content = content;
   });
 }
 
-function wikitest(){
-  var url = 'https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=wikitext&page=Timeline_of_Facebook&section=1';
-  // $.getJSON(url, function(data){
-  //   //console.log(data);
-  // });
-  //postData = function() {
-     $.ajax({
-       headers: {
-        'Access-Control-Allow-Origin': 'https://en.wikipedia.org'
-    },
-     });
-     var settings = {
-       "async": true,
-       "crossDomain": true,
-       "url": "https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=wikitext&page=Timeline_of_Facebook&section=1",
-       "method": "GET",
-
-     }
-     $.ajax(settings).done(function (response) {
-       //console.log(response);
-     });
-  // }
-
-}
-
-function wikifetchingnew(wiki,index){
-  // postData = function() {
- //   $.ajax({
- //      url : 'more_com.php' // La ressource ciblée
- //   });
- //   var settings = {
- //     "async": true,
- //     "crossDomain": true,
- //     "url": "http://10.0.10.18:8000/api/v1/documents/bac85005-5c6d-43b4-9d6a-6f6a89e20d52/status",
- //     "method": "GET",
- //     "headers": {
- //       "Content-Type": "application/x-www-form-urlencoded",
- //       "cache-control": "no-cache",
- //       "Postman-Token": "d6d93159-3e42-49ec-b06d-4bb884844dcf"
- //     }
- //   }
- //   $.ajax(settings).done(function (response) {
- //     //console.log(response);
- //   });
- // }
 
 
-}
 $(document).ready(function() {
   loadEvents();
   createPopup();
@@ -223,14 +182,12 @@ $(document).ready(function() {
 
   var lastPopupIndex;
   $(window).resize(function(){
-    //computeEvents();
     window.parent.postMessage({message: 'getResponsive'}, '*');
   });
 
 
   $(document).on('timeline-scroll', function(e) {
     var currentPopupIndex = -1;
-    //console.log(e);
 
     $.each(events, function(index, item) {
       var startDate = moment(parseDate(item.start), 'DD/MM/YYYY');
@@ -285,6 +242,6 @@ $(document).ready(function() {
     window.parent.postMessage({message: 'isPopReduced', status: $('#popup').hasClass('reduced')}, '*');
   };
 
-  $('body').on('click', '#button-toggle-popup', funcTogglePopup);
-  $('body').on('touchstart', '#button-toggle-popup', funcTogglePopup);
+  $('body').on('click', '#popup', funcTogglePopup);
+  $('body').on('touchstart', '#popup', funcTogglePopup);
 });

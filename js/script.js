@@ -5,7 +5,7 @@ main script
 - create projects
 */
 $(document).ready(function() {
-  console.log("[script.js] loaded");
+  //console.log("[script.js] loaded");
   var projectsData;
   var currentProjectID = 0;
   var siteTitle = document.title;
@@ -15,19 +15,19 @@ $(document).ready(function() {
   var historyState = {};
 
   function init() {
-    console.log('[script.js] init');
+    //console.log('[script.js] init');
 
     loadProjectsJson();
     applyCorrectStylesAtStartup();
   }
 
   function applyCorrectStylesAtStartup(){
-    console.log('[script.js] apply correct styles');
-    console.log('[script.js] currentPagetName '+currentPagetName);
+    //console.log('[script.js] apply correct styles');
+    //console.log('[script.js] currentPagetName '+currentPagetName);
 
-    console.log('main is main ' + $('#container-main').hasClass('main'));
-    console.log('about is main ' + $('#container-about').hasClass('main'));
-    console.log('project is main ' + $('#container-projects').hasClass('main'));
+    //console.log('main is main ' + $('#container-main').hasClass('main'));
+    //console.log('about is main ' + $('#container-about').hasClass('main'));
+    //console.log('project is main ' + $('#container-projects').hasClass('main'));
     if(isMobile){
       //to check
       $('#container-side').addClass('mobile-reduced');
@@ -211,7 +211,7 @@ $(document).ready(function() {
     $('#navigation').removeClass('background-black');
     var style = projectsData[currentProjectID].style;
     $('#navigation').addClass(style); //alone
-    console.log("addClass "+style);
+    //console.log("addClass "+style);
 
     /*back here*/
     //ajouter extended reduced en fonction
@@ -228,7 +228,7 @@ $(document).ready(function() {
 
       $('.current-iframe').get(0).contentWindow.postMessage({message: 'hideTimeline'}, '*');
       //applyStyleToIframe();
-      console.log("Set timeout iframe 1 sended");
+      //console.log("Set timeout iframe 1 sended");
 
       //$('#timeline-barre').css('background-color','white');
     }, 100); //100
@@ -238,7 +238,7 @@ $(document).ready(function() {
         $('.previous-iframe').get(0).contentWindow.postMessage({message: 'showTimeline'}, '*');
       }
       $('.current-iframe').get(0).contentWindow.postMessage({message: 'showTimeline'}, '*');
-      console.log("[main] showTimeline sended / current iframe "+$('.current-iframe'));
+      //console.log("[main] showTimeline sended / current iframe "+$('.current-iframe'));
       $('.previous-iframe').remove();
       $('#timeline-barre').css('transition','all 500ms cubic-bezier(0.23, 1, 0.32, 1)');
       $('#timeline-barre').css('background-color','rgba(255,255,255,0)');
@@ -272,7 +272,7 @@ $(document).ready(function() {
   //Toggle left container
   function toggleInformation() {
     $('#container-side').toggleClass('reduced');
-    console.log("toggle info and deal with style");
+    //console.log("toggle info and deal with style");
     $('#container-main').toggleClass('extended');
     applyStyleToIframe();
   }
@@ -308,10 +308,10 @@ $(document).ready(function() {
 
   //only on mobile with burger menu
   function openMenu(){
-    console.log("openMenu");
+    //console.log("openMenu");
     if(isMobile){
-      console.log("open menu : is reduced was " +$('#container-side').hasClass('mobile-reduced'));
-      console.log("main is reduced " +$('#container-main').hasClass('reduced')); //if it is not reduced means a project is open
+      //console.log("open menu : is reduced was " +$('#container-side').hasClass('mobile-reduced'));
+      //console.log("main is reduced " +$('#container-main').hasClass('reduced')); //if it is not reduced means a project is open
       if($('#container-main').hasClass('reduced')){ //not project open
         $('#project-title').text(siteTitle);
         $('#container-title').text(siteTitle);
@@ -328,10 +328,10 @@ $(document).ready(function() {
   }
 
   function closeOverlay(){
-    console.log("open menu : is reduced was " +$('#container-side').hasClass('mobile-reduced'));
-    console.log("main is reduced " +$('#container-main').hasClass('reduced')); //if it is not reduced means a project is open
+    //console.log("open menu : is reduced was " +$('#container-side').hasClass('mobile-reduced'));
+    //console.log("main is reduced " +$('#container-main').hasClass('reduced')); //if it is not reduced means a project is open
     if(isMobile){
-      console.log("closeOverlay");
+      //console.log("closeOverlay");
       $('#button-menu').removeClass('d-none');
       $('.mobile-onlytimeline').removeClass('d-none');
       $('#button-closeOverlay').addClass('d-none');
@@ -349,7 +349,7 @@ $(document).ready(function() {
 
 
   function openAboutPage(){ //triggered by redirect to
-    console.log("[script.js] openAboutPage")
+    //console.log("[script.js] openAboutPage")
         $('.selected').removeClass('selected');
         $(this).addClass('selected');
         $('#navigation nav').addClass('d-none');
@@ -456,7 +456,7 @@ $(document).ready(function() {
   });
 
   function handleResize(){
-    console.log("handleResize -> isMobile "+isMobile);
+    //console.log("handleResize -> isMobile "+isMobile);
     applyCorrectStylesAtStartup();
   }
 
@@ -481,14 +481,14 @@ $(document).ready(function() {
         timelinePosition = data.position;
         break;
       case 'getScrollPosition':
-        console.log("iframe ask scroll position");
+        //console.log("iframe ask scroll position");
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'receiveScrollPosition', position: timelinePosition}, '*');
         break;
       case 'getResponsive':
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'isMobile', status: isMobile}, '*');
         break;
       case 'getStyles':
-        console.log("iframe ask styles position");
+        //console.log("iframe ask styles position");
         applyStyleToIframe();
         break;
       case 'request-mode':

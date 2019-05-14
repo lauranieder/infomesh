@@ -1,5 +1,17 @@
 [
-
+    {
+      "timeline": null,
+      "title": "Apple is founded.",
+      "start": "01/04/1976",
+      "end": null,
+      "content": null,
+      "wikifetch": "History_of_Apple_Inc.",
+      "readmore": "https://en.wikipedia.org/wiki/History_of_Apple_Inc.",
+      "archive": null,
+      "context": null,
+      "contentsource": null,
+      "company": null
+    },
     {
       "timeline": null,
       "title": "Internet is live",
@@ -8,6 +20,7 @@
       "content": null,
       "wikifetch": "History_of_the_Internet",
       "readmore": "https://en.wikipedia.org/wiki/History_of_the_Internet",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -20,6 +33,7 @@
       "content": "Under the vision of co-founder Akio Morita and his successors, Sony had aggressively expanded into new businesses. Part of its motivation for doing so was the pursuit of \"convergence,\" linking film, music and digital electronics via the Internet. This expansion proved unrewarding and unprofitable, threatening Sony's ability to charge a premium on its products as well as its brand name. In 2005, Howard Stringer replaced Nobuyuki Idei as chief executive officer, marking the first time that a foreigner had run a major Japanese electronics firm. Stringer helped to reinvigorate the company's struggling media businesses, encouraging blockbusters such as Spider-Man while cutting 9,000 jobs. He hoped to sell off peripheral business and focus the company again on electronics. Furthermore, he aimed to increase cooperation between business units, which he described as \"silos\" operating in isolation from one another. In a bid to provide a unified brand for its global operations, Sony introduced a slogan known as \"make.believe\" in 2009.",
       "wikifetch": null,
       "readmore": "https://en.wikipedia.org/wiki/Sony",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -32,6 +46,7 @@
       "content": "In 1980s, Samsung Electronics began to invest heavily in research and development, investments that were pivotal in pushing the company to the forefront of the global electronics industry. In 1980, Samsung acquired the Gumi-based Hanguk Jeonja Tongsin and entered telecommunications hardware. Its early products were switchboards. The facility was developed into the telephone and fax manufacturing systems and became the center of Samsung's mobile phone manufacturing. They have produced over 800 million mobile phones to date. The company grouped them together under Samsung Electronics in the 1980s.",
       "wikifetch": null,
       "readmore": "https://en.wikipedia.org/wiki/Samsung",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -44,6 +59,7 @@
       "content": "The Bell Telephone Company was established in 1879 by Alexander Graham Bell, the inventor of the telephone. Bell also established American Telephone and Telegraph Company in 1885, which acquired the Bell Telephone Company and became the primary phone company in the United States. This company maintained a monopoly on telephone service in the United States until anti-trust regulators split the company in 1982. Western Electric was renamed AT&T Technologies and was divided into several units focused on specific customer groups, such as AT&T Network Systems and AT&T Consumer Products. It, along with Bell Labs, would be fully merged and absorbed into American Telephone and Telegraph Company in 1991. In 1991, AT&T also discontinued telegraph services.\n\nAfter its own attempt to penetrate the computer marketplace failed, in 1991, AT&T acquired NCR Corporation (National Cash Register), hoping to capitalize on the burgeoning personal computer and Unix networked server markets, but was unable to extract lasting financial or technological gains from the merger. After deregulation of the U.S. telecom industry via the Telecommunications Act of 1996, NCR was divested again. At the same time, the majority of AT&T Technologies and the renowned Bell Labs was spun off as Lucent Technologies. The industry as a whole had many other reorganizations since the 1990s, both due to deregulation and because of technological advances reducing demand and pricing power in telecommunications.",
       "wikifetch": null,
       "readmore": "https://en.wikipedia.org/wiki/History_of_AT%26T",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -56,18 +72,20 @@
       "content": "Between 1992 and 1994, Cisco acquired several companies in Ethernet switching, such as Kalpana, Grand Junction and most notably, Mario Mazzola's Crescendo Communications, which together formed the Catalyst business unit. At the time, the company envisioned layer 3 routing and layer 2 (Ethernet, Token Ring) switching as complementary functions of different intelligence and architecture—the former was slow and complex, the latter was fast but simple. This philosophy dominated the company's product lines throughout the 1990s.",
       "wikifetch": null,
       "readmore": "https://en.wikipedia.org/wiki/Cisco_Systems",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
     },
     {
       "timeline": null,
-      "title": "IBM looses it's lead",
+      "title": "IBM loses its lead",
       "start": "01/01/1993",
       "end": null,
       "content": "The late 1980s and early 1990s were cruel to IBM—losses in 1993 exceeded $8 billion—as the mainframe giant failed to adjust quickly enough to the personal computer revolution. Desktop machines had the power needed, and were vastly easier for both users and managers than multi-million-dollar mainframes. IBM did introduce a popular line of microcomputers—but it was too popular. Clone makers undersold IBM, while the profits went to chip makers like Intel or software houses like Microsoft.\n\nAfter a series of reorganizations IBM remains one of the world's largest computer companies and systems integrators. With over 400,000 employees worldwide as of 2014, IBM holds more patents than any other U.S. based technology company and has twelve research laboratories worldwide. The company has scientists, engineers, consultants, and sales professionals in over 175 countries. IBM employees have earned five Nobel Prizes, four Turing Awards, five National Medals of Technology, and five National Medals of Science.",
       "wikifetch": null,
       "readmore": "https://en.wikipedia.org/wiki/History_of_IBM",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -80,30 +98,33 @@
       "content": "Amazon.com is founded by <a href=\"https://en.wikipedia.org/wiki/Jeff_Bezos\">Jeff Bezos</a>",
       "wikifetch": "Amazon_(company)",
       "readmore": "https://en.wikipedia.org/wiki/Amazon_(company)",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": "amazon"
     },
     {
       "timeline": null,
-      "title": "Microsoft steps into the internet game",
+      "title": "Microsoft steps into the Internet game",
       "start": "01/01/1995",
       "end": null,
       "content": "While Microsoft largely failed to participate in the rise of the Internet in the early 1990s, some of the key technologies in which the company had invested to enter the Internet market started to pay off by the mid-90s. One of the most prominent of these was ActiveX, an application programming interface built on the Microsoft Component Object Model (COM); this enabled Microsoft and others to embed controls in many programming languages, including the company's own scripting languages, such as JScript and VBScript. ActiveX included frameworks for documents and server solutions. The company also released the Microsoft SQL Server 6.5, which had built-in support for internet applications. Later in 1997, Microsoft Office 97 as well as Internet Explorer 4.0 were released, marking the beginning of the takeover of the browser market from rival Netscape, and by agreement with Apple Computer, Internet Explorer was bundled with the Apple Macintosh operating system as well as with Windows. Windows CE 2.0, the handheld version of Windows, was released this year, including a host of bug fixes and new features designed to make it more appealing to corporate customers. In October, the Justice Department filed a motion in the federal district court in which they stated that Microsoft had violated an agreement signed in 1994, and asked the court to stop the bundling of Internet Explorer with Windows.",
       "wikifetch": null,
       "readmore": "https://en.wikipedia.org/wiki/History_of_Microsoft",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
     },
     {
       "timeline": null,
-      "title": "Dell steps into the internet",
+      "title": "Dell steps turns to the Internet",
       "start": "01/06/1995",
       "end": null,
       "content": "Originally, Dell did not emphasize the consumer market, due to the higher costs and unacceptably low-profit margins in selling to individuals and households; this changed when the company's Internet site took off in 1996 and 1997. While the industry's average selling price to individuals was going down, Dell's was going up, as second- and third-time computer buyers who wanted powerful computers with multiple features and did not need much technical support were choosing Dell. Dell found an opportunity among PC-savvy individuals who liked the convenience of buying direct, customizing their PC to their means, and having it delivered in days. In early 1997, Dell created an internal sales and marketing group dedicated to serving the home market and introduced a product line designed especially for individual users.",
       "wikifetch": null,
       "readmore": "https://en.wikipedia.org/wiki/History_of_Dell",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -116,21 +137,23 @@
       "content": "The first mobile phone with Internet connectivity was the Nokia 9000 Communicator, launched in Finland in 1996. The viability of Internet services access on mobile phones was limited until prices came down from that model, and network providers started to develop systems and services conveniently accessible on phones. NTT DoCoMo in Japan launched the first mobile Internet service, i-mode, in 1999 and this is considered the birth of the mobile phone Internet services. In 2001, the mobile phone email system by Research in Motion (now BlackBerry Limited) for their BlackBerry product was launched in America. ",
       "wikifetch": null,
       "readmore": "https://en.wikipedia.org/wiki/History_of_the_Internet",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
     },
     {
       "timeline": null,
-      "title": "Google was first known as \"BackRub\", a search algorithm.",
-      "start": "01/01/1996",
+      "title": null,
+      "start": null,
       "end": null,
       "content": null,
-      "wikifetch": "History_of_Google",
-      "readmore": "https://en.wikipedia.org/wiki/Google",
+      "wikifetch": null,
+      "readmore": null,
+      "archive": null,
       "context": null,
-      "contentsource": "wikipédia",
-      "company": "google"
+      "contentsource": null,
+      "company": null
     },
     {
       "timeline": null,
@@ -139,7 +162,8 @@
       "end": null,
       "content": "<p>Google began in January 1996 as a research project by Larry Page and Sergey Brin when they were both PhD students at Stanford University in Stanford, California.</p> <p>While conventional search engines ranked results by counting how many times the search terms appeared on the page, the two theorized about a better system that analyzed the relationships among websites. They called this new technology <a href=\"https://en.wikipedia.org/wiki/PageRank\">PageRank</a>; it determined a website's relevance by the number of pages, and the importance of those pages that linked back to the original site.</p> <p>Page and Brin originally nicknamed their new search engine \"BackRub\", because the system checked backlinks to estimate the importance of a site. Eventually, they changed the name to Google; the name of the search engine originated from a misspelling of the word <a href=\"https://en.wikipedia.org/wiki/Googol\">\"googol\"</a>, the number 1 followed by 100 zeros, which was picked to signify that the search engine was intended to provide large quantities of information. Originally, Google ran under Stanford University's website, with the domains google.stanford.edu and z.stanford.edu.</p>",
       "wikifetch": null,
-      "readmore": null,
+      "readmore": "https://en.wikipedia.org/wiki/Google",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": "google"
@@ -152,30 +176,33 @@
       "content": "Apple Computer announced an intention to acquire NeXT on December 20, 1996. Apple paid $429 million in cash, which went to the initial investors and 1.5 million Apple shares, which went to Steve Jobs. The deal was finalized on February 7, 1997, bringing Jobs back to Apple as a consultant, who was later appointed as interim CEO.",
       "wikifetch": "NeXT#1996–97:_purchase_by_Apple",
       "readmore": "https://en.wikipedia.org/wiki/NeXT#1996%E2%80%9397:_purchase_by_Apple",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
     },
     {
       "timeline": null,
-      "title": "Larry Page and Sergey Brin created Google Search Engine",
+      "title": "Larry Page and Sergey Brin create the Google Search Engine",
       "start": "15/09/1997",
       "end": null,
       "content": null,
       "wikifetch": null,
       "readmore": null,
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": "google"
     },
     {
       "timeline": null,
-      "title": "The Internet Protocol V.6 (IPv6) becomes the new standard and allows future growth of Internet Addresses",
+      "title": "The Internet Protocol V.6 (IPv6) becomes the new standard, and allows for a significant growth of available Internet addresses.",
       "start": "01/01/1998",
       "end": null,
       "content": null,
       "wikifetch": "IPv6",
       "readmore": null,
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -188,6 +215,7 @@
       "content": null,
       "wikifetch": "Web_2.0",
       "readmore": "https://en.wikipedia.org/wiki/Web_2.0",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -200,6 +228,7 @@
       "content": null,
       "wikifetch": "Napster",
       "readmore": "https://en.wikipedia.org/wiki/Napster",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -212,6 +241,7 @@
       "content": null,
       "wikifetch": "Asymmetric_digital_subscriber_line",
       "readmore": null,
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -224,6 +254,7 @@
       "content": "The <a href=\"https://en.wikipedia.org/wiki/NASDAQ_Composite\">Nasdaq Composite</a> <a href=\"https://en.wikipedia.org/wiki/Stock_market_index\">stock market index</a>, which included many Internet-based companies, peaked in value on March 10, 2000, before crashing. The burst of the bubble, known as the <strong>dot-com crash</strong>, lasted from March 11, 2000, to October 9, 2002. During the crash, many online shopping companies, such as Pets.com, Webvan, and Boo.com, as well as communication companies, such as Worldcom, NorthPoint Communications and Global Crossing failed and shut down.Others, such as Cisco, whose stock declined by 86%, and Qualcomm, lost a large portion of their market capitalization but survived, and some companies, such as eBay and Amazon.com, declined in value but recovered quickly.",
       "wikifetch": "Dot-com_bubble#Bursting_of_the_bubble",
       "readmore": "https://en.wikipedia.org/wiki/Dot-com_bubble#Bursting_of_the_bubble",
+      "archive": null,
       "context": null,
       "contentsource": "wikipédia",
       "company": "general"
@@ -236,6 +267,7 @@
       "content": "Napster lost the case in the District Court but then appealed to the U.S. Court of Appeals for the Ninth Circuit. Although it was clear that Napster could have commercially significant non-infringing uses, the Ninth Circuit upheld the District Court's decision. Immediately after, the District Court commanded Napster to keep track of the activities of its network and to restrict access to infringing material when informed of that material's location. Napster wasn't able to comply and thus had to close down its service in July 2001. In 2002, Napster announced that it was bankrupt and sold its assets to a third party.",
       "wikifetch": null,
       "readmore": "https://en.wikipedia.org/wiki/Napster",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -248,6 +280,7 @@
       "content": null,
       "wikifetch": "Anonymous_(group)",
       "readmore": null,
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -260,6 +293,7 @@
       "content": null,
       "wikifetch": "History_of_Facebook",
       "readmore": null,
+      "archive": null,
       "context": null,
       "contentsource": "wikipédia",
       "company": "facebook"
@@ -272,6 +306,7 @@
       "content": null,
       "wikifetch": "Google.org",
       "readmore": null,
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": "google"
@@ -284,30 +319,33 @@
       "content": null,
       "wikifetch": "WikiLeaks",
       "readmore": "https://en.wikipedia.org/wiki/WikiLeaks",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
     },
     {
-      "timeline": null,
+      "timeline": "Trouver le first tweet",
       "title": "Twitter is born, along side the first tweet in history",
       "start": "01/03/2006",
       "end": null,
       "content": "Twitter was created in March 2006 by Jack Dorsey, Noah Glass, Biz Stone, and Evan Williams and launched in July of that year. The service rapidly gained worldwide popularity. In 2012, more than 100 million users posted 340 million tweets a day,[17] and the service handled an average of 1.6 billion search queries per day.[18][19][20] In 2013, it was one of the ten most-visited websites and has been described as \"the SMS of the Internet\".[21][22] As of 2018, Twitter had more than 321 million monthly active users.",
       "wikifetch": null,
       "readmore": "https://en.wikipedia.org/wiki/Twitter",
+      "archive": "https://web.archive.org/web/20060930214639/http://twitter.com/",
       "context": null,
       "contentsource": null,
       "company": null
     },
     {
-      "timeline": null,
+      "timeline": "Check original launch page",
       "title": "iPhone 1st generation launches",
       "start": "29/06/2007",
       "end": null,
       "content": null,
       "wikifetch": "IPhone",
-      "readmore": "https://en.wikipedia.org/wiki/IPhone",
+      "readmore": null,
+      "archive": "https://web.archive.org/web/20070625012448/http://www.apple.com:80/",
       "context": null,
       "contentsource": null,
       "company": null
@@ -320,6 +358,7 @@
       "content": null,
       "wikifetch": "Android_(operating_system)",
       "readmore": null,
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -332,6 +371,7 @@
       "content": "<p>Information is power. But like all power, there are those who want to keep it for themselves. The world's entire scientific and cultural heritage, published over centuries in books and journals, is increasingly being digitized and locked up by a handful of private corporations. Want to read the papers featuring the most famous results of the sciences? You'll need to send enormous amounts to publishers like Reed Elsevier. </p><p>There are those struggling to change this. The Open Access Movement has fought valiantly to ensure that scientists do not sign their copyrights away but instead ensure their work is published on the Internet, under terms that allow anyone to access it. But even under the best scenarios, their work will only apply to things published in the future. Everything up until now will have been lost. </p><p>That is too high a price to pay. Forcing academics to pay money to read the work of their colleagues? Scanning entire libraries but only allowing the folks at Google to read them? Providing scientific articles to those at elite universities in the First World, but not to children in the Global South? It's outrageous and unacceptable. </p><p>\"I agree,\" many say, \"but what can we do? The companies hold the copyrights, they make enormous amounts of money by charging for access, and it's perfectly legal — there's nothing we can do to stop them.\" But there is something we can, something that's already being done: we can fight back.</p>",
       "wikifetch": null,
       "readmore": "https://archive.org/stream/GuerillaOpenAccessManifesto/Goamjuly2008_djvu.txt",
+      "archive": null,
       "context": "Aaron Swartz was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. He was involved in the development of the web feed format RSS and the Markdown publishing format, the organization Creative Commons and was a co-founder of the social news site Reddit. He was given the title of co-founder by Y Combinator owner Paul Graham.\n\nIn 2011, Swartz was arrested by Massachusetts Institute of Technology (MIT) police after connecting a computer to the MIT network in a closet and setting it to automatically download paywalled academic journal articles using a guest user account issued to him by MIT, and uploading copies of these research papers for free universal access through the world wide web. Federal prosecutors later charged him with two counts of wire fraud and eleven violations of the Computer Fraud and Abuse Act, carrying a cumulative maximum penalty of $1 million in fines, 35 years in prison, asset forfeiture, restitution, and supervised release.\n",
       "contentsource": null,
       "company": null
@@ -344,6 +384,7 @@
       "content": null,
       "wikifetch": "Instagram",
       "readmore": null,
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -356,6 +397,7 @@
       "content": null,
       "wikifetch": "Steve_Jobs",
       "readmore": null,
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -368,6 +410,7 @@
       "content": null,
       "wikifetch": "Protests_against_SOPA_and_PIPA",
       "readmore": null,
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -380,6 +423,7 @@
       "content": null,
       "wikifetch": "Edward_Snowden",
       "readmore": null,
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -392,6 +436,7 @@
       "content": null,
       "wikifetch": "WhatsApp",
       "readmore": null,
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -404,6 +449,7 @@
       "content": null,
       "wikifetch": "Alphabet_Inc.",
       "readmore": null,
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": "google"
@@ -416,6 +462,7 @@
       "content": "With the onset of the Presidency of Donald Trump in 2017, and the appointment of Ajit Pai, an opponent of net neutrality, to the chairman of the FCC, the FCC has reversed many previous net neutrality rulings, and reclassified Internet services as Title I information services. The FCC's decisions have been a matter of several ongoing legal challenges by both states supporting net neutrality, and ISPs challenging it. The United States Congress has attempted to pass legislation supporting net neutrality but have failed to gain sufficient support, while individual states are trying to pass legislation overriding the FCC's decision to make net neutrality a requirement within their state. California has successfully passed its own net neutrality act, which the United States government is challenging on a legal basis.",
       "wikifetch": null,
       "readmore": "https://en.wikipedia.org/wiki/Net_neutrality",
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
@@ -428,6 +475,7 @@
       "content": null,
       "wikifetch": "Facebook–Cambridge_Analytica_data_scandal",
       "readmore": null,
+      "archive": null,
       "context": null,
       "contentsource": null,
       "company": null
