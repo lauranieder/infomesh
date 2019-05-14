@@ -17,11 +17,9 @@
   <div class="splashscreen-title">
     <h5>Infomation mesh — 30 years of facts about the World Wide Web</h5>
   </div>
-  <div class="splashscreen-main-title">
-    <a href="/index">
-      <h5 class="enable-caret title-bold"></h5>
-    </a>
-  </div>
+  <a href="/index" class="splashscreen-main-title">
+    <h5 class="enable-caret title-bold"></h5>
+  </a>
   <div class="click-to-start">
     <h5>Click to continue</h5>
   </div>
