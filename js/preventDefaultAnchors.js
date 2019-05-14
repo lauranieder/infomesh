@@ -27,22 +27,29 @@
               var parentNode = target.parentNode;
               href = parentNode.href.baseVal;
             }
-  
-            var useBaseUrl = this.getAttribute('useBaseUrl');
-            if (!useBaseUrl || useBaseUrl === 'true') {
-              if (href.indexOf(window.location.origin) === -1) {
-                window.parent.postMessage({
-                  message: 'anchor',
-                  href: href
-                }, '*');
-              }
-            } else if (useBaseUrl === 'false') {
-              e.preventDefault();
-              if (href.indexOf(window.location.origin) === -1) {
-                window.parent.postMessage({
-                  message: 'anchor',
-                  href: 'http://localhost/infomesh/proxy.php/?url=' + href
-                }, '*');
+            
+            if (href.indexOf(window.location.origin) === -1) {
+              var iframeType = this.getAttribute('iframeType');
+
+              switch (iframeType) {
+                case 'proxy':
+                  window.parent.postMessage({
+                    message: 'anchor',
+                    href: 'http://localhost/proxy.php/?url=' + href
+                  }, '*');
+                break;
+                case 'twitter':
+                  window.parent.postMessage({
+                    message: 'anchor',
+                    href: 'http://localhost/twitter.php/?url=' + href
+                  }, '*');
+                break;
+                default:
+                  window.parent.postMessage({
+                    message: 'anchor',
+                    href: href
+                  }, '*');
+                break;
               }
             }
           })
