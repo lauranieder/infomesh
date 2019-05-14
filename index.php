@@ -85,12 +85,14 @@
       <div class="content">
         <div class="full">
           <div class="fit-w half-w">
-          <img src="../img/logos/logo_ecal_white.svg" alt="Logo of ECAL" class="logo">
-            <!-- <img src="../img/ecal-snx.png" alt="écal"> -->
+            <a href="http://ecal.ch" target="_blank">
+              <img src="../img/logos/logo_ecal_white.svg" alt="Logo of ECAL" class="logo">
+            </a>
           </div>
           <div class="fit-w half-w">
-            <img src="../img/logos/logo_swissnex_white.svg" alt="Logo of Swissnex" class="logo">
-            <!-- <img src="../img/swissnex_logo_white.png" alt="swissnex"> -->
+            <a href="https://www.swissnexsanfrancisco.org" target="_blank">
+              <img src="../img/logos/logo_swissnex_white.svg" alt="Logo of Swissnex San Francisco" class="logo">
+            </a>
           </div>
         </div>
         <div class="full">
@@ -112,20 +114,8 @@
           <a href="https://vd.ch" target="_blank">
             <img src="../img/logos/logo_vd_white.svg" alt="Logo of the Canton of Vaud" class="logo logo-bottom">
           </a>
-<!-- 
-          <div class="fit-w third-w">
-            <img src="../img/logos/logo_archive_white.svg" alt="Logo of the internet archive" class="logo logo-bottom">
-            <!-- <img src="../img/internet-archive-logo-transparent.png" alt="écal swissnex"> -->
-          </div>
-          <div class="fit-w third-w">
-            <img src="../img/logos/logo_wikimedia_white.svg" alt="Logo of the Wikimedia foundation" class="logo logo-bottom logo-bottom-middle">
-            <!-- <img src="../img/wikipedia-logo-transparent.png" alt="écal swissnex"> -->
-          </div>
-          <div class="fit-w third-w">
-            <img src="../img/logos/logo_vd_white.svg" alt="Logo of the Canton of Vaud" class="logo logo-bottom">
-            <!--  <img src="../img/vdwhite.png" alt="canton de vaud"> -->
-          </div> -->
         </div>
+
       </div>
     </div>
     <script type="text/javascript" src="./js/splashscreen.js"></script>

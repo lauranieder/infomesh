@@ -858,3 +858,7 @@ iframe {
   justify-content: space-between;
   align-items: center;
 }
+
+.logos > a {
+  display: contents;
+}
