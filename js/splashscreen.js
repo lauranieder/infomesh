@@ -169,9 +169,7 @@ window.clearRequestTimeout = function(handle) {
         return new Promise(resolve => {
           this.currentResolve = resolve
           const writeLetter = () => {
-
-
-            console.log("write letter")
+            //console.log("write letter")
             // Replace with a requestAnimationFrame thing
             //this.currentTimeout = setTimeout(() => {
             this.currentTimeout = requestTimeout(() => {

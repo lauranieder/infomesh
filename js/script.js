@@ -16,7 +16,43 @@ $(document).ready(function() {
 
   function init() {
     console.log('[script.js] init');
+
     loadProjectsJson();
+    applyCorrectStylesAtStartup();
+  }
+
+  function applyCorrectStylesAtStartup(){
+    console.log('[script.js] apply correct styles');
+    console.log('[script.js] currentPagetName '+currentPagetName);
+
+    console.log('main is main ' + $('#container-main').hasClass('main'));
+    console.log('about is main ' + $('#container-about').hasClass('main'));
+    console.log('project is main ' + $('#container-projects').hasClass('main'));
+    if(isMobile){
+      //to check
+      $('#container-side').addClass('mobile-reduced');
+      mobile_applyStyleToNav();
+      if (currentPagetName == 'index') {
+        $('#project-title').text("30 years of");
+        $('#container-title').text("30 years of");
+
+        //remove arrow nav
+
+      }else if (currentPagetName == 'about') {
+        $('#project-title').text("About");
+        $('#container-title').text("About");
+        //remove arrow nav
+      }else{
+
+      }
+
+      //page about opene
+      //page project open
+      //project open
+    }else{
+      //remove mobile styles
+
+    }
   }
 
   //PROJECTS LISTS___________________________________________________________________________________________________
@@ -208,6 +244,7 @@ $(document).ready(function() {
   function mobile_applyStyleToNav(){
     if($('#container-side').hasClass('mobile-reduced')){
         $('#navigation').removeClass('not-extended');
+
     }else{
 
         $('#navigation').addClass('not-extended');
@@ -228,6 +265,7 @@ $(document).ready(function() {
           $('#button-closeOverlay').removeClass('d-none');
       }
       $('#button-menu').addClass('d-none');
+      $('.mobile-onlytimeline').addClass('d-none');
 
       $('#container-side').removeClass('mobile-reduced');
       mobile_applyStyleToNav();
@@ -240,6 +278,7 @@ $(document).ready(function() {
     if(isMobile){
       console.log("closeOverlay");
       $('#button-menu').removeClass('d-none');
+      $('.mobile-onlytimeline').removeClass('d-none');
       $('#button-closeOverlay').addClass('d-none');
       $('#container-side').addClass('mobile-reduced');
       mobile_applyStyleToNav();
@@ -253,7 +292,8 @@ $(document).ready(function() {
     handleResize();
   });
 
-  function openAboutPage(){
+  function openAboutPage(){ //triggered by redirect to
+    console.log("[script.js] openAboutPage")
         $('.selected').removeClass('selected');
         $(this).addClass('selected');
         $('#navigation nav').addClass('d-none');
@@ -270,6 +310,7 @@ $(document).ready(function() {
           $('#container-title').text("About");
           $('#button-closeOverlay').addClass('d-none');
           $('#button-menu').removeClass('d-none');
+          $('.mobile-onlytimeline').addClass('d-none');
 
         }
 
@@ -357,9 +398,7 @@ $(document).ready(function() {
 
   function handleResize(){
     console.log("handleResize -> isMobile "+isMobile);
-    if(isMobile){
-
-    }
+    applyCorrectStylesAtStartup();
   }
 
   $(window).bind('popstate', function(data) {
