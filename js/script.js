@@ -29,14 +29,6 @@ $(document).ready(function() {
       success: function(data){
         projectsData = data;
         loadProjectsPreview();
-        if (currentPagetName == 'index') {
-          $('#button-open-projects').trigger('click');
-        } else if (currentPagetName == 'about') {
-          $('#button-open-about').trigger('click');
-        } else {
-          var currentProjectID = getProjectIdFromName(currentPagetName);
-          if (currentProjectID != -1) gotoProject(currentProjectID, 'up');
-        }
       }
     })
   }
@@ -163,7 +155,6 @@ $(document).ready(function() {
 
   //BUTTONS___________________________________________________________________________________________________
   $('#button-toggle-informations').on('click', function(e) {
-    e.preventDefault();
     toggleInformation();
   });
   $('#button-open-about').on('click', function(e) {

@@ -279,13 +279,6 @@ window.clearRequestTimeout = function(handle) {
     }
   })
 
-  if(!currentPagetName){
-    startSequence();
-  }else{
-    enableSplashScreen(false);
-    enableSplashScreenTitles(false);
-  }
-
   function isSplashscreenEnabled() {
     return body.classList.contains('show-splashscreen');
   }
