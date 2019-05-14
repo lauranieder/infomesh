@@ -39,7 +39,6 @@
     <iframe class="iframe-popup__content" src="" frameborder="0"></iframe>
   </div>
 
-  <!--<div id="smartphone">mobile</div>-->
   <header id="navigation" class="not-extended">
     <h1>
       <a id="project-title" href="/">Information mesh</a>
@@ -54,7 +53,6 @@
       <?php echo file_get_contents("css/UI/UIMobileArrowDown.svg"); ?>
       <?php echo file_get_contents("css/UI/UIMobileBurger.svg"); ?>
       <?php echo file_get_contents("css/UI/UIMobileCross.svg"); ?>
-      <!--<a href="#" id="button-menu" class="open">&lt;open menu&gt;</a>-->
     </nav-mobile>
   </header>
   <div id=wrapper>
