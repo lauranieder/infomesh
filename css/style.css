@@ -343,6 +343,7 @@ nav .button-down{
 #container-main,
 #container-about,
 #container-projects{
+  overflow: hidden;
   -webkit-box-shadow:4px 0px 49px rgba(0, 0, 1, 0.5);
   -moz-box-shadow:4px 0px 49px rgba(0, 0, 1, 0.5);
   box-shadow: 4px 0px 49px rgba(0, 0, 1, 0.5);
