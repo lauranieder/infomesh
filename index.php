@@ -1,3 +1,8 @@
+<?
+  $state = $_SERVER['REQUEST_URI'];
+  $bodyClasses = 'show-splashscreen';
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,7 +18,7 @@
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </head>
-<body>
+<body class="<?= $bodyClasses ?>">
   <div class="splashscreen-title">
     <h5>Infomation mesh — 30 years of facts about the World Wide Web</h5>
   </div>
