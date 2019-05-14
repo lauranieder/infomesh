@@ -66,12 +66,16 @@ $(document).ready(function() {
   function renderState (state) {
     switch (state) {
       case '':
+        $('#container-main').removeClass('main');
+        $('#container-main').addClass('reduced');
         window.startSplashscreen();
       break;
 
       case 'index':
         $('#button-open-projects').addClass('selected');
         $('#button-open-about').removeClass('selected');
+        $('#container-main').removeClass('main');
+        $('#container-main').addClass('reduced');
         window.stopSplashscreen();
         openProjectsPage();
       break;
@@ -79,6 +83,8 @@ $(document).ready(function() {
       case 'about':
         $('#button-open-projects').removeClass('selected');
         $('#button-open-about').addClass('selected');
+        $('#container-main').removeClass('main');
+        $('#container-main').addClass('reduced');
         window.stopSplashscreen();
         openAboutPage();
       break;
