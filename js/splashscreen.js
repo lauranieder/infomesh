@@ -5,34 +5,34 @@
  */
 
 window.requestAnimFrame = (function() {
-	return  window.requestAnimationFrame       || 
-		window.webkitRequestAnimationFrame || 
-		window.mozRequestAnimationFrame    || 
-		window.oRequestAnimationFrame      || 
-		window.msRequestAnimationFrame     || 
+	return  window.requestAnimationFrame       ||
+		window.webkitRequestAnimationFrame ||
+		window.mozRequestAnimationFrame    ||
+		window.oRequestAnimationFrame      ||
+		window.msRequestAnimationFrame     ||
 		function(/* function */ callback, /* DOMElement */ element){
 			window.setTimeout(callback, 1000 / 60);
 		};
 })();
 
 window.requestTimeout = function(fn, delay) {
-	if( !window.requestAnimationFrame      	&& 
-	    !window.webkitRequestAnimationFrame && 
+	if( !window.requestAnimationFrame      	&&
+	    !window.webkitRequestAnimationFrame &&
 	    !(window.mozRequestAnimationFrame && window.mozCancelRequestAnimationFrame) && // Firefox 5 ships without cancel support
-	    !window.oRequestAnimationFrame      && 
+	    !window.oRequestAnimationFrame      &&
 	    !window.msRequestAnimationFrame )
 		return window.setTimeout(fn, delay);
-			
+
 	var start = new Date().getTime(),
 		handle = new Object();
-		
+
 	function loop(){
 		var current = new Date().getTime(),
 			delta = current - start;
-			
+
 		delta >= delay ? fn.call() : handle.value = requestAnimFrame(loop);
 	};
-	
+
 	handle.value = requestAnimFrame(loop);
 	return handle;
 };
@@ -160,21 +160,17 @@ window.clearRequestTimeout = function(handle) {
     let isEnabled = false;
     let currentTimeout = null;
     let currentResolve = null;
-  
-    return {  
+
+    return {
       async write(element, text) {
         isWriting = true;
         let index = 0;
-  
+
         return new Promise(resolve => {
           this.currentResolve = resolve
           const writeLetter = () => {
-
-            console.log("write letter")
-            // Replace with a requestAnimationFrame thing
             this.currentTimeout = requestTimeout(() => {
               element.insertAdjacentHTML('beforeend', text[index]);
-              //element.innerHTML += text[index];
               index++;
               if (index < text.length && isWriting && !isEnabled) {
                 writeLetter();
@@ -184,23 +180,23 @@ window.clearRequestTimeout = function(handle) {
               }
             }, 20 + Math.random() * 20);
           };
-    
+
           writeLetter();
         })
       },
-  
+
       async erase(element) {
         const selection = await this.select(element);
         await this.wait(200);
         deleteSelectionContent(selection);
       },
-  
+
       async select(element) {
         isSelecting = true;
 
         const { innerText: text } = element;
         let index = text.length;
-  
+
         return new Promise(resolve => {
           currentResolve = resolve
           const selectLetter = () => {
@@ -215,7 +211,7 @@ window.clearRequestTimeout = function(handle) {
               }
             }, 10 + Math.random() * 10);
           }
-  
+
           selectLetter();
         })
       },
@@ -228,7 +224,7 @@ window.clearRequestTimeout = function(handle) {
           })
         }
       },
-  
+
       enable() {
         isEnabled = false;
       },
@@ -254,33 +250,20 @@ window.clearRequestTimeout = function(handle) {
   const body = document.querySelector('body');
   const textAnimator = new TextAnimator()
 
-  body.addEventListener('click', () => {
-    if (isSplashscreenEnabled()) {
-      // Debouce state changes to prevent event conflicts.
-      requestAnimationFrame(() => {
-        enableSplashScreen(false);
-        enableSplashScreenTitles(false);
-        textAnimator.disable();
-      });
-    }
-  })
-
-  mainTitle.addEventListener('click', () => {
-    if (!isSplashscreenEnabled()) {
-      // Debouce state changes to prevent event conflicts.
-      requestAnimationFrame(() => {
-        enableSplashScreen(true);
-        textAnimator.enable();
-        startSequence()
-      });
-    }
-  })
-
-  if(!currentPagetName){
-    startSequence();
-  }else{
-    enableSplashScreen(false);
-    enableSplashScreenTitles(false);
+  window.startSplashscreen = function () {
+    requestAnimationFrame(() => {
+      enableSplashScreen(true);
+      textAnimator.enable();
+      startSplashscreenSequence()
+    });
+  }
+  
+  window.stopSplashscreen = function () {
+    requestAnimationFrame(() => {
+      enableSplashScreen(false);
+      enableSplashScreenTitles(false);
+      textAnimator.disable();
+    });
   }
 
   function isSplashscreenEnabled() {
@@ -303,7 +286,7 @@ window.clearRequestTimeout = function(handle) {
     }
   }
 
-  async function startSequence() {
+  async function startSplashscreenSequence() {
     if (isSplashscreenEnabled()) {
       highlight(true);
       enableCaret(false);

@@ -1,6 +1,17 @@
 # ecal-webproject-infomesh
 30 years of the web website during Summer University at swissnex SF
 
+### Deployment to `infomesh.org`
+```
+yarn deploy
+```
+
+or
+
+```
+npm run deploy
+```
+
 ### General
 - ✅ Check SSL certificate (google block access from ipad chrome)
 - ✅ Move to the new url (infomaniak !)
@@ -9,7 +20,8 @@
 - (si on a le temps) Amélioration du jump d'event en event. Clic sur l'événements et mouvement dynamique. Fin ne retourne pas au début
 - (important) Regex pour url readmore 
 - (important, tibor heeeelp) popup reduce doesn't work on iphone/ipad
-- changement de la couleur des titres buggée
+- ✅ ~~changement de la couleur des titres buggée~~
+    -~~❗️ok sur mobile je pense, mais je suis pas à 100% sûr que j'ai bien compris / Tib~~ Normalement, ca devrais être tout bon, j'ai fait ce fix dans l'avion. Il y a juste le cas où si on passe de mobile à pas mobile dans le même browser ca risque de faire n'mporte quoi mais je m'en occupe. 
 - doit pas recharger l'iframe si c'est le premier
 - timeline déja la quand on ouvre le projet mais elle devrait slider avec
 - slider reload pas au bon endroit timelime
@@ -21,11 +33,11 @@
 ### Mobile
 - Menu navigation.
 - Boutons navigations pas actifs
-- (important, pietro) Intro splash screen, longueur de texte sur mobile. ✅ Fin de phrase qui freeze
+- (important, pietro) Intro splash screen, longueur de texte sur mobile. Mettre des césures sur certains mots trop longs, genre URL sans en mettre partout ! ✅ Fin de phrase qui freeze
 - Splashscreen. Point ou pas point dans les phrases.
 - Splashscreen. Source des phrases ?  
 - Transitions (supprimer sur mobile)
-- Vérifier couleurs quand fond noir/fond blanc (normalement ok déja fait)
+- ~~Vérifier couleurs quand fond noir/fond blanc (normalement ok déja fait)~~
 - (éventuellement) Message pour annoncer que la version mobile est réduite ?
 
 ### Popup sur mobile
@@ -43,34 +55,31 @@
 ### Contenue texte / Page-about / information / evenement timeline
 - Récrire le texte de la page about avec Eryk.
 - Remplacer les logos sur la page about par les vectoriel final. 
-- Checker toutes les descriptions des projets d'étudiants
+- ~~Checker toutes les descriptions des projets d'étudiants~~
 - Checker toutes les informations dans les timeline.
 - Checker la liste des facts.
 
 ### Adapt student project
 #### worldwidemap
-- Projet ne s'affiche plus ?
+- OK
 
 #### web landscape
-- Plus d'immeuble à la fin de la ville !
-- Description/source
+- OK
 
 #### web influencer identity
-- loading des images ? Image qui saute avant de s'afficher sur mobile. Est-ce que sur mobile on garde que la basse def ?
-- Améliorer la composition de la fin
+- (Tibor) Loading des images ? Image qui saute avant de s'afficher sur mobile. Est-ce que sur mobile on garde que la basse def ? Une idée serait d'avoir des images basse def encore plus light sur mobile. 
 
 #### web dictionnary
-- Choix des sources, texte description
+- OK
 
 #### 30y_of_hacks.exe
-- Description
+- OK
 
 #### web phenomena 
-- vérifier la liste des popup
-- Description
+- OK
 
 ### HTACCESS
-- Autoriser la page /proxy.php dans le .htaccess
+- (Tibor, pietro vous savez comment faire ça ?) Autoriser la page /proxy.php dans le .htaccess
 
 
 
