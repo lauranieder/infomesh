@@ -246,7 +246,6 @@ window.clearRequestTimeout = function(handle) {
   const subTitle = '30 years of facts about the World Wide Web';
   const firstFact = 'Information Mesh was a potential name for the web in Tim Berners Lee\'s 1989 original proposal.';
   const title = document.querySelector('.splashscreen-main-title h5');
-  const mainTitle = document.querySelector('#project-title');
   const body = document.querySelector('body');
   const textAnimator = new TextAnimator()
 

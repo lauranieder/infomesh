@@ -92,20 +92,24 @@ $(document).ready(function() {
       default:
         window.stopSplashscreen();
 
-        $('#button-open-projects').addClass('selected');
-        $('#button-open-about').removeClass('selected');
-        $('#navigation nav').removeClass('d-none');
-        
-        $('#container-main')
-          .addClass('main')
-          .removeClass('reduced');
-        
-        $('#container-about, #container-projects')
-          .addClass('reduced')
-          .removeClass('main');
-
         var projectId = findProjectIdBySlug(state);
-        gotoProject(projectId, 'up');
+
+        if (projectId !== undefined) {
+          $('#button-open-projects').addClass('selected');
+          $('#button-open-about').removeClass('selected');
+          $('#navigation nav').removeClass('d-none');
+          
+          $('#container-main')
+            .addClass('main')
+            .removeClass('reduced');
+          
+          $('#container-about, #container-projects')
+            .addClass('reduced')
+            .removeClass('main');
+
+          
+          gotoProject(projectId, 'up');
+        }
       break;
     }
   }
@@ -433,10 +437,8 @@ $(document).ready(function() {
         console.log("iframe ask styles position");
         applyStyleToIframe();
         break;
-        /*continue here pietro*/
-      case 'getMode':
-
-        console.log("getmode sended by iframe "+data.mode);
+      case 'request-mode':
+        $('.current-iframe').get(0).contentWindow.postMessage({mode: window.appMode}, '*');
         break;
       case 'anchor':
         var href = data.href;
