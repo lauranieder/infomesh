@@ -40,5 +40,7 @@ $(document).ready(function() {
     };
 
     $('#container-project').svg3DTagCloud(settings, 'svgEE');
+    const domReadyEvent = new Event('dom-ready');
+    window.dispatchEvent(domReadyEvent);
   }
 });
