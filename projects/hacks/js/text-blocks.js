@@ -31,6 +31,9 @@ function initDom() {
   }
 
   goToBlock(0);
+
+  const domReadyEvent = new Event('dom-ready');
+  window.dispatchEvent(domReadyEvent);
 }
 
 function prepareDataset() {
