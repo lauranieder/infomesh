@@ -390,6 +390,7 @@ $(document).ready(function() {
     //only for mobile
     $('#container-side').addClass('mobile-reduced');
   }
+}
 
   function openProjectsPage(){
     $('#navigation nav').addClass('d-none');
