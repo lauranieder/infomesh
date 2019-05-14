@@ -1,4 +1,4 @@
-<?
+<?php
   $mode = isset($_GET['mode']) ? $_GET['mode'] : null;
   $state = $_SERVER['REQUEST_URI'];
   $bodyClasses = 'show-splashscreen';
