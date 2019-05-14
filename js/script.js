@@ -11,8 +11,8 @@ $(document).ready(function() {
   var siteTitle = document.title;
   var timelinePosition = 0;
   var isPopupReduced = false;
-  var ignoreURLS = false; //put back to false !!!
   var isMobile = false;
+  var historyState = {};
 
   function init() {
     console.log('[script.js] init');
@@ -37,14 +37,13 @@ $(document).ready(function() {
 
   // History management
   function enableHistory () {
-    var state = {};
     var links = $('a');
 
     links.click(function (e) {
       e.preventDefault()
       var target = e.target;
       var href = target.href;
-      window.history.pushState(state, '', href);
+      window.history.pushState(historyState, '', href);
 
       // We have to wait a bit until the url is updated
       window.requestAnimationFrame(function () {
@@ -359,6 +358,7 @@ $(document).ready(function() {
     var prevProject = currentProjectID - 1;
     if (prevProject < 0) prevProject = projectsData.length - 1;
 
+    window.history.pushState(historyState, '', projectsData[prevProject].slug);
     gotoProject(prevProject, 'down');
   });
 
@@ -367,6 +367,7 @@ $(document).ready(function() {
     var nextProject = currentProjectID + 1;
     if (nextProject == projectsData.length) nextProject = 0;
 
+    window.history.pushState(historyState, '', projectsData[nextProject].slug);
     gotoProject(nextProject, 'up');
   });
 
