@@ -251,23 +251,19 @@ window.clearRequestTimeout = function(handle) {
   const textAnimator = new TextAnimator()
 
   window.startSplashscreen = function () {
-    if (!isSplashscreenEnabled()) {
-      requestAnimationFrame(() => {
-        enableSplashScreen(true);
-        textAnimator.enable();
-        startSplashscreenSequence()
-      });
-    }
+    requestAnimationFrame(() => {
+      enableSplashScreen(true);
+      textAnimator.enable();
+      startSplashscreenSequence()
+    });
   }
   
   window.stopSplashscreen = function () {
-    if (isSplashscreenEnabled()) {
-      requestAnimationFrame(() => {
-        enableSplashScreen(false);
-        enableSplashScreenTitles(false);
-        textAnimator.disable();
-      });
-    }
+    requestAnimationFrame(() => {
+      enableSplashScreen(false);
+      enableSplashScreenTitles(false);
+      textAnimator.disable();
+    });
   }
 
   function isSplashscreenEnabled() {
