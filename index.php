@@ -1,4 +1,5 @@
-<?
+<?php
+  $mode = isset($_GET['mode']) ? $_GET['mode'] : null;
   $state = $_SERVER['REQUEST_URI'];
   $bodyClasses = 'show-splashscreen';
 ?>
@@ -17,6 +18,10 @@
   <!--script-->
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+
+  <script>
+    var appMode = "<?= $mode ?>";
+  </script>
 </head>
 <body class="<?= $bodyClasses ?>">
   <div class="splashscreen-title">
@@ -34,7 +39,6 @@
     <iframe class="iframe-popup__content" src="" frameborder="0"></iframe>
   </div>
 
-  <!--<div id="smartphone">mobile</div>-->
   <header id="navigation" class="not-extended">
     <h1>
       <a id="project-title" href="/">Information mesh</a>
@@ -49,7 +53,6 @@
       <?php echo file_get_contents("css/UI/UIMobileArrowDown.svg"); ?>
       <?php echo file_get_contents("css/UI/UIMobileBurger.svg"); ?>
       <?php echo file_get_contents("css/UI/UIMobileCross.svg"); ?>
-      <!--<a href="#" id="button-menu" class="open">&lt;open menu&gt;</a>-->
     </nav-mobile>
   </header>
   <div id=wrapper>
@@ -119,6 +122,5 @@
       </div>
     </div>
     <script type="text/javascript" src="./js/splashscreen.js"></script>
-    <script type="text/javascript" src="./js/preventDefaultAnchors.js"></script>
   </body>
 </html>
