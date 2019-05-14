@@ -61,16 +61,16 @@ npm run deploy
 
 ### Adapt student project
 #### worldwidemap
--OK
+- OK
 
 #### web landscape
--OK
+- OK
 
 #### web influencer identity
 - (Tibor) Loading des images ? Image qui saute avant de s'afficher sur mobile. Est-ce que sur mobile on garde que la basse def ? Une idée serait d'avoir des images basse def encore plus light sur mobile. 
 
 #### web dictionnary
--OK
+- OK
 
 #### 30y_of_hacks.exe
 - OK
