@@ -169,15 +169,8 @@ window.clearRequestTimeout = function(handle) {
         return new Promise(resolve => {
           this.currentResolve = resolve
           const writeLetter = () => {
-
-
-            console.log("write letter")
-            // Replace with a requestAnimationFrame thing
-            //this.currentTimeout = setTimeout(() => {
             this.currentTimeout = requestTimeout(() => {
               element.insertAdjacentHTML('beforeend', text[index]);
-	              //element.innerHTML += text[index];
-              //console.log(element.innerHTML);
               index++;
               if (index < text.length && isWriting && !isEnabled) {
                 writeLetter();
@@ -257,33 +250,24 @@ window.clearRequestTimeout = function(handle) {
   const body = document.querySelector('body');
   const textAnimator = new TextAnimator()
 
-  body.addEventListener('click', () => {
+  window.startSplashscreen = function () {
+    if (!isSplashscreenEnabled()) {
+      requestAnimationFrame(() => {
+        enableSplashScreen(true);
+        textAnimator.enable();
+        startSplashscreenSequence()
+      });
+    }
+  }
+  
+  window.stopSplashscreen = function () {
     if (isSplashscreenEnabled()) {
-      // Debouce state changes to prevent event conflicts.
       requestAnimationFrame(() => {
         enableSplashScreen(false);
         enableSplashScreenTitles(false);
         textAnimator.disable();
       });
     }
-  })
-
-  mainTitle.addEventListener('click', () => {
-    if (!isSplashscreenEnabled()) {
-      // Debouce state changes to prevent event conflicts.
-      requestAnimationFrame(() => {
-        enableSplashScreen(true);
-        textAnimator.enable();
-        startSequence()
-      });
-    }
-  })
-
-  if(!currentPagetName){
-    startSequence();
-  }else{
-    enableSplashScreen(false);
-    enableSplashScreenTitles(false);
   }
 
   function isSplashscreenEnabled() {
@@ -306,7 +290,7 @@ window.clearRequestTimeout = function(handle) {
     }
   }
 
-  async function startSequence() {
+  async function startSplashscreenSequence() {
     if (isSplashscreenEnabled()) {
       highlight(true);
       enableCaret(false);

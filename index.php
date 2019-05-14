@@ -12,21 +12,14 @@
   <!--script-->
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
-  <script>
-    var websiteMode = "<?= $_GET ? $_GET['mode'] : 'undefined'; ?>";
-    var currentPagetName = "<? echo str_replace('/', '', $_SERVER['REQUEST_URI']); ?>";
-  </script>
 </head>
-<?
-  $initClass = $_SERVER['REQUEST_URI'] == '/' ? 'show-splashscreen' : '';
-?>
-<body class="<? echo $initClass ?>">
+<body>
   <div class="splashscreen-title">
     <h5>Infomation mesh — 30 years of facts about the World Wide Web</h5>
   </div>
-  <div class="splashscreen-main-title">
+  <a href="/index" class="splashscreen-main-title">
     <h5 class="enable-caret title-bold"></h5>
-  </div>
+  </a>
   <div class="click-to-start">
     <h5>Click to continue</h5>
   </div>
@@ -38,7 +31,9 @@
 
   <!--<div id="smartphone">mobile</div>-->
   <header id="navigation" class="not-extended">
-    <h1 id="project-title">Information mesh</h1>
+    <h1>
+      <a id="project-title" href="/">Information mesh</a>
+    </h1>
     <nav class="d-none">
       <?php echo file_get_contents("css/UI/UIArrowUp.svg"); ?>
       <?php echo file_get_contents("css/UI/UIArrowDown.svg"); ?>
@@ -61,8 +56,8 @@
         <div id="project-credits"><p></p></div>
       </div>
       <div id="container-menu" class="content flex-bottom font-large">
-        <a href="#" id="button-open-projects" class="selected">30 years of</a>
-        <a href="#" id="button-open-about" >About</a>
+        <a href="/index" id="button-open-projects" class="selected">30 years of</a>
+        <a href="/about" id="button-open-about" >About</a>
       </div>
     </div>
 

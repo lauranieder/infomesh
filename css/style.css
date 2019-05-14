@@ -89,6 +89,8 @@ nav a,
   opacity: 0;
   padding: 4rem 10vw;
   transition: opacity 0.5s ease-in-out;
+  color: white;
+  text-decoration: none;
 }
 
 .splashscreen-title,
@@ -320,6 +322,8 @@ nav .button-down{
   padding-right: 3rem !important;
   transition: padding 0.7s ease-in-out;
   cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 
 
