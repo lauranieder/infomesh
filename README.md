@@ -18,7 +18,7 @@ npm run deploy
 
 ### Interface/css
 - (si on a le temps) Amélioration du jump d'event en event. Clic sur l'événements et mouvement dynamique. Fin ne retourne pas au début
-- (important) Regex pour url readmore 
+- ✅ ~~(important) Regex pour url readmore~~
 - (important, tibor heeeelp) popup reduce doesn't work on iphone/ipad
 - ✅ ~~changement de la couleur des titres buggée~~
     -~~❗️ok sur mobile je pense, mais je suis pas à 100% sûr que j'ai bien compris / Tib~~ Normalement, ca devrais être tout bon, j'ai fait ce fix dans l'avion. Il y a juste le cas où si on passe de mobile à pas mobile dans le même browser ca risque de faire n'mporte quoi mais je m'en occupe. 
@@ -26,7 +26,7 @@ npm run deploy
 - timeline déja la quand on ouvre le projet mais elle devrait slider avec
 - slider reload pas au bon endroit timelime
 - ~~clic partout pour fermer popup~~ (à améliorer) Ferme toujours quand on clique sur un lien. 
-- (Pietro) Iframe link pour expo ne marche pas pour les link des descriptions des projets des étudiants (hors de l'iframe project).
+- ✅ ~~(Pietro) Iframe link pour expo ne marche pas pour les link des descriptions des projets des étudiants (hors de l'iframe project).~~
 
 ### Splashscreen 
 - Mots trop long sur mobile
