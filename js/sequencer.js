@@ -9,6 +9,7 @@ var Sequencer = {
     this.options = $.extend(this.options, options);
     this.video = options.video;
     this.video.play();
+    this.video.pause();
   },
 
   draw: function(normalizedPosition) {
