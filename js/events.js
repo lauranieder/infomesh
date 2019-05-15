@@ -58,6 +58,7 @@ $(document).ready(function() {
         $('#popup-title').text(events[currentPopupIndex].title);
         $('#popup-content').html(events[currentPopupIndex].content);
         $('#popup-date').html(formatDate(events[currentPopupIndex].start));
+        $('#popup').scrollTop(0);
       }
     }
   };
