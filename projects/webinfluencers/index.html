@@ -21,9 +21,16 @@
   <script type="text/javascript" src="/js/events.js"></script>
 </head>
 <body style="background-color:white;">
+    <link rel="preload" as="video" href="sequence/highres/output_file.mp4">
+    <link rel="preload" as="video" href="sequence/highres/output_file.webm">
+
   <section id="webinfluenceridentity" class="timeline-containers">
     <div id="container-project">
-      <div id="sequencer"></div>
+      <div id="sequencer">
+          <video id="vid-influencer" poster="sequence/lowres/anime_1.jpg" preload="auto" muted="true" playsinline="true">
+            <source src="sequence/highres/output.mp4" type="video/mp4">
+          </video>
+      </div>
     </div>
     <div id="container-timeline">
       <div id="timeline-scrollable">
