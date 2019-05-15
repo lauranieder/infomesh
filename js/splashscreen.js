@@ -93,7 +93,6 @@ window.clearRequestTimeout = function(handle) {
     "Over 500 million tweets are sent ever day. This figure is set to double within 2 years.",
     "The inventor of the modern world wide web, Tim Berners-Lee, was knighted by Queen Elizabeth.",
     "Mr. Berners-Lee uploaded the first image to the internet. It is of a joke band of women from the nuclear research lab CERN.",
-    "The first website is still online: http://info.cern.ch/hypertext/WWW/TheProject.html.",
     "The most commonly searched question beginning with “What is” in 2013 was “What is twerking?”.",
     "The most expensive keyword in Google AdWords is “insurance”.",
     "The most popular Tumblr is the official updates page for Minecraft.",
