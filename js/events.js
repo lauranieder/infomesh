@@ -150,8 +150,6 @@ function computeEventsContent(){
     }
 
     /*TO IMPROVE*/
-    console.log(item.readmore);
-    var containReadmore = item.readmore.match(/id='readmore'/g);
     if(item.readmore != null && item.readmore != ""){
       item.content += "</br><a target='_blank' id='readmore' href='"+item.readmore+"'>Read more</a>";
     }
