@@ -331,23 +331,9 @@ $(document).ready(function() {
 
   function openAboutPage(){ //triggered by redirect to
     //console.log("[script.js] openAboutPage")
-        $('.selected').removeClass('selected');
-        $(this).addClass('selected');
-        $('#navigation nav').addClass('d-none');
-
-        $('#container-about').addClass('main').removeClass('reduced');
-        $('#container-main, #container-projects').addClass('reduced').removeClass('main');
-
-        if(!isMobile){
-          /*$('#navigation nav-mobile').addClass('d-none');*/
-          $('#project-title').text(siteTitle);
-          $('#container-title').text(siteTitle);
-        }else{ //mobile
-          $('#project-title').text("About");
-          $('#container-title').text("About");
-          $('#button-closeOverlay').addClass('d-none');
-          $('#button-menu').removeClass('d-none');
-          $('.mobile-onlytimeline').addClass('d-none');
+    $('.selected').removeClass('selected');
+    $(this).addClass('selected');
+    $('#navigation nav').addClass('d-none');
 
     $('#container-about').addClass('main').removeClass('reduced');
     $('#container-main, #container-projects').addClass('reduced').removeClass('main');
@@ -361,6 +347,7 @@ $(document).ready(function() {
       $('#container-title').text("About");
       $('#button-closeOverlay').addClass('d-none');
       $('#button-menu').removeClass('d-none');
+      $('.mobile-onlytimeline').addClass('d-none');
 
     }
 
@@ -371,7 +358,7 @@ $(document).ready(function() {
     //only for mobile
     $('#container-side').addClass('mobile-reduced');
   }
-}
+
 
   function openProjectsPage(){
     $('#navigation nav').addClass('d-none');
