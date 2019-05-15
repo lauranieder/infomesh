@@ -62,9 +62,13 @@ $(document).ready(function() {
     }
   };
 
-  var funcTogglePopup = function() {
-    $('#popup').toggleClass('reduced');
-    window.parent.postMessage({message: 'isPopReduced', status: $('#popup').hasClass('reduced')}, '*');
+  var funcTogglePopup = function(event) {
+    if(event.target.tagName.toLowerCase() === 'a'){
+      //do not open popup
+    }else{
+      $('#popup').toggleClass('reduced');
+      window.parent.postMessage({message: 'isPopReduced', status: $('#popup').hasClass('reduced')}, '*');
+    }
   };
 
   $(document).on('timeline-scroll', lookForPopup);
