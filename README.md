@@ -57,8 +57,9 @@ npm run deploy
 - Récrire le texte de la page about avec Eryk.
 - Remplacer les logos sur la page about par les vectoriel final. 
 - ~~Checker toutes les descriptions des projets d'étudiants~~
-- Checker toutes les informations dans les timeline.
+- Checker toutes les informations dans les timeline. (en cours avec Eryk)
 - Checker la liste des facts.
+- Case null if no text is in content, to deal with
 
 ### Adapt student project
 #### worldwidemap
