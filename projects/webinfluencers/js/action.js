@@ -1,9 +1,8 @@
 $(document).ready(function() {
+  var elVideo = document.querySelector("#vid-influencer");
+
   Sequencer.init({
-    frameCount: 300,
-    folder: 'sequence',
-    baseName: 'anime_',
-    ext: 'jpg'
+    video: elVideo
   });
 
   document.addEventListener('timeline-scroll', function(e) {
