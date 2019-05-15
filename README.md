@@ -42,7 +42,7 @@ npm run deploy
 - (éventuellement) Message pour annoncer que la version mobile est réduite ?
 
 ### Popup sur mobile
-- Recréer la div (supprimer et recréer) ou la remettre à zéro, quand on a scrollé et qu'on reouvre un popup, le scroll est déja en bas
+- ✅ ~~Recréer la div (supprimer et recréer) ou la remettre à zéro, quand on a scrollé et qu'on reouvre un popup, le scroll est déja en bas~~
 
 ### Timeline
 - Evenement début de l'année envoie l'année d'avant !
