@@ -80,9 +80,14 @@
         <?php echo file_get_contents("css/UI/UIArrowRight.svg"); ?>
       </div>
     </div>
-    <div id="container-about" class="container d-flex reduced background-blue">
+    <div id="container-about" class="container reduced background-blue">
+      <div id="inside" class="d-flex">
       <div class="content">
-        <p>The Information Mesh site celebrates the 30th anniversary of CERN's creation of the World Wide Web by creating a social, technical, cultural, and legal timeline of Web history. Within this timeline, key historical developments are brought to life through interactive experiences created by Interaction Design students at the Swiss design school ECAL. 17 students came to San Francisco in October 2018 for a week-long study tour organized by swissnex San Francisco, where they visited key data visualization companies and partners and began to developing the project.</br></br>As envisioned, the timeline presents an overview of Web history, starting with the initial proposal for hypertext by Tim Berners-Lee at CERN in 1989, initially under the name "Information Mesh." From this start date, users can explore 30 years of evolution, with links to key writings and projects that create a historical guide to the social and cultural transformations the Web has unleashed.</br></br>The ECAL study group is part of the swissnex Salon, a series of activities exploring the impact of technology on fundamental societal values drawn from the preamble of the Swiss Constitution. Their projects will playfully examine the Utopian idealism at the heart of the Web, reconnecting us to the original optimism surrounding these communication technologies with a critical engagement regarding where we have arrived today. This presents an opportunity to return a collective focus to how we might bring the human back to the center of innovation.
+        <p>Information Mesh is a web platform celebrating the 30th anniversary of the World Wide Web that explores social, technical, cultural and legal facts throughout different interactive timelines. The project was realized by Media & Interaction Design students at ECAL/University of Art and Design, Lausanne. It was initiated in October 2018 during a one week workshop in partnership with swissnex San Francisco, where students visited key partners and began developing the project.
+        </br></br>
+        The timelines present an overview of Web history, starting with the proposal for hypertext by Tim Berners-Lee at CERN in 1989, initially under the name "Information Mesh." From this start date, users can then explore 30 years of evolution.
+        </br></br>
+        The ECAL study group is part of the swissnex Salon, a series of activities exploring the impact of technology on fundamental societal values drawn from the preamble of the Swiss Constitution. This project playfully examines the Utopian idealism at the heart of the Web, reconnecting us to the original optimism surrounding these communication technologies with a critical engagement regarding where we have arrived today. This presents an opportunity to return a collective focus on how we might bring the human back to the center of innovation.
         </p>
       </div>
       <div class="content">
@@ -100,12 +105,15 @@
         </div>
         <div class="full">
         <br>
-          <h4>&lt;Team ecal&gt;</h4>
+          <h4>ECAL Faculty</h4>
           <p>Vincent Jacquier, Pauline Saglio, Laura Perrenoud, Tibor Udvari, Pietro Alberti</p></br>
-          <h4>&lt;Team swissnex&gt;</h4>
+          <h4>swissnex Team</h4>
           <p>Benjamin Bollmann, Mary Ellyn Johnson, Eryk Salvaggio</p></br>
-          <h4>&lt;Students&gt;</h4>
+          <h4>ECAL Students</h4>
           <p>Al Zouabi Alfatih, Becheras Diane, Bisseck Iyo, Boulenaz Jonathan, Breithaupt Kevin, Chenaux Maëlle, Matos Sébastien, Mouthon Bastien, Palauqui Mathieu, Sassoli De Bianchi Luca, Simmen Guillaume, Virág Tamara, Vogel Nathan, Zibaut Anouk</p></br>
+        </div>
+        <div class="full">
+          <h4>Partners</h4>
         </div>
         <div class="logos">
           <a href="https://archive.org/" target="_blank">
@@ -119,6 +127,7 @@
           </a>
         </div>
 
+      </div>
       </div>
     </div>
     <script type="text/javascript" src="./js/splashscreen.js"></script>

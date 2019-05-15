@@ -54,6 +54,11 @@ h1,
   hyphens: auto;
 }
 
+h4{
+  /*font-size: 2rem;*/
+  font-weight: 100;
+}
+
 
 iframe,
 nav,
@@ -353,6 +358,8 @@ nav .button-down{
   box-shadow: 4px 0px 49px rgba(0, 0, 1, 0.5);
 }
 
+
+
 #container-projects a {
   display: flex;
   padding:1rem;
@@ -399,6 +406,11 @@ nav .button-down{
 #container-about {
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+#container-about #inside {
+  padding-top: 11rem;
+  padding-bottom: 11rem;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -412,6 +424,8 @@ nav .button-down{
   width: 25vw;
   min-width: 25vw;
   padding: 1rem;
+  /*min-height: 100vh;
+  overflow: hidden;*/
 }
 
 #container-projects {
@@ -696,6 +710,12 @@ iframe {
   #container-main,
   #container-about {
     transition: none;
+  }
+
+
+  #container-about #inside {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   #container-side .content{
