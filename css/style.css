@@ -253,7 +253,7 @@ nav svg{
   z-index: 1000;
   transition: left 0.7s ease-in-out, top 0.7s ease-in-out, transform 0.7s ease-in-out, max-width 0.7s ease-in-out;
 }
-#navigation.background-blue {
+#navigation.background-blue h1 a {
   color: white;
 }
 
@@ -264,7 +264,7 @@ nav svg{
   stroke: #000000;
 }
 
-#navigation.background-black {
+#navigation.background-black h1 a {
   color: white;
 }
 
@@ -275,7 +275,7 @@ nav svg{
   stroke: #0000ff;
 }
 
-#navigation.background-white {
+#navigation.background-white h1 a {
   color: black;
 }
 
@@ -286,7 +286,7 @@ nav svg{
   stroke: #0000ff;
 }
 
-#navigation.not-extended{
+#navigation.not-extended h1 a{
   color: white;
 }
 #navigation.not-extended nav > a {
@@ -322,7 +322,7 @@ nav .button-down{
   padding-right: 3rem !important;
   transition: padding 0.7s ease-in-out;
   cursor: pointer;
-  color: white;
+   /*rentre en conflict avec le titre des projets des étudiants !!!!!*/
   text-decoration: none;
 }
 
