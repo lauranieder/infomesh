@@ -27,6 +27,7 @@ npm run deploy
 - slider reload pas au bon endroit timelime
 - ~~clic partout pour fermer popup~~
 - ✅ ~~(Pietro) Iframe link pour expo ne marche pas pour les link des descriptions des projets des étudiants (hors de l'iframe project).~~
+- state : texte description redisparait pas, checker les states de Pietro
 
 ### Splashscreen 
 - Mots trop long sur mobile
