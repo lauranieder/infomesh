@@ -93,6 +93,10 @@ nav a,
   text-decoration: none;
 }
 
+.splashscreen-main-title h5 {
+  pointer-events: none;
+}
+
 .splashscreen-title,
 .click-to-start {
   position: fixed;
