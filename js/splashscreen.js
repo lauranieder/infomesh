@@ -124,7 +124,7 @@ window.clearRequestTimeout = function(handle) {
     "An Institute in Colorado created the world’s most accurate clock, so accurate that it would not lose or gain a second in 20 million years. This is the same clock that is used for intern et time.",
     "AOL still brings in $600 million a year from dial up Internet subscriptions.",
     "There’s a whole demographic of “Homeless” Japanese youth, who live and sleep solely in Internet Cafés.",
-    "Latvia has the 4th fastest average internet speeds. The US is in 14th place",
+    "Latvia has the 4th fastest average internet speeds. The US is in 14th place.",
     "There is 3G cell service and internet capabilities at the peak of Mt. Everest.",
     "Robert Metcalfe predicted in 1995 that the internet would collapse a year later in 1996, and that would “eat his words” if it did not. In 1997, he blended a printed copy of that speech with liquid and drank the mixture.",
     "A 75-year-old Swedish woman has the world’s fastest Internet connection at 40 Gigabits/second.",
