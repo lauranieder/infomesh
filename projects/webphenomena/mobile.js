@@ -19,18 +19,14 @@
   var deleteTimeout = null
 
   function updateVideo (year) {
-    var lastVideos = projectContainer.querySelectorAll('video');
-    var newVideo = document.createElement('video');
-    newVideo.muted = true;
-    newVideo.classList.add('video');
-    newVideo.src = getVideoUrl(year);
-    newVideo.setAttribute("playsinline", "true");
-    projectContainer.appendChild(newVideo);
-
+    var lastVideos = projectContainer.querySelectorAll('img');
+    var newImage = new Image();
+    newImage.classList.add('video');
+    newImage.src = getImageUrl(year);
+    projectContainer.appendChild(newImage);
 
     requestAnimationFrame(function () {
-      newVideo.style.opacity = 1;
-      newVideo.play();
+      newImage.style.opacity = 1;
     })
 
     clearTimeout(deleteTimeout);
@@ -46,7 +42,7 @@
     return loadableYears.indexOf(year) > -1;
   }
 
-  function getVideoUrl (year) {
-    return assetRoot + year + '.mp4';
+  function getImageUrl (year) {
+    return assetRoot + year + '.jpg';
   }
 })();
