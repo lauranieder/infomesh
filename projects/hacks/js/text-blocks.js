@@ -95,9 +95,11 @@ function createBlock(data) {
   readmoreLink.rel = "noopener noreferrer";
   if (data.readmore) {
     readmoreLink.href = data.readmore;
+    readmoreLink.target = "_blank";
     readmoreLink.textContent = "Read more on " + getDomainTitle(data.readmore);
   } else {
     readmoreLink.href = data.source;
+    readmoreLink.target = "_blank";
     readmoreLink.textContent =
       data.source === "https://en.wikipedia.org/wiki/List_of_data_breaches"
         ? "Source: Data breach list on Wikipedia"
