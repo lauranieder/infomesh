@@ -39,15 +39,19 @@ $(document).ready(function() {
     var links = $('a');
 
     links.click(function (e) {
-      e.preventDefault()
-      var target = e.target;
-      var href = target.href;
-      window.history.pushState(historyState, '', href);
+      if (!e.currentTarget.hasAttribute("data-externallink")) {
+        e.preventDefault()
+        var target = e.target;
+        var href = target.href;
+        window.history.pushState(historyState, '', href);
+  
+        // We have to wait a bit until the url is updated
+        window.requestAnimationFrame(function () {
+          renderState(getUrlParam());
+        })
+      } 
 
-      // We have to wait a bit until the url is updated
-      window.requestAnimationFrame(function () {
-        renderState(getUrlParam());
-      })
+      
     });
 
     $(window).on('popstate', function () {

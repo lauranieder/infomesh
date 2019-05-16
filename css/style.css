@@ -424,8 +424,8 @@ nav .button-down{
 }
 
 #container-about #inside {
-  padding-top: 11rem;
-  padding-bottom: 11rem;
+  /* padding-top: 11rem;
+  padding-bottom: 11rem; */
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -497,7 +497,7 @@ nav .button-down{
 }
 
 #container-menu.content{
-  padding:0; !important /* déja un padding dans les a */
+  padding:0; /*!important  déja un padding dans les a */
 }
 
 #container-menu a.selected {
@@ -673,7 +673,39 @@ iframe {
   stroke:blue;
 }
 
-@media (max-width: 1500px){ /*tablet landscape*/
+
+.logo {
+  max-height: 2.5rem;
+  height: 100%;
+  object-fit: contain !important;
+  width: auto !important;
+  margin-bottom: 1.2rem;
+}
+
+.logo-bottom {
+  max-height: 4rem !important;
+  margin-top: 1.3rem;
+}
+
+.logo-bottom-middle {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.logos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logos > a {
+  display: contents;
+}
+
+
+@media (max-width: 1920px){ /*tablet landscape*/
   #container-about .content {
     width: 50%;
     min-width:50%;
@@ -686,6 +718,28 @@ iframe {
   .click-to-start {
     font-size: 1em;
   }
+
+  .logo {
+    max-width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* height: 100px !important;
+    max-height: inherit; */
+  }
+
+  .logo-bottom {
+    height: 110px !important;
+    max-height: inherit;
+  }
+
+  .logo-vd {
+    margin-right: 2rem;
+  }
+
+  .logo-swissnex {
+    margin-left: 2.1rem;
+  } 
+
 }
 
 @media (max-width: 1300px){
@@ -937,32 +991,48 @@ iframe {
   }
 }
 
-.logo {
-  max-height: 2.5rem;
-  height: 100%;
-  object-fit: contain !important;
-  width: auto !important;
-  margin-bottom: 1.2rem;
-}
 
-.logo-bottom {
-  max-height: 4rem;
-  margin-top: 1.3rem;
-}
+/* Fix about page */
+@media (min-width: 1921px) { /* fatty big screens de bougois tablet landscape*/
+  #container-about .content {
+    width: 50%;
+    min-width:50%;
+  }
+  h1, .font-large{
+    font-size: 60px;
+  }
 
-.logo-bottom-middle {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
+  .splashscreen-title,
+  .click-to-start {
+    font-size: 30px;
+  }
 
-.logos {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  #container-about #inside {
+    padding-bottom: 0;
+    padding-top:0;
+    font-size: 30px;
+    justify-content: top;
+  }
 
-.logos > a {
-  display: contents;
+  .logo {
+    max-width: 80%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 100px !important;
+    max-height: inherit;
+  }
+
+  .logo-bottom {
+    height: 110px !important;
+    max-height: inherit;
+  }
+
+  .logo-vd {
+    margin-right: 100px;
+  }
+
+  .logo-swissnex {
+    margin-right: 20px;
+  }
+
 }

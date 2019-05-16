@@ -96,18 +96,17 @@
       <div class="content">
         <div class="full">
           <div class="fit-w half-w">
-            <a href="http://ecal.ch" target="_blank">
+            <a href="http://ecal.ch" target="_blank" data-externallink="true">
               <img src="../img/logos/logo_ecal_white.svg" alt="Logo of ECAL" class="logo">
             </a>
           </div>
           <div class="fit-w half-w">
-            <a href="https://www.swissnexsanfrancisco.org" target="_blank">
-              <img src="../img/logos/logo_swissnex_white.svg" alt="Logo of Swissnex San Francisco" class="logo">
+            <a href="https://www.swissnexsanfrancisco.org" target="_blank" data-externallink="true">
+              <img src="../img/logos/logo_swissnex_white.svg" alt="Logo of Swissnex San Francisco" class="logo logo-swissnex">
             </a>
           </div>
         </div>
         <div class="full">
-        <br>
           <h4>ECAL Faculty</h4>
           <p>Vincent Jacquier, Pauline Saglio, Laura Perrenoud, Tibor Udvari, Pietro Alberti</p></br>
           <h4>swissnex Team</h4>
@@ -119,16 +118,17 @@
           <h4>Partners</h4>
           <p>Volker Eckl and Jan Gerlach, Wikimedia</p>
           <p>Amir Saber Esfahani, Internet Archive</p>
+          <p>With the support of the Canton of Vaud</p>
         </div>
         <div class="logos">
-          <a href="https://archive.org/" target="_blank">
+          <a href="https://archive.org/" target="_blank" data-externallink="true">
             <img src="../img/logos/logo_archive_white.svg" alt="Logo of the internet archive" class="logo logo-bottom">
           </a>
-          <a href="https://wikimediafoundation.org/" target="_blank">
+          <a href="https://wikimediafoundation.org/" target="_blank" data-externallink="true">
             <img src="../img/logos/logo_wikimedia_white.svg" alt="Logo of the Wikimedia foundation" class="logo logo-bottom logo-bottom-middle">
           </a>
-          <a href="https://vd.ch" target="_blank">
-            <img src="../img/logos/logo_vd_white.svg" alt="Logo of the Canton of Vaud" class="logo logo-bottom">
+          <a href="https://vd.ch" target="_blank" data-externallink="true">
+            <img src="../img/logos/logo_vd_white.svg" alt="Logo of the Canton of Vaud" class="logo logo-bottom logo-vd">
           </a>
         </div>
 
