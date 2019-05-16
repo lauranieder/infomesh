@@ -768,6 +768,60 @@ iframe {
     padding-bottom: 1rem !important;
   }
 
+  #navigation h1 a {
+    color: white;
+  }
+
+  #navigation nav > a{
+    color: #ffffff;
+  }
+  #navigation .button-nav{
+    stroke: #ffffff;
+  }
+
+  #navigation.background-blue h1 a {
+    color: white;
+  }
+
+  #navigation.background-blue nav > a {
+    color: #ffffff;
+  }
+  #navigation.background-blue .button-nav{
+    stroke: #ffffff;
+  }
+
+  #navigation.background-black h1 a {
+    color: white;
+  }
+
+  #navigation.background-black nav > a {
+    color: #ffffff;
+  }
+  #navigation.background-black .button-nav{
+    stroke: #ffffff;
+  }
+
+  #navigation.background-white h1 a {
+    color: black;
+  }
+
+  #navigation.background-white nav > a{
+    color: #000000;
+  }
+  #navigation.background-white .button-nav{
+    stroke: #000000;
+  }
+
+  #navigation.not-extended h1 a{
+    color: white;
+  }
+  #navigation.not-extended nav > a {
+    color: #ffffff;
+  }
+  #navigation.not-extended .button-nav{
+    stroke: #ffffff;
+  }
+
 
   /*container button*/
   nav{

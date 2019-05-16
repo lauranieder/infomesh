@@ -359,7 +359,7 @@ $(document).ready(function() {
         $('#button-closeOverlay').addClass('d-none');
         $('#button-menu').removeClass('d-none');
         $('.mobile-onlytimeline').addClass('d-none');
-        $('#navigation').addClass('background-blue');
+        //$('#navigation').addClass('background-blue');
       }else{
         $('#project-title').text(siteTitle);
         $('#container-title').text(siteTitle);
@@ -411,7 +411,7 @@ $(document).ready(function() {
       $('#button-closeOverlay').addClass('d-none');
       $('#button-menu').removeClass('d-none');
       $('.mobile-onlytimeline').addClass('d-none');
-      $('#navigation').addClass('background-blue');
+      //$('#navigation').addClass('background-blue');
 
 
     }else{
