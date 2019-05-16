@@ -67,11 +67,13 @@ body {
   display: flex;
   justify-content: space-between;
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.37);
+  border: solid 1px white;
 }
 .lSquare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 10vw;
-  height: 10px;
-  padding: 10px;
   border-left-style: solid;
   font-size: 1rem;
   text-align: center;
@@ -149,8 +151,6 @@ body.mobile #legend {
 body.mobile .lSquare {
   font-size: 0.8rem;
   height: calc(2rem - 10px);
-  padding-top: 10px;
-  padding-bottom: 0px;
 }
 body.mobile #info {
   top: calc(5.5rem + 30px);
