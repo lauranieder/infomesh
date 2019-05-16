@@ -184,8 +184,9 @@ $(document).ready(function() {
     var iframe = $('<iframe class="current-iframe appear-' + direction + '" src="./projects/' + project.slug + '">');
     $('#container-main').append(iframe);
     $('#timeline-barre').css('transition','all 100ms cubic-bezier(0.23, 1, 0.32, 1)');
-    $('#timeline-barre').css('background-color','rgba(255,255,255,1)');
-    //$('#timeline-barre').css('opacity','1');
+    $('#timeline-barre #timeline-background').css('transition','all 100ms cubic-bezier(0.23, 1, 0.32, 1)');
+    //$('#timeline-barre').css('background-color','rgba(255,255,255,1)');
+    $('#timeline-barre #timeline-background').css('opacity','1');
 
     $('#navigation').removeClass('background-blue');
     $('#navigation').removeClass('background-white');
@@ -222,7 +223,9 @@ $(document).ready(function() {
       //console.log("[main] showTimeline sended / current iframe "+$('.current-iframe'));
       $('.previous-iframe').remove();
       $('#timeline-barre').css('transition','all 500ms cubic-bezier(0.23, 1, 0.32, 1)');
-      $('#timeline-barre').css('background-color','rgba(255,255,255,0)');
+      $('#timeline-barre #timeline-background').css('transition','all 500ms cubic-bezier(0.23, 1, 0.32, 1)');
+      //$('#timeline-barre').css('background-color','rgba(255,255,255,0)');
+      $('#timeline-barre #timeline-background').css('opacity','0');
       //$('#timeline-barre').css('opacity','0');
 
     }, 3000); //500

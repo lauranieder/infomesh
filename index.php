@@ -78,6 +78,7 @@
       <div id="timeline-barre">
         <?php echo file_get_contents("css/UI/UIArrowLeft.svg"); ?>
         <?php echo file_get_contents("css/UI/UIArrowRight.svg"); ?>
+        <div id="timeline-background"></div>
       </div>
     </div>
     <div id="container-about" class="container reduced background-blue">
