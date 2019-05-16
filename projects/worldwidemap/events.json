@@ -1,222 +1,362 @@
 [
     {
-      "timeline": null,
+      "timeline": "",
       "title": "Tim Berners-Lee builds tools",
       "start": "31/12/1990",
-      "end": null,
+      "end": "",
       "content": "By Christmas 1990, Berners-Lee had built all the tools necessary for a working Web: the <a href=\"https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol\">HyperText Transfer Protocol</a> (HTTP) 0.9, the <a href=\"https://en.wikipedia.org/wiki/HTML\">HyperText Markup</a> Language (HTML), the first <a href=\"https://en.wikipedia.org/wiki/Web_browser\">Web browser</a> (named WorldWideWeb, which was also a Web editor), the first HTTP server software (later known as CERN httpd), the first web server (http://info.cern.ch), and the first Web pages that described the project itself. The browser could access Usenet newsgroups and FTP files as well. However, it could run only on the NeXT; Nicola Pellow therefore created a simple text browser, called the Line Mode Browser, that could run on almost any computer. To encourage use within CERN, Bernd Pollermann put the CERN telephone directory on the web—previously users had to log onto the mainframe in order to look up phone numbers.",
-      "wikifetch": null,
-      "readmore": null,
-      "contentsource": null
+      "wikifetch": "",
+      "readmore": "",
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "The web is publicly announced. ",
       "start": "06/08/1991",
-      "end": null,
+      "end": "",
       "content": "The Web was publicly announced (via a posting to the Usenet newsgroup alt.hypertext) on August 6, 1991.",
-      "wikifetch": null,
-      "readmore": "https://groups.google.com/forum/#!msg/alt.hypertext/eCTkkOoWTAY/pwyBmDUpCAAJ",
-      "contentsource": null
+      "wikifetch": "",
+      "readmore": "https://web.archive.org/web/20021019133623/https://www.w3.org/People/Berners-Lee/1991/08/art-6484.txt",
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "50 websites are online. ",
       "start": "01/01/1993",
-      "end": null,
-      "content": null,
-      "wikifetch": null,
-      "readmore": null,
-      "contentsource": null
+      "end": "",
+      "content": "",
+      "wikifetch": "",
+      "readmore": "",
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "The World Wide Web becomes public domain, waiving fees to participate.",
       "start": "30/04/1993",
-      "end": null,
-      "content": "“CERN’s intention in this is to further compatibility, common practices, and standards in networking and computer supported collaboration. This does not constitute a precedent to be applied to any other CERN copyright software.<br>CERN relinquishes all intellectual property rights to this code, both source and binary form and permission is granted for anyone to use, duplicate, modify and redistribute it.</br>CERN provides absolutely NO WARRANTY OF ANY KIND with respect to this software. The entire risk as to the quality and performance of this software is with the user.”",
-      "wikifetch": null,
-      "readmore": "At the start of 1993, 50 websites were on the web. Within months after the release of software on the public domain, there were 500. ",
-      "contentsource": "http://cds.cern.ch/record/1164399"
+      "end": "",
+      "content": "“CERN’s intention in this is to further compatibility, common practices, and standards in networking and computer supported collaboration. This does not constitute a precedent to be applied to any other CERN copyright software.<br>CERN relinquishes all intellectual property rights to this code, both source and binary form and permission is granted for anyone to use, duplicate, modify and redistribute it.</br>CERN provides absolutely NO WARRANTY OF ANY KIND with respect to this software. The entire risk as to the quality and performance of this software is with the user.”  At the start of 1993, 50 websites were on the web. Within months after the release of software on the public domain, there were 500. ",
+      "wikifetch": "",
+      "readmore": "https://web.archive.org/web/20190417090222/http://cds.cern.ch/record/1164399",
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "The World Wide Web reaches 623 websites",
       "start": "31/12/1993",
-      "end": null,
+      "end": "",
       "content": "By the end of 1993, there were 623 websites, according to a study by MIT Researcher Matthew Gray",
-      "wikifetch": null,
-      "readmore": "https://stuff.mit.edu/people/mkgray/net/web-growth-summary.html",
-      "contentsource": "wikipédia, Matthew Gray of the Massachusetts Institute of Technology"
+      "wikifetch": "",
+      "readmore": "https://web.archive.org/web/20160603070429/https://stuff.mit.edu/people/mkgray/net/web-growth-summary.html",
+      "contentsource": "wikipedia, Matthew Gray of the Massachusetts Institute of Technology"
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "The World Wide Web reaches 2,738 websites",
       "start": "01/06/1994",
-      "end": null,
+      "end": "",
       "content": "By mid-1994 there were 2,738 websites, according to Gray's statistics; by the end of the year, more than 10,000.",
-      "wikifetch": null,
-      "readmore": "https://stuff.mit.edu/people/mkgray/net/web-growth-summary.html",
+      "wikifetch": "",
+      "readmore": "https://web.archive.org/web/20160603070429/https://stuff.mit.edu/people/mkgray/net/web-growth-summary.html",
       "contentsource": "wikipédia, Matthew Gray of the Massachusetts Institute of Technology"
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "A New Giant Rises",
       "start": "01/01/2008",
-      "end": null,
+      "end": "",
       "content": "World Internet population surpasses 1.5 billion. China's Internet population reaches 250 million, surpassing the United States as the world's largest.",
-      "wikifetch": null,
-      "readmore": "https://phys.org/news/2009-08-key-milestones-internet.html#jCp",
-      "contentsource": null
+      "wikifetch": "",
+      "readmore": "https://web.archive.org/web/20161115135351/http://phys.org/news/2009-08-key-milestones-internet.html",
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "A Surfboard for the Net",
       "start": "01/01/1994",
-      "end": null,
+      "end": "",
       "content": "Andreessen and others on the Mosaic team form a company to develop the first commercial Web browser, Netscape, piquing the interest of Microsoft Corp.",
-      "wikifetch": null,
-      "readmore": null,
-      "contentsource": null
+      "wikifetch": "",
+      "readmore": "",
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "A Quarter of a Billion",
       "start": "01/01/1998",
-      "end": null,
+      "end": "",
       "content": "World Internet population surpasses 250 million.",
-      "wikifetch": null,
-      "readmore": null,
-      "contentsource": null
+      "wikifetch": "",
+      "readmore": "",
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "Half a Billion",
       "start": "01/01/2002",
-      "end": null,
+      "end": "",
       "content": "World Internet population surpasses 500 million. Acquiring more users in the last 3 years than in the previous 10.",
-      "wikifetch": null,
-      "readmore": null,
-      "contentsource": null
+      "wikifetch": "",
+      "readmore": "",
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "First Billion",
       "start": "01/01/2006",
-      "end": null,
+      "end": "",
       "content": "World Internet population surpasses 1 billion.",
-      "wikifetch": null,
-      "readmore": null,
-      "contentsource": null
+      "wikifetch": "",
+      "readmore": "",
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "The World in Your Hand",
       "start": "01/01/1996",
-      "end": null,
+      "end": "",
       "content": "The first access to the mobile web was commercially offered in Finland at the end of 1996 on the <a href=\"https://en.wikipedia.org/wiki/Nokia_9000_Communicator\">Nokia 9000 Communicator</a> phone via the Sonera and Radiolinja networks.",
-      "wikifetch": null,
+      "wikifetch": "",
       "readmore": "https://en.wikipedia.org/wiki/Mobile_Web#Mobile_access",
-      "contentsource": null
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "Mobile Internet on the Rise",
       "start": "01/01/1997",
-      "end": null,
+      "end": "",
       "content": "Unwired Planet, Nokia, Ericsson, and Motorola started the <a href=\"https://en.wikipedia.org/wiki/Open_Mobile_Alliance\">WAP Forum</a> to create and harmonize the standards to ease the transition to bandwidth networks and small display devices.",
-      "wikifetch": null,
-      "readmore": "https://www.wired.com/1997/11/handheld-internet-will-be-huge-really/",
-      "contentsource": null
+      "wikifetch": "",
+      "readmore": "https://web.archive.org/web/20180709064535/https://www.wired.com/1997/11/handheld-internet-will-be-huge-really/",
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "Wider Waves fo a Wider Sky",
       "start": "01/11/1993",
-      "end": null,
+      "end": "",
       "content": "Hughes Aircraft Co. filed with the <a href=\"https://en.wikipedia.org/wiki/Federal_Communications_Commission\">Federal Communications Commission</a> (USA) for a license to launch the first Ka-band satellite, <a href=\"https://en.wikipedia.org/wiki/Spaceway\">Spaceway </a>. Ka-band capable satellites were what enable the internet to be delivered via satellite in a significant way.",
-      "wikifetch": null,
+      "wikifetch": "",
       "readmore": "https://en.wikipedia.org/wiki/Satellite_Internet_access",
-      "contentsource": null
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "A Bigger Rocket",
       "start": "01/01/2004",
-      "end": null,
+      "end": "",
       "content": "The <a href=\"https://en.wikipedia.org/wiki/Anik_(satellite)#Anik_F2\">Anik F2 </a> is launched in orbit, the first high throughput satellite, a class of next-generation satellites providing improved capacity and bandwidth became operational. Anik F2 is one of the largest, most powerful communications satellites ever built.",
-      "wikifetch": null,
+      "wikifetch": "",
       "readmore": "https://en.wikipedia.org/wiki/Satellite_Internet_access",
-      "contentsource": null
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "East Africa Plugged",
       "start": "01/07/2009",
-      "end": null,
+      "end": "",
       "content": "An underwater fiber optic cable line plugged East Africa into the broader Internet. The company that provided this new cable was <a href=\"https://en.wikipedia.org/wiki/SEACOM_(African_cable_system)\">SEACOM</a>.",
-      "wikifetch": null,
+      "wikifetch": "",
       "readmore": "https://en.wikipedia.org/wiki/Submarine_communications_cable#Investment_in_and_financing_of_submarine_cables",
-      "contentsource": null
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "Snakes of the Ocean",
       "start": "01/01/2014",
-      "end": null,
+      "end": "",
       "content": "A total of 285 separated communications cables at the bottom of the ocean are operative and carrying the vast majority of the interenet intercontinental transmissions.",
-      "wikifetch": null,
-      "readmore": "http://mentalfloss.com/article/60150/10-facts-about-internets-undersea-cables",
-      "contentsource": null
+      "wikifetch": "",
+      "readmore": "https://web.archive.org/web/20190512093435/http://mentalfloss.com/article/60150/10-facts-about-internets-undersea-cables",
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "NSFNET Final Upgrade",
       "start": "01/01/1992",
-      "end": null,
+      "end": "",
       "content": "The <a href=\"https://en.wikipedia.org/wiki/National_Science_Foundation_Network\">National Science Foundation Network</a> is upgraded to 45 Mbit/s (T3), thus expanding the internet backbone at the time.",
-      "wikifetch": null,
+      "wikifetch": "",
       "readmore": "https://en.wikipedia.org/wiki/National_Science_Foundation_Network#/media/File:NSFNET-backbone-T3.png",
-      "contentsource": null
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "More Space in the Air",
       "start": "01/06/1999",
-      "end": null,
+      "end": "",
       "content": "The IEEE 802.11b specification is developped allowing to the extends throughput the wirless networking systems up to 11 Mbit/s.",
-      "wikifetch": null,
+      "wikifetch": "",
       "readmore": "https://en.wikipedia.org/wiki/IEEE_802.11b-1999",
-      "contentsource": null
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "Less Wires More Powers",
       "start": "01/01/2003",
-      "end": null,
+      "end": "",
       "content": "The IEEE 802.11g specification si released. The wireless networks throughput is pushed to 54 Mbit/s. The specification gets the commercial name of <a href=\"https://en.wikipedia.org/wiki/Wi-Fi\">Wi-Fi</a>.",
-      "wikifetch": null,
+      "wikifetch": "",
       "readmore": "https://en.wikipedia.org/wiki/IEEE_802.11g-2003",
-      "contentsource": null
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "A Name for Every Place ",
       "start": "01/04/2010",
-      "end": null,
+      "end": "",
       "content": "First internationalized country code top-level domains are registered.",
-      "wikifetch": null,
+      "wikifetch": "",
       "readmore": "https://en.wikipedia.org/wiki/Top-level_domain#Internationalized_country_code_TLDs",
-      "contentsource": null
+      "contentsource": ""
     },
     {
-      "timeline": null,
+      "timeline": "",
       "title": "America On Line",
       "start": "01/02/1991",
-      "end": null,
+      "end": "",
       "content": "AOL launches its pay-based online services and will soon become the main actor and the most recognized brand on the web in the United States.",
-      "wikifetch": null,
+      "wikifetch": "",
       "readmore": "https://en.wikipedia.org/wiki/AOL",
-      "contentsource": null
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "Censorship is Damage?",
+      "start": "23/06/1993",
+      "end": "",
+      "content": "John Gilmore tells Time Magazine: \"The Net interprets censorship as damage and routes around it.\"",
+      "wikifetch": "",
+      "readmore": "https://web.archive.org/web/20190101220931/http://kirste.userpage.fu-berlin.de/outerspace/internet-article.html",
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "",
+      "start": "",
+      "end": "",
+      "content": "",
+      "wikifetch": "",
+      "readmore": "",
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "Several countries block Web access in response to the Arab Spring",
+      "start": "25/01/2011",
+      "end": "",
+      "content": "",
+      "wikifetch": "Internet_censorship_in_the_Arab_Spring",
+      "readmore": "",
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "China begins building the \"Great Firewall,\" which became part of its national \"<a href=\"https://en.wikipedia.org/wiki/Golden_Shield_Project\" target=\"other\">Golden Shield</a>\" strategy.",
+      "start": "1998",
+      "end": "",
+      "content": "",
+      "wikifetch": "Great_Firewall",
+      "readmore": "",
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "Google China launches with censored results.",
+      "start": "12/04/2006",
+      "end": "",
+      "content": "",
+      "wikifetch": "",
+      "readmore": "",
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "Google suspends censorship of Chinese search items",
+      "start": "03/01/2010",
+      "end": "",
+      "content": "",
+      "wikifetch": "",
+      "readmore": "https://web.archive.org/web/20100324053259/http://news.bbc.co.uk/2/hi/asia-pacific/8582233.stm",
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "Leaked memo reveals Google plans to bring censored search engine back to China; scuttled after employee revolt",
+      "start": "09/10/2018",
+      "end": "",
+      "content": "",
+      "wikifetch": "",
+      "readmore": "https://web.archive.org/web/20190423084643/https://www.independent.co.uk/life-style/gadgets-and-tech/news/google-china-search-engine-censorship-leak-project-dragonfly-state-government-a8577241.html",
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "First US telecommunications law to include Internet is passed.",
+      "start": "08/02/1996",
+      "end": "",
+      "content": "",
+      "wikifetch": "Telecommunications_Act_of_1996",
+      "readmore": "",
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "Russia creates a centralized blacklist of blocked websites.",
+      "start": "01/11/2012",
+      "end": "",
+      "content": "",
+      "wikifetch": "Internet_censorship_in_Russia",
+      "readmore": "",
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "Iran introduces temporary block on access to the Web from Mobile devices.",
+      "start": "13/06/2009",
+      "end": "",
+      "content": "",
+      "wikifetch": "2009_Iranian_presidential_election_protests#Internet_censorship",
+      "readmore": "",
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "South Korea passes the Telecommunications Business Act, the first Internet censorship law in the world. ",
+      "start": "29/02/1995",
+      "end": "",
+      "content": "",
+      "wikifetch": "Internet_censorship_in_South_Korea",
+      "readmore": "",
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "Egypt briefly shuts down its own Domain Name System, disconnecting 88% of its network.",
+      "start": "27/01/2011",
+      "end": "",
+      "content": "",
+      "wikifetch": "Internet_in_Egypt#2011_Internet_shutdown",
+      "readmore": "",
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "Pakistan blocks access to Facebook and other websites for two days in response to blasphemous imagery. ",
+      "start": "11/05/2010",
+      "end": "",
+      "content": "",
+      "wikifetch": "Internet_censorship_in_Pakistan",
+      "readmore": "",
+      "contentsource": ""
+    },
+    {
+      "timeline": "",
+      "title": "Turkey blocks access to Wikipedia. ",
+      "start": "29/04/2017",
+      "end": "",
+      "content": "",
+      "wikifetch": "Block_of_Wikipedia_in_Turkey",
+      "readmore": "",
+      "contentsource": ""
     }
   ]

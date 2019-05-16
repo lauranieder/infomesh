@@ -114,6 +114,8 @@
         </div>
         <div class="full">
           <h4>Partners</h4>
+          <p>Jan Gerlach, Wikimedia</p>
+          <p>Amir Saber Esfahani, Internet Archive</p>
         </div>
         <div class="logos">
           <a href="https://archive.org/" target="_blank">

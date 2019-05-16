@@ -153,7 +153,7 @@ THE SOFTWARE.
       var svgWidth = windowWidth = $(window).width();
       var svgHeight = windowHeight = $(window).height() / 100 * 90;
 
-      console.log(svgWidth, svgHeight);
+      //console.log(svgWidth, svgHeight);
       //---
 
       center2D = {

@@ -33,7 +33,7 @@ $(document).ready(function() {
     //console.log(e);
     //console.log("timeline-scroll");
     var y = moment(e.detail.date).year();
-    console.log(y);
+    //console.log(y);
     timeline_change(y);
   });
 });
@@ -157,7 +157,7 @@ function autoShowCountries() {
 
 //First loading of th first map
 main_svg_holder.load(
-  
+
    serverPathHandle + "/frames/" + dataType + current_year + ".svg",
 
   function() {

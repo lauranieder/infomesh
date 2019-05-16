@@ -185,6 +185,7 @@ $(document).ready(function() {
     $('#container-main').append(iframe);
     $('#timeline-barre').css('transition','all 100ms cubic-bezier(0.23, 1, 0.32, 1)');
     $('#timeline-barre').css('background-color','rgba(255,255,255,1)');
+    //$('#timeline-barre').css('opacity','1');
 
     $('#navigation').removeClass('background-blue');
     $('#navigation').removeClass('background-white');
@@ -222,6 +223,7 @@ $(document).ready(function() {
       $('.previous-iframe').remove();
       $('#timeline-barre').css('transition','all 500ms cubic-bezier(0.23, 1, 0.32, 1)');
       $('#timeline-barre').css('background-color','rgba(255,255,255,0)');
+      //$('#timeline-barre').css('opacity','0');
 
     }, 3000); //500
   }
@@ -425,7 +427,7 @@ $(document).ready(function() {
 
   function handleResize(){
     //console.log("handleResize -> isMobile "+isMobile);
-    applyCorrectStylesAtStartup();
+    //applyCorrectStylesAtStartup();
   }
 
   var iframeClass = 'show-iframe-popup';

@@ -150,6 +150,9 @@ function displayEvents() {
 function computeEventsContent(){
   console.log("[event.js] computeEventsContent");
   $.each(events, function(index, item) {
+    if(item.content == "null"){
+      item.content =="";
+    }
     if (item.wikifetch) {
       wikifetching(item.wikifetch, index);  /*TO PUT BACK AFTER*/
     }
