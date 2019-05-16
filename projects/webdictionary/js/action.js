@@ -3,8 +3,8 @@ $(document).ready(function() {
   $("#tooltip").removeClass("hidden");
 
   document.addEventListener("timeline-scroll", function(e) {
-    console.log(e);
-    console.log("timeline-scroll");
+    //console.log(e);
+    //console.log("timeline-scroll");
     var dotDate = moment(e.detail.date);
     var scrollYear = dotDate.year();
     var yearToShow = 5; //Before elements are juste set to opacity .2

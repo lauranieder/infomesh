@@ -164,7 +164,10 @@ function goToBlock(newIndex, isTimelineEvent) {
   updateOldBlocks(lastIndex, newIndex);
   currentBlock = newIndex;
 
-  if (!isTimelineEvent) timelineGoToId(currentBlock);
+  if (!isTimelineEvent) {
+    console.log("[action nathan.js] goToBlock");
+    timelineGoToId(currentBlock);
+  }
   updateNewBlocks();
   updateContainer();
   updateYear();
