@@ -5,7 +5,7 @@ $(document).ready(function() {
     if (e.originalEvent.data.message == 'receiveScrollPosition') {
 
       $('#container-timeline').scrollLeft(e.originalEvent.data.position);
-      console.log("[communication.js]] receiveScrollPosition "+e.originalEvent.data.position +" left "+$('#container-timeline').scrollLeft());
+      //console.log("[communication.js]] receiveScrollPosition "+e.originalEvent.data.position +" left "+$('#container-timeline').scrollLeft());
 
     }
 
@@ -59,7 +59,7 @@ $(document).ready(function() {
     }
 
     if (e.originalEvent.data.message == 'showTimeline') {
-      //console.log("[iframe] received show timeline");
+      console.log("[iframe] received show timeline");
       $('#container-timeline').removeClass('hidden');
     }
 

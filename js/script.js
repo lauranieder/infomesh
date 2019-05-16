@@ -5,7 +5,7 @@ main script
 - create projects
 */
 $(document).ready(function() {
-  console.log("[script.js] loaded");
+  //console.log("[script.js] loaded");
   var projectsData;
   var currentProjectID = 0;
   var siteTitle = document.title;
@@ -44,14 +44,14 @@ $(document).ready(function() {
         var target = e.target;
         var href = target.href;
         window.history.pushState(historyState, '', href);
-  
+
         // We have to wait a bit until the url is updated
         window.requestAnimationFrame(function () {
           renderState(getUrlParam());
         })
-      } 
+      }
 
-      
+
     });
 
     $(window).on('popstate', function () {
@@ -179,7 +179,7 @@ $(document).ready(function() {
     $('#navigation').removeClass('background-black');
     var style = projectsData[currentProjectID].style;
     $('#navigation').addClass(style); //alone
-    console.log("[script.js] iframe append");
+    //console.log("[script.js] iframe append");
 
     /*back here*/
     //ajouter extended reduced en fonction
@@ -188,7 +188,7 @@ $(document).ready(function() {
     /*debugger le settimout iframe*/
 
     setTimeout(function() {
-      console.log("[script.js] iframe move");
+      //console.log("[script.js] iframe move");
 
       $('.previous-iframe').addClass('move-' + direction);
       $('.current-iframe').removeClass('appear-' + direction);
@@ -196,7 +196,7 @@ $(document).ready(function() {
         $('.previous-iframe').get(0).contentWindow.postMessage({message: 'hideTimeline'}, '*');
       }
       $('.current-iframe').get(0).contentWindow.postMessage({message: 'hideTimeline'}, '*');
-      console.log("offset "+$('.current-iframe').get(0).getBoundingClientRect().top);
+      //console.log("offset "+$('.current-iframe').get(0).getBoundingClientRect().top);
 
     }, 100); //100
 
@@ -227,6 +227,7 @@ $(document).ready(function() {
       $('#timeline-barre').css('transition','all 500ms cubic-bezier(0.23, 1, 0.32, 1)');
       $('#timeline-barre #timeline-background').css('transition','all 500ms cubic-bezier(0.23, 1, 0.32, 1)');
       $('#timeline-barre #timeline-background').css('opacity','0');
+      console.log("[script.js] show timeline main");
     }
   }
 
@@ -384,7 +385,7 @@ $(document).ready(function() {
 
 
   function openProjectsPage(){
-    console.log('[script.js] openProjectsPage/ isMobile '+isMobile);
+    //console.log('[script.js] openProjectsPage/ isMobile '+isMobile);
     $('#navigation nav').addClass('d-none');
 
     $('#container-projects').addClass('main').removeClass('reduced');
@@ -483,14 +484,14 @@ $(document).ready(function() {
         timelinePosition = data.position;
         break;
       case 'getScrollPosition':
-        console.log("[script.js] iframe ask scroll position");
+        //console.log("[script.js] iframe ask scroll position");
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'receiveScrollPosition', position: timelinePosition}, '*');
         break;
       case 'getResponsive':
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'isMobile', status: isMobile}, '*');
         break;
       case 'getStyles':
-        console.log("[script.js] iframe ask styles");
+        //console.log("[script.js] iframe ask styles");
         applyStyleToIframe();
         break;
       case 'request-mode':
