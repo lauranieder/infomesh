@@ -90,6 +90,14 @@ p{
 	border-left: 1px solid rgba(0, 0, 0, 1);
 	height: 4rem;
 	margin: auto;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
 }
 
 .timeline-cell:last-child {
@@ -129,5 +137,16 @@ p{
   }
   .mobile h1, .mobile .font-large{
     font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .timeline-cell {
+      text-size: 1rem;
+    	text-align: center;
+    	width: 16.666vw;
+    	border-left: 1px solid rgba(0, 0, 0, 1);
+    	height: 4rem;
+    	margin: auto;
+    }
   }
 /*}*/

@@ -456,14 +456,6 @@
     "iframeType": "normal"
   },
   {
-    "label": "Extranet",
-    "year": "1995",
-    "tooltip": "A network (as of a company) similar to an intranet that also allows access by certain others (such as customers or suppliers)",
-    "url": "https://en.wikipedia.org/wiki/etranet",
-    "target": "_blank",
-    "iframeType": "normal"
-  },
-  {
     "label": "Javascript",
     "year": "1995",
     "tooltip": "It was developed under the name Mocha, the language was officially called LiveScript when it first shipped in beta releases of Netscape Navigator 2.0 in September 1995.",
