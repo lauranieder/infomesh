@@ -60,8 +60,10 @@
       <h1 id="container-title" class="content flex-top font-large">
       </h1>
       <div id="container-credit" class="content flex-middle">
-        <div id="project-text"><p></p></div>
-        <div id="project-credits"><p></p></div>
+        <div id="container-credit-inner">
+          <div id="project-text"><p></p></div>
+          <div id="project-credits"><p></p></div>
+        </div>  
       </div>
       <div id="container-menu" class="content flex-bottom font-large">
         <a href="/index" id="button-open-projects" class="selected">30 years of</a>

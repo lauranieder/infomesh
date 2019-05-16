@@ -244,6 +244,14 @@ nav a,
   transition: transform 1s 0.4s ease-in-out;
 }
 
+#container-menu.enable-shadow {
+  box-shadow: 0px -4px 49px rgba(0, 0, 1, 0.5);
+}
+
+.show-splashscreen #container-menu.enable-shadow {
+  box-shadow: none;
+}
+
 /*Navigation*/
 nav-mobile{
   display:none;

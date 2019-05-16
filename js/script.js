@@ -68,6 +68,11 @@ $(document).ready(function() {
       mobile_applyStyleToNav();
     }
 
+    // Wait on the next frame to compute height with content.
+    requestAnimationFrame(function () {
+      updateDescriptionShadow();
+    })
+
     switch (state) {
       case '':
         $('#container-main').removeClass('main');
@@ -303,7 +308,16 @@ $(document).ready(function() {
     }
   }
 
+  function updateDescriptionShadow () {
+    var containerCredits = $('#container-credit');
+    var containerCreditsInner = $('#container-credit-inner');
 
+    if (containerCreditsInner.height() > containerCredits.height()) {
+      $('#container-menu').addClass('enable-shadow');
+    } else {
+      $('#container-menu').removeClass('enable-shadow');
+    }
+  }
 
   $(window).resize(function(){
     renderState(getUrlParam());
