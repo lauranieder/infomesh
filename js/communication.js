@@ -63,7 +63,6 @@ $(document).ready(function() {
       $('#container-timeline').removeClass('hidden');
     }
 
-
   });
 
   $('#container-timeline').on('scroll', function() {
@@ -75,8 +74,6 @@ $(document).ready(function() {
   window.parent.postMessage({message: 'getStyles'}, '*');
   //console.log("window.websiteMode " +window.websiteMode);
   window.parent.postMessage({message: 'getMode', mode: window.websiteMode}, '*');
-
-
 
   //TO CONTINUE
   //Calculate which is is the closest dot.
