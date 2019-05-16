@@ -67,7 +67,6 @@ body {
   display: flex;
   justify-content: space-between;
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.37);
-  border: solid 1px white;
 }
 .lSquare {
   display: flex;
