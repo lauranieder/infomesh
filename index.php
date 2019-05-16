@@ -115,7 +115,7 @@
         </div>
         <div class="full">
           <h4>Partners</h4>
-          <p>Eckl and Jan Gerlach, Wikimedia</p>
+          <p>Volker Eckl and Jan Gerlach, Wikimedia</p>
           <p>Amir Saber Esfahani, Internet Archive</p>
         </div>
         <div class="logos">

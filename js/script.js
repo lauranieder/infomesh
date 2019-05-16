@@ -5,7 +5,7 @@ main script
 - create projects
 */
 $(document).ready(function() {
-  //console.log("[script.js] loaded");
+  console.log("[script.js] loaded");
   var projectsData;
   var currentProjectID = 0;
   var siteTitle = document.title;
@@ -38,7 +38,10 @@ $(document).ready(function() {
   function enableHistory () {
     var links = $('a');
 
+    $('body').bind('touchend', 'a', linkclick);
+
     links.click(function (e) {
+      console.log('[script.js] links.click ');
       e.preventDefault()
       var target = e.target;
       var href = target.href;
@@ -57,6 +60,30 @@ $(document).ready(function() {
       })
     });
   }
+
+  var linkclick = function(e) {
+    console.log('[script.js] links.click solved yeah ');
+
+    var target = e.target;
+    var href = target.href;
+    window.history.pushState(historyState, '', href);
+
+    //C'est le seul fix que j'ai trouvé pour l'instant et c'est vraiment dégueux !!!
+    window.open( href, '_top');
+
+    //doesn't work at all !!!!!
+    /*e.preventDefault();
+    var target = e.target;
+    var href = target.href;
+
+    window.history.pushState(historyState, '', href);
+
+    // We have to wait a bit until the url is updated
+    window.requestAnimationFrame(function () {
+      renderState(getUrlParam());
+    })*/
+
+  };
 
   function getUrlParam () {
     return window.location.href.split('/').pop();
