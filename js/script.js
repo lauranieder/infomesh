@@ -155,7 +155,7 @@ $(document).ready(function() {
       $('#project-text p:first').html(project.text);
     }
 
-    $('#project-credits p:first').html("Designed by "+project.student); //or created by
+    $('#project-credits p:first').html("<h4>Designed by "+project.student + "</h4>"); //or created by
 
     $('.current-iframe').addClass('previous-iframe').removeClass('current-iframe');
 
