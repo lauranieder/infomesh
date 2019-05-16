@@ -202,10 +202,13 @@ $(document).ready(function() {
 
       console.log("offset "+$('.current-iframe').get(0).getBoundingClientRect().top);
       var offsetTop = $('.current-iframe').get(0).getBoundingClientRect().top;
-      while (offsetTop > 0) {
+      checkIframePos();
+
+      /*while (offsetTop > 0) {
         console.log("wait");
-      }
-      removePreviousIframe();
+
+      }*/
+      //removePreviousIframe();
       /*if(offsetTop > 0){
         setTimeout(function() {
           offsetTop = $('.current-iframe').get(0).getBoundingClientRect().top;
@@ -219,6 +222,17 @@ $(document).ready(function() {
 
 
     }, 500); //500 same as style transition. But no garanty that it reached it's goal.
+
+    function checkIframePos(){
+      var offsetTop = $('.current-iframe').get(0).getBoundingClientRect().top;
+      if(offsetTop > 0){
+        console.log("NEW TIMEOUT bigger than zero");
+        //setTimeout(checkIframePos(), 100);
+
+      }else{
+        removePreviousIframe();
+      }
+    }
 
     function removePreviousIframe(){
 
