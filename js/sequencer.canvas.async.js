@@ -45,8 +45,6 @@
 					if(pt<minPT){
 						minPT = pt;
 					}
-					console.log("maxpl     "+maxPL+"     maxpt     "+maxPT);
-					console.log("minpl     "+minPL+"     minpt     "+minPT);
 
 					//
 					if(pl>maxi) {
