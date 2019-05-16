@@ -24,12 +24,13 @@
     newVideo.muted = true;
     newVideo.classList.add('video');
     newVideo.src = getVideoUrl(year);
-    newVideo.play();
-
+    newVideo.setAttribute("playsinline", "true");
     projectContainer.appendChild(newVideo);
+
 
     requestAnimationFrame(function () {
       newVideo.style.opacity = 1;
+      newVideo.play();
     })
 
     clearTimeout(deleteTimeout);
