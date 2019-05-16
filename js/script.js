@@ -38,10 +38,7 @@ $(document).ready(function() {
   function enableHistory () {
     var links = $('a');
 
-    //$('body').bind('touchend', 'a', linkclick);
-
     links.click(function (e) {
-      console.log('[script.js] links.click ');
       e.preventDefault()
       var target = e.target;
       var href = target.href;
@@ -60,33 +57,6 @@ $(document).ready(function() {
       })
     });
   }
-
-  var linkclick = function(e) {
-    console.log('[script.js] links.click solved yeah no ');
-    e.preventDefault();
-    var target = e.currentTarget;
-    var href = target.href;
-    window.history.pushState(historyState, '', href);
-
-    //C'est le seul fix que j'ai trouvé pour l'instant et c'est vraiment dégueux !!!
-    console.log(e);
-    console.log(target);
-    console.log(href);
-    window.open(href, '_top');
-
-    //doesn't work at all !!!!!
-    /*e.preventDefault();
-    var target = e.target;
-    var href = target.href;
-
-    window.history.pushState(historyState, '', href);
-
-    // We have to wait a bit until the url is updated
-    window.requestAnimationFrame(function () {
-      renderState(getUrlParam());
-    })*/
-
-  };
 
   function getUrlParam () {
     return window.location.href.split('/').pop();
@@ -427,7 +397,6 @@ $(document).ready(function() {
 
 
   $('.button-up').on('click', function(e) {
-    e.preventDefault();
     var prevProject = currentProjectID - 1;
     if (prevProject < 0) prevProject = projectsData.length - 1;
 
@@ -436,7 +405,6 @@ $(document).ready(function() {
   });
 
   $('.button-down').on('click', function(e) {
-    e.preventDefault();
     var nextProject = currentProjectID + 1;
     if (nextProject == projectsData.length) nextProject = 0;
 
