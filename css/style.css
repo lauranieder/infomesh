@@ -97,6 +97,12 @@ nav a,
   transition: opacity 0.5s ease-in-out;
   color: white;
   text-decoration: none;
+  pointer-events: none;
+}
+
+.show-splashscreen .splashscreen-main-title {
+  pointer-events: auto;
+  z-index: 10000;
 }
 
 .splashscreen-main-title h5 {
