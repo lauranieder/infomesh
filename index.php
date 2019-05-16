@@ -67,7 +67,7 @@
       </div>
       <div id="container-menu" class="content flex-bottom font-large">
         <a href="/index" id="button-open-projects" class="selected">30 years of</a>
-        <a href="/about" id="button-open-about" >About</a>
+        <a href="/about" id="button-open-about">About</a>
       </div>
     </div>
 
@@ -78,8 +78,10 @@
       <div id="timeline-cursor">
       </div>
       <div id="timeline-barre">
-        <?php echo file_get_contents("css/UI/UIArrowLeft.svg"); ?>
-        <?php echo file_get_contents("css/UI/UIArrowRight.svg"); ?>
+        <div class="timeline-barre-inner">
+          <?php echo file_get_contents("css/UI/UIArrowLeft.svg"); ?>
+          <?php echo file_get_contents("css/UI/UIArrowRight.svg"); ?>
+        </div>
         <div id="timeline-background"></div>
       </div>
     </div>

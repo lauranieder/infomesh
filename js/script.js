@@ -169,10 +169,6 @@ $(document).ready(function() {
 
     var iframe = $('<iframe class="current-iframe appear-' + direction + '" src="./projects/' + project.slug + '">');
     $('#container-main').append(iframe);
-    $('#timeline-barre').css('transition','all 100ms cubic-bezier(0.23, 1, 0.32, 1)');
-    $('#timeline-barre #timeline-background').css('transition','all 100ms cubic-bezier(0.23, 1, 0.32, 1)');
-    //$('#timeline-barre').css('background-color','rgba(255,255,255,1)');
-    $('#timeline-barre #timeline-background').css('opacity','1');
 
     $('#navigation').removeClass('background-blue');
     $('#navigation').removeClass('background-white');
@@ -200,6 +196,11 @@ $(document).ready(function() {
 
     }, 100); //100
 
+    $('.timeline-barre-inner').css({
+      transition: '0s ease-in-out',
+      background: 'white'
+    });;
+
     function checkLoop () {
       if (!checkIframePos()) {
         requestAnimationFrame(checkLoop);
@@ -224,9 +225,10 @@ $(document).ready(function() {
       }
       $('.current-iframe').get(0).contentWindow.postMessage({message: 'showTimeline'}, '*');
       $('.previous-iframe').remove();
-      $('#timeline-barre').css('transition','all 500ms cubic-bezier(0.23, 1, 0.32, 1)');
-      $('#timeline-barre #timeline-background').css('transition','all 500ms cubic-bezier(0.23, 1, 0.32, 1)');
-      $('#timeline-barre #timeline-background').css('opacity','0');
+      $('.timeline-barre-inner').css({
+        background: 'transparent',
+        transition: '0.3s ease-in-out',
+      });
       console.log("[script.js] show timeline main");
     }
   }
