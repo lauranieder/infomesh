@@ -705,7 +705,7 @@ iframe {
 }
 
 
-@media (max-width: 1920px){ /*tablet landscape*/
+@media (max-width: 2000px){ /*tablet landscape*/
   #container-about .content {
     width: 50%;
     min-width:50%;
@@ -733,7 +733,7 @@ iframe {
   }
 
   .logo-vd {
-    margin-right: 2rem;
+    margin-right: 3rem;
   }
 
   .logo-swissnex {
@@ -992,8 +992,23 @@ iframe {
 }
 
 
+@media (min-width: 1800px) and (max-width: 2000px) {
+  #container-about #inside {
+    padding-bottom: 0;
+    padding-top:0;
+    font-size: 20px;
+    justify-content: top;
+  }
+
+  #container-about .content {
+    width: 50%;
+    min-width:50%;
+  }
+
+}
+
 /* Fix about page */
-@media (min-width: 1921px) { /* fatty big screens de bougois tablet landscape*/
+@media (min-width: 2000px) { /* fatty big screens de bougois tablet landscape*/
   #container-about .content {
     width: 50%;
     min-width:50%;
@@ -1033,6 +1048,10 @@ iframe {
 
   .logo-swissnex {
     margin-right: 20px;
+  }
+
+  .logo-bottom {
+    max-height: inherit !important;
   }
 
 }
