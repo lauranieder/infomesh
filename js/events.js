@@ -74,7 +74,7 @@ $(document).ready(function() {
 
   $(document).on('timeline-scroll', lookForPopup);
   $('body').on('click', '#popup', funcTogglePopup);
-  $('body').on('touchstart', '#popup', funcTogglePopup);
+  $('body').on('touch', '#popup', funcTogglePopup);
 });
 
 
