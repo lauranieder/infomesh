@@ -179,14 +179,16 @@ $(document).ready(function() {
     $('#navigation').removeClass('background-black');
     var style = projectsData[currentProjectID].style;
     $('#navigation').addClass(style); //alone
-    //console.log("addClass "+style);
+    console.log("[script.js] iframe append");
 
     /*back here*/
     //ajouter extended reduced en fonction
 
+
     /*debugger le settimout iframe*/
 
     setTimeout(function() {
+      console.log("[script.js] iframe move");
 
       $('.previous-iframe').addClass('move-' + direction);
       $('.current-iframe').removeClass('appear-' + direction);
@@ -202,6 +204,7 @@ $(document).ready(function() {
     }, 100); //100
 
     setTimeout(function() {
+      console.log("[script.js] iframe remove previous");
       if($('.previous-iframe').get(0) != null && $('.previous-iframe').get(0) != undefined){
         $('.previous-iframe').get(0).contentWindow.postMessage({message: 'showTimeline'}, '*');
       }
@@ -214,7 +217,7 @@ $(document).ready(function() {
       $('#timeline-barre #timeline-background').css('opacity','0');
       //$('#timeline-barre').css('opacity','0');
 
-    }, 3000); //500
+    }, 500); //500
   }
 
 
@@ -470,14 +473,14 @@ $(document).ready(function() {
         timelinePosition = data.position;
         break;
       case 'getScrollPosition':
-        //console.log("iframe ask scroll position");
+        console.log("[script.js] iframe ask scroll position");
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'receiveScrollPosition', position: timelinePosition}, '*');
         break;
       case 'getResponsive':
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'isMobile', status: isMobile}, '*');
         break;
       case 'getStyles':
-        //console.log("iframe ask styles position");
+        console.log("[script.js] iframe ask styles");
         applyStyleToIframe();
         break;
       case 'request-mode':

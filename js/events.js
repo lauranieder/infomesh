@@ -1,7 +1,7 @@
 /*POPUP
 events
 timelineWidthmobile check.*/
-console.log("[events.js] loaded");
+//console.log("[events.js] loaded");
 var events = [];
 var rootStartDate = moment('01/01/1989', 'DD/MM/YYYY');
 var rootEndDate = moment('31/12/2019', 'DD/MM/YYYY');
@@ -117,7 +117,7 @@ function loadEvents() {
 
 //Will fire at every resize of the page
 function displayEvents() {
-  console.log("[event.js] display Events");
+  //console.log("[event.js] display Events");
   //getResponsive message
   timelineWidth = cellwidth * 31;
   $('.event-marker').remove();
@@ -148,7 +148,7 @@ function displayEvents() {
 
 //Improved this executes ONLY ONCE ! Not at every reload of the page
 function computeEventsContent(){
-  console.log("[event.js] computeEventsContent");
+  //console.log("[event.js] computeEventsContent");
   $.each(events, function(index, item) {
     if(item.content == "null"){
       item.content =="";
