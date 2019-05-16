@@ -16,9 +16,12 @@
     lastYear = year;
   })
 
+  var deleteTimeout = null
+
   function updateVideo (year) {
     var lastVideos = projectContainer.querySelectorAll('video');
     var newVideo = document.createElement('video');
+    newVideo.muted = true;
     newVideo.classList.add('video');
     newVideo.src = getVideoUrl(year);
     newVideo.play();
@@ -29,7 +32,8 @@
       newVideo.style.opacity = 1;
     })
 
-    setTimeout(function () {
+    clearTimeout(deleteTimeout);
+    deleteTimeout = setTimeout(function () {
       for (var i = lastVideos.length - 1; i >= 0; i--) {
         var currentVideo = lastVideos[i];
         projectContainer.removeChild(currentVideo);
