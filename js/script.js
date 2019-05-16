@@ -196,47 +196,26 @@ $(document).ready(function() {
 
     }, 100); //100
 
-    setTimeout(function() {
-      console.log("[script.js] iframe remove previous");
-
-
-      console.log("offset "+$('.current-iframe').get(0).getBoundingClientRect().top);
-      var offsetTop = $('.current-iframe').get(0).getBoundingClientRect().top;
-      checkIframePos();
-
-      /*while (offsetTop > 0) {
-        console.log("wait");
-
-      }*/
-      //removePreviousIframe();
-      /*if(offsetTop > 0){
-        setTimeout(function() {
-          offsetTop = $('.current-iframe').get(0).getBoundingClientRect().top;
-          console.log("NEW TIMEOUT");
-          console.log(offsetTop);
-          removePreviousIframe();
-        }, 100);
-      }else{
-        removePreviousIframe();
-      }*/
-
-
-    }, 500); //500 same as style transition. But no garanty that it reached it's goal.
-
-    function checkIframePos(){
-      var offsetTop = $('.current-iframe').get(0).getBoundingClientRect().top;
-      if(offsetTop > 0){
-        console.log("NEW TIMEOUT bigger than zero");
-        //setTimeout(checkIframePos(), 100);
-
-      }else{
+    function checkLoop () {
+      if (!checkIframePos()) {
+        requestAnimationFrame(checkLoop);
+      } else {
         removePreviousIframe();
       }
     }
 
-    function removePreviousIframe(){
+    checkLoop();
 
-      if($('.previous-iframe').get(0) != null && $('.previous-iframe').get(0) != undefined){
+    function checkIframePos(){
+      var offsetTop = $('.current-iframe').get(0).getBoundingClientRect().top;
+      return offsetTop <= 0;
+    }
+
+    function removePreviousIframe(){
+      if(
+        $('.previous-iframe').get(0) != null
+        && $('.previous-iframe').get(0) != undefined
+      ){
         $('.previous-iframe').get(0).contentWindow.postMessage({message: 'showTimeline'}, '*');
       }
       $('.current-iframe').get(0).contentWindow.postMessage({message: 'showTimeline'}, '*');
@@ -244,8 +223,6 @@ $(document).ready(function() {
       $('#timeline-barre').css('transition','all 500ms cubic-bezier(0.23, 1, 0.32, 1)');
       $('#timeline-barre #timeline-background').css('transition','all 500ms cubic-bezier(0.23, 1, 0.32, 1)');
       $('#timeline-barre #timeline-background').css('opacity','0');
-
-
     }
   }
 
