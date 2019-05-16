@@ -38,7 +38,7 @@ $(document).ready(function() {
   function enableHistory () {
     var links = $('a');
 
-    $('body').bind('touchend', 'a', linkclick);
+    //$('body').bind('touchend', 'a', linkclick);
 
     links.click(function (e) {
       console.log('[script.js] links.click ');
@@ -107,30 +107,17 @@ $(document).ready(function() {
       break;
 
       case 'index':
-        if (isMobile) {
-          $('#project-title').text("30 years of");
-          $('#container-title').text("30 years of");
-        }
 
-        $('#button-open-projects').addClass('selected');
-        $('#button-open-about').removeClass('selected');
-        $('#container-main').removeClass('main');
-        $('#container-main').addClass('reduced');
+
+
 
         window.stopSplashscreen();
         openProjectsPage();
       break;
 
       case 'about':
-        if (isMobile) {
-          $('#project-title').text("About");
-          $('#container-title').text("About");
-        }
 
-        $('#button-open-projects').removeClass('selected');
-        $('#button-open-about').addClass('selected');
-        $('#container-main').removeClass('main');
-        $('#container-main').addClass('reduced');
+
 
         window.stopSplashscreen();
         openAboutPage();
@@ -359,13 +346,12 @@ $(document).ready(function() {
 
 
   $(window).resize(function(){
-    //console.log("resized");
-    handleResize();
+    renderState(getUrlParam());
   });
 
 
-  function openAboutPage(){ //triggered by redirect to
-    //console.log("[script.js] openAboutPage")
+  function openAboutPage(){
+    console.log('[script.js] openAboutPage/ isMobile '+isMobile);
     $('.selected').removeClass('selected');
     $(this).addClass('selected');
     $('#navigation nav').addClass('d-none');
@@ -373,47 +359,65 @@ $(document).ready(function() {
     $('#container-about').addClass('main').removeClass('reduced');
     $('#container-main, #container-projects').addClass('reduced').removeClass('main');
 
-    if(!isMobile){
-      /*$('#navigation nav-mobile').addClass('d-none');*/
-      $('#project-title').text(siteTitle);
-      $('#container-title').text(siteTitle);
-    }else{ //mobile
-      $('#project-title').text("About");
-      $('#container-title').text("About");
-      $('#button-closeOverlay').addClass('d-none');
-      $('#button-menu').removeClass('d-none');
-      $('.mobile-onlytimeline').addClass('d-none');
+      if (isMobile) {
+        $('#project-title').text("About");
+        $('#container-title').text("About");
+        $('#button-closeOverlay').addClass('d-none');
+        $('#button-menu').removeClass('d-none');
+        $('.mobile-onlytimeline').addClass('d-none');
+      }else{
+        $('#project-title').text(siteTitle);
+        $('#container-title').text(siteTitle);
+      }
 
-    }
+      $('#button-open-projects').removeClass('selected');
+      $('#button-open-about').addClass('selected');
+      $('#container-main').removeClass('main');
+      $('#container-main').addClass('reduced');
 
-    $('#project-text p:first').text("");
-    $('#project-credits p:first').text("");
+      $('#container-side').removeClass('reduced');
+      $('#container-main').removeClass('extended');
 
-    /*to improve*/
-    //only for mobile
-    $('#container-side').addClass('mobile-reduced');
+      $('#project-text p:first').text("");
+      $('#project-credits p:first').text("");
+
+      /*to improve*/
+      //only for mobile
+      $('#container-side').addClass('mobile-reduced');
   }
 
 
   function openProjectsPage(){
+    console.log('[script.js] openProjectsPage/ isMobile '+isMobile);
     $('#navigation nav').addClass('d-none');
 
     $('#container-projects').addClass('main').removeClass('reduced');
     $('#container-about, #container-main').addClass('reduced').removeClass('main');
 
+    $('#button-open-projects').addClass('selected');
+    $('#button-open-about').removeClass('selected');
+    $('#container-main').removeClass('main');
+    $('#container-main').addClass('reduced');
+
+    $('#container-side').removeClass('reduced');
+    $('#container-main').removeClass('extended');
+
     /*to improve*/
     //only for mobile
     $('#container-side').addClass('mobile-reduced');
 
-    if(!isMobile){
-
-      $('#project-title').text(siteTitle);
-      $('#container-title').text(siteTitle);
-    }else{
+    if(isMobile){
       $('#project-title').text("30 years of");
       $('#container-title').text("30 years of");
       $('#button-closeOverlay').addClass('d-none');
       $('#button-menu').removeClass('d-none');
+      $('.mobile-onlytimeline').addClass('d-none');
+
+
+    }else{
+      $('#project-title').text(siteTitle);
+      $('#container-title').text(siteTitle);
+
     }
 
     $('#project-text p:first').text("");
@@ -458,10 +462,6 @@ $(document).ready(function() {
     closeOverlay();
   });
 
-  function handleResize(){
-    //console.log("handleResize -> isMobile "+isMobile);
-    //applyCorrectStylesAtStartup();
-  }
 
   var iframeClass = 'show-iframe-popup';
 
