@@ -206,6 +206,7 @@ $(document).ready(function() {
         requestAnimationFrame(checkLoop);
       } else {
         removePreviousIframe();
+        console.log('hey hey');
       }
     }
 
@@ -213,7 +214,7 @@ $(document).ready(function() {
 
     function checkIframePos(){
       var offsetTop = $('.current-iframe').get(0).getBoundingClientRect().top;
-      return offsetTop <= 0;
+      return Math.abs(offsetTop) < 10;
     }
 
     function removePreviousIframe(){
