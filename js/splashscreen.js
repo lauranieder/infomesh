@@ -57,21 +57,35 @@ window.clearRequestTimeout = function(handle) {
 (function () {
   const facts = [
 		"The top search term on Google in 2019 was Facebook.",
-	 "30,000 websites are identified as hosting malware every day.",
+	 "85,000 websites are hacked every day.",
 	 "10% of Americans do not use the Internet.",
 	 "The first webcam was aimed at a coffee pot.",
 	 "380 websites are created every 60 seconds.",
 	 "There were only 623 websites in 1993.",
 	 "44.9% of world’s population lacks internet access.",
 	 "Finland declared Internet access a legal right in 2010.",
-	 "A 75 year-old woman in Georgia cut the internet cable for 90% of Armenia in 2011. She said she had never heard of the World Wide Web.",
+	 "A 75 year-old woman in Georgia cut the internet cable for 90% of Armenia in 2011. She had never heard of the World Wide Web.",
 	 "As of 2014, mobile devices outnumbered human beings.",
 	 "The most-read biography on Wikipedia in 2018 was Meghan, Duchess of Sussex.",
 	 "Google's search engine is visited by 1.17 billion users monthly.",
 	 "The first search engine was called Archie. It was created in 1990, when there were 10 websites.",
 	 "With 1990's Web speeds and compression rates, a 4-minute song would take 3.5 hours to download.",
-	 "One of the first video-on-demand services launched in Hong Kong in 1998. It went bankrupt in 2002."
-
+	 "One of the first video-on-demand services launched in Hong Kong in 1998. It went bankrupt in 2002.",
+	 "You can connect to WiFi from the top of Mount Everest.",
+	 "One hour of video is uploaded to YouTube every second.",
+	 "In June 2006, the most-visited website in the US was myspace.",
+	 "Spam began in 1864, when investment opportunities were transmitted via telegraph.",
+	 "2,500 websites were created from 1989-1993. Today, 2,500 are created every 30 minutes.",
+	 "GMail was originally a Garfield-the-cat themed email service.",
+	 "YouTube scans 100 years of video content a day.",
+	 "Information Mesh, Information Mine, and The Project were proposed names for the WWW.",
+	 "The WWW would fit on roughly 1 billion DVDs.",
+	 "2002 marked the first time an employee was fired for a blog post.",
+	 "54% of websites are in English. The second-most common language, Russian, is 6%.",
+	 "17 countries proposed laws to restrict online media in 2018.",
+	 "The average adult spends 6 hours and 42 minutes online per day.",
+	 "Japan spends less time on social media — 36 minutes — than any other country.",
+	 "20,000 new Wikipedia articles are created each month." 
   ]
 
   const TextAnimator = function() {

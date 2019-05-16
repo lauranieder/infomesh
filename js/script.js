@@ -62,14 +62,17 @@ $(document).ready(function() {
   }
 
   var linkclick = function(e) {
-    console.log('[script.js] links.click solved yeah ');
-
-    var target = e.target;
+    console.log('[script.js] links.click solved yeah no ');
+    e.preventDefault();
+    var target = e.currentTarget;
     var href = target.href;
     window.history.pushState(historyState, '', href);
 
     //C'est le seul fix que j'ai trouvé pour l'instant et c'est vraiment dégueux !!!
-    window.open( href, '_top');
+    console.log(e);
+    console.log(target);
+    console.log(href);
+    window.open(href, '_top');
 
     //doesn't work at all !!!!!
     /*e.preventDefault();
