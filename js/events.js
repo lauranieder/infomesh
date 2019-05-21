@@ -141,6 +141,14 @@ function displayEvents() {
     var endPosition = endTime * timelineWidth / totalTime;
     var width = endPosition - startPosition;
     var block = $('<div id="marker-' + index + '" class="event-marker ' + className + '" style="left:calc(50vw + '+startPosition+'vw);width:'+width+'vw;"></div>');
+    block.click(function () {
+      var container = $('#container-timeline');
+      var offsetLeft = $(this).offset().left + container.scrollLeft() - container.width() * 0.5;
+      container.animate({
+        scrollLeft: offsetLeft
+      }, 500);
+      this.scrollIntoView();
+    })
     $('#timeline-scrollable').prepend(block);
 
   });
