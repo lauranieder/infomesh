@@ -19,10 +19,10 @@
   var deleteTimeout = null
 
   function updateVideo (year) {
-    var lastVideos = projectContainer.querySelectorAll('img');
-    var newImage = new Image();
-    newImage.classList.add('video');
-    newImage.src = getImageUrl(year);
+    var lastVideos = projectContainer.querySelectorAll('.image-element');
+    var newImage = document.createElement('div');
+    newImage.classList.add('image-element');
+    newImage.style.backgroundImage = 'url(' + getImageUrl(year) + ')';
     projectContainer.appendChild(newImage);
 
     requestAnimationFrame(function () {
