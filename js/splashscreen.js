@@ -51,9 +51,6 @@ window.clearRequestTimeout = function(handle) {
     clearTimeout(handle);
 };
 
-
-
-
 (function () {
   const facts = [
 		"The top search term on Google in 2019 was Facebook.",
@@ -176,6 +173,7 @@ window.clearRequestTimeout = function(handle) {
     }
   }
 
+  let isSplashscreenEnabled = false;
   const titleText = 'Information mesh';
   const subTitle = '30 years of facts about the World Wide Web';
   const firstFact = 'Information Mesh was a potential name for the web in Tim Berners Lee\'s 1989 original proposal.';
@@ -185,25 +183,27 @@ window.clearRequestTimeout = function(handle) {
 
   window.startSplashscreen = function () {
     requestAnimationFrame(() => {
-      enableSplashScreen(true);
-      textAnimator.enable();
-      startSplashscreenSequence()
+      if (!isSplashscreenEnabled) {
+        enableSplashScreen(true);
+        textAnimator.enable();
+        startSplashscreenSequence();
+      }
     });
   }
 
   window.stopSplashscreen = function () {
     requestAnimationFrame(() => {
-      enableSplashScreen(false);
-      enableSplashScreenTitles(false);
-      textAnimator.disable();
+      if (isSplashscreenEnabled) {
+        enableSplashScreen(false);
+        enableSplashScreenTitles(false);
+        textAnimator.disable();
+      }
     });
   }
 
-  function isSplashscreenEnabled() {
-    return body.classList.contains('show-splashscreen');
-  }
-
   function enableSplashScreen(enable) {
+    isSplashscreenEnabled = enable;
+
     if (enable) {
       body.classList.add('show-splashscreen');
     } else {
@@ -220,7 +220,7 @@ window.clearRequestTimeout = function(handle) {
   }
 
   async function startSplashscreenSequence() {
-    if (isSplashscreenEnabled()) {
+    if (isSplashscreenEnabled) {
       highlight(true);
       enableCaret(false);
       await textAnimator.erase(title);
@@ -249,13 +249,13 @@ window.clearRequestTimeout = function(handle) {
     highlight(false);
     enableCaret(false);
     await textAnimator.erase(title);
-    enableSplashScreenTitles(isSplashscreenEnabled());
+    enableSplashScreenTitles(isSplashscreenEnabled);
     await textAnimator.wait(100);
     const text = getRandomFact();
     enableCaret(true);
     await textAnimator.write(title, text);
 
-    if (isSplashscreenEnabled()) {
+    if (isSplashscreenEnabled) {
       await textAnimator.wait(3000);
       runSequence();
     }
