@@ -147,7 +147,6 @@ function displayEvents() {
       container.animate({
         scrollLeft: offsetLeft
       }, 500);
-      this.scrollIntoView();
     })
     $('#timeline-scrollable').prepend(block);
 
