@@ -1,7 +1,42 @@
-# ecal-webproject-infomesh
+Infomesh – ECAL
+=============
+
 30 years of the web website during Summer University at swissnex SF
 
-### Deployment to `infomesh.org`
+## Build the project
+
+The build process is required to get a static version of the project.
+
+The root path is defined in the `config.js` file as below:
+
+```js
+/**
+ *  This is the root name of the project.
+ * 
+ *  According to the server structure, this name can change.
+ *  Ex: sub-folder/infomesh
+ */
+var ROOT_NAME = 'infomesh'
+
+// Don't touch this (required for other files)
+var ROOT = '/' + ROOT_NAME
+var window = window || null
+if (!window) {
+  module.exports = { ROOT }
+}
+```
+
+To be hosted on a standard server (apache, ngnix, etc...), the project must be statically built.
+
+0. First install [Node.js](https://nodejs.org/en/)
+1. Then install all `Node.js` dependencies by running the command: `npm install`.
+2. Then build the project with: `npm run build`.
+
+This will generate a `/dist' folder in which a static version of the project will be stored.
+
+The contents of the `/dist` folder can be copied to the host server in the same root directory as defined in the file `config.js`.
+
+## Deployment to `infomesh.org`
 ```
 yarn deploy
 ```
@@ -12,7 +47,7 @@ or
 npm run deploy
 ```
 
-### General
+## General
 - ✅ Check SSL certificate (google block access from ipad chrome)
 - ✅ Move to the new url (infomaniak !)
 
@@ -29,7 +64,7 @@ npm run deploy
 - ✅ ~~(Pietro) Iframe link pour expo ne marche pas pour les link des descriptions des projets des étudiants (hors de l'iframe project).~~
 - state : texte description redisparait pas, checker les states de Pietro
 
-### Splashscreen 
+### Splashscreen
 - Mots trop long sur mobile
 
 ### Mobile
