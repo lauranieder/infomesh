@@ -31,7 +31,7 @@ $(document).ready(function() {
         renderState(getUrlParam());
       },
       error: function (error) {
-        console.error(error)
+        console.error(error);
       }
     })
   }
@@ -65,18 +65,10 @@ $(document).ready(function() {
   }
 
   function getUrlParam () {
-    var params = window.location.href.split('/');
-    var param = ''
-    
-    for (var i = 0; i < params.length; i++) {
-      var currentParam = params[i]
-
-      if (currentParam) {
-        param = currentParam
-      }
-    }
-
-    return param
+    var pathname = window.location.pathname;
+    return pathname
+      .replace(window.ROOT, '')
+      .replace(/\//g, '');
   }
 
   function renderState (state) {
@@ -92,7 +84,7 @@ $(document).ready(function() {
 
     switch (state) {
       case '':
-      case 'infomesh':
+      case window.ROOT_NAME:
         $('#container-main').removeClass('main');
         $('#container-main').addClass('reduced');
         window.startSplashscreen();
@@ -123,7 +115,7 @@ $(document).ready(function() {
   //load each project
   function loadProjectsPreview(){
     $.each(projectsData, function() {
-      var link = $('<a href="' + window.ROOT + "/" + this.slug +'" class="font-large">'+this.title+'</a>');
+      var link = $('<a href="' + window.ROOT + "/" + this.slug +'/" class="font-large">'+this.title+'</a>');
       $('#container-projects').append(link);
     });
   }

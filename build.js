@@ -1,8 +1,7 @@
 const fs = require('fs')
-const minify = require('html-minifier').minify
-const config = require('./config')
+const { minify } = require('html-minifier')
+const { ROOT } = require('./config')
 
-const { ROOT } = config
 const templatePath = './template/index.html'
 
 const rawTemplate = fs.readFileSync(templatePath, 'utf8')
@@ -13,7 +12,7 @@ const minifiedPageContent = minify(parsedTemplate, {
   collapseWhitespace: true
 })
 
-const pages = [
+const routes = [
   'index.html',
   'home/index.html',
   'about/index.html',
@@ -25,17 +24,17 @@ const pages = [
   'worldwidemap/index.html'
 ]
 
-for (const page of pages) {
-  const pathItems = page.split('/')
+for (const route of routes) {
+  const pathItems = route.split('/')
   const [dir] = pathItems.length > 1 ? pathItems : []
 
   if (dir && !fs.existsSync(dir)){
-    fs.mkdirSync(dir);
+    fs.mkdirSync(dir)
   }
 
-  fs.writeFile(`./${page}`, minifiedPageContent, (err) => {
+  fs.writeFile(`./${route}`, minifiedPageContent, err => {
     if (err) throw err
-    console.log(`The file "${page}" has been saved!`)
+    console.log(`The file "${route}" has been saved!`)
   })
 }
 

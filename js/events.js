@@ -104,7 +104,7 @@ function isExtendedF(status){
 function createPopup() {
   var popupContainer = $('<div id="popup-container"></div>');
   $('body').append(popupContainer);
-  $('#popup-container').load('/template/popup.html');
+  $('#popup-container').load(window.ROOT + '/template/popup.html');
 }
 
 function loadEvents() {
