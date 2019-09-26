@@ -26,13 +26,13 @@ if (!window) {
 }
 ```
 
-To be hosted on a standard server (apache, ngnix, etc...), the project must be statically built.
+To be deployed on a standard server (apache, ngnix, etc...), the project must be statically built.
 
 0. First install [Node.js](https://nodejs.org/en/)
 1. Then install all `Node.js` dependencies by running the command: `npm install`.
 2. Then build the project with: `npm run build`.
 
-This will generate a `/dist' folder in which a static version of the project will be stored.
+This will generate a `/dist` folder in which a static version of the project will be stored.
 
 The contents of the `/dist` folder can be copied to the host server in the same root directory as defined in the file `config.js`.
 
