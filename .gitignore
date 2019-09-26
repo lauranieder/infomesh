@@ -28,3 +28,4 @@ projects/webinfluenceridentity/sequence/highres/
 projects/webinfluenceridentity/sequence/lowres/
 
 node_modules
+dist

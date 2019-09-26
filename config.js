@@ -1,4 +1,4 @@
-var ROOT_NAME = 'test-root/infomesh'
+var ROOT_NAME = 'infomesh/dist'
 var ROOT = '/' + ROOT_NAME
 var window = window || null
 if (!window) {
