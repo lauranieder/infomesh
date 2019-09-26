@@ -1,9 +1,3 @@
-<?php
-  $mode = isset($_GET['mode']) ? $_GET['mode'] : null;
-  $state = $_SERVER['REQUEST_URI'];
-  $bodyClasses = 'show-splashscreen';
-?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,43 +12,108 @@
   <!--script-->
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
-
-  <script>
-    var appMode = "<?= $mode ?>";
-  </script>
 </head>
-<body class="<?= $bodyClasses ?>">
+
+<body class="show-splashscreen">
+  <!-- Splashscreen UI -->
   <div class="splashscreen-title">
     <h5>Infomation mesh — 30 years of facts about the World Wide Web</h5>
   </div>
-  <a href="/index" class="splashscreen-main-title">
+
+  <a href="index" class="splashscreen-main-title">
     <h5 class="enable-caret title-bold"></h5>
   </a>
+
   <div class="click-to-start">
     <h5>Click to continue</h5>
   </div>
 
+  <!-- Iframe Popup (not sure if this is still needed...) -->
   <div class="iframe-popup">
-    <?php echo file_get_contents("css/UI/UICrossiframe.svg"); ?>
+    <!-- Cross Iframe -->
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve" class="iframe-popup-close">
+      <g id="Editablie_-_copie">
+        <line stroke="white" stroke-miterlimit="10" x1="2" y1="58" x2="58" y2="2"/>
+        <line stroke="white" stroke-miterlimit="10" x1="2" y1="2" x2="58" y2="58"/>
+      </g>
+      <g id="Finished"></g>
+    </svg>
+    
     <iframe class="iframe-popup__content" src="" frameborder="0"></iframe>
   </div>
 
+  <!-- Projects Nav -->
   <header id="navigation" class="not-extended">
+    <!-- Project Title -->
     <h1>
-      <a id="project-title" href="/">Information mesh</a>
+      <a id="project-title" href="infomesh">Information mesh</a>
     </h1>
+
     <nav class="d-none">
-      <?php echo file_get_contents("css/UI/UIArrowUp.svg"); ?>
-      <?php echo file_get_contents("css/UI/UIArrowDown.svg"); ?>
-      <?php echo file_get_contents("css/UI/UIArrowLeftNav.svg"); ?>
+      <!-- Arrow Up -->
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 33" enable-background="new 0 0 60 33" xml:space="preserve" class="button-up button-nav">
+        <g id="Editablie_-_copie">
+          <polyline class="svgline" fill="none" stroke-miterlimit="10" points="2,31 30,3 58,31 	"/>
+        </g>
+      </svg>
+
+      <!-- Arrow Down -->
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 33" enable-background="new 0 0 60 33" xml:space="preserve" class="button-down button-nav">
+        <g id="Editablie_-_copie">
+          <polyline class="svgline" fill="none" stroke-miterlimit="10" points="2,2 30,30 58,2 	"/>
+        </g>
+        <g id="Finished"></g>
+      </svg>
+
+      <!-- Arrow Left Nav -->
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve" id="button-toggle-informations" class="button-nav">
+        <g id="Editablie_-_copie">
+          <polyline class="svgline" fill="none" stroke-miterlimit="10" points="30,58 2,30 30,2 	"/>
+        </g>
+      </svg>
     </nav>
+
+    <!-- Mobile Projets Nav -->
     <nav-mobile>
-      <?php echo file_get_contents("css/UI/UIMobileArrowUp.svg"); ?>
-      <?php echo file_get_contents("css/UI/UIMobileArrowDown.svg"); ?>
-      <?php echo file_get_contents("css/UI/UIMobileBurger.svg"); ?>
-      <?php echo file_get_contents("css/UI/UIMobileCross.svg"); ?>
+      <!-- Mobile Arrow Up -->
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve" class="button-up button-nav mobile-onlytimeline button-nav-timeline">
+        <g id="Editablie_-_copie">
+          <polyline fill="none" stroke-miterlimit="10" points="2,44 30,16 58,44 	"/>
+        </g>
+        <g id="Finished"></g>
+      </svg>
+
+      <!-- Mobile ArrowDown -->
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve"class="button-down button-nav mobile-onlytimeline button-nav-timeline">
+        <g id="Editablie_-_copie">
+          <polyline fill="none" stroke-miterlimit="10" points="58,16 30,44 2,16 	"/>
+        </g>
+        <g id="Finished"></g>
+      </svg>
+      
+      <!-- Mobile Burger -->
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve" id="button-menu" class="button-nav">
+        <g id="Editablie_-_copie">
+          <g>
+            <line fill="none" stroke-miterlimit="10" x1="8.5" y1="11.6" x2="51.5" y2="11.6"/>
+            <line fill="none" stroke-miterlimit="10" x1="8.5" y1="30" x2="51.5" y2="30"/>
+            <line fill="none" stroke-miterlimit="10" x1="8.5" y1="48.4" x2="51.5" y2="48.4"/>
+          </g>
+        </g>
+      </svg>
+      
+      <!-- Mobile Cross -->
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve" id="button-closeOverlay" class="button-nav d-none">
+        <g id="Editablie_-_copie">
+          <g>
+            <line fill="none" stroke-miterlimit="10" x1="7.5" y1="52.5" x2="52.5" y2="7.5"/>
+            <line fill="none" stroke-miterlimit="10" x1="7.5" y1="7.5" x2="52.5" y2="52.5"/>
+          </g>
+        </g>
+      </svg>
     </nav-mobile>
   </header>
+
   <div id=wrapper>
     <div id="container-side" class="container d-flex side mobile-reduced background-blue">
       <h1 id="container-title" class="content flex-top font-large">
@@ -66,8 +125,8 @@
         </div>  
       </div>
       <div id="container-menu" class="content flex-bottom font-large">
-        <a href="/index" id="button-open-projects" class="selected">30 years of</a>
-        <a href="/about" id="button-open-about">About</a>
+        <a href="index" id="button-open-projects" class="selected">30 years of</a>
+        <a href="about" id="button-open-about">About</a>
       </div>
     </div>
 
@@ -79,8 +138,19 @@
       </div>
       <div id="timeline-barre">
         <div class="timeline-barre-inner">
-          <?php echo file_get_contents("css/UI/UIArrowLeft.svg"); ?>
-          <?php echo file_get_contents("css/UI/UIArrowRight.svg"); ?>
+          <!-- Arrow Left -->
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve" class="button-timeline" id="button-timeline-left">
+            <g id="Editablie_-_copie">
+              <polyline class="svgline" fill="none" stroke="#000000" stroke-miterlimit="10" points="30,58 2,30 30,2 	"/>
+            </g>
+          </svg>
+
+          <!-- Arrow Right -->
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve" class="button-timeline" id="button-timeline-right">
+            <g id="Editablie_-_copie">
+              <polyline class="svgline" fill="none" stroke="#000000" stroke-miterlimit="10" points="30,2 58,30 30,58 	"/>
+            </g>
+          </svg>
         </div>
         <div id="timeline-background"></div>
       </div>

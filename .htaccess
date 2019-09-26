@@ -9,12 +9,12 @@ RedirectMatch 404 /\.git
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-RewriteRule ^index\.php$ - [L]
+RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond static/%{REQUEST_FILENAME} !-f
 RewriteCond static/%{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
+RewriteRule . /infomesh/index.html [L]
 </IfModule>
 
 # END WordPress

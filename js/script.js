@@ -497,9 +497,6 @@ $(document).ready(function() {
         //console.log("[script.js] iframe ask styles");
         applyStyleToIframe();
         break;
-      case 'request-mode':
-        $('.current-iframe').get(0).contentWindow.postMessage({mode: window.appMode}, '*');
-        break;
       case 'anchor':
         var href = data.href;
         var iframe = document.querySelector('.iframe-popup__content');
