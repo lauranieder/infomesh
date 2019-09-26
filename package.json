@@ -3,9 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "deploy": "node deploy.js"
+    "build": "node build.js"
   },
   "devDependencies": {
-    "ftp-deploy": "2.3.3"
+    "html-minifier": "^4.0.0"
   }
 }

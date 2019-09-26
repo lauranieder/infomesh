@@ -5,7 +5,6 @@ main script
 - create projects
 */
 $(document).ready(function() {
-  //console.log("[script.js] loaded");
   var projectsData;
   var currentProjectID = 0;
   var siteTitle = document.title;
@@ -23,13 +22,16 @@ $(document).ready(function() {
   function loadProjectsJson(){
     $.ajax({
       dataType: "json",
-      url: "./data/projects.json",
+      url: window.ROOT + "/data/projects.json",
       mimeType: "application/json",
       success: function(data){
         projectsData = data;
         loadProjectsPreview();
         enableHistory();
         renderState(getUrlParam());
+      },
+      error: function (error) {
+        console.error(error)
       }
     })
   }
@@ -63,7 +65,18 @@ $(document).ready(function() {
   }
 
   function getUrlParam () {
-    return window.location.href.split('/').pop();
+    var params = window.location.href.split('/');
+    var param = ''
+    
+    for (var i = 0; i < params.length; i++) {
+      var currentParam = params[i]
+
+      if (currentParam) {
+        param = currentParam
+      }
+    }
+
+    return param
   }
 
   function renderState (state) {
@@ -79,13 +92,13 @@ $(document).ready(function() {
 
     switch (state) {
       case '':
+      case 'infomesh':
         $('#container-main').removeClass('main');
         $('#container-main').addClass('reduced');
-
         window.startSplashscreen();
       break;
 
-      case 'index':
+      case 'home':
         window.stopSplashscreen();
         openProjectsPage();
       break;
@@ -110,7 +123,7 @@ $(document).ready(function() {
   //load each project
   function loadProjectsPreview(){
     $.each(projectsData, function() {
-      var link = $('<a href="'+ this.slug +'" class="font-large">'+this.title+'</a>');
+      var link = $('<a href="' + window.ROOT + "/" + this.slug +'" class="font-large">'+this.title+'</a>');
       $('#container-projects').append(link);
     });
   }
@@ -142,7 +155,6 @@ $(document).ready(function() {
 
   /*OPEN A PROJECT*/
   function loadProject(index, direction) {
-    //console.log("loadProject");
     currentProjectID = index;
     const project = projectsData[index];
 
@@ -167,32 +179,25 @@ $(document).ready(function() {
       $('#navigation').addClass(project.style);
     }
 
-    var iframe = $('<iframe class="current-iframe appear-' + direction + '" src="./projects/' + project.slug + '">');
+    var iframe = $('<iframe class="current-iframe appear-' + direction + '" src="' + window.ROOT + '/projects/' + project.slug + '">');
     $('#container-main').append(iframe);
 
     $('#navigation').removeClass('background-blue');
     $('#navigation').removeClass('background-white');
     $('#navigation').removeClass('background-black');
     var style = projectsData[currentProjectID].style;
-    $('#navigation').addClass(style); //alone
-    //console.log("[script.js] iframe append");
+    $('#navigation').addClass(style);
 
     /*back here*/
     //ajouter extended reduced en fonction
-
-
     /*debugger le settimout iframe*/
-
     setTimeout(function() {
-      //console.log("[script.js] iframe move");
-
       $('.previous-iframe').addClass('move-' + direction);
       $('.current-iframe').removeClass('appear-' + direction);
       if($('.previous-iframe').get(0) != null && $('.previous-iframe').get(0) != undefined){
         $('.previous-iframe').get(0).contentWindow.postMessage({message: 'hideTimeline'}, '*');
       }
       $('.current-iframe').get(0).contentWindow.postMessage({message: 'hideTimeline'}, '*');
-      //console.log("offset "+$('.current-iframe').get(0).getBoundingClientRect().top);
 
     }, 100); //100
 
@@ -206,7 +211,6 @@ $(document).ready(function() {
         requestAnimationFrame(checkLoop);
       } else {
         removePreviousIframe();
-        console.log('hey hey');
       }
     }
 
@@ -240,10 +244,8 @@ $(document).ready(function() {
   //MOBILE
   function mobileCheck(x) {
     if (x.matches) { // If media query matches
-      //console.log("[mobileCheck] mobile");
       isMobile = true;
     } else {
-      //console.log("[mobileCheck] desktop");
       isMobile = false;
     }
   }
@@ -260,7 +262,6 @@ $(document).ready(function() {
   //Toggle left container
   function toggleInformation() {
     $('#container-side').toggleClass('reduced');
-    //console.log("toggle info and deal with style");
     $('#container-main').toggleClass('extended');
     applyStyleToIframe();
   }
@@ -277,7 +278,6 @@ $(document).ready(function() {
 
     }else{
       $('.current-iframe').get(0).contentWindow.postMessage({message: 'isExtended', status: false}, '*');
-      //$('#navigation').removeClass(style);
       if(isMobile){
         mobile_applyStyleToNav();
       }else{
@@ -297,10 +297,7 @@ $(document).ready(function() {
 
   //only on mobile with burger menu
   function openMenu(){
-    //console.log("openMenu");
     if(isMobile){
-      //console.log("open menu : is reduced was " +$('#container-side').hasClass('mobile-reduced'));
-      //console.log("main is reduced " +$('#container-main').hasClass('reduced')); //if it is not reduced means a project is open
       if($('#container-main').hasClass('reduced')){ //not project open
         $('#project-title').text(siteTitle);
         $('#container-title').text(siteTitle);
@@ -317,10 +314,7 @@ $(document).ready(function() {
   }
 
   function closeOverlay(){
-    //console.log("open menu : is reduced was " +$('#container-side').hasClass('mobile-reduced'));
-    //console.log("main is reduced " +$('#container-main').hasClass('reduced')); //if it is not reduced means a project is open
     if(isMobile){
-      //console.log("closeOverlay");
       $('#button-menu').removeClass('d-none');
       $('.mobile-onlytimeline').removeClass('d-none');
       $('#button-closeOverlay').addClass('d-none');
@@ -388,7 +382,6 @@ $(document).ready(function() {
 
 
   function openProjectsPage(){
-    //console.log('[script.js] openProjectsPage/ isMobile '+isMobile);
     $('#navigation nav').addClass('d-none');
 
     $('#container-projects').addClass('main').removeClass('reduced');
@@ -416,13 +409,9 @@ $(document).ready(function() {
       $('#button-closeOverlay').addClass('d-none');
       $('#button-menu').removeClass('d-none');
       $('.mobile-onlytimeline').addClass('d-none');
-      //$('#navigation').addClass('background-blue');
-
-
     }else{
       $('#project-title').text(siteTitle);
       $('#container-title').text(siteTitle);
-
     }
 
     $('#project-text p:first').text("");
@@ -487,14 +476,12 @@ $(document).ready(function() {
         timelinePosition = data.position;
         break;
       case 'getScrollPosition':
-        //console.log("[script.js] iframe ask scroll position");
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'receiveScrollPosition', position: timelinePosition}, '*');
         break;
       case 'getResponsive':
         $('.current-iframe').get(0).contentWindow.postMessage({message: 'isMobile', status: isMobile}, '*');
         break;
       case 'getStyles':
-        //console.log("[script.js] iframe ask styles");
         applyStyleToIframe();
         break;
       case 'anchor':

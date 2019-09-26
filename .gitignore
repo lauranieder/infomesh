@@ -26,3 +26,5 @@ projects/internetphenomena/bundle_back.js
 projects/internetphenomena/bundle_unminified.js
 projects/webinfluenceridentity/sequence/highres/
 projects/webinfluenceridentity/sequence/lowres/
+
+node_modules
